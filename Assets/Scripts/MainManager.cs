@@ -19,7 +19,7 @@ public class MainManager : MonoBehaviour
     void Screenhot()
     {
         print("Screen captured - Started");
-        ScreenCapture.CaptureScreenshot("Screenshot_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".png", 2);
+        ScreenCapture.CaptureScreenshot("Screenshot_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".png", 1);
         print("Screen captured - Finished");
     }
 }

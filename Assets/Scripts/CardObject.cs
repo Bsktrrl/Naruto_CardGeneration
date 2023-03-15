@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CardObject : MonoBehaviour
 {
     [Header("Clan")]
-    public Image background_Image;
+    public List<Image> background_Image;
     public Image Frame_Image;
     public Image Box_Image;
 
