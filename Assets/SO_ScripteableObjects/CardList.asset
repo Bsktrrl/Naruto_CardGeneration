@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8866748b1dd701340bbbd2ca2f0d64a1, type: 3}
+  m_Name: CardList
+  m_EditorClassIdentifier: 
+  cardList:
+  - ID: 1
+    clan: 4
+    landOrigins: 17
+    name: Tsunade Senju
+    role: (Adult - 5th Hokage)
+    TaijutsuValue: 8
+    NinjutsuValue: 7
+    GenjutsuValue: 4
+    chakraNatureValue: 0000000000000000000000000000000000000000
+    headAmount: 3
+    heal: 1
+    effectState: 010000000200000003000000
+    effectText: 
+    resources:
+    - resources: 2
+      amount: 3
