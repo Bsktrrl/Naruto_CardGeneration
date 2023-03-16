@@ -508,7 +508,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The next Action Card you play cannot be burned and happen twice
+  m_text: ' <sprite name="Iconset_0"> M <sprite name="Iconset_1"> M <sprite name="Iconset_2">
+    M <sprite name="Iconset_3"> M <sprite name="Iconset_4"> M <sprite name="Iconset_5">
+    M <sprite name="Iconset_6"> M <sprite name="Iconset_7"> M <sprite name="Iconset_8">
+    M <sprite name="Iconset_9"> M <sprite name="Iconset_10"> M <sprite name="Iconset_11">
+    M <sprite name="Iconset_12"> M <sprite name="Iconset_13"> M <sprite name="Iconset_14">
+    M <sprite name="Iconset_15"> M <sprite name="Iconset_16"> M <sprite name="Iconset_17">
+    M <sprite name="Iconset_18"> M <sprite name="Iconset_19"> M <sprite name="Iconset_20">
+    M <sprite name="Iconset_21"> M <sprite name="Iconset_22"> M <sprite name="Iconset_23">
+    M <sprite name="Iconset_24"> M <sprite name="Iconset_25"> M <sprite name="Iconset_26">
+    M <sprite name="Iconset_27"> M <sprite name="Iconset_28"> M <sprite name="Iconset_29">
+    M <sprite name="Iconset_30"> M <sprite name="Iconset_31"> M <sprite name="Iconset_32">
+    M <sprite name="Iconset_33"> M <sprite name="Iconset_34"> M <sprite name="Iconset_35">
+    M <sprite name="Iconset_36"> M <sprite name="Iconset_37"> M <sprite name="Iconset_38">
+    M <sprite name="Iconset_39"> M <sprite name="Iconset_40"> M <sprite name="Iconset_41">
+    M <sprite name="Iconset_42"> M <sprite name="Iconset_43"> M <sprite name="Iconset_44">
+    M <sprite name="Iconset_45"> M <sprite name="Iconset_46"> M <sprite name="Iconset_47">
+    M'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -535,7 +551,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 37.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -935,8 +951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   so_NarutoCard: {fileID: 11400000, guid: baacb0b644b57c545b5eb40d70f5289e, type: 2}
   cardObject: {fileID: 1742743488}
-  colorManager: {fileID: 0}
-  Heal_Image: {fileID: 0}
+  colorManager: {fileID: 1881012182}
+  Heal_Image: {fileID: 21300000, guid: fb684fe551ddfba4ca06e885b438f1b3, type: 3}
   HealBlock_Image: {fileID: 0}
   Tier_Common_Image: {fileID: 21300000, guid: c53b1e69632501146b22fc2a0630a20a, type: 3}
   Tier_Rare_Image: {fileID: 21300000, guid: f1b1d048b5829714380377e6a0d3e30f, type: 3}
@@ -949,46 +965,46 @@ MonoBehaviour:
   State_IfBattleAdvantage_Image: {fileID: 21300000, guid: b1e3a00383f146943aeb7ee34cd2da1d, type: 3}
   State_IfNotBattleAdvantage_Image: {fileID: 21300000, guid: a93b1fe6b79b9ad4ca0149925c3e713f, type: 3}
   Resources_ClanCard: {fileID: 0}
-  NationSymbol_ANBU: {fileID: 0}
-  NationSymbol_Cliff: {fileID: 0}
-  NationSymbol_Cloud: {fileID: 0}
-  NationSymbol_Craftsmen: {fileID: 0}
-  NationSymbol_Curtain: {fileID: 0}
-  NationSymbol_Dawn: {fileID: 0}
-  NationSymbol_Eddy: {fileID: 0}
-  NationSymbol_Fields: {fileID: 0}
-  NationSymbol_Grass: {fileID: 0}
-  NationSymbol_Hawk: {fileID: 0}
-  NationSymbol_Haze: {fileID: 0}
-  NationSymbol_HotWater: {fileID: 0}
-  NationSymbol_Iron: {fileID: 0}
-  NationSymbol_JiroIsland: {fileID: 0}
-  NationSymbol_KikaIsland: {fileID: 0}
-  NationSymbol_LandOfAncestors: {fileID: 0}
-  NationSymbol_Leaf: {fileID: 0}
-  NationSymbol_Lock: {fileID: 0}
-  NationSymbol_Mines: {fileID: 0}
-  NationSymbol_Mist: {fileID: 0}
-  NationSymbol_Moon: {fileID: 0}
-  NationSymbol_MountMyoboku: {fileID: 0}
-  NationSymbol_Mountain: {fileID: 0}
-  NationSymbol_Noodles: {fileID: 0}
-  NationSymbol_Rain: {fileID: 0}
-  NationSymbol_Rice: {fileID: 0}
-  NationSymbol_River: {fileID: 0}
-  NationSymbol_Sand: {fileID: 0}
-  NationSymbol_Sea: {fileID: 0}
-  NationSymbol_Sky: {fileID: 0}
-  NationSymbol_Snow: {fileID: 0}
-  NationSymbol_Sound: {fileID: 0}
-  NationSymbol_Star: {fileID: 0}
-  NationSymbol_Stone: {fileID: 0}
-  NationSymbol_Tea: {fileID: 0}
-  NationSymbol_ThreeTunders: {fileID: 0}
-  NationSymbol_TurtleIsland: {fileID: 0}
-  NationSymbol_Vegetable: {fileID: 0}
-  NationSymbol_Waterfall: {fileID: 0}
-  NationSymbol_Wave: {fileID: 0}
+  NationSymbol_ANBU: {fileID: 21300000, guid: 72f5bff452cf2cb4d9b6da46945b61d4, type: 3}
+  NationSymbol_Cliff: {fileID: 21300000, guid: 6639ad58c9085ca43a1f0fef5ab6b1b0, type: 3}
+  NationSymbol_Cloud: {fileID: 21300000, guid: f8197e74fbe6bf14193f3cf19f6d5058, type: 3}
+  NationSymbol_Craftsmen: {fileID: 21300000, guid: 2b7bbf354316a714e982a18e2a303e61, type: 3}
+  NationSymbol_Curtain: {fileID: 21300000, guid: d9d69fc32fb5bb240b32035ef6046a9d, type: 3}
+  NationSymbol_Dawn: {fileID: 21300000, guid: e21ff8bf62ca1db43ba5222fec9cadee, type: 3}
+  NationSymbol_Eddy: {fileID: 21300000, guid: f372ba49264f1bc45995f6ba6ff0fbe2, type: 3}
+  NationSymbol_Fields: {fileID: 21300000, guid: 5ca9b7ba941aa95419a6d4c98f46df21, type: 3}
+  NationSymbol_Grass: {fileID: 21300000, guid: ca06402660721f14b9badc413304895b, type: 3}
+  NationSymbol_Hawk: {fileID: 21300000, guid: 59c8bd2123524514bb7f18d0a192d7e3, type: 3}
+  NationSymbol_Haze: {fileID: 21300000, guid: 7770a0b506751da4b808678594658db5, type: 3}
+  NationSymbol_HotWater: {fileID: 21300000, guid: 0d4ae9f1842ad504883fff4f7972bb7c, type: 3}
+  NationSymbol_Iron: {fileID: 21300000, guid: 2b5bf33e320ab8a45803f3f52d8820af, type: 3}
+  NationSymbol_JiroIsland: {fileID: 21300000, guid: c3be5acb1554da04fa971a71217e0387, type: 3}
+  NationSymbol_KikaIsland: {fileID: 21300000, guid: 9e033a4e9cdd3a64bbf4c4ac3dea43ed, type: 3}
+  NationSymbol_LandOfAncestors: {fileID: 21300000, guid: 25ee57287cad388468c2471b658574ac, type: 3}
+  NationSymbol_Leaf: {fileID: 21300000, guid: c81856a16ba52014088990edac0b13ee, type: 3}
+  NationSymbol_Lock: {fileID: 21300000, guid: f2f1c001fca7a344697648f474672085, type: 3}
+  NationSymbol_Mines: {fileID: 21300000, guid: 0721e3871d34d6f4faee1313f53a7c18, type: 3}
+  NationSymbol_Mist: {fileID: 21300000, guid: 310f8d9cf579bc643aa33fad6d7055ce, type: 3}
+  NationSymbol_Moon: {fileID: 21300000, guid: 87017bac9dad7ed47ab93f960e72da08, type: 3}
+  NationSymbol_MountMyoboku: {fileID: 21300000, guid: 3fa83a67bf4e75d46bbc13a279027e92, type: 3}
+  NationSymbol_Mountain: {fileID: 21300000, guid: 4485da898ca83f04891830d191852315, type: 3}
+  NationSymbol_Noodles: {fileID: 21300000, guid: c16948158e4560442880fa610f4c7a45, type: 3}
+  NationSymbol_Rain: {fileID: 21300000, guid: e1fc4f40672d0414b947689826d3f1ec, type: 3}
+  NationSymbol_Rice: {fileID: 21300000, guid: 66a53bed9c9f7f2489d72075da816062, type: 3}
+  NationSymbol_River: {fileID: 21300000, guid: 64c4dc2c8cbebf64f8038c75229169ce, type: 3}
+  NationSymbol_Sand: {fileID: 21300000, guid: d07cd3f4063699b49ae25c3a5d7e5688, type: 3}
+  NationSymbol_Sea: {fileID: 21300000, guid: 30d912cf3ef69c54b8bbb276af6d48e8, type: 3}
+  NationSymbol_Sky: {fileID: 21300000, guid: 7c352f0f032f54548bd947c36174aef2, type: 3}
+  NationSymbol_Snow: {fileID: 21300000, guid: 400f195f6667c154a9a0678f005eec77, type: 3}
+  NationSymbol_Sound: {fileID: 21300000, guid: efe9ae540c463e04c832cbb737a643d8, type: 3}
+  NationSymbol_Star: {fileID: 21300000, guid: 251cf569c42dae64a9c3f4317d148f1d, type: 3}
+  NationSymbol_Stone: {fileID: 21300000, guid: f4052899065650e4bacc1db83206f765, type: 3}
+  NationSymbol_Tea: {fileID: 21300000, guid: 6d682cdf3e5eb4c4e83614d8c3b4cfcc, type: 3}
+  NationSymbol_ThreeTunders: {fileID: 21300000, guid: 63d941aec9778404fbbcbd749471bdaa, type: 3}
+  NationSymbol_TurtleIsland: {fileID: 21300000, guid: 84df69f8fc9fb564f8ac9e65c118cb50, type: 3}
+  NationSymbol_Vegetable: {fileID: 21300000, guid: 289efc617c5f78846aaa2d977b035840, type: 3}
+  NationSymbol_Waterfall: {fileID: 21300000, guid: 299d7c7d36854354981f14b111f5751a, type: 3}
+  NationSymbol_Wave: {fileID: 21300000, guid: 4f6554abd55834f4aa192ea4976ef1ea, type: 3}
 --- !u!1 &404677398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1637,7 @@ RectTransform:
   - {fileID: 780262504}
   - {fileID: 1792946460}
   m_Father: {fileID: 1742743487}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1875,7 +1891,7 @@ RectTransform:
   - {fileID: 174207839}
   - {fileID: 742901795}
   m_Father: {fileID: 1742743487}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3323,7 +3339,7 @@ RectTransform:
   - {fileID: 822012063}
   - {fileID: 1232727404}
   m_Father: {fileID: 1742743487}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3361,10 +3377,10 @@ RectTransform:
   m_Children:
   - {fileID: 551079045}
   - {fileID: 69742257}
-  - {fileID: 815300582}
-  - {fileID: 899244932}
-  - {fileID: 791936863}
   - {fileID: 1721259773}
+  - {fileID: 815300582}
+  - {fileID: 791936863}
+  - {fileID: 899244932}
   m_Father: {fileID: 1893692868}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3726,8 +3742,8 @@ MonoBehaviour:
   Otsutsuki_BorderColor: {r: 0, g: 0, b: 0, a: 0}
   Otsutsuki_LandOriginColor: {r: 0, g: 0, b: 0, a: 0}
   Senju_BackgroundColor: {r: 1, g: 0.74509805, b: 0.39215687, a: 1}
-  Senju_TextColor: {r: 0.5647059, g: 0.40392157, b: 0.18431373, a: 1}
-  Senju_BorderColor: {r: 0.4509804, g: 0.2784314, b: 0.09803922, a: 1}
+  Senju_TextColor: {r: 0.45098042, g: 0.2784314, b: 0.098039225, a: 1}
+  Senju_BorderColor: {r: 0.5647059, g: 0.4039216, b: 0.18431373, a: 1}
   Senju_LandOriginColor: {r: 0.74509805, g: 0.5294118, b: 0.22745098, a: 1}
   Uchiha_BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
   Uchiha_TextColor: {r: 0, g: 0, b: 0, a: 0}

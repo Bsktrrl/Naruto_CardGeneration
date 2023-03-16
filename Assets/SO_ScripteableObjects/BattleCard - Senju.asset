@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8866748b1dd701340bbbd2ca2f0d64a1, type: 3}
-  m_Name: CardList
+  m_Name: BattleCard - Senju
   m_EditorClassIdentifier: 
   cardList:
-  - ID: 1
+  - name: Tsunade Senju
+    loreInfo: (Adult - 5th Hokage)
+    characterSprite: {fileID: 21300000, guid: 113402e86d9b26c40b995a59e6dc75c1, type: 3}
     clan: 4
     landOrigins: 17
-    name: Tsunade Senju
-    role: (Adult - 5th Hokage)
     TaijutsuValue: 8
     NinjutsuValue: 7
     GenjutsuValue: 4
@@ -25,7 +25,9 @@ MonoBehaviour:
     headAmount: 3
     heal: 1
     effectState: 010000000200000003000000
-    effectText: 
-    resources:
-    - resources: 2
-      amount: 3
+    effectText: 'The next Action card you play cannot be burned and happen twice
+
+
+      ..testing'
+    tier: 4
+    resources: []

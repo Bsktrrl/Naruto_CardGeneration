@@ -81,7 +81,7 @@ public class CardManager : MonoBehaviour
 
     private void Start()
     {
-        
+        DisplayCard(0);
     }
 
 
@@ -427,6 +427,9 @@ public class CardManager : MonoBehaviour
             }
         }
 
+        //Character Image
+        cardObject.characterImage.sprite = so_NarutoCard.cardList[i].characterSprite;
+
         //Values
         cardObject.taijutsuValue_Text.text = so_NarutoCard.cardList[i].TaijutsuValue.ToString();
         cardObject.ninjutsuValue_Text.text = so_NarutoCard.cardList[i].NinjutsuValue.ToString();
@@ -462,7 +465,6 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[2].SetActive(false);
                 cardObject.heads_Image[3].SetActive(false);
                 cardObject.heads_Image[4].SetActive(false);
-                cardObject.heads_Image[5].SetActive(false);
                 break;
             case 1:
                 cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(30, 30);
@@ -471,7 +473,6 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[2].SetActive(false);
                 cardObject.heads_Image[3].SetActive(false);
                 cardObject.heads_Image[4].SetActive(false);
-                cardObject.heads_Image[5].SetActive(false);
                 break;
             case 2:
                 cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(70, 30);
@@ -480,7 +481,6 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[2].SetActive(false);
                 cardObject.heads_Image[3].SetActive(false);
                 cardObject.heads_Image[4].SetActive(false);
-                cardObject.heads_Image[5].SetActive(false);
                 break;
             case 3:
                 cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(110, 30);
@@ -489,7 +489,6 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[2].SetActive(true);
                 cardObject.heads_Image[3].SetActive(false);
                 cardObject.heads_Image[4].SetActive(false);
-                cardObject.heads_Image[5].SetActive(false);
                 break;
             case 4:
                 cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(150, 30);
@@ -498,7 +497,6 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[2].SetActive(true);
                 cardObject.heads_Image[3].SetActive(true);
                 cardObject.heads_Image[4].SetActive(false);
-                cardObject.heads_Image[5].SetActive(false);
                 break;
             case 5:
                 cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(190, 30);

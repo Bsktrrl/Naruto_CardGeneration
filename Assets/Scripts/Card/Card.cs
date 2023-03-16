@@ -23,16 +23,14 @@ public class Card
     //--------------------
 
 
-    [Header("ID")]
-    public int ID;
+    [Header("Name")]
+    public string name;
+    public string loreInfo;
+    public Sprite characterSprite;
 
     [Header("Origin")]
     public Clan clan;
     public landOrigins landOrigins;
-
-    [Header("Name")]
-    public string name;
-    public string loreInfo;
 
     [Header("Values")]
     public int TaijutsuValue;
