@@ -47,9 +47,29 @@ public enum Resources
 {
     None,
 
-    Piece,
+    Boat,
+    Chuunin,
+    Jounin,
+    Kage,
+
+    ActionCard,
     ClanCard,
-    AllyCard
+
+    Ally_Rare,
+    Ally_Epic,
+    Ally_Legendary,
+
+    Effect_Poison,
+    Effect_Paralyze,
+    Effect_Illusion,
+    Effect_Freeze,
+    Effect_Chain,
+
+    Influence_UP,
+    Influence_DOWN,
+
+    Coin,
+    TailedBeast
 }
 
 public enum Tier

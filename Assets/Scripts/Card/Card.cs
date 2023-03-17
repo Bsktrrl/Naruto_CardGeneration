@@ -52,5 +52,5 @@ public class Card
     public Tier tier;
 
     [Header("Resources")]
-    public List<Resource> resources;
+    public List<Resource> resources = new List<Resource>() {null, null, null, null};
 }

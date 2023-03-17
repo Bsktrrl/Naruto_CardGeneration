@@ -11,6 +11,11 @@ public class CardObject : MonoBehaviour
     public Image Frame_Image;
     public Image Box_Image;
 
+    public Image Taijutsu_Border_Image;
+    public Image Ninjutsu_Border_Image;
+    public Image Genjutsu_Border_Image;
+    public Image Heal_Border_Image;
+
     [Header("Character")]
     public Image characterImage;
 
@@ -33,7 +38,7 @@ public class CardObject : MonoBehaviour
     public Image heal_Image;
 
     [Header("Resources")]
-    public List<Image> resources_Image;
+    public List<GameObject> resources_Image;
 
     [Header("Effect")]
     public TextMeshProUGUI effect_Text;

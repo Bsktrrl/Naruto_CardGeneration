@@ -29,9 +29,6 @@ public class CardManager : MonoBehaviour
     public Sprite State_IfBattleAdvantage_Image;
     public Sprite State_IfNotBattleAdvantage_Image;
 
-    [Header("Resources Images")]
-    public Sprite Resources_ClanCard;
-
     [Header("Nation Symbols")]
     public Sprite NationSymbol_ANBU;
     public Sprite NationSymbol_Cliff;
@@ -73,6 +70,32 @@ public class CardManager : MonoBehaviour
     public Sprite NationSymbol_Vegetable;
     public Sprite NationSymbol_Waterfall;
     public Sprite NationSymbol_Wave;
+
+    [Header("Resources")]
+    public Sprite Resource_Boat;
+    public Sprite Resource_Chuunin;
+    public Sprite Resource_Jounin;
+    public Sprite Resource_Kage;
+    public Sprite Resource_ActionCard;
+    public Sprite Resource_ClanCard_Akatsuki;
+    public Sprite Resource_ClanCard_Hyuga;
+    public Sprite Resource_ClanCard_Otsutsuki;
+    public Sprite Resource_ClanCard_Senju;
+    public Sprite Resource_ClanCard_Uchiha;
+    public Sprite Resource_ClanCard_Uzumaki;
+    public Sprite Resource_ClanCard_Ally;
+    public Sprite Resource_Ally_Rare;
+    public Sprite Resource_Ally_Epic;
+    public Sprite Resource_Ally_Legendary;
+    public Sprite Resource_Effect_Poison;
+    public Sprite Resource_Effect_Paralyze;
+    public Sprite Resource_Effect_Illusion;
+    public Sprite Resource_Effect_Freeze;
+    public Sprite Resource_Effect_Chain;
+    public Sprite Resource_Effect_Coin;
+    public Sprite Resource_Effect_TailedBeast;
+    public Sprite Resource_Effect_Influence_UP;
+    public Sprite Resource_Effect_Influence_DOWN;
     #endregion
 
 
@@ -111,6 +134,11 @@ public class CardManager : MonoBehaviour
                 cardObject.ninjutsuValue_Text = null;
                 cardObject.genjutsuValue_Text = null;
 
+                cardObject.Taijutsu_Border_Image = null;
+                cardObject.Ninjutsu_Border_Image = null;
+                cardObject.Genjutsu_Border_Image = null;
+                cardObject.Heal_Border_Image = null;
+
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
                     cardObject.states_Image[j] = null;
@@ -134,6 +162,11 @@ public class CardManager : MonoBehaviour
                 cardObject.taijutsuValue_Text.color = colorManager.GetAkatsuki_TextColor();
                 cardObject.ninjutsuValue_Text.color = colorManager.GetAkatsuki_TextColor();
                 cardObject.genjutsuValue_Text.color = colorManager.GetAkatsuki_TextColor();
+
+                cardObject.Taijutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
+                cardObject.Ninjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
+                cardObject.Genjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
+                cardObject.Heal_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
 
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
@@ -159,6 +192,11 @@ public class CardManager : MonoBehaviour
                 cardObject.ninjutsuValue_Text.color = colorManager.GetHyuga_TextColor();
                 cardObject.genjutsuValue_Text.color = colorManager.GetHyuga_TextColor();
 
+                cardObject.Taijutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
+                cardObject.Ninjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
+                cardObject.Genjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
+                cardObject.Heal_Border_Image.color = colorManager.GetHyuga_BorderColor();
+
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
                     cardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetHyuga_TextColor();
@@ -182,6 +220,11 @@ public class CardManager : MonoBehaviour
                 cardObject.taijutsuValue_Text.color = colorManager.GetOtsutsuki_TextColor();
                 cardObject.ninjutsuValue_Text.color = colorManager.GetOtsutsuki_TextColor();
                 cardObject.genjutsuValue_Text.color = colorManager.GetOtsutsuki_TextColor();
+
+                cardObject.Taijutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                cardObject.Ninjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                cardObject.Genjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                cardObject.Heal_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
 
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
@@ -207,6 +250,11 @@ public class CardManager : MonoBehaviour
                 cardObject.ninjutsuValue_Text.color = colorManager.GetSenju_TextColor();
                 cardObject.genjutsuValue_Text.color = colorManager.GetSenju_TextColor();
 
+                cardObject.Taijutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
+                cardObject.Ninjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
+                cardObject.Genjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
+                cardObject.Heal_Border_Image.color = colorManager.GetSenju_BorderColor();
+
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
                     cardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetSenju_TextColor();
@@ -230,6 +278,11 @@ public class CardManager : MonoBehaviour
                 cardObject.taijutsuValue_Text.color = colorManager.GetUchiha_TextColor();
                 cardObject.ninjutsuValue_Text.color = colorManager.GetUchiha_TextColor();
                 cardObject.genjutsuValue_Text.color = colorManager.GetUchiha_TextColor();
+
+                cardObject.Taijutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
+                cardObject.Ninjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
+                cardObject.Genjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
+                cardObject.Heal_Border_Image.color = colorManager.GetUchiha_BorderColor();
 
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
@@ -255,6 +308,11 @@ public class CardManager : MonoBehaviour
                 cardObject.ninjutsuValue_Text.color = colorManager.GetUzumaki_TextColor();
                 cardObject.genjutsuValue_Text.color = colorManager.GetUzumaki_TextColor();
 
+                cardObject.Taijutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
+                cardObject.Ninjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
+                cardObject.Genjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
+                cardObject.Heal_Border_Image.color = colorManager.GetUzumaki_BorderColor();
+
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
                     cardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetUzumaki_TextColor();
@@ -278,6 +336,11 @@ public class CardManager : MonoBehaviour
                 cardObject.taijutsuValue_Text.color = colorManager.GetAlly_TextColor();
                 cardObject.ninjutsuValue_Text.color = colorManager.GetAlly_TextColor();
                 cardObject.genjutsuValue_Text.color = colorManager.GetAlly_TextColor();
+
+                cardObject.Taijutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                cardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                cardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                cardObject.Heal_Border_Image.color = colorManager.GetAlly_BorderColor();
 
                 for (int j = 0; j < cardObject.states_Image.Count; j++)
                 {
@@ -459,7 +522,7 @@ public class CardManager : MonoBehaviour
         switch (so_NarutoCard.cardList[i].headAmount)
         {
             case 0:
-                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 30);
+                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 60);
                 cardObject.heads_Image[0].SetActive(false);
                 cardObject.heads_Image[1].SetActive(false);
                 cardObject.heads_Image[2].SetActive(false);
@@ -467,7 +530,7 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[4].SetActive(false);
                 break;
             case 1:
-                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(30, 30);
+                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(60, 60);
                 cardObject.heads_Image[0].SetActive(true);
                 cardObject.heads_Image[1].SetActive(false);
                 cardObject.heads_Image[2].SetActive(false);
@@ -475,7 +538,7 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[4].SetActive(false);
                 break;
             case 2:
-                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(70, 30);
+                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(140, 60);
                 cardObject.heads_Image[0].SetActive(true);
                 cardObject.heads_Image[1].SetActive(true);
                 cardObject.heads_Image[2].SetActive(false);
@@ -483,7 +546,7 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[4].SetActive(false);
                 break;
             case 3:
-                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(110, 30);
+                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(220, 60);
                 cardObject.heads_Image[0].SetActive(true);
                 cardObject.heads_Image[1].SetActive(true);
                 cardObject.heads_Image[2].SetActive(true);
@@ -491,7 +554,7 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[4].SetActive(false);
                 break;
             case 4:
-                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(150, 30);
+                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 60);
                 cardObject.heads_Image[0].SetActive(true);
                 cardObject.heads_Image[1].SetActive(true);
                 cardObject.heads_Image[2].SetActive(true);
@@ -499,7 +562,7 @@ public class CardManager : MonoBehaviour
                 cardObject.heads_Image[4].SetActive(false);
                 break;
             case 5:
-                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(190, 30);
+                cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(380, 60);
                 cardObject.heads_Image[0].SetActive(true);
                 cardObject.heads_Image[1].SetActive(true);
                 cardObject.heads_Image[2].SetActive(true);
@@ -542,7 +605,302 @@ public class CardManager : MonoBehaviour
         }
 
         //Resources
+        #region
+        //Set all ResourceImages false
+        for (int j = 0; j < cardObject.resources_Image.Count; j++)
+        {
+            cardObject.resources_Image[j].GetComponent<Image>().color = new Color(1, 1, 1, 1);
+            cardObject.resources_Image[j].SetActive(false);
+        }
 
+        //Set relevant ResourceImages true
+        #region
+        if (so_NarutoCard.cardList[i].resources[0].amount >= 1 && so_NarutoCard.cardList[i].resources[0].resources != Resources.None)
+            cardObject.resources_Image[0].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[0].amount >= 2 && so_NarutoCard.cardList[i].resources[0].resources != Resources.None)
+            cardObject.resources_Image[1].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[0].amount >= 3 && so_NarutoCard.cardList[i].resources[0].resources != Resources.None)
+            cardObject.resources_Image[2].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[0].amount >= 4 && so_NarutoCard.cardList[i].resources[0].resources != Resources.None)
+            cardObject.resources_Image[3].SetActive(true);
 
+        if (so_NarutoCard.cardList[i].resources[1].amount >= 1 && so_NarutoCard.cardList[i].resources[1].resources != Resources.None)
+            cardObject.resources_Image[4].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[1].amount >= 2 && so_NarutoCard.cardList[i].resources[1].resources != Resources.None)
+            cardObject.resources_Image[5].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[1].amount >= 3 && so_NarutoCard.cardList[i].resources[1].resources != Resources.None)
+            cardObject.resources_Image[6].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[1].amount >= 4 && so_NarutoCard.cardList[i].resources[1].resources != Resources.None)
+            cardObject.resources_Image[7].SetActive(true);
+
+        if (so_NarutoCard.cardList[i].resources[2].amount >= 1 && so_NarutoCard.cardList[i].resources[2].resources != Resources.None)
+            cardObject.resources_Image[8].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[2].amount >= 2 && so_NarutoCard.cardList[i].resources[2].resources != Resources.None)
+            cardObject.resources_Image[9].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[2].amount >= 3 && so_NarutoCard.cardList[i].resources[2].resources != Resources.None)
+            cardObject.resources_Image[10].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[2].amount >= 4 && so_NarutoCard.cardList[i].resources[2].resources != Resources.None)
+            cardObject.resources_Image[11].SetActive(true);
+
+        if (so_NarutoCard.cardList[i].resources[3].amount >= 1 && so_NarutoCard.cardList[i].resources[3].resources != Resources.None)
+            cardObject.resources_Image[12].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[3].amount >= 2 && so_NarutoCard.cardList[i].resources[3].resources != Resources.None)
+            cardObject.resources_Image[13].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[3].amount >= 3 && so_NarutoCard.cardList[i].resources[3].resources != Resources.None)
+            cardObject.resources_Image[14].SetActive(true);
+        if (so_NarutoCard.cardList[i].resources[3].amount >= 4 && so_NarutoCard.cardList[i].resources[3].resources != Resources.None)
+            cardObject.resources_Image[15].SetActive(true);
+        #endregion
+
+        //Change all ResourceImages to the correct Resource
+        for (int j = 0; j < 4; j++)
+        {
+            switch (so_NarutoCard.cardList[i].resources[j].resources)
+            {
+                case Resources.None:
+                    break;
+                case Resources.Boat:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                    {
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Boat;
+
+                        switch (so_NarutoCard.cardList[i].clan)
+                        {
+                            case Clan.None:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
+                                break;
+                            case Clan.Akatsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
+                            case Clan.Hyuga:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetHyuga_BorderColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetSenju_BorderColor();
+                                break;
+                            case Clan.Uchiha:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUchiha_BorderColor();
+                                break;
+                            case Clan.Uzumaki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Ally:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+
+                            default:
+                                break;
+                        }
+                    }
+                    break;
+                case Resources.Chuunin:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                    {
+                        switch (so_NarutoCard.cardList[i].clan)
+                        {
+                            case Clan.None:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
+                                break;
+                            case Clan.Akatsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
+                            case Clan.Hyuga:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetHyuga_BorderColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetSenju_BorderColor();
+                                break;
+                            case Clan.Uchiha:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUchiha_BorderColor();
+                                break;
+                            case Clan.Uzumaki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Ally:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Chuunin;
+                    }
+                    break;
+                case Resources.Jounin:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                    {
+                        switch (so_NarutoCard.cardList[i].clan)
+                        {
+                            case Clan.None:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
+                                break;
+                            case Clan.Akatsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
+                            case Clan.Hyuga:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetHyuga_BorderColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetSenju_BorderColor();
+                                break;
+                            case Clan.Uchiha:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUchiha_BorderColor();
+                                break;
+                            case Clan.Uzumaki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Ally:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Jounin;
+                    }
+                    break;
+                case Resources.Kage:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                    {
+                        switch (so_NarutoCard.cardList[i].clan)
+                        {
+                            case Clan.None:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
+                                break;
+                            case Clan.Akatsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
+                            case Clan.Hyuga:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetHyuga_BorderColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetSenju_BorderColor();
+                                break;
+                            case Clan.Uchiha:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUchiha_BorderColor();
+                                break;
+                            case Clan.Uzumaki:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Ally:
+                                cardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Kage;
+                    }
+                    break;
+                case Resources.ActionCard:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ActionCard;
+                    break;
+                case Resources.ClanCard:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                    {
+                        switch (so_NarutoCard.cardList[i].clan)
+                        {
+                            case Clan.None:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
+                                break;
+                            case Clan.Akatsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Akatsuki;
+                                break;
+                            case Clan.Hyuga:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Hyuga;
+                                break;
+                            case Clan.Otsutsuki:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Otsutsuki;
+                                break;
+                            case Clan.Senju:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Senju;
+                                break;
+                            case Clan.Uchiha:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Uchiha;
+                                break;
+                            case Clan.Uzumaki:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Uzumaki;
+                                break;
+                            case Clan.Ally:
+                                cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Ally;
+                                break;
+
+                            default:
+                                break;
+                        }
+                    }
+                    break;
+                case Resources.Ally_Rare:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Ally_Rare;
+                    break;
+                case Resources.Ally_Epic:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Ally_Epic;
+                    break;
+                case Resources.Ally_Legendary:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Ally_Legendary;
+                    break;
+                case Resources.Effect_Poison:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Poison;
+                    break;
+                case Resources.Effect_Paralyze:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Paralyze;
+                    break;
+                case Resources.Effect_Illusion:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Illusion;
+                    break;
+                case Resources.Effect_Freeze:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Freeze;
+                    break;
+                case Resources.Effect_Chain:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Chain;
+                    break;
+                case Resources.Influence_UP:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Influence_UP;
+                    break;
+                case Resources.Influence_DOWN:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Influence_DOWN;
+                    break;
+                case Resources.Coin:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Coin;
+                    break;
+                case Resources.TailedBeast:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_TailedBeast;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        
+
+        #endregion
     }
 }
