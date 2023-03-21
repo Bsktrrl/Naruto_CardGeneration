@@ -2,6 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum CardType
+{
+    None,
+
+    BattleCard,
+    ActionCard,
+    ClanSpecialty,
+    Event
+}
 public enum Clan
 {
     None,
@@ -42,6 +52,13 @@ public enum State
     ifLose,
     ifBattleAdvantage,
     ifNotBattleAdvantage
+}
+public enum EffectIcon
+{
+    None,
+
+    Skull,
+    Shield
 }
 public enum Resources
 {

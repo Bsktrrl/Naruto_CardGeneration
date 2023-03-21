@@ -8,6 +8,16 @@ using UnityEngine.UI;
 
 public class MainManager : MonoBehaviour
 {
+    CardManager cardManager;
+
+
+    //--------------------
+
+
+    private void Start()
+    {
+        cardManager = FindObjectOfType<CardManager>();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
@@ -18,8 +28,21 @@ public class MainManager : MonoBehaviour
 
     void Screenhot()
     {
-        print("Screen captured - Started");
-        ScreenCapture.CaptureScreenshot("Screenshot_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".png", 1);
-        print("Screen captured - Finished");
+        StartCoroutine(AllCards());
+    }
+
+    IEnumerator AllCards()
+    {
+        for (int i = 0; i < cardManager.battle_Senju.cardList.Count; i++)
+        {
+            cardManager.DisplayCard(i);
+
+            yield return new WaitForSeconds(0.2f);
+
+            ScreenCapture.CaptureScreenshot(cardManager.battle_Senju.cardList[i].cardType + "_" + cardManager.battle_Senju.cardList[i].clan + "_" + cardManager.battle_Senju.cardList[i].name + "_" + cardManager.battle_Senju.cardList[i].loreInfo + ".png", 1);
+            print("Screen captured - Finished " + i);
+
+            yield return new WaitForSeconds(0.8f);
+        }
     }
 }

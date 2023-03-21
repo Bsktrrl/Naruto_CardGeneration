@@ -29,6 +29,7 @@ public class Card
     public Sprite characterSprite;
 
     [Header("Origin")]
+    public CardType cardType;
     public Clan clan;
     public landOrigins landOrigins;
 
@@ -49,6 +50,7 @@ public class Card
     [Header("Effect")]
     public List<State> effectState;
     [TextArea(3, 5)] public string effectText;
+    public List<EffectIcon> effectIcon = new List<EffectIcon>() { EffectIcon.None, EffectIcon.None, EffectIcon.None};
     public Tier tier;
 
     [Header("Resources")]
