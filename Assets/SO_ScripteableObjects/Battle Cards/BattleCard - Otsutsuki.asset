@@ -13,6 +13,54 @@ MonoBehaviour:
   m_Name: BattleCard - Otsutsuki
   m_EditorClassIdentifier: 
   cardList:
+  - name: Otsutsuki 1
+    loreInfo: (Otsutsuki 1)
+    characterSprite: {fileID: 21300000, guid: ca7c9a4accde9154587ea0baa0065d27, type: 3}
+    cardType: 1
+    clan: 3
+    landOrigins: 19
+    TaijutsuValue: 4
+    NinjutsuValue: 8
+    GenjutsuValue: 2
+    headAmount: 2
+    heal: 2
+    effectState: 0600000004000000
+    effectText: 
+    effectIcon: 000000000000000002000000
+    tier: 3
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+  - name: Otsutsuki 2
+    loreInfo: (Otsutsuki 2)
+    characterSprite: {fileID: 21300000, guid: d7cddd931a81f9249a495fbf5bd255db, type: 3}
+    cardType: 1
+    clan: 3
+    landOrigins: 27
+    TaijutsuValue: 3
+    NinjutsuValue: 6
+    GenjutsuValue: 8
+    headAmount: 4
+    heal: 1
+    effectState: 01000000
+    effectText: 
+    effectIcon: 010000000100000001000000
+    tier: 4
+    resources:
+    - resources: 5
+      amount: 2
+    - resources: 6
+      amount: 3
+    - resources: 9
+      amount: 1
+    - resources: 18
+      amount: 2
   - name: 
     loreInfo: 
     characterSprite: {fileID: 0}

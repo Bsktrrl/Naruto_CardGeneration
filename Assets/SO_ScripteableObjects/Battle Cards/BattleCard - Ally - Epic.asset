@@ -13,6 +13,54 @@ MonoBehaviour:
   m_Name: BattleCard - Ally - Epic
   m_EditorClassIdentifier: 
   cardList:
+  - name: Ally_Epic 1
+    loreInfo: (Ally_Epic 1)
+    characterSprite: {fileID: 21300000, guid: 46b4fddc62be5f94b9bafb2cc6b7899b, type: 3}
+    cardType: 1
+    clan: 7
+    landOrigins: 20
+    TaijutsuValue: 6
+    NinjutsuValue: 8
+    GenjutsuValue: 9
+    headAmount: 5
+    heal: 0
+    effectState: 03000000
+    effectText: ddqwdfdfgs <sprite=0> fadsa
+    effectIcon: 000000000000000000000000
+    tier: 3
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 15
+      amount: 3
+  - name: Ally_Epic 2
+    loreInfo: (Ally_Epic 2)
+    characterSprite: {fileID: 21300000, guid: 81aac17e22082c2448262f68375e4344, type: 3}
+    cardType: 1
+    clan: 7
+    landOrigins: 32
+    TaijutsuValue: 6
+    NinjutsuValue: 3
+    GenjutsuValue: 4
+    headAmount: 2
+    heal: 2
+    effectState: 0600000004000000
+    effectText: dsadsa fadfaf hgfhgf
+    effectIcon: 020000000000000000000000
+    tier: 3
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 17
+      amount: 2
+    - resources: 18
+      amount: 3
   - name: 
     loreInfo: 
     characterSprite: {fileID: 0}

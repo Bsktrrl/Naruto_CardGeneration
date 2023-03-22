@@ -13,6 +13,18 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Senju
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
+  - name: Clan Senju 1
+    cardType: 3
+    clan: 4
+    cost: 1
+    image: {fileID: 21300000, guid: 0cbee0fd8c5da864f836d89cae5b88e3, type: 3}
+    description: dsadsa dsa dsa da
+  - name: Clan Senju 2
+    cardType: 3
+    clan: 4
+    cost: 0
+    image: {fileID: 21300000, guid: bf7460a85f38fdb45a1ee7a354ce2f18, type: 3}
+    description: "dsa dsa dsa dsa \n s\nda\n \nsad  dsa dsadsad"
   - name: 0
     cardType: 3
     clan: 4

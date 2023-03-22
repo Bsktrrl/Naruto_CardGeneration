@@ -23,3 +23,19 @@ MonoBehaviour:
     cost: 1
     fireBlock: 1
     strength: +3
+  - name: Upgrade
+    cardType: 2
+    category: 20
+    type: 3
+    description: This is an Action/Reaction Clan Specialty
+    cost: 1
+    fireBlock: 0
+    strength: 
+  - name: Speciality
+    cardType: 2
+    category: 0
+    type: 4
+    description: This is a Special Action
+    cost: 4
+    fireBlock: 1
+    strength: 

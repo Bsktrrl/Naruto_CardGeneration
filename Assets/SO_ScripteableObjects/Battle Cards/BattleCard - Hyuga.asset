@@ -13,6 +13,54 @@ MonoBehaviour:
   m_Name: BattleCard - Hyuga
   m_EditorClassIdentifier: 
   cardList:
+  - name: Hyuga 1
+    loreInfo: (Hyuga 1)
+    characterSprite: {fileID: 21300000, guid: 64366d2e6ded1364cad776fd058723be, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 22
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 6
+    headAmount: 0
+    heal: 0
+    effectState: 
+    effectText: 
+    effectIcon: 010000000100000000000000
+    tier: 3
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 6
+      amount: 5
+    - resources: 9
+      amount: 1
+  - name: Hyuga 2
+    loreInfo: (Hyuga 2)
+    characterSprite: {fileID: 21300000, guid: ca7c9a4accde9154587ea0baa0065d27, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 31
+    TaijutsuValue: 0
+    NinjutsuValue: 3
+    GenjutsuValue: 6
+    headAmount: 0
+    heal: 0
+    effectState: 0100000002000000
+    effectText: 
+    effectIcon: 020000000000000000000000
+    tier: 4
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 10
+      amount: 4
   - name: 
     loreInfo: 
     characterSprite: {fileID: 0}

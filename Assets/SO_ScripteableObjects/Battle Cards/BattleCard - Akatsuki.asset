@@ -13,6 +13,55 @@ MonoBehaviour:
   m_Name: BattleCard - Akatsuki
   m_EditorClassIdentifier: 
   cardList:
+  - name: Akatsuki 1
+    loreInfo: (Akatsuki 1)
+    characterSprite: {fileID: 21300000, guid: 71352e44df87c044fa21b6887c38c35f, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 2
+    headAmount: 2
+    heal: 1
+    effectState: 0200000005000000
+    effectText: dsadasdsadsa
+    effectIcon: 020000000000000000000000
+    tier: 1
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 12
+      amount: 2
+    - resources: 15
+      amount: 3
+  - name: Akatsuki 2
+    loreInfo: (Akatsuki 2)
+    characterSprite: {fileID: 21300000, guid: 68e7560fe2bf2c345b6db9271f92f0c9, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 24
+    TaijutsuValue: 1
+    NinjutsuValue: 2
+    GenjutsuValue: 3
+    headAmount: 1
+    heal: 2
+    effectState: 0600000001000000
+    effectText: hgge getgre gre gr gre reg re gw rwtjuk ilkik  htr h jk tj htry ttry
+      rty tr
+    effectIcon: 000000000000000000000000
+    tier: 2
+    resources:
+    - resources: 3
+      amount: 1
+    - resources: 4
+      amount: 2
+    - resources: 6
+      amount: 1
+    - resources: 17
+      amount: 4
   - name: 
     loreInfo: 
     characterSprite: {fileID: 0}

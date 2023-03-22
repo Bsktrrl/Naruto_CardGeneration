@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class CardManager : MonoBehaviour
 {
     #region Variables
+    MainManager mainManager;
+
     [Header("Card Display")]
     [SerializeField] Clan clanFocus_BattleCard;
     [SerializeField] Clan clanFocus_ClanSpecialty;
@@ -169,11 +171,16 @@ public class CardManager : MonoBehaviour
 
     private void Start()
     {
+        mainManager = FindObjectOfType<MainManager>();
+
         CardsDisplay();
     }
     private void Update()
     {
-        CardsDisplay();
+        if (!mainManager.isTakingScreenShots)
+        {
+            CardsDisplay();
+        }
     }
 
 
@@ -190,39 +197,39 @@ public class CardManager : MonoBehaviour
 
             case Clan.Akatsuki:
                 if (battle_Akatsuki.cardList.Count > 0)
-                    DisplayBattleCard(battle_Akatsuki, battle_Akatsuki.cardList.Count - 1);
+                    DisplayBattleCard(battle_Akatsuki.cardList[battle_Akatsuki.cardList.Count - 1]);
                 break;
             case Clan.Hyuga:
                 if (battle_Hyuga.cardList.Count > 0)
-                    DisplayBattleCard(battle_Hyuga, battle_Hyuga.cardList.Count - 1);
+                    DisplayBattleCard(battle_Hyuga.cardList[battle_Hyuga.cardList.Count - 1]);
                 break;
             case Clan.Otsutsuki:
                 if (battle_Otsutsuki.cardList.Count > 0)
-                    DisplayBattleCard(battle_Otsutsuki, battle_Otsutsuki.cardList.Count - 1);
+                    DisplayBattleCard(battle_Otsutsuki.cardList[battle_Otsutsuki.cardList.Count - 1]);
                 break;
             case Clan.Senju:
                 if (battle_Senju.cardList.Count > 0)
-                    DisplayBattleCard(battle_Senju, battle_Senju.cardList.Count - 1);
+                    DisplayBattleCard(battle_Senju.cardList[battle_Senju.cardList.Count - 1]);
                 break;
             case Clan.Uchiha:
                 if (battle_Uchiha.cardList.Count > 0)
-                    DisplayBattleCard(battle_Uchiha, battle_Uchiha.cardList.Count - 1);
+                    DisplayBattleCard(battle_Uchiha.cardList[battle_Uchiha.cardList.Count - 1]);
                 break;
             case Clan.Uzumaki:
                 if (battle_Uzumaki.cardList.Count > 0)
-                    DisplayBattleCard(battle_Uzumaki, battle_Uzumaki.cardList.Count - 1);
+                    DisplayBattleCard(battle_Uzumaki.cardList[battle_Uzumaki.cardList.Count - 1]);
                 break;
             case Clan.Ally_Rare:
                 if (battle_Ally_Rare.cardList.Count > 0)
-                    DisplayBattleCard(battle_Ally_Rare, battle_Ally_Rare.cardList.Count - 1);
+                    DisplayBattleCard(battle_Ally_Rare.cardList[battle_Ally_Rare.cardList.Count - 1]);
                 break;
             case Clan.Ally_Epic:
                 if (battle_Ally_Epic.cardList.Count > 0)
-                    DisplayBattleCard(battle_Ally_Epic, battle_Ally_Epic.cardList.Count - 1);
+                    DisplayBattleCard(battle_Ally_Epic.cardList[battle_Ally_Epic.cardList.Count - 1]);
                 break;
             case Clan.Ally_Legendary:
                 if (battle_Ally_Legendary.cardList.Count > 0)
-                    DisplayBattleCard(battle_Ally_Legendary, battle_Ally_Legendary.cardList.Count - 1);
+                    DisplayBattleCard(battle_Ally_Legendary.cardList[battle_Ally_Legendary.cardList.Count - 1]);
                 break;
 
             default:
@@ -230,7 +237,7 @@ public class CardManager : MonoBehaviour
         }
 
         //Action Cards
-        DisplayActionCard(actionCards.actionCardList.Count - 1);
+        DisplayActionCard(actionCards.actionCardList[actionCards.actionCardList.Count - 1]);
 
         //Clan Spacialty Cards
         switch (clanFocus_ClanSpecialty)
@@ -240,27 +247,27 @@ public class CardManager : MonoBehaviour
 
             case Clan.Akatsuki:
                 if (clanSpecialty_Akatsuki.clanSpecialtyCardList.Count > 0)
-                    DisplayClanSpecialty(clanSpecialty_Akatsuki, clanSpecialty_Akatsuki.clanSpecialtyCardList.Count - 1);
+                    DisplayClanSpecialty(clanSpecialty_Akatsuki.clanSpecialtyCardList[clanSpecialty_Akatsuki.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Hyuga:
                 if (clanSpecialty_Hyuga.clanSpecialtyCardList.Count > 0)
-                    DisplayClanSpecialty(clanSpecialty_Hyuga, clanSpecialty_Hyuga.clanSpecialtyCardList.Count - 1);
+                    DisplayClanSpecialty(clanSpecialty_Hyuga.clanSpecialtyCardList[clanSpecialty_Hyuga.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Otsutsuki:
                 if (clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count > 0)
-                    DisplayClanSpecialty(clanSpecialty_Otsutsuki, clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count - 1);
+                    DisplayClanSpecialty(clanSpecialty_Otsutsuki.clanSpecialtyCardList[clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Senju:
                 if (clanSpecialty_Senju.clanSpecialtyCardList.Count > 0)
-                    DisplayClanSpecialty(clanSpecialty_Senju, clanSpecialty_Senju.clanSpecialtyCardList.Count - 1);
+                    DisplayClanSpecialty(clanSpecialty_Senju.clanSpecialtyCardList[clanSpecialty_Senju.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Uchiha:
                 if (clanSpecialty_Uchiha.clanSpecialtyCardList.Count > 0)
-                    DisplayClanSpecialty(clanSpecialty_Uchiha, clanSpecialty_Uchiha.clanSpecialtyCardList.Count - 1);
+                    DisplayClanSpecialty(clanSpecialty_Uchiha.clanSpecialtyCardList[clanSpecialty_Uchiha.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Uzumaki:
                 if (clanSpecialty_Uzumaki.clanSpecialtyCardList.Count > 0)
-                    DisplayClanSpecialty(clanSpecialty_Uzumaki, clanSpecialty_Uzumaki.clanSpecialtyCardList.Count - 1);
+                    DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[clanSpecialty_Uzumaki.clanSpecialtyCardList.Count - 1]);
                 break;
 
             default:
@@ -272,41 +279,14 @@ public class CardManager : MonoBehaviour
     //--------------------
 
 
-    public void DisplayBattleCard(SO_NarutoCard battleCard, int i)
+    public void DisplayBattleCard(BattleCard battleCard)
     {
         //Colors depending on Card Type
-        switch (battleCard.cardList[i].clan)
+        switch (battleCard.clan)
         {
             case Clan.None:
-                for (int j = 0; j < cardObject.background_Image.Count; j++)
-                {
-                    cardObject.background_Image[j] = null;
-                }
-                cardObject.Frame_Image = null;
-                for (int j = 0; j < cardObject.landOrigins_Image.Count; j++)
-                {
-                    cardObject.landOrigins_Image[j] = null;
-                }
-
-                cardObject.name_Text = null;
-                cardObject.loreInfo_Text = null;
-
-                cardObject.taijutsuValue_Text = null;
-                cardObject.ninjutsuValue_Text = null;
-                cardObject.genjutsuValue_Text = null;
-
-                cardObject.Taijutsu_Border_Image = null;
-                cardObject.Ninjutsu_Border_Image = null;
-                cardObject.Genjutsu_Border_Image = null;
-                cardObject.Heal_Border_Image = null;
-                cardObject.HealBlock_Border_Image = null;
-
-                for (int j = 0; j < cardObject.states_Image.Count; j++)
-                {
-                    cardObject.states_Image[j] = null;
-                }
-                cardObject.effectText_Parent = null;
                 break;
+
             case Clan.Akatsuki:
                 for (int j = 0; j < cardObject.background_Image.Count; j++)
                 {
@@ -530,11 +510,11 @@ public class CardManager : MonoBehaviour
         }
 
         //Name Box
-        cardObject.name_Text.text = battleCard.cardList[i].name;
-        cardObject.loreInfo_Text.text = battleCard.cardList[i].loreInfo;
+        cardObject.name_Text.text = battleCard.name;
+        cardObject.loreInfo_Text.text = battleCard.loreInfo;
         for (int j = 0; j < cardObject.landOrigins_Image.Count; j++)
         {
-            switch (battleCard.cardList[i].landOrigins)
+            switch (battleCard.landOrigins)
             {
                 case landOrigins.None:
                     cardObject.landOrigins_Image[j].sprite = null;
@@ -667,15 +647,15 @@ public class CardManager : MonoBehaviour
         }
 
         //Character Image
-        cardObject.characterImage.sprite = battleCard.cardList[i].characterSprite;
+        cardObject.characterImage.sprite = battleCard.characterSprite;
 
         //Values
-        cardObject.taijutsuValue_Text.text = battleCard.cardList[i].TaijutsuValue.ToString();
-        cardObject.ninjutsuValue_Text.text = battleCard.cardList[i].NinjutsuValue.ToString();
-        cardObject.genjutsuValue_Text.text = battleCard.cardList[i].GenjutsuValue.ToString();
+        cardObject.taijutsuValue_Text.text = battleCard.TaijutsuValue.ToString();
+        cardObject.ninjutsuValue_Text.text = battleCard.NinjutsuValue.ToString();
+        cardObject.genjutsuValue_Text.text = battleCard.GenjutsuValue.ToString();
 
         //Heal
-        switch (battleCard.cardList[i].heal)
+        switch (battleCard.heal)
         {
             case Heal.None:
                 cardObject.healParent.SetActive(false);
@@ -695,7 +675,7 @@ public class CardManager : MonoBehaviour
         }
 
         //Tailed Beast Heads
-        switch (battleCard.cardList[i].headAmount)
+        switch (battleCard.headAmount)
         {
             case 0:
                 cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 60);
@@ -754,7 +734,7 @@ public class CardManager : MonoBehaviour
         //  - States - Change the size of box based on the amount of States
         for (int j = 0; j < cardObject.states_Image.Count; j++)
             cardObject.states_Image[j].SetActive(true);
-        switch (battleCard.cardList[i].effectState.Count)
+        switch (battleCard.effectState.Count)
         {
             case 0:
                 cardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
@@ -795,9 +775,9 @@ public class CardManager : MonoBehaviour
             default:
                 break;
         }
-        for (int j = 0; j < battleCard.cardList[i].effectState.Count; j++)
+        for (int j = 0; j < battleCard.effectState.Count; j++)
         {
-            switch (battleCard.cardList[i].effectState[j])
+            switch (battleCard.effectState[j])
             {
                 case State.None:
                     cardObject.states_Image[j].GetComponent<Image>().sprite = null;
@@ -829,145 +809,146 @@ public class CardManager : MonoBehaviour
         //  - Effect Text
         #region
         //If == null
-        if (battleCard.cardList[i].effectIcon.Count <= 0)
+        if (battleCard.effectIcon.Count <= 0)
         {
-            DisplayTextOnly(battleCard, i);
+            DisplayTextOnly(battleCard);
         }
 
-        else if (battleCard.cardList[i].effectIcon.Count == 1)
+        else if (battleCard.effectIcon.Count == 1)
         {
             //If == 0 + text
-            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None)
+            if (battleCard.effectIcon[0] == EffectIcon.None)
             {
-                DisplayTextOnly(battleCard, i);
+                DisplayTextOnly(battleCard);
             }
 
             //If != 1 + text
-            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None)
+            else if (battleCard.effectIcon[0] != EffectIcon.None)
             {
-                if (battleCard.cardList[i].effectText == "")
+                if (battleCard.effectText == "")
                 {
-                    Display1Icon(battleCard, i);
+                    Display1Icon(battleCard);
                 }
                 else
                 {
-                    DisplayTextAndIcon(battleCard, i, 0);
+                    DisplayTextAndIcon(battleCard, 0);
                 }
             }
         }
-        else if (battleCard.cardList[i].effectIcon.Count == 2)
+        else if (battleCard.effectIcon.Count == 2)
         {
             //If 0, 0
-            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None)
+            if (battleCard.effectIcon[0] == EffectIcon.None && battleCard.effectIcon[1] == EffectIcon.None)
             {
-                DisplayTextOnly(battleCard, i);
+                DisplayTextOnly(battleCard);
             }
             //If 1, 0
-            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None)
+            else if (battleCard.effectIcon[0] != EffectIcon.None && battleCard.effectIcon[1] == EffectIcon.None)
             {
-                if (battleCard.cardList[i].effectText == "")
+                if (battleCard.effectText == "")
                 {
-                    Display1Icon(battleCard, 0);
+                    Display1Icon(battleCard);
                 }
                 else
                 {
-                    DisplayTextAndIcon(battleCard, i, 0);
+                    DisplayTextAndIcon(battleCard, 0);
                 }
             }
             //If 0, 1
-            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None)
+            if (battleCard.effectIcon[0] == EffectIcon.None && battleCard.effectIcon[1] != EffectIcon.None)
             {
-                if (battleCard.cardList[i].effectText == "")
+                if (battleCard.effectText == "")
                 {
-                    Display1Icon(battleCard, 1);
+                    Display1Icon(battleCard);
                 }
                 else
                 {
-                    DisplayTextAndIcon(battleCard, i, 1);
+                    DisplayTextAndIcon(battleCard, 1);
                 }
             }
             //If 1, 1
-            if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None)
+            if (battleCard.effectIcon[0] != EffectIcon.None && battleCard.effectIcon[1] != EffectIcon.None)
             {
-                Display2Icons(battleCard, i, 0, 1);
+                Display2Icons(battleCard, 0, 1);
             }
         }
-        else if (battleCard.cardList[i].effectIcon.Count == 3)
+        else if (battleCard.effectIcon.Count == 3)
         {
             //If 0, 0, 0
-            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
+            if (battleCard.effectIcon[0] == EffectIcon.None && battleCard.effectIcon[1] == EffectIcon.None & battleCard.effectIcon[2] == EffectIcon.None)
             {
-                DisplayTextOnly(battleCard, i);
+                DisplayTextOnly(battleCard);
             }
             //If 1, 0, 0
-            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
+            else if (battleCard.effectIcon[0] != EffectIcon.None && battleCard.effectIcon[1] == EffectIcon.None & battleCard.effectIcon[2] == EffectIcon.None)
             {
-                if (battleCard.cardList[i].effectText == "")
+                if (battleCard.effectText == "")
                 {
-                    Display1Icon(battleCard, 0);
+                    Display1Icon(battleCard);
                 }
                 else
                 {
-                    DisplayTextAndIcon(battleCard, i, 0);
+                    DisplayTextAndIcon(battleCard, 0);
                 }
             }
             //If 0, 1, 0
-            else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
+            else if (battleCard.effectIcon[0] == EffectIcon.None && battleCard.effectIcon[1] != EffectIcon.None & battleCard.effectIcon[2] == EffectIcon.None)
             {
-                if (battleCard.cardList[i].effectText == "")
+                if (battleCard.effectText == "")
                 {
-                    Display1Icon(battleCard, 1);
+                    Display1Icon(battleCard);
                 }
                 else
                 {
-                    DisplayTextAndIcon(battleCard, i, 1);
+                    DisplayTextAndIcon(battleCard, 1);
                 }
             }
             //If 0, 0, 1
-            else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.effectIcon[0] == EffectIcon.None && battleCard.effectIcon[1] == EffectIcon.None & battleCard.effectIcon[2] != EffectIcon.None)
             {
-                if (battleCard.cardList[i].effectText == "")
+                if (battleCard.effectText == "")
                 {
-                    Display1Icon(battleCard, 2);
+                    Display1Icon(battleCard);
                 }
                 else
                 {
-                    DisplayTextAndIcon(battleCard, i, 2);
+                    DisplayTextAndIcon(battleCard, 2);
                 }
             }
             //If 1, 1, 0
-            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
+            else if (battleCard.effectIcon[0] != EffectIcon.None && battleCard.effectIcon[1] != EffectIcon.None & battleCard.effectIcon[2] == EffectIcon.None)
             {
-                Display2Icons(battleCard, i, 0, 1);
+                Display2Icons(battleCard, 0, 1);
             }
             //If 1, 0, 1
-            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.effectIcon[0] != EffectIcon.None && battleCard.effectIcon[1] == EffectIcon.None & battleCard.effectIcon[2] != EffectIcon.None)
             {
-                Display2Icons(battleCard, i, 0 , 2);
+                Display2Icons(battleCard, 0 , 2);
             }
             //If 0, 1, 1
-            else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.effectIcon[0] == EffectIcon.None && battleCard.effectIcon[1] != EffectIcon.None & battleCard.effectIcon[2] != EffectIcon.None)
             {
-                Display2Icons(battleCard, i, 1, 2);
+                Display2Icons(battleCard, 1, 2);
             }
             //If 1, 1, 1
-            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.effectIcon[0] != EffectIcon.None && battleCard.effectIcon[1] != EffectIcon.None & battleCard.effectIcon[2] != EffectIcon.None)
             {
-                Display3Icons(battleCard, i);
+                Display3Icons(battleCard);
             }
         }
-        else if (battleCard.cardList[i].effectIcon.Count >= 4)
+        else if (battleCard.effectIcon.Count >= 4)
         {
-            DisplayTextOnly(battleCard, i);
+            DisplayTextOnly(battleCard);
         }
         #endregion
 
         //  - Tier
-        switch (battleCard.cardList[i].tier)
+        switch (battleCard.tier)
         {
             case Tier.None:
-                cardObject.tier_Image = null;
+                cardObject.tier_Image.sprite = null;
                 break;
+
             case Tier.Common:
                 cardObject.tier_Image.sprite = Tier_Common_Image;
                 break;
@@ -996,47 +977,47 @@ public class CardManager : MonoBehaviour
 
         //Set relevant ResourceImages true
         #region
-        if (battleCard.cardList[i].resources[0].amount >= 1 && battleCard.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.resources[0].amount >= 1 && battleCard.resources[0].resources != Resources.None)
             cardObject.resources_Image[0].SetActive(true);
-        if (battleCard.cardList[i].resources[0].amount >= 2 && battleCard.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.resources[0].amount >= 2 && battleCard.resources[0].resources != Resources.None)
             cardObject.resources_Image[1].SetActive(true);
-        if (battleCard.cardList[i].resources[0].amount >= 3 && battleCard.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.resources[0].amount >= 3 && battleCard.resources[0].resources != Resources.None)
             cardObject.resources_Image[2].SetActive(true);
-        if (battleCard.cardList[i].resources[0].amount >= 4 && battleCard.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.resources[0].amount >= 4 && battleCard.resources[0].resources != Resources.None)
             cardObject.resources_Image[3].SetActive(true);
 
-        if (battleCard.cardList[i].resources[1].amount >= 1 && battleCard.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.resources[1].amount >= 1 && battleCard.resources[1].resources != Resources.None)
             cardObject.resources_Image[4].SetActive(true);
-        if (battleCard.cardList[i].resources[1].amount >= 2 && battleCard.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.resources[1].amount >= 2 && battleCard.resources[1].resources != Resources.None)
             cardObject.resources_Image[5].SetActive(true);
-        if (battleCard.cardList[i].resources[1].amount >= 3 && battleCard.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.resources[1].amount >= 3 && battleCard.resources[1].resources != Resources.None)
             cardObject.resources_Image[6].SetActive(true);
-        if (battleCard.cardList[i].resources[1].amount >= 4 && battleCard.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.resources[1].amount >= 4 && battleCard.resources[1].resources != Resources.None)
             cardObject.resources_Image[7].SetActive(true);
 
-        if (battleCard.cardList[i].resources[2].amount >= 1 && battleCard.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.resources[2].amount >= 1 && battleCard.resources[2].resources != Resources.None)
             cardObject.resources_Image[8].SetActive(true);
-        if (battleCard.cardList[i].resources[2].amount >= 2 && battleCard.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.resources[2].amount >= 2 && battleCard.resources[2].resources != Resources.None)
             cardObject.resources_Image[9].SetActive(true);
-        if (battleCard.cardList[i].resources[2].amount >= 3 && battleCard.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.resources[2].amount >= 3 && battleCard.resources[2].resources != Resources.None)
             cardObject.resources_Image[10].SetActive(true);
-        if (battleCard.cardList[i].resources[2].amount >= 4 && battleCard.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.resources[2].amount >= 4 && battleCard.resources[2].resources != Resources.None)
             cardObject.resources_Image[11].SetActive(true);
 
-        if (battleCard.cardList[i].resources[3].amount >= 1 && battleCard.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.resources[3].amount >= 1 && battleCard.resources[3].resources != Resources.None)
             cardObject.resources_Image[12].SetActive(true);
-        if (battleCard.cardList[i].resources[3].amount >= 2 && battleCard.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.resources[3].amount >= 2 && battleCard.resources[3].resources != Resources.None)
             cardObject.resources_Image[13].SetActive(true);
-        if (battleCard.cardList[i].resources[3].amount >= 3 && battleCard.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.resources[3].amount >= 3 && battleCard.resources[3].resources != Resources.None)
             cardObject.resources_Image[14].SetActive(true);
-        if (battleCard.cardList[i].resources[3].amount >= 4 && battleCard.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.resources[3].amount >= 4 && battleCard.resources[3].resources != Resources.None)
             cardObject.resources_Image[15].SetActive(true);
         #endregion
 
         //Change all ResourceImages to the correct Resource
         for (int j = 0; j < 4; j++)
         {
-            switch (battleCard.cardList[i].resources[j].resources)
+            switch (battleCard.resources[j].resources)
             {
                 case Resources.None:
                     break;
@@ -1045,7 +1026,7 @@ public class CardManager : MonoBehaviour
                     {
                         cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Boat;
 
-                        switch (battleCard.cardList[i].clan)
+                        switch (battleCard.clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1080,7 +1061,7 @@ public class CardManager : MonoBehaviour
                 case Resources.Chuunin:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battleCard.cardList[i].clan)
+                        switch (battleCard.clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1117,7 +1098,7 @@ public class CardManager : MonoBehaviour
                 case Resources.Jounin:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battleCard.cardList[i].clan)
+                        switch (battleCard.clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1154,7 +1135,7 @@ public class CardManager : MonoBehaviour
                 case Resources.Kage:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battleCard.cardList[i].clan)
+                        switch (battleCard.clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1195,7 +1176,7 @@ public class CardManager : MonoBehaviour
                 case Resources.ClanCard:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battleCard.cardList[i].clan)
+                        switch (battleCard.clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1285,15 +1266,15 @@ public class CardManager : MonoBehaviour
         #endregion
     }
 
-    void DisplayTextOnly(SO_NarutoCard battleCard, int i)
+    void DisplayTextOnly(BattleCard battleCard)
     {
         cardObject.effectText_Parent.SetActive(true);
         cardObject.effectTextIcon_Parent.SetActive(false);
         cardObject.effectIcon_Parent.SetActive(false);
 
-        cardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battleCard.cardList[i].effectText;
+        cardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battleCard.effectText;
     }
-    void Display3Icons(SO_NarutoCard battleCard, int i)
+    void Display3Icons(BattleCard battleCard)
     {
         cardObject.effectText_Parent.SetActive(false);
         cardObject.effectTextIcon_Parent.SetActive(false);
@@ -1309,19 +1290,19 @@ public class CardManager : MonoBehaviour
         //Show correct image
         for (int j = 0; j < 3; j++)
         {
-            if (battleCard.cardList[i].effectIcon[j] == EffectIcon.Skull)
+            if (battleCard.effectIcon[j] == EffectIcon.Skull)
             {
                 cardObject.effectIcons[j].SetActive(true);
                 cardObject.effectIcons[j].GetComponentInChildren<Image>().sprite = Skull;
             }
-            else if (battleCard.cardList[i].effectIcon[j] == EffectIcon.Shield)
+            else if (battleCard.effectIcon[j] == EffectIcon.Shield)
             {
                 cardObject.effectIcons[j].SetActive(true);
                 cardObject.effectIcons[j].GetComponentInChildren<Image>().sprite = Shield;
             }
         }
     }
-    void Display2Icons(SO_NarutoCard battleCard, int i, int k, int l)
+    void Display2Icons(BattleCard battleCard, int k, int l)
     {
         cardObject.effectText_Parent.SetActive(false);
         cardObject.effectTextIcon_Parent.SetActive(false);
@@ -1336,30 +1317,30 @@ public class CardManager : MonoBehaviour
 
         //Show correct image
         //k
-        if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Skull)
+        if (battleCard.effectIcon[k] == EffectIcon.Skull)
         {
             cardObject.effectIcons[k].SetActive(true);
             cardObject.effectIcons[k].GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Shield)
+        else if (battleCard.effectIcon[k] == EffectIcon.Shield)
         {
             cardObject.effectIcons[k].SetActive(true);
             cardObject.effectIcons[k].GetComponentInChildren<Image>().sprite = Shield;
         }
 
         //l
-        if (battleCard.cardList[i].effectIcon[l] == EffectIcon.Skull)
+        if (battleCard.effectIcon[l] == EffectIcon.Skull)
         {
             cardObject.effectIcons[l].SetActive(true);
             cardObject.effectIcons[l].GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battleCard.cardList[i].effectIcon[l] == EffectIcon.Shield)
+        else if (battleCard.effectIcon[l] == EffectIcon.Shield)
         {
             cardObject.effectIcons[l].SetActive(true);
             cardObject.effectIcons[l].GetComponentInChildren<Image>().sprite = Shield;
         }
     }
-    void Display1Icon(SO_NarutoCard battleCard, int i)
+    void Display1Icon(BattleCard battleCard)
     {
         cardObject.effectIcons[0].SetActive(true);
         cardObject.effectIcons[1].SetActive(false);
@@ -1371,28 +1352,28 @@ public class CardManager : MonoBehaviour
 
         cardObject.effectIcon_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(453.3f, 453.3f);
 
-        if (battleCard.cardList[i].effectIcon[0] == EffectIcon.Skull)
+        if (battleCard.effectIcon[0] == EffectIcon.Skull)
         {
             cardObject.effectIcons[0].GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.Shield)
+        else if (battleCard.effectIcon[0] == EffectIcon.Shield)
         {
             cardObject.effectIcons[0].GetComponentInChildren<Image>().sprite = Shield;
         }
     }
-    void DisplayTextAndIcon(SO_NarutoCard battleCard, int i, int k)
+    void DisplayTextAndIcon(BattleCard battleCard, int k)
     {
         cardObject.effectText_Parent.SetActive(false);
         cardObject.effectTextIcon_Parent.SetActive(true);
         cardObject.effectIcon_Parent.SetActive(false);
 
-        cardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battleCard.cardList[i].effectText;
+        cardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battleCard.effectText;
 
-        if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Skull)
+        if (battleCard.effectIcon[k] == EffectIcon.Skull)
         {
             cardObject.effectTextIcon_Parent.GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Shield)
+        else if (battleCard.effectIcon[k] == EffectIcon.Shield)
         {
             cardObject.effectTextIcon_Parent.GetComponentInChildren<Image>().sprite = Shield;
         }
@@ -1402,16 +1383,16 @@ public class CardManager : MonoBehaviour
     //--------------------
 
 
-    void DisplayActionCard(int i)
+    public void DisplayActionCard(ActionCard actioncard)
     {
-        actionCardObject.name.text = actionCards.actionCardList[i].name;
-        actionCardObject.description.text = actionCards.actionCardList[i].description;
+        actionCardObject.name.text = actioncard.name;
+        actionCardObject.description.text = actioncard.description;
 
         //Icon
-        switch (actionCards.actionCardList[i].category)
+        switch (actioncard.category)
         {
             case ActionCards.None:
-                actionCardObject.icon = null;
+                actionCardObject.icon.sprite = null;
                 break;
             case ActionCards.Ally_Rare:
                 actionCardObject.icon.sprite = Ally_Rare;
@@ -1482,16 +1463,19 @@ public class CardManager : MonoBehaviour
         }
 
         //Type
-        switch (actionCards.actionCardList[i].type)
+        switch (actioncard.type)
         {
             case ActionCardTypes.None:
-                actionCardObject.type = null;
+                actionCardObject.type.text = null;
                 break;
             case ActionCardTypes.Action:
                 actionCardObject.type.text = "Action";
                 break;
             case ActionCardTypes.Reaction:
                 actionCardObject.type.text = "Reaction";
+                break;
+            case ActionCardTypes.ActionReaction:
+                actionCardObject.type.text = "Action/Reaction";
                 break;
             case ActionCardTypes.SpecialAction:
                 actionCardObject.type.text = "Special Action";
@@ -1510,7 +1494,7 @@ public class CardManager : MonoBehaviour
         }
 
         //Make relevant coin Images visible
-        switch (actionCards.actionCardList[i].cost)
+        switch (actioncard.cost)
         {
             case 1:
                 actionCardObject.coin[0].SetActive(true);
@@ -1551,20 +1535,20 @@ public class CardManager : MonoBehaviour
         #endregion
 
         //FireBlock
-        if (actionCards.actionCardList[i].fireBlock)
+        if (actioncard.fireBlock)
             actionCardObject.fireBlock.SetActive(true);
         else
             actionCardObject.fireBlock.SetActive(false);
 
         //Strength
-        if (actionCards.actionCardList[i].strength != "0" || actionCards.actionCardList[i].strength != "")
+        if (actioncard.strength == "0" || actioncard.strength == "")
         {
-            actionCardObject.strength.SetActive(true);
-            actionCardObject.strength.GetComponentInChildren<TextMeshProUGUI>().text = actionCards.actionCardList[i].strength;
+            actionCardObject.strength.SetActive(false);
         }
         else
         {
-            actionCardObject.strength.SetActive(false);
+            actionCardObject.strength.SetActive(true);
+            actionCardObject.strength.GetComponentInChildren<TextMeshProUGUI>().text = actioncard.strength;
         }
     }
 
@@ -1572,10 +1556,10 @@ public class CardManager : MonoBehaviour
     //--------------------
 
 
-    void DisplayClanSpecialty(SO_ClanSpecialtyCard clanSpecialtyCard, int i)
+    public void DisplayClanSpecialty(ClanSpecialtyCard clanSpecialtyCard)
     {
         //Clan Type changes
-        switch (clanSpecialtyCard.clanSpecialtyCardList[i].clan)
+        switch (clanSpecialtyCard.clan)
         {
             case Clan.None:
                 break;
@@ -1634,18 +1618,18 @@ public class CardManager : MonoBehaviour
         }
 
         //Text
-        clanSpecialtyCardObject.header.text = clanSpecialtyCard.clanSpecialtyCardList[i].name;
-        clanSpecialtyCardObject.description.text = clanSpecialtyCard.clanSpecialtyCardList[i].description;
+        clanSpecialtyCardObject.header.text = clanSpecialtyCard.name;
+        clanSpecialtyCardObject.description.text = clanSpecialtyCard.description;
 
         //Image
-        clanSpecialtyCardObject.cardImage.sprite = clanSpecialtyCard.clanSpecialtyCardList[i].image;
+        clanSpecialtyCardObject.cardImage.sprite = clanSpecialtyCard.image;
 
         //Cost
         for (int j = 0; j < clanSpecialtyCardObject.coinImage.Count; j++)
         {
             clanSpecialtyCardObject.coinImage[j].SetActive(false);
         }
-        switch (clanSpecialtyCard.clanSpecialtyCardList[i].cost)
+        switch (clanSpecialtyCard.cost)
         {
             case 1:
                 clanSpecialtyCardObject.coinImage[0].SetActive(true);

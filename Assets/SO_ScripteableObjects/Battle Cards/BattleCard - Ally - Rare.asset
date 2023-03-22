@@ -13,6 +13,54 @@ MonoBehaviour:
   m_Name: BattleCard - Ally - Rare
   m_EditorClassIdentifier: 
   cardList:
+  - name: Ally_Rare 1
+    loreInfo: (Ally_Rare 1)
+    characterSprite: {fileID: 21300000, guid: d4d43c082ff96e740881cbd682d977f6, type: 3}
+    cardType: 1
+    clan: 7
+    landOrigins: 8
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 7
+    headAmount: 3
+    heal: 1
+    effectState: 02000000
+    effectText: 'dsadsad adssad '
+    effectIcon: 000000000000000001000000
+    tier: 2
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 8
+      amount: 1
+    - resources: 12
+      amount: 2
+    - resources: 13
+      amount: 4
+  - name: Ally_Rare 2
+    loreInfo: (Ally_Rare 2)
+    characterSprite: {fileID: 21300000, guid: a2e412ca79adf4947b079c4fc0daf2e6, type: 3}
+    cardType: 1
+    clan: 7
+    landOrigins: 34
+    TaijutsuValue: 5
+    NinjutsuValue: 2
+    GenjutsuValue: 9
+    headAmount: 5
+    heal: 2
+    effectState: 0500000004000000
+    effectText: 
+    effectIcon: 010000000000000002000000
+    tier: 2
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 4
+      amount: 3
   - name: 
     loreInfo: 
     characterSprite: {fileID: 0}

@@ -184,5 +184,6 @@ public enum ActionCardTypes
 
     Action,
     Reaction,
+    ActionReaction,
     SpecialAction
 }
