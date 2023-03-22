@@ -144,3 +144,42 @@ public enum landOrigins
     Waterfall,
     Wave
 }
+
+public enum ActionCards
+{
+    None,
+
+    Ally_Rare,
+    Ally_Epic,
+    Ally_Legendary,
+
+    ClanCard,
+    Defence,
+    DominanceTrack,
+    Fire,
+    HealingOintment,
+
+    Piece_Boat,
+    Piece_Chuunin,
+    Piece_Jounin,
+    Piece_Kage,
+
+    Reroll,
+    Reuse,
+    Scroll,
+    Support,
+    Trade,
+    Travel,
+    Turns,
+    Upgrade,
+    War
+}
+
+public enum ActionCardTypes
+{
+    None,
+
+    Action,
+    Reaction,
+    SpecialAction
+}

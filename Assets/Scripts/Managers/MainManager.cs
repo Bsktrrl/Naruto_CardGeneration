@@ -24,6 +24,11 @@ public class MainManager : MonoBehaviour
         {
             Screenhot();
         }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            ScreenCapture.CaptureScreenshot("Test.png", 1);
+            print("Screen captured - Finished");
+        }
     }
 
     void Screenhot()
@@ -35,7 +40,7 @@ public class MainManager : MonoBehaviour
     {
         for (int i = 0; i < cardManager.battle_Senju.cardList.Count; i++)
         {
-            cardManager.DisplayCard(i);
+            cardManager.DisplayBattleCard(i);
 
             yield return new WaitForSeconds(0.2f);
 

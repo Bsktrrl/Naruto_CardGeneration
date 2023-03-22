@@ -8,9 +8,15 @@ using UnityEngine.UI;
 public class CardManager : MonoBehaviour
 {
     #region Variables
+    [Header("Battle Cards")]
     public SO_NarutoCard battle_Senju;
+    [SerializeField] BattleCardObject cardObject;
 
-    [SerializeField] CardObject cardObject;
+    [Header("Action Cards")]
+    public SO_ActionCard actionCards;
+    [SerializeField] ActionCardObject actionCardObject;
+
+    [Header("Color Manager")]
     [SerializeField] ColorManager colorManager;
 
     [Header("Tier Images")]
@@ -98,6 +104,32 @@ public class CardManager : MonoBehaviour
     public Sprite Resource_Effect_TailedBeast;
     public Sprite Resource_Effect_Influence_UP;
     public Sprite Resource_Effect_Influence_DOWN;
+
+    [Header("ActionCard Types")]
+    public Sprite Ally_Rare;
+    public Sprite Ally_Epic;
+    public Sprite Ally_Legendary;
+
+    public Sprite ClanCard;
+    public Sprite Defence;
+    public Sprite DominanceTrack;
+    public Sprite Fire;
+    public Sprite HealingOintment;
+
+    public Sprite Piece_Boat;
+    public Sprite Piece_Chuunin;
+    public Sprite Piece_Jounin;
+    public Sprite Piece_Kage;
+
+    public Sprite Reroll;
+    public Sprite Reuse;
+    public Sprite Scroll;
+    public Sprite Support;
+    public Sprite Trade;
+    public Sprite Travel;
+    public Sprite Turns;
+    public Sprite Upgrade;
+    public Sprite War;
     #endregion
 
 
@@ -106,14 +138,19 @@ public class CardManager : MonoBehaviour
 
     private void Start()
     {
-        DisplayCard(0);
+        //DisplayBattleCard(0);
+        DisplayActionCard(0);
+    }
+    private void Update()
+    {
+        DisplayActionCard(0);
     }
 
 
     //--------------------
 
 
-    public void DisplayCard(int i)
+    public void DisplayBattleCard(int i)
     {
         //Colors depending on Card Type
         switch (battle_Senju.cardList[i].clan)
@@ -1236,6 +1273,176 @@ public class CardManager : MonoBehaviour
         else if (battle_Senju.cardList[i].effectIcon[k] == EffectIcon.Shield)
         {
             cardObject.effectTextIcon_Parent.GetComponentInChildren<Image>().sprite = Shield;
+        }
+    }
+
+
+    //--------------------
+
+
+    void DisplayActionCard(int i)
+    {
+        actionCardObject.name.text = actionCards.actionCardList[i].name;
+        actionCardObject.description.text = actionCards.actionCardList[i].description;
+
+        //Icon
+        switch (actionCards.actionCardList[i].category)
+        {
+            case ActionCards.None:
+                actionCardObject.icon = null;
+                break;
+            case ActionCards.Ally_Rare:
+                actionCardObject.icon.sprite = Ally_Rare;
+                break;
+            case ActionCards.Ally_Epic:
+                actionCardObject.icon.sprite = Ally_Epic;
+                break;
+            case ActionCards.Ally_Legendary:
+                actionCardObject.icon.sprite = Ally_Legendary;
+                break;
+            case ActionCards.ClanCard:
+                actionCardObject.icon.sprite = ClanCard;
+                break;
+            case ActionCards.Defence:
+                actionCardObject.icon.sprite = Defence;
+                break;
+            case ActionCards.DominanceTrack:
+                actionCardObject.icon.sprite = DominanceTrack;
+                break;
+            case ActionCards.Fire:
+                actionCardObject.icon.sprite = Fire;
+                break;
+            case ActionCards.HealingOintment:
+                actionCardObject.icon.sprite = HealingOintment;
+                break;
+            case ActionCards.Piece_Boat:
+                actionCardObject.icon.sprite = Piece_Boat;
+                break;
+            case ActionCards.Piece_Chuunin:
+                actionCardObject.icon.sprite = Piece_Chuunin;
+                break;
+            case ActionCards.Piece_Jounin:
+                actionCardObject.icon.sprite = Piece_Jounin;
+                break;
+            case ActionCards.Piece_Kage:
+                actionCardObject.icon.sprite = Piece_Kage;
+                break;
+            case ActionCards.Reroll:
+                actionCardObject.icon.sprite = Reroll;
+                break;
+            case ActionCards.Reuse:
+                actionCardObject.icon.sprite = Reuse;
+                break;
+            case ActionCards.Scroll:
+                actionCardObject.icon.sprite = Scroll;
+                break;
+            case ActionCards.Support:
+                actionCardObject.icon.sprite = Support;
+                break;
+            case ActionCards.Trade:
+                actionCardObject.icon.sprite = Trade;
+                break;
+            case ActionCards.Travel:
+                actionCardObject.icon.sprite = Travel;
+                break;
+            case ActionCards.Turns:
+                actionCardObject.icon.sprite = Turns;
+                break;
+            case ActionCards.Upgrade:
+                actionCardObject.icon.sprite = Upgrade;
+                break;
+            case ActionCards.War:
+                actionCardObject.icon.sprite = War;
+                break;
+
+            default:
+                break;
+        }
+
+        //Type
+        switch (actionCards.actionCardList[i].type)
+        {
+            case ActionCardTypes.None:
+                actionCardObject.type = null;
+                break;
+            case ActionCardTypes.Action:
+                actionCardObject.type.text = "Action";
+                break;
+            case ActionCardTypes.Reaction:
+                actionCardObject.type.text = "Reaction";
+                break;
+            case ActionCardTypes.SpecialAction:
+                actionCardObject.type.text = "Special Action";
+                break;
+
+            default:
+                break;
+        }
+
+        //Coin
+        #region
+        //Set al Coin Images = false
+        for (int j = 0; j < actionCardObject.coin.Count; j++)
+        {
+            actionCardObject.coin[j].SetActive(false);
+        }
+
+        //Make relevant coin Images visible
+        switch (actionCards.actionCardList[i].cost)
+        {
+            case 1:
+                actionCardObject.coin[0].SetActive(true);
+                break;
+            case 2:
+                actionCardObject.coin[0].SetActive(true);
+                actionCardObject.coin[1].SetActive(true);
+                break;
+            case 3:
+                actionCardObject.coin[0].SetActive(true);
+                actionCardObject.coin[1].SetActive(true);
+                actionCardObject.coin[2].SetActive(true);
+                break;
+            case 4:
+                actionCardObject.coin[0].SetActive(true);
+                actionCardObject.coin[1].SetActive(true);
+                actionCardObject.coin[2].SetActive(true);
+                actionCardObject.coin[3].SetActive(true);
+                break;
+            case 5:
+                actionCardObject.coin[0].SetActive(true);
+                actionCardObject.coin[1].SetActive(true);
+                actionCardObject.coin[2].SetActive(true);
+                actionCardObject.coin[3].SetActive(true);
+                actionCardObject.coin[4].SetActive(true);
+                break;
+            case 6:
+                actionCardObject.coin[0].SetActive(true);
+                actionCardObject.coin[1].SetActive(true);
+                actionCardObject.coin[2].SetActive(true);
+                actionCardObject.coin[3].SetActive(true);
+                actionCardObject.coin[4].SetActive(true);
+                actionCardObject.coin[5].SetActive(true);
+                break;
+            default:
+                break;
+        }
+        #endregion
+
+        //FireBlock
+        if (actionCards.actionCardList[i].fireBlock)
+            actionCardObject.fireBlock.SetActive(true);
+        else
+            actionCardObject.fireBlock.SetActive(false);
+
+        //Strength
+        if (actionCards.actionCardList[i].strength != "0" || actionCards.actionCardList[i].strength != "")
+        {
+            actionCardObject.strength.SetActive(true);
+            actionCardObject.strength.GetComponentInChildren<TextMeshProUGUI>().text = actionCards.actionCardList[i].strength;
+        }
+        else
+        {
+            actionCardObject.strength.SetActive(false);
         }
     }
 }

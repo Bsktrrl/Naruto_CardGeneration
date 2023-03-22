@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CardList", menuName = "ScriptableObjects/CardList", order = 1)]
 public class SO_NarutoCard : ScriptableObject
 {
-    public List<Card> cardList;
+    public List<BattleCard> cardList;
 }
