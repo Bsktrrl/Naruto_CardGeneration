@@ -6,6 +6,7 @@ using UnityEngine;
 public class ActionCard
 {
     public string name;
+    public CardType cardType;
     public ActionCards category;
     public ActionCardTypes type;
     [TextArea(3, 5)] public string description;

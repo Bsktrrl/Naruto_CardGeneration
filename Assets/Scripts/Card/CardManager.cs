@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +12,10 @@ public class CardManager : MonoBehaviour
     [Header("Action Cards")]
     public SO_ActionCard actionCards;
     [SerializeField] ActionCardObject actionCardObject;
+
+    [Header("Clan Specialty Cards")]
+    public SO_ClanSpecialtyCard clanSpecialtyCards;
+    [SerializeField] ClanSpecialtyCardObject clanSpecialtyCardObject;
 
     [Header("Color Manager")]
     [SerializeField] ColorManager colorManager;
@@ -130,6 +131,14 @@ public class CardManager : MonoBehaviour
     public Sprite Turns;
     public Sprite Upgrade;
     public Sprite War;
+
+    [Header("ClanSpecialty Types")]
+    public Sprite Icon_Akatsuki;
+    public Sprite Icon_Hyuga;
+    public Sprite Icon_Otsutsuki;
+    public Sprite Icon_Senju;
+    public Sprite Icon_Uchiha;
+    public Sprite Icon_Uzumaki;
     #endregion
 
 
@@ -138,12 +147,15 @@ public class CardManager : MonoBehaviour
 
     private void Start()
     {
-        //DisplayBattleCard(0);
-        DisplayActionCard(0);
+        DisplayBattleCard(battle_Senju.cardList.Count - 1);
+        DisplayActionCard(actionCards.actionCardList.Count - 1);
+        DisplayClanSpecialty(clanSpecialtyCards.clanSpecialtyCardList.Count - 1);
     }
     private void Update()
     {
-        DisplayActionCard(0);
+        DisplayBattleCard(battle_Senju.cardList.Count - 1);
+        DisplayActionCard(actionCards.actionCardList.Count - 1);
+        DisplayClanSpecialty(clanSpecialtyCards.clanSpecialtyCardList.Count - 1);
     }
 
 
@@ -1443,6 +1455,115 @@ public class CardManager : MonoBehaviour
         else
         {
             actionCardObject.strength.SetActive(false);
+        }
+    }
+
+
+    //--------------------
+
+
+    void DisplayClanSpecialty(int i)
+    {
+        //Clan Type changes
+        switch (clanSpecialtyCards.clanSpecialtyCardList[i].clan)
+        {
+            case Clan.None:
+                break;
+
+            case Clan.Akatsuki:
+                clanSpecialtyCardObject.backgorund.color = colorManager.GetAkatsuki_BackgroundColor();
+                clanSpecialtyCardObject.backgorund_over.color = colorManager.GetAkatsuki_BackgroundColor();
+                clanSpecialtyCardObject.frame.color = colorManager.GetAkatsuki_BorderColor();
+                clanSpecialtyCardObject.header.color = colorManager.GetAkatsuki_TextColor();
+                clanSpecialtyCardObject.description.color = colorManager.GetAkatsuki_TextColor();
+                clanSpecialtyCardObject.clanSymbol.sprite = Icon_Akatsuki;
+                break;
+            case Clan.Hyuga:
+                clanSpecialtyCardObject.backgorund.color = colorManager.GetHyuga_BackgroundColor();
+                clanSpecialtyCardObject.backgorund_over.color = colorManager.GetHyuga_BackgroundColor();
+                clanSpecialtyCardObject.frame.color = colorManager.GetHyuga_BorderColor();
+                clanSpecialtyCardObject.header.color = colorManager.GetHyuga_TextColor();
+                clanSpecialtyCardObject.description.color = colorManager.GetHyuga_TextColor();
+                clanSpecialtyCardObject.clanSymbol.sprite = Icon_Hyuga;
+                break;
+            case Clan.Otsutsuki:
+                clanSpecialtyCardObject.backgorund.color = colorManager.GetOtsutsuki_BackgroundColor();
+                clanSpecialtyCardObject.backgorund_over.color = colorManager.GetOtsutsuki_BackgroundColor();
+                clanSpecialtyCardObject.frame.color = colorManager.GetOtsutsuki_BorderColor();
+                clanSpecialtyCardObject.header.color = colorManager.GetOtsutsuki_TextColor();
+                clanSpecialtyCardObject.description.color = colorManager.GetOtsutsuki_TextColor();
+                clanSpecialtyCardObject.clanSymbol.sprite = Icon_Otsutsuki;
+                break;
+            case Clan.Senju:
+                clanSpecialtyCardObject.backgorund.color = colorManager.GetSenju_BackgroundColor();
+                clanSpecialtyCardObject.backgorund_over.color = colorManager.GetSenju_BackgroundColor();
+                clanSpecialtyCardObject.frame.color = colorManager.GetSenju_BorderColor();
+                clanSpecialtyCardObject.header.color = colorManager.GetSenju_TextColor();
+                clanSpecialtyCardObject.description.color = colorManager.GetSenju_TextColor();
+                clanSpecialtyCardObject.clanSymbol.sprite = Icon_Senju;
+                break;
+            case Clan.Uchiha:
+                clanSpecialtyCardObject.backgorund.color = colorManager.GetUchiha_BackgroundColor();
+                clanSpecialtyCardObject.backgorund_over.color = colorManager.GetUchiha_BackgroundColor();
+                clanSpecialtyCardObject.frame.color = colorManager.GetUchiha_BorderColor();
+                clanSpecialtyCardObject.header.color = colorManager.GetUchiha_TextColor();
+                clanSpecialtyCardObject.description.color = colorManager.GetUchiha_TextColor();
+                clanSpecialtyCardObject.clanSymbol.sprite = Icon_Uchiha;
+                break;
+            case Clan.Uzumaki:
+                clanSpecialtyCardObject.backgorund.color = colorManager.GetUzumaki_BackgroundColor();
+                clanSpecialtyCardObject.backgorund_over.color = colorManager.GetUzumaki_BackgroundColor();
+                clanSpecialtyCardObject.frame.color = colorManager.GetUzumaki_BorderColor();
+                clanSpecialtyCardObject.header.color = colorManager.GetUzumaki_TextColor();
+                clanSpecialtyCardObject.description.color = colorManager.GetUzumaki_TextColor();
+                clanSpecialtyCardObject.clanSymbol.sprite = Icon_Uzumaki;
+                break;
+
+            default:
+                break;
+        }
+
+        //Text
+        clanSpecialtyCardObject.header.text = clanSpecialtyCards.clanSpecialtyCardList[i].name;
+        clanSpecialtyCardObject.description.text = clanSpecialtyCards.clanSpecialtyCardList[i].description;
+
+        //Image
+        clanSpecialtyCardObject.cardImage.sprite = clanSpecialtyCards.clanSpecialtyCardList[i].image;
+
+        //Cost
+        for (int j = 0; j < clanSpecialtyCardObject.coinImage.Count; j++)
+        {
+            clanSpecialtyCardObject.coinImage[j].SetActive(false);
+        }
+        switch (clanSpecialtyCards.clanSpecialtyCardList[i].cost)
+        {
+            case 1:
+                clanSpecialtyCardObject.coinImage[0].SetActive(true);
+                break;
+            case 2:
+                clanSpecialtyCardObject.coinImage[0].SetActive(true);
+                clanSpecialtyCardObject.coinImage[1].SetActive(true);
+                break;
+            case 3:
+                clanSpecialtyCardObject.coinImage[0].SetActive(true);
+                clanSpecialtyCardObject.coinImage[1].SetActive(true);
+                clanSpecialtyCardObject.coinImage[2].SetActive(true);
+                break;
+            case 4:
+                clanSpecialtyCardObject.coinImage[0].SetActive(true);
+                clanSpecialtyCardObject.coinImage[1].SetActive(true);
+                clanSpecialtyCardObject.coinImage[2].SetActive(true);
+                clanSpecialtyCardObject.coinImage[3].SetActive(true);
+                break;
+            case 5:
+                clanSpecialtyCardObject.coinImage[0].SetActive(true);
+                clanSpecialtyCardObject.coinImage[1].SetActive(true);
+                clanSpecialtyCardObject.coinImage[2].SetActive(true);
+                clanSpecialtyCardObject.coinImage[4].SetActive(true);
+                break;
+
+            default:
+                break;
         }
     }
 }

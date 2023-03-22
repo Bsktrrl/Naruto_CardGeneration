@@ -22,7 +22,6 @@ MonoBehaviour:
     TaijutsuValue: 4
     NinjutsuValue: 3
     GenjutsuValue: 10
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 2
     effectState: 0100000003000000
@@ -48,7 +47,6 @@ MonoBehaviour:
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
@@ -74,7 +72,6 @@ MonoBehaviour:
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
@@ -100,7 +97,6 @@ MonoBehaviour:
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
@@ -126,7 +122,6 @@ MonoBehaviour:
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
@@ -152,7 +147,6 @@ MonoBehaviour:
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
@@ -178,7 +172,6 @@ MonoBehaviour:
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
@@ -204,7 +197,6 @@ MonoBehaviour:
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
@@ -221,16 +213,15 @@ MonoBehaviour:
       amount: 2
     - resources: 17
       amount: 4
-  - name: Hagoromo Otsutsuki
+  - name: Hagoromo Otsutsukiddd ddsdsds
     loreInfo: (Adult - 7th Hokage)
     characterSprite: {fileID: 21300000, guid: 113402e86d9b26c40b995a59e6dc75c1, type: 3}
     cardType: 1
-    clan: 3
+    clan: 7
     landOrigins: 16
     TaijutsuValue: 8
     NinjutsuValue: 8
     GenjutsuValue: 2
-    chakraNatureValue: 0000000000000000000000000000000000000000
     headAmount: 2
     heal: 0
     effectState: 0100000003000000
