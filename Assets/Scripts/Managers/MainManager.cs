@@ -33,18 +33,18 @@ public class MainManager : MonoBehaviour
 
     void Screenhot()
     {
-        StartCoroutine(AllCards());
+        StartCoroutine(AllCards(cardManager.battle_Senju));
     }
 
-    IEnumerator AllCards()
+    IEnumerator AllCards(SO_NarutoCard battleCard)
     {
-        for (int i = 0; i < cardManager.battle_Senju.cardList.Count; i++)
+        for (int i = 0; i < battleCard.cardList.Count; i++)
         {
-            cardManager.DisplayBattleCard(i);
+            cardManager.DisplayBattleCard(battleCard, i);
 
             yield return new WaitForSeconds(0.2f);
 
-            ScreenCapture.CaptureScreenshot(cardManager.battle_Senju.cardList[i].cardType + "_" + cardManager.battle_Senju.cardList[i].clan + "_" + cardManager.battle_Senju.cardList[i].name + "_" + cardManager.battle_Senju.cardList[i].loreInfo + ".png", 1);
+            ScreenCapture.CaptureScreenshot(battleCard.cardList[i].cardType + "_" + battleCard.cardList[i].clan + "_" + battleCard.cardList[i].name + "_" + battleCard.cardList[i].loreInfo + ".png", 1);
             print("Screen captured - Finished " + i);
 
             yield return new WaitForSeconds(0.8f);

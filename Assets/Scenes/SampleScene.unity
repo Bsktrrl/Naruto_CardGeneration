@@ -167,13 +167,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73c540d4e855d44d9b913c6d56ac778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battle_Senju: {fileID: 11400000, guid: baacb0b644b57c545b5eb40d70f5289e, type: 2}
+  clanFocus_BattleCard: 2
+  clanFocus_ClanSpecialty: 5
+  colorManager: {fileID: 1881012182}
   cardObject: {fileID: 1986761333937809582}
+  battle_Akatsuki: {fileID: 11400000, guid: 089fe278e96b0ba43abf622ab761e5eb, type: 2}
+  battle_Hyuga: {fileID: 11400000, guid: f0e87a6d4239c1d4ea03970d6a73e261, type: 2}
+  battle_Otsutsuki: {fileID: 11400000, guid: f5bc40357e65c7940a367206bfc14af5, type: 2}
+  battle_Senju: {fileID: 11400000, guid: baacb0b644b57c545b5eb40d70f5289e, type: 2}
+  battle_Uchiha: {fileID: 11400000, guid: 8938ba85df812a7439fb36ceaea6b745, type: 2}
+  battle_Uzumaki: {fileID: 11400000, guid: 3a364bdd08b91bf47a07f51c50f72125, type: 2}
+  battle_Ally_Rare: {fileID: 11400000, guid: 4a69d862e27e7eb469283c7a0ad46e53, type: 2}
+  battle_Ally_Epic: {fileID: 11400000, guid: 9cb25a6195645bf40b099002ccbee8be, type: 2}
+  battle_Ally_Legendary: {fileID: 11400000, guid: 66fc2d7087668d245a20ddf1888d09e6, type: 2}
   actionCards: {fileID: 11400000, guid: 842198a3c8b1a1743be59999c1361881, type: 2}
   actionCardObject: {fileID: 3372878869702784047}
-  clanSpecialtyCards: {fileID: 11400000, guid: f988cee0f9e8150429b6fc3f59f7b9d0, type: 2}
   clanSpecialtyCardObject: {fileID: 4094810175624193848}
-  colorManager: {fileID: 1881012182}
+  clanSpecialty_Akatsuki: {fileID: 11400000, guid: f988cee0f9e8150429b6fc3f59f7b9d0, type: 2}
+  clanSpecialty_Hyuga: {fileID: 11400000, guid: afbd70e775bae114eb7cb9c9c279b08f, type: 2}
+  clanSpecialty_Otsutsuki: {fileID: 11400000, guid: 13fe5f9780cdccd42a7216eb7f3642f5, type: 2}
+  clanSpecialty_Senju: {fileID: 11400000, guid: 761d5dd324a47b445a4b13f5155b7eb9, type: 2}
+  clanSpecialty_Uchiha: {fileID: 11400000, guid: 7c06b272b6f361d4ba3bc1f1a81b2dd1, type: 2}
+  clanSpecialty_Uzumaki: {fileID: 11400000, guid: 3895e6058d0a6c946bd1cda895d44878, type: 2}
   Tier_Common_Image: {fileID: 21300000, guid: c53b1e69632501146b22fc2a0630a20a, type: 3}
   Tier_Rare_Image: {fileID: 21300000, guid: f1b1d048b5829714380377e6a0d3e30f, type: 3}
   Tier_Epic_Image: {fileID: 21300000, guid: 97262238d04a4ab4193d86438b6788de, type: 3}
@@ -8276,10 +8291,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -150}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810174205789058
 MonoBehaviour:
@@ -8334,10 +8349,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -396}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810174332475025
 MonoBehaviour:
@@ -8632,10 +8647,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -519}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810175308440601
 MonoBehaviour:
@@ -8802,10 +8817,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -273}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810175419567034
 MonoBehaviour:
@@ -8886,7 +8901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4094810175624193863
 RectTransform:
   m_ObjectHideFlags: 0

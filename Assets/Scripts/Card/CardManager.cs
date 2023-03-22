@@ -5,21 +5,41 @@ using UnityEngine.UI;
 public class CardManager : MonoBehaviour
 {
     #region Variables
+    [Header("Card Display")]
+    [SerializeField] Clan clanFocus_BattleCard;
+    [SerializeField] Clan clanFocus_ClanSpecialty;
+
+    [Header("Color Manager")]
+    [SerializeField] ColorManager colorManager;
+
     [Header("Battle Cards")]
-    public SO_NarutoCard battle_Senju;
     [SerializeField] BattleCardObject cardObject;
+
+    public SO_NarutoCard battle_Akatsuki;
+    public SO_NarutoCard battle_Hyuga;
+    public SO_NarutoCard battle_Otsutsuki;
+    public SO_NarutoCard battle_Senju;
+    public SO_NarutoCard battle_Uchiha;
+    public SO_NarutoCard battle_Uzumaki;
+    public SO_NarutoCard battle_Ally_Rare;
+    public SO_NarutoCard battle_Ally_Epic;
+    public SO_NarutoCard battle_Ally_Legendary;
 
     [Header("Action Cards")]
     public SO_ActionCard actionCards;
     [SerializeField] ActionCardObject actionCardObject;
 
     [Header("Clan Specialty Cards")]
-    public SO_ClanSpecialtyCard clanSpecialtyCards;
     [SerializeField] ClanSpecialtyCardObject clanSpecialtyCardObject;
 
-    [Header("Color Manager")]
-    [SerializeField] ColorManager colorManager;
+    public SO_ClanSpecialtyCard clanSpecialty_Akatsuki;
+    public SO_ClanSpecialtyCard clanSpecialty_Hyuga;
+    public SO_ClanSpecialtyCard clanSpecialty_Otsutsuki;
+    public SO_ClanSpecialtyCard clanSpecialty_Senju;
+    public SO_ClanSpecialtyCard clanSpecialty_Uchiha;
+    public SO_ClanSpecialtyCard clanSpecialty_Uzumaki;
 
+    #region Sprites
     [Header("Tier Images")]
     public Sprite Tier_Common_Image;
     public Sprite Tier_Rare_Image;
@@ -141,31 +161,121 @@ public class CardManager : MonoBehaviour
     public Sprite Icon_Uzumaki;
     #endregion
 
+    #endregion
+
 
     //--------------------
 
 
     private void Start()
     {
-        DisplayBattleCard(battle_Senju.cardList.Count - 1);
-        DisplayActionCard(actionCards.actionCardList.Count - 1);
-        DisplayClanSpecialty(clanSpecialtyCards.clanSpecialtyCardList.Count - 1);
+        CardsDisplay();
     }
     private void Update()
     {
-        DisplayBattleCard(battle_Senju.cardList.Count - 1);
-        DisplayActionCard(actionCards.actionCardList.Count - 1);
-        DisplayClanSpecialty(clanSpecialtyCards.clanSpecialtyCardList.Count - 1);
+        CardsDisplay();
     }
 
 
     //--------------------
 
 
-    public void DisplayBattleCard(int i)
+    void CardsDisplay()
+    {
+        //Battle Cards
+        switch (clanFocus_BattleCard)
+        {
+            case Clan.None:
+                break;
+
+            case Clan.Akatsuki:
+                if (battle_Akatsuki.cardList.Count > 0)
+                    DisplayBattleCard(battle_Akatsuki, battle_Akatsuki.cardList.Count - 1);
+                break;
+            case Clan.Hyuga:
+                if (battle_Hyuga.cardList.Count > 0)
+                    DisplayBattleCard(battle_Hyuga, battle_Hyuga.cardList.Count - 1);
+                break;
+            case Clan.Otsutsuki:
+                if (battle_Otsutsuki.cardList.Count > 0)
+                    DisplayBattleCard(battle_Otsutsuki, battle_Otsutsuki.cardList.Count - 1);
+                break;
+            case Clan.Senju:
+                if (battle_Senju.cardList.Count > 0)
+                    DisplayBattleCard(battle_Senju, battle_Senju.cardList.Count - 1);
+                break;
+            case Clan.Uchiha:
+                if (battle_Uchiha.cardList.Count > 0)
+                    DisplayBattleCard(battle_Uchiha, battle_Uchiha.cardList.Count - 1);
+                break;
+            case Clan.Uzumaki:
+                if (battle_Uzumaki.cardList.Count > 0)
+                    DisplayBattleCard(battle_Uzumaki, battle_Uzumaki.cardList.Count - 1);
+                break;
+            case Clan.Ally_Rare:
+                if (battle_Ally_Rare.cardList.Count > 0)
+                    DisplayBattleCard(battle_Ally_Rare, battle_Ally_Rare.cardList.Count - 1);
+                break;
+            case Clan.Ally_Epic:
+                if (battle_Ally_Epic.cardList.Count > 0)
+                    DisplayBattleCard(battle_Ally_Epic, battle_Ally_Epic.cardList.Count - 1);
+                break;
+            case Clan.Ally_Legendary:
+                if (battle_Ally_Legendary.cardList.Count > 0)
+                    DisplayBattleCard(battle_Ally_Legendary, battle_Ally_Legendary.cardList.Count - 1);
+                break;
+
+            default:
+                break;
+        }
+
+        //Action Cards
+        DisplayActionCard(actionCards.actionCardList.Count - 1);
+
+        //Clan Spacialty Cards
+        switch (clanFocus_ClanSpecialty)
+        {
+            case Clan.None:
+                break;
+
+            case Clan.Akatsuki:
+                if (clanSpecialty_Akatsuki.clanSpecialtyCardList.Count > 0)
+                    DisplayClanSpecialty(clanSpecialty_Akatsuki, clanSpecialty_Akatsuki.clanSpecialtyCardList.Count - 1);
+                break;
+            case Clan.Hyuga:
+                if (clanSpecialty_Hyuga.clanSpecialtyCardList.Count > 0)
+                    DisplayClanSpecialty(clanSpecialty_Hyuga, clanSpecialty_Hyuga.clanSpecialtyCardList.Count - 1);
+                break;
+            case Clan.Otsutsuki:
+                if (clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count > 0)
+                    DisplayClanSpecialty(clanSpecialty_Otsutsuki, clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count - 1);
+                break;
+            case Clan.Senju:
+                if (clanSpecialty_Senju.clanSpecialtyCardList.Count > 0)
+                    DisplayClanSpecialty(clanSpecialty_Senju, clanSpecialty_Senju.clanSpecialtyCardList.Count - 1);
+                break;
+            case Clan.Uchiha:
+                if (clanSpecialty_Uchiha.clanSpecialtyCardList.Count > 0)
+                    DisplayClanSpecialty(clanSpecialty_Uchiha, clanSpecialty_Uchiha.clanSpecialtyCardList.Count - 1);
+                break;
+            case Clan.Uzumaki:
+                if (clanSpecialty_Uzumaki.clanSpecialtyCardList.Count > 0)
+                    DisplayClanSpecialty(clanSpecialty_Uzumaki, clanSpecialty_Uzumaki.clanSpecialtyCardList.Count - 1);
+                break;
+
+            default:
+                break;
+        }
+    }
+
+
+    //--------------------
+
+
+    public void DisplayBattleCard(SO_NarutoCard battleCard, int i)
     {
         //Colors depending on Card Type
-        switch (battle_Senju.cardList[i].clan)
+        switch (battleCard.cardList[i].clan)
         {
             case Clan.None:
                 for (int j = 0; j < cardObject.background_Image.Count; j++)
@@ -420,11 +530,11 @@ public class CardManager : MonoBehaviour
         }
 
         //Name Box
-        cardObject.name_Text.text = battle_Senju.cardList[i].name;
-        cardObject.loreInfo_Text.text = battle_Senju.cardList[i].loreInfo;
+        cardObject.name_Text.text = battleCard.cardList[i].name;
+        cardObject.loreInfo_Text.text = battleCard.cardList[i].loreInfo;
         for (int j = 0; j < cardObject.landOrigins_Image.Count; j++)
         {
-            switch (battle_Senju.cardList[i].landOrigins)
+            switch (battleCard.cardList[i].landOrigins)
             {
                 case landOrigins.None:
                     cardObject.landOrigins_Image[j].sprite = null;
@@ -557,15 +667,15 @@ public class CardManager : MonoBehaviour
         }
 
         //Character Image
-        cardObject.characterImage.sprite = battle_Senju.cardList[i].characterSprite;
+        cardObject.characterImage.sprite = battleCard.cardList[i].characterSprite;
 
         //Values
-        cardObject.taijutsuValue_Text.text = battle_Senju.cardList[i].TaijutsuValue.ToString();
-        cardObject.ninjutsuValue_Text.text = battle_Senju.cardList[i].NinjutsuValue.ToString();
-        cardObject.genjutsuValue_Text.text = battle_Senju.cardList[i].GenjutsuValue.ToString();
+        cardObject.taijutsuValue_Text.text = battleCard.cardList[i].TaijutsuValue.ToString();
+        cardObject.ninjutsuValue_Text.text = battleCard.cardList[i].NinjutsuValue.ToString();
+        cardObject.genjutsuValue_Text.text = battleCard.cardList[i].GenjutsuValue.ToString();
 
         //Heal
-        switch (battle_Senju.cardList[i].heal)
+        switch (battleCard.cardList[i].heal)
         {
             case Heal.None:
                 cardObject.healParent.SetActive(false);
@@ -585,7 +695,7 @@ public class CardManager : MonoBehaviour
         }
 
         //Tailed Beast Heads
-        switch (battle_Senju.cardList[i].headAmount)
+        switch (battleCard.cardList[i].headAmount)
         {
             case 0:
                 cardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 60);
@@ -644,7 +754,7 @@ public class CardManager : MonoBehaviour
         //  - States - Change the size of box based on the amount of States
         for (int j = 0; j < cardObject.states_Image.Count; j++)
             cardObject.states_Image[j].SetActive(true);
-        switch (battle_Senju.cardList[i].effectState.Count)
+        switch (battleCard.cardList[i].effectState.Count)
         {
             case 0:
                 cardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
@@ -685,9 +795,9 @@ public class CardManager : MonoBehaviour
             default:
                 break;
         }
-        for (int j = 0; j < battle_Senju.cardList[i].effectState.Count; j++)
+        for (int j = 0; j < battleCard.cardList[i].effectState.Count; j++)
         {
-            switch (battle_Senju.cardList[i].effectState[j])
+            switch (battleCard.cardList[i].effectState[j])
             {
                 case State.None:
                     cardObject.states_Image[j].GetComponent<Image>().sprite = null;
@@ -719,141 +829,141 @@ public class CardManager : MonoBehaviour
         //  - Effect Text
         #region
         //If == null
-        if (battle_Senju.cardList[i].effectIcon.Count <= 0)
+        if (battleCard.cardList[i].effectIcon.Count <= 0)
         {
-            DisplayTextOnly(i);
+            DisplayTextOnly(battleCard, i);
         }
 
-        else if (battle_Senju.cardList[i].effectIcon.Count == 1)
+        else if (battleCard.cardList[i].effectIcon.Count == 1)
         {
             //If == 0 + text
-            if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.None)
+            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None)
             {
-                DisplayTextOnly(i);
+                DisplayTextOnly(battleCard, i);
             }
 
             //If != 1 + text
-            else if (battle_Senju.cardList[i].effectIcon[0] != EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None)
             {
-                if (battle_Senju.cardList[i].effectText == "")
+                if (battleCard.cardList[i].effectText == "")
                 {
-                    Display1Icon(i);
+                    Display1Icon(battleCard, i);
                 }
                 else
                 {
-                    DisplayTextAndIcon(i, 0);
+                    DisplayTextAndIcon(battleCard, i, 0);
                 }
             }
         }
-        else if (battle_Senju.cardList[i].effectIcon.Count == 2)
+        else if (battleCard.cardList[i].effectIcon.Count == 2)
         {
             //If 0, 0
-            if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] == EffectIcon.None)
+            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None)
             {
-                DisplayTextOnly(i);
+                DisplayTextOnly(battleCard, i);
             }
             //If 1, 0
-            else if (battle_Senju.cardList[i].effectIcon[0] != EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] == EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None)
             {
-                if (battle_Senju.cardList[i].effectText == "")
+                if (battleCard.cardList[i].effectText == "")
                 {
-                    Display1Icon(0);
+                    Display1Icon(battleCard, 0);
                 }
                 else
                 {
-                    DisplayTextAndIcon(i, 0);
+                    DisplayTextAndIcon(battleCard, i, 0);
                 }
             }
             //If 0, 1
-            if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] != EffectIcon.None)
+            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None)
             {
-                if (battle_Senju.cardList[i].effectText == "")
+                if (battleCard.cardList[i].effectText == "")
                 {
-                    Display1Icon(1);
+                    Display1Icon(battleCard, 1);
                 }
                 else
                 {
-                    DisplayTextAndIcon(i, 1);
+                    DisplayTextAndIcon(battleCard, i, 1);
                 }
             }
             //If 1, 1
-            if (battle_Senju.cardList[i].effectIcon[0] != EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] != EffectIcon.None)
+            if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None)
             {
-                Display2Icons(i, 0, 1);
+                Display2Icons(battleCard, i, 0, 1);
             }
         }
-        else if (battle_Senju.cardList[i].effectIcon.Count == 3)
+        else if (battleCard.cardList[i].effectIcon.Count == 3)
         {
             //If 0, 0, 0
-            if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] == EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] == EffectIcon.None)
+            if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
             {
-                DisplayTextOnly(i);
+                DisplayTextOnly(battleCard, i);
             }
             //If 1, 0, 0
-            else if (battle_Senju.cardList[i].effectIcon[0] != EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] == EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] == EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
             {
-                if (battle_Senju.cardList[i].effectText == "")
+                if (battleCard.cardList[i].effectText == "")
                 {
-                    Display1Icon(0);
+                    Display1Icon(battleCard, 0);
                 }
                 else
                 {
-                    DisplayTextAndIcon(i, 0);
+                    DisplayTextAndIcon(battleCard, i, 0);
                 }
             }
             //If 0, 1, 0
-            else if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] != EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] == EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
             {
-                if (battle_Senju.cardList[i].effectText == "")
+                if (battleCard.cardList[i].effectText == "")
                 {
-                    Display1Icon(1);
+                    Display1Icon(battleCard, 1);
                 }
                 else
                 {
-                    DisplayTextAndIcon(i, 1);
+                    DisplayTextAndIcon(battleCard, i, 1);
                 }
             }
             //If 0, 0, 1
-            else if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] == EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
             {
-                if (battle_Senju.cardList[i].effectText == "")
+                if (battleCard.cardList[i].effectText == "")
                 {
-                    Display1Icon(2);
+                    Display1Icon(battleCard, 2);
                 }
                 else
                 {
-                    DisplayTextAndIcon(i, 2);
+                    DisplayTextAndIcon(battleCard, i, 2);
                 }
             }
             //If 1, 1, 0
-            else if (battle_Senju.cardList[i].effectIcon[0] != EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] != EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] == EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] == EffectIcon.None)
             {
-                Display2Icons(i, 0, 1);
+                Display2Icons(battleCard, i, 0, 1);
             }
             //If 1, 0, 1
-            else if (battle_Senju.cardList[i].effectIcon[0] != EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] == EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] == EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
             {
-                Display2Icons(i, 0 , 2);
+                Display2Icons(battleCard, i, 0 , 2);
             }
             //If 0, 1, 1
-            else if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] != EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
             {
-                Display2Icons(i, 1, 2);
+                Display2Icons(battleCard, i, 1, 2);
             }
             //If 1, 1, 1
-            else if (battle_Senju.cardList[i].effectIcon[0] != EffectIcon.None && battle_Senju.cardList[i].effectIcon[1] != EffectIcon.None & battle_Senju.cardList[i].effectIcon[2] != EffectIcon.None)
+            else if (battleCard.cardList[i].effectIcon[0] != EffectIcon.None && battleCard.cardList[i].effectIcon[1] != EffectIcon.None & battleCard.cardList[i].effectIcon[2] != EffectIcon.None)
             {
-                Display3Icons(i);
+                Display3Icons(battleCard, i);
             }
         }
-        else if (battle_Senju.cardList[i].effectIcon.Count >= 4)
+        else if (battleCard.cardList[i].effectIcon.Count >= 4)
         {
-            DisplayTextOnly(i);
+            DisplayTextOnly(battleCard, i);
         }
         #endregion
 
         //  - Tier
-        switch (battle_Senju.cardList[i].tier)
+        switch (battleCard.cardList[i].tier)
         {
             case Tier.None:
                 cardObject.tier_Image = null;
@@ -886,47 +996,47 @@ public class CardManager : MonoBehaviour
 
         //Set relevant ResourceImages true
         #region
-        if (battle_Senju.cardList[i].resources[0].amount >= 1 && battle_Senju.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.cardList[i].resources[0].amount >= 1 && battleCard.cardList[i].resources[0].resources != Resources.None)
             cardObject.resources_Image[0].SetActive(true);
-        if (battle_Senju.cardList[i].resources[0].amount >= 2 && battle_Senju.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.cardList[i].resources[0].amount >= 2 && battleCard.cardList[i].resources[0].resources != Resources.None)
             cardObject.resources_Image[1].SetActive(true);
-        if (battle_Senju.cardList[i].resources[0].amount >= 3 && battle_Senju.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.cardList[i].resources[0].amount >= 3 && battleCard.cardList[i].resources[0].resources != Resources.None)
             cardObject.resources_Image[2].SetActive(true);
-        if (battle_Senju.cardList[i].resources[0].amount >= 4 && battle_Senju.cardList[i].resources[0].resources != Resources.None)
+        if (battleCard.cardList[i].resources[0].amount >= 4 && battleCard.cardList[i].resources[0].resources != Resources.None)
             cardObject.resources_Image[3].SetActive(true);
 
-        if (battle_Senju.cardList[i].resources[1].amount >= 1 && battle_Senju.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.cardList[i].resources[1].amount >= 1 && battleCard.cardList[i].resources[1].resources != Resources.None)
             cardObject.resources_Image[4].SetActive(true);
-        if (battle_Senju.cardList[i].resources[1].amount >= 2 && battle_Senju.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.cardList[i].resources[1].amount >= 2 && battleCard.cardList[i].resources[1].resources != Resources.None)
             cardObject.resources_Image[5].SetActive(true);
-        if (battle_Senju.cardList[i].resources[1].amount >= 3 && battle_Senju.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.cardList[i].resources[1].amount >= 3 && battleCard.cardList[i].resources[1].resources != Resources.None)
             cardObject.resources_Image[6].SetActive(true);
-        if (battle_Senju.cardList[i].resources[1].amount >= 4 && battle_Senju.cardList[i].resources[1].resources != Resources.None)
+        if (battleCard.cardList[i].resources[1].amount >= 4 && battleCard.cardList[i].resources[1].resources != Resources.None)
             cardObject.resources_Image[7].SetActive(true);
 
-        if (battle_Senju.cardList[i].resources[2].amount >= 1 && battle_Senju.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.cardList[i].resources[2].amount >= 1 && battleCard.cardList[i].resources[2].resources != Resources.None)
             cardObject.resources_Image[8].SetActive(true);
-        if (battle_Senju.cardList[i].resources[2].amount >= 2 && battle_Senju.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.cardList[i].resources[2].amount >= 2 && battleCard.cardList[i].resources[2].resources != Resources.None)
             cardObject.resources_Image[9].SetActive(true);
-        if (battle_Senju.cardList[i].resources[2].amount >= 3 && battle_Senju.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.cardList[i].resources[2].amount >= 3 && battleCard.cardList[i].resources[2].resources != Resources.None)
             cardObject.resources_Image[10].SetActive(true);
-        if (battle_Senju.cardList[i].resources[2].amount >= 4 && battle_Senju.cardList[i].resources[2].resources != Resources.None)
+        if (battleCard.cardList[i].resources[2].amount >= 4 && battleCard.cardList[i].resources[2].resources != Resources.None)
             cardObject.resources_Image[11].SetActive(true);
 
-        if (battle_Senju.cardList[i].resources[3].amount >= 1 && battle_Senju.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.cardList[i].resources[3].amount >= 1 && battleCard.cardList[i].resources[3].resources != Resources.None)
             cardObject.resources_Image[12].SetActive(true);
-        if (battle_Senju.cardList[i].resources[3].amount >= 2 && battle_Senju.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.cardList[i].resources[3].amount >= 2 && battleCard.cardList[i].resources[3].resources != Resources.None)
             cardObject.resources_Image[13].SetActive(true);
-        if (battle_Senju.cardList[i].resources[3].amount >= 3 && battle_Senju.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.cardList[i].resources[3].amount >= 3 && battleCard.cardList[i].resources[3].resources != Resources.None)
             cardObject.resources_Image[14].SetActive(true);
-        if (battle_Senju.cardList[i].resources[3].amount >= 4 && battle_Senju.cardList[i].resources[3].resources != Resources.None)
+        if (battleCard.cardList[i].resources[3].amount >= 4 && battleCard.cardList[i].resources[3].resources != Resources.None)
             cardObject.resources_Image[15].SetActive(true);
         #endregion
 
         //Change all ResourceImages to the correct Resource
         for (int j = 0; j < 4; j++)
         {
-            switch (battle_Senju.cardList[i].resources[j].resources)
+            switch (battleCard.cardList[i].resources[j].resources)
             {
                 case Resources.None:
                     break;
@@ -935,7 +1045,7 @@ public class CardManager : MonoBehaviour
                     {
                         cardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Boat;
 
-                        switch (battle_Senju.cardList[i].clan)
+                        switch (battleCard.cardList[i].clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -970,7 +1080,7 @@ public class CardManager : MonoBehaviour
                 case Resources.Chuunin:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battle_Senju.cardList[i].clan)
+                        switch (battleCard.cardList[i].clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1007,7 +1117,7 @@ public class CardManager : MonoBehaviour
                 case Resources.Jounin:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battle_Senju.cardList[i].clan)
+                        switch (battleCard.cardList[i].clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1044,7 +1154,7 @@ public class CardManager : MonoBehaviour
                 case Resources.Kage:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battle_Senju.cardList[i].clan)
+                        switch (battleCard.cardList[i].clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1085,7 +1195,7 @@ public class CardManager : MonoBehaviour
                 case Resources.ClanCard:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                     {
-                        switch (battle_Senju.cardList[i].clan)
+                        switch (battleCard.cardList[i].clan)
                         {
                             case Clan.None:
                                 cardObject.resources_Image[k].GetComponent<Image>().sprite = null;
@@ -1175,15 +1285,15 @@ public class CardManager : MonoBehaviour
         #endregion
     }
 
-    void DisplayTextOnly(int i)
+    void DisplayTextOnly(SO_NarutoCard battleCard, int i)
     {
         cardObject.effectText_Parent.SetActive(true);
         cardObject.effectTextIcon_Parent.SetActive(false);
         cardObject.effectIcon_Parent.SetActive(false);
 
-        cardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battle_Senju.cardList[i].effectText;
+        cardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battleCard.cardList[i].effectText;
     }
-    void Display3Icons(int i)
+    void Display3Icons(SO_NarutoCard battleCard, int i)
     {
         cardObject.effectText_Parent.SetActive(false);
         cardObject.effectTextIcon_Parent.SetActive(false);
@@ -1199,19 +1309,19 @@ public class CardManager : MonoBehaviour
         //Show correct image
         for (int j = 0; j < 3; j++)
         {
-            if (battle_Senju.cardList[i].effectIcon[j] == EffectIcon.Skull)
+            if (battleCard.cardList[i].effectIcon[j] == EffectIcon.Skull)
             {
                 cardObject.effectIcons[j].SetActive(true);
                 cardObject.effectIcons[j].GetComponentInChildren<Image>().sprite = Skull;
             }
-            else if (battle_Senju.cardList[i].effectIcon[j] == EffectIcon.Shield)
+            else if (battleCard.cardList[i].effectIcon[j] == EffectIcon.Shield)
             {
                 cardObject.effectIcons[j].SetActive(true);
                 cardObject.effectIcons[j].GetComponentInChildren<Image>().sprite = Shield;
             }
         }
     }
-    void Display2Icons(int i, int k, int l)
+    void Display2Icons(SO_NarutoCard battleCard, int i, int k, int l)
     {
         cardObject.effectText_Parent.SetActive(false);
         cardObject.effectTextIcon_Parent.SetActive(false);
@@ -1226,30 +1336,30 @@ public class CardManager : MonoBehaviour
 
         //Show correct image
         //k
-        if (battle_Senju.cardList[i].effectIcon[k] == EffectIcon.Skull)
+        if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Skull)
         {
             cardObject.effectIcons[k].SetActive(true);
             cardObject.effectIcons[k].GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battle_Senju.cardList[i].effectIcon[k] == EffectIcon.Shield)
+        else if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Shield)
         {
             cardObject.effectIcons[k].SetActive(true);
             cardObject.effectIcons[k].GetComponentInChildren<Image>().sprite = Shield;
         }
 
         //l
-        if (battle_Senju.cardList[i].effectIcon[l] == EffectIcon.Skull)
+        if (battleCard.cardList[i].effectIcon[l] == EffectIcon.Skull)
         {
             cardObject.effectIcons[l].SetActive(true);
             cardObject.effectIcons[l].GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battle_Senju.cardList[i].effectIcon[l] == EffectIcon.Shield)
+        else if (battleCard.cardList[i].effectIcon[l] == EffectIcon.Shield)
         {
             cardObject.effectIcons[l].SetActive(true);
             cardObject.effectIcons[l].GetComponentInChildren<Image>().sprite = Shield;
         }
     }
-    void Display1Icon(int i)
+    void Display1Icon(SO_NarutoCard battleCard, int i)
     {
         cardObject.effectIcons[0].SetActive(true);
         cardObject.effectIcons[1].SetActive(false);
@@ -1261,28 +1371,28 @@ public class CardManager : MonoBehaviour
 
         cardObject.effectIcon_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(453.3f, 453.3f);
 
-        if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.Skull)
+        if (battleCard.cardList[i].effectIcon[0] == EffectIcon.Skull)
         {
             cardObject.effectIcons[0].GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battle_Senju.cardList[i].effectIcon[0] == EffectIcon.Shield)
+        else if (battleCard.cardList[i].effectIcon[0] == EffectIcon.Shield)
         {
             cardObject.effectIcons[0].GetComponentInChildren<Image>().sprite = Shield;
         }
     }
-    void DisplayTextAndIcon(int i, int k)
+    void DisplayTextAndIcon(SO_NarutoCard battleCard, int i, int k)
     {
         cardObject.effectText_Parent.SetActive(false);
         cardObject.effectTextIcon_Parent.SetActive(true);
         cardObject.effectIcon_Parent.SetActive(false);
 
-        cardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battle_Senju.cardList[i].effectText;
+        cardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battleCard.cardList[i].effectText;
 
-        if (battle_Senju.cardList[i].effectIcon[k] == EffectIcon.Skull)
+        if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Skull)
         {
             cardObject.effectTextIcon_Parent.GetComponentInChildren<Image>().sprite = Skull;
         }
-        else if (battle_Senju.cardList[i].effectIcon[k] == EffectIcon.Shield)
+        else if (battleCard.cardList[i].effectIcon[k] == EffectIcon.Shield)
         {
             cardObject.effectTextIcon_Parent.GetComponentInChildren<Image>().sprite = Shield;
         }
@@ -1462,10 +1572,10 @@ public class CardManager : MonoBehaviour
     //--------------------
 
 
-    void DisplayClanSpecialty(int i)
+    void DisplayClanSpecialty(SO_ClanSpecialtyCard clanSpecialtyCard, int i)
     {
         //Clan Type changes
-        switch (clanSpecialtyCards.clanSpecialtyCardList[i].clan)
+        switch (clanSpecialtyCard.clanSpecialtyCardList[i].clan)
         {
             case Clan.None:
                 break;
@@ -1524,18 +1634,18 @@ public class CardManager : MonoBehaviour
         }
 
         //Text
-        clanSpecialtyCardObject.header.text = clanSpecialtyCards.clanSpecialtyCardList[i].name;
-        clanSpecialtyCardObject.description.text = clanSpecialtyCards.clanSpecialtyCardList[i].description;
+        clanSpecialtyCardObject.header.text = clanSpecialtyCard.clanSpecialtyCardList[i].name;
+        clanSpecialtyCardObject.description.text = clanSpecialtyCard.clanSpecialtyCardList[i].description;
 
         //Image
-        clanSpecialtyCardObject.cardImage.sprite = clanSpecialtyCards.clanSpecialtyCardList[i].image;
+        clanSpecialtyCardObject.cardImage.sprite = clanSpecialtyCard.clanSpecialtyCardList[i].image;
 
         //Cost
         for (int j = 0; j < clanSpecialtyCardObject.coinImage.Count; j++)
         {
             clanSpecialtyCardObject.coinImage[j].SetActive(false);
         }
-        switch (clanSpecialtyCards.clanSpecialtyCardList[i].cost)
+        switch (clanSpecialtyCard.clanSpecialtyCardList[i].cost)
         {
             case 1:
                 clanSpecialtyCardObject.coinImage[0].SetActive(true);

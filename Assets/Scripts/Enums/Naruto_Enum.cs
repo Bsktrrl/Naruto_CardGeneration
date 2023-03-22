@@ -23,7 +23,10 @@ public enum Clan
     Uchiha,
     Uzumaki,
 
-    Ally
+    Ally,
+    Ally_Rare,
+    Ally_Epic,
+    Ally_Legendary
 }
 public enum ChakraNatures
 {
