@@ -168,7 +168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clanFocus_BattleCard: 2
+  battleCard_Number: -1
   clanFocus_ClanSpecialty: 5
+  clanSpecialtyCard_Number: -1
+  actionCard_Number: -1
   colorManager: {fileID: 1881012182}
   cardObject: {fileID: 1986761333937809582}
   battle_Akatsuki: {fileID: 11400000, guid: 089fe278e96b0ba43abf622ab761e5eb, type: 2}
@@ -522,9 +525,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265ae66c40909894eb314ffb880997a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleCardObject: {fileID: 1986761333937809582}
+  actionCardObject: {fileID: 3372878869702784047}
+  clanSpecialtyCardObject: {fileID: 4094810175624193848}
   battleUI_Parent: {fileID: 1986761333937809616}
   actionUI_Parent: {fileID: 3372878869702784081}
   clanSpecialtyUI_Parent: {fileID: 4094810175624193862}
+  isTakingScreenShots: 0
 --- !u!1 &1881012180
 GameObject:
   m_ObjectHideFlags: 0
@@ -8546,7 +8553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4094810175135147302
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8562,10 +8569,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -519}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810175135147303
 MonoBehaviour:
@@ -8652,7 +8659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -519}
+  m_AnchoredPosition: {x: 150, y: -642}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810175308440601
@@ -9317,12 +9324,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
+  m_fontSize: 164.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 30
-  m_fontSizeMax: 130
+  m_fontSizeMax: 200
   m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

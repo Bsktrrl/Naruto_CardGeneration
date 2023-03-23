@@ -9,7 +9,10 @@ public class CardManager : MonoBehaviour
 
     [Header("Card Display")]
     [SerializeField] Clan clanFocus_BattleCard;
+    [SerializeField] int battleCard_Number;
     [SerializeField] Clan clanFocus_ClanSpecialty;
+    [SerializeField] int clanSpecialtyCard_Number;
+    [SerializeField] int actionCard_Number;
 
     [Header("Color Manager")]
     [SerializeField] ColorManager colorManager;
@@ -196,39 +199,66 @@ public class CardManager : MonoBehaviour
                 break;
 
             case Clan.Akatsuki:
-                if (battle_Akatsuki.cardList.Count > 0)
+                if (battle_Akatsuki.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Akatsuki.cardList.Count)
+                    DisplayBattleCard(battle_Akatsuki.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Akatsuki.cardList[battle_Akatsuki.cardList.Count - 1]);
                 break;
             case Clan.Hyuga:
-                if (battle_Hyuga.cardList.Count > 0)
+                if (battle_Hyuga.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Hyuga.cardList.Count)
+                    DisplayBattleCard(battle_Hyuga.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Hyuga.cardList[battle_Hyuga.cardList.Count - 1]);
                 break;
             case Clan.Otsutsuki:
-                if (battle_Otsutsuki.cardList.Count > 0)
+                if (battle_Otsutsuki.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Otsutsuki.cardList.Count)
+                    DisplayBattleCard(battle_Otsutsuki.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Otsutsuki.cardList[battle_Otsutsuki.cardList.Count - 1]);
                 break;
             case Clan.Senju:
-                if (battle_Senju.cardList.Count > 0)
+                if (battle_Senju.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Senju.cardList.Count)
+                    DisplayBattleCard(battle_Senju.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Senju.cardList[battle_Senju.cardList.Count - 1]);
                 break;
             case Clan.Uchiha:
-                if (battle_Uchiha.cardList.Count > 0)
+                if (battle_Uchiha.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Uchiha.cardList.Count)
+                    DisplayBattleCard(battle_Uchiha.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Uchiha.cardList[battle_Uchiha.cardList.Count - 1]);
                 break;
             case Clan.Uzumaki:
-                if (battle_Uzumaki.cardList.Count > 0)
+                if (battle_Uzumaki.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Uzumaki.cardList.Count)
+                    DisplayBattleCard(battle_Uzumaki.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Uzumaki.cardList[battle_Uzumaki.cardList.Count - 1]);
                 break;
             case Clan.Ally_Rare:
-                if (battle_Ally_Rare.cardList.Count > 0)
+                if (battle_Ally_Rare.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Ally_Rare.cardList.Count)
+                    DisplayBattleCard(battle_Ally_Rare.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Ally_Rare.cardList[battle_Ally_Rare.cardList.Count - 1]);
                 break;
             case Clan.Ally_Epic:
-                if (battle_Ally_Epic.cardList.Count > 0)
+                if (battle_Ally_Epic.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Ally_Epic.cardList.Count)
+                    DisplayBattleCard(battle_Ally_Epic.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Ally_Epic.cardList[battle_Ally_Epic.cardList.Count - 1]);
                 break;
             case Clan.Ally_Legendary:
-                if (battle_Ally_Legendary.cardList.Count > 0)
+                if (battle_Ally_Legendary.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Ally_Legendary.cardList.Count)
+                    DisplayBattleCard(battle_Ally_Legendary.cardList[battleCard_Number]);
+                else
                     DisplayBattleCard(battle_Ally_Legendary.cardList[battle_Ally_Legendary.cardList.Count - 1]);
                 break;
 
@@ -237,7 +267,11 @@ public class CardManager : MonoBehaviour
         }
 
         //Action Cards
-        DisplayActionCard(actionCards.actionCardList[actionCards.actionCardList.Count - 1]);
+        if (actionCards.actionCardList.Count <= 0) { }
+        else if (actionCard_Number >= 0 && actionCard_Number < actionCards.actionCardList.Count)
+            DisplayActionCard(actionCards.actionCardList[actionCard_Number]);
+        else
+            DisplayActionCard(actionCards.actionCardList[actionCards.actionCardList.Count - 1]);
 
         //Clan Spacialty Cards
         switch (clanFocus_ClanSpecialty)
@@ -246,27 +280,45 @@ public class CardManager : MonoBehaviour
                 break;
 
             case Clan.Akatsuki:
-                if (clanSpecialty_Akatsuki.clanSpecialtyCardList.Count > 0)
+                if (clanSpecialty_Akatsuki.clanSpecialtyCardList.Count <= 0) { }
+                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Akatsuki.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Akatsuki.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else
                     DisplayClanSpecialty(clanSpecialty_Akatsuki.clanSpecialtyCardList[clanSpecialty_Akatsuki.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Hyuga:
-                if (clanSpecialty_Hyuga.clanSpecialtyCardList.Count > 0)
+                if (clanSpecialty_Hyuga.clanSpecialtyCardList.Count <= 0) { }
+                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Hyuga.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Hyuga.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else
                     DisplayClanSpecialty(clanSpecialty_Hyuga.clanSpecialtyCardList[clanSpecialty_Hyuga.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Otsutsuki:
-                if (clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count > 0)
+                if (clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count <= 0) { }
+                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Otsutsuki.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else
                     DisplayClanSpecialty(clanSpecialty_Otsutsuki.clanSpecialtyCardList[clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Senju:
-                if (clanSpecialty_Senju.clanSpecialtyCardList.Count > 0)
+                if (clanSpecialty_Senju.clanSpecialtyCardList.Count <= 0) { }
+                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Senju.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Senju.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else
                     DisplayClanSpecialty(clanSpecialty_Senju.clanSpecialtyCardList[clanSpecialty_Senju.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Uchiha:
-                if (clanSpecialty_Uchiha.clanSpecialtyCardList.Count > 0)
+                if (clanSpecialty_Uchiha.clanSpecialtyCardList.Count <= 0) { }
+                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Uchiha.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Uchiha.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else
                     DisplayClanSpecialty(clanSpecialty_Uchiha.clanSpecialtyCardList[clanSpecialty_Uchiha.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Uzumaki:
-                if (clanSpecialty_Uzumaki.clanSpecialtyCardList.Count > 0)
+                if (clanSpecialty_Uzumaki.clanSpecialtyCardList.Count <= 0) { }
+                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Uzumaki.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else
                     DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[clanSpecialty_Uzumaki.clanSpecialtyCardList.Count - 1]);
                 break;
 
@@ -1475,7 +1527,7 @@ public class CardManager : MonoBehaviour
                 actionCardObject.type.text = "Reaction";
                 break;
             case ActionCardTypes.ActionReaction:
-                actionCardObject.type.text = "Action/Reaction";
+                actionCardObject.type.text = "Action / Reaction";
                 break;
             case ActionCardTypes.SpecialAction:
                 actionCardObject.type.text = "Special Action";
@@ -1653,6 +1705,7 @@ public class CardManager : MonoBehaviour
                 clanSpecialtyCardObject.coinImage[0].SetActive(true);
                 clanSpecialtyCardObject.coinImage[1].SetActive(true);
                 clanSpecialtyCardObject.coinImage[2].SetActive(true);
+                clanSpecialtyCardObject.coinImage[3].SetActive(true);
                 clanSpecialtyCardObject.coinImage[4].SetActive(true);
                 break;
 

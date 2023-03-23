@@ -31,7 +31,7 @@ MonoBehaviour:
     cost: 1
     fireBlock: 0
     strength: 
-  - name: Speciality
+  - name: Specialty
     cardType: 2
     category: 0
     type: 4

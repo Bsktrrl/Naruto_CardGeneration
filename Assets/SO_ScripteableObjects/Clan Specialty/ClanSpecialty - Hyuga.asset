@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Hyuga
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: Clan Hyuga 1
+  - name: Hyuga 1
     cardType: 3
     clan: 2
     cost: 4
     image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
     description: dsadsa <sprite=5> fdsasad
-  - name: Clan Hyuga 2
+  - name: Hyuga 2
     cardType: 3
     clan: 2
     cost: 0

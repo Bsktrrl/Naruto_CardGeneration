@@ -5,10 +5,14 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class MainManager : MonoBehaviour
 {
     CardManager cardManager;
+    [SerializeField] BattleCardObject battleCardObject;
+    [SerializeField] ActionCardObject actionCardObject;
+    [SerializeField] ClanSpecialtyCardObject clanSpecialtyCardObject;
 
     [Header("UI Parents")]
     [SerializeField] GameObject battleUI_Parent;
@@ -55,25 +59,63 @@ public class MainManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        //Print all Cards in the Database
+        if (Input.GetKeyDown(KeyCode.A))
         {
             isTakingScreenShots = true;
 
-            Screenhot();
+            StartCoroutine(ScreenShot_AllCards());
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+
+        //Print current Card displayed
+        else if (Input.GetKeyDown(KeyCode.S))
         {
-            ScreenCapture.CaptureScreenshot("Test.png", 1);
-            print("Screen captured - Finished");
+            if (battleUI_Parent.activeInHierarchy)
+            {
+                for (int i = 0; i < battleCards.Count; i++)
+                {
+                    for (int j = 0; j < battleCards[i].cardList.Count; j++)
+                    {
+                        if (battleCardObject.name_Text.text == battleCards[i].cardList[j].name)
+                        {
+                            PrintBattleCard(i, j);
+                            break;
+                        }
+                    }
+                }
+            }
+            else if (actionUI_Parent.activeInHierarchy)
+            {
+                for (int i = 0; i < actionCards.Count; i++)
+                {
+                    for (int j = 0; j < actionCards[i].actionCardList.Count; j++)
+                    {
+                        if (actionCardObject.name.text == actionCards[i].actionCardList[j].name)
+                        {
+                            PrintActionCard(i, j);
+                            break;
+                        }
+                    }
+                }
+            }
+            else if (clanSpecialtyUI_Parent.activeInHierarchy)
+            {
+                for (int i = 0; i < clanSpecialtyCards.Count; i++)
+                {
+                    for (int j = 0; j < clanSpecialtyCards[i].clanSpecialtyCardList.Count; j++)
+                    {
+                        if (clanSpecialtyCardObject.header.text == clanSpecialtyCards[i].clanSpecialtyCardList[j].name)
+                        {
+                            PrintClanSpecialtyCard(i, j);
+                            break;
+                        }
+                    }
+                }
+            }
         }
     }
 
-    void Screenhot()
-    {
-        StartCoroutine(AllCards());
-    }
-
-    IEnumerator AllCards()
+    IEnumerator ScreenShot_AllCards()
     {
         //Set Parents = false
         battleUI_Parent.SetActive(false);
@@ -94,8 +136,7 @@ public class MainManager : MonoBehaviour
 
                 yield return new WaitForSeconds(0.2f);
 
-                ScreenCapture.CaptureScreenshot(battleCards[i].cardList[j].cardType + "_" + battleCards[i].cardList[j].clan + "_" + battleCards[i].cardList[j].name + "_" + battleCards[i].cardList[j].loreInfo + ".png", 1);
-                print("Screen captured - Battle Card: " + i + " " + j);
+                PrintBattleCard(i, j);
 
                 yield return new WaitForSeconds(0.8f);
             }
@@ -115,8 +156,7 @@ public class MainManager : MonoBehaviour
 
                 yield return new WaitForSeconds(0.2f);
 
-                ScreenCapture.CaptureScreenshot(actionCards[i].actionCardList[j].cardType + "_" + actionCards[i].actionCardList[j].name + ".png", 1);
-                print("Screen captured - Action Card: " + i + " " + j);
+                PrintActionCard(i, j);
 
                 yield return new WaitForSeconds(0.8f);
             }
@@ -136,13 +176,28 @@ public class MainManager : MonoBehaviour
 
                 yield return new WaitForSeconds(0.2f);
 
-                ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + ".png", 1);
-                print("Screen captured - Action Card: " + i + " " + j);
+                PrintClanSpecialtyCard(i, j);
 
                 yield return new WaitForSeconds(0.8f);
             }
         }
 
         isTakingScreenShots = false;
+    }
+
+    void PrintBattleCard(int i, int j)
+    {
+        ScreenCapture.CaptureScreenshot(battleCards[i].cardList[j].cardType + "_" + battleCards[i].cardList[j].clan + "_" + battleCards[i].cardList[j].name + "_" + battleCards[i].cardList[j].loreInfo + ".png", 1);
+        print("Screen captured - Battle Card: " + i + " " + j);
+    }
+    void PrintActionCard(int i, int j)
+    {
+        ScreenCapture.CaptureScreenshot(actionCards[i].actionCardList[j].cardType + "_" + actionCards[i].actionCardList[j].name + ".png", 1);
+        print("Screen captured - Action Card: " + i + " " + j);
+    }
+    void PrintClanSpecialtyCard(int i, int j)
+    {
+        ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + ".png", 1);
+        print("Screen captured - Can Specialty Card: " + i + " " + j);
     }
 }
