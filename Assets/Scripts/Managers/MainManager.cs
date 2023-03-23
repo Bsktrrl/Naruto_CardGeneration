@@ -134,11 +134,11 @@ public class MainManager : MonoBehaviour
             {
                 cardManager.DisplayBattleCard(battleCards[i].cardList[j]);
 
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.01f);
 
                 PrintBattleCard(i, j);
 
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(0.01f);
             }
         }
 
@@ -188,16 +188,16 @@ public class MainManager : MonoBehaviour
     void PrintBattleCard(int i, int j)
     {
         ScreenCapture.CaptureScreenshot(battleCards[i].cardList[j].cardType + "_" + battleCards[i].cardList[j].clan + "_" + battleCards[i].cardList[j].name + "_" + battleCards[i].cardList[j].loreInfo + ".png", 1);
-        print("Screen captured - Battle Card: " + i + " " + j);
+        //print("Screen captured - Battle Card: " + i + " " + j);
     }
     void PrintActionCard(int i, int j)
     {
         ScreenCapture.CaptureScreenshot(actionCards[i].actionCardList[j].cardType + "_" + actionCards[i].actionCardList[j].name + ".png", 1);
-        print("Screen captured - Action Card: " + i + " " + j);
+        //print("Screen captured - Action Card: " + i + " " + j);
     }
     void PrintClanSpecialtyCard(int i, int j)
     {
         ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + ".png", 1);
-        print("Screen captured - Can Specialty Card: " + i + " " + j);
+        //print("Screen captured - Can Specialty Card: " + i + " " + j);
     }
 }
