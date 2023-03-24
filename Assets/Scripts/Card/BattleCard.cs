@@ -50,6 +50,7 @@ public class BattleCard
     [Header("Effect")]
     public List<State> effectState;
     [TextArea(3, 5)] public string effectText;
+    public float textSize;
     public List<EffectIcon> effectIcon = new List<EffectIcon>() { EffectIcon.None, EffectIcon.None, EffectIcon.None};
     public Tier tier;
 

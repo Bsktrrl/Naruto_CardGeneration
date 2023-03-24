@@ -13,21 +13,73 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Uzumaki
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: Uzumaki 1
-    cardType: 3
-    clan: 6
-    cost: 3
-    image: {fileID: 21300000, guid: c97da0fc0e2e5d643aed8a325c3d6130, type: 3}
-    description: fdasad sa dsa dsa
-  - name: Uzumaki 2
-    cardType: 3
-    clan: 6
-    cost: 0
-    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
-    description: ' das dsa dsa dsa'
   - name: 0
     cardType: 3
     clan: 6
     cost: 0
     image: {fileID: 0}
     description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0

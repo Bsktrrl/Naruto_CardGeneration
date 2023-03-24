@@ -7,9 +7,10 @@ public class ActionCard
 {
     public string name;
     public CardType cardType;
-    public ActionCards category;
     public ActionCardTypes type;
+    public Sprite image;
     [TextArea(3, 5)] public string description;
+    public float textSize;
 
     public int cost;
 

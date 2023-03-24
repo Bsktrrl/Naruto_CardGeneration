@@ -13,21 +13,73 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Otsutsuki
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: Otsutsuki 1
-    cardType: 3
-    clan: 3
-    cost: 5
-    image: {fileID: 21300000, guid: f70bee25d5c12d94389cb93a7bc51fe8, type: 3}
-    description: dsad sda as dsa dsa dsa
-  - name: Otsutsuki 2
-    cardType: 3
-    clan: 3
-    cost: 0
-    image: {fileID: 21300000, guid: 93e57b381324a254ab3355c43d20ff1d, type: 3}
-    description: " dsa dsa das sa d\n ddsadsad\nas dsa dsa dsa\n da dsa dsa\ns  dsad\ndsa"
   - name: 0
     cardType: 3
     clan: 3
     cost: 0
     image: {fileID: 0}
     description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 3
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0

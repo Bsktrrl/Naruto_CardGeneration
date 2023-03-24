@@ -13,4 +13,5 @@ public class ClanSpecialtyCard
 
     public Sprite image;
     [TextArea(3, 5)] public string description;
+    public float textSize;
 }

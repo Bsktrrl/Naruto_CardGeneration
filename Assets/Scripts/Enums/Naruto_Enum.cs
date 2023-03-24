@@ -189,6 +189,7 @@ public enum ActionCards
     Reroll,
     Trade,
     Turns,
+    LostPathLife,
 
     Specialty
 }

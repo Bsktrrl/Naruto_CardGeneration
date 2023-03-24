@@ -13,21 +13,73 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Akatsuki
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: Akatski 1
-    cardType: 3
-    clan: 1
-    cost: 2
-    image: {fileID: 21300000, guid: b79de9ec873db804fa978d28f49f51a3, type: 3}
-    description: "dsadsa d sad sa dsa dsa \n dsad sa\n\nd sad sad sadsa"
-  - name: Akatski 2
-    cardType: 3
-    clan: 1
-    cost: 0
-    image: {fileID: 21300000, guid: 608f514da36b84e41b216da608acb460, type: 3}
-    description: dsadsa klklk kk lk j g hf hj hj
   - name: 0
     cardType: 3
     clan: 1
     cost: 0
     image: {fileID: 0}
     description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 1
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0

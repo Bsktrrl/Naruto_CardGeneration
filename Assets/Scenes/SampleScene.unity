@@ -173,7 +173,9 @@ MonoBehaviour:
   clanSpecialtyCard_Number: -1
   actionCard_Number: -1
   colorManager: {fileID: 1881012182}
-  cardObject: {fileID: 1986761333937809582}
+  battleCardObject: {fileID: 1986761333937809582}
+  battleCardDescriptionText: {fileID: 1986761334416096270}
+  battleCardIconTextDescriptionText: {fileID: 1986761334185777836}
   battle_Akatsuki: {fileID: 11400000, guid: 089fe278e96b0ba43abf622ab761e5eb, type: 2}
   battle_Hyuga: {fileID: 11400000, guid: f0e87a6d4239c1d4ea03970d6a73e261, type: 2}
   battle_Otsutsuki: {fileID: 11400000, guid: f5bc40357e65c7940a367206bfc14af5, type: 2}
@@ -185,7 +187,9 @@ MonoBehaviour:
   battle_Ally_Legendary: {fileID: 11400000, guid: 66fc2d7087668d245a20ddf1888d09e6, type: 2}
   actionCards: {fileID: 11400000, guid: 842198a3c8b1a1743be59999c1361881, type: 2}
   actionCardObject: {fileID: 3372878869702784047}
+  actionCardDescriptionText: {fileID: 3372878869187100910}
   clanSpecialtyCardObject: {fileID: 4094810175624193848}
+  clanSpecialtyDescriptionText: {fileID: 4094810176146871289}
   clanSpecialty_Akatsuki: {fileID: 11400000, guid: f988cee0f9e8150429b6fc3f59f7b9d0, type: 2}
   clanSpecialty_Hyuga: {fileID: 11400000, guid: afbd70e775bae114eb7cb9c9c279b08f, type: 2}
   clanSpecialty_Otsutsuki: {fileID: 11400000, guid: 13fe5f9780cdccd42a7216eb7f3642f5, type: 2}
@@ -244,30 +248,30 @@ MonoBehaviour:
   NationSymbol_Vegetable: {fileID: 21300000, guid: 289efc617c5f78846aaa2d977b035840, type: 3}
   NationSymbol_Waterfall: {fileID: 21300000, guid: 299d7c7d36854354981f14b111f5751a, type: 3}
   NationSymbol_Wave: {fileID: 21300000, guid: 4f6554abd55834f4aa192ea4976ef1ea, type: 3}
-  Resource_Boat: {fileID: -1655409709, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Chuunin: {fileID: 757586706, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Jounin: {fileID: 1322879198, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Kage: {fileID: 282887114, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ActionCard: {fileID: 420174868, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ClanCard_Akatsuki: {fileID: 1717665120, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ClanCard_Hyuga: {fileID: 1755553268, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ClanCard_Otsutsuki: {fileID: -713346938, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ClanCard_Senju: {fileID: -946099749, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ClanCard_Uchiha: {fileID: 1562451697, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ClanCard_Uzumaki: {fileID: 1209348960, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_ClanCard_Ally: {fileID: -427031599, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Ally_Rare: {fileID: -1943275300, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Ally_Epic: {fileID: -569708762, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Ally_Legendary: {fileID: -507318696, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Poison: {fileID: 53545258, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Paralyze: {fileID: -770799203, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Illusion: {fileID: -1347093862, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Freeze: {fileID: 1640064248, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Chain: {fileID: -502801080, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Coin: {fileID: 2141954338, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_TailedBeast: {fileID: -1541011169, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Influence_UP: {fileID: -1936201131, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
-  Resource_Effect_Influence_DOWN: {fileID: 1756928947, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Boat: {fileID: 1264396515, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Chuunin: {fileID: 162919387, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Jounin: {fileID: -272415560, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Kage: {fileID: 954181875, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ActionCard: {fileID: -1655409709, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Akatsuki: {fileID: 757586706, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Hyuga: {fileID: 1322879198, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Otsutsuki: {fileID: 282887114, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Senju: {fileID: 420174868, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Uchiha: {fileID: 1717665120, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Uzumaki: {fileID: 1755553268, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Ally: {fileID: -713346938, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Ally_Rare: {fileID: 1562451697, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Ally_Epic: {fileID: 1209348960, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Ally_Legendary: {fileID: -427031599, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Poison: {fileID: 951722147, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Paralyze: {fileID: -6020997, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Illusion: {fileID: 1713077958, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Freeze: {fileID: -1830716058, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Chain: {fileID: 53545258, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Coin: {fileID: -770799203, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_TailedBeast: {fileID: -1347093862, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Influence_UP: {fileID: 1229356979, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Influence_DOWN: {fileID: 1822401940, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Swap: {fileID: 21300000, guid: 3ec0f8d1124e2e2499da64c57a0e544a, type: 3}
   ClanCard: {fileID: 21300000, guid: 444885235998ddc44b92a1ddadbc394e, type: 3}
   Ally_Rare: {fileID: 21300000, guid: 8d1e4406d4f6d59479cdf4984a6c4c86, type: 3}
@@ -294,6 +298,7 @@ MonoBehaviour:
   Reroll: {fileID: 21300000, guid: b6f8fabe905d9a24d8261ae0cef5e6ff, type: 3}
   Trade: {fileID: 21300000, guid: d4f2c5c285c32ed4fab0e016c3ff4319, type: 3}
   Turns: {fileID: 21300000, guid: dd14a4e8a4373ca49991f4de022bf15d, type: 3}
+  LostPathLife: {fileID: 21300000, guid: 30ce2fa2dbe5f744e9454e66967d7f83, type: 3}
   Specialty: {fileID: 21300000, guid: f4be1d01800708c45812fde726867651, type: 3}
   Icon_Akatsuki: {fileID: 21300000, guid: 2de5ff58c8aa98c44b83b2730fd38bdb, type: 3}
   Icon_Hyuga: {fileID: 21300000, guid: 4d2f3e3324f191d42abe29d46c7b9a38, type: 3}
@@ -1075,10 +1080,10 @@ RectTransform:
   m_Father: {fileID: 1986761334849193077}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -660}
+  m_SizeDelta: {x: 800, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986761333338364959
 MonoBehaviour:
@@ -1506,10 +1511,10 @@ RectTransform:
   m_Father: {fileID: 1986761334849193077}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -280}
+  m_SizeDelta: {x: 800, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1986761333555673390
 CanvasRenderer:
@@ -1787,10 +1792,10 @@ RectTransform:
   m_Father: {fileID: 1986761334849193077}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -90}
+  m_SizeDelta: {x: 800, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1986761333731739898
 CanvasRenderer:
@@ -2741,7 +2746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1986761333937809617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3399,7 +3404,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283581208
+    rgba: 4285361517
   m_fontColor: {r: 0.42745098, g: 0.42745098, b: 0.42745098, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3418,9 +3423,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 90
-  m_fontSizeBase: 36
+  m_fontSizeBase: 90
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 30
   m_fontSizeMax: 90
   m_fontStyle: 1
@@ -4344,7 +4349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: M <sprite=7> M <sprite=8> M
+  m_text: ---
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4371,10 +4376,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 36
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 30
   m_fontSizeMax: 200
   m_fontStyle: 1
@@ -5495,7 +5500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1986761334976660074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6071,10 +6076,10 @@ RectTransform:
   m_Father: {fileID: 1986761334849193077}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -470}
+  m_SizeDelta: {x: 800, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986761335171596247
 MonoBehaviour:
@@ -6783,11 +6788,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Play this right after a War occurs to add the Value of all Units in 3
-    Adjacent Fields you contrl, to any side in the War
-
-    (  <sprite=0>  <sprite=1> 
-    <sprite=2>  <sprite=3>  cannot support Water Fields)'
+  m_text: Swap <sprite=0> with another <sprite=0> from the <sprite=17> Shop by paying
+    -2 <sprite=22> less than its cost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6814,12 +6816,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 69.45
-  m_fontSizeBase: 36
+  m_fontSize: 110
+  m_fontSizeBase: 110
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 30
-  m_fontSizeMax: 100
+  m_fontSizeMax: 130
   m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -6873,8 +6875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1060}
-  m_SizeDelta: {x: 1400, y: 360.4}
+  m_AnchoredPosition: {x: 0, y: -1080}
+  m_SizeDelta: {x: 1430, y: 400}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &3372878869187100944
 GameObject:
@@ -9281,7 +9283,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -1046}
-  m_SizeDelta: {x: 1400, y: 940.97}
+  m_SizeDelta: {x: 1400, y: 940}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &4094810176146871289
 MonoBehaviour:
@@ -9330,10 +9332,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 164.55
-  m_fontSizeBase: 36
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 30
   m_fontSizeMax: 200
   m_fontStyle: 33

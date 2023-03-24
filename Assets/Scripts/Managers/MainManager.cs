@@ -1,11 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class MainManager : MonoBehaviour
 {
@@ -113,7 +109,32 @@ public class MainManager : MonoBehaviour
                 }
             }
         }
+
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            isTakingScreenShots = true;
+
+            if (battleUI_Parent.activeInHierarchy)
+            {
+                //Battle Cards
+                StartCoroutine(ScreenShot_AllBattleCards());
+            }
+            else if (actionUI_Parent.activeInHierarchy)
+            {
+                //Action Cards
+                StartCoroutine(ScreenShot_AllActionCards());
+            }
+            else if (clanSpecialtyUI_Parent.activeInHierarchy)
+            {
+                //Clan Specialty Cards
+                StartCoroutine(ScreenShot_AllClanSpecialtyCards());
+            }
+        }
     }
+
+
+    //--------------------
+
 
     IEnumerator ScreenShot_AllCards()
     {
@@ -154,11 +175,11 @@ public class MainManager : MonoBehaviour
             {
                 cardManager.DisplayActionCard(actionCards[i].actionCardList[j]);
 
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.01f);
 
                 PrintActionCard(i, j);
 
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(0.01f);
             }
         }
 
@@ -174,16 +195,90 @@ public class MainManager : MonoBehaviour
             {
                 cardManager.DisplayClanSpecialty(clanSpecialtyCards[i].clanSpecialtyCardList[j]);
 
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.01f);
 
                 PrintClanSpecialtyCard(i, j);
 
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(0.01f);
             }
         }
 
         isTakingScreenShots = false;
     }
+
+    IEnumerator ScreenShot_AllBattleCards()
+    {
+        for (int i = 0; i < battleCards.Count; i++)
+        {
+            battleUI_Parent.SetActive(true);
+            actionUI_Parent.SetActive(false);
+            clanSpecialtyUI_Parent.SetActive(false);
+
+            //Each Iteration for each card in the List
+            for (int j = 0; j < battleCards[i].cardList.Count; j++)
+            {
+                cardManager.DisplayBattleCard(battleCards[i].cardList[j]);
+
+                yield return new WaitForSeconds(0.01f);
+
+                PrintBattleCard(i, j);
+
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
+
+        isTakingScreenShots = false;
+    }
+    IEnumerator ScreenShot_AllActionCards()
+    {
+        for (int i = 0; i < actionCards.Count; i++)
+        {
+            battleUI_Parent.SetActive(false);
+            actionUI_Parent.SetActive(true);
+            clanSpecialtyUI_Parent.SetActive(false);
+
+            //Each Iteration for each card in the List
+            for (int j = 0; j < actionCards[i].actionCardList.Count; j++)
+            {
+                cardManager.DisplayActionCard(actionCards[i].actionCardList[j]);
+
+                yield return new WaitForSeconds(0.01f);
+
+                PrintActionCard(i, j);
+
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
+
+        isTakingScreenShots = false;
+    }
+    IEnumerator ScreenShot_AllClanSpecialtyCards()
+    {
+        for (int i = 0; i < clanSpecialtyCards.Count; i++)
+        {
+            battleUI_Parent.SetActive(false);
+            actionUI_Parent.SetActive(false);
+            clanSpecialtyUI_Parent.SetActive(true);
+
+            //Each Iteration for each card in the List
+            for (int j = 0; j < clanSpecialtyCards[i].clanSpecialtyCardList.Count; j++)
+            {
+                cardManager.DisplayClanSpecialty(clanSpecialtyCards[i].clanSpecialtyCardList[j]);
+
+                yield return new WaitForSeconds(0.01f);
+
+                PrintClanSpecialtyCard(i, j);
+
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
+
+        isTakingScreenShots = false;
+    }
+
+
+    //--------------------
+
 
     void PrintBattleCard(int i, int j)
     {

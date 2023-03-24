@@ -13,21 +13,73 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Hyuga
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: Hyuga 1
-    cardType: 3
-    clan: 2
-    cost: 4
-    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
-    description: dsadsa <sprite=5> fdsasad
-  - name: Hyuga 2
-    cardType: 3
-    clan: 2
-    cost: 0
-    image: {fileID: 21300000, guid: 6371c71be296d8d4ea0d296b8ed5154c, type: 3}
-    description: " dasdsa dsa das dsa\n\n\n ddsadsa d das d"
   - name: 0
     cardType: 3
     clan: 2
     cost: 0
     image: {fileID: 0}
     description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
+  - name: 0
+    cardType: 3
+    clan: 2
+    cost: 0
+    image: {fileID: 0}
+    description: 
+    textSize: 0
