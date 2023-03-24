@@ -152,30 +152,45 @@ public enum ActionCards
 {
     None,
 
+    //Cards
+    Swap,
+    ClanCard,
     Ally_Rare,
     Ally_Epic,
     Ally_Legendary,
+    Upgrade,
 
-    ClanCard,
-    Defence,
-    DominanceTrack,
-    Fire,
-    HealingOintment,
-
+    //Pieces
     Piece_Boat,
     Piece_Chuunin,
     Piece_Jounin,
     Piece_Kage,
 
-    Reroll,
-    Reuse,
-    Scroll,
-    Support,
-    Trade,
+    //War
     Travel,
+    War,
+    Defence,
+    Support,
+    HealingOintment,
+
+    //Block
+    Fire,
+    FireBlock,
+
+    //Tokens
+    Token_Genjutsu,
+    Token_Paralyze,
+    Token_Freeze,
+    Token_Poison,
+    Token_Chain,
+
+    //Other
+    DominanceTrack,
+    Reroll,
+    Trade,
     Turns,
-    Upgrade,
-    War
+
+    Specialty
 }
 
 public enum ActionCardTypes

@@ -55,8 +55,8 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
-      amount: 0
+    - resources: 1
+      amount: 2
     - resources: 0
       amount: 0
     - resources: 10

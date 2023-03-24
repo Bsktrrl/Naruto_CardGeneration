@@ -132,30 +132,39 @@ public class CardManager : MonoBehaviour
     public Sprite Resource_Effect_Influence_DOWN;
 
     [Header("ActionCard Types")]
+    public Sprite Swap;
+    public Sprite ClanCard;
     public Sprite Ally_Rare;
     public Sprite Ally_Epic;
     public Sprite Ally_Legendary;
-
-    public Sprite ClanCard;
-    public Sprite Defence;
-    public Sprite DominanceTrack;
-    public Sprite Fire;
-    public Sprite HealingOintment;
+    public Sprite Upgrade;
 
     public Sprite Piece_Boat;
     public Sprite Piece_Chuunin;
     public Sprite Piece_Jounin;
     public Sprite Piece_Kage;
 
-    public Sprite Reroll;
-    public Sprite Reuse;
-    public Sprite Scroll;
-    public Sprite Support;
-    public Sprite Trade;
     public Sprite Travel;
-    public Sprite Turns;
-    public Sprite Upgrade;
     public Sprite War;
+    public Sprite Defence;
+    public Sprite Support;
+    public Sprite HealingOintment;
+
+    public Sprite Fire;
+    public Sprite FireBlock;
+
+    public Sprite Token_Genjutsu;
+    public Sprite Token_Paralyze;
+    public Sprite Token_Freeze;
+    public Sprite Token_Poison;
+    public Sprite Token_Chain;
+
+    public Sprite DominanceTrack;
+    public Sprite Reroll;
+    public Sprite Trade;
+    public Sprite Turns;
+
+    public Sprite Specialty;
 
     [Header("ClanSpecialty Types")]
     public Sprite Icon_Akatsuki;
@@ -1446,6 +1455,12 @@ public class CardManager : MonoBehaviour
             case ActionCards.None:
                 actionCardObject.icon.sprite = null;
                 break;
+            case ActionCards.Swap:
+                actionCardObject.icon.sprite = Swap;
+                break;
+            case ActionCards.ClanCard:
+                actionCardObject.icon.sprite = ClanCard;
+                break;
             case ActionCards.Ally_Rare:
                 actionCardObject.icon.sprite = Ally_Rare;
                 break;
@@ -1455,21 +1470,10 @@ public class CardManager : MonoBehaviour
             case ActionCards.Ally_Legendary:
                 actionCardObject.icon.sprite = Ally_Legendary;
                 break;
-            case ActionCards.ClanCard:
-                actionCardObject.icon.sprite = ClanCard;
+            case ActionCards.Upgrade:
+                actionCardObject.icon.sprite = Upgrade;
                 break;
-            case ActionCards.Defence:
-                actionCardObject.icon.sprite = Defence;
-                break;
-            case ActionCards.DominanceTrack:
-                actionCardObject.icon.sprite = DominanceTrack;
-                break;
-            case ActionCards.Fire:
-                actionCardObject.icon.sprite = Fire;
-                break;
-            case ActionCards.HealingOintment:
-                actionCardObject.icon.sprite = HealingOintment;
-                break;
+
             case ActionCards.Piece_Boat:
                 actionCardObject.icon.sprite = Piece_Boat;
                 break;
@@ -1482,32 +1486,60 @@ public class CardManager : MonoBehaviour
             case ActionCards.Piece_Kage:
                 actionCardObject.icon.sprite = Piece_Kage;
                 break;
-            case ActionCards.Reroll:
-                actionCardObject.icon.sprite = Reroll;
+
+            case ActionCards.Travel:
+                actionCardObject.icon.sprite = Travel;
                 break;
-            case ActionCards.Reuse:
-                actionCardObject.icon.sprite = Reuse;
+            case ActionCards.War:
+                actionCardObject.icon.sprite = War;
                 break;
-            case ActionCards.Scroll:
-                actionCardObject.icon.sprite = Scroll;
+            case ActionCards.Defence:
+                actionCardObject.icon.sprite = Defence;
                 break;
             case ActionCards.Support:
                 actionCardObject.icon.sprite = Support;
                 break;
+            case ActionCards.HealingOintment:
+                actionCardObject.icon.sprite = HealingOintment;
+                break;
+
+            case ActionCards.Fire:
+                actionCardObject.icon.sprite = Fire;
+                break;
+            case ActionCards.FireBlock:
+                actionCardObject.icon.sprite = FireBlock;
+                break;
+
+            case ActionCards.Token_Genjutsu:
+                actionCardObject.icon.sprite = Token_Genjutsu;
+                break;
+            case ActionCards.Token_Paralyze:
+                actionCardObject.icon.sprite = Token_Paralyze;
+                break;
+            case ActionCards.Token_Freeze:
+                actionCardObject.icon.sprite = Token_Freeze;
+                break;
+            case ActionCards.Token_Poison:
+                actionCardObject.icon.sprite = Token_Poison;
+                break;
+            case ActionCards.Token_Chain:
+                actionCardObject.icon.sprite = Token_Chain;
+                break;
+
+            case ActionCards.DominanceTrack:
+                actionCardObject.icon.sprite = DominanceTrack;
+                break;
+            case ActionCards.Reroll:
+                actionCardObject.icon.sprite = Reroll;
+                break;
             case ActionCards.Trade:
                 actionCardObject.icon.sprite = Trade;
-                break;
-            case ActionCards.Travel:
-                actionCardObject.icon.sprite = Travel;
                 break;
             case ActionCards.Turns:
                 actionCardObject.icon.sprite = Turns;
                 break;
-            case ActionCards.Upgrade:
-                actionCardObject.icon.sprite = Upgrade;
-                break;
-            case ActionCards.War:
-                actionCardObject.icon.sprite = War;
+            case ActionCards.Specialty:
+                actionCardObject.icon.sprite = Specialty;
                 break;
 
             default:

@@ -268,27 +268,33 @@ MonoBehaviour:
   Resource_Effect_TailedBeast: {fileID: -1541011169, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Effect_Influence_UP: {fileID: -1936201131, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Effect_Influence_DOWN: {fileID: 1756928947, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Swap: {fileID: 21300000, guid: 3ec0f8d1124e2e2499da64c57a0e544a, type: 3}
+  ClanCard: {fileID: 21300000, guid: 444885235998ddc44b92a1ddadbc394e, type: 3}
   Ally_Rare: {fileID: 21300000, guid: 8d1e4406d4f6d59479cdf4984a6c4c86, type: 3}
   Ally_Epic: {fileID: 21300000, guid: a5b294a7111d030468747d670021db4d, type: 3}
   Ally_Legendary: {fileID: 21300000, guid: 41014d104f0006c4e9ab86d4254c83bd, type: 3}
-  ClanCard: {fileID: 21300000, guid: 444885235998ddc44b92a1ddadbc394e, type: 3}
-  Defence: {fileID: 21300000, guid: bd5e84fa88b960e4bbbe3e5bca5241e5, type: 3}
-  DominanceTrack: {fileID: 21300000, guid: da47c4a695197494bb1186ff93ce7dbb, type: 3}
-  Fire: {fileID: 21300000, guid: b3c67e8fb1570e549a397fc10d81742e, type: 3}
-  HealingOintment: {fileID: 21300000, guid: b135f5716dea4e04fb2549ae56b0b375, type: 3}
+  Upgrade: {fileID: 21300000, guid: f2cdaab0a9894144fbcb8261e741a0ff, type: 3}
   Piece_Boat: {fileID: 21300000, guid: 77d642cb61128bd47a1b432dd603f488, type: 3}
   Piece_Chuunin: {fileID: 21300000, guid: 0802c4b9fdf99214ab98149fd9f88618, type: 3}
   Piece_Jounin: {fileID: 21300000, guid: 0acc661021fd04e4da438a13d7e75ef0, type: 3}
   Piece_Kage: {fileID: 21300000, guid: dbd2c26792805f04b9723d96a295a0c3, type: 3}
-  Reroll: {fileID: 21300000, guid: b6f8fabe905d9a24d8261ae0cef5e6ff, type: 3}
-  Reuse: {fileID: 21300000, guid: 7e294bc8f02917846bb0e52036d00ab7, type: 3}
-  Scroll: {fileID: 21300000, guid: d36c764fa6256c44b8621703cfeacf30, type: 3}
-  Support: {fileID: 21300000, guid: 9f4e2859f1810e644acfbc8d881d3883, type: 3}
-  Trade: {fileID: 21300000, guid: d4f2c5c285c32ed4fab0e016c3ff4319, type: 3}
   Travel: {fileID: 21300000, guid: e45e6fe32bcf8954ebf3d3a940a2d395, type: 3}
-  Turns: {fileID: 21300000, guid: dd14a4e8a4373ca49991f4de022bf15d, type: 3}
-  Upgrade: {fileID: 21300000, guid: f2cdaab0a9894144fbcb8261e741a0ff, type: 3}
   War: {fileID: 21300000, guid: 37fe6c764e9f3944c807d72d4c4053be, type: 3}
+  Defence: {fileID: 21300000, guid: bd5e84fa88b960e4bbbe3e5bca5241e5, type: 3}
+  Support: {fileID: 21300000, guid: 9f4e2859f1810e644acfbc8d881d3883, type: 3}
+  HealingOintment: {fileID: 21300000, guid: b135f5716dea4e04fb2549ae56b0b375, type: 3}
+  Fire: {fileID: 21300000, guid: b3c67e8fb1570e549a397fc10d81742e, type: 3}
+  FireBlock: {fileID: 21300000, guid: 1eedc4111a1b9c947816dc0a05edf878, type: 3}
+  Token_Genjutsu: {fileID: 21300000, guid: c7b3a381fe9171d42a18baed0ae52ef6, type: 3}
+  Token_Paralyze: {fileID: 21300000, guid: c248d3476ef16174f88b1ce3f5ac74bd, type: 3}
+  Token_Freeze: {fileID: 21300000, guid: bf2027767be9e9348a55b416f93f22f3, type: 3}
+  Token_Poison: {fileID: 21300000, guid: 41c45c945e1967449bb5799f8abb019e, type: 3}
+  Token_Chain: {fileID: 21300000, guid: 7fdaa9b61b96c6449b0dc58370554b69, type: 3}
+  DominanceTrack: {fileID: 21300000, guid: da47c4a695197494bb1186ff93ce7dbb, type: 3}
+  Reroll: {fileID: 21300000, guid: b6f8fabe905d9a24d8261ae0cef5e6ff, type: 3}
+  Trade: {fileID: 21300000, guid: d4f2c5c285c32ed4fab0e016c3ff4319, type: 3}
+  Turns: {fileID: 21300000, guid: dd14a4e8a4373ca49991f4de022bf15d, type: 3}
+  Specialty: {fileID: 21300000, guid: f4be1d01800708c45812fde726867651, type: 3}
   Icon_Akatsuki: {fileID: 21300000, guid: 2de5ff58c8aa98c44b83b2730fd38bdb, type: 3}
   Icon_Hyuga: {fileID: 21300000, guid: 4d2f3e3324f191d42abe29d46c7b9a38, type: 3}
   Icon_Otsutsuki: {fileID: 21300000, guid: 3d084aacc7d72e047a0f63a102f099ab, type: 3}
@@ -4338,7 +4344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ---
+  m_text: M <sprite=7> M <sprite=8> M
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4365,12 +4371,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 110
+  m_fontSize: 200
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 30
-  m_fontSizeMax: 110
+  m_fontSizeMax: 200
   m_fontStyle: 1
   m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
