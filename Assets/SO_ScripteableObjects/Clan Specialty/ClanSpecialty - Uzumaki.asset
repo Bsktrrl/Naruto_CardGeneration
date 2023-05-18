@@ -13,73 +13,144 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Uzumaki
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: 0
+  - name: 'Adamantine Attacking Chains '
+    cardType: 3
+    clan: 6
+    cost: 4
+    image: {fileID: 21300000, guid: 36cea2bf1ae63ec49b5869604953f8f5, type: 3}
+    description: 'Give another player
+
+      1 <sprite=21> Token'
+    textSize: 178.1
+  - name: Adamantine Sealing Chains
     cardType: 3
     clan: 6
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: b9059172ad0644f448c32ea84da35b97, type: 3}
+    description: '+1 <sprite=23>
+
+      <size=30%>
+
+      <size=50%>(Always have
+      an additional  <sprite=23>  with a Strength of 1)'
+    textSize: 236
+  - name: Befriend
     cardType: 3
     clan: 6
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: e4a0c7b04bd3aa348b6b100dc3f916f7, type: 3}
+    description: 'When fighting against any  <sprite=23>  , the  <sprite=23>  uses
+      a D8 dice.
+
+      <size=20%>
+
+      <size=100%>If you win against any  <sprite=23> 
+      , add 3p. of  <sprite=44>  <sprite=45>  <sprite=46>  <sprite=47>  onto 1 Field
+      you control '
+    textSize: 109.7
+  - name: 'Bowl of Ramen '
+    cardType: 3
+    clan: 6
+    cost: 2
+    image: {fileID: 21300000, guid: dd306fb02a2e3e5419a992bd3d764f7e, type: 3}
+    description: "Move Down 1 step in any track on the \"Dominance Board\". \n<size=30%>\n<size=100%>Then
+      Draw 1 <sprite=11>"
+    textSize: 132.9
+  - name: 'Death Reaper Seal '
     cardType: 3
     clan: 6
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: e15119b67eb361b4f8ce2da9bfd609c8, type: 3}
+    description: "Choose 1 of the following:\n<size=20%>\n<size=100%>\"Place 1  <sprite=45> 
+      <sprite=46>  <sprite=47>  from the Board on this\"\n<size=20%>\n<size=100%>\"Place
+      1  <sprite=45>*  <sprite=46>*  <sprite=47>*  from your Supply on this, if there
+      is at least any  <sprite=45>  <sprite=46>  <sprite=47>  on it\"\n<size=20%>\n<size=100%>\"Move
+      all  <sprite=45>  <sprite=46>  <sprite=47>  on this card over to a Field you
+      control\" \n<size=30%>\n<size=80%>This  <sprite=0>  \"Specialty\" cost:\n1
+      <sprite=22> for moving all  <sprite=45>  <sprite=46>  <sprite=47>  from / to
+      the Board\n1 <sprite=22> for each <sprite=45> placed on this\n2 <sprite=22>
+      for each <sprite=46> placed on this\n3 <sprite=22> for each <sprite=47> placed
+      on this\n"
+    textSize: 68.2
+  - name: Heal Bite
     cardType: 3
     clan: 6
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 463f56e8ad253bb49b7f326acb7bf77a, type: 3}
+    description: 'You''re immune to
+
+      <sprite=17>  <sprite=19>'
+    textSize: 164.1
+  - name: 'Kurama Mode '
+    cardType: 3
+    clan: 6
+    cost: 3
+    image: {fileID: 21300000, guid: d8bbf09bd406cc64f9918db58a4c81d1, type: 3}
+    description: 'During any Battle,
+
+      increase all the Fighting Values of 1 
+      <sprite=8>  in it with +3'
+    textSize: 141.7
+  - name: Names
+    cardType: 3
+    clan: 6
+    cost: 3
+    image: {fileID: 21300000, guid: 1fe0ac6a99df2074598cdb145780b273, type: 3}
+    description: 'Play x3 <sprite=0> Specialty at once to recieve
+
+      1 random 
+      <sprite=23>  from the Supply'
+    textSize: 143.9
+  - name: 'Self Sealing '
+    cardType: 3
+    clan: 6
+    cost: 1
+    image: {fileID: 21300000, guid: 39a972b4226151248889e448110cf0c7, type: 3}
+    description: 'Remove 1 of your
+
+      <sprite=44>  <sprite=45>  <sprite=46> 
+      <sprite=47>  from the Board.
+
+      All other Players must then remove one
+      of their  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> , of the same
+      type'
+    textSize: 112.6
+  - name: Shaddow Clone
     cardType: 3
     clan: 6
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
+    description: 'Start the Game with
+
+      4 <sprite=68> Markers
+
+      <size=10%>
+
+      <size=70%>(instead
+      of the normal 1).
+
+      <size=100%>
+
+      <sprite=68> Markers can also be
+      used as Boats on Water Fields'
+    textSize: 113.2
+  - name: 'Talk No Jutsu '
     cardType: 3
     clan: 6
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 6
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 6
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 6
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 6
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
+    description: 'This is a  <sprite=0>  "Donimance" that let you move
+
+      Up
+      2 steps in any track on the "Dominance Track".
+
+      <size=10%>
+
+      <size=70%>(Can
+      be different tracks)
+
+      <size=30%>
+
+      <size=100%>This card cannot be
+      canceled.'
+    textSize: 108.7

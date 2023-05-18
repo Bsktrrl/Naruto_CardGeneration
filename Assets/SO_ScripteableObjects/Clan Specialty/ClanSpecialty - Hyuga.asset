@@ -13,73 +13,105 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Hyuga
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: 0
+  - name: 8 Trigram           64 Palms
     cardType: 3
     clan: 2
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
+    description: Your  <sprite=8>  cannot be affected negatively by other players
+      in Wars
+    textSize: 133.11
+  - name: Byakugan
+    cardType: 3
+    clan: 2
+    cost: 4
+    image: {fileID: 21300000, guid: 7b7cd88503b92ea44ab244d7c6b2b139, type: 3}
+    description: 'Look at any Player''s  <sprite=8>
+
+      <size=30%>
+
+      <size=100%>Then
+      Steal 1 of them'
+    textSize: 146.3
+  - name: Main House First
     cardType: 3
     clan: 2
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 10dc14bd949de8f4fac6617804c5f932, type: 3}
+    description: 'When you win a War by playing a  <sprite=7>  containing <sprite=57>
+      , choose one of the following rewards:
+
+      3 <sprite=9>
+
+      2 <sprite=10>
+
+      1
+      <sprite=11>'
+    textSize: 109.34
+  - name: Convocation
+    cardType: 3
+    clan: 2
+    cost: 3
+    image: {fileID: 21300000, guid: acc5e26698a14ab44a527a534225fb95, type: 3}
+    description: After any War, get all Resources displayed on 1 <sprite=8> , from
+      the Supply
+    textSize: 141.2
+  - name: Secret Ointment
     cardType: 3
     clan: 2
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 046339054b37e624db1b0f849a59a6e7, type: 3}
+    description: "1) Your  <sprite=28>  <sprite=29>  <sprite=30>  <sprite=31>  cannot
+      be Proned\n<size=40%>\n<size=100%>\r 2) You\u2019re opponent cannot use  <sprite=58> 
+      after attacking you\r\n"
+    textSize: 122.68
+  - name: Sensory Field
     cardType: 3
     clan: 2
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 01af6a65372fea74aa7ab26e0a34e2d5, type: 3}
+    description: 'In the instant another Player enters a Field you control,
+
+      draw
+      1 <sprite=10>'
+    textSize: 148.6
+  - name: 'Training '
+    cardType: 3
+    clan: 2
+    cost: 1
+    image: {fileID: 21300000, guid: dc9dca7bcf457454b9e893ca40df604a, type: 3}
+    description: 'Upgrade 1
+
+      <sprite=29>  or  <sprite=30>
+
+      you control
+      to a tier +1 higher'
+    textSize: 160.9
+  - name: Marked
+    cardType: 3
+    clan: 2
+    cost: 3
+    image: {fileID: 21300000, guid: ce150af3cb817c14e9f0c0168340a3f4, type: 3}
+    description: 'If you  <sprite=73>  after counting for
+
+      <sprite=48>  <sprite=49> 
+      <sprite=50>  <sprite=51> ,
+
+      get +1 BP'
+    textSize: 154
+  - name: The Hyuga Affair
+    cardType: 3
+    clan: 2
+    cost: 2
+    image: {fileID: 21300000, guid: bb99da41f29f59243a7819b7d7c74c31, type: 3}
+    description: During any Scoring, cancel all Resources on 1  <sprite=8>  in it
+    textSize: 154.3
+  - name: Twin Lion Fist
     cardType: 3
     clan: 2
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 2
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 2
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 2
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 2
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 2
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
+    image: {fileID: 21300000, guid: b1663e0142204eb4eb1efa635fdbece4, type: 3}
+    description: 'You''re immune to
+
+      <sprite=18>  <sprite=20> '
+    textSize: 165.9

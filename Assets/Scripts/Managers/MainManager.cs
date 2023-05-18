@@ -110,6 +110,7 @@ public class MainManager : MonoBehaviour
             }
         }
 
+        //Print all cards of the active card type
         else if (Input.GetKeyDown(KeyCode.D))
         {
             isTakingScreenShots = true;

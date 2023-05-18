@@ -122,7 +122,7 @@ MonoBehaviour:
     cost: 1
     fireBlock: 0
     strength: 
-  - name: War
+  - name: War (+0)
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: 37fe6c764e9f3944c807d72d4c4053be, type: 3}
@@ -133,7 +133,7 @@ MonoBehaviour:
     cost: 1
     fireBlock: 0
     strength: +0
-  - name: War
+  - name: War (+3)
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: 37fe6c764e9f3944c807d72d4c4053be, type: 3}
@@ -144,7 +144,7 @@ MonoBehaviour:
     cost: 3
     fireBlock: 0
     strength: +3
-  - name: War
+  - name: War (+5)
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: 37fe6c764e9f3944c807d72d4c4053be, type: 3}
@@ -155,7 +155,7 @@ MonoBehaviour:
     cost: 5
     fireBlock: 0
     strength: +6
-  - name: Defense
+  - name: Defense (+3)
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: bd5e84fa88b960e4bbbe3e5bca5241e5, type: 3}
@@ -170,7 +170,7 @@ MonoBehaviour:
     cost: 2
     fireBlock: 0
     strength: +3
-  - name: Defense
+  - name: Defense (+5)
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: bd5e84fa88b960e4bbbe3e5bca5241e5, type: 3}
@@ -185,7 +185,7 @@ MonoBehaviour:
     cost: 3
     fireBlock: 0
     strength: +5
-  - name: Defense
+  - name: Defense (+7)
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: bd5e84fa88b960e4bbbe3e5bca5241e5, type: 3}
@@ -368,5 +368,5 @@ MonoBehaviour:
       can buy this for the price given on your "Clan Specialty")'
     textSize: 90.5
     cost: 0
-    fireBlock: 0
+    fireBlock: 1
     strength: 

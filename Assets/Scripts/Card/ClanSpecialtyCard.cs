@@ -12,6 +12,6 @@ public class ClanSpecialtyCard
     public int cost;
 
     public Sprite image;
-    [TextArea(3, 5)] public string description;
+    [TextArea(10, 10)] public string description;
     public float textSize;
 }

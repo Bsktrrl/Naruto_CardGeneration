@@ -13,73 +13,125 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Senju
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: 0
+  - name: Bond
     cardType: 3
     clan: 4
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 0cbee0fd8c5da864f836d89cae5b88e3, type: 3}
+    description: Each time you lose a War, get 1 <sprite=11> instead of the normal
+      <sprite=9>
+    textSize: 143.56
+  - name: 'Command Transfer '
+    cardType: 3
+    clan: 4
+    cost: 2
+    image: {fileID: 21300000, guid: 3ac1bc36fc0f80c45812abdd85a76e7b, type: 3}
+    description: 'Swap 2 groups of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
+      in Adjacent Fields with each other
+
+      <size=30%>
+
+      <size=75%>(You
+      can swap through "Mountains" and "Rivers")
+
+      <size=30%>
+
+      <size=75%>(
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  must be swaped to legal
+      Fields)'
+    textSize: 104.3
+  - name: Hashirama's Cells
     cardType: 3
     clan: 4
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: fee12e79503357a458e7255c21b18044, type: 3}
+    description: 'If you control a Field containing any
+
+      Prone <sprite=36> 
+      <sprite=37>  <sprite=38>  <sprite=39> ,
+
+      this Field cannot be attacked
+      by other Players'
+    textSize: 128.05
+  - name: Negotiation
     cardType: 3
     clan: 4
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
+    description: 'When you enter a War, no Players can play <sprite=0> "Support"
+      against you.
+
+      <size=20%>
+
+      <size=100%>In addition, you may perform
+      1 <sprite=0> "Support" without playing any "Action"
+
+      <size=20%>
+
+      <size=75%>(You
+      can only use your extra
+
+      <sprite=0> "Support" at Fields you control)'
+    textSize: 95.5
+  - name: 'Rashomon '
+    cardType: 3
+    clan: 4
+    cost: 1
+    image: {fileID: 21300000, guid: 6591a64238726884d93dbf72dd331ec5, type: 3}
+    description: "Play this to add +2 to your Strength at the start of a War \n<size=30%>\n<size=75%>(You
+      may play additional  <sprite=0>  to increase your Strength further)"
+    textSize: 122.32
+  - name: 'Teleport '
+    cardType: 3
+    clan: 4
+    cost: 2
+    image: {fileID: 21300000, guid: 08169e2e21f4e894081b517809aca1b8, type: 3}
+    description: 'Move  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  from
+      1 Field you control to another Field you control
+
+      <size=30%>
+
+      <size=65%>(You
+      decide the amount to move)'
+    textSize: 129
+  - name: True 1000 Hands
     cardType: 3
     clan: 4
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: bf7460a85f38fdb45a1ee7a354ce2f18, type: 3}
+    description: 'You''re immune to
+
+      <sprite=21>'
+    textSize: 165.9
+  - name: Wood Clone
     cardType: 3
     clan: 4
     cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    image: {fileID: 21300000, guid: 19d1fa412ad782f4086fb85175c834de, type: 3}
+    description: In the "Shop Phase", always buy 2 <sprite=0> before any other Player
+      can start buying
+    textSize: 139
+  - name: 'Wood Style '
     cardType: 3
     clan: 4
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 1435e1aac50838a44b0be80b6e1c5339, type: 3}
+    description: 'Make Passages through "Mountains" and "Rivers" by placing either
+      a
+
+      <sprite=61> Marker or  <sprite=62> Marker
+
+      on a border
+
+      <size=30%>
+
+      <size=75%>(Only
+      you''re able to use the passages)'
+    textSize: 114.5
+  - name: Wood Golem
     cardType: 3
     clan: 4
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 4
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 4
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
-  - name: 0
-    cardType: 3
-    clan: 4
-    cost: 0
-    image: {fileID: 0}
-    description: 
-    textSize: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 2f6c59eddfc9b9242b338cdf24dd0956, type: 3}
+    description: Discard 1 <sprite=0> at random from any Player
+    textSize: 153
