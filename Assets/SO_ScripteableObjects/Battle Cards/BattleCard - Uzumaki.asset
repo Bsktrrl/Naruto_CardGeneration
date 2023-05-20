@@ -26,6 +26,7 @@ MonoBehaviour:
     heal: 1
     effectState: 
     effectText: 
+    textSize: 0
     effectIcon: 010000000200000002000000
     tier: 4
     resources:
@@ -50,6 +51,7 @@ MonoBehaviour:
     heal: 0
     effectState: 0400000003000000
     effectText: dsadsa dsa ds dsa dsa dsa dsa dsa fggsfg fdsg fd gd gd
+    textSize: 0
     effectIcon: 000000000100000000000000
     tier: 0
     resources:
@@ -61,27 +63,3 @@ MonoBehaviour:
       amount: 2
     - resources: 17
       amount: 3
-  - name: 
-    loreInfo: 
-    characterSprite: {fileID: 0}
-    cardType: 1
-    clan: 6
-    landOrigins: 0
-    TaijutsuValue: 0
-    NinjutsuValue: 0
-    GenjutsuValue: 0
-    headAmount: 0
-    heal: 0
-    effectState: 
-    effectText: 
-    effectIcon: 000000000000000000000000
-    tier: 0
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0

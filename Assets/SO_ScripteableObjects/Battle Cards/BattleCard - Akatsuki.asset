@@ -64,28 +64,3 @@ MonoBehaviour:
       amount: 1
     - resources: 17
       amount: 4
-  - name: Mathias
-    loreInfo: kndksajdksadksa
-    characterSprite: {fileID: 21300000, guid: 921ba5e9daad37748926b966126a21cf, type: 3}
-    cardType: 1
-    clan: 1
-    landOrigins: 0
-    TaijutsuValue: 5
-    NinjutsuValue: 13
-    GenjutsuValue: 50
-    headAmount: 3
-    heal: 2
-    effectState: 
-    effectText: jsakdksajdkjsadsakjdsakjdas
-    textSize: 100.38
-    effectIcon: 010000000000000000000000
-    tier: 0
-    resources:
-    - resources: 17
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 6
-      amount: 3
