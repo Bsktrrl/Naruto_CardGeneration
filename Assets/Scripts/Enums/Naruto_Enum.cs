@@ -203,3 +203,10 @@ public enum ActionCardTypes
     ActionReaction,
     SpecialAction
 }
+
+public enum setNames
+{
+    None,
+
+    Base
+}

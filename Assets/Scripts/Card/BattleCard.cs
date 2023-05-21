@@ -26,6 +26,8 @@ public class BattleCard
     [Header("Name")]
     public string name;
     public string loreInfo;
+    public setNames set;
+    public int index;
     public Sprite characterSprite;
 
     [Header("Origin")]
@@ -48,7 +50,7 @@ public class BattleCard
     public Heal heal;
 
     [Header("Effect")]
-    public List<State> effectState;
+    //public List<State> effectState;
     [TextArea(3, 5)] public string effectText;
     public float textSize;
     public List<EffectIcon> effectIcon = new List<EffectIcon>() { EffectIcon.None, EffectIcon.None, EffectIcon.None};

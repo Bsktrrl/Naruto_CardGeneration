@@ -15,19 +15,24 @@ MonoBehaviour:
   cardList:
   - name: Ally_Rare 1
     loreInfo: (Ally_Rare 1)
-    characterSprite: {fileID: 21300000, guid: d4d43c082ff96e740881cbd682d977f6, type: 3}
+    set: 0
+    index: 0
+    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
     cardType: 1
     clan: 7
-    landOrigins: 8
+    landOrigins: 17
     TaijutsuValue: 4
     NinjutsuValue: 5
     GenjutsuValue: 7
-    headAmount: 3
+    headAmount: 0
     heal: 1
-    effectState: 02000000
-    effectText: 'dsadsad adssad '
+    effectText: '<size=80><b><u>Scoring:</b></u>
+
+      <size=70>If this isn''t the
+      first Battle in this War, get  <sprite=22> equivalent to you''re opponent''s
+      <b>Ninjutsu</b> Value'
     textSize: 0
-    effectIcon: 000000000000000001000000
+    effectIcon: 000000000000000000000000
     tier: 2
     resources:
     - resources: 0
@@ -37,9 +42,11 @@ MonoBehaviour:
     - resources: 12
       amount: 2
     - resources: 13
-      amount: 4
+      amount: 2
   - name: Ally_Rare 2
     loreInfo: (Ally_Rare 2)
+    set: 0
+    index: 0
     characterSprite: {fileID: 21300000, guid: a2e412ca79adf4947b079c4fc0daf2e6, type: 3}
     cardType: 1
     clan: 7
@@ -49,7 +56,6 @@ MonoBehaviour:
     GenjutsuValue: 9
     headAmount: 5
     heal: 2
-    effectState: 0500000004000000
     effectText: 
     textSize: 0
     effectIcon: 010000000000000002000000

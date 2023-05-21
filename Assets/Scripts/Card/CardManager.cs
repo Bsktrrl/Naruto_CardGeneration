@@ -48,6 +48,11 @@ public class CardManager : MonoBehaviour
     public SO_ClanSpecialtyCard clanSpecialty_Uchiha;
     public SO_ClanSpecialtyCard clanSpecialty_Uzumaki;
 
+    [Header("Set Images")]
+    public Sprite baseSet_Icon;
+    public string endYear = "2023";
+    public string companyName = "AM Games";
+
     #region Sprites
     [Header("Tier Images")]
     public Sprite Tier_Common_Image;
@@ -354,15 +359,17 @@ public class CardManager : MonoBehaviour
                 break;
 
             case Clan.Akatsuki:
-                for (int j = 0; j < battleCardObject.background_Image.Count; j++)
-                {
-                    battleCardObject.background_Image[j].color = colorManager.GetAkatsuki_BackgroundColor();
-                }
-                battleCardObject.Frame_Image.color = colorManager.GetAkatsuki_BorderColor();
-                for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-                {
-                    battleCardObject.landOrigins_Image[j].color = colorManager.GetAkatsuki_LandOriginColor();
-                }
+                battleCardObject.outerFrame.color = colorManager.GetAkatsuki_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetAkatsuki_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetAkatsuki_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetAkatsuki_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetAkatsuki_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetAkatsuki_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetAkatsuki_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetAkatsuki_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetAkatsuki_LandOriginColor();
 
                 battleCardObject.name_Text.color = colorManager.GetAkatsuki_TextColor();
                 battleCardObject.loreInfo_Text.color = colorManager.GetAkatsuki_TextColor();
@@ -374,30 +381,31 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
+
                 battleCardObject.Heal_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
                 battleCardObject.HealBlock_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
 
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                {
-                    battleCardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetAkatsuki_TextColor();
-                }
+                battleCardObject.box_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
+                
                 break;
             case Clan.Hyuga:
-                for (int j = 0; j < battleCardObject.background_Image.Count; j++)
-                {
-                    battleCardObject.background_Image[j].color = colorManager.GetHyuga_BackgroundColor();
-                }
-                battleCardObject.Frame_Image.color = colorManager.GetHyuga_BorderColor();
-                for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-                {
-                    battleCardObject.landOrigins_Image[j].color = colorManager.GetHyuga_LandOriginColor();
-                }
+                battleCardObject.outerFrame.color = colorManager.GetHyuga_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetHyuga_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetHyuga_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetHyuga_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetHyuga_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetHyuga_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetHyuga_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetHyuga_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetHyuga_LandOriginColor();
 
                 battleCardObject.name_Text.color = colorManager.GetHyuga_TextColor();
                 battleCardObject.loreInfo_Text.color = colorManager.GetHyuga_TextColor();
-                
+
                 battleCardObject.taijutsuValue_Text.color = colorManager.GetHyuga_TextColor();
                 battleCardObject.ninjutsuValue_Text.color = colorManager.GetHyuga_TextColor();
                 battleCardObject.genjutsuValue_Text.color = colorManager.GetHyuga_TextColor();
@@ -405,26 +413,27 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
+
                 battleCardObject.Heal_Border_Image.color = colorManager.GetHyuga_BorderColor();
                 battleCardObject.HealBlock_Border_Image.color = colorManager.GetHyuga_BorderColor();
 
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                {
-                    battleCardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetHyuga_TextColor();
-                }
+                battleCardObject.box_Frame.color = colorManager.GetHyuga_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetHyuga_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetHyuga_TextColor();
+
                 break;
             case Clan.Otsutsuki:
-                for (int j = 0; j < battleCardObject.background_Image.Count; j++)
-                {
-                    battleCardObject.background_Image[j].color = colorManager.GetOtsutsuki_BackgroundColor();
-                }
-                battleCardObject.Frame_Image.color = colorManager.GetOtsutsuki_BorderColor();
-                for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-                {
-                    battleCardObject.landOrigins_Image[j].color = colorManager.GetOtsutsuki_LandOriginColor();
-                }
+                battleCardObject.outerFrame.color = colorManager.GetOtsutsuki_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetOtsutsuki_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetOtsutsuki_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetOtsutsuki_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetOtsutsuki_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetOtsutsuki_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetOtsutsuki_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetOtsutsuki_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetOtsutsuki_LandOriginColor();
 
                 battleCardObject.name_Text.color = colorManager.GetOtsutsuki_TextColor();
                 battleCardObject.loreInfo_Text.color = colorManager.GetOtsutsuki_TextColor();
@@ -436,26 +445,27 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
+
                 battleCardObject.Heal_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
                 battleCardObject.HealBlock_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
 
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                {
-                    battleCardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetOtsutsuki_TextColor();
-                }
+                battleCardObject.box_Frame.color = colorManager.GetOtsutsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
+
                 break;
             case Clan.Senju:
-                for (int j = 0; j < battleCardObject.background_Image.Count; j++)
-                {
-                    battleCardObject.background_Image[j].color = colorManager.GetSenju_BackgroundColor();
-                }
-                battleCardObject.Frame_Image.color = colorManager.GetSenju_BorderColor();
-                for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-                {
-                    battleCardObject.landOrigins_Image[j].color = colorManager.GetSenju_LandOriginColor();
-                }
+                battleCardObject.outerFrame.color = colorManager.GetSenju_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetSenju_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetSenju_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetSenju_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetSenju_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetSenju_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetSenju_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetSenju_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetSenju_LandOriginColor();
 
                 battleCardObject.name_Text.color = colorManager.GetSenju_TextColor();
                 battleCardObject.loreInfo_Text.color = colorManager.GetSenju_TextColor();
@@ -467,26 +477,27 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
+
                 battleCardObject.Heal_Border_Image.color = colorManager.GetSenju_BorderColor();
                 battleCardObject.HealBlock_Border_Image.color = colorManager.GetSenju_BorderColor();
 
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                {
-                    battleCardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetSenju_TextColor();
-                }
+                battleCardObject.box_Frame.color = colorManager.GetSenju_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetSenju_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetSenju_TextColor();
+
                 break;
             case Clan.Uchiha:
-                for (int j = 0; j < battleCardObject.background_Image.Count; j++)
-                {
-                    battleCardObject.background_Image[j].color = colorManager.GetUchiha_BackgroundColor();
-                }
-                battleCardObject.Frame_Image.color = colorManager.GetUchiha_BorderColor();
-                for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-                {
-                    battleCardObject.landOrigins_Image[j].color = colorManager.GetUchiha_LandOriginColor();
-                }
+                battleCardObject.outerFrame.color = colorManager.GetUchiha_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetUchiha_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetUchiha_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetUchiha_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetUchiha_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetUchiha_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetUchiha_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetUchiha_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetUchiha_LandOriginColor();
 
                 battleCardObject.name_Text.color = colorManager.GetUchiha_TextColor();
                 battleCardObject.loreInfo_Text.color = colorManager.GetUchiha_TextColor();
@@ -498,26 +509,27 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
+
                 battleCardObject.Heal_Border_Image.color = colorManager.GetUchiha_BorderColor();
                 battleCardObject.HealBlock_Border_Image.color = colorManager.GetUchiha_BorderColor();
 
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                {
-                    battleCardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetUchiha_TextColor();
-                }
+                battleCardObject.box_Frame.color = colorManager.GetUchiha_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
+
                 break;
             case Clan.Uzumaki:
-                for (int j = 0; j < battleCardObject.background_Image.Count; j++)
-                {
-                    battleCardObject.background_Image[j].color = colorManager.GetUzumaki_BackgroundColor();
-                }
-                battleCardObject.Frame_Image.color = colorManager.GetUzumaki_BorderColor();
-                for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-                {
-                    battleCardObject.landOrigins_Image[j].color = colorManager.GetUzumaki_LandOriginColor();
-                }
+                battleCardObject.outerFrame.color = colorManager.GetUzumaki_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetUzumaki_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetUzumaki_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetUzumaki_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetUzumaki_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetUzumaki_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetUzumaki_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetUzumaki_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetUzumaki_LandOriginColor();
 
                 battleCardObject.name_Text.color = colorManager.GetUzumaki_TextColor();
                 battleCardObject.loreInfo_Text.color = colorManager.GetUzumaki_TextColor();
@@ -529,26 +541,27 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
+
                 battleCardObject.Heal_Border_Image.color = colorManager.GetUzumaki_BorderColor();
                 battleCardObject.HealBlock_Border_Image.color = colorManager.GetUzumaki_BorderColor();
 
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                {
-                    battleCardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetUzumaki_TextColor();
-                }
+                battleCardObject.box_Frame.color = colorManager.GetUzumaki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
+
                 break;
             case Clan.Ally:
-                for (int j = 0; j < battleCardObject.background_Image.Count; j++)
-                {
-                    battleCardObject.background_Image[j].color = colorManager.GetAlly_BackgroundColor();
-                }
-                battleCardObject.Frame_Image.color = colorManager.GetAlly_BorderColor();
-                for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-                {
-                    battleCardObject.landOrigins_Image[j].color = colorManager.GetAlly_LandOriginColor();
-                }
+                battleCardObject.outerFrame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetAlly_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetAlly_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetAlly_LandOriginColor();
 
                 battleCardObject.name_Text.color = colorManager.GetAlly_TextColor();
                 battleCardObject.loreInfo_Text.color = colorManager.GetAlly_TextColor();
@@ -560,15 +573,14 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+
                 battleCardObject.Heal_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.HealBlock_Border_Image.color = colorManager.GetAlly_BorderColor();
 
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                {
-                    battleCardObject.states_Image[j].GetComponentInChildren<Image>().color = colorManager.GetAlly_TextColor();
-                }
+                battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+
                 break;
 
             default:
@@ -577,142 +589,141 @@ public class CardManager : MonoBehaviour
 
         //Name Box
         battleCardObject.name_Text.text = battleCard.name;
-        battleCardObject.loreInfo_Text.text = battleCard.loreInfo;
-        for (int j = 0; j < battleCardObject.landOrigins_Image.Count; j++)
-        {
-            switch (battleCard.landOrigins)
-            {
-                case landOrigins.None:
-                    battleCardObject.landOrigins_Image[j].sprite = null;
-                    break;
-                case landOrigins.ANBU:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_ANBU;
-                    break;
-                case landOrigins.Cliff:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Cliff;
-                    break;
-                case landOrigins.Cloud:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Cloud;
-                    break;
-                case landOrigins.Craftsmen:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Craftsmen;
-                    break;
-                case landOrigins.Curtain:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Curtain;
-                    break;
-                case landOrigins.Dawn:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Dawn;
-                    break;
-                case landOrigins.Eddy:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Eddy;
-                    break;
-                case landOrigins.Fields:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Fields;
-                    break;
-                case landOrigins.Grass:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Grass;
-                    break;
-                case landOrigins.Hawk:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Hawk;
-                    break;
-                case landOrigins.Haze:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Haze;
-                    break;
-                case landOrigins.HotWater:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_HotWater;
-                    break;
-                case landOrigins.Iron:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Iron;
-                    break;
-                case landOrigins.JiroIsland:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_JiroIsland;
-                    break;
-                case landOrigins.KikaIsland:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_KikaIsland;
-                    break;
-                case landOrigins.LandOfAncestors:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_LandOfAncestors;
-                    break;
-                case landOrigins.Leaf:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Leaf;
-                    break;
-                case landOrigins.Lock:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Lock;
-                    break;
-                case landOrigins.Mines:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Mines;
-                    break;
-                case landOrigins.Mist:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Mist;
-                    break;
-                case landOrigins.Moon:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Moon;
-                    break;
-                case landOrigins.MountMyoboku:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_MountMyoboku;
-                    break;
-                case landOrigins.Mountain:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Mountain;
-                    break;
-                case landOrigins.Noodles:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Noodles;
-                    break;
-                case landOrigins.Rain:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Rain;
-                    break;
-                case landOrigins.Rice:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Rice;
-                    break;
-                case landOrigins.River:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_River;
-                    break;
-                case landOrigins.Sand:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Sand;
-                    break;
-                case landOrigins.Sea:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Sea;
-                    break;
-                case landOrigins.Sky:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Sky;
-                    break;
-                case landOrigins.Snow:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Snow;
-                    break;
-                case landOrigins.Sound:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Sound;
-                    break;
-                case landOrigins.Star:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Star;
-                    break;
-                case landOrigins.Stone:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Stone;
-                    break;
-                case landOrigins.Tea:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Tea;
-                    break;
-                case landOrigins.ThreeTunders:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_ThreeTunders;
-                    break;
-                case landOrigins.TurtleIsland:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_TurtleIsland;
-                    break;
-                case landOrigins.Vegetable:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Vegetable;
-                    break;
-                case landOrigins.Waterfall:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Waterfall;
-                    break;
-                case landOrigins.Wave:
-                    battleCardObject.landOrigins_Image[j].sprite = NationSymbol_Wave;
-                    break;
+        battleCardObject.loreInfo_Text.text = "- " + battleCard.loreInfo + " -";
 
-                default:
-                    battleCardObject.landOrigins_Image[j].sprite = null;
-                    break;
-            }
+        //Land Origin Sprite
+        switch (battleCard.landOrigins)
+        {
+            case landOrigins.None:
+                battleCardObject.landOrigins_Image.sprite = null;
+                break;
+            case landOrigins.ANBU:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_ANBU;
+                break;
+            case landOrigins.Cliff:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Cliff;
+                break;
+            case landOrigins.Cloud:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Cloud;
+                break;
+            case landOrigins.Craftsmen:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Craftsmen;
+                break;
+            case landOrigins.Curtain:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Curtain;
+                break;
+            case landOrigins.Dawn:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Dawn;
+                break;
+            case landOrigins.Eddy:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Eddy;
+                break;
+            case landOrigins.Fields:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Fields;
+                break;
+            case landOrigins.Grass:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Grass;
+                break;
+            case landOrigins.Hawk:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Hawk;
+                break;
+            case landOrigins.Haze:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Haze;
+                break;
+            case landOrigins.HotWater:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_HotWater;
+                break;
+            case landOrigins.Iron:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Iron;
+                break;
+            case landOrigins.JiroIsland:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_JiroIsland;
+                break;
+            case landOrigins.KikaIsland:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_KikaIsland;
+                break;
+            case landOrigins.LandOfAncestors:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_LandOfAncestors;
+                break;
+            case landOrigins.Leaf:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Leaf;
+                break;
+            case landOrigins.Lock:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Lock;
+                break;
+            case landOrigins.Mines:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Mines;
+                break;
+            case landOrigins.Mist:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Mist;
+                break;
+            case landOrigins.Moon:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Moon;
+                break;
+            case landOrigins.MountMyoboku:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_MountMyoboku;
+                break;
+            case landOrigins.Mountain:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Mountain;
+                break;
+            case landOrigins.Noodles:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Noodles;
+                break;
+            case landOrigins.Rain:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Rain;
+                break;
+            case landOrigins.Rice:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Rice;
+                break;
+            case landOrigins.River:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_River;
+                break;
+            case landOrigins.Sand:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Sand;
+                break;
+            case landOrigins.Sea:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Sea;
+                break;
+            case landOrigins.Sky:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Sky;
+                break;
+            case landOrigins.Snow:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Snow;
+                break;
+            case landOrigins.Sound:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Sound;
+                break;
+            case landOrigins.Star:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Star;
+                break;
+            case landOrigins.Stone:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Stone;
+                break;
+            case landOrigins.Tea:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Tea;
+                break;
+            case landOrigins.ThreeTunders:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_ThreeTunders;
+                break;
+            case landOrigins.TurtleIsland:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_TurtleIsland;
+                break;
+            case landOrigins.Vegetable:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Vegetable;
+                break;
+            case landOrigins.Waterfall:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Waterfall;
+                break;
+            case landOrigins.Wave:
+                battleCardObject.landOrigins_Image.sprite = NationSymbol_Wave;
+                break;
+
+            default:
+                battleCardObject.landOrigins_Image.sprite = null;
+                break;
         }
 
-        //Character Image
+        //Character Sprite
         battleCardObject.characterImage.sprite = battleCard.characterSprite;
 
         //Values
@@ -797,80 +808,83 @@ public class CardManager : MonoBehaviour
         }
 
         //Effect
+        #region States
         //  - States - Change the size of box based on the amount of States
-        for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-            battleCardObject.states_Image[j].SetActive(true);
-        switch (battleCard.effectState.Count)
-        {
-            case 0:
-                battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
-                for (int j = 0; j < battleCardObject.states_Image.Count; j++)
-                    battleCardObject.states_Image[j].SetActive(false);
-                break;
-            case 1:
-                battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(120, 120);
-                for (int j = 1; j < battleCardObject.states_Image.Count; j++)
-                    battleCardObject.states_Image[j].SetActive(false);
-                break;
-            case 2:
-                battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(280, 120);
-                for (int j = 2; j < battleCardObject.states_Image.Count; j++)
-                    battleCardObject.states_Image[j].SetActive(false);
-                break;
-            case 3:
-                battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(440, 120);
-                for (int j = 3; j < battleCardObject.states_Image.Count; j++)
-                    battleCardObject.states_Image[j].SetActive(false);
-                break;
-            case 4:
-                battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(600, 120);
-                for (int j = 4; j < battleCardObject.states_Image.Count; j++)
-                    battleCardObject.states_Image[j].SetActive(false);
-                break;
-            case 5:
-                battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(760, 120);
-                for (int j = 5; j < battleCardObject.states_Image.Count; j++)
-                    battleCardObject.states_Image[j].SetActive(false);
-                break;
-            case 6:
-                battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(920, 120);
-                for (int j = 6; j < battleCardObject.states_Image.Count; j++)
-                    battleCardObject.states_Image[j].SetActive(false);
-                break;
+        //for (int j = 0; j < battleCardObject.states_Image.Count; j++)
+        //    battleCardObject.states_Image[j].SetActive(true);
+        //switch (battleCard.effectState.Count)
+        //{
+        //    case 0:
+        //        battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
+        //        for (int j = 0; j < battleCardObject.states_Image.Count; j++)
+        //            battleCardObject.states_Image[j].SetActive(false);
+        //        break;
+        //    case 1:
+        //        battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(120, 120);
+        //        for (int j = 1; j < battleCardObject.states_Image.Count; j++)
+        //            battleCardObject.states_Image[j].SetActive(false);
+        //        break;
+        //    case 2:
+        //        battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(280, 120);
+        //        for (int j = 2; j < battleCardObject.states_Image.Count; j++)
+        //            battleCardObject.states_Image[j].SetActive(false);
+        //        break;
+        //    case 3:
+        //        battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(440, 120);
+        //        for (int j = 3; j < battleCardObject.states_Image.Count; j++)
+        //            battleCardObject.states_Image[j].SetActive(false);
+        //        break;
+        //    case 4:
+        //        battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(600, 120);
+        //        for (int j = 4; j < battleCardObject.states_Image.Count; j++)
+        //            battleCardObject.states_Image[j].SetActive(false);
+        //        break;
+        //    case 5:
+        //        battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(760, 120);
+        //        for (int j = 5; j < battleCardObject.states_Image.Count; j++)
+        //            battleCardObject.states_Image[j].SetActive(false);
+        //        break;
+        //    case 6:
+        //        battleCardObject.states_Parent.GetComponent<RectTransform>().sizeDelta = new Vector2(920, 120);
+        //        for (int j = 6; j < battleCardObject.states_Image.Count; j++)
+        //            battleCardObject.states_Image[j].SetActive(false);
+        //        break;
 
-            default:
-                break;
-        }
-        for (int j = 0; j < battleCard.effectState.Count; j++)
-        {
-            switch (battleCard.effectState[j])
-            {
-                case State.None:
-                    battleCardObject.states_Image[j].GetComponent<Image>().sprite = null;
-                    break;
-                case State.Immediately:
-                    battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_Immediately_Image;
-                    break;
-                case State.AfterTheWar:
-                    battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_AfterWar_Image;
-                    break;
-                case State.ifWin:
-                    battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfWin_Image;
-                    break;
-                case State.ifLose:
-                    battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfLoose_Image;
-                    break;
-                case State.ifBattleAdvantage:
-                    battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfBattleAdvantage_Image;
-                    break;
-                case State.ifNotBattleAdvantage:
-                    battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfNotBattleAdvantage_Image;
-                    break;
+        //    default:
+        //        break;
+        //}
 
-                default:
-                    break;
-            }
-        }
+        //for (int j = 0; j < battleCard.effectState.Count; j++)
+        //{
+        //    switch (battleCard.effectState[j])
+        //    {
+        //        case State.None:
+        //            battleCardObject.states_Image[j].GetComponent<Image>().sprite = null;
+        //            break;
+        //        case State.Immediately:
+        //            battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_Immediately_Image;
+        //            break;
+        //        case State.AfterTheWar:
+        //            battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_AfterWar_Image;
+        //            break;
+        //        case State.ifWin:
+        //            battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfWin_Image;
+        //            break;
+        //        case State.ifLose:
+        //            battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfLoose_Image;
+        //            break;
+        //        case State.ifBattleAdvantage:
+        //            battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfBattleAdvantage_Image;
+        //            break;
+        //        case State.ifNotBattleAdvantage:
+        //            battleCardObject.states_Image[j].GetComponent<Image>().sprite = State_IfNotBattleAdvantage_Image;
+        //            break;
+
+        //        default:
+        //            break;
+        //    }
+        //}
+        #endregion
 
         //  - Effect Text
         #region
@@ -1012,7 +1026,7 @@ public class CardManager : MonoBehaviour
         switch (battleCard.tier)
         {
             case Tier.None:
-                battleCardObject.tier_Image.sprite = null;
+                battleCardObject.tier_Image.sprite = Tier_Common_Image;
                 break;
 
             case Tier.Common:
@@ -1327,9 +1341,30 @@ public class CardManager : MonoBehaviour
                     break;
             }
         }
-
-
         #endregion
+
+        //Card info
+        switch (battleCard.set)
+        {
+            case setNames.None:
+                break;
+            case setNames.Base:
+                battleCardObject.setImage.sprite = baseSet_Icon;
+                break;
+
+            default:
+                break;
+        }
+
+        if (battleCard.index < 10)
+            battleCardObject.infoText.text = "no. 000" + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+        else if (battleCard.index < 100)
+            battleCardObject.infoText.text = "no. 00" + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+        else if (battleCard.index < 1000)
+            battleCardObject.infoText.text = "no. 0" + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+        else
+            battleCardObject.infoText.text = "no. " + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+
     }
 
     void DisplayTextOnly(BattleCard battleCard)

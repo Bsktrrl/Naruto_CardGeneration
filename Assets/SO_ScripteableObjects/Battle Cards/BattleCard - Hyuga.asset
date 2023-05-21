@@ -13,22 +13,27 @@ MonoBehaviour:
   m_Name: BattleCard - Hyuga
   m_EditorClassIdentifier: 
   cardList:
-  - name: Hyuga 1
-    loreInfo: (Hyuga 1)
-    characterSprite: {fileID: 21300000, guid: 64366d2e6ded1364cad776fd058723be, type: 3}
+  - name: Hinata Hyuga
+    loreInfo: Teenager
+    set: 1
+    index: 2
+    characterSprite: {fileID: 21300000, guid: 4be6a1ef790612d4bb57ce9f58d65ac8, type: 3}
     cardType: 1
     clan: 2
-    landOrigins: 14
-    TaijutsuValue: 0
-    NinjutsuValue: 5
-    GenjutsuValue: 6
-    headAmount: 2
-    heal: 0
-    effectState: 
-    effectText: tejst <sprite=0> hdsha asdds adsadsada
-    textSize: 110.9
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    headAmount: 0
+    heal: 1
+    effectText: '<b><u>Scoring:</b></u>
+
+      If this isn''t the first Battle in
+      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
+      Value'
+    textSize: 0
     effectIcon: 000000000000000000000000
-    tier: 3
+    tier: 4
     resources:
     - resources: 0
       amount: 0
@@ -40,6 +45,8 @@ MonoBehaviour:
       amount: 1
   - name: Hyuga 2
     loreInfo: (Hyuga 2)
+    set: 0
+    index: 0
     characterSprite: {fileID: 21300000, guid: ca7c9a4accde9154587ea0baa0065d27, type: 3}
     cardType: 1
     clan: 2
@@ -49,7 +56,6 @@ MonoBehaviour:
     GenjutsuValue: 6
     headAmount: 0
     heal: 0
-    effectState: 0100000002000000
     effectText: 
     textSize: 0
     effectIcon: 020000000000000000000000

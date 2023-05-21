@@ -13,54 +13,34 @@ MonoBehaviour:
   m_Name: BattleCard - Akatsuki
   m_EditorClassIdentifier: 
   cardList:
-  - name: Akatsuki 1
-    loreInfo: (Akatsuki 1)
-    characterSprite: {fileID: 21300000, guid: 9f5669593c618904fa510868dbcf724c, type: 3}
+  - name: Deidara
+    loreInfo: Adult, Explotion Corps
+    set: 1
+    index: 1
+    characterSprite: {fileID: 21300000, guid: 4f118b38e664efb4e9e59f72455475f7, type: 3}
     cardType: 1
     clan: 1
-    landOrigins: 17
+    landOrigins: 34
     TaijutsuValue: 4
     NinjutsuValue: 7
     GenjutsuValue: 2
-    headAmount: 2
-    heal: 1
-    effectState: 0200000005000000
-    effectText: dsadasdsadsa
+    headAmount: 0
+    heal: 0
+    effectState: 
+    effectText: '<b><u>Scoring:</b></u>
+
+      If this isn''t the first Battle in
+      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
+      Value'
     textSize: 0
-    effectIcon: 020000000000000000000000
+    effectIcon: 000000000000000000000000
     tier: 1
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
-      amount: 0
+    - resources: 6
+      amount: 1
     - resources: 12
       amount: 2
     - resources: 15
       amount: 3
-  - name: Akatsuki 2
-    loreInfo: (Akatsuki 2)
-    characterSprite: {fileID: 21300000, guid: 68e7560fe2bf2c345b6db9271f92f0c9, type: 3}
-    cardType: 1
-    clan: 1
-    landOrigins: 24
-    TaijutsuValue: 1
-    NinjutsuValue: 2
-    GenjutsuValue: 3
-    headAmount: 1
-    heal: 2
-    effectState: 0600000001000000
-    effectText: hgge getgre gre gr gre reg re gw rwtjuk ilkik  htr h jk tj htry ttry
-      rty tr
-    textSize: 0
-    effectIcon: 000000000000000000000000
-    tier: 2
-    resources:
-    - resources: 3
-      amount: 1
-    - resources: 4
-      amount: 2
-    - resources: 6
-      amount: 1
-    - resources: 17
-      amount: 4
