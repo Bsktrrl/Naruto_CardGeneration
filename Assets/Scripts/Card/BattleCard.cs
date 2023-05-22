@@ -49,6 +49,13 @@ public class BattleCard
     [Header("Heal")]
     public Heal heal;
 
+    [Header("Chakra Natures")]
+    public bool fire;
+    public bool wind;
+    public bool lightning;
+    public bool water;
+    public bool earth;
+
     [Header("Effect")]
     //public List<State> effectState;
     [TextArea(3, 5)] public string effectText;

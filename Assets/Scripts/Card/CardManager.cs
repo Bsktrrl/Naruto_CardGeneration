@@ -32,6 +32,11 @@ public class CardManager : MonoBehaviour
     public SO_NarutoCard battle_Ally_Epic;
     public SO_NarutoCard battle_Ally_Legendary;
 
+    public Sprite box_Frame_Sprite;
+    public Sprite boxHead_Frame_Sprite;
+    public Sprite box_Background_Sprite;
+    public Sprite boxHead_Background_Sprite;
+
     [Header("Action Cards")]
     public SO_ActionCard actionCards;
     [SerializeField] ActionCardObject actionCardObject;
@@ -388,7 +393,10 @@ public class CardManager : MonoBehaviour
                 battleCardObject.box_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
-                
+
+                battleCardObject.head_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetAkatsuki_TextColor();
+
                 break;
             case Clan.Hyuga:
                 battleCardObject.outerFrame.color = colorManager.GetHyuga_BorderColor();
@@ -420,6 +428,9 @@ public class CardManager : MonoBehaviour
                 battleCardObject.box_Frame.color = colorManager.GetHyuga_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetHyuga_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetHyuga_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetHyuga_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetHyuga_TextColor();
 
                 break;
             case Clan.Otsutsuki:
@@ -453,6 +464,9 @@ public class CardManager : MonoBehaviour
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
 
+                battleCardObject.head_Frame.color = colorManager.GetOtsutsuki_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetOtsutsuki_TextColor();
+
                 break;
             case Clan.Senju:
                 battleCardObject.outerFrame.color = colorManager.GetSenju_BorderColor();
@@ -484,6 +498,9 @@ public class CardManager : MonoBehaviour
                 battleCardObject.box_Frame.color = colorManager.GetSenju_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetSenju_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetSenju_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetSenju_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetSenju_TextColor();
 
                 break;
             case Clan.Uchiha:
@@ -517,6 +534,9 @@ public class CardManager : MonoBehaviour
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
 
+                battleCardObject.head_Frame.color = colorManager.GetUchiha_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetUchiha_TextColor();
+
                 break;
             case Clan.Uzumaki:
                 battleCardObject.outerFrame.color = colorManager.GetUzumaki_BorderColor();
@@ -549,6 +569,9 @@ public class CardManager : MonoBehaviour
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
 
+                battleCardObject.head_Frame.color = colorManager.GetUzumaki_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetUzumaki_TextColor();
+
                 break;
             case Clan.Ally:
                 battleCardObject.outerFrame.color = colorManager.GetAlly_BorderColor();
@@ -580,6 +603,9 @@ public class CardManager : MonoBehaviour
                 battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetAlly_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetAlly_TextColor();
 
                 break;
 
@@ -752,60 +778,24 @@ public class CardManager : MonoBehaviour
         }
 
         //Tailed Beast Heads
-        switch (battleCard.headAmount)
+        #region
+        if (battleCard.headAmount > 0)
         {
-            case 0:
-                battleCardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 60);
-                battleCardObject.heads_Image[0].SetActive(false);
-                battleCardObject.heads_Image[1].SetActive(false);
-                battleCardObject.heads_Image[2].SetActive(false);
-                battleCardObject.heads_Image[3].SetActive(false);
-                battleCardObject.heads_Image[4].SetActive(false);
-                break;
-            case 1:
-                battleCardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(60, 60);
-                battleCardObject.heads_Image[0].SetActive(true);
-                battleCardObject.heads_Image[1].SetActive(false);
-                battleCardObject.heads_Image[2].SetActive(false);
-                battleCardObject.heads_Image[3].SetActive(false);
-                battleCardObject.heads_Image[4].SetActive(false);
-                break;
-            case 2:
-                battleCardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(140, 60);
-                battleCardObject.heads_Image[0].SetActive(true);
-                battleCardObject.heads_Image[1].SetActive(true);
-                battleCardObject.heads_Image[2].SetActive(false);
-                battleCardObject.heads_Image[3].SetActive(false);
-                battleCardObject.heads_Image[4].SetActive(false);
-                break;
-            case 3:
-                battleCardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(220, 60);
-                battleCardObject.heads_Image[0].SetActive(true);
-                battleCardObject.heads_Image[1].SetActive(true);
-                battleCardObject.heads_Image[2].SetActive(true);
-                battleCardObject.heads_Image[3].SetActive(false);
-                battleCardObject.heads_Image[4].SetActive(false);
-                break;
-            case 4:
-                battleCardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 60);
-                battleCardObject.heads_Image[0].SetActive(true);
-                battleCardObject.heads_Image[1].SetActive(true);
-                battleCardObject.heads_Image[2].SetActive(true);
-                battleCardObject.heads_Image[3].SetActive(true);
-                battleCardObject.heads_Image[4].SetActive(false);
-                break;
-            case 5:
-                battleCardObject.headParent.GetComponent<RectTransform>().sizeDelta = new Vector2(380, 60);
-                battleCardObject.heads_Image[0].SetActive(true);
-                battleCardObject.heads_Image[1].SetActive(true);
-                battleCardObject.heads_Image[2].SetActive(true);
-                battleCardObject.heads_Image[3].SetActive(true);
-                battleCardObject.heads_Image[4].SetActive(true);
-                break;
+            battleCardObject.headParent.SetActive(true);
 
-            default:
-                break;
+            battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
+            battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
         }
+        else
+        {
+            battleCardObject.headParent.SetActive(false);
+
+            battleCardObject.box_Frame.sprite = box_Frame_Sprite;
+            battleCardObject.box_Background.sprite = box_Background_Sprite;
+        }
+
+        battleCardObject.head_Amount.text = battleCard.headAmount.ToString();
+        #endregion
 
         //Effect
         #region States
@@ -1045,6 +1035,26 @@ public class CardManager : MonoBehaviour
             default:
                 break;
         }
+
+        //Chakra Natures
+        #region
+        battleCardObject.chakraNature_Fire.SetActive(false);
+        battleCardObject.chakraNature_Wind.SetActive(false);
+        battleCardObject.chakraNature_Lightning.SetActive(false);
+        battleCardObject.chakraNature_Water.SetActive(false);
+        battleCardObject.chakraNature_Earth.SetActive(false);
+
+        if (battleCard.fire)
+            battleCardObject.chakraNature_Fire.SetActive(true);
+        if (battleCard.wind)
+            battleCardObject.chakraNature_Wind.SetActive(true);
+        if (battleCard.lightning)
+            battleCardObject.chakraNature_Lightning.SetActive(true);
+        if (battleCard.water)
+            battleCardObject.chakraNature_Water.SetActive(true);
+        if (battleCard.earth)
+            battleCardObject.chakraNature_Earth.SetActive(true);
+        #endregion
 
         //Resources
         #region
@@ -1344,6 +1354,7 @@ public class CardManager : MonoBehaviour
         #endregion
 
         //Card info
+        #region
         switch (battleCard.set)
         {
             case setNames.None:
@@ -1364,7 +1375,7 @@ public class CardManager : MonoBehaviour
             battleCardObject.infoText.text = "no. 0" + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
         else
             battleCardObject.infoText.text = "no. " + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
-
+        #endregion
     }
 
     void DisplayTextOnly(BattleCard battleCard)

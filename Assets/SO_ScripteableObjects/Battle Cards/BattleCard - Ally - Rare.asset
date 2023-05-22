@@ -26,6 +26,11 @@ MonoBehaviour:
     GenjutsuValue: 7
     headAmount: 0
     heal: 1
+    fire: 1
+    wind: 0
+    lightning: 1
+    water: 0
+    earth: 1
     effectText: '<size=80><b><u>Scoring:</b></u>
 
       <size=70>If this isn''t the
@@ -56,6 +61,11 @@ MonoBehaviour:
     GenjutsuValue: 9
     headAmount: 5
     heal: 2
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
     effectText: 
     textSize: 0
     effectIcon: 010000000000000002000000

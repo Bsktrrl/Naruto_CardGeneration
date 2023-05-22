@@ -22,6 +22,7 @@ public class BattleCardObject : MonoBehaviour
 
     [Header("Info Box")]
     public Image box_Frame;
+    public Image box_Background;
     public TextMeshProUGUI name_Text;
     public TextMeshProUGUI loreInfo_Text;
     public Image landOrigins_Image;
@@ -48,8 +49,9 @@ public class BattleCardObject : MonoBehaviour
 
     [Header("Heads")]
     public GameObject headParent;
-    public List<GameObject> heads_Image;
-    
+    public Image head_Frame;
+    public TextMeshProUGUI head_Amount;
+
     [Header("Values")]
     public TextMeshProUGUI taijutsuValue_Text;
     public TextMeshProUGUI ninjutsuValue_Text;
@@ -60,6 +62,13 @@ public class BattleCardObject : MonoBehaviour
     public GameObject healBlockParent;
     public Image heal_Image;
     public Image healBlock_Image;
+
+    [Header("Chakra Natures")]
+    public GameObject chakraNature_Fire;
+    public GameObject chakraNature_Wind;
+    public GameObject chakraNature_Lightning;
+    public GameObject chakraNature_Water;
+    public GameObject chakraNature_Earth;
 
     [Header("Resources")]
     public List<GameObject> resources_Image;
