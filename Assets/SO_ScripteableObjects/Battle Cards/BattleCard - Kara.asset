@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8866748b1dd701340bbbd2ca2f0d64a1, type: 3}
+  m_Name: BattleCard - Kara
+  m_EditorClassIdentifier: 
+  cardList:
+  - name: Ino Yamanaka
+    loreInfo: Child, Chuunin Exam, Team 10
+    index: 1
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
+    cardType: 1
+    clan: 7
+    landOrigins: 34
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 2
+    tier: 2
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
+    effectText: '<size=80><b><u>Scoring:</b></u>
+
+      <size=70>If this isn''t the
+      first Battle in this War, get  <sprite=22> equivalent to you''re opponent''s
+      <b>Ninjutsu</b> Value'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 6
+      amount: 1
+    - resources: 12
+      amount: 2
+    - resources: 15
+      amount: 3

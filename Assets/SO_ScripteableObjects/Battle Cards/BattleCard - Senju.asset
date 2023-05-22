@@ -13,53 +13,37 @@ MonoBehaviour:
   m_Name: BattleCard - Senju
   m_EditorClassIdentifier: 
   cardList:
-  - name: Senju 1
-    loreInfo: (Senju 1)
-    characterSprite: {fileID: 21300000, guid: 0b9c1d18a4b9e5a46af851b3bfd5dae7, type: 3}
+  - name: Ino Yamanaka
+    loreInfo: Child, Chuunin Exam, Team 10
+    index: 0
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
     cardType: 1
     clan: 4
     landOrigins: 18
     TaijutsuValue: 4
     NinjutsuValue: 8
     GenjutsuValue: 8
-    headAmount: 1
     heal: 1
-    effectState: 
-    effectText: 
-    textSize: 0
-    effectIcon: 020000000200000002000000
+    headAmount: 1
     tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
+    effectText: '<b><u>Scoring:</b></u>
+
+      If this isn''t the first Battle in
+      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
+      Value'
+    effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 0
     - resources: 2
-      amount: 1
+      amount: 3
     - resources: 6
-      amount: 2
-  - name: Senju 2
-    loreInfo: (Senju 2)
-    characterSprite: {fileID: 21300000, guid: d1b194d1e4848a94794cceb88f4f947c, type: 3}
-    cardType: 1
-    clan: 4
-    landOrigins: 29
-    TaijutsuValue: 1
-    NinjutsuValue: 1
-    GenjutsuValue: 2
-    headAmount: 0
-    heal: 2
-    effectState: 030000000400000005000000
-    effectText: dsadsadsa d dsadsa dsadsadsa
-    textSize: 0
-    effectIcon: 000000000000000000000000
-    tier: 2
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 5
-      amount: 2
-    - resources: 3
-      amount: 1
-    - resources: 18
       amount: 2

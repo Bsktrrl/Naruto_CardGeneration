@@ -28,6 +28,7 @@ public class CardManager : MonoBehaviour
     public SO_NarutoCard battle_Senju;
     public SO_NarutoCard battle_Uchiha;
     public SO_NarutoCard battle_Uzumaki;
+    public SO_NarutoCard battle_Kara;
     public SO_NarutoCard battle_Ally_Rare;
     public SO_NarutoCard battle_Ally_Epic;
     public SO_NarutoCard battle_Ally_Legendary;
@@ -36,6 +37,10 @@ public class CardManager : MonoBehaviour
     public Sprite boxHead_Frame_Sprite;
     public Sprite box_Background_Sprite;
     public Sprite boxHead_Background_Sprite;
+
+    public Sprite circle_Empty;
+    public Sprite circle_Heal;
+    public Sprite circle_HealBlock;
 
     [Header("Action Cards")]
     public SO_ActionCard actionCards;
@@ -264,6 +269,13 @@ public class CardManager : MonoBehaviour
                 else
                     DisplayBattleCard(battle_Uzumaki.cardList[battle_Uzumaki.cardList.Count - 1]);
                 break;
+            case Clan.Kara:
+                if (battle_Kara.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Kara.cardList.Count)
+                    DisplayBattleCard(battle_Kara.cardList[battleCard_Number]);
+                else
+                    DisplayBattleCard(battle_Kara.cardList[battle_Kara.cardList.Count - 1]);
+                break;
             case Clan.Ally_Rare:
                 if (battle_Ally_Rare.cardList.Count <= 0) { }
                 else if (battleCard_Number >= 0 && battleCard_Number < battle_Ally_Rare.cardList.Count)
@@ -387,9 +399,6 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
 
-                battleCardObject.Heal_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
-                battleCardObject.HealBlock_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
-
                 battleCardObject.box_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
@@ -421,9 +430,6 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
-
-                battleCardObject.Heal_Border_Image.color = colorManager.GetHyuga_BorderColor();
-                battleCardObject.HealBlock_Border_Image.color = colorManager.GetHyuga_BorderColor();
 
                 battleCardObject.box_Frame.color = colorManager.GetHyuga_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetHyuga_TextColor();
@@ -457,9 +463,6 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
 
-                battleCardObject.Heal_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
-                battleCardObject.HealBlock_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
-
                 battleCardObject.box_Frame.color = colorManager.GetOtsutsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
@@ -491,9 +494,6 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
-
-                battleCardObject.Heal_Border_Image.color = colorManager.GetSenju_BorderColor();
-                battleCardObject.HealBlock_Border_Image.color = colorManager.GetSenju_BorderColor();
 
                 battleCardObject.box_Frame.color = colorManager.GetSenju_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetSenju_TextColor();
@@ -527,9 +527,6 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
 
-                battleCardObject.Heal_Border_Image.color = colorManager.GetUchiha_BorderColor();
-                battleCardObject.HealBlock_Border_Image.color = colorManager.GetUchiha_BorderColor();
-
                 battleCardObject.box_Frame.color = colorManager.GetUchiha_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
@@ -562,15 +559,44 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
 
-                battleCardObject.Heal_Border_Image.color = colorManager.GetUzumaki_BorderColor();
-                battleCardObject.HealBlock_Border_Image.color = colorManager.GetUzumaki_BorderColor();
-
                 battleCardObject.box_Frame.color = colorManager.GetUzumaki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
 
                 battleCardObject.head_Frame.color = colorManager.GetUzumaki_BoxFrameColor();
                 battleCardObject.head_Amount.color = colorManager.GetUzumaki_TextColor();
+
+                break;
+            case Clan.Kara:
+                battleCardObject.outerFrame.color = colorManager.GetKara_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetKara_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetKara_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetKara_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetKara_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetKara_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetKara_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetKara_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetKara_LandOriginColor();
+
+                battleCardObject.name_Text.color = colorManager.GetKara_TextColor();
+                battleCardObject.loreInfo_Text.color = colorManager.GetKara_TextColor();
+
+                battleCardObject.taijutsuValue_Text.color = colorManager.GetKara_TextColor();
+                battleCardObject.ninjutsuValue_Text.color = colorManager.GetKara_TextColor();
+                battleCardObject.genjutsuValue_Text.color = colorManager.GetKara_TextColor();
+
+                battleCardObject.Taijutsu_Border_Image.color = colorManager.GetKara_BorderColor();
+                battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetKara_BorderColor();
+                battleCardObject.Genjutsu_Border_Image.color = colorManager.GetKara_BorderColor();
+
+                battleCardObject.box_Frame.color = colorManager.GetKara_BoxFrameColor();
+                battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetKara_TextColor();
+                battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetKara_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetKara_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetKara_TextColor();
 
                 break;
             case Clan.Ally:
@@ -596,9 +622,6 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Taijutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
-
-                battleCardObject.Heal_Border_Image.color = colorManager.GetAlly_BorderColor();
-                battleCardObject.HealBlock_Border_Image.color = colorManager.GetAlly_BorderColor();
 
                 battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
@@ -763,14 +786,17 @@ public class CardManager : MonoBehaviour
             case Heal.None:
                 battleCardObject.healParent.SetActive(false);
                 battleCardObject.healBlockParent.SetActive(false);
+                battleCardObject.over_Circle.sprite = circle_Empty;
                 break;
             case Heal.Heal:
                 battleCardObject.healParent.SetActive(true);
                 battleCardObject.healBlockParent.SetActive(false);
+                battleCardObject.over_Circle.sprite = circle_Heal;
                 break;
             case Heal.HealBlock:
                 battleCardObject.healParent.SetActive(false);
                 battleCardObject.healBlockParent.SetActive(true);
+                battleCardObject.over_Circle.sprite = circle_HealBlock;
                 break;
 
             default:
@@ -1358,6 +1384,7 @@ public class CardManager : MonoBehaviour
         switch (battleCard.set)
         {
             case setNames.None:
+                battleCardObject.setImage.sprite = null;
                 break;
             case setNames.Base:
                 battleCardObject.setImage.sprite = baseSet_Icon;
@@ -1387,17 +1414,19 @@ public class CardManager : MonoBehaviour
         battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().text = battleCard.effectText;
 
         //TextSize
-        if (battleCard.textSize > 0)
-        {
-            //battleCardDescriptionText.autoSizeTextContainer = false;
-            battleCardDescriptionText.fontSize = battleCard.textSize;
-            battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1400, 560);
-        }
-        else
-        {
-            //battleCardDescriptionText.autoSizeTextContainer = true;
-            battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1400, 560);
-        }
+        //if (battleCard.textSize > 0)
+        //{
+        //    //battleCardDescriptionText.autoSizeTextContainer = false;
+        //    battleCardDescriptionText.fontSize = battleCard.textSize;
+        //    battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 500);
+        //}
+        //else
+        //{
+        //    //battleCardDescriptionText.autoSizeTextContainer = true;
+        //    battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 500);
+        //}
+
+        battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 500);
     }
     void Display3Icons(BattleCard battleCard)
     {
@@ -1504,17 +1533,19 @@ public class CardManager : MonoBehaviour
         }
 
         //TextSize
-        if (battleCard.textSize > 0)
-        {
-            //battleCardIconTextDescriptionText.autoSizeTextContainer = false;
-            battleCardIconTextDescriptionText.fontSize = battleCard.textSize;
-            battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(840, 560);
-        }
-        else
-        {
-            //battleCardIconTextDescriptionText.autoSizeTextContainer = true;
-            battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(840, 560);
-        }
+        //if (battleCard.textSize > 0)
+        //{
+        //    //battleCardIconTextDescriptionText.autoSizeTextContainer = false;
+        //    battleCardIconTextDescriptionText.fontSize = battleCard.textSize;
+        //    battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 500);
+        //}
+        //else
+        //{
+        //    //battleCardIconTextDescriptionText.autoSizeTextContainer = true;
+        //    battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 500);
+        //}
+
+        battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 500);
     }
 
 

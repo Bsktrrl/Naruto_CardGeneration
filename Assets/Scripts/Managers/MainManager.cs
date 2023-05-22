@@ -72,7 +72,8 @@ public class MainManager : MonoBehaviour
                 {
                     for (int j = 0; j < battleCards[i].cardList.Count; j++)
                     {
-                        if (battleCardObject.name_Text.text == battleCards[i].cardList[j].name)
+                        if (battleCardObject.name_Text.text == battleCards[i].cardList[j].name
+                            && battleCardObject.loreInfo_Text.text == "- " + battleCards[i].cardList[j].loreInfo + " -")
                         {
                             PrintBattleCard(i, j);
                             break;

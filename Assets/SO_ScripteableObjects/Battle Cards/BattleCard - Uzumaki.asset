@@ -13,53 +13,37 @@ MonoBehaviour:
   m_Name: BattleCard - Uzumaki
   m_EditorClassIdentifier: 
   cardList:
-  - name: Uzumaki 1
-    loreInfo: (Uzumaki 1)
-    characterSprite: {fileID: 21300000, guid: ab28a0b84542b914e959b45790e306fe, type: 3}
-    cardType: 1
-    clan: 6
-    landOrigins: 31
-    TaijutsuValue: 3
-    NinjutsuValue: 9
-    GenjutsuValue: 7
-    headAmount: 3
-    heal: 1
-    effectState: 
-    effectText: 
-    textSize: 0
-    effectIcon: 010000000200000002000000
-    tier: 4
-    resources:
-    - resources: 6
-      amount: 3
-    - resources: 8
-      amount: 1
-    - resources: 5
-      amount: 2
-    - resources: 18
-      amount: 2
-  - name: Uzumaki 2
-    loreInfo: (Uzumaki 2)
-    characterSprite: {fileID: 21300000, guid: 9e5872bf0e8f87543945897dff330969, type: 3}
+  - name: Ino Yamanaka
+    loreInfo: Child, Chuunin Exam, Team 10
+    index: 0
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
     cardType: 1
     clan: 6
     landOrigins: 24
     TaijutsuValue: 3
-    NinjutsuValue: 7
-    GenjutsuValue: 8
-    headAmount: 5
-    heal: 0
-    effectState: 0400000003000000
-    effectText: dsadsa dsa ds dsa dsa dsa dsa dsa fggsfg fdsg fd gd gd
-    textSize: 0
-    effectIcon: 000000000100000000000000
-    tier: 0
+    NinjutsuValue: 9
+    GenjutsuValue: 7
+    heal: 1
+    headAmount: 3
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
+    effectText: '<b><u>Scoring:</b></u>
+
+      If this isn''t the first Battle in
+      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
+      Value'
+    effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
-      amount: 0
-    - resources: 17
+    - resources: 6
       amount: 1
-    - resources: 17
+    - resources: 8
+      amount: 1
+    - resources: 5
       amount: 2
-    - resources: 17
+    - resources: 3
       amount: 3

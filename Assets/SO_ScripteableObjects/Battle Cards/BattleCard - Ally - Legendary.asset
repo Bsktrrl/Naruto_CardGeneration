@@ -15,20 +15,25 @@ MonoBehaviour:
   cardList:
   - name: Ally_Legendary 1
     loreInfo: (Ally_Legendary 1)
+    index: 0
+    set: 1
     characterSprite: {fileID: 21300000, guid: 921ba5e9daad37748926b966126a21cf, type: 3}
     cardType: 1
-    clan: 7
+    clan: 8
     landOrigins: 15
     TaijutsuValue: 10
     NinjutsuValue: 4
     GenjutsuValue: 3
-    headAmount: 0
     heal: 0
-    effectState: 
-    effectText: gsfds  fds fds  fdss fds fds fds fds
-    textSize: 0
-    effectIcon: 010000000100000002000000
+    headAmount: 0
     tier: 4
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
+    effectText: gsfds  fds fds  fdss fds fds fds fds
+    effectIcon: 010000000100000002000000
     resources:
     - resources: 0
       amount: 0
@@ -38,28 +43,3 @@ MonoBehaviour:
       amount: 1
     - resources: 3
       amount: 2
-  - name: Ally_Legendary 2
-    loreInfo: (Ally_Legendary 2)
-    characterSprite: {fileID: 0}
-    cardType: 1
-    clan: 7
-    landOrigins: 9
-    TaijutsuValue: 4
-    NinjutsuValue: 2
-    GenjutsuValue: 7
-    headAmount: 2
-    heal: 2
-    effectState: 01000000
-    effectText: dsadsa asdsad <sprite=13> dsadsa dsadsa adsad
-    textSize: 0
-    effectIcon: 000000000200000000000000
-    tier: 4
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 6
-      amount: 3

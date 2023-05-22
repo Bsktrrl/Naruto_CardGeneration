@@ -334,6 +334,7 @@ MonoBehaviour:
   battle_Senju: {fileID: 11400000, guid: baacb0b644b57c545b5eb40d70f5289e, type: 2}
   battle_Uchiha: {fileID: 11400000, guid: 8938ba85df812a7439fb36ceaea6b745, type: 2}
   battle_Uzumaki: {fileID: 11400000, guid: 3a364bdd08b91bf47a07f51c50f72125, type: 2}
+  battle_Kara: {fileID: 11400000, guid: 840c7f992c4c4994c9c980b87775f8d9, type: 2}
   battle_Ally_Rare: {fileID: 11400000, guid: 4a69d862e27e7eb469283c7a0ad46e53, type: 2}
   battle_Ally_Epic: {fileID: 11400000, guid: 9cb25a6195645bf40b099002ccbee8be, type: 2}
   battle_Ally_Legendary: {fileID: 11400000, guid: 66fc2d7087668d245a20ddf1888d09e6, type: 2}
@@ -341,6 +342,9 @@ MonoBehaviour:
   boxHead_Frame_Sprite: {fileID: 21300000, guid: f25835b5ef3d9e645b6434cac4f3edf0, type: 3}
   box_Background_Sprite: {fileID: 21300000, guid: 377cbf9072515bc49a2450e0d7bc007c, type: 3}
   boxHead_Background_Sprite: {fileID: 21300000, guid: daea16feb36dfdf4ba505e1537e20403, type: 3}
+  circle_Empty: {fileID: 21300000, guid: db46d21fdc1427c4fa3a53d8979850d0, type: 3}
+  circle_Heal: {fileID: 21300000, guid: 86ca83f48793f8b44bfb9270599ff120, type: 3}
+  circle_HealBlock: {fileID: 21300000, guid: d643996bf4d3519488602cce51d42470, type: 3}
   actionCards: {fileID: 11400000, guid: 842198a3c8b1a1743be59999c1361881, type: 2}
   actionCardObject: {fileID: 3372878869702784047}
   actionCardDescriptionText: {fileID: 3372878869187100910}
@@ -1230,7 +1234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -511, y: -1034.3}
+  m_AnchoredPosition: {x: -511, y: -1030.1}
   m_SizeDelta: {x: 395, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899343438
@@ -1797,7 +1801,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1884107180}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2205,48 +2209,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad5622e71cb0384cb04c3424ccf3fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Akatsuki_BackgroundColor: {r: 0.6901961, g: 0.6901961, b: 0.6901961, a: 1}
-  Akatsuki_BorderColor: {r: 0.22745098, g: 0.22745098, b: 0.22745098, a: 1}
-  Akatsuki_CircleColor: {r: 0, g: 0, b: 0, a: 1}
-  Akatsuki_BoxFrameColor: {r: 0, g: 0, b: 0, a: 1}
-  Akatsuki_TextColor: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
-  Akatsuki_LandOriginColor: {r: 0.3882353, g: 0.3882353, b: 0.3882353, a: 1}
-  Hyuga_BackgroundColor: {r: 0.76862746, g: 0.61960787, b: 1, a: 1}
-  Hyuga_BorderColor: {r: 0.37254903, g: 0.21176471, b: 0.5647059, a: 1}
-  Hyuga_CircleColor: {r: 0, g: 0, b: 0, a: 1}
-  Hyuga_BoxFrameColor: {r: 0, g: 0, b: 0, a: 1}
-  Hyuga_TextColor: {r: 0.25882354, g: 0.09803922, b: 0.4509804, a: 1}
-  Hyuga_LandOriginColor: {r: 0.45882353, g: 0.22745098, b: 0.74509805, a: 1}
+  Akatsuki_BorderColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
+  Akatsuki_BoxFrameColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
+  Akatsuki_CircleColor: {r: 0.28235295, g: 0.28235295, b: 0.28235295, a: 1}
+  Akatsuki_BackgroundColor: {r: 0.7176471, g: 0.7176471, b: 0.7176471, a: 1}
+  Akatsuki_LandOriginColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
+  Akatsuki_TextColor: {r: 0.11372549, g: 0.11372549, b: 0.11372549, a: 1}
+  Hyuga_BorderColor: {r: 0.43137255, g: 0.3019608, b: 0.5803922, a: 1}
+  Hyuga_BoxFrameColor: {r: 0.49803922, g: 0.34901962, b: 0.6784314, a: 1}
+  Hyuga_CircleColor: {r: 0.63529414, g: 0.4627451, b: 0.84313726, a: 1}
+  Hyuga_BackgroundColor: {r: 0.7921569, g: 0.654902, b: 1, a: 1}
+  Hyuga_LandOriginColor: {r: 0.7019608, g: 0.56078434, b: 0.8784314, a: 1}
+  Hyuga_TextColor: {r: 0.3254902, g: 0.19607843, b: 0.48235294, a: 1}
+  Otsutsuki_BorderColor: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 1}
+  Otsutsuki_BoxFrameColor: {r: 1, g: 1, b: 1, a: 1}
+  Otsutsuki_CircleColor: {r: 1, g: 1, b: 1, a: 1}
   Otsutsuki_BackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-  Otsutsuki_BorderColor: {r: 1, g: 1, b: 1, a: 1}
-  Otsutsuki_CircleColor: {r: 0, g: 0, b: 0, a: 1}
-  Otsutsuki_BoxFrameColor: {r: 0, g: 0, b: 0, a: 1}
-  Otsutsuki_TextColor: {r: 0.42745098, g: 0.42745098, b: 0.42745098, a: 1}
-  Otsutsuki_LandOriginColor: {r: 1, g: 1, b: 1, a: 1}
-  Senju_BackgroundColor: {r: 1, g: 0.74509805, b: 0.39215687, a: 1}
-  Senju_BorderColor: {r: 0.5647059, g: 0.4039216, b: 0.18431373, a: 1}
-  Senju_CircleColor: {r: 0, g: 0, b: 0, a: 1}
-  Senju_BoxFrameColor: {r: 0, g: 0, b: 0, a: 1}
-  Senju_TextColor: {r: 0.45098042, g: 0.2784314, b: 0.098039225, a: 1}
-  Senju_LandOriginColor: {r: 0.74509805, g: 0.5294118, b: 0.22745098, a: 1}
-  Uchiha_BackgroundColor: {r: 0.8862745, g: 0.36862746, b: 0.34509805, a: 1}
-  Uchiha_BorderColor: {r: 0.5647059, g: 0.22745098, b: 0.21176471, a: 1}
-  Uchiha_CircleColor: {r: 0, g: 0, b: 0, a: 1}
-  Uchiha_BoxFrameColor: {r: 0, g: 0, b: 0, a: 1}
-  Uchiha_TextColor: {r: 0.4509804, g: 0.105882354, b: 0.09803922, a: 1}
-  Uchiha_LandOriginColor: {r: 0.74509805, g: 0.23529412, b: 0.22745098, a: 1}
-  Uzumaki_BackgroundColor: {r: 1, g: 0.58431375, b: 0.25882354, a: 1}
-  Uzumaki_BorderColor: {r: 0.7019608, g: 0.36078432, b: 0, a: 1}
-  Uzumaki_CircleColor: {r: 0, g: 0, b: 0, a: 1}
-  Uzumaki_BoxFrameColor: {r: 0, g: 0, b: 0, a: 1}
-  Uzumaki_TextColor: {r: 0.63529414, g: 0.3372549, b: 0, a: 1}
-  Uzumaki_LandOriginColor: {r: 0.85882354, g: 0.4862745, b: 0.06666667, a: 1}
-  Ally_BackgroundColor: {r: 0.72156864, g: 0.9254902, b: 0.6392157, a: 1}
+  Otsutsuki_LandOriginColor: {r: 0.90588236, g: 0.90588236, b: 0.90588236, a: 1}
+  Otsutsuki_TextColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+  Senju_BorderColor: {r: 0.5372549, g: 0.38431373, b: 0.1764706, a: 1}
+  Senju_BoxFrameColor: {r: 0.6627451, g: 0.4862745, b: 0.2509804, a: 1}
+  Senju_CircleColor: {r: 0.7647059, g: 0.56078434, b: 0.2784314, a: 1}
+  Senju_BackgroundColor: {r: 0.9372549, g: 0.7411765, b: 0.47058824, a: 1}
+  Senju_LandOriginColor: {r: 0.73333335, g: 0.56078434, b: 0.32156864, a: 1}
+  Senju_TextColor: {r: 0.36862746, g: 0.24313726, b: 0.105882354, a: 1}
+  Uchiha_BorderColor: {r: 0.44313726, g: 0.11372549, b: 0.09803922, a: 1}
+  Uchiha_BoxFrameColor: {r: 0.5568628, g: 0.19215687, b: 0.1764706, a: 1}
+  Uchiha_CircleColor: {r: 0.67058825, g: 0.21568628, b: 0.20392157, a: 1}
+  Uchiha_BackgroundColor: {r: 1, g: 0.47843137, b: 0.47843137, a: 1}
+  Uchiha_LandOriginColor: {r: 0.60784316, g: 0.19215687, b: 0.18431373, a: 1}
+  Uchiha_TextColor: {r: 0.3764706, g: 0.09803922, b: 0.09019608, a: 1}
+  Uzumaki_BorderColor: {r: 0.8666667, g: 0.44705883, b: 0, a: 1}
+  Uzumaki_BoxFrameColor: {r: 0.85882354, g: 0.4745098, b: 0.06666667, a: 1}
+  Uzumaki_CircleColor: {r: 1, g: 0.5529412, b: 0.078431375, a: 1}
+  Uzumaki_BackgroundColor: {r: 1, g: 0.60784316, b: 0.29803923, a: 1}
+  Uzumaki_LandOriginColor: {r: 0.88235295, g: 0.5137255, b: 0.101960786, a: 1}
+  Uzumaki_TextColor: {r: 0.5764706, g: 0.30588236, b: 0, a: 1}
+  Kara_BorderColor: {r: 0.06666667, g: 0.3882353, b: 0.7372549, a: 1}
+  Kara_BoxFrameColor: {r: 0.015686275, g: 0.38431373, b: 0.81960785, a: 1}
+  Kara_CircleColor: {r: 0.25882354, g: 0.5294118, b: 0.92941177, a: 1}
+  Kara_BackgroundColor: {r: 0.4745098, g: 0.6862745, b: 1, a: 1}
+  Kara_LandOriginColor: {r: 0.2627451, g: 0.4862745, b: 0.79607844, a: 1}
+  Kara_TextColor: {r: 0, g: 0.2627451, b: 0.5019608, a: 1}
   Ally_BorderColor: {r: 0.36078432, g: 0.44705883, b: 0.31764707, a: 1}
-  Ally_CircleColor: {r: 0.42745098, g: 0.58431375, b: 0.36862746, a: 1}
   Ally_BoxFrameColor: {r: 0.45882353, g: 0.61960787, b: 0.38039216, a: 1}
-  Ally_TextColor: {r: 0.06286567, g: 0.156, b: 0.072179094, a: 1}
-  Ally_LandOriginColor: {r: 0.6862745, g: 0.8039216, b: 0.62352943, a: 1}
+  Ally_CircleColor: {r: 0.5137255, g: 0.69803923, b: 0.4392157, a: 1}
+  Ally_BackgroundColor: {r: 0.7294118, g: 0.92941177, b: 0.6509804, a: 1}
+  Ally_LandOriginColor: {r: 0.6627451, g: 0.7764706, b: 0.6039216, a: 1}
+  Ally_TextColor: {r: 0.13333334, g: 0.3019608, b: 0.14509805, a: 1}
 --- !u!1 &1884107179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,8 +2285,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1968515460}
   - {fileID: 1526769130}
+  - {fileID: 1968515460}
   - {fileID: 1721428947}
   m_Father: {fileID: 1986761335062447083}
   m_RootOrder: 2
@@ -2576,7 +2586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -754, y: -1107}
+  m_AnchoredPosition: {x: -708.2, y: -1104.3}
   m_SizeDelta: {x: 1000, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1968515459
@@ -2610,7 +2620,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1884107180}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2909,7 +2919,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1986761335259422063}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3257,82 +3267,6 @@ MonoBehaviour:
   m_Spacing: {x: -15, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!222 &1986761333343464016
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986761333343464021}
-  m_CullTransparentMesh: 1
---- !u!224 &1986761333343464018
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986761333343464021}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986761333479802696}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1986761333343464019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986761333343464021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b3e09edefd0d713458e48ac9adb7b23f, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &1986761333343464021
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1986761333343464018}
-  - component: {fileID: 1986761333343464016}
-  - component: {fileID: 1986761333343464019}
-  m_Layer: 5
-  m_Name: Heal_Border
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!222 &1986761333421684998
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3421,7 +3355,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1986761333343464018}
   - {fileID: 1986761335126881775}
   m_Father: {fileID: 1986761334863949873}
   m_RootOrder: 0
@@ -4612,8 +4545,6 @@ MonoBehaviour:
   Taijutsu_Border_Image: {fileID: 1986761333421685001}
   Ninjutsu_Border_Image: {fileID: 1986761333555673425}
   Genjutsu_Border_Image: {fileID: 1986761333481197354}
-  Heal_Border_Image: {fileID: 1986761333343464019}
-  HealBlock_Border_Image: {fileID: 1986761335089911077}
   headParent: {fileID: 1228729746}
   head_Frame: {fileID: 456259267}
   head_Amount: {fileID: 2130767057}
@@ -6808,82 +6739,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1986761335089911074
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986761335089911079}
-  m_CullTransparentMesh: 1
---- !u!224 &1986761335089911076
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986761335089911079}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986761335259422063}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1986761335089911077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986761335089911079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ef4a75effd72b4640a673d39d4dfadd2, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &1986761335089911079
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1986761335089911076}
-  - component: {fileID: 1986761335089911074}
-  - component: {fileID: 1986761335089911077}
-  m_Layer: 5
-  m_Name: HealBlock_Border
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &1986761335098521926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7088,7 +6943,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1986761333479802696}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7226,7 +7081,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1986761335089911076}
   - {fileID: 1986761333256628886}
   m_Father: {fileID: 1986761334863949873}
   m_RootOrder: 1

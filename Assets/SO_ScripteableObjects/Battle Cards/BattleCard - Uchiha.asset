@@ -13,56 +13,37 @@ MonoBehaviour:
   m_Name: BattleCard - Uchiha
   m_EditorClassIdentifier: 
   cardList:
-  - name: Uchiha 1
-    loreInfo: (Uchiha 1)
-    characterSprite: {fileID: 21300000, guid: 113402e86d9b26c40b995a59e6dc75c1, type: 3}
+  - name: Ino Yamanaka
+    loreInfo: Child, Chuunin Exam, Team 10
+    index: 0
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
     cardType: 1
     clan: 5
     landOrigins: 6
     TaijutsuValue: 3
     NinjutsuValue: 6
     GenjutsuValue: 2
-    headAmount: 1
     heal: 1
-    effectState: 01000000
-    effectText: 
-    textSize: 0
-    effectIcon: 020000000000000000000000
+    headAmount: 1
     tier: 2
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 4
-      amount: 2
-    - resources: 17
-      amount: 3
-  - name: Uchiha 2
-    loreInfo: (Uchiha 2)
-    characterSprite: {fileID: 21300000, guid: 3186ae3de16bd674eb455ca1003692d2, type: 3}
-    cardType: 1
-    clan: 5
-    landOrigins: 17
-    TaijutsuValue: 4
-    NinjutsuValue: 2
-    GenjutsuValue: 9
-    headAmount: 3
-    heal: 2
-    effectState: 
-    effectText: 'dsadas dsad sa dsa dsa dsa dsa dsa dsa
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
+    effectText: '<b><u>Scoring:</b></u>
 
-
-      dsad dsa dsa dsa'
-    textSize: 0
+      If this isn''t the first Battle in
+      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
+      Value'
     effectIcon: 000000000000000000000000
-    tier: 1
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 0
     - resources: 3
-      amount: 2
-    - resources: 6
       amount: 3
+    - resources: 17
+      amount: 2

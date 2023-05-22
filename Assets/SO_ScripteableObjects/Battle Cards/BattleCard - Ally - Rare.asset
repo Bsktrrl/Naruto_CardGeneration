@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: BattleCard - Ally - Rare
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ally_Rare 1
-    loreInfo: (Ally_Rare 1)
-    set: 0
+  - name: Ino Yamanaka
+    loreInfo: Child, Chuunin Exam, Team 10
     index: 0
+    set: 1
     characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
     cardType: 1
-    clan: 7
+    clan: 8
     landOrigins: 17
     TaijutsuValue: 4
     NinjutsuValue: 5
     GenjutsuValue: 7
-    headAmount: 0
     heal: 1
+    headAmount: 2
+    tier: 2
     fire: 1
     wind: 0
     lightning: 1
@@ -36,9 +37,7 @@ MonoBehaviour:
       <size=70>If this isn''t the
       first Battle in this War, get  <sprite=22> equivalent to you''re opponent''s
       <b>Ninjutsu</b> Value'
-    textSize: 0
     effectIcon: 000000000000000000000000
-    tier: 2
     resources:
     - resources: 0
       amount: 0
@@ -48,34 +47,3 @@ MonoBehaviour:
       amount: 2
     - resources: 13
       amount: 2
-  - name: Ally_Rare 2
-    loreInfo: (Ally_Rare 2)
-    set: 0
-    index: 0
-    characterSprite: {fileID: 21300000, guid: a2e412ca79adf4947b079c4fc0daf2e6, type: 3}
-    cardType: 1
-    clan: 7
-    landOrigins: 34
-    TaijutsuValue: 5
-    NinjutsuValue: 2
-    GenjutsuValue: 9
-    headAmount: 5
-    heal: 2
-    fire: 0
-    wind: 0
-    lightning: 0
-    water: 0
-    earth: 0
-    effectText: 
-    textSize: 0
-    effectIcon: 010000000000000002000000
-    tier: 2
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 4
-      amount: 3

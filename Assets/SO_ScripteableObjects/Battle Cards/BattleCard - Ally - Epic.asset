@@ -15,20 +15,25 @@ MonoBehaviour:
   cardList:
   - name: Ally_Epic 1
     loreInfo: (Ally_Epic 1)
+    index: 0
+    set: 1
     characterSprite: {fileID: 21300000, guid: 46b4fddc62be5f94b9bafb2cc6b7899b, type: 3}
     cardType: 1
-    clan: 7
+    clan: 8
     landOrigins: 20
     TaijutsuValue: 6
     NinjutsuValue: 8
     GenjutsuValue: 9
-    headAmount: 5
     heal: 0
-    effectState: 03000000
-    effectText: ddqwdfdfgs <sprite=0> fadsa
-    textSize: 0
-    effectIcon: 000000000000000000000000
+    headAmount: 5
     tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
+    effectText: ddqwdfdfgs <sprite=0> fadsa
+    effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
@@ -37,29 +42,4 @@ MonoBehaviour:
     - resources: 0
       amount: 0
     - resources: 15
-      amount: 3
-  - name: Ally_Epic 2
-    loreInfo: (Ally_Epic 2)
-    characterSprite: {fileID: 21300000, guid: 81aac17e22082c2448262f68375e4344, type: 3}
-    cardType: 1
-    clan: 7
-    landOrigins: 32
-    TaijutsuValue: 6
-    NinjutsuValue: 3
-    GenjutsuValue: 4
-    headAmount: 2
-    heal: 2
-    effectState: 0600000004000000
-    effectText: dsadsa fadfaf hgfhgf
-    textSize: 0
-    effectIcon: 020000000000000000000000
-    tier: 3
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 17
-      amount: 2
-    - resources: 18
       amount: 3

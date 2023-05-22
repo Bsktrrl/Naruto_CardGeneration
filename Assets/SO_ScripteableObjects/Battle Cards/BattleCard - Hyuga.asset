@@ -15,25 +15,29 @@ MonoBehaviour:
   cardList:
   - name: Hinata Hyuga
     loreInfo: Teenager
-    set: 1
     index: 2
-    characterSprite: {fileID: 21300000, guid: 4be6a1ef790612d4bb57ce9f58d65ac8, type: 3}
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
     cardType: 1
     clan: 2
     landOrigins: 17
     TaijutsuValue: 3
     NinjutsuValue: 4
     GenjutsuValue: 2
+    heal: 2
     headAmount: 0
-    heal: 1
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 0
+    water: 0
+    earth: 0
     effectText: '<b><u>Scoring:</b></u>
 
       If this isn''t the first Battle in
       this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
       Value'
-    textSize: 0
     effectIcon: 000000000000000000000000
-    tier: 4
     resources:
     - resources: 0
       amount: 0
@@ -43,29 +47,3 @@ MonoBehaviour:
       amount: 5
     - resources: 9
       amount: 1
-  - name: Hyuga 2
-    loreInfo: (Hyuga 2)
-    set: 0
-    index: 0
-    characterSprite: {fileID: 21300000, guid: ca7c9a4accde9154587ea0baa0065d27, type: 3}
-    cardType: 1
-    clan: 2
-    landOrigins: 31
-    TaijutsuValue: 0
-    NinjutsuValue: 3
-    GenjutsuValue: 6
-    headAmount: 0
-    heal: 0
-    effectText: 
-    textSize: 0
-    effectIcon: 020000000000000000000000
-    tier: 4
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 1
-      amount: 2
-    - resources: 0
-      amount: 0
-    - resources: 10
-      amount: 4

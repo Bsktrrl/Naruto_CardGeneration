@@ -43,10 +43,6 @@ public class BattleCardObject : MonoBehaviour
     public Image Ninjutsu_Border_Image;
     public Image Genjutsu_Border_Image;
 
-    [Header("Heal")]
-    public Image Heal_Border_Image;
-    public Image HealBlock_Border_Image;
-
     [Header("Heads")]
     public GameObject headParent;
     public Image head_Frame;

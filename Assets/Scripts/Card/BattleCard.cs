@@ -26,8 +26,10 @@ public class BattleCard
     [Header("Name")]
     public string name;
     public string loreInfo;
-    public setNames set;
     public int index;
+    public setNames set;
+
+    [Header("Character")]
     public Sprite characterSprite;
 
     [Header("Origin")]
@@ -40,14 +42,14 @@ public class BattleCard
     public int NinjutsuValue;
     public int GenjutsuValue;
 
-    //[Header("Chakra Natures")]
-    //public List<int> chakraNatureValue = new List<int>() { 0, 0, 0, 0, 0 };
-
-    [Header("Tailed Beast Head")]
-    public int headAmount;
-
     [Header("Heal")]
     public Heal heal;
+
+    [Header("Tailed Beast Amount")]
+    public int headAmount;
+
+    [Header("Tier")]
+    public Tier tier;
 
     [Header("Chakra Natures")]
     public bool fire;
@@ -57,11 +59,9 @@ public class BattleCard
     public bool earth;
 
     [Header("Effect")]
-    //public List<State> effectState;
-    [TextArea(3, 5)] public string effectText;
-    public float textSize;
+    [TextArea(7, 6)] public string effectText;
+    //public float textSize;
     public List<EffectIcon> effectIcon = new List<EffectIcon>() { EffectIcon.None, EffectIcon.None, EffectIcon.None};
-    public Tier tier;
 
     [Header("Resources")]
     public List<Resource> resources = new List<Resource>() {null, null, null, null};

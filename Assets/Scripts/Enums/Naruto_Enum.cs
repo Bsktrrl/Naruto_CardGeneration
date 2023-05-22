@@ -22,6 +22,7 @@ public enum Clan
     Senju,
     Uchiha,
     Uzumaki,
+    Kara,
 
     Ally,
     Ally_Rare,
