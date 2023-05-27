@@ -25,8 +25,8 @@ MonoBehaviour:
     NinjutsuValue: 7
     GenjutsuValue: 2
     heal: 1
-    headAmount: 4
-    tier: 1
+    headAmount: 9
+    tier: 4
     fire: 0
     wind: 0
     lightning: 0
