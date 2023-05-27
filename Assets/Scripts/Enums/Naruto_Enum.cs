@@ -16,6 +16,7 @@ public enum Clan
 {
     None,
 
+    Akatsuki_Awakening,
     Akatsuki,
     Hyuga,
     Otsutsuki,

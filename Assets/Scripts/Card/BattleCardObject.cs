@@ -40,18 +40,19 @@ public class BattleCardObject : MonoBehaviour
 
     [Header("Value")]
     public Image Taijutsu_Border_Image;
+    public Image Taijutsu_Border_BG;
+    public TextMeshProUGUI taijutsuValue_Text;
     public Image Ninjutsu_Border_Image;
+    public Image Ninjutsu_Border_BG;
+    public TextMeshProUGUI ninjutsuValue_Text;
     public Image Genjutsu_Border_Image;
+    public Image Genjutsu_Border_BG;
+    public TextMeshProUGUI genjutsuValue_Text;
 
     [Header("Heads")]
     public GameObject headParent;
     public Image head_Frame;
     public TextMeshProUGUI head_Amount;
-
-    [Header("Values")]
-    public TextMeshProUGUI taijutsuValue_Text;
-    public TextMeshProUGUI ninjutsuValue_Text;
-    public TextMeshProUGUI genjutsuValue_Text;
 
     [Header("Heal")]
     public GameObject healParent;

@@ -22,6 +22,7 @@ public class CardManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI battleCardDescriptionText;
     [SerializeField] TextMeshProUGUI battleCardIconTextDescriptionText;
 
+    public SO_NarutoCard battle_Akatsuki_Awakening;
     public SO_NarutoCard battle_Akatsuki;
     public SO_NarutoCard battle_Hyuga;
     public SO_NarutoCard battle_Otsutsuki;
@@ -227,6 +228,13 @@ public class CardManager : MonoBehaviour
             case Clan.None:
                 break;
 
+            case Clan.Akatsuki_Awakening:
+                if (battle_Akatsuki_Awakening.cardList.Count <= 0) { }
+                else if (battleCard_Number >= 0 && battleCard_Number < battle_Akatsuki_Awakening.cardList.Count)
+                    DisplayBattleCard(battle_Akatsuki_Awakening.cardList[battleCard_Number]);
+                else
+                    DisplayBattleCard(battle_Akatsuki_Awakening.cardList[battle_Akatsuki_Awakening.cardList.Count - 1]);
+                break;
             case Clan.Akatsuki:
                 if (battle_Akatsuki.cardList.Count <= 0) { }
                 else if (battleCard_Number >= 0 && battleCard_Number < battle_Akatsuki.cardList.Count)
@@ -375,6 +383,38 @@ public class CardManager : MonoBehaviour
             case Clan.None:
                 break;
 
+            case Clan.Akatsuki_Awakening:
+                battleCardObject.outerFrame.color = colorManager.GetAkatsuki_Awakening_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetAkatsuki_Awakening_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetAkatsuki_Awakening_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetAkatsuki_Awakening_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetAkatsuki_Awakening_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetAkatsuki_Awakening_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetAkatsuki_Awakening_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetAkatsuki_Awakening_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetAkatsuki_Awakening_LandOriginColor();
+
+                battleCardObject.name_Text.color = colorManager.GetAkatsuki_Awakening_TextColor();
+                battleCardObject.loreInfo_Text.color = colorManager.GetAkatsuki_Awakening_TextColor();
+
+                battleCardObject.taijutsuValue_Text.color = colorManager.GetAkatsuki_Awakening_TextColor();
+                battleCardObject.ninjutsuValue_Text.color = colorManager.GetAkatsuki_Awakening_TextColor();
+                battleCardObject.genjutsuValue_Text.color = colorManager.GetAkatsuki_Awakening_TextColor();
+
+                battleCardObject.Taijutsu_Border_Image.color = colorManager.GetAkatsuki_Awakening_BorderColor();
+                battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAkatsuki_Awakening_BorderColor();
+                battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAkatsuki_Awakening_BorderColor();
+
+                battleCardObject.box_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
+                battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_Awakening_TextColor();
+                battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_Awakening_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetAkatsuki_Awakening_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetAkatsuki_Awakening_TextColor();
+
+                break;
             case Clan.Akatsuki:
                 battleCardObject.outerFrame.color = colorManager.GetAkatsuki_BorderColor();
                 battleCardObject.background_Image.color = colorManager.GetAkatsuki_BackgroundColor();
@@ -776,9 +816,52 @@ public class CardManager : MonoBehaviour
         battleCardObject.characterImage.sprite = battleCard.characterSprite;
 
         //Values
-        battleCardObject.taijutsuValue_Text.text = battleCard.TaijutsuValue.ToString();
-        battleCardObject.ninjutsuValue_Text.text = battleCard.NinjutsuValue.ToString();
-        battleCardObject.genjutsuValue_Text.text = battleCard.GenjutsuValue.ToString();
+        #region
+        if (battleCard.TaijutsuValue > 0)
+        {
+            battleCardObject.Taijutsu_Border_Image.gameObject.SetActive(true);
+            battleCardObject.Taijutsu_Border_BG.gameObject.SetActive(true);
+            battleCardObject.taijutsuValue_Text.gameObject.SetActive(true);
+
+            battleCardObject.taijutsuValue_Text.text = battleCard.TaijutsuValue.ToString();
+        }
+        else
+        {
+            battleCardObject.Taijutsu_Border_Image.gameObject.SetActive(false);
+            battleCardObject.Taijutsu_Border_BG.gameObject.SetActive(false);
+            battleCardObject.taijutsuValue_Text.gameObject.SetActive(false);
+        }
+
+        if (battleCard.NinjutsuValue > 0)
+        {
+            battleCardObject.Ninjutsu_Border_Image.gameObject.SetActive(true);
+            battleCardObject.Ninjutsu_Border_BG.gameObject.SetActive(true);
+            battleCardObject.ninjutsuValue_Text.gameObject.SetActive(true);
+
+            battleCardObject.ninjutsuValue_Text.text = battleCard.NinjutsuValue.ToString();
+        }
+        else
+        {
+            battleCardObject.Ninjutsu_Border_Image.gameObject.SetActive(false);
+            battleCardObject.Ninjutsu_Border_BG.gameObject.SetActive(false);
+            battleCardObject.ninjutsuValue_Text.gameObject.SetActive(false);
+        }
+
+        if (battleCard.GenjutsuValue > 0)
+        {
+            battleCardObject.Genjutsu_Border_Image.gameObject.SetActive(true);
+            battleCardObject.Genjutsu_Border_BG.gameObject.SetActive(true);
+            battleCardObject.genjutsuValue_Text.gameObject.SetActive(true);
+
+            battleCardObject.genjutsuValue_Text.text = battleCard.GenjutsuValue.ToString();
+        }
+        else
+        {
+            battleCardObject.Genjutsu_Border_Image.gameObject.SetActive(false);
+            battleCardObject.Genjutsu_Border_BG.gameObject.SetActive(false);
+            battleCardObject.genjutsuValue_Text.gameObject.SetActive(false);
+        }
+        #endregion
 
         //Heal
         switch (battleCard.heal)
@@ -1147,6 +1230,9 @@ public class CardManager : MonoBehaviour
                             case Clan.None:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = null;
                                 break;
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
                             case Clan.Akatsuki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
                                 break;
@@ -1164,6 +1250,9 @@ public class CardManager : MonoBehaviour
                                 break;
                             case Clan.Uzumaki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetKara_BorderColor();
                                 break;
                             case Clan.Ally:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
@@ -1182,6 +1271,9 @@ public class CardManager : MonoBehaviour
                             case Clan.None:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = null;
                                 break;
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
                             case Clan.Akatsuki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
                                 break;
@@ -1199,6 +1291,9 @@ public class CardManager : MonoBehaviour
                                 break;
                             case Clan.Uzumaki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetKara_BorderColor();
                                 break;
                             case Clan.Ally:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
@@ -1219,6 +1314,9 @@ public class CardManager : MonoBehaviour
                             case Clan.None:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = null;
                                 break;
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
                             case Clan.Akatsuki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
                                 break;
@@ -1236,6 +1334,9 @@ public class CardManager : MonoBehaviour
                                 break;
                             case Clan.Uzumaki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetKara_BorderColor();
                                 break;
                             case Clan.Ally:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
@@ -1256,6 +1357,9 @@ public class CardManager : MonoBehaviour
                             case Clan.None:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = null;
                                 break;
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
+                                break;
                             case Clan.Akatsuki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetAkatsuki_BorderColor();
                                 break;
@@ -1273,6 +1377,9 @@ public class CardManager : MonoBehaviour
                                 break;
                             case Clan.Uzumaki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetUzumaki_BorderColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetKara_BorderColor();
                                 break;
                             case Clan.Ally:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
@@ -1296,6 +1403,9 @@ public class CardManager : MonoBehaviour
                         {
                             case Clan.None:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = null;
+                                break;
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Akatsuki;
                                 break;
                             case Clan.Akatsuki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Akatsuki;

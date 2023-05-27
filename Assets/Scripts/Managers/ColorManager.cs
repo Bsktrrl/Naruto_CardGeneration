@@ -4,6 +4,20 @@ using UnityEngine;
 
 public class ColorManager : MonoBehaviour
 {
+    [Header("Akatsuki Awakening")]
+    [SerializeField] Color Akatsuki_Awakening_BorderColor;
+    [SerializeField] Color Akatsuki_Awakening_BoxFrameColor;
+    [SerializeField] Color Akatsuki_Awakening_CircleColor;
+    [SerializeField] Color Akatsuki_Awakening_BackgroundColor;
+    [SerializeField] Color Akatsuki_Awakening_LandOriginColor;
+    [SerializeField] Color Akatsuki_Awakening_TextColor;
+    public Color GetAkatsuki_Awakening_BackgroundColor() { return Akatsuki_Awakening_BackgroundColor; }
+    public Color GetAkatsuki_Awakening_TextColor() { return Akatsuki_Awakening_TextColor; }
+    public Color GetAkatsuki_Awakening_BorderColor() { return Akatsuki_Awakening_BorderColor; }
+    public Color GetAkatsuki_Awakening_LandOriginColor() { return Akatsuki_Awakening_LandOriginColor; }
+    public Color GetAkatsuki_Awakening_CircleColor() { return Akatsuki_Awakening_CircleColor; }
+    public Color GetAkatsuki_Awakening_BoxFrameColor() { return Akatsuki_Awakening_BoxFrameColor; }
+
     [Header("Akatsuki")]
     [SerializeField] Color Akatsuki_BorderColor;
     [SerializeField] Color Akatsuki_BoxFrameColor;

@@ -328,6 +328,7 @@ MonoBehaviour:
   battleCardObject: {fileID: 1986761333937809582}
   battleCardDescriptionText: {fileID: 1986761334416096270}
   battleCardIconTextDescriptionText: {fileID: 1986761334185777836}
+  battle_Akatsuki_Awakening: {fileID: 11400000, guid: 15831473fc8b5134cb628f40437e10a5, type: 2}
   battle_Akatsuki: {fileID: 11400000, guid: 089fe278e96b0ba43abf622ab761e5eb, type: 2}
   battle_Hyuga: {fileID: 11400000, guid: f0e87a6d4239c1d4ea03970d6a73e261, type: 2}
   battle_Otsutsuki: {fileID: 11400000, guid: f5bc40357e65c7940a367206bfc14af5, type: 2}
@@ -2209,6 +2210,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad5622e71cb0384cb04c3424ccf3fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Akatsuki_Awakening_BorderColor: {r: 0.44705883, g: 0.3372549, b: 0.1764706, a: 1}
+  Akatsuki_Awakening_BoxFrameColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
+  Akatsuki_Awakening_CircleColor: {r: 0.8392157, g: 0.6392157, b: 0.32941177, a: 1}
+  Akatsuki_Awakening_BackgroundColor: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
+  Akatsuki_Awakening_LandOriginColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
+  Akatsuki_Awakening_TextColor: {r: 0.1137255, g: 0.1137255, b: 0.1137255, a: 1}
   Akatsuki_BorderColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
   Akatsuki_BoxFrameColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
   Akatsuki_CircleColor: {r: 0.28235295, g: 0.28235295, b: 0.28235295, a: 1}
@@ -4543,14 +4550,17 @@ MonoBehaviour:
   - {fileID: 1986761334392522389}
   tier_Image: {fileID: 2044094446}
   Taijutsu_Border_Image: {fileID: 1986761333421685001}
+  Taijutsu_Border_BG: {fileID: 1986761334327752557}
+  taijutsuValue_Text: {fileID: 1986761333862055340}
   Ninjutsu_Border_Image: {fileID: 1986761333555673425}
+  Ninjutsu_Border_BG: {fileID: 1986761333921667334}
+  ninjutsuValue_Text: {fileID: 1986761334368705791}
   Genjutsu_Border_Image: {fileID: 1986761333481197354}
+  Genjutsu_Border_BG: {fileID: 1986761333731739901}
+  genjutsuValue_Text: {fileID: 1986761334572953298}
   headParent: {fileID: 1228729746}
   head_Frame: {fileID: 456259267}
   head_Amount: {fileID: 2130767057}
-  taijutsuValue_Text: {fileID: 1986761333862055340}
-  ninjutsuValue_Text: {fileID: 1986761334368705791}
-  genjutsuValue_Text: {fileID: 1986761334572953298}
   healParent: {fileID: 1986761333479802699}
   healBlockParent: {fileID: 1986761335259422062}
   heal_Image: {fileID: 1986761335126881772}

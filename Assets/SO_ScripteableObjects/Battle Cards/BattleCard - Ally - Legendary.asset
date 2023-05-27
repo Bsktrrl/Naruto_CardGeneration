@@ -19,7 +19,7 @@ MonoBehaviour:
     set: 1
     characterSprite: {fileID: 21300000, guid: 921ba5e9daad37748926b966126a21cf, type: 3}
     cardType: 1
-    clan: 8
+    clan: 9
     landOrigins: 15
     TaijutsuValue: 10
     NinjutsuValue: 4
