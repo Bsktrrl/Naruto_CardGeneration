@@ -39,11 +39,11 @@ MonoBehaviour:
       <b>Ninjutsu</b> Value'
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
-      amount: 0
+    - resources: 2
+      amount: 2
     - resources: 6
       amount: 1
     - resources: 12
       amount: 2
-    - resources: 15
+    - resources: 1
       amount: 3

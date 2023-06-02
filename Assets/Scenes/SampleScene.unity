@@ -360,16 +360,11 @@ MonoBehaviour:
   baseSet_Icon: {fileID: 21300000, guid: e6591658b7aad9840be044ab95a75bdd, type: 3}
   endYear: 2023
   companyName: AM Games
+  Tier_Trash_Image: {fileID: 21300000, guid: dfa4a3f5ca179fe4b9a407e0027e7e08, type: 3}
   Tier_Common_Image: {fileID: 21300000, guid: c53b1e69632501146b22fc2a0630a20a, type: 3}
   Tier_Rare_Image: {fileID: 21300000, guid: f1b1d048b5829714380377e6a0d3e30f, type: 3}
   Tier_Epic_Image: {fileID: 21300000, guid: 97262238d04a4ab4193d86438b6788de, type: 3}
   Tier_Legendary_Image: {fileID: 21300000, guid: b9ee82ccef7e45944b22e2cbff528d47, type: 3}
-  State_Immediately_Image: {fileID: 21300000, guid: 4a7c9949146b769478f2b3b60b13681b, type: 3}
-  State_AfterWar_Image: {fileID: 21300000, guid: c25150bf737ae334eb76f1f413d35acd, type: 3}
-  State_IfWin_Image: {fileID: 21300000, guid: 6ac94c426b30333429b0ef2e7a366bb1, type: 3}
-  State_IfLoose_Image: {fileID: 21300000, guid: 2715a426069edfe45bb0b4ad4670e91b, type: 3}
-  State_IfBattleAdvantage_Image: {fileID: 21300000, guid: b1e3a00383f146943aeb7ee34cd2da1d, type: 3}
-  State_IfNotBattleAdvantage_Image: {fileID: 21300000, guid: a93b1fe6b79b9ad4ca0149925c3e713f, type: 3}
   Skull: {fileID: 21300000, guid: 1609fc1a19753a24a86e1159433d92bf, type: 3}
   Shield: {fileID: 21300000, guid: e66a505f44239694381d55fecf740b8b, type: 3}
   NationSymbol_ANBU: {fileID: 21300000, guid: 72f5bff452cf2cb4d9b6da46945b61d4, type: 3}
@@ -423,6 +418,7 @@ MonoBehaviour:
   Resource_ClanCard_Senju: {fileID: 420174868, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_ClanCard_Uchiha: {fileID: 1717665120, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_ClanCard_Uzumaki: {fileID: 1755553268, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_ClanCard_Kara: {fileID: -986413827, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_ClanCard_Ally: {fileID: -713346938, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Ally_Rare: {fileID: 1562451697, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Ally_Epic: {fileID: 1209348960, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
@@ -2210,7 +2206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad5622e71cb0384cb04c3424ccf3fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Akatsuki_Awakening_BorderColor: {r: 0.44705883, g: 0.3372549, b: 0.1764706, a: 1}
+  Akatsuki_Awakening_BorderColor: {r: 0.5254902, g: 0.39607844, b: 0.20784314, a: 1}
   Akatsuki_Awakening_BoxFrameColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
   Akatsuki_Awakening_CircleColor: {r: 0.8392157, g: 0.6392157, b: 0.32941177, a: 1}
   Akatsuki_Awakening_BackgroundColor: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
@@ -2593,7 +2589,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -708.2, y: -1104.3}
+  m_AnchoredPosition: {x: -724, y: -1104.3}
   m_SizeDelta: {x: 1000, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1968515459
@@ -5156,7 +5152,7 @@ GameObject:
   - component: {fileID: 1986761334185777837}
   - component: {fileID: 1986761334185777836}
   m_Layer: 5
-  m_Name: EffectText (1)
+  m_Name: EffectText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5179,9 +5175,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 885, y: 500}
-  m_Pivot: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -250}
+  m_SizeDelta: {x: 885, y: 530}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &1986761334278153958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5909,9 +5905,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27, y: -55}
-  m_SizeDelta: {x: 1410, y: 500}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -678, y: -305}
+  m_SizeDelta: {x: 1410, y: 530}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1986761334444794334
 GameObject:
   m_ObjectHideFlags: 0
@@ -6334,7 +6330,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 800, y: 180}
-  m_Spacing: {x: 0, y: 10}
+  m_Spacing: {x: 0, y: 15}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1986761334849193076
@@ -6376,7 +6372,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 761, y: -170}
-  m_SizeDelta: {x: 800, y: 770}
+  m_SizeDelta: {x: 800, y: 790}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &1986761334863949872
 GameObject:
@@ -7319,7 +7315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b842db981fb316f4390a09147718616d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: beff99dbeb99c224696c2e7aaf6e95bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7398,8 +7394,8 @@ MonoBehaviour:
   m_text: Swap <sprite=0> with another <sprite=0> from the <sprite=17> Shop by paying
     -2 <sprite=22> less than its cost
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
+  m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7533,8 +7529,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Special Action
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
+  m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7564,7 +7560,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 100
   m_fontSizeMax: 300
-  m_fontStyle: 3
+  m_fontStyle: 19
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -7744,8 +7740,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: March
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
+  m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7769,13 +7765,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 134.25
+  m_fontSize: 133.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 100
   m_fontSizeMax: 300
-  m_fontStyle: 5
+  m_fontStyle: 21
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -8029,7 +8025,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b842db981fb316f4390a09147718616d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: beff99dbeb99c224696c2e7aaf6e95bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

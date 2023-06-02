@@ -98,6 +98,7 @@ public enum Tier
 {
     None,
 
+    Trash,
     Common,
     Rare,
     Epic,

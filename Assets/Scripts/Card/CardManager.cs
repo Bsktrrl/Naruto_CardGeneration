@@ -66,18 +66,11 @@ public class CardManager : MonoBehaviour
 
     #region Sprites
     [Header("Tier Images")]
+    public Sprite Tier_Trash_Image;
     public Sprite Tier_Common_Image;
     public Sprite Tier_Rare_Image;
     public Sprite Tier_Epic_Image;
     public Sprite Tier_Legendary_Image;
-
-    [Header("States Images")]
-    public Sprite State_Immediately_Image;
-    public Sprite State_AfterWar_Image;
-    public Sprite State_IfWin_Image;
-    public Sprite State_IfLoose_Image;
-    public Sprite State_IfBattleAdvantage_Image;
-    public Sprite State_IfNotBattleAdvantage_Image;
 
     [Header("Effect Images")]
     public Sprite Skull;
@@ -137,6 +130,7 @@ public class CardManager : MonoBehaviour
     public Sprite Resource_ClanCard_Senju;
     public Sprite Resource_ClanCard_Uchiha;
     public Sprite Resource_ClanCard_Uzumaki;
+    public Sprite Resource_ClanCard_Kara;
     public Sprite Resource_ClanCard_Ally;
     public Sprite Resource_Ally_Rare;
     public Sprite Resource_Ally_Epic;
@@ -1122,12 +1116,17 @@ public class CardManager : MonoBehaviour
         #endregion
 
         //  - Tier
+        battleCardObject.tier_Image.gameObject.SetActive(true);
         switch (battleCard.tier)
         {
             case Tier.None:
-                battleCardObject.tier_Image.sprite = Tier_Common_Image;
+                battleCardObject.tier_Image.gameObject.SetActive(false);
+                battleCardObject.tier_Image.sprite = null;
                 break;
 
+            case Tier.Trash:
+                battleCardObject.tier_Image.sprite = Tier_Trash_Image;
+                break;
             case Tier.Common:
                 battleCardObject.tier_Image.sprite = Tier_Common_Image;
                 break;
@@ -1424,6 +1423,9 @@ public class CardManager : MonoBehaviour
                                 break;
                             case Clan.Uzumaki:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Uzumaki;
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Kara;
                                 break;
                             case Clan.Ally:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Ally;

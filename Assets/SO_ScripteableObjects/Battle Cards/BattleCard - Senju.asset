@@ -17,7 +17,7 @@ MonoBehaviour:
     loreInfo: Child, Chuunin Exam, Team 10
     index: 0
     set: 1
-    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
+    characterSprite: {fileID: 21300000, guid: cd158c48d9867d44cb5b3dcac8926004, type: 3}
     cardType: 1
     clan: 5
     landOrigins: 18
@@ -32,10 +32,10 @@ MonoBehaviour:
     lightning: 0
     water: 0
     earth: 0
-    effectText: '<b><u>Scoring:</b></u>
+    effectText: '<b><u>After the War:</b></u>
 
-      If this isn''t the first Battle in
-      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
+      If this isn''t the first Battle
+      in this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
       Value'
     effectIcon: 000000000000000000000000
     resources:
