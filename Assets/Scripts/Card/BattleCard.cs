@@ -55,8 +55,8 @@ public class BattleCard
     public bool fire;
     public bool wind;
     public bool lightning;
-    public bool water;
     public bool earth;
+    public bool water;
 
     [Header("Effect")]
     [TextArea(7, 6)] public string effectText;

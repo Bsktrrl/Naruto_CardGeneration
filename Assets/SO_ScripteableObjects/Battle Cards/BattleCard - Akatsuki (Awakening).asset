@@ -44,11 +44,11 @@ MonoBehaviour:
 '
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 17
+    - resources: 10
       amount: 3
-    - resources: 6
+    - resources: 13
       amount: 2
-    - resources: 18
+    - resources: 14
       amount: 4
-    - resources: 1
+    - resources: 15
       amount: 5

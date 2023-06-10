@@ -86,6 +86,7 @@ public enum Resources
     Effect_Illusion,
     Effect_Freeze,
     Effect_Chain,
+    Effect_Substitution,
 
     Influence_UP,
     Influence_DOWN,

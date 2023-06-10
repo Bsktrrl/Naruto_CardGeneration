@@ -13,37 +13,640 @@ MonoBehaviour:
   m_Name: BattleCard - Senju
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ino Yamanaka
-    loreInfo: Child, Chuunin Exam, Team 10
-    index: 0
+  - name: Butsama Senju
+    loreInfo: Adult - Leader of the Senju Clan
+    index: 21
     set: 1
-    characterSprite: {fileID: 21300000, guid: cd158c48d9867d44cb5b3dcac8926004, type: 3}
+    characterSprite: {fileID: 21300000, guid: 71352e44df87c044fa21b6887c38c35f, type: 3}
     cardType: 1
     clan: 5
-    landOrigins: 18
-    TaijutsuValue: 4
-    NinjutsuValue: 8
-    GenjutsuValue: 8
-    heal: 1
+    landOrigins: 16
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 0
     headAmount: 1
     tier: 3
     fire: 0
     wind: 0
     lightning: 0
+    earth: 1
     water: 0
-    earth: 0
-    effectText: '<b><u>After the War:</b></u>
-
-      If this isn''t the first Battle
-      in this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
-      Value'
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1 random  <sprite=0> 
+      from each player\u2019s Hand (you can choose yours). Look at them and give
+      1 <sprite=0> back to each player as you like.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 4
+    - resources: 0
+      amount: 3
+    - resources: 6
+      amount: 2
+  - name: Hashirama Senju
+    loreInfo: Adult - 1st Hokage - Sage Mode
+    index: 22
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 68e7560fe2bf2c345b6db9271f92f0c9, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 10
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 3
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have at least
+      6  <sprite=0>  left in your Hand, get 1 BP.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 4
+    - resources: 0
+      amount: 3
+    - resources: 0
+      amount: 2
+  - name: Hashirama Senju
+    loreInfo: Adult - 1st Hokage - Konoha Founder
+    index: 23
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ceebd88c79102f64fb08038325f511b6, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 9
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 4
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Place as many points
+      of  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  on the Board as the
+      cost of your most expensive  <sprite=0>  in your Hand. Show your  <sprite=0> 
+      for evidence.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 4
+    - resources: 7
+      amount: 1
+    - resources: 15
+      amount: 1
+  - name: Hashirama Senju
+    loreInfo: Child
+    index: 24
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 46b4fddc62be5f94b9bafb2cc6b7899b, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>The next  <sprite=0> 
+      you play happens twice.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 4
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Hashirama Senju
+    loreInfo: Adult - 1st Hokage - Edo Tensei
+    index: 25
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 5611236951abe7c4d98a0b4799a9283d, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 10
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 3
+    tier: 5
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 010000000200000002000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0
+    - resources: 9
+      amount: 1
+    - resources: 2
+      amount: 2
+  - name: Itama Senju
+    loreInfo: Child - Hashirama's Little Brother
+    index: 26
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 81aac17e22082c2448262f68375e4344, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 1
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Steal 1 random  <sprite=0> 
+      from your opponent\u2019s Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 0
-    - resources: 2
-      amount: 3
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Kawarama Senju
+    loreInfo: Child - Hashirama's Little Brother
+    index: 27
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 592ee4fb12657f94282c112fb906fdb7, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 2
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 2
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If the Battlefield
+      contain a  <sprite=58>  , get +1 Strength in each of your Combat Styles for
+      every  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  in the Battlefield.
+      Count both yours and your opponent\u2019s.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
     - resources: 6
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 12
+      amount: 2
+  - name: Keiko Sora
+    loreInfo: Adult - Tobirama's Wife
+    index: 28
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9e5872bf0e8f87543945897dff330969, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 6
+    GenjutsuValue: 7
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1 <sprite=11>
+      for each player in game. Look at them and give 1 <sprite=11> to each player.
+      Yours get up to your Hand, the others on the bottom of their Draw Piles. Only
+      you can look at all the <sprite=11> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+  - name: Mito Uzumaki
+    loreInfo: "Adult - Jinch\u016Briki - Hashirama's Wife"
+    index: 29
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 921ba5e9daad37748926b966126a21cf, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 7
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 6
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>If you\u2019ve
+      played other  <sprite=8>  containing  <sprite=59>  , only Discard this  <sprite=4> 
+      and draw the rest back up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 7
+      amount: 2
+  - name: Nawaki Senju
+    loreInfo: Child - Tsunade's Younger Brother
+    index: 30
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d4d43c082ff96e740881cbd682d977f6, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 1
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 2
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Shuffle back in
+      all  <sprite=4>  \u201CTsunade Senju\u201D from your Discard Pile into the
+      top half of your Draw Pile.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Ohiko Senju
+    loreInfo: Adult - ANBU
+    index: 31
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a2e412ca79adf4947b079c4fc0daf2e6, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 1
+    TaijutsuValue: 8
+    NinjutsuValue: 7
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 3
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If at least 1 player
+      have 0  <sprite=0>  on Hand, take 1 <sprite=0> of your choice from the Shop
+      up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 11
+      amount: 2
+  - name: Tobirama Senju
+    loreInfo: Adult - 2nd Hokage - Police Founder
+    index: 32
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ca7c9a4accde9154587ea0baa0065d27, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 8
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 2
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>You may split or
+      merge your  <sprite=37>  <sprite=38>  <sprite=39>  on the Board. You must end
+      with the same amount of Unit-points on the Board as before this Scoring.'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 3
+      amount: 1
+  - name: Tobirama Senju
+    loreInfo: Child - Hashirama's Brother
+    index: 33
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 95abcdbe48ad0de4cbf2c40d913f5959, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you have more  <sprite=0> 
+      in your Hand than your opponent, get 1 BP.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Tobirama Senju
+    loreInfo: Adult - 2nd Hokage - Edo Tensei
+    index: 34
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d7cddd931a81f9249a495fbf5bd255db, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 9
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 2
+    tier: 5
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Discard 1  <sprite=0> 
+      from your Hand. In the next Event-Phase, draw 2 of the same  <sprite=0>  from
+      the Shop up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 8
+      amount: 1
+    - resources: 16
+      amount: 2
+    - resources: 10
+      amount: 2
+    - resources: 1
+      amount: 2
+  - name: Toka Senju
+    loreInfo: Adult - Associate of Hashirama Senju
+    index: 35
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d1b194d1e4848a94794cceb88f4f947c, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 16
+    TaijutsuValue: 8
+    NinjutsuValue: 5
+    GenjutsuValue: 9
+    heal: 0
+    headAmount: 1
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Trash 1 random 
+      <sprite=0>  from your opponent\u2019s Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 15
+      amount: 3
+  - name: Tsuki Senju
+    loreInfo: Teenager - Toka's Younger Sister
+    index: 36
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 0b9c1d18a4b9e5a46af851b3bfd5dae7, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 16
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 1
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 Strength
+      in any Combat Style of your choosing, for each  <sprite=0>  in your Hand\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 18
+      amount: 1
+    - resources: 6
+      amount: 2
+  - name: Tsunade Senju
+    loreInfo: Adult - Legendary Sannin
+    index: 37
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 4cded9efea64bbd489519ef372096c12, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 7
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 0
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>Draw 1 random 
+      <sprite=0>  from your opponent and show it to all players. You must perform
+      this  <sprite=0>  on your next Turn, if possible. Return the  <sprite=0>  .'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Tsunade Senju
+    loreInfo: Adult - 5th Hokage - Sage Mode
+    index: 38
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 113402e86d9b26c40b995a59e6dc75c1, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 8
+    GenjutsuValue: 6
+    heal: 1
+    headAmount: 0
+    tier: 5
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>You may Discard 2 
+      <sprite=0>  from your Hand to get 1 BP. You may Discard several  <sprite=0> 
+      to receive more BP.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 2
+  - name: Tsunade Senju
+    loreInfo: Child - Hashirama's Granddaughter
+    index: 39
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3186ae3de16bd674eb455ca1003692d2, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 2
+    GenjutsuValue: 1
+    heal: 0
+    headAmount: 0
+    tier: 1
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Pick 1 Resource from
+      each of your  <sprite=8>  that Scores after this  <sprite=4> . You\u2019ll
+      get 1 additional of this Resource when Scored.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Tsunade Senju
+    loreInfo: Teenager - Hashirama's Granddaughter
+    index: 40
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ab28a0b84542b914e959b45790e306fe, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 010000000100000002000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 18
       amount: 2

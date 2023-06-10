@@ -13,37 +13,635 @@ MonoBehaviour:
   m_Name: BattleCard - Uchiha
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ino Yamanaka
-    loreInfo: Child, Chuunin Exam, Team 10
-    index: 0
+  - name: Fugaku Uchiha
+    loreInfo: Adult - Head of Police Force
+    index: 41
     set: 1
-    characterSprite: {fileID: 21300000, guid: cd158c48d9867d44cb5b3dcac8926004, type: 3}
+    characterSprite: {fileID: 21300000, guid: ce9c580b86320db4993deb4b20757629, type: 3}
     cardType: 1
     clan: 6
-    landOrigins: 6
+    landOrigins: 17
     TaijutsuValue: 3
-    NinjutsuValue: 6
-    GenjutsuValue: 2
-    heal: 1
-    headAmount: 1
-    tier: 2
-    fire: 0
+    NinjutsuValue: 5
+    GenjutsuValue: 7
+    heal: 0
+    headAmount: 2
+    tier: 4
+    fire: 1
     wind: 0
     lightning: 0
-    water: 0
     earth: 0
-    effectText: '<b><u>Least BP:</b></u>
-
-      If this isn''t the first Battle in
-      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
-      Value'
+    water: 0
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>After all  <sprite=59> 
+      have been performed, look at your opponent\u2019s Hand and Discard 1  <sprite=8> 
+      from it.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 10
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 6
+      amount: 2
+  - name: Hikaku Uchiha
+    loreInfo: Teenager - Police Force Member
+    index: 42
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 2c08ad8be79aa82488724113da25af10, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have more 
+      <sprite=5>  in your Hand than your opponent have  <sprite=7>  in theirs, get
+      1 BP.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 18
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 10
+      amount: 2
+  - name: Itachi Uchiha
+    loreInfo: Child - Sasuke's Older Brother
+    index: 43
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 56afd14433d98c54880859e3608f736d, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you\u2019ve played
+      a  <sprite=8>  in this War containing a Combat Style with a Strength of 2 or
+      lower (not this Battle), perform any 1 effect that triggers during Scoring,
+      twice.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Itachi Uchiha
+    loreInfo: Adult - Edo Tensei
+    index: 44
+    set: 1
+    characterSprite: {fileID: 21300000, guid: dd56ecfef76bbc9408bcb988a4ef59b4, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 10
+    GenjutsuValue: 10
+    heal: 2
+    headAmount: 0
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
+      is <b>higher</b> than you in the \u201CSharingan\u201D \u201CDominance Track\u201D,
+      add 2  <sprite=69>  to this  <sprite=5> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
       amount: 0
-    - resources: 3
+    - resources: 0
+      amount: 1
+    - resources: 8
+      amount: 1
+    - resources: 12
       amount: 3
-    - resources: 17
+  - name: Izumi Uchiha
+    loreInfo: Teenager - Itachi's Love Interest
+    index: 45
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9edce8c5baa4ec34a84ec3f83dcb85cd, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If there is at least
+      1  <sprite=8>  containing  <sprite=59>  in this War, remove the  <sprite=60> 
+      from this  <sprite=5> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 6
+      amount: 1
+    - resources: 15
+      amount: 2
+    - resources: 1
+      amount: 2
+  - name: Izuna Uchiha
+    loreInfo: Teenager - Madara's Younger Brother
+    index: 46
+    set: 1
+    characterSprite: {fileID: 21300000, guid: aa72479a4fc0252408d476268424a549, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 2
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Discard 1 <sprite=5>
+      at random from your Hand. Then look at your opponent\u2019s Hand and choose
+      1  <sprite=8>  to Discard as well.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 6
+      amount: 2
+    - resources: 16
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Kagami Uchiha
+    loreInfo: Teenager - Shisui's Father
+    index: 47
+    set: 1
+    characterSprite: {fileID: 21300000, guid: dd1eacd9d5189144395ec75af06392ea, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 9
+    heal: 1
+    headAmount: 1
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, all  <sprite=9>  <sprite=10>  <sprite=11>  you play will get +3 Strength
+      in each Combat Style.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 2
+    - resources: 8
+      amount: 1
+    - resources: 11
+      amount: 2
+  - name: Madara Uchiha
+    loreInfo: Child
+    index: 48
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 86f71f125c19c6e4783bd1ace44eb5c0, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 16
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Gain +1 Strength
+      in each Combat Style for every  <sprite=7>  given as a Resource on all played 
+      <sprite=8>  up to this point int this War (including this Battle).\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 2
+    - resources: 6
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Madara Uchiha
+    loreInfo: Adult - Head of the Uchiha Clan
+    index: 49
+    set: 1
+    characterSprite: {fileID: 21300000, guid: fdcdb9d8e35d3aa4a91027d5da797a12, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 10
+    GenjutsuValue: 10
+    heal: 2
+    headAmount: 4
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: 
+    effectIcon: 010000000100000001000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Mikoto Uchiha
+    loreInfo: Adult - Sasuke's Mother
+    index: 50
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cc7ca2f102fb8414b8821476947f978e, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 0
+    tier: 2
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: 
+    effectIcon: 020000000200000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Naka Uchiha
+    loreInfo: Adult - Creator of Izanagi
+    index: 51
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 4aa93907bf2736648b810242538fd613, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 16
+    TaijutsuValue: 4
+    NinjutsuValue: 2
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 2
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Draw 1 <sprite=5>
+      of your choice from your Discard Pile back up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 2
+      amount: 2
+  - name: Naori Uchiha
+    loreInfo: Adult - Creator of Izanami
+    index: 52
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 8855f3ecd2f8a774ba84144d2b17e838, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 16
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 7
+    heal: 1
+    headAmount: 0
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 1 space
+      in the \u201CSharingan\u201D-Dominance Track. You may give your opponent 1 
+      <sprite=22>  to swap this  <sprite=5>  with another  <sprite=8>  from your
+      Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 7
+      amount: 1
+    - resources: 3
+      amount: 1
+    - resources: 11
+      amount: 2
+  - name: Obito Uchiha
+    loreInfo: Child - Team Minato
+    index: 53
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 96af7c4d1f4e1d445af02579e8243e0b, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 1
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Get the same
+      Resources as 1 of your opponent\u2019s played  <sprite=7>  in this Battle.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Sarada Uchiha
+    loreInfo: Child - Team Konohamaru
+    index: 54
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b0a88bbfecc99a9408ba751b5e3b513a, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 3
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If any  <sprite=70> 
+      has occurred on a  <sprite=5>  in this War, draw 2  <sprite=5>  up to your
+      Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Sasuke Uchiha
+    loreInfo: Teenager - Team Taka
+    index: 55
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a00de6357ca237a428e66566a39c5f76, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 5
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1 <sprite=5>
+      from your Draw Pile. You may swap it with this  <sprite=5>  for this Battle
+      and get this  <sprite=5>  back up to your Hand. If not, Discard the drawn 
+      <sprite=5> .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+    - resources: 12
+      amount: 2
+  - name: Sasuke Uchiha
+    loreInfo: Adult - Shadow Hokage of Konoha
+    index: 56
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 826575fb86767eb49b7950a6c2dde801, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 8
+    GenjutsuValue: 10
+    heal: 2
+    headAmount: 4
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Don\u2019t
+      give away any  <sprite=23>  .\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 8
+      amount: 1
+  - name: Sasuke Uchiha
+    loreInfo: Child - Fugaku Uchiha's Youngest Son
+    index: 57
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cda3cf6b61ff7a648bcc6a27ad9bf04b, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 1
+    NinjutsuValue: 2
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 1
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>For the rest of the
+      War, nullify your opponent\u2019s Combat Styles with a Strength of 4 and below.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Sasuke Uchiha
+    loreInfo: Teenager - Naruto The Last
+    index: 58
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 8da2f21c80db14e4598ea7fa347679df, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 7
+    GenjutsuValue: 8
+    heal: 2
+    headAmount: 3
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 3
+  - name: Shisui Uchiha
+    loreInfo: Teenager - ANBU - Itachi's Closest Friend
+    index: 59
+    set: 1
+    characterSprite: {fileID: 21300000, guid: da6a86dd07f6be445a087da969d2d0b3, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 1
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 10
+    heal: 0
+    headAmount: 1
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>You may Trash this 
+      <sprite=5> to get 2 BP. If so, your opponent must then Draw 1 random  <sprite=8> 
+      from your Hand to be played as your  <sprite=8>  for in this Battle.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 15
+      amount: 1
+  - name: Tajima Uchiha
+    loreInfo: Adult - Leader of the Uchiha Clan
+    index: 60
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 4d9264be3cdc0b645a2857a09e83ce3d, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 16
+    TaijutsuValue: 4
+    NinjutsuValue: 2
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 2  <sprite=5> 
+      up to your Hand.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 6
       amount: 2

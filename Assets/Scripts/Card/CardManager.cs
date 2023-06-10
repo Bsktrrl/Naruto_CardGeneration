@@ -140,6 +140,7 @@ public class CardManager : MonoBehaviour
     public Sprite Resource_Effect_Illusion;
     public Sprite Resource_Effect_Freeze;
     public Sprite Resource_Effect_Chain;
+    public Sprite Resource_Effect_Substitution;
     public Sprite Resource_Effect_Coin;
     public Sprite Resource_Effect_TailedBeast;
     public Sprite Resource_Effect_Influence_UP;
@@ -1468,6 +1469,10 @@ public class CardManager : MonoBehaviour
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                         battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Chain;
                     break;
+                case Resources.Effect_Substitution:
+                    for (int k = (4 * j); k < (4 * j) + 4; k++)
+                        battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Substitution;
+                    break;
                 case Resources.Influence_UP:
                     for (int k = (4 * j); k < (4 * j) + 4; k++)
                         battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_Effect_Influence_UP;
@@ -1530,15 +1535,15 @@ public class CardManager : MonoBehaviour
         //{
         //    //battleCardDescriptionText.autoSizeTextContainer = false;
         //    battleCardDescriptionText.fontSize = battleCard.textSize;
-        //    battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 500);
+        //    battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 520);
         //}
         //else
         //{
         //    //battleCardDescriptionText.autoSizeTextContainer = true;
-        //    battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 500);
+        //    battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 520);
         //}
 
-        battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 500);
+        battleCardDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(1410, 520);
     }
     void Display3Icons(BattleCard battleCard)
     {
@@ -1649,15 +1654,15 @@ public class CardManager : MonoBehaviour
         //{
         //    //battleCardIconTextDescriptionText.autoSizeTextContainer = false;
         //    battleCardIconTextDescriptionText.fontSize = battleCard.textSize;
-        //    battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 500);
+        //    battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 520);
         //}
         //else
         //{
         //    //battleCardIconTextDescriptionText.autoSizeTextContainer = true;
-        //    battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 500);
+        //    battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 520);
         //}
 
-        battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 500);
+        battleCardIconTextDescriptionText.GetComponent<RectTransform>().sizeDelta = new Vector2(885, 520);
     }
 
 

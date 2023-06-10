@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clanFocus_BattleCard: 1
-  battleCard_Number: 0
+  battleCard_Number: -1
   clanFocus_ClanSpecialty: 1
   clanSpecialtyCard_Number: -1
   actionCard_Number: -1
@@ -428,6 +428,7 @@ MonoBehaviour:
   Resource_Effect_Illusion: {fileID: 1713077958, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Effect_Freeze: {fileID: -1830716058, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Effect_Chain: {fileID: 53545258, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  Resource_Effect_Substitution: {fileID: 550435092, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Effect_Coin: {fileID: -770799203, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Effect_TailedBeast: {fileID: -1347093862, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   Resource_Effect_Influence_UP: {fileID: 1229356979, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
@@ -1071,7 +1072,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 899343437}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1224,14 +1225,14 @@ RectTransform:
   - {fileID: 1157798115}
   - {fileID: 882651730}
   - {fileID: 1925732354}
-  - {fileID: 872975379}
   - {fileID: 1932545012}
+  - {fileID: 872975379}
   m_Father: {fileID: 1986761333937809617}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -511, y: -1030.1}
+  m_AnchoredPosition: {x: -511, y: -1034}
   m_SizeDelta: {x: 395, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899343438
@@ -2509,7 +2510,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 899343437}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2703,7 +2704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 625.4, y: -333}
+  m_AnchoredPosition: {x: 628, y: -333}
   m_SizeDelta: {x: 270, y: 256.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044094446
@@ -3154,7 +3155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -576, y: -333}
+  m_AnchoredPosition: {x: -574, y: -333}
   m_SizeDelta: {x: 190, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986761333324392517
@@ -5906,7 +5907,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -678, y: -305}
-  m_SizeDelta: {x: 1410, y: 530}
+  m_SizeDelta: {x: 1430, y: 520}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1986761334444794334
 GameObject:
@@ -6765,7 +6766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Child, Chuunin Exam, Tem 10 -'
+  m_text: "Adult - 4th Ninja War - \nSurprise Attack Division"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -6792,11 +6793,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.65
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 20
+  m_fontSizeMin: 50
   m_fontSizeMax: 67.5
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -6877,8 +6878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22, y: -391}
-  m_SizeDelta: {x: 1000, y: 75}
+  m_AnchoredPosition: {x: 22, y: -398}
+  m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986761335126881772
 MonoBehaviour:
