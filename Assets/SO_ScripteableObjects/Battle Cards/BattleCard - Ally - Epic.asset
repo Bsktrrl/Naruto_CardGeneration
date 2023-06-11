@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: BattleCard - Ally - Epic
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ally_Epic 1
-    loreInfo: (Ally_Epic 1)
+  - name: 
+    loreInfo: 
     index: 0
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 46b4fddc62be5f94b9bafb2cc6b7899b, type: 3}
+    set: 0
+    characterSprite: {fileID: 0}
     cardType: 1
     clan: 9
-    landOrigins: 20
-    TaijutsuValue: 6
-    NinjutsuValue: 8
-    GenjutsuValue: 9
+    landOrigins: 0
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
     heal: 0
-    headAmount: 5
-    tier: 3
+    headAmount: 0
+    tier: 4
     fire: 0
     wind: 0
     lightning: 0
-    water: 0
     earth: 0
-    effectText: ddqwdfdfgs <sprite=0> fadsa
+    water: 0
+    effectText: 
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -41,5 +41,5 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 0
-    - resources: 15
-      amount: 3
+    - resources: 0
+      amount: 0

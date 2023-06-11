@@ -546,6 +546,12 @@ MonoBehaviour:
     m_Scale: 1.3
     m_Name: Iconset_77
     m_HashCode: -306131370
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 110
+    m_Scale: 1.3
+    m_Name: Iconset_78
+    m_HashCode: -306131367
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
@@ -2307,5 +2313,21 @@ MonoBehaviour:
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
     sprite: {fileID: 550435092, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
+  - m_Index: 110
+    m_Metrics:
+      m_Width: 170.66667
+      m_Height: 170.71428
+      m_HorizontalBearingX: -37
+      m_HorizontalBearingY: 152
+      m_HorizontalAdvance: 110
+    m_GlyphRect:
+      m_X: 1024
+      m_Y: 0
+      m_Width: 170
+      m_Height: 170
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -1089110709, guid: 0ffae946e575c884eae53b641d519bab, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []

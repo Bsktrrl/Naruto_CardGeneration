@@ -13,37 +13,632 @@ MonoBehaviour:
   m_Name: BattleCard - Otsutsuki
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ino Yamanaka
-    loreInfo: Child, Chuunin Exam, Team 10
-    index: 0
+  - name: "Ashura \u014Ctsutsuki"
+    loreInfo: Teenager - Progenitor of the Senju Clan
+    index: 81
     set: 1
-    characterSprite: {fileID: 21300000, guid: cd158c48d9867d44cb5b3dcac8926004, type: 3}
+    characterSprite: {fileID: 21300000, guid: 7088a464fb0bb754b8d5d73119bb3a08, type: 3}
     cardType: 1
     clan: 4
-    landOrigins: 19
-    TaijutsuValue: 4
-    NinjutsuValue: 8
-    GenjutsuValue: 2
-    heal: 1
-    headAmount: 2
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 3
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 6
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Black Zetsu
+    loreInfo: Ancient - Kaguya's Will
+    index: 82
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 19a704c0e382d434385ec6293a947fbd, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 10
+    heal: 0
+    headAmount: 0
     tier: 3
     fire: 1
     wind: 1
     lightning: 1
-    water: 1
     earth: 1
-    effectText: '<b><u>Scoring:</b></u>
-
-      If this isn''t the first Battle in
-      this War, get  <sprite=22> equivalent to you''re opponent''s <b>Ninjutsu</b>
-      Value'
-    effectIcon: 010000000000000000000000
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, swap the effects on each  <sprite=8>  when they\u2019re played.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 15
+      amount: 1
+    - resources: 18
+      amount: 1
+    - resources: 6
+      amount: 2
+  - name: Black Zetsu
+    loreInfo: Kaguya's Will
+    index: 83
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e20aed6e6fc3d8743be8ed4e4e5cf8ba, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 1
+    NinjutsuValue: 2
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 1
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give the next  <sprite=8> 
+      you play in any future Battle (can trigger in another War), +3 Strength in
+      all its Combat Styles.\r"
+    effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
-      amount: 0
-    - resources: 2
-      amount: 3
-    - resources: 6
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
       amount: 2
+  - name: "Hagoromo \u014Ctsutsuki"
+    loreInfo: Ancient - Sage of Six Path
+    index: 84
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f9f279c4cd405524fa84fa1c57aa6180, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 5
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get +1  <sprite=23> 
+      . Then Trash this  <sprite=3>  and give your opponent 2 BP for winning this
+      Battle. If you lose the War, don\u2019t give away the  <sprite=23>  you just
+      got.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: "Hagoromo \u014Ctsutsuki"
+    loreInfo: Teenager - Sage of Six Path
+    index: 85
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 52ff15ed6b6fe8c438d11736f30fd1a3, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have played
+      the  <sprite=8>  containing the lowest Strength of any Combat Styles in this
+      War (not including this Battle), triple the Strength of all Combat Styles on
+      this  <sprite=3> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 18
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 1
+      amount: 1
+    - resources: 2
+      amount: 2
+  - name: "Hamura \u014Ctsutsuki"
+    loreInfo: Ancient - Shinobi of hte Moon
+    index: 86
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9eae9e45f89bc5643952bd13e84274e7, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 2
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 020000000200000002000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 8
+      amount: 1
+    - resources: 1
+      amount: 2
+    - resources: 16
+      amount: 3
+  - name: "Hamura \u014Ctsutsuki"
+    loreInfo: Teenager - Hagoromo's Younger Brother
+    index: 87
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 948b3f8d7ebf2e2479dc42d4d13b4375, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 16
+    TaijutsuValue: 4
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Double the Strength
+      of all Combat Styles on the next\n<sprite=8>  you play in this War.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: "Indra \u014Ctsutsuki"
+    loreInfo: Teenager - Progenitor of the Uchiha Clan
+    index: 88
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3a88f0be529b66b47bbe4c67e50716f1, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 16
+    TaijutsuValue: 4
+    NinjutsuValue: 6
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 3
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Most BP:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 16
+      amount: 1
+  - name: "Isshiki \u014Ctsutsuki"
+    loreInfo: Adult - Kagyua's Partner
+    index: 89
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 136d87ef6697af8418890a6bdb19dff9, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 4
+    NinjutsuValue: 9
+    GenjutsuValue: 7
+    heal: 0
+    headAmount: 5
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1 random Trashed 
+      <sprite=3>  up to your <b>Hand</b>.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 10
+      amount: 1
+    - resources: 12
+      amount: 3
+  - name: "Kaguya \u014Ctsutsuki"
+    loreInfo: Adult - Hagoromo's Mother
+    index: 90
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 4a6f0ae29214a3d419f76c0c8e5097a5, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 16
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 0
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 9
+      amount: 1
+    - resources: 14
+      amount: 1
+  - name: "Kaguya \u014Ctsutsuki"
+    loreInfo: Ancient - Reborn - Rabbit Godess
+    index: 91
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 04799235b388b6348bf0620e6628978f, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 5
+    NinjutsuValue: 10
+    GenjutsuValue: 9
+    heal: 2
+    headAmount: 0
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Trash both  <sprite=8> 
+      played in this Battle. You still get the Resources from this Battle. This Battle
+      leaves no BP.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 10
+      amount: 2
+    - resources: 12
+      amount: 2
+  - name: Kenpachi Hyuga
+    loreInfo: Adult - Progenitor of the Hyuga Clan
+    index: 92
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 01fecd5cc2ef2814a849c8fd21ecc94f, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 16
+    TaijutsuValue: 8
+    NinjutsuValue: 5
+    GenjutsuValue: 2
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Most BP:</b></u>\r\n<size=75>During Scoring, double
+      the Resources gained from 1  <sprite=8>  you\u2019ve played in the War.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: "Kimimaro \u014Ctsutsuki"
+    loreInfo: Adult - Survivor of the Kaguya clan
+    index: 93
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 850065c86bf06c847acc5e6dcd58f44e, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 32
+    TaijutsuValue: 6
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Trash this  <sprite=3>
+      .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 2
+  - name: "Kinshiki \u014Ctsutsuki"
+    loreInfo: Adult - Momoshiki's Subordinate
+    index: 94
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3785b792403b0ba4fb425d3e18e9848f, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Add the Strengths
+      from your  \n <sprite=8>  played in the previous Battle onto the  <sprite=3> 
+      you\u2019ll play in the next Battle. Keep all Strengths from the  <sprite=8> 
+      .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: "Momoshiki \u014Ctsutsuki"
+    loreInfo: Ancient - Reborn
+    index: 95
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 7d93555ad09f4884baf86b02872e1a4a, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 7
+    NinjutsuValue: 9
+    GenjutsuValue: 9
+    heal: 1
+    headAmount: 0
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Shuffle back in
+      2 random Trashed  <sprite=3>  to your Draw Pile.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: "Momoshiki \u014Ctsutsuki"
+    loreInfo: Adult
+    index: 96
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9e6feacce7a8b8647b590208d3650b22, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 5
+    NinjutsuValue: 7
+    GenjutsuValue: 7
+    heal: 0
+    headAmount: 2
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Trash 1 random 
+      <sprite=3>  from your Discard Pile. Then draw 2 random  <sprite=3>  from your
+      Discard Pile back up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 8
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Mother
+    loreInfo: Mother of all Shinobi
+    index: 97
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e5a6a1755ae3c684aa7108c954bb86d8, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 16
+    TaijutsuValue: 2
+    NinjutsuValue: 8
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 0
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If this is not the
+      first Battle, you may win the War. If you decide to win, Trash this  <sprite=3> 
+      after Scoring.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 3
+  - name: Shin Uchiha
+    loreInfo: Child - Clone of Shin Uchiha
+    index: 98
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b65d3d6f7c052cb42bfafec6fb84d376, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 32
+    TaijutsuValue: 2
+    NinjutsuValue: 8
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 1
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Shuffle back in
+      1 random Trashed  <sprite=3>  to your Draw Pile. Then Draw 1 random\n<sprite=3> 
+      from your Draw Pile and Trash it.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 3
+  - name: "Toneri \u014Ctsutsuki"
+    loreInfo: Child - Clone of Shin Uchiha
+    index: 99
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 87fadfc4a9c511a4485b5ab922aaca22, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 2
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Trash another 
+      <sprite=3>  played in this War. Receive the amount of  <sprite=22>  equal to
+      the lowest Strength of the Combat Styles on the Trashed  <sprite=3> .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 3
+  - name: "Urashiki \u014Ctsutsuki"
+    loreInfo: Adult - Momoshiki's Subordinate
+    index: 100
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 09aeee9379b27a74b875fd59f2beed17, type: 3}
+    cardType: 1
+    clan: 4
+    landOrigins: 21
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 7
+    heal: 2
+    headAmount: 0
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Trash this  <sprite=3>
+      . Receive the amount of  <sprite=22>  equal to the highest Strength of the
+      Combat Styles on this  <sprite=3> .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 9
+      amount: 1

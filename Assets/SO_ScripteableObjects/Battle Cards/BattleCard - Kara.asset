@@ -13,37 +13,638 @@ MonoBehaviour:
   m_Name: BattleCard - Kara
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ino Yamanaka
-    loreInfo: Child, Chuunin Exam, Team 10
-    index: 1
+  - name: Akari
+    loreInfo: "Adult - \u014Ctsutsuki Cultist - Kara Outer"
+    index: 101
     set: 1
-    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
+    characterSprite: {fileID: 21300000, guid: 24675dd21ebb8a347802c2a127757b9a, type: 3}
     cardType: 1
     clan: 8
-    landOrigins: 34
-    TaijutsuValue: 4
-    NinjutsuValue: 7
-    GenjutsuValue: 2
-    heal: 2
-    headAmount: 2
-    tier: 2
+    landOrigins: 31
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 1
     fire: 0
     wind: 0
     lightning: 0
+    earth: 1
     water: 0
-    earth: 0
-    effectText: '<size=80><b><u>Scoring:</b></u>
-
-      <size=70>If this isn''t the
-      first Battle in this War, get  <sprite=22> equivalent to you''re opponent''s
-      <b>Ninjutsu</b> Value'
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If this is the first 
+      <sprite=8>  you play in the War, \nget 3  <sprite=22>  .\r"
     effectIcon: 000000000000000000000000
     resources:
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 3
+  - name: Amado Sanzu
+    loreInfo: Adult - Scientist - Kara Inner
+    index: 102
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d3f488a8d38981d48b14208b46164a92, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 25
+    TaijutsuValue: 4
+    NinjutsuValue: 4
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 1
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=75>You may pay
+      your opponent 1  <sprite=22>  to reduce -1 Strength in any Combat Style from
+      its  <sprite=8>  in this Battle. You may pay several  <sprite=22>  to reduce
+      further.'
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 1
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 15
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Ao
+    loreInfo: Adult - Kara Outer
+    index: 103
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d556cb571adc0c24c8350d951637a84f, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 20
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 8
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Get  <sprite=22> 
+      equal to the amount of your  <sprite=72>  <sprite=73>  <sprite=74>  or  <sprite=71> 
+      that survived this War.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 15
+      amount: 1
+  - name: Boro
+    loreInfo: "Adult - Kara Inner - \u014Ctsutsuki Cult Leader"
+    index: 104
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 57438657ab10ce7428f90c7eb031c9d0, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 31
+    TaijutsuValue: 5
+    NinjutsuValue: 7
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 3
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If your opponent must
+      pay to remove  <sprite=19>  at the end of this Round, you get the  <sprite=22> 
+      that is paid.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 12
+      amount: 3
+  - name: Bug
+    loreInfo: "Old - Kara Outer - \u014Ctsutsuki Cultist"
+    index: 105
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 826098d5e43a0df49b38df634cf59339, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 34
+    TaijutsuValue: 2
+    NinjutsuValue: 7
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, if you receive any  <sprite=22>  , get 1 additional  <sprite=22> 
+      . If you receive multiple  <sprite=22>  at once, only get 1 additional  <sprite=22> 
+      .\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 10
+      amount: 1
+  - name: Code
+    loreInfo: Adult - Kara Inner
+    index: 106
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 510e145da7cc91146a82361bb30e63ac, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 12
+    TaijutsuValue: 8
+    NinjutsuValue: 5
+    GenjutsuValue: 8
+    heal: 0
+    headAmount: 3
+    tier: 5
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Pay 2  <sprite=22> 
+      to gain either 1  <sprite=69>  or 1  <sprite=70>  onto this  <sprite=75> .
+      You may pay several  <sprite=22>  to receive more  \n<sprite=69>  /  <sprite=70> 
+      .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 1
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 8
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Daemon
+    loreInfo: Child - Kara Outer - Eida's Younger Brother
+    index: 107
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a44dfd2ed0da9ea4480ca4a2bb0d0527, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 25
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 0
+    headAmount: 3
+    tier: 2
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Steal 3  <sprite=22> 
+      from your opponent.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 13
+      amount: 1
+  - name: Deepa
+    loreInfo: Adult - Kara Inner
+    index: 108
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9cbcc95f60ca34c40b1b00afd0c57bed, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 19
+    TaijutsuValue: 6
+    NinjutsuValue: 7
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 2
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
+      have more  <sprite=22>  in its Supply than you, get 1 BP.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 13
+      amount: 1
     - resources: 2
       amount: 2
+  - name: Delta
+    loreInfo: Adult - Kara Inner
+    index: 109
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 61d913c1c4c07b8428f944ce0eede570, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 25
+    TaijutsuValue: 8
+    NinjutsuValue: 7
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 2
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>You may pay your opponent
+      2  <sprite=22>  to be able to Draw 1 <sprite=11> up to your Hand.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 10
+      amount: 2
+  - name: Eida
+    loreInfo: Adult - Kara Outer
+    index: 110
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b1d34127a8460a04f902b46a69e4da48, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 25
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 9
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, if you get any  <sprite=22> , receive double the amount (not including
+      Resources).\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: "Garashi T\u014Dno"
+    loreInfo: Adult - Kara Outer
+    index: 111
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3dcfc5247e9963243b8060c78d97ac74, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 25
+    TaijutsuValue: 4
+    NinjutsuValue: 2
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you don\u2019t have
+      any  <sprite=22>  ,\nget 4  <sprite=22>  .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 10
+      amount: 1
+  - name: "Gar\u014D"
+    loreInfo: Adult - Kara Outer
+    index: 112
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ea04e4e1d1e0fd34b9094c108ff47713, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 13
+    TaijutsuValue: 7
+    NinjutsuValue: 6
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: 
+    effectIcon: 010000000100000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Inori
+    loreInfo: "Adult - \u014Ctsutsuki Cultist - Kara Outer"
+    index: 113
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e90dc9cf243b96c468397ec7ac42c798, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 31
+    TaijutsuValue: 2
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 1
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get a discount of -3 
+      <sprite=22>  on the next  <sprite=0>  you buy during the Shop Phase.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Iwa
+    loreInfo: Adult - Doctor - Kara Outer
+    index: 114
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 14269468ff15b1d4f800738ff9997799, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 23
+    TaijutsuValue: 2
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, if you give away\nany  <sprite=22> , get 3  <sprite=22>  after that
+      Battle.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
     - resources: 6
       amount: 1
     - resources: 12
       amount: 2
-    - resources: 1
-      amount: 3
+  - name: Jigen
+    loreInfo: Ancient - Kara Organisation Leader
+    index: 115
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 044c3a43be9ebd441873a268c77f3925, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 16
+    TaijutsuValue: 6
+    NinjutsuValue: 9
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 6
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Your opponent may
+      choose to take all your  <sprite=22>  . In return, you win the War and get
+      1  <sprite=23>  from your opponent, even if you where the defender. Your opponent
+      cannot take your  <sprite=22>  if he doesn\u2019t control a  <sprite=23>  .
+      \r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 3
+      amount: 1
+    - resources: 13
+      amount: 2
+  - name: Kashin Koji
+    loreInfo: Adult - Kara Inner
+    index: 116
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 608a6069b97399a41acc58cf5420c9ad, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 9
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 1
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 020000000200000002000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 2
+    - resources: 15
+      amount: 2
+  - name: Kawaki
+    loreInfo: Child - Vessel
+    index: 117
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 32550af79c2f92846a59cbae10dba666, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 9
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 Strength
+      to each of your Combat Styles for each  <sprite=22>  displayed as Resources
+      on all previous played  <sprite=8>  in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 8
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: "\u014Cga"
+    loreInfo: Ancient - Kara Inner
+    index: 118
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f5444b97b5f043643b7f8a9a3f66d4e4, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 25
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 1
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>If you give
+      away any  <sprite=23>  , get as many  <sprite=22>  as its Strength.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 2
+    - resources: 10
+      amount: 2
+  - name: Victor
+    loreInfo: Ancient - Kara Inner
+    index: 119
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d2974386cfd2d0d44afb1bb3cb94c890, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 23
+    TaijutsuValue: 3
+    NinjutsuValue: 6
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 1
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>If Winning the War:</b></u>\r\n<size=75>If the Battlefield
+      contain  <sprite=22>  , get the same amount of  <sprite=22> . If you win control
+      over the Field from this War, get its  <sprite=22>  as normal as well.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 8
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 16
+      amount: 1
+  - name: Victor's Secretary
+    loreInfo: Ancient - Kara Outer
+    index: 120
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b44857866ed3c094e9a7508896448528, type: 3}
+    cardType: 1
+    clan: 8
+    landOrigins: 23
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 2
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>You may give your
+      opponent 3  <sprite=22>  to win this Battle, receiving 1 BP.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 2

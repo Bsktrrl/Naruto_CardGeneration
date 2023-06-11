@@ -32,12 +32,14 @@ public class MainManager : MonoBehaviour
         cardManager = FindObjectOfType<CardManager>();
 
         //Add BattleCards to list
+        battleCards.Add(cardManager.battle_Akatsuki_Awakening);
         battleCards.Add(cardManager.battle_Akatsuki);
         battleCards.Add(cardManager.battle_Hyuga);
         battleCards.Add(cardManager.battle_Otsutsuki);
         battleCards.Add(cardManager.battle_Senju);
         battleCards.Add(cardManager.battle_Uchiha);
         battleCards.Add(cardManager.battle_Uzumaki);
+        battleCards.Add(cardManager.battle_Kara);
         battleCards.Add(cardManager.battle_Ally_Rare);
         battleCards.Add(cardManager.battle_Ally_Epic);
         battleCards.Add(cardManager.battle_Ally_Legendary);

@@ -13,33 +13,33 @@ MonoBehaviour:
   m_Name: BattleCard - Ally - Legendary
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ally_Legendary 1
-    loreInfo: (Ally_Legendary 1)
+  - name: 
+    loreInfo: 
     index: 0
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 921ba5e9daad37748926b966126a21cf, type: 3}
+    set: 0
+    characterSprite: {fileID: 0}
     cardType: 1
     clan: 9
-    landOrigins: 15
-    TaijutsuValue: 10
-    NinjutsuValue: 4
-    GenjutsuValue: 3
+    landOrigins: 0
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
     heal: 0
     headAmount: 0
-    tier: 4
+    tier: 5
     fire: 0
     wind: 0
     lightning: 0
-    water: 0
     earth: 0
-    effectText: gsfds  fds fds  fdss fds fds fds fds
-    effectIcon: 010000000100000002000000
+    water: 0
+    effectText: 
+    effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 0
-    - resources: 1
-      amount: 1
-    - resources: 3
-      amount: 2
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 0

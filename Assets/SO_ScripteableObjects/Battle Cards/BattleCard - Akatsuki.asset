@@ -13,37 +13,825 @@ MonoBehaviour:
   m_Name: BattleCard - Akatsuki
   m_EditorClassIdentifier: 
   cardList:
-  - name: Ino Yamanaka
-    loreInfo: Child, Chuunin Exam, Team 10
-    index: 1
+  - name: Deidara
+    loreInfo: Adult - Explosion Corps - Sasori's Partner
+    index: 121
     set: 1
-    characterSprite: {fileID: 21300000, guid: cd158c48d9867d44cb5b3dcac8926004, type: 3}
+    characterSprite: {fileID: 21300000, guid: 4f118b38e664efb4e9e59f72455475f7, type: 3}
     cardType: 1
     clan: 2
     landOrigins: 34
-    TaijutsuValue: 6
-    NinjutsuValue: 1
-    GenjutsuValue: 5
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 1
     heal: 0
-    headAmount: 3
-    tier: 4
-    fire: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
     wind: 0
-    lightning: 0
-    water: 1
+    lightning: 1
     earth: 1
-    effectText: '<size=80><b><u>Scoring:</b></u>
-
-      <size=70>If this isn''t the
-      first Battle in this War, get  <sprite=22> equivalent to you''re opponent''s
-      <b>Ninjutsu</b> Value'
-    effectIcon: 010000000100000002000000
+    water: 0
+    effectText: 
+    effectIcon: 010000000100000000000000
     resources:
     - resources: 0
       amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 13
+      amount: 2
+  - name: Hidan
+    loreInfo: Adult - Kakuzu's Partner
+    index: 122
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e1c0178580e17a6498fa67e1a642fc05, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 12
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Trash 1  <sprite=8> 
+      in your Hand to Draw 1 random  <sprite=1>  from either your Trash Pile or Discard
+      Pile back up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Itachi Uchiha
+    loreInfo: Adult - Kisame's Partner
+    index: 123
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c74a0acfd1690bb47a19e42eecab3382, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 10
+    GenjutsuValue: 10
+    heal: 2
+    headAmount: 0
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Your opponent must Discard
+      1  <sprite=0>  \u201CWar\u201D from its Hand if it has any. If it hasn\u2019t
+      any, look at its Hand and Discard 1  <sprite=0>  of your choice.\r"
+    effectIcon: 020000000000000000000000
+    resources:
     - resources: 6
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 2
       amount: 1
     - resources: 12
       amount: 2
+  - name: Jugo
+    loreInfo: Adult - Team Hebi
+    index: 124
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 5028ea1b7346f794e9b18f763a60846a, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 32
+    TaijutsuValue: 6
+    NinjutsuValue: 5
+    GenjutsuValue: 2
+    heal: 0
+    headAmount: 0
+    tier: 1
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Return all your
+      played  <sprite=8>  from the War back up to your Hand. Then Trash this  <sprite=1>
+      . Don\u2019t return any played  <sprite=76>  from the War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Kakuzu
+    loreInfo: Adult - Hidan's Partner
+    index: 125
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b8001d112c8d1b145a28d0f2f78ba3db, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 39
+    TaijutsuValue: 8
+    NinjutsuValue: 8
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>You may Trash as many 
+      <sprite=8>  from your Hand as you like. Get 3  <sprite=22>  for each  <sprite=8> 
+      you Trash.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Karin Uzumaki
+    loreInfo: Teenager - Team Taka
+    index: 126
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a72aa1c8708c2c245a2937a22a6042f0, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 32
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 1
+    headAmount: 0
+    tier: 1
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, your  <sprite=8>  cannot be affected negatively by your opponent.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Kisame Hoshigaki
+    loreInfo: Adult - Itachi's Partner
+    index: 127
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 668c9ca44fa46b24887ec18747c35b89, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 20
+    TaijutsuValue: 6
+    NinjutsuValue: 8
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 4
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, if you were to Trash any  <sprite=8>  , Discard them instead.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
     - resources: 15
+      amount: 1
+  - name: Konan
+    loreInfo: Adult - Nagato's Partner
+    index: 128
+    set: 1
+    characterSprite: {fileID: 21300000, guid: fded71f77c46b07498b475f18ddd272e, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 4
+    heal: 0
+    headAmount: 0
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
+      has more  <sprite=8>  in its Hand than you, he must Discard down to the amount
+      you\u2019re holding.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 3
+      amount: 2
+    - resources: 18
+      amount: 2
+    - resources: 16
+      amount: 2
+  - name: Madara Uchiha
+    loreInfo: Ghost of the Uchiha Clan
+    index: 129
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f4d40badfceb0a143a55229c26035a4b, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 10
+    heal: 2
+    headAmount: 3
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1  <sprite=11> 
+      for each  <sprite=76>  you\u2019ve played in the War.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 2
+    - resources: 12
       amount: 3
+  - name: Masked Man
+    loreInfo: Teenager
+    index: 130
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f2a8a0870d3a4874dbe56d00cc92130a, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 1
+    tier: 2
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Move up 1 space in 2
+      different tracks on the Dominance Board.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 1
+      amount: 1
+  - name: Nagato Uzumaki
+    loreInfo: Teenager - Founder of Akatsuki
+    index: 131
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1cfc9c4c87292e24eb15e179d6a69bd6, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>You may Trash this 
+      <sprite=1>  to play any  <sprite=76>  in this Battle without Trashing its 
+      <sprite=76> <sprite=1> . You can only play  <sprite=76>  that has not yet been
+      used. You cannot play your own  <sprite=76> . Your chosen  <sprite=76>  will
+      not count as used.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 1
+      amount: 1
+  - name: Obito Uchiha
+    loreInfo: Teenager - Rage
+    index: 132
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9bf37b4284728c74cae983d8c97edc2a, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>End the War with no
+      winner. You still need to do the Scoring. Reset the Board to its previous state
+      before this War took place. If your opponent was the attacker, he only get
+      the  <sprite=0>  \u201CTravel\u201D back on Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 18
+      amount: 4
+  - name: Obito Uchiha
+    loreInfo: "Adult - Jinch\u016Briki - Six Path"
+    index: 133
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 94afb4e69c2eca9409d07673f66f3f91, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 8
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 2
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Swap 1 of your captured 
+      <sprite=23>  with any of your choice from the Main Supply.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Orochimaru
+    loreInfo: Adult - Itachi's Partner - Legendary Sannin
+    index: 134
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e4a71a36caf157b4a9def8191a26ad9a, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 32
+    TaijutsuValue: 3
+    NinjutsuValue: 9
+    GenjutsuValue: 6
+    heal: 1
+    headAmount: 0
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw 1 random
+      Trashed  <sprite=1>  from your Trash Pile and place it on the bottom of your
+      Draw Pile.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 7
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Sasori
+    loreInfo: Adult - Hidan's Partner - Hiruko Puppet
+    index: 135
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b9ac0a0885e8d8f4a96bd56f80baacc6, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 28
+    TaijutsuValue: 3
+    NinjutsuValue: 6
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent\u2019s 
+      <sprite=8>  has the highest Strength in any of the Combat Styles for this Battle,
+      give him  <sprite=17>  equal to the difference with your highest Strength.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 10
+      amount: 1
+    - resources: 16
+      amount: 1
+  - name: Suigetsu Hozuki
+    loreInfo: Teenager - Team Hebi
+    index: 136
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b14c21ab31ccdc749bbf507c163c536e, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 20
+    TaijutsuValue: 7
+    NinjutsuValue: 5
+    GenjutsuValue: 1
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
+      is higher than you in the \u201CSword\u201D Dominance Track, swap your places
+      on the track.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Tobi
+    loreInfo: Adult - 4th Ninja War
+    index: 137
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e2901910c6be6984587070fe9ce910a6, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 4
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: 
+    effectIcon: 010000000100000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
+  - name: Tobi
+    loreInfo: Adult
+    index: 138
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 95b737b4c5337394db73a301fd0c0a53, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 6
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 0
+    tier: 2
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>You may give any
+      of your  <sprite=8>  in your Hand to your opponent. You then Draw as many 
+      <sprite=8>  from your opponent\u2019s Hand up to your Hand, at random (you
+      can look at the card backsides). You cannot Draw any of the  <sprite=8>  you
+      gave away.\r\n"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Zetsu
+    loreInfo: '-'
+    index: 139
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1ac811606893eb14abc7510e7ae478c9, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 21
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Become an exact
+      copy of any of your opponents\n <sprite=8>  in this War. If you choose your
+      opponent\u2019s\n <sprite=8>  from this Battle, the player highest in the \u201CSword\u201D
+      Dominance Track wins this Battle and receives the 1 BP.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Six Path of Pain
+    loreInfo: '-'
+    index: 140
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9f5669593c618904fa510868dbcf724c, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
+    heal: 0
+    headAmount: 0
+    tier: 5
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Don't play this 
+      <sprite=1> , but show it for evidence. Then Draw 1 random  <sprite=1>  \u201CPain\u201D
+      up to your Hand and place this  <sprite=1>  in your Discard Pile.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Pain - Chikushodo
+    loreInfo: Six Path of Pain
+    index: 141
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b7b590d53665b0144a086e4839b2d85d, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 4
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 020000000200000002000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 2
+  - name: Pain - Gakido
+    loreInfo: Six Path of Pain
+    index: 142
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 0f093417868520d4e846b41f58579c2f, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 5
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>The Effect on the
+      rest of the  <sprite=8>  played by your opponent in this War will be canceled.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 2
+  - name: Pain - Naraka
+    loreInfo: Six Path of Pain
+    index: 143
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f79bcf9d56b6e2b49b0f05b3cddad0e4, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 0
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw back up to
+      your Hand all Trashed  <sprite=1>  from your Trash Pile.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 2
+  - name: Pain - Ningendo
+    loreInfo: Six Path of Pain
+    index: 144
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d85f66c81a28a9644a905ff729f664d3, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 5
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Trash any  <sprite=8> 
+      played by your opponent in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 2
+  - name: Pain - Shurado
+    loreInfo: Six Path of Pain
+    index: 145
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 18342d0e331362249ba77aea5f02040b, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 4
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 010000000100000001000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 2
+  - name: Pain - Tendo
+    loreInfo: Six Path of Pain
+    index: 146
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 7034cc2e59649e04fa70d2d3044fa185, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 25
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 5
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Your opponent must
+      Discard all  <sprite=8>  in its Hand and Draw 5 new  <sprite=7>  up to its
+      Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 2

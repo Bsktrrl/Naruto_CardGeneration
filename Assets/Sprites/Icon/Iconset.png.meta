@@ -1742,6 +1742,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Iconset_78
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e87a119671675479593929d2bff5e5
+      internalID: -1089110709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1826,6 +1847,7 @@ TextureImporter:
       Iconset_68: 8796453
       Iconset_2: 1322879198
       Iconset_69: -115147862
+      Iconset_78: -1089110709
       Iconset_43: -49791588
       Iconset_37: 2022918627
       Iconset_34: -272415560
