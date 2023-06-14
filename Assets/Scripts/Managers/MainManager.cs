@@ -9,16 +9,19 @@ public class MainManager : MonoBehaviour
     [SerializeField] BattleCardObject battleCardObject;
     [SerializeField] ActionCardObject actionCardObject;
     [SerializeField] ClanSpecialtyCardObject clanSpecialtyCardObject;
+    [SerializeField] EventCardObject eventCardObject;
 
     [Header("UI Parents")]
     [SerializeField] GameObject battleUI_Parent;
     [SerializeField] GameObject actionUI_Parent;
     [SerializeField] GameObject clanSpecialtyUI_Parent;
+    [SerializeField] GameObject eventUI_Parent;
 
     [Header("Card Lists")]
     List<SO_NarutoCard> battleCards = new List<SO_NarutoCard>();
     List<SO_ActionCard> actionCards = new List<SO_ActionCard>();
     List<SO_ClanSpecialtyCard> clanSpecialtyCards = new List<SO_ClanSpecialtyCard>();
+    List<SO_Event> eventCards = new List<SO_Event>();
 
     [Header("Bool Checks")]
     public bool isTakingScreenShots = false;
@@ -54,6 +57,9 @@ public class MainManager : MonoBehaviour
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Senju);
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Uchiha);
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Uzumaki);
+
+        //Add EventCards to List
+        eventCards.Add(cardManager.eventCards);
     }
     private void Update()
     {
@@ -111,6 +117,20 @@ public class MainManager : MonoBehaviour
                     }
                 }
             }
+            else if (eventUI_Parent.activeInHierarchy)
+            {
+                for (int i = 0; i < eventCards.Count; i++)
+                {
+                    for (int j = 0; j < eventCards[i].eventCardList.Count; j++)
+                    {
+                        if (eventCardObject.header.text == eventCards[i].eventCardList[j].name)
+                        {
+                            PrintEventCard(i, j);
+                            break;
+                        }
+                    }
+                }
+            }
         }
 
         //Print all cards of the active card type
@@ -132,6 +152,11 @@ public class MainManager : MonoBehaviour
             {
                 //Clan Specialty Cards
                 StartCoroutine(ScreenShot_AllClanSpecialtyCards());
+            }
+            else if (eventUI_Parent.activeInHierarchy)
+            {
+                //Event Cards
+                StartCoroutine(ScreenShot_AllEventCards());
             }
         }
     }
@@ -217,6 +242,7 @@ public class MainManager : MonoBehaviour
             battleUI_Parent.SetActive(true);
             actionUI_Parent.SetActive(false);
             clanSpecialtyUI_Parent.SetActive(false);
+            eventUI_Parent.SetActive(false);
 
             //Each Iteration for each card in the List
             for (int j = 0; j < battleCards[i].cardList.Count; j++)
@@ -240,6 +266,7 @@ public class MainManager : MonoBehaviour
             battleUI_Parent.SetActive(false);
             actionUI_Parent.SetActive(true);
             clanSpecialtyUI_Parent.SetActive(false);
+            eventUI_Parent.SetActive(false);
 
             //Each Iteration for each card in the List
             for (int j = 0; j < actionCards[i].actionCardList.Count; j++)
@@ -263,6 +290,7 @@ public class MainManager : MonoBehaviour
             battleUI_Parent.SetActive(false);
             actionUI_Parent.SetActive(false);
             clanSpecialtyUI_Parent.SetActive(true);
+            eventUI_Parent.SetActive(false);
 
             //Each Iteration for each card in the List
             for (int j = 0; j < clanSpecialtyCards[i].clanSpecialtyCardList.Count; j++)
@@ -272,6 +300,30 @@ public class MainManager : MonoBehaviour
                 yield return new WaitForSeconds(0.01f);
 
                 PrintClanSpecialtyCard(i, j);
+
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
+
+        isTakingScreenShots = false;
+    }
+    IEnumerator ScreenShot_AllEventCards()
+    {
+        for (int i = 0; i < actionCards.Count; i++)
+        {
+            battleUI_Parent.SetActive(false);
+            actionUI_Parent.SetActive(false);
+            clanSpecialtyUI_Parent.SetActive(false);
+            eventUI_Parent.SetActive(true);
+
+            //Each Iteration for each card in the List
+            for (int j = 0; j < eventCards[i].eventCardList.Count; j++)
+            {
+                cardManager.DisplayEventCard(eventCards[i].eventCardList[j]);
+
+                yield return new WaitForSeconds(0.01f);
+
+                PrintEventCard(i, j);
 
                 yield return new WaitForSeconds(0.01f);
             }
@@ -298,5 +350,10 @@ public class MainManager : MonoBehaviour
     {
         ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + ".png", 1);
         //print("Screen captured - Can Specialty Card: " + i + " " + j);
+    }
+    void PrintEventCard(int i, int j)
+    {
+        ScreenCapture.CaptureScreenshot("Event_" + eventCards[i].eventCardList[j].name + ".png", 1);
+        //print("Screen captured - Event Card: " + i + " " + j);
     }
 }

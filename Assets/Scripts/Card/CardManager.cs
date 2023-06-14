@@ -13,6 +13,7 @@ public class CardManager : MonoBehaviour
     [SerializeField] Clan clanFocus_ClanSpecialty;
     [SerializeField] int clanSpecialtyCard_Number;
     [SerializeField] int actionCard_Number;
+    [SerializeField] int eventCard_Number;
 
     [Header("Color Manager")]
     [SerializeField] ColorManager colorManager;
@@ -58,6 +59,14 @@ public class CardManager : MonoBehaviour
     public SO_ClanSpecialtyCard clanSpecialty_Senju;
     public SO_ClanSpecialtyCard clanSpecialty_Uchiha;
     public SO_ClanSpecialtyCard clanSpecialty_Uzumaki;
+
+    [Header("Event Cards")]
+    public SO_Event eventCards;
+    [SerializeField] EventCardObject eventCardObject;
+    [SerializeField] TextMeshProUGUI eventCardHeader;
+    [SerializeField] TextMeshProUGUI eventCardText;
+    public Image eventImage;
+
 
     [Header("Set Images")]
     public Sprite baseSet_Icon;
@@ -364,6 +373,13 @@ public class CardManager : MonoBehaviour
             default:
                 break;
         }
+
+        //Events
+        if (eventCards.eventCardList.Count <= 0) { }
+        else if (eventCard_Number >= 0 && eventCard_Number < eventCards.eventCardList.Count)
+            DisplayEventCard(eventCards.eventCardList[eventCard_Number]);
+        else
+            DisplayEventCard(eventCards.eventCardList[eventCards.eventCardList.Count - 1]);
     }
 
 
@@ -1668,6 +1684,13 @@ public class CardManager : MonoBehaviour
 
     //--------------------
 
+
+    public void DisplayEventCard(EventCard eventCard)
+    {
+        eventCardObject.header.text = eventCard.name;
+        eventCardObject.description.text = eventCard.description;
+        eventCardObject.image.sprite = eventCard.image;
+    }
 
     public void DisplayActionCard(ActionCard actioncard)
     {

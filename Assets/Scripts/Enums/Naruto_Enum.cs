@@ -195,7 +195,10 @@ public enum ActionCards
     Turns,
     LostPathLife,
 
-    Specialty
+    Specialty,
+
+    //New
+    Effect_Substitution
 }
 
 public enum ActionCardTypes

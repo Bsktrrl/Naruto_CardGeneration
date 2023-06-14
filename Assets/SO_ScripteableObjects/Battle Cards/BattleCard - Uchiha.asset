@@ -130,8 +130,8 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
-      is <b>higher</b> than you in the \u201CSharingan\u201D \u201CDominance Track\u201D,
-      add 2  <sprite=69>  to this  <sprite=5> .\r"
+      is higher than you in the\n<sprite=83> \u201CDominance Track\u201D, add 2 
+      <sprite=69>  to this  <sprite=5> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -166,8 +166,8 @@ MonoBehaviour:
       from this  <sprite=5> .\r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
-      amount: 0
+    - resources: 17
+      amount: 1
     - resources: 6
       amount: 1
     - resources: 15
@@ -203,7 +203,7 @@ MonoBehaviour:
     - resources: 6
       amount: 2
     - resources: 16
-      amount: 2
+      amount: 1
     - resources: 18
       amount: 2
   - name: Kagami Uchiha
@@ -298,7 +298,7 @@ MonoBehaviour:
       amount: 2
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 17
       amount: 2
   - name: Mikoto Uchiha
     loreInfo: Adult - Sasuke's Mother
@@ -381,9 +381,8 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 1 space
-      in the \u201CSharingan\u201D-Dominance Track. You may give your opponent 1 
-      <sprite=22>  to swap this  <sprite=5>  with another  <sprite=8>  from your
-      Hand.\r"
+      in the  <sprite=84>  Dominance Track. You may give your opponent 1  <sprite=22> 
+      to swap this  <sprite=5>  with another  <sprite=8>  from your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -517,7 +516,7 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 17
       amount: 1
     - resources: 8
       amount: 1
@@ -578,7 +577,7 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 17
       amount: 1
     - resources: 16
       amount: 3
@@ -641,7 +640,7 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 17
       amount: 1
     - resources: 6
       amount: 2

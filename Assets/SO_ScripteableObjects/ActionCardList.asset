@@ -303,6 +303,20 @@ MonoBehaviour:
     cost: 6
     fireBlock: 0
     strength: 
+  - name: Substitution
+    cardType: 2
+    type: 3
+    image: {fileID: 21300000, guid: 307af67435972e642b42206d03b5d7cf, type: 3}
+    description: 'Receive 1  <sprite=77>  Token, which can be used to cancel any
+
+      <sprite=17> 
+      <sprite=18>  <sprite=19>  <sprite=20>  <sprite=21>
+
+      when it''s received.'
+    textSize: 90.5
+    cost: 2
+    fireBlock: 0
+    strength: 
   - name: Dominance
     cardType: 2
     type: 1

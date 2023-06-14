@@ -148,7 +148,7 @@ MonoBehaviour:
     - resources: 18
       amount: 1
     - resources: 16
-      amount: 3
+      amount: 2
   - name: Himawari Uzumaki
     loreInfo: Child - 7th Hokage's Daughter
     index: 5
@@ -175,8 +175,8 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 0
-    - resources: 0
-      amount: 0
+    - resources: 17
+      amount: 1
     - resources: 18
       amount: 3
   - name: Hinata Hyuga
@@ -363,7 +363,7 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 17
       amount: 1
     - resources: 15
       amount: 1
@@ -393,7 +393,7 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 17
       amount: 1
     - resources: 15
       amount: 1
@@ -426,7 +426,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 17
       amount: 1
     - resources: 15
       amount: 1
@@ -548,7 +548,7 @@ MonoBehaviour:
       opponent\u2019s next  <sprite=8>  will be canceled. \r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
+    - resources: 17
       amount: 1
     - resources: 16
       amount: 1

@@ -66,13 +66,13 @@ MonoBehaviour:
       the War, swap the effects on each  <sprite=8>  when they\u2019re played.\r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
-      amount: 0
     - resources: 15
-      amount: 1
+      amount: 0
     - resources: 18
       amount: 1
     - resources: 6
+      amount: 2
+    - resources: 17
       amount: 2
   - name: Black Zetsu
     loreInfo: Kaguya's Will
@@ -94,7 +94,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give the next  <sprite=8> 
-      you play in any future Battle (can trigger in another War), +3 Strength in
+      you play in any future Battle (can trigger in another War), +2 Strength in
       all its Combat Styles.\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -102,8 +102,8 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
+    - resources: 17
+      amount: 2
     - resources: 18
       amount: 2
   - name: "Hagoromo \u014Ctsutsuki"
@@ -194,14 +194,14 @@ MonoBehaviour:
     effectText: 
     effectIcon: 020000000200000002000000
     resources:
-    - resources: 0
-      amount: 1
     - resources: 8
       amount: 1
+    - resources: 17
+      amount: 1
+    - resources: 16
+      amount: 2
     - resources: 1
       amount: 2
-    - resources: 16
-      amount: 3
   - name: "Hamura \u014Ctsutsuki"
     loreInfo: Teenager - Hagoromo's Younger Brother
     index: 87
@@ -544,8 +544,8 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-    - resources: 0
-      amount: 3
+    - resources: 17
+      amount: 1
   - name: Shin Uchiha
     loreInfo: Child - Clone of Shin Uchiha
     index: 98
