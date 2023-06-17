@@ -54,6 +54,7 @@ public class MainManager : MonoBehaviour
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Akatsuki);
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Hyuga);
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Otsutsuki);
+        clanSpecialtyCards.Add(cardManager.clanSpecialty_Kara);
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Senju);
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Uchiha);
         clanSpecialtyCards.Add(cardManager.clanSpecialty_Uzumaki);

@@ -15,17 +15,17 @@ MonoBehaviour:
   clanSpecialtyCardList:
   - name: Akatsuki's Hideout
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 3
     image: {fileID: 21300000, guid: b79de9ec873db804fa978d28f49f51a3, type: 3}
-    description: 'Passive:
+    description: '<u>Passive:</u>
 
-      You can move between Hideouts without using the
-      "Kamui Dimention"
+      You can move between Hideouts without using
+      the "Kamui Dimention"
 
       <size=50%>
 
-      <size=100%>Active:
+      <size=100%><u>Action:</u>
 
       Place
       a  <sprite=54>  on any Field you control. You can now use this Field as a normal
@@ -33,94 +33,135 @@ MonoBehaviour:
     textSize: 90.6
   - name: Commission
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 0
     image: {fileID: 21300000, guid: 346716de686dbe24bab6cb5565f7f862, type: 3}
-    description: "You win the Game when: \nYou've captured 9  <sprite=23>\n<size=30%>
-      \n<size=100%>Start the game with 1  <sprite=23>  captured\n<size=30%> \n<size=75%>(You
-      only need to capture  <sprite=23> , not keep them). \n(The Game ends right
-      after your last capture)"
-    textSize: 100
+    description: '<u>You win the Game when:</u>
+
+      You''ve captured 9  <sprite=23>
+
+      <size=30%>
+
+      <size=75%>You
+      only need to capture  <sprite=23> , not keep them.
+
+      <size=30%>
+
+      <size=75%>The
+      Game ends right after your last capture.'
+    textSize: 117
   - name: "Gent\u014Dshin"
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 2
     image: {fileID: 21300000, guid: 74afff2109c0227439029c2bcbb107af, type: 3}
-    description: "During any Battle you participate in, steal and replace the effect
-      on your  <sprite=8>  with your opponent's \n<size=30%>\n<size=70%>(You get
-      the effect when triggered instead of your opponent)"
+    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>During any Battle you
+      participate in, replace the effect on your  <sprite=8>  with your opponent's
+      \n<size=30%>\n<size=70%>(You get the effect when triggered instead of your
+      opponent)"
     textSize: 110.5
   - name: Gunbai
     cardType: 3
-    clan: 1
-    cost: 2
+    clan: 2
+    cost: 3
     image: {fileID: 21300000, guid: cd4166a8eb7f79e47a96b76dde830e17, type: 3}
-    description: 'Once, in any Battle you participate in, reduce 1 of your opponent''s
+    description: '<u>Reaction:</u>
 
-      Fighting
-      Values to 0'
-    textSize: 132.1
+      <size=20%>
+
+      <size=100%>In any Battle,
+      reduce 1 of your opponent''s Combat Strengths to 0'
+    textSize: 134.8
   - name: Orochimaru's Lab
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 0
     image: {fileID: 21300000, guid: d80cfa2367e8a384b83c241a0ce64cb8, type: 3}
     description: "When you win a War, take 1 of your opponent's surviving\n <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  <size=75%>(of the lowest Strength).
-      \n<size=100%>When you've got at least 1 from each Player, draw as many  <sprite=11> 
-      as points of \n <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  taken.
-      \n<size=75%>(Then return the  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
-      to the Players' Supply)"
+      <sprite=49>  <sprite=50>  <sprite=51>  <size=75%>(of the lowest Tier). \n<size=100%>When
+      you've got at least 1 from each Player, draw as many  <sprite=11>  as points
+      of \n <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  taken. \n<size=75%>(Then
+      return the  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  to the Players'
+      Supply)"
     textSize: 94.3
   - name: "Perfect Susano\u2019o"
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 0
-    image: {fileID: 21300000, guid: 2a35513f4cb84344980b6482a2b8528d, type: 3}
-    description: '<sprite=70>  <sprite=70>
+    image: {fileID: 21300000, guid: c129192e006e66c42968e23060b6bd44, type: 3}
+    description: '<size=120%><sprite=70>  <sprite=70><size=10%>
 
-      <size=10%>
-
-      <size=30%>(You
+      <size=25%>(You
       always have
 
-      +2 <sprite=70> in Wars)'
+      +2 <sprite=70>  in Wars)'
     textSize: 396.8
-  - name: Rinnegan
-    cardType: 3
-    clan: 1
-    cost: 0
-    image: {fileID: 21300000, guid: 9b4b098ffc7a07e46b5d6977b1cb5731, type: 3}
-    description: "Place a <sprite=55> Marker in any Field. This Field cannot be attacked.
-      \n<size=75%>\n(Remove all <sprite=55> Markers during the \"Cleaning Phase\")"
-    textSize: 115
   - name: Poison of the Red Sand
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 0
     image: {fileID: 21300000, guid: 2eb66d17f2dbaa7469b46c4a37aaa5fd, type: 3}
-    description: 'If you lose a War, give your opponent 3 <sprite=17>
+    description: '<u>If you lose a War:</u>
+
+      Give your opponent 3 <sprite=17>
 
 
-      If
-      you win a War, give your opponent 2 <sprite=17>
+      <u>If
+      you win a War:</u>
+
+      Give your opponent 1 <sprite=17>
 
 '
-    textSize: 118
+    textSize: 120
+  - name: Rinnegan
+    cardType: 3
+    clan: 2
+    cost: 2
+    image: {fileID: 21300000, guid: 9b4b098ffc7a07e46b5d6977b1cb5731, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Place a  <sprite=55> 
+      Marker in any Field. A Field containing this Marker cannot be attacked.
+
+      <size=30%>
+
+      <size=75%>(Remove
+      all  <sprite=55>  Markers during the "Setup Phase")'
+    textSize: 106.2
   - name: Statue of the Outer Path
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 0
     image: {fileID: 21300000, guid: bb3881745d5851540a76b322de407304, type: 3}
-    description: "When entering a War, add the number of captured  <sprite=23>  to
-      your Strength\n<size=30%>\n<size=75%>( <sprite=23> 1 -> 6 = +1 Strength) \n(
-      <sprite=23> 7 -> 9 = +2 Strength) \n( <sprite=23> 10 = +3 Strength)"
+    description: 'When entering a War, add the number of captured  <sprite=23>  to
+      your Strength
+
+      <size=30%>
+
+      <size=75%><sprite=87>  <sprite=88> 
+      <sprite=89>  <sprite=90>  <sprite=91>  <sprite=92>  = +1 Strength
+
+      <size=20%>
+
+      <size=75%><sprite=93> 
+      <sprite=94>  <sprite=95>  = +2 Strength
+
+      <size=20%>
+
+      <size=75%><sprite=96> 
+      = +3 Strength'
     textSize: 116.3
   - name: Team
     cardType: 3
-    clan: 1
+    clan: 2
     cost: 0
     image: {fileID: 21300000, guid: 291c9b733daa1f54fb7b97a7f09dc0e8, type: 3}
-    description: Each time you draw a <sprite=9> or <sprite=10> , draw one of a higher
-      tier instead
-    textSize: 135.8
+    description: 'Each time you draw a
+
+      <sprite=9>  or  <sprite=10> ,
+
+      draw
+      one of a higher tier instead'
+    textSize: 134.3

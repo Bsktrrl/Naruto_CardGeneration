@@ -19,7 +19,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 3ec0f8d1124e2e2499da64c57a0e544a, type: 3}
     description: If there is only 1 <sprite=0> of a card type left in the Shop, swap
       it with this
-    textSize: 90
+    textSize: 100
     cost: 2
     fireBlock: 0
     strength: 
@@ -27,7 +27,7 @@ MonoBehaviour:
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: 444885235998ddc44b92a1ddadbc394e, type: 3}
-    description: Draw 1 <sprite=7> from your Draw Pile
+    description: Draw 1  <sprite=7>  from your Draw Pile
     textSize: 120
     cost: 2
     fireBlock: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: 77d642cb61128bd47a1b432dd603f488, type: 3}
-    description: Place 1 <sprite=48> in a Water Field you control
+    description: Place 1 <sprite=48>  in a Water Field you control
     textSize: 120
     cost: 2
     fireBlock: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: 0802c4b9fdf99214ab98149fd9f88618, type: 3}
-    description: Place 1 <sprite=49> in a Land Field you control
+    description: Place 1 <sprite=49>  in a Land Field you control
     textSize: 120
     cost: 1
     fireBlock: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: 0acc661021fd04e4da438a13d7e75ef0, type: 3}
-    description: Place 1 <sprite=50> in a Land Field you control
+    description: Place 1 <sprite=50>  in a Land Field you control
     textSize: 120
     cost: 2
     fireBlock: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: dbd2c26792805f04b9723d96a295a0c3, type: 3}
-    description: 'Place 1 <sprite=51> in a Land
+    description: 'Place 1 <sprite=51>  in a Land
 
       Field you control'
     textSize: 120
@@ -116,9 +116,10 @@ MonoBehaviour:
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: e45e6fe32bcf8954ebf3d3a940a2d395, type: 3}
-    description: Move  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from 1
-      Field you control into an unoccupied adjacent Field
-    textSize: 100
+    description: Move your  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from
+      1 Field you control into an adjacent Field, or gather your  <sprite=48>  <sprite=49> 
+      <sprite=50>  <sprite=51>  from adjacent Fields into 1 Field
+    textSize: 88.5
     cost: 1
     fireBlock: 0
     strength: 
@@ -164,9 +165,9 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=75%>(You can only play 1 <sprite=0> "Defense"
+      <size=70%>(You can only play 1 <sprite=0> "Defense"
       in the same War)'
-    textSize: 77
+    textSize: 84
     cost: 2
     fireBlock: 0
     strength: +3
@@ -179,9 +180,9 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=75%>(You can only play 1 <sprite=0> "Defense"
+      <size=70%>(You can only play 1 <sprite=0> "Defense"
       in the same War)'
-    textSize: 77
+    textSize: 84
     cost: 3
     fireBlock: 0
     strength: +5
@@ -194,9 +195,9 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=75%>(You can only play 1 <sprite=0> "Defense"
+      <size=70%>(You can only play 1 <sprite=0> "Defense"
       in the same War)'
-    textSize: 77
+    textSize: 84
     cost: 4
     fireBlock: 0
     strength: +7
@@ -207,7 +208,7 @@ MonoBehaviour:
     description: If you control a Field adjacent to where a War takes place, you
       may add the Strength of your  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
       in this Field to one of the participants'
-    textSize: 77
+    textSize: 78.5
     cost: 2
     fireBlock: 0
     strength: 
@@ -225,16 +226,18 @@ MonoBehaviour:
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: b3c67e8fb1570e549a397fc10d81742e, type: 3}
-    description: 'When another player plays an <sprite=0> , play this to cancel the
-      play
+    description: 'When another player plays
+
+      <sprite=0> , play this to cancel
+      it
 
       <size=20%>
 
-      <size=75%>(A <sprite=0> "Fire" will cancel other
+      <size=75%>(A  <sprite=0>  "Fire" will cancel other
 
-      <sprite=0>
+      <sprite=0> 
       "Fire")'
-    textSize: 87.9
+    textSize: 95.1
     cost: 2
     fireBlock: 0
     strength: 
@@ -242,9 +245,9 @@ MonoBehaviour:
     cardType: 2
     type: 2
     image: {fileID: 21300000, guid: 1eedc4111a1b9c947816dc0a05edf878, type: 3}
-    description: Play this together with any <sprite=0> to prevent your <sprite=0>
+    description: Play this together with any  <sprite=0> to prevent your  <sprite=0> 
       from being blocked by other players
-    textSize: 97
+    textSize: 97.3
     cost: 2
     fireBlock: 0
     strength: 
@@ -307,7 +310,7 @@ MonoBehaviour:
     cardType: 2
     type: 3
     image: {fileID: 21300000, guid: 307af67435972e642b42206d03b5d7cf, type: 3}
-    description: 'Receive 1  <sprite=77>  Token, which can be used to cancel any
+    description: 'Receive 1 <sprite=77> Token, which can be used to cancel any
 
       <sprite=17> 
       <sprite=18>  <sprite=19>  <sprite=20>  <sprite=21>
@@ -352,20 +355,22 @@ MonoBehaviour:
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: dd14a4e8a4373ca49991f4de022bf15d, type: 3}
-    description: Play 2 <sprite=0> right after this. They cannot be canceled by <sprite=0>
-      "Fire"
+    description: Play 2  <sprite=0>  right after this. They cannot be canceled by
+      <sprite=0>  "Fire"
     textSize: 105
     cost: 3
     fireBlock: 0
     strength: 
-  - name: Lost on the Path of Life
+  - name: Lost on Path of Life
     cardType: 2
     type: 1
     image: {fileID: 21300000, guid: 30ce2fa2dbe5f744e9454e66967d7f83, type: 3}
-    description: 'Swap this with another <sprite=0> from the Shop by paying
+    description: 'Swap this with another
+
+      <sprite=0> from the Shop by paying
 
       -2
-      <sprite=22> less than its cost'
+      <sprite=22>  less than its cost'
     textSize: 105
     cost: 2
     fireBlock: 0
@@ -374,7 +379,7 @@ MonoBehaviour:
     cardType: 2
     type: 4
     image: {fileID: 21300000, guid: f4be1d01800708c45812fde726867651, type: 3}
-    description: 'Based on your "Clan Specialty", perform a Special Aciton
+    description: 'Based on your "Clan Specialty", perform your Special Aciton
 
       <size=20%>
 

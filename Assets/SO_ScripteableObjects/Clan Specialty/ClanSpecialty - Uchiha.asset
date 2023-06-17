@@ -15,143 +15,168 @@ MonoBehaviour:
   clanSpecialtyCardList:
   - name: 'Amaterasu '
     cardType: 3
-    clan: 5
+    clan: 6
     cost: 2
     image: {fileID: 21300000, guid: 18ffe484317442248a501a0ebffbd545, type: 3}
-    description: 'This is a  <sprite=0>  "Fire".
+    description: '<u>Reaction:</u>
 
-      <size=30%>
+      <size=20%>
 
-      <size=100%>This
-      card cannot be canceled'
-    textSize: 152.2
+      <size=100%>This is a 
+      <sprite=0>  "Fire" that cannot be blocked.'
+    textSize: 154.6
   - name: Copycat
     cardType: 3
-    clan: 5
+    clan: 6
     cost: 2
     image: {fileID: 21300000, guid: 52656917b4641d04cb89aad6da1625e8, type: 3}
-    description: 'Right after another Player plays a
+    description: '<u>Reaction:</u>
 
-      <sprite=0> "Specialty",
-      play this to perform the same
+      <size=20%>
 
-      <sprite=0> "Specialty" anytime you want
-      until the end of your next Turn
-
-      <size=30%>
-
-      <size=70%>(Must be
-      performed this round)'
-    textSize: 97
+      <size=100%>Right after
+      another Player plays a  <sprite=0>  "Specialty", play this to be able to perform
+      the same  <sprite=0>  "Specialty" once until the end of your next Turn.'
+    textSize: 104.4
   - name: Defeat
     cardType: 3
-    clan: 5
+    clan: 6
     cost: 0
     image: {fileID: 21300000, guid: f4cf2101e6d2f7e4585b50423afaee16, type: 3}
     description: Each time you lose a War, get 4 <sprite=22> instead of the normal
-      1 <sprite=9>
-    textSize: 150.6
+      1 <sprite=9> .
+    textSize: 141.4
   - name: Doppelganger
     cardType: 3
-    clan: 5
+    clan: 6
     cost: 0
     image: {fileID: 21300000, guid: 14fc24da00088344c9b43fe901e0ed13, type: 3}
-    description: 'Each time you draw either <sprite=9>  <sprite=10>  <sprite=11>
+    description: 'Each time you draw either of <sprite=9>  <sprite=10>  <sprite=11>
       ,
 
       draw 2 of the same Tier.
 
-      <size=20%>
-
-      <size=70%>(Keep
-      1 and discard the other)'
-    textSize: 126.1
-  - name: 'Edo Tensei '
-    cardType: 3
-    clan: 5
-    cost: 3
-    image: {fileID: 21300000, guid: 00694f38d80eb9644af4b711ccb7062b, type: 3}
-    description: Take any 1 <sprite=5> from your Discard Pile up to your Hand
-    textSize: 147.7
+      Keep 1 and Discard the other.'
+    textSize: 121.7
   - name: 'Genjutsu '
     cardType: 3
-    clan: 5
+    clan: 6
     cost: 2
     image: {fileID: 21300000, guid: 49f1760463ee6ca40857ccc9852d75fd, type: 3}
-    description: "When getting affected by another Player, play this to ignore the
-      effect \n<size=50%>\n<size=65%>(Does not apply to other Player's <sprite=0>
-      )\n<size=20%>\n<size=65%>(Does not apply to losing Wars or ties)"
-    textSize: 113.3
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>When getting
+      affected by another Player, you may play this to ignore the effect.
+
+      <size=20%>
+
+      <size=65%>(Does
+      not apply to other Player''s  <sprite=0>  )
+
+      <size=20%>
+
+      <size=65%>(Does
+      not apply to losing Wars or Ties)'
+    textSize: 109.2
   - name: Izanagi
     cardType: 3
-    clan: 5
+    clan: 6
     cost: 0
     image: {fileID: 21300000, guid: 2a9ea7839e43b344fad0651dd2c1be1e, type: 3}
     description: 'When you must Remove or Prone any  <sprite=40>  <sprite=41>  <sprite=42> 
-      <sprite=43>  from the Board, choose which of your  <sprite=40>  <sprite=41> 
-      <sprite=42>  <sprite=43>  from anyywhere on the Board that this will happen
-      to instead '
-    textSize: 107.4
+      <sprite=43>  from the Board,
+
+      choose which of your
+
+      <sprite=40> 
+      <sprite=41>  <sprite=42>  <sprite=43>  from anyywhere on the Board.'
+    textSize: 109.2
   - name: 'Izanami '
     cardType: 3
-    clan: 5
-    cost: 2
+    clan: 6
+    cost: 1
     image: {fileID: 21300000, guid: a41f59d6e9de6744c8cf618a25b68cfb, type: 3}
-    description: Put any random  <sprite=0>  from another player under Izanami. This
-      Player must buy this  <sprite=0>  as its first card in each "Shop Phase" until
-      the Player pays you the cost of the  <sprite=0>  during any of its Turns
-    textSize: 101.2
-  - name: Rinnesharingan
-    cardType: 3
-    clan: 5
-    cost: 0
-    image: {fileID: 21300000, guid: e487e80bc15941b4db0f3f5880f6f5cb, type: 3}
-    description: 'Swap all  <sprite=40>  <sprite=41>  <sprite=42>  <sprite=43>  in
-      a Field you control with all
-
-      <sprite=48>  <sprite=49>  <sprite=50> 
-      <sprite=51>  in any Field up to 2 Fields away
+    description: '<u>Action:</u>
 
       <size=20%>
 
-      <size=70%>(Your
-      Field must contain  <sprite=40>  <sprite=41>  <sprite=42>  <sprite=43>  )
+      <size=100%>Put any random 
+      <sprite=0>  from another player under Izanami.
 
-      <size=20%>
-
-      <size=70%>(You
-      cannot swap through "Mountains" or "Rivers")
-
-      <size=20%>
-
-      <size=70%>(You
-      can swap accross the Ocean)'
-    textSize: 97.7
-  - name: Sharingan
-    cardType: 3
-    clan: 5
-    cost: 0
-    image: {fileID: 21300000, guid: 15fd7412858411341897db37ed176701, type: 3}
-    description: 'Positive: Each time you win a War,
-
-      get +3 <sprite=22>
+      <size=75%>(Show selected 
+      <sprite=0>  for evidence)
 
       <size=30%>
 
-      <size=100%>Negative:
-      Each time you lose a War,
+      <size=100%>Izanami forces
+      the target player to buy the  <sprite=0>  type as its first card in each "Shop
+      Phase" until it pays the cost of the  <sprite=0>  to the caster on its Turn. '
+    textSize: 93
+  - name: Rinnesharingan
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 21300000, guid: e487e80bc15941b4db0f3f5880f6f5cb, type: 3}
+    description: '<u>Action:</u>
 
-      lose -3 <sprite=22>'
-    textSize: 129.1
+      <size=20%>
+
+      <size=100%>Swap all  <sprite=40> 
+      <sprite=41>  <sprite=42>  <sprite=43>  in a Field you control with all  <sprite=48> 
+      <sprite=49>  <sprite=50>  <sprite=51>  in any Field up to 2 Fields away.
+
+      <size=1%>
+
+      <size=70%>(Your
+      Field must contain  <sprite=40>  <sprite=41>  <sprite=42>  <sprite=43> )
+
+      <size=10%>
+
+      <size=70%>(You
+      cannot swap through
+
+      "Mountains" and "Rivers")
+
+      <size=10%>
+
+      <size=70%>(You
+      can swap accross the Ocean,
+
+      using your  <sprite=40>  )'
+    textSize: 95.3
+  - name: Sharingan
+    cardType: 3
+    clan: 6
+    cost: 0
+    image: {fileID: 21300000, guid: 15fd7412858411341897db37ed176701, type: 3}
+    description: '<u>Positive:</u>
+
+      Each time you win a War, get +4 <sprite=22>
+      .
+
+      <size=40%>
+
+      <size=100%><u>Negative:</u>
+
+      Each time you
+      lose a War, lose -2 <sprite=22> .'
+    textSize: 122.6
   - name: 'Susano''o '
     cardType: 3
-    clan: 5
+    clan: 6
     cost: 2
     image: {fileID: 21300000, guid: bf2d0336cc4c6c14aa86b432447d3ad6, type: 3}
-    description: 'This is a  <sprite=0>  "Defense" with a Strength of +5.
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>This is a 
+      <sprite=0>  "Defense" with a Strength of +5.
 
       <size=30%>
 
       <size=100%>This
-      card cannot be canceled.'
-    textSize: 131.4
+      card cannot be blocked.'
+    textSize: 128.4

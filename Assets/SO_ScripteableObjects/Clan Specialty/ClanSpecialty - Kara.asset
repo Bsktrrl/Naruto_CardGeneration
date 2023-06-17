@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620998dbe51252345984e63e6a38d05e, type: 3}
+  m_Name: ClanSpecialty - Kara
+  m_EditorClassIdentifier: 
+  clanSpecialtyCardList:
+  - name: Storage
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: b335356c7d76722479b691ad1788ba92, type: 3}
+    description: 'At the start of each "Shop Phase", take 4 <sprite=0>  among the
+      types
+
+      <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  up to your
+      Hand before the players start buying.'
+    textSize: 112.9
+  - name: Bargaining
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: 8473e398a40f78942ad69e9e10a17650, type: 3}
+    description: "Get 5 <sprite=22>  \nat the start of each \n\"Shop Phase\"."
+    textSize: 148.1
+  - name: Spy Drone
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: 5116003a64a463e4aa02cb91798b9393, type: 3}
+    description: "When buying from the \u201CHidden\u201D  <sprite=0>  Deck in the
+      Shop, look at the top 2 <sprite=0>  and choose one to receive.\n<size=30%>\n<size=100%>Place
+      the other  <sprite=0>  at the bottom of the Deck."
+    textSize: 111.9
+  - name: Exploitation
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: 10eaae71bb26b174d9d7d244ec678cdc, type: 3}
+    description: "During the \u201CShop Phase\u201D, get 1 <sprite=77>  each time
+      you buy a  <sprite=0>  for a cost of\n3 <sprite=22>  and above."
+    textSize: 117.6
+  - name: Where the Power Resides
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: 269869070432c5046aed5660d600e76a, type: 3}
+    description: "If you buy 15 or more  <sprite=0>  in the same \u201CShop Phase\u201D,
+      get 1 random  <sprite=23>  from the Main Supply."
+    textSize: 118.6
+  - name: Test Objects
+    cardType: 3
+    clan: 8
+    cost: 1
+    image: {fileID: 21300000, guid: 53f5e96adceefaa42abb2a39908f9f2a, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>After any
+      Scoring, change the  <sprite=60>  on
+
+      1 played  <sprite=8>  into a
+
+      <sprite=59>
+      .'
+    textSize: 139
+  - name: Underground Room
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: eee37b1aa42576049afacbd4a9fb63bf, type: 3}
+    description: "<u>At the start of the Game:</u>\n<size=20%>\n<size=100%>Choose
+      1 of either \n<sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  <sprite=21>
+      .\nIf you receive any of your chosen type during the Game, get 1 <sprite=77> 
+      afterwards.\n<size=20%>\n<size=75%>(If you receive multiple of your chosen
+      type at once, receive all  <sprite=77>  at the end)."
+    textSize: 97.7
+  - name: Secret Base
+    cardType: 3
+    clan: 8
+    cost: 1
+    image: {fileID: 21300000, guid: 10283ef273a78984c99cfc030971959b, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Get
+
+      1
+      <sprite=77>'
+    textSize: 164.2
+  - name: Plotting
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: 05982e3ffde540c40a854b0af568ff92, type: 3}
+    description: "Always take 1 <sprite=22>  more than what\u2019s\ndisplayed on
+      the\n<sprite=83>  \u201CDomination Track\u201D."
+    textSize: 123.8
+  - name: "K\u0101ma"
+    cardType: 3
+    clan: 8
+    cost: 0
+    image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
+    description: '<size=120%><sprite=69><size=10%>
+
+      <size=25%>(You always have
+
+      +1
+      <sprite=69>  in Wars)'
+    textSize: 396.8

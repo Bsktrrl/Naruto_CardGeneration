@@ -59,6 +59,7 @@ public class CardManager : MonoBehaviour
     public SO_ClanSpecialtyCard clanSpecialty_Senju;
     public SO_ClanSpecialtyCard clanSpecialty_Uchiha;
     public SO_ClanSpecialtyCard clanSpecialty_Uzumaki;
+    public SO_ClanSpecialtyCard clanSpecialty_Kara;
 
     [Header("Event Cards")]
     public SO_Event eventCards;
@@ -198,6 +199,7 @@ public class CardManager : MonoBehaviour
     public Sprite Icon_Senju;
     public Sprite Icon_Uchiha;
     public Sprite Icon_Uzumaki;
+    public Sprite Icon_Kara;
     #endregion
 
     #endregion
@@ -368,6 +370,13 @@ public class CardManager : MonoBehaviour
                     DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[clanSpecialty_Uzumaki.clanSpecialtyCardList.Count - 1]);
+                break;
+            case Clan.Kara:
+                if (clanSpecialty_Kara.clanSpecialtyCardList.Count <= 0) { }
+                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Kara.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Kara.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else
+                    DisplayClanSpecialty(clanSpecialty_Kara.clanSpecialtyCardList[clanSpecialty_Kara.clanSpecialtyCardList.Count - 1]);
                 break;
 
             default:
@@ -1862,6 +1871,14 @@ public class CardManager : MonoBehaviour
                 clanSpecialtyCardObject.header.color = colorManager.GetUzumaki_TextColor();
                 clanSpecialtyCardObject.description.color = colorManager.GetUzumaki_TextColor();
                 clanSpecialtyCardObject.clanSymbol.sprite = Icon_Uzumaki;
+                break;
+            case Clan.Kara:
+                clanSpecialtyCardObject.backgorund.color = new Color(0.25f, 0.73f, 1, 1);
+                clanSpecialtyCardObject.backgorund_over.color = new Color(0.25f, 0.73f, 1, 1);
+                clanSpecialtyCardObject.frame.color = colorManager.GetKara_BorderColor();
+                clanSpecialtyCardObject.header.color = new Color(0f, 0.35f, 0.42f, 1f);
+                clanSpecialtyCardObject.description.color = new Color(0f, 0.35f, 0.42f, 1f);
+                clanSpecialtyCardObject.clanSymbol.sprite = Icon_Kara;
                 break;
 
             default:

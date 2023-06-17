@@ -434,6 +434,7 @@ MonoBehaviour:
   clanSpecialty_Senju: {fileID: 11400000, guid: 761d5dd324a47b445a4b13f5155b7eb9, type: 2}
   clanSpecialty_Uchiha: {fileID: 11400000, guid: 7c06b272b6f361d4ba3bc1f1a81b2dd1, type: 2}
   clanSpecialty_Uzumaki: {fileID: 11400000, guid: 3895e6058d0a6c946bd1cda895d44878, type: 2}
+  clanSpecialty_Kara: {fileID: 11400000, guid: a8430ea424f5c914c8fe6d4cc3d6a534, type: 2}
   eventCards: {fileID: 11400000, guid: 5e8aca77423c0184c81f407aa66dfb0e, type: 2}
   eventCardObject: {fileID: 1751526771}
   eventCardHeader: {fileID: 775367782}
@@ -549,6 +550,7 @@ MonoBehaviour:
   Icon_Senju: {fileID: 21300000, guid: 100afb8a24b249b4bbb9d7bd965b4037, type: 3}
   Icon_Uchiha: {fileID: 21300000, guid: 3653a46e263a7cd478a5fd60861c2376, type: 3}
   Icon_Uzumaki: {fileID: 21300000, guid: 8465ff649fd5b6d4bad6435d5425a887, type: 3}
+  Icon_Kara: {fileID: 21300000, guid: cac2c9eb3d3084b4b8aa5206789dc8b5, type: 3}
 --- !u!1 &404677398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,7 +2723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1751526770
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2889,12 +2891,12 @@ MonoBehaviour:
   Uzumaki_BackgroundColor: {r: 1, g: 0.60784316, b: 0.29803923, a: 1}
   Uzumaki_LandOriginColor: {r: 0.88235295, g: 0.5137255, b: 0.101960786, a: 1}
   Uzumaki_TextColor: {r: 0.5764706, g: 0.30588236, b: 0, a: 1}
-  Kara_BorderColor: {r: 0.06666667, g: 0.3882353, b: 0.7372549, a: 1}
-  Kara_BoxFrameColor: {r: 0.015686275, g: 0.38431373, b: 0.81960785, a: 1}
-  Kara_CircleColor: {r: 0.25882354, g: 0.5294118, b: 0.92941177, a: 1}
-  Kara_BackgroundColor: {r: 0.4745098, g: 0.6862745, b: 1, a: 1}
-  Kara_LandOriginColor: {r: 0.2627451, g: 0.4862745, b: 0.79607844, a: 1}
-  Kara_TextColor: {r: 0, g: 0.2627451, b: 0.5019608, a: 1}
+  Kara_BorderColor: {r: 0, g: 0.67058825, b: 0.8352941, a: 1}
+  Kara_BoxFrameColor: {r: 0.101960786, g: 0.7372549, b: 0.8901961, a: 1}
+  Kara_CircleColor: {r: 0.21960784, g: 0.8235294, b: 0.9372549, a: 1}
+  Kara_BackgroundColor: {r: 0.6, g: 0.9411765, b: 1, a: 1}
+  Kara_LandOriginColor: {r: 0.24705882, g: 0.7764706, b: 0.8745098, a: 1}
+  Kara_TextColor: {r: 0, g: 0.4745098, b: 0.56078434, a: 1}
   Ally_BorderColor: {r: 0.36078432, g: 0.44705883, b: 0.31764707, a: 1}
   Ally_BoxFrameColor: {r: 0.45882353, g: 0.61960787, b: 0.38039216, a: 1}
   Ally_CircleColor: {r: 0.5137255, g: 0.69803923, b: 0.4392157, a: 1}
@@ -7950,7 +7952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3150943, g: 0.8438669, b: 1, a: 1}
+  m_Color: {r: 0.29803923, g: 0.62352943, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8043,8 +8045,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283581208
-  m_fontColor: {r: 0.094117634, g: 0.26357794, b: 0.32156864, a: 1}
+    rgba: 4283052055
+  m_fontColor: {r: 0.09019608, g: 0.1882353, b: 0.2901961, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8178,8 +8180,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283581208
-  m_fontColor: {r: 0.094117634, g: 0.26357794, b: 0.32156864, a: 1}
+    rgba: 4283052055
+  m_fontColor: {r: 0.09019608, g: 0.1882353, b: 0.2901961, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8389,8 +8391,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283581208
-  m_fontColor: {r: 0.094117634, g: 0.26357794, b: 0.32156864, a: 1}
+    rgba: 4283052055
+  m_fontColor: {r: 0.09019608, g: 0.1882353, b: 0.2901961, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8660,7 +8662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3150943, g: 0.8438669, b: 1, a: 1}
+  m_Color: {r: 0.29803923, g: 0.62352943, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9554,10 +9556,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -150}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810174205789058
 MonoBehaviour:
@@ -9612,10 +9614,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -396}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810174332475025
 MonoBehaviour:
@@ -9822,10 +9824,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -519}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810175135147303
 MonoBehaviour:
@@ -9910,10 +9912,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -642}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810175308440601
 MonoBehaviour:
@@ -10080,10 +10082,10 @@ RectTransform:
   m_Father: {fileID: 4094810174393059522}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -273}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4094810175419567034
 MonoBehaviour:
@@ -10164,7 +10166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4094810175624193863
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10552,8 +10554,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Move from 1 Field to another without using the "Kamui Dimention"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
+  m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10669,8 +10671,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hideout
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
+  m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10694,7 +10696,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 223.75
+  m_fontSize: 222.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
