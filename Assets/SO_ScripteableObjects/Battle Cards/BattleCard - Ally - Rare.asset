@@ -13,33 +13,3163 @@ MonoBehaviour:
   m_Name: BattleCard - Ally - Rare
   m_EditorClassIdentifier: 
   cardList:
-  - name: 
-    loreInfo: 
-    index: 0
-    set: 0
-    characterSprite: {fileID: 0}
+  - name: Asuma Sarutobi
+    loreInfo: Child - 3rd Hokage's Son
+    index: 167
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 18ee18902c9a6ed45b455b38216a0956, type: 3}
     cardType: 1
-    clan: 9
-    landOrigins: 0
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Move your opponent Up
+      1 step in any of the Dominance Track.\r"
+    effectIcon: 01000000000000000000000000000000
+    resources:
+    - resources: 3
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Ayame Ichiraku
+    loreInfo: Teenager - Teuchi's Daughter - Waitress at Ichiraku Ramen
+    index: 168
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 665de7d52d9910047b706aac2f39e7c8, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>Your opponent may
+      give you 1  <sprite=22>  for moving Up in any Domination Track. Your opponent
+      may repeat this as many times as desired.
+
+'
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 1
+      amount: 2
+    - resources: 18
+      amount: 4
+  - name: Baiu
+    loreInfo: Teenager - Chunin Exams - Team Shigure
+    index: 169
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 2adab9ff55a18f042ba8a31360e42feb, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War,  <sprite=8>  from  <sprite=98>  cannot be played.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 1
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 17
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Choji Akimichi
+    loreInfo: Kid
+    index: 170
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b2bd4aa26b3f04b46873ad34020fd288, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 2
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: '<size=85><b><u>If Losing the War:</b></u>
+
+      <size=75>If your
+      opponent has a combined strength of all its Combat Styles played in this War,
+      of 10 or higher than yours, draw 4  <sprite=9>  instead of the normal 1.'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Choji Akimichi
+    loreInfo: Child - Chunin Exam - Team 10
+    index: 171
+    set: 1
+    characterSprite: {fileID: 21300000, guid: bd38fd3447459154bbaf833307406f8d, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 3
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Remove the Effect
+      on your opponent\u2019s  <sprite=8>  played in this Battle.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 11
+      amount: 2
+  - name: Choji Akimichi
+    loreInfo: Child - Team 10
+    index: 172
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a2205011b44f7934cb0f9f3e7001cf3d, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 3
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Remove the Effect
+      on your opponent\u2019s  <sprite=8> played in this Battle.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 16
+      amount: 2
+  - name: Daibutsu
+    loreInfo: Adult - Old Akatsuki
+    index: 173
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 515465cf714815e47b17c45eb08ee44f, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 7
+    NinjutsuValue: 4
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: 
+    effectIcon: 020000000200000002000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 7
+      amount: 1
+  - name: Danzo Shimura
+    loreInfo: Teenager - 2nd Hokage's Subordinate
+    index: 174
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 0c58aa57dd8572a4e9444cbecef123f7, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 6
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get 3  <sprite=22> 
+      for each   <sprite=8>  from  <sprite=99>  that participated in this War.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 4
+      amount: 1
+    - resources: 16
+      amount: 1
+  - name: Dosu Kintuna
+    loreInfo: Teenager - Chunin Exams - Leader of Team Dosu
+    index: 175
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 11f10f7d6b75c1b43a0cc697cbd7e3cd, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 32
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give your opponent
+      3  <sprite=18> .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 4
+      amount: 1
+    - resources: 16
+      amount: 1
+  - name: "Ebiz\u014D"
+    loreInfo: Old - Honoured Siblings
+    index: 176
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ee572a6a4e5a38340bebfd3dc01c1356, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 2
+    NinjutsuValue: 7
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Discard all
+      owned  <sprite=9>  <sprite=10>  <sprite=11> .\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 9
+      amount: 1
+    - resources: 8
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Genma Shiranui
+    loreInfo: Child
+    index: 177
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 576eac97d675bfc4cb144386c449ea33, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1  <sprite=7> 
+      from your Draw Pile. Place any \nother  <sprite=7>  from your Hand on the top
+      of your Draw Pile.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 2
+    - resources: 2
+      amount: 3
+    - resources: 18
+      amount: 3
+  - name: "G\u014Dzu"
+    loreInfo: Child - Meizu's Older Twin Brother
+    index: 178
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1719e5f816e3eca45bf4d4bd151c1af5, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 20
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Your opponent\u2019s
+      must Trash 1  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  in this Battlefield
+      from the Game.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 10
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Gaara
+    loreInfo: Kid - 3rd Kazekage's Son
+    index: 179
+    set: 1
+    characterSprite: {fileID: 21300000, guid: fe20cf36503892246a91b1b931933ca2, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 1
+    NinjutsuValue: 2
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you\u2019re in
+      a War against a\n <sprite=23>  <sprite=87> , win the War after playing this 
+      <sprite=9>  and receive\n1 additional  <sprite=87>  from the Main Supply.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Gaara
+    loreInfo: "Child - Jinch\u016Briki - Sand Soblings"
+    index: 180
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c3f26b6fff2d40a48902df82b9284255, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 2
+    NinjutsuValue: 7
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 4
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you\u2019re in
+      a War against a\n <sprite=23>  <sprite=87> , win the War after playing this 
+      <sprite=9> .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+  - name: Gaara
+    loreInfo: "Child - Jinch\u016Briki - Chunin Exams -                   Sand Siblings"
+    index: 181
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 43d93b18dab379247aecc3d32fdde379, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 4
+    NinjutsuValue: 7
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 3
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Remove 1 of your
+      opponent\u2019s  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  in this
+      Battlefield from the Game, of your choice.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 2
+  - name: Haku Tuki
+    loreInfo: Child - Zabuza's Partner - Mercenary Ninja
+    index: 182
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e88649751acdea54884b398f9073b64f, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 20
+    TaijutsuValue: 6
+    NinjutsuValue: 5
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Take 1 of your
+      other played  <sprite=8>  in this War containing  <sprite=60>  up to your Hand.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 9
+      amount: 1
+  - name: Hanabi Hyuga
+    loreInfo: Child
+    index: 183
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 22b14d7c9b5773146800a5b9266fb374, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>If Winning the War:</b></u>\r\n<size=75>Get 1 <sprite=11>
+      .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Hinata Hyuga
+    loreInfo: Kid
+    index: 184
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 8c7a1bab38c70034d8895fd9833540e2, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 1
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Double the Strength
+      of 1 Combat Style on the next  <sprite=8>  you play in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 1
+    - resources: 6
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Hiruzen Sarutobi
+    loreInfo: Teenager - 2nd Hokage's Subordinate
+    index: 185
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 0c47c4c75eba42f42b257aac281ace85, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 7
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Move Up 1 space in\n2
+      Dominance Tracks.\nThen move Down\n1 space in another.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 8
+      amount: 1
+  - name: Inari
+    loreInfo: Kid
+    index: 186
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 38cd2678d80debd418c83bc969d51409, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 40
+    TaijutsuValue: 1
+    NinjutsuValue: 1
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Remove all  <sprite=69> 
+      played by your opponent in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 8
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Ino Yamanaka
+    loreInfo: Child - Team 10
+    index: 187
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cd158c48d9867d44cb5b3dcac8926004, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
     TaijutsuValue: 0
     NinjutsuValue: 0
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
-    tier: 4
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>In Hand \u2013 Start of your Battle:</b></u>\r\n<size=75>Before
+      revealing your  <sprite=8> , Discard this  <sprite=9>  and look at your opponent\u2019s
+      chosen  <sprite=8>  for this Battle. You may swap it with a  <sprite=8>  from
+      your Hand. Both you and your opponent must then play your selected  <sprite=8> 
+      in this Battle.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 2
+  - name: Ino Yamanaka
+    loreInfo: Kid
+    index: 188
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c0353d7efc9c5ba46a9faca22b7cd3d3, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 2
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Add the Strength
+      of 1 Combat Style of a  <sprite=8>  played by your opponent in this War onto
+      the next  <sprite=8>  you play in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 2
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Ino Yamanaka
+    loreInfo: Child - Chunin Exams - Team 10
+    index: 189
+    set: 1
+    characterSprite: {fileID: 21300000, guid: beafa733279395b4cba1a6c02e6aac07, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 4
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>You may swap this 
+      <sprite=9>  with your opponent\u2019s  <sprite=8>  played in this Battle. If
+      you do, give your opponent 1  <sprite=17>  and Score the Resources from this"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 10
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Iruka Umino
+    loreInfo: Child
+    index: 190
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1599cbe323d01d14086fccc2cc5204a2, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give all your  <sprite=8> 
+      \u201CChild\u201D you play from this Battle onward in the War +4 in all their
+      Combat Styles.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 18
+      amount: 1
+  - name: Izuna Uchiha
+    loreInfo: Child - Madara's Younger Brother
+    index: 191
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 0357495d3cfb500429e4160a3eff9d9c, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 16
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Remove all  <sprite=17> 
+      <sprite=18>  <sprite=19>  <sprite=20>  \nfrom your Supply.\r\n"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+  - name: Jiraiya
+    loreInfo: Child - Team Hiruzen
+    index: 192
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1c52ff3f7a0614848a3a59a2caaaaaf5, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Gain 1 Strength
+      in each Combat Style for each  <sprite=8>  \u201CGirl\u201D played in this 
+      War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 17
+      amount: 2
+    - resources: 18
+      amount: 4
+  - name: Jirobo
+    loreInfo: Teenager - Sound Ninja Four
+    index: 193
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cef19ff097498f6439e50e57e1b515ab, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 32
+    TaijutsuValue: 5
+    NinjutsuValue: 6
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Reduce the Strength
+      all of your opponent\u2019s Combat Styles of its  <sprite=8>  played in this
+      Battle with -3.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 17
+      amount: 2
+    - resources: 16
+      amount: 2
+  - name: Kakashi Hatake
+    loreInfo: Kid
+    index: 194
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 53d449abcd2cda2469ebf98081f6b183, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>During Scoring,
+      Remove all  <sprite=77>  as Resources on all your opponent\u2019s  <sprite=8>
+      .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 2
+    - resources: 15
+      amount: 3
+  - name: Kankuro
+    loreInfo: Child - Sand Siblings
+    index: 195
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 9eaae7036c4226341ba63e080df871b6, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Change all your 
+      <sprite=70>  played in this War into  <sprite=69> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 11
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Kankuro
+    loreInfo: Child - Chunin Exams - Sand Siblings - Preparation
+    index: 196
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b673d7b31a6652c44a2eaddfdb99730d, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Remove all  <sprite=69> 
+      and  <sprite=70>  played by your opponent in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 11
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Kankuro
+    loreInfo: Child - Chunin Exams - Sand Siblings
+    index: 197
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 792fb7df18ad9354c951993513f65835, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Decide if all
+      your  <sprite=69>  <sprite=70>  played in this War will count as either  <sprite=69> 
+      or  <sprite=70> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 11
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Kazuma
+    loreInfo: Adult - Furido - Twelve Guardian Ninja
+    index: 198
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 78d9b056d7d04f04486d77077f2e10e9, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 12
+    TaijutsuValue: 4
+    NinjutsuValue: 6
+    GenjutsuValue: 7
+    heal: 2
+    headAmount: 3
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: 
+    effectIcon: 010000000200000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 2
+    - resources: 1
+      amount: 1
+  - name: Kiba Inuzuka
+    loreInfo: Child - Chunin Exams - Team 8
+    index: 199
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 411a7b5efab97c5459426f10e11b4429, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 1
+      amount: 1
+    - resources: 11
+      amount: 1
+  - name: Kiba Inuzuka
+    loreInfo: Child - Team 8
+    index: 200
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 2376aeda4032ba44b8cf13637ad49496, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=75>Get 1 BP..'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 1
+      amount: 1
+    - resources: 11
+      amount: 1
+  - name: Kiba Inuzuka
+    loreInfo: Child - Team 8 - Double Attack
+    index: 201
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c65ef5389d1f15741866a3a4c0f1fbed, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Give your opponent 
+      <sprite=18>  equal to the difference of the highest Strength of your Combat
+      Styles.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 1
+      amount: 1
+    - resources: 11
+      amount: 1
+  - name: Kidomaru
+    loreInfo: Teenager - Sound Ninja Four
+    index: 202
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 82b286d238ec07a42b0cfffd32f08fc5, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 32
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 13
+      amount: 3
+    - resources: 11
+      amount: 3
+  - name: Kin Tsuchi
+    loreInfo: Teenager - Chunin Exams - Team Dosu
+    index: 203
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 60206392f548f6c4e98f28302eabf1cb, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 32
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      this War, when any  <sprite=69>  and  <sprite=70>  appear on  <sprite=8> ,
+      you may swap them to be of the opposite type.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 2
+      amount: 1
+    - resources: 18
+      amount: 1
+    - resources: 17
+      amount: 2
+    - resources: 12
+      amount: 2
+  - name: Kitane
+    loreInfo: Adult - Twelve Guardian Ninja
+    index: 204
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 2893fc7b62ffd2240bf4ebeee2bb875e, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 8
+    TaijutsuValue: 8
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you have the lowest
+      Strength of the \u201CGenjutsu\u201D Combat Style in this Battle, double the
+      Resources gained from 1 of your  <sprite=8>  after this."
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 2
+  - name: Kiyo Nara
+    loreInfo: Teenager
+    index: 205
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 038afaef43df8804e9a011363e2759c3, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 6
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1 random  <sprite=8> 
+      from all other player\u2019s Hands. Shuffle them and give back 1 to each player.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 17
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Konan
+    loreInfo: Child - Jiraiya Frog Outfit
+    index: 206
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 7db6ff9111d8411468b60bc632d81063, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>In Hand \u2013 Losing a War:</b></u>\r\n<size=75>Discard
+      this  <sprite=9>  to Draw 3  <sprite=11>  and\nchoose 2 to keep.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 3
+  - name: Konan
+    loreInfo: Child - Ame Orphans
+    index: 207
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 7478cb41cb514d54d829b83777c72310, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 2
+    NinjutsuValue: 6
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Your opponent must Discard
+      2 of its  <sprite=49>  <sprite=50>  <sprite=51>  from the Battlefield. You
+      can place the same  <sprite=49>  <sprite=50>  <sprite=51>  onto the Battlefield
+      from your Supply.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 3
+      amount: 2
+  - name: Konohamaru Sarutobi
+    loreInfo: Kid - 3rd Hokage's Grandson - Team Ecisu
+    index: 208
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f247bf3afef169248852d3bbc5f69216, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 2
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get 3  <sprite=22>
+      .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 15
+      amount: 2
+    - resources: 18
+      amount: 4
+  - name: Kurenai Yuhi
+    loreInfo: Child
+    index: 209
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 4efea245ce47fad4d8399352dd9440ff, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give your opponent
+      1  <sprite=19>  for each Battle played up to this point in the War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 17
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Kurenai Yuhi
+    loreInfo: Child - Chunin Exams
+    index: 210
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 92ce157ce56a160429dc12b313f570fe, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give your opponent
+      as many  <sprite=19>  as it has  <sprite=19>  in its Supply.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Kurenai Sarutobi
+    loreInfo: Adult - Mirai's Mother
+    index: 211
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 71096930d6681f44bb10c4803ab1cb3c, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 6
+    GenjutsuValue: 7
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Give your opponent as
+      many  <sprite=19>  as it has  <sprite=19>  in its Supply.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 2
+      amount: 1
+  - name: Kurenai Sarutobi
+    loreInfo: Adult - Pregnant - Mirai's Mother
+    index: 212
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 2d45a17517ba6cd4fb86cb1476faab01, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Give your opponent as
+      many  <sprite=19>  as there are  <sprite=8>  left to Score.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 2
+      amount: 1
+  - name: Kyuuke
+    loreInfo: Teenager - Old Akatsuki
+    index: 213
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 8bcd950d41d60eb4f972f09712071b30, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 6
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: 
+    effectIcon: 010000000100000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 8
+      amount: 1
+    - resources: 17
+      amount: 2
+  - name: Matsuri
+    loreInfo: Teenager - 4th NInja War - 4th Division
+    index: 214
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 6f195b62679bdcf468cdc77ebe2be096, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 5
+    NinjutsuValue: 5
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If any  <sprite=8> 
+      \u201CGaara\u201D  are played in this War,\ngain 10  <sprite=22>  .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Maubi
+    loreInfo: Child
+    index: 215
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a3ff8127068b0444a8d2c9b2230fcd54, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 3
+    TaijutsuValue: 2
+    NinjutsuValue: 4
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Get 1  <sprite=52> 
+      for each  <sprite=52>  you get in this War\nas a Resource.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 1
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Midare
+    loreInfo: Teenager - Chunin Exams - Team Shigure
+    index: 216
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 25d0f061709955d41b1def5d065742aa, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get 2  <sprite=22> 
+      for each  <sprite=8>\nfrom  <sprite=98>  in this War.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 1
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Meizu
+    loreInfo: "Child - G\u014Dzu's Younger Twin Brother"
+    index: 217
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1719e5f816e3eca45bf4d4bd151c1af5, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 20
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Discard 1 random 
+      <sprite=9>  from your opponent\u2019s Hand.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Might Guy
+    loreInfo: Child
+    index: 218
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 59352c64af689b84c928fafc114e7371, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 2
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw the top  <sprite=0> 
+      from the \u201CHidden\u201D  <sprite=0>  Deck in the Shop up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 16
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: MIsumi Tsurugi
+    loreInfo: Teenager - Chunin Exams - Team Kabuto
+    index: 219
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3045347833b4d4d4abc3775188beb4e5, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 32
+    TaijutsuValue: 4
+    NinjutsuValue: 4
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Take 1 random of any
+      of your opponent\u2019s  <sprite=9>  <sprite=10>  <sprite=11>  from its Hand.
+      You can look at their backsides.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 17
+      amount: 1
+  - name: MItate
+    loreInfo: Adult - Konoha Medical Corps
+    index: 220
+    set: 1
+    characterSprite: {fileID: 21300000, guid: dcdec84fab64c7049aefd60be8b80ac2, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 4
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>You may change 1 of
+      your played  <sprite=8>  containing  <sprite=59>  to\na  <sprite=60> . If you
+      do, give your opponent 2  <sprite=17> .\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 15
+      amount: 2
+  - name: Moegi Kazamatsuri
+    loreInfo: Kid - Team Ebisu
+    index: 221
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d4ff07e052751fe4a9fea78190cbdc87, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 1
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get 1  <sprite=22> 
+      for each  <sprite=22>  your opponent get as Resources from its played  <sprite=8> 
+      in this Battle.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 7
+      amount: 1
+    - resources: 5
+      amount: 2
+    - resources: 18
+      amount: 4
+  - name: Moegi Kazamatsuri
+    loreInfo: Child - Team Ebisu
+    index: 222
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3b1ba230d956c9a42b1de431e1a8033d, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 2
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Get 1  <sprite=22> 
+      for each  <sprite=22>  your opponent get from all its played  <sprite=8>  in
+      this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Mogusa
+    loreInfo: Adult - Konoha Medical Corps
+    index: 223
+    set: 1
+    characterSprite: {fileID: 21300000, guid: facddc7b31c94e04f9b5cdb910d6082b, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>After The War:</b></u>
+
+      <size=75>All your played 
+      <sprite=8>  not from  <sprite=97>  will get back
+
+      up to your Hand.'
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Nagato Uzumaki
+    loreInfo: Child - Jiraiya Frog Outfit
+    index: 224
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f538b059aaa9785469fe085ee90ce89f, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>In Hand \u2013 If Winning the War:</b></u>\r\n<size=75>Instead
+      of your opponent, draw the  <sprite=9>  it should have drawn for losing the
+      War."
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Neji Hyuga
+    loreInfo: Kid
+    index: 225
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 772a541477020d8478c3721dff86b126, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 2
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Remove the Effect on
+      your opponent\u2019s\nnext  <sprite=8>  in this War."
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 10
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 17
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Nono Yakaushi
+    loreInfo: Adult - ANBU - The Wandering Miko
+    index: 226
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 631d908d1e6dfe04a943b14447e2e09c, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: '<size=85><b><u>After The War:</b></u>
+
+      <size=75>Use your 
+      <sprite=59>  to bring all of your played  <sprite=8>  containing  <sprite=60> 
+      back up to your Hand. You
+
+      need another  <sprite=8>  containing  <sprite=59> 
+      to perform
+
+      <sprite=59>  as normal.'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 3
+  - name: Obito Uchiha
+    loreInfo: Child - Hashirama Cells Infued
+    index: 227
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 5816acd84b5a77b4fa667e5b77059f7e, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War (not during the  <sprite=59> ), if you were to Discard a  <sprite=8>
+      , draw 1  <sprite=10>  each time.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 2
+  - name: Raiga Kurosuki
+    loreInfo: Adult - 7 Ninja Swordsmen
+    index: 228
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b2432991b70f1f74b9fb7237e7e0df13, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 20
+    TaijutsuValue: 7
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 1
+    effectText: 
+    effectIcon: 010000000100000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 2
+    - resources: 11
+      amount: 2
+  - name: Rock Lee
+    loreInfo: Child - Chunin Exams - Team Guy -            5th Gate
+    index: 229
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 43cb2d551c130ea48a63da5175ea1742, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 1
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: 
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Swap place with
+      your opponent in the\n <sprite=79>  Dominance Track. Then move to the top in
+      the same Dominance Track.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 13
+      amount: 1
+  - name: Rock Lee
+    loreInfo: Kid
+    index: 230
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e910b8baff5f8d94e8b1880f06fbab2a, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 1
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 1 space
+      in any Domination tracks.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 3
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 18
+      amount: 3
+    - resources: 18
+      amount: 3
+  - name: Rock Lee
+    loreInfo: Child - Chunin Exams - Team Guy
+    index: 231
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e3bc01bcb0e876f40b3dd73e60398a26, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 1
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 1 space
+      in 3 different Domination\ntracks.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Rock Lee
+    loreInfo: Child - Team Guy
+    index: 232
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f24a3142f83ec664aa0e8e9e013337db, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 1
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 2 spaces
+      in any Domination Track.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Sakon & Ukon
+    loreInfo: Teenager - Sound Ninja Four
+    index: 233
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 85209c2b5a1bda240a9a1e31d079d6f7, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 32
+    TaijutsuValue: 4
+    NinjutsuValue: 4
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Become an exact
+      copy of your opponents \n <sprite=8>  in this Battle. The player highest in
+      the \n <sprite=84>  Dominance Track wins this Battle and receives the 1 BP.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
-      amount: 0
+      amount: 1
     - resources: 0
-      amount: 0
+      amount: 1
     - resources: 0
-      amount: 0
+      amount: 1
     - resources: 0
-      amount: 0
+      amount: 1
+  - name: Sakura Haruno
+    loreInfo: Child - Team 7 - Inner Sakura
+    index: 234
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a2f65c3ee882d0740b950e1836e9f27b, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Change 1  <sprite=59> 
+      on any of your opponent\u2019s played  <sprite=8>  in this War into a  <sprite=60>
+      .\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+    - resources: 11
+      amount: 2
+  - name: Sakura Haruno
+    loreInfo: Kid
+    index: 235
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 15c6c50229d98a14481d814d3e1feecf, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 1
+    NinjutsuValue: 2
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Remove the  <sprite=59> 
+      from 1 of your played  <sprite=8> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 2
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 7
+      amount: 2
+    - resources: 18
+      amount: 4
+  - name: Sakura Haruno
+    loreInfo: Child - Chunin Exams - Team 7
+    index: 236
+    set: 1
+    characterSprite: {fileID: 21300000, guid: fe63a192e42e47c4eacc7b1e75f8495a, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Remove the  <sprite=60> 
+      from 1 of your other played  <sprite=8> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 11
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Sari
+    loreInfo: Teenager - 4th Ninja War - 4th Division
+    index: 237
+    set: 1
+    characterSprite: {fileID: 21300000, guid: eaa128cdbc5275245b7a684f76e78225, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 4
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If any  <sprite=8> 
+      \u201CGaara\u201D  are played in this War, \ngain 5  <sprite=77> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+  - name: Sasori
+    loreInfo: Kid
+    index: 238
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cc481e253c017ce40af05ef1e35b71d1, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 1
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 10
+      amount: 2
+  - name: Seito
+    loreInfo: Adult - Twelve Guardian Ninja
+    index: 239
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 21e5a506df96b274499e7bc342c2c881, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 36
+    TaijutsuValue: 4
+    NinjutsuValue: 8
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Remove the Resources
+      on your opponent\u2019s next  <sprite=8>  \nin this War.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 2
+  - name: Shiho
+    loreInfo: Adult - Konoha Cryptanalysis Team
+    index: 240
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f91a75a28a7de1549960dc8a401d444d, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Take 1 of
+      your opponent\u2019s Healed  <sprite=8>  up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Shikamaru Nara
+    loreInfo: Child - Chunin Exams - Team 10
+    index: 241
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 2451076f64bbcbd47a4101527570bdcd, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Most BP:</b></u>\r\n<size=75>Lose the War, but give
+      your opponent all of your\n <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20> 
+      from your Supply After Scoring.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 17
+      amount: 1
+  - name: Shikamaru Nara
+    loreInfo: Child - Team 10
+    index: 242
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 6acfafb7fdeb4c549a3dbd979936ef38, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>During the next
+      Battle in this War, give your opponent  <sprite=20>  equal to the lowest Strength
+      of the Combat Styles on its played  <sprite=8> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+  - name: Shikamaru Nara
+    loreInfo: Kid
+    index: 243
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ebb65b7803330b44a958167c7f70776f, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>During the next
+      Battle in this War, give your opponent  <sprite=20>  equal to the lowest Strength
+      of the Combat Styles on its played  <sprite=8> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 18
+      amount: 2
+  - name: Shino Aburame
+    loreInfo: Child - Chunin Exams - Team 8
+    index: 244
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 60d0d3a1aff446143836d09da81bf8c7, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 11
+      amount: 2
+  - name: Shino Aburame
+    loreInfo: Kid
+    index: 245
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c552f121417935240a6e74cde2429fc6, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 1
+    NinjutsuValue: 3
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give your opponent
+      1  <sprite=18>  for each BP it has\nin this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 18
+      amount: 3
+  - name: Shino Aburame
+    loreInfo: Child - Team 8
+    index: 246
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 6e09beb52403c874aa6bf69c97b123d0, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>You\u2019re immune
+      to  <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  <sprite=21>  given
+      to you during the Scoring.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
+  - name: Shisui Uchiha
+    loreInfo: Child
+    index: 247
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e7f00136b6b7444489233834b4806943, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>In Hand - Scoring:</b></u>\r\n<size=75>Trash this 
+      <sprite=9>  to triple the Resources on 1  <sprite=8>  in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Shizune
+    loreInfo: Child
+    index: 248
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cbca69904610e0d46b8ba0ff22f2cf3b, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 1
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw 1  <sprite=10> 
+      for each  <sprite=8>  you got back up to your Hand.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Sora
+    loreInfo: "Adult - Jinch\u016Briki - Ninja Monk"
+    index: 249
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b7747e92620ea36458433110b361301c, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 19
+    TaijutsuValue: 4
+    NinjutsuValue: 8
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 3
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you\u2019re in
+      a War against a  <sprite=23> , double the  <sprite=86>  on all  <sprite=8> 
+      you play throughout the whole War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Tayuya
+    loreInfo: Teenager - Sound Ninja Four
+    index: 250
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 8c6c92ff238a1124b827b7a17acafc6b, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 32
+    TaijutsuValue: 2
+    NinjutsuValue: 4
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: 
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 3
+    - resources: 13
+      amount: 3
+  - name: Temari
+    loreInfo: Kid
+    index: 251
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d28df2756eb3f9d4a86d2675fde1475c, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 2
+    NinjutsuValue: 2
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
+      the War, if anything were to be done at random, you choose the outcome instead.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 7
+      amount: 2
+    - resources: 18
+      amount: 4
+  - name: Temari
+    loreInfo: Child - Chunin Exams - Sand Siblings
+    index: 252
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ea42f0647474df74ca159676840902b2, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Take all your and your
+      opponent\u2019s  <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20> . Mix them
+      together and return the same amount to each player, at random.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 17
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 11
+      amount: 2
+  - name: Temari
+    loreInfo: Child - Sand Siblings
+    index: 253
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 07f7d3b0ac92e50488f1ec85140e8c78, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 4
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>If Defending:</b></u>\r\n<size=75>Blow your opponent\u2019s\n<sprite=48> 
+      <sprite=49>  <sprite=50>  <sprite=51>  in the Battlefield\n1 Field away of
+      your choice.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 17
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 11
+      amount: 2
+  - name: Tenten
+    loreInfo: Kid
+    index: 254
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ff0bcdcdea74fce44954b5a8c9f6eb71, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 2
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Receive the same Resources
+      as any of your opponent\u2019s  <sprite=8>  already Scored.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 18
+      amount: 4
+  - name: Tenten
+    loreInfo: Child - Chunin Exams - Team Guy
+    index: 255
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 20b38cd9921ef4148b1611a7f860d83c, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Double the Resources
+      received from any of\nyour  <sprite=8> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Tenten
+    loreInfo: Child - Team Guy
+    index: 256
+    set: 1
+    characterSprite: {fileID: 21300000, guid: fac24f4731f14b84a829a07d29048754, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Receive the same Resources
+      as any of your opponent\u2019s  <sprite=8> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 18
+      amount: 1
+  - name: Teyaki Uchiha
+    loreInfo: Old - Uruchi's Husband
+    index: 257
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1e43cf28540476a43b80d9cf60296521, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 4
+    GenjutsuValue: 5
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you\u2019ve played
+      a  <sprite=7>  \u201CTeenager\u201D in this War, receive either 2  <sprite=9> 
+      or 1  <sprite=10>  for each  <sprite=9>  \u201CTeenager\u201D played.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 2
+  - name: Torifu Akimichi
+    loreInfo: Teenager - 2nd Hokage's Subordinate
+    index: 258
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 74104d24ef04e844cb55a1de1369521b, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 6
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>if the Effect of
+      your opponent\u2019s  <sprite=8>  played last Battle isn\u2019t resolved yet,
+      remove it.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 17
+      amount: 1
+    - resources: 16
+      amount: 2
+  - name: Udon Ise
+    loreInfo: Kid - Team Ebisu
+    index: 259
+    set: 1
+    characterSprite: {fileID: 21300000, guid: fe65f4fa512d07f4895bd6980a5526b4, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 1
+    NinjutsuValue: 1
+    GenjutsuValue: 1
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Lose the War. \nIf
+      you\u2019re in a War against any  <sprite=23> , don\u2019t Score the Resources
+      on your  <sprite=9>  during Scoring. \nIf you\u2019re in a War against another
+      player, give away a  <sprite=23>  even if you were the attacker.\r\n"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 5
+      amount: 3
+    - resources: 18
+      amount: 4
+    - resources: 18
+      amount: 4
+    - resources: 18
+      amount: 4
+  - name: Uruchi Uchiha
+    loreInfo: Old - Teyaki's Wife
+    index: 260
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 0d150ff8cb6a70e4e90ea579b9f8790b, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 1
+    NinjutsuValue: 3
+    GenjutsuValue: 6
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you\u2019ve played
+      a  <sprite=7>  \u201CChild\u201D in this War, draw 1  <sprite=0>  from the
+      \u201CHidden  <sprite=0>  deck for \neach  <sprite=7>  \u201CChild\u201D played.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 3
+    - resources: 0
+      amount: 4
+    - resources: 0
+      amount: 4
+    - resources: 16
+      amount: 2
+  - name: Yahiko
+    loreInfo: Child
+    index: 261
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b96f9558e593e714da4b010cca6ecb16, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 2
+    heal: 2
+    headAmount: 1
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Discard any of your 
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from the Battlefield. Then
+      Discard any of your opponent\u2019s  <sprite=48>  <sprite=49>  <sprite=50> 
+      <sprite=51>  from the Battlefield of your choice.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 5
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 18
+      amount: 3
+  - name: Yahiko
+    loreInfo: Child - Jiraiya Frog Outfit
+    index: 262
+    set: 1
+    characterSprite: {fileID: 21300000, guid: fb5e110e1618daa43b887484ef865346, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 25
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>In Hand \u2013 Start of Battle:</b></u>\r\n<size=75>Double
+      the Strength of each Combat Style on the  <sprite=8>  you\u2019re about to
+      play in this War.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 3
+  - name: Tenzo
+    loreInfo: Child - ANBU
+    index: 263
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 641b04e8dce4b814d932db08ac9fb9d1, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 1
+    TaijutsuValue: 0
+    NinjutsuValue: 0
+    GenjutsuValue: 0
+    heal: 0
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>In Hand \u2013 Start of War against a  <sprite=23>
+      :</b></u>\r\n<size=75>When you initiate a War against a  <sprite=23> , \nreduce
+      the Strength of it with -4\n(minimum of 1).\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Yashamaru
+    loreInfo: Adult - 4th Kazekage's Right-Hand
+    index: 264
+    set: 1
+    characterSprite: {fileID: 21300000, guid: c4e3eb17655a6b94e89e8956fc008dff, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 28
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 6
+    heal: 1
+    headAmount: 0
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Move your opponent Down\n3
+      spaces in 1 Domination Track. Then move your opponent Up 3 spaces in any other
+      Dominance Tracks.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 2
+    - resources: 18
+      amount: 2
+  - name: Yurika
+    loreInfo: 'Adult - Konoha Cryptology Team '
+    index: 265
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 89a42a467e8196b4c9fffdb09db6931f, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 4
+    GenjutsuValue: 8
+    heal: 2
+    headAmount: 2
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Let your opponent move
+      you Down 2 spaces in any Domination Track. Then swap places with your opponent
+      in this Domination Track.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 17
+      amount: 1
+  - name: Zaku Abumi
+    loreInfo: Teenager - Chunin Exams - Team Dosu
+    index: 266
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d700aaae6e83a5a45a0b634b987277c2, type: 3}
+    cardType: 1
+    clan: 10
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 2
+    headAmount: 0
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give the rest of
+      the  <sprite=8>  you\u2019ll play in this War +2 Strength in all their Combat
+      Styles.\r\n"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1

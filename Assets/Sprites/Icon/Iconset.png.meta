@@ -2141,6 +2141,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Iconset_97
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81bd9daa0bbd7540a5aee503c3f14d7
+      internalID: 66641490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iconset_98
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2ab454f3a58464d8b46bb2da527e6c
+      internalID: -890221669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iconset_99
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368f6d03ae073a9468cc3c1e57086e15
+      internalID: -1416769610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2173,6 +2236,7 @@ TextureImporter:
       Iconset_63: 1097370505
       Iconset_49: -1788816175
       Iconset_82: 2092456796
+      Iconset_97: 66641490
       Iconset_30: -1966686939
       Iconset_18: -6020997
       Iconset_17: 951722147
@@ -2219,6 +2283,7 @@ TextureImporter:
       Iconset_39: -423519303
       Iconset_71: 942253491
       Iconset_10: 1209348960
+      Iconset_98: -890221669
       Iconset_55: 914116276
       Iconset_84: 723794967
       Iconset_65: 1719118649
@@ -2247,6 +2312,7 @@ TextureImporter:
       Iconset_69: -115147862
       Iconset_78: -1089110709
       Iconset_43: -49791588
+      Iconset_99: -1416769610
       Iconset_37: 2022918627
       Iconset_34: -272415560
   spritePackingTag: 

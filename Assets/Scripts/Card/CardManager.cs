@@ -691,7 +691,102 @@ public class CardManager : MonoBehaviour
                 battleCardObject.head_Amount.color = colorManager.GetAlly_TextColor();
 
                 break;
+            case Clan.Ally_Rare:
+                battleCardObject.outerFrame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetAlly_BackgroundColor();
 
+                battleCardObject.over_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetAlly_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetAlly_LandOriginColor();
+
+                battleCardObject.name_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.loreInfo_Text.color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.taijutsuValue_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.ninjutsuValue_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.genjutsuValue_Text.color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.Taijutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+
+                battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
+                battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+                battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetAlly_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetAlly_TextColor();
+
+                break;
+            case Clan.Ally_Epic:
+                battleCardObject.outerFrame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetAlly_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetAlly_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetAlly_LandOriginColor();
+
+                battleCardObject.name_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.loreInfo_Text.color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.taijutsuValue_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.ninjutsuValue_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.genjutsuValue_Text.color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.Taijutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+
+                battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
+                battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+                battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetAlly_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetAlly_TextColor();
+
+                break;
+            case Clan.Ally_Legendary:
+                battleCardObject.outerFrame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.background_Image.color = colorManager.GetAlly_BackgroundColor();
+
+                battleCardObject.over_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.over_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.over_Frame.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.under_Circle.color = colorManager.GetAlly_CircleColor();
+                battleCardObject.under_Field.color = colorManager.GetAlly_BackgroundColor();
+                battleCardObject.under_Frame.color = colorManager.GetAlly_BorderColor();
+
+                battleCardObject.landOrigins_Image.color = colorManager.GetAlly_LandOriginColor();
+
+                battleCardObject.name_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.loreInfo_Text.color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.taijutsuValue_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.ninjutsuValue_Text.color = colorManager.GetAlly_TextColor();
+                battleCardObject.genjutsuValue_Text.color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.Taijutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+                battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
+
+                battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
+                battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+                battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
+
+                battleCardObject.head_Frame.color = colorManager.GetAlly_BoxFrameColor();
+                battleCardObject.head_Amount.color = colorManager.GetAlly_TextColor();
+
+                break;
             default:
                 break;
         }
@@ -1282,6 +1377,15 @@ public class CardManager : MonoBehaviour
                             case Clan.Ally:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
                                 break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
 
                             default:
                                 break;
@@ -1321,6 +1425,15 @@ public class CardManager : MonoBehaviour
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetKara_BorderColor();
                                 break;
                             case Clan.Ally:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Legendary:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
                                 break;
 
@@ -1366,6 +1479,15 @@ public class CardManager : MonoBehaviour
                             case Clan.Ally:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
                                 break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
 
                             default:
                                 break;
@@ -1407,6 +1529,15 @@ public class CardManager : MonoBehaviour
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = colorManager.GetKara_BorderColor();
                                 break;
                             case Clan.Ally:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
+                                break;
+                            case Clan.Ally_Legendary:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().color = new Color(0, 0, 0, 1);
                                 break;
 
@@ -1454,6 +1585,15 @@ public class CardManager : MonoBehaviour
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Kara;
                                 break;
                             case Clan.Ally:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Ally;
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Ally;
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Ally;
+                                break;
+                            case Clan.Ally_Legendary:
                                 battleCardObject.resources_Image[k].GetComponent<Image>().sprite = Resource_ClanCard_Ally;
                                 break;
 

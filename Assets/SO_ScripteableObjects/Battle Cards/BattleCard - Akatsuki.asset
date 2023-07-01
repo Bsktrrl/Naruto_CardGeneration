@@ -606,8 +606,8 @@ MonoBehaviour:
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Become an exact
       copy of any of your opponents\n <sprite=8>  in this War. If you choose your
-      opponent\u2019s\n <sprite=8>  from this Battle, the player highest in the\n
-      <sprite=84> Dominance Track wins this Battle and receives the 1 BP.\r"
+      opponent\u2019s\n <sprite=8>  from this Battle, the player highest in the\n<sprite=84>
+      Dominance Track wins this Battle and receives the 1 BP.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -637,9 +637,8 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Don't play this 
-      <sprite=1> , but show it for evidence. Then Draw 1 random  <sprite=1>  \u201CPain\u201D
-      up to your Hand and place this  <sprite=1>  in your Discard Pile.\r"
+    effectText: "<size=85><b><u>In Hand:</b></u>\r\n<size=75>Discard this and Draw
+      1 random  <sprite=1>  \u201CPain\u201D up to your Hand."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
