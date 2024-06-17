@@ -25,7 +25,8 @@ MonoBehaviour:
     NinjutsuValue: 7
     GenjutsuValue: 1
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 0
     tier: 3
     fire: 0
     wind: 0
@@ -39,9 +40,9 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 2
     - resources: 13
+      amount: 1
+    - resources: 18
       amount: 2
   - name: Hidan
     loreInfo: Adult - Kakuzu's Partner
@@ -55,7 +56,8 @@ MonoBehaviour:
     NinjutsuValue: 3
     GenjutsuValue: 4
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 2
     tier: 3
     fire: 1
     wind: 0
@@ -63,13 +65,13 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Trash 1  <sprite=8> 
-      in your Hand to Draw 1 random  <sprite=1>  from either your Trash Pile or Discard
-      Pile back up to your Hand.\r"
+      from your Hand.\n<size=20%>\n<size=75>Then Draw 1 random  <sprite=1>  from
+      either your Trash Pile or Discard Pile back up to your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
+    - resources: 16
       amount: 1
     - resources: 11
       amount: 2
@@ -88,6 +90,7 @@ MonoBehaviour:
     GenjutsuValue: 10
     heal: 2
     headAmount: 0
+    focusArea: 1
     tier: 5
     fire: 1
     wind: 1
@@ -95,13 +98,13 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Your opponent must Discard
-      1  <sprite=0>  \u201CWar\u201D from its Hand if it has any. If it hasn\u2019t
-      any, look at its Hand and Discard 1  <sprite=0>  of your choice.\r"
+      1 <sprite=0>  \u201CWar\u201D if it has any.\n<size=20%>\n<size=75>If not,
+      look at its  <sprite=0>  and Discard 1 of your choice.\r"
     effectIcon: 020000000000000000000000
     resources:
-    - resources: 6
+    - resources: 9
       amount: 1
-    - resources: 7
+    - resources: 6
       amount: 1
     - resources: 2
       amount: 1
@@ -120,15 +123,22 @@ MonoBehaviour:
     GenjutsuValue: 1
     heal: 0
     headAmount: 0
+    focusArea: 2
     tier: 1
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Return all your
-      played  <sprite=8>  from the War back up to your Hand. Then Trash this  <sprite=1>
-      . Don\u2019t return any played  <sprite=76>  from the War.\r"
+    effectText: '<size=85><b><u>After Scoring:</b></u>
+
+      <size=75>Return all
+      your played  <sprite=8>  back up to your Hand.
+
+      <size=20%>
+
+      <size=75>Then
+      Trash this  <sprite=1> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -151,7 +161,8 @@ MonoBehaviour:
     NinjutsuValue: 8
     GenjutsuValue: 3
     heal: 0
-    headAmount: 0
+    headAmount: 2
+    focusArea: 16
     tier: 4
     fire: 1
     wind: 1
@@ -159,17 +170,17 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>You may Trash as many 
-      <sprite=8>  from your Hand as you like. Get 3  <sprite=22>  for each  <sprite=8> 
-      you Trash.\r"
+      <sprite=8>  from your Hand as you like. \n<size=20%>\n<size=75>Get 3 <sprite=22> 
+      for each  <sprite=8>  you Trash.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 15
       amount: 1
-    - resources: 17
+    - resources: 13
       amount: 1
   - name: Karin Uzumaki
     loreInfo: Teenager - Team Taka
@@ -179,19 +190,20 @@ MonoBehaviour:
     cardType: 1
     clan: 2
     landOrigins: 32
-    TaijutsuValue: 2
+    TaijutsuValue: 1
     NinjutsuValue: 5
     GenjutsuValue: 3
     heal: 1
     headAmount: 0
+    focusArea: 37
     tier: 1
     fire: 0
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, your  <sprite=8>  cannot be affected negatively by your opponent.\r"
+    effectText: "<size=85><b><u>For the rest of the War:</b></u>\r\n<size=75>Your 
+      <sprite=8>  cannot be affected negatively by your opponent.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -215,24 +227,32 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 4
+    focusArea: 4
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, if you were to Trash any  <sprite=8>  , Discard them instead.\r"
+    effectText: '<size=85><b><u>For the rest of the War:</b></u>
+
+      <size=75>If
+      you were to Trash any  <sprite=8> , Discard them instead.
+
+      <size=20%>
+
+      <size=75>You
+      still Trash your  <sprite=76> .'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 17
-      amount: 1
     - resources: 15
       amount: 1
+    - resources: 11
+      amount: 2
   - name: Konan
     loreInfo: Adult - Nagato's Partner
     index: 128
@@ -246,24 +266,24 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 0
     headAmount: 0
+    focusArea: 4
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
-      has more  <sprite=8>  in its Hand than you, he must Discard down to the amount
-      you\u2019re holding.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Your opponent must
+      Discard down its  <sprite=8>  on Hand to the amount you\u2019re holding.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 3
       amount: 2
-    - resources: 18
-      amount: 2
     - resources: 16
+      amount: 2
+    - resources: 18
       amount: 2
   - name: Madara Uchiha
     loreInfo: Ghost of the Uchiha Clan
@@ -274,28 +294,29 @@ MonoBehaviour:
     clan: 2
     landOrigins: 17
     TaijutsuValue: 1
-    NinjutsuValue: 3
+    NinjutsuValue: 4
     GenjutsuValue: 10
     heal: 2
     headAmount: 3
+    focusArea: 3
     tier: 5
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1  <sprite=11> 
-      for each  <sprite=76>  you\u2019ve played in the War.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1 <sprite=11> 
+      for each  <sprite=76>  you\u2019ve played."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 1
+    - resources: 0
+      amount: 3
+    - resources: 13
+      amount: 1
     - resources: 17
       amount: 2
-    - resources: 13
-      amount: 2
-    - resources: 12
-      amount: 3
   - name: Masked Man
     loreInfo: Teenager
     index: 130
@@ -309,13 +330,14 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 0
     headAmount: 1
+    focusArea: 21
     tier: 2
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Move up 1 space in 2
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Move up 1 spot in 2
       different tracks on the Dominance Board.\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -340,17 +362,18 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 3
     tier: 4
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>You may Trash this 
-      <sprite=1>  to play any  <sprite=76>  in this Battle without Trashing its 
-      <sprite=76> <sprite=1> . You can only play  <sprite=76>  that has not yet been
-      used. You cannot play your own  <sprite=76> . Your chosen  <sprite=76>  will
-      not count as used.\r"
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=75>You may Trash this 
+      <sprite=1>  and play any others''  <sprite=76>  without Trashing it after the
+      War.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -359,7 +382,39 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-    - resources: 1
+    - resources: 0
+      amount: 1
+  - name: Obito Uchiha
+    loreInfo: "Adult - Jinch\u016Briki - Six Path"
+    index: 133
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 94afb4e69c2eca9409d07673f66f3f91, type: 3}
+    cardType: 1
+    clan: 2
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 8
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 2
+    focusArea: 17
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Swap 1 of your captured 
+      <sprite=23>  with a random one from the Main Supply.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 14
+      amount: 1
+    - resources: 17
       amount: 1
   - name: Obito Uchiha
     loreInfo: Teenager - Rage
@@ -374,16 +429,17 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 0
+    focusArea: 29
     tier: 3
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>End the War with no
-      winner. You still need to do the Scoring. Reset the Board to its previous state
-      before this War took place. If your opponent was the attacker, he only get
-      the  <sprite=0>  \u201CTravel\u201D back on Hand.\r"
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=72>Start the Scoring,
+      but end the War with no winner. \n<size=8%>\n<size=72>Then reset the Board
+      to its previous state before this War took place.\n<size=8%>\n<size=72>If your
+      opponent was the attacker, only give back the  <sprite=0>  \u201CTravel\u201D.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -394,37 +450,6 @@ MonoBehaviour:
       amount: 1
     - resources: 18
       amount: 4
-  - name: Obito Uchiha
-    loreInfo: "Adult - Jinch\u016Briki - Six Path"
-    index: 133
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 94afb4e69c2eca9409d07673f66f3f91, type: 3}
-    cardType: 1
-    clan: 2
-    landOrigins: 17
-    TaijutsuValue: 2
-    NinjutsuValue: 8
-    GenjutsuValue: 6
-    heal: 2
-    headAmount: 2
-    tier: 4
-    fire: 1
-    wind: 1
-    lightning: 1
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Swap 1 of your captured 
-      <sprite=23>  with any of your choice from the Main Supply.\r"
-    effectIcon: 010000000000000000000000
-    resources:
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 2
-      amount: 1
-    - resources: 18
-      amount: 2
   - name: Orochimaru
     loreInfo: Adult - Itachi's Partner - Legendary Sannin
     index: 134
@@ -437,21 +462,21 @@ MonoBehaviour:
     NinjutsuValue: 9
     GenjutsuValue: 6
     heal: 1
-    headAmount: 0
+    headAmount: 1
+    focusArea: 2
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw 1 random
-      Trashed  <sprite=1>  from your Trash Pile and place it on the bottom of your
-      Draw Pile.\r"
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Shuffle 1 random
+      Trashed  <sprite=1>  back into your Draw Pile.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 16
+    - resources: 0
       amount: 1
     - resources: 7
       amount: 2
@@ -470,6 +495,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 1
     headAmount: 0
+    focusArea: 6
     tier: 3
     fire: 0
     wind: 1
@@ -477,17 +503,18 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent\u2019s 
-      <sprite=8>  has the highest Strength in any of the Combat Styles for this Battle,
-      give him  <sprite=17>  equal to the difference with your highest Strength.\r"
+      <sprite=8>  has the highest  <sprite=101> <sprite=102> <sprite=103>  in this
+      Battle, give him  <sprite=17>  equal to the difference with this  <sprite=1> 
+      highest  <sprite=101> <sprite=102> <sprite=103> .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 10
+    - resources: 0
       amount: 1
-    - resources: 16
+    - resources: 10
       amount: 1
   - name: Suigetsu Hozuki
     loreInfo: Teenager - Team Hebi
@@ -502,6 +529,7 @@ MonoBehaviour:
     GenjutsuValue: 1
     heal: 0
     headAmount: 0
+    focusArea: 47
     tier: 2
     fire: 0
     wind: 1
@@ -509,8 +537,8 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
-      is higher than you in the <sprite=80> Dominance Track, swap your places on
-      the track.\r"
+      is higher than you in the\n<sprite=80>  Dominance Track,\nswap spots on the
+      track.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -534,6 +562,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 0
     headAmount: 4
+    focusArea: 0
     tier: 3
     fire: 1
     wind: 0
@@ -543,13 +572,13 @@ MonoBehaviour:
     effectText: 
     effectIcon: 010000000100000000000000
     resources:
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
+    - resources: 12
       amount: 1
     - resources: 11
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 17
       amount: 1
   - name: Tobi
     loreInfo: Adult
@@ -563,27 +592,35 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 4
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 4
     tier: 2
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>You may give any
-      of your  <sprite=8>  in your Hand to your opponent. You then Draw as many 
-      <sprite=8>  from your opponent\u2019s Hand up to your Hand, at random (you
-      can look at the card backsides). You cannot Draw any of the  <sprite=8>  you
-      gave away.\r\n"
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=75>You may Swap
+      any  <sprite=8>  from your Hand with random ones from your opponent''s Hand.
+
+      <size=20%>
+
+      <size=75>You
+      may Swap as many  <sprite=8>  as you like, but you cannot Swap any  <sprite=8> 
+      you already gave away.
+
+'
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
-      amount: 1
-    - resources: 17
+    - resources: 18
       amount: 1
     - resources: 15
       amount: 1
-    - resources: 18
+    - resources: 16
+      amount: 1
+    - resources: 17
       amount: 1
   - name: Zetsu
     loreInfo: '-'
@@ -598,16 +635,17 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 0
     headAmount: 0
+    focusArea: 4
     tier: 3
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Become an exact
-      copy of any of your opponents\n <sprite=8>  in this War. If you choose your
-      opponent\u2019s\n <sprite=8>  from this Battle, the player highest in the\n<sprite=84>
-      Dominance Track wins this Battle and receives the 1 BP.\r"
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=75>Become an exact
+      copy of any of your opponents played  <sprite=8>  (this Battle included).'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -631,14 +669,15 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 2
     tier: 5
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>In Hand:</b></u>\r\n<size=75>Discard this and Draw
-      1 random  <sprite=1>  \u201CPain\u201D up to your Hand."
+    effectText: "<size=85><b><u>In Hand:</b></u>\r\n<size=75>Discard this  <sprite=1> 
+      and Draw 1 random  <sprite=1>  \u201CPain\u201D."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -661,7 +700,8 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 6
     heal: 2
-    headAmount: 4
+    headAmount: 6
+    focusArea: 0
     tier: 5
     fire: 1
     wind: 1
@@ -673,12 +713,12 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
     - resources: 12
       amount: 2
+    - resources: 7
+      amount: 2
+    - resources: 7
+      amount: 3
   - name: Pain - Gakido
     loreInfo: Six Path of Pain
     index: 142
@@ -691,24 +731,27 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 6
     heal: 2
-    headAmount: 5
+    headAmount: 6
+    focusArea: 33
     tier: 5
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>The Effect on the
-      rest of the  <sprite=8>  played by your opponent in this War will be canceled.\r"
+    effectText: '<size=85><b><u>For the rest of the War:</b></u>
+
+      <size=75>Cancel
+      all Effects on your opponents  <sprite=8>  that has yet to be performed.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
     - resources: 12
+      amount: 2
+    - resources: 15
       amount: 2
   - name: Pain - Naraka
     loreInfo: Six Path of Pain
@@ -721,8 +764,9 @@ MonoBehaviour:
     TaijutsuValue: 6
     NinjutsuValue: 6
     GenjutsuValue: 6
-    heal: 2
-    headAmount: 0
+    heal: 1
+    headAmount: 6
+    focusArea: 2
     tier: 5
     fire: 1
     wind: 1
@@ -753,24 +797,27 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 6
     heal: 2
-    headAmount: 5
+    headAmount: 6
+    focusArea: 4
     tier: 5
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Trash any  <sprite=8> 
-      played by your opponent in this War.\r"
+    effectText: '<size=85><b><u>After Scoring:</b></u>
+
+      <size=75>Trash 1  <sprite=8> 
+      played by your opponent, of your choice.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
     - resources: 12
+      amount: 2
+    - resources: 13
+      amount: 2
+    - resources: 16
       amount: 2
   - name: Pain - Shurado
     loreInfo: Six Path of Pain
@@ -784,15 +831,22 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 6
     heal: 2
-    headAmount: 4
+    headAmount: 6
+    focusArea: 19
     tier: 5
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: 
-    effectIcon: 010000000100000001000000
+    effectText: '<size=85><b><u>After The War:</b></u>
+
+      <size=75>Remove all
+      of your oppoenent''s  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>
+
+      used
+      in this War from the Board.'
+    effectIcon: 
     resources:
     - resources: 0
       amount: 1
@@ -814,7 +868,8 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 6
     heal: 2
-    headAmount: 5
+    headAmount: 6
+    focusArea: 4
     tier: 5
     fire: 1
     wind: 1
@@ -822,15 +877,14 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Your opponent must
-      Discard all  <sprite=8>  in its Hand and Draw 5 new  <sprite=7>  up to its
-      Hand.\r"
+      Discard all  <sprite=8>  in its Hand and Draw new  <sprite=7>  ones.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 14
       amount: 1
     - resources: 12
       amount: 2

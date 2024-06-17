@@ -26,6 +26,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 3
+    focusArea: 31
     tier: 3
     fire: 0
     wind: 1
@@ -37,9 +38,9 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 0
-    - resources: 6
+    - resources: 1
       amount: 1
-    - resources: 16
+    - resources: 6
       amount: 1
     - resources: 18
       amount: 2
@@ -52,27 +53,28 @@ MonoBehaviour:
     clan: 4
     landOrigins: 21
     TaijutsuValue: 2
-    NinjutsuValue: 3
+    NinjutsuValue: 5
     GenjutsuValue: 10
     heal: 0
     headAmount: 0
+    focusArea: 33
     tier: 3
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, swap the effects on each  <sprite=8>  when they\u2019re played.\r"
+    effectText: "<size=85><b><u>For the rest of the War:</b></u>\r\n<size=75>Swap
+      the Effects on all played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 15
       amount: 0
     - resources: 18
       amount: 1
+    - resources: 15
+      amount: 1
     - resources: 6
-      amount: 2
-    - resources: 17
       amount: 2
   - name: Black Zetsu
     loreInfo: Kaguya's Will
@@ -87,25 +89,37 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 0
+    focusArea: 32
     tier: 1
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give the next  <sprite=8> 
-      you play in any future Battle (can trigger in another War), +2 Strength in
-      all its Combat Styles.\r"
+    effectText: '<size=85><b><u>Any Future Battle:</b></u>
+
+      <size=75>Give your
+      next played  <sprite=8>  (in another War)
+
+      +2 <sprite=107> <sprite=108>
+      <sprite=109>  for each of your Trashed  <sprite=3> , at
+
+      that point.
+
+      <size=20%>
+
+      <size=75>Trash
+      this  <sprite=3>  after this War.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 17
+    - resources: 0
       amount: 2
     - resources: 18
-      amount: 2
+      amount: 1
   - name: "Hagoromo \u014Ctsutsuki"
     loreInfo: Ancient - Sage of Six Path
     index: 84
@@ -114,21 +128,22 @@ MonoBehaviour:
     cardType: 1
     clan: 4
     landOrigins: 21
-    TaijutsuValue: 4
+    TaijutsuValue: 3
     NinjutsuValue: 7
     GenjutsuValue: 5
     heal: 0
-    headAmount: 5
+    headAmount: 4
+    focusArea: 17
     tier: 4
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get +1  <sprite=23> 
-      . Then Trash this  <sprite=3>  and give your opponent 2 BP for winning this
-      Battle. If you lose the War, don\u2019t give away the  <sprite=23>  you just
-      got.\r"
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 <sprite=23> .\n<size=20%>\n<size=75>Trash
+      this  <sprite=3>  and give your opponent 2 BP for winning this Battle as the
+      only  <sprite=8>  in it.\n<size=20%>\n<size=75>If you lose the War, don\u2019t
+      give away any  <sprite=23> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -152,26 +167,27 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 0
     headAmount: 0
+    focusArea: 2
     tier: 3
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have played
-      the  <sprite=8>  containing the lowest Strength of any Combat Styles in this
-      War (not including this Battle), triple the Strength of all Combat Styles on
-      this  <sprite=3> .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you have played the 
+      <sprite=8>  containing the lowest\n<sprite=107> <sprite=108> <sprite=109> 
+      among the other Battles, draw\n1 Random Trashed  <sprite=3>  back up to your
+      Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 18
-      amount: 1
-    - resources: 6
-      amount: 1
     - resources: 1
       amount: 1
     - resources: 2
-      amount: 2
+      amount: 1
+    - resources: 6
+      amount: 1
+    - resources: 18
+      amount: 1
   - name: "Hamura \u014Ctsutsuki"
     loreInfo: Ancient - Shinobi of hte Moon
     index: 86
@@ -184,23 +200,32 @@ MonoBehaviour:
     NinjutsuValue: 5
     GenjutsuValue: 4
     heal: 0
-    headAmount: 2
+    headAmount: 1
+    focusArea: 2
     tier: 4
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: 
-    effectIcon: 020000000200000002000000
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=75>Draw 2 random
+      Trashed  <sprite=3> .
+
+      <size=20%>
+
+      <size=75>Take 1 up to your Hand.
+      The other shuffles into your Draw Pile.'
+    effectIcon: 
     resources:
+    - resources: 0
+      amount: 1
+    - resources: 1
+      amount: 1
     - resources: 8
       amount: 1
-    - resources: 17
-      amount: 1
     - resources: 16
-      amount: 2
-    - resources: 1
       amount: 2
   - name: "Hamura \u014Ctsutsuki"
     loreInfo: Teenager - Hagoromo's Younger Brother
@@ -214,15 +239,16 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 4
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 32
     tier: 3
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Double the Strength
-      of all Combat Styles on the next\n<sprite=8>  you play in this War.\r"
+    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>Double the  <sprite=107>
+      <sprite=108> <sprite=109>  on\nyour played  <sprite=8> .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -242,10 +268,11 @@ MonoBehaviour:
     clan: 4
     landOrigins: 16
     TaijutsuValue: 4
-    NinjutsuValue: 6
-    GenjutsuValue: 6
+    NinjutsuValue: 7
+    GenjutsuValue: 7
     heal: 2
     headAmount: 3
+    focusArea: 31
     tier: 3
     fire: 1
     wind: 0
@@ -259,9 +286,9 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 7
+    - resources: 0
       amount: 1
-    - resources: 16
+    - resources: 7
       amount: 1
   - name: "Isshiki \u014Ctsutsuki"
     loreInfo: Adult - Kagyua's Partner
@@ -271,27 +298,28 @@ MonoBehaviour:
     cardType: 1
     clan: 4
     landOrigins: 21
-    TaijutsuValue: 4
+    TaijutsuValue: 6
     NinjutsuValue: 9
     GenjutsuValue: 7
     heal: 0
     headAmount: 5
+    focusArea: 2
     tier: 5
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1 random Trashed 
-      <sprite=3>  up to your <b>Hand</b>.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1 Trashed 
+      <sprite=3>  back up to your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
     - resources: 10
       amount: 1
+    - resources: 16
+      amount: 2
     - resources: 12
       amount: 3
   - name: "Kaguya \u014Ctsutsuki"
@@ -302,11 +330,12 @@ MonoBehaviour:
     cardType: 1
     clan: 4
     landOrigins: 16
-    TaijutsuValue: 2
+    TaijutsuValue: 1
     NinjutsuValue: 5
     GenjutsuValue: 5
     heal: 1
     headAmount: 0
+    focusArea: 0
     tier: 4
     fire: 1
     wind: 1
@@ -320,7 +349,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 9
+    - resources: 0
       amount: 1
     - resources: 14
       amount: 1
@@ -333,10 +362,11 @@ MonoBehaviour:
     clan: 4
     landOrigins: 21
     TaijutsuValue: 5
-    NinjutsuValue: 10
+    NinjutsuValue: 9
     GenjutsuValue: 9
     heal: 2
     headAmount: 0
+    focusArea: 4
     tier: 5
     fire: 1
     wind: 1
@@ -344,17 +374,17 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Trash both  <sprite=8> 
-      played in this Battle. You still get the Resources from this Battle. This Battle
-      leaves no BP.\r"
+      played in this Battle.\n<size=20%>\n<size=75>You still get the Resources from
+      this  <sprite=3> .\n<size=20%>\n<size=75>This Battle leaves no BP.\r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
-      amount: 1
-    - resources: 13
-      amount: 1
+    - resources: 12
+      amount: 2
+    - resources: 11
+      amount: 2
     - resources: 10
       amount: 2
-    - resources: 12
+    - resources: 13
       amount: 2
   - name: Kenpachi Hyuga
     loreInfo: Adult - Progenitor of the Hyuga Clan
@@ -369,6 +399,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 0
     headAmount: 0
+    focusArea: 34
     tier: 3
     fire: 0
     wind: 0
@@ -376,7 +407,7 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Most BP:</b></u>\r\n<size=75>During Scoring, double
-      the Resources gained from 1  <sprite=8>  you\u2019ve played in the War.\r"
+      the\nResources gained from\n1 <sprite=8>  you\u2019ve played.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -400,6 +431,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 2
     tier: 2
     fire: 0
     wind: 0
@@ -431,16 +463,16 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 32
     tier: 2
     fire: 1
     wind: 0
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Add the Strengths
-      from your  \n <sprite=8>  played in the previous Battle onto the  <sprite=3> 
-      you\u2019ll play in the next Battle. Keep all Strengths from the  <sprite=8> 
-      .\r"
+    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>Add the  <sprite=107>
+      <sprite=108> <sprite=109>  from your  \n <sprite=8>  in the previous Battle\nonto
+      your next  <sprite=8> ."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -464,6 +496,7 @@ MonoBehaviour:
     GenjutsuValue: 9
     heal: 1
     headAmount: 0
+    focusArea: 2
     tier: 5
     fire: 1
     wind: 1
@@ -476,12 +509,12 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 2
       amount: 1
-    - resources: 0
+    - resources: 16
       amount: 1
-    - resources: 0
-      amount: 1
+    - resources: 12
+      amount: 2
   - name: "Momoshiki \u014Ctsutsuki"
     loreInfo: Adult
     index: 96
@@ -490,11 +523,12 @@ MonoBehaviour:
     cardType: 1
     clan: 4
     landOrigins: 21
-    TaijutsuValue: 5
+    TaijutsuValue: 6
     NinjutsuValue: 7
     GenjutsuValue: 7
     heal: 0
     headAmount: 2
+    focusArea: 2
     tier: 4
     fire: 1
     wind: 1
@@ -502,18 +536,18 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Trash 1 random 
-      <sprite=3>  from your Discard Pile. Then draw 2 random  <sprite=3>  from your
-      Discard Pile back up to your Hand.\r"
+      <sprite=3>  from your Discard Pile. \n<size=20%>\n<size=75>Then draw 2 random 
+      <sprite=3>  from your Discard Pile back up to your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
     - resources: 8
-      amount: 2
+      amount: 1
+    - resources: 7
+      amount: 1
     - resources: 18
-      amount: 3
+      amount: 2
   - name: Mother
     loreInfo: Mother of all Shinobi
     index: 97
@@ -527,23 +561,35 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
+    focusArea: 29
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If this is not the
-      first Battle, you may win the War. If you decide to win, Trash this  <sprite=3> 
-      after Scoring.\r"
+    effectText: '<size=85><b><u>If not the First Battle</b></u>
+
+      <size=75>You
+      may decide the outcome of the War.
+
+      <size=20%>
+
+      <size=75>If you
+      decide to Win, Trash this  <sprite=3>  after Scoring.
+
+      <size=20%>
+
+      <size=75>If
+      not, continue the War as normal.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 2
+    - resources: 18
+      amount: 1
     - resources: 17
       amount: 1
   - name: Shin Uchiha
@@ -554,20 +600,21 @@ MonoBehaviour:
     cardType: 1
     clan: 4
     landOrigins: 32
-    TaijutsuValue: 2
-    NinjutsuValue: 8
+    TaijutsuValue: 4
+    NinjutsuValue: 2
     GenjutsuValue: 4
     heal: 0
     headAmount: 0
+    focusArea: 2
     tier: 1
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Shuffle back in
-      1 random Trashed  <sprite=3>  to your Draw Pile. Then Draw 1 random\n<sprite=3> 
-      from your Draw Pile and Trash it.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\n<size=74>Shuffle back in 1
+      random Trashed  <sprite=3>  to your Draw Pile.\n<size=20%>\n<size=74>Then Trash
+      1 random\n <sprite=3>  from your Discard Pile."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -576,8 +623,8 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-    - resources: 0
-      amount: 3
+    - resources: 18
+      amount: 1
   - name: "Toneri \u014Ctsutsuki"
     loreInfo: Child - Clone of Shin Uchiha
     index: 99
@@ -590,16 +637,18 @@ MonoBehaviour:
     NinjutsuValue: 7
     GenjutsuValue: 2
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 16
     tier: 2
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Trash another 
-      <sprite=3>  played in this War. Receive the amount of  <sprite=22>  equal to
-      the lowest Strength of the Combat Styles on the Trashed  <sprite=3> .\r"
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Trash another 
+      <sprite=3>  played in this War. \n<size=10%>\n<size=75>Receive the amount of 
+      <sprite=22>  equal to the lowest  <sprite=107> <sprite=108> <sprite=109>  on
+      the Trashed  <sprite=3> .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -622,7 +671,8 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 7
     heal: 2
-    headAmount: 0
+    headAmount: 1
+    focusArea: 16
     tier: 4
     fire: 1
     wind: 1
@@ -630,15 +680,15 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Trash this  <sprite=3>
-      . Receive the amount of  <sprite=22>  equal to the highest Strength of the
-      Combat Styles on this  <sprite=3> .\r"
+      .\n<size=20%>\n<size=75>Then receive 2 <sprite=22>  for each Trashed  <sprite=3>
+      .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 2
     - resources: 9
+      amount: 1
+    - resources: 17
       amount: 1

@@ -16,6 +16,51 @@ MonoBehaviour:
   - name: 'Chibaku Tensei '
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 7fa21e7306a8072429159e67ccd0e6dc, type: 3}
+    description: During any Battle you participate in, cancel the Effect on the first
+      <sprite=8>  played by your opponent
+    textSize: 120
+  - name: 'Chibaku Tensei '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 7fa21e7306a8072429159e67ccd0e6dc, type: 3}
+    description: Once each War during any Battle you participate in, cancel the Effect
+      on the  <sprite=8>  played by both you and your opponent
+    textSize: 120
+  - name: 'Chibaku Tensei '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 7fa21e7306a8072429159e67ccd0e6dc, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>During any
+      Battle you participate in, cancel the Effect on the  <sprite=8>  played by
+      both you and your opponent'
+    textSize: 120
+  - name: 'Chibaku Tensei '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
     cost: 2
     image: {fileID: 21300000, guid: 7fa21e7306a8072429159e67ccd0e6dc, type: 3}
     description: '<u>Reaction:</u>
@@ -24,32 +69,168 @@ MonoBehaviour:
 
       <size=100%>During any
       Battle you participate in, cancel the Effect on any  <sprite=8>  when its played'
-    textSize: 128.2
+    textSize: 120
   - name: Fruit
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 8571163a9a1162945924aaa6ba359fb4, type: 3}
     description: 'At the start of each "Setup Phase" draw eihter
 
       3 <sprite=10>
-      or 2 <sprite=11>.
+      or 2 <sprite=11>
 
-      Then Discard down to  <sprite=84>  Hand Limit.'
-    textSize: 122.9
+      <size=25%>
+
+      <size=75%>(Don''t Discard down to
+
+      <sprite=84> 
+      Hand Limit)'
+    textSize: 120
+  - name: Fruit
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 8571163a9a1162945924aaa6ba359fb4, type: 3}
+    description: 'At the start of each "Setup Phase" draw eihter
+
+      3 <sprite=10>
+      or 2 <sprite=11>
+
+      <size=25%>
+
+      <size=75%>(Discard down to
+
+      <sprite=84> 
+      Hand Limit)'
+    textSize: 120
+  - name: Fruit
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 8571163a9a1162945924aaa6ba359fb4, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Draw eihter
+
+      2
+      <sprite=10> or 1 <sprite=11>'
+    textSize: 120
+  - name: Fruit
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
+    cost: 2
+    image: {fileID: 21300000, guid: 8571163a9a1162945924aaa6ba359fb4, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Draw eihter
+
+      3
+      <sprite=9> or 2 <sprite=10>'
+    textSize: 120
   - name: Greed
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 8bc0ba303e1e88948a1e46c079590686, type: 3}
     description: 'When retrieving any Trashed  <sprite=7> ,
 
-      get 3 <sprite=22>
-      .'
-    textSize: 146.9
+      get 3 <sprite=22>'
+    textSize: 120
+  - name: Greed
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 8bc0ba303e1e88948a1e46c079590686, type: 3}
+    description: 'When retrieving any Trashed  <sprite=7> ,
+
+      get 2 <sprite=22>'
+    textSize: 120
+  - name: Greed
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 8bc0ba303e1e88948a1e46c079590686, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>When retrieving
+      any Trashed  <sprite=7> ,
+
+      get 4 <sprite=22>
+
+      <size=25%>
+
+      <size=75%>(You
+      may play mutiple of this
+
+      for the same Trashed  <sprite=7> )'
+    textSize: 120
+  - name: Greed
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
+    cost: 2
+    image: {fileID: 21300000, guid: 8bc0ba303e1e88948a1e46c079590686, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>When retrieving
+      any Trashed  <sprite=7> ,
+
+      get 5 <sprite=22>
+
+      <size=25%>
+
+      <size=75%>(You
+      may play mutiple of this
+
+      for the same Trashed  <sprite=7> )'
+    textSize: 120
   - name: Infinite Tsuki No Me
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 93e57b381324a254ab3355c43d20ff1d, type: 3}
     description: '<u>Once per Game:</u>
@@ -57,44 +238,247 @@ MonoBehaviour:
       At the end of any
 
       "Setup Phase"
-      you''ll get
-
-      5 <sprite=22> and can buy as many <sprite=0> as you like
-      from the Shop before the "Shop Phase" begins.'
-    textSize: 111
-  - name: 'Manipulator '
+      you choose, you''ll get 5 <sprite=22>  and can buy as many <sprite=0> as you
+      like from the Shop before the "Shop Phase" begins.'
+    textSize: 105
+  - name: Infinite Tsuki No Me
     cardType: 3
     clan: 4
-    cost: 1
-    image: {fileID: 21300000, guid: d35f3e5b35b1274458aeaf56d38aa299, type: 3}
-    description: '<u>Action:</u>
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 93e57b381324a254ab3355c43d20ff1d, type: 3}
+    description: '<u>Once per Game:</u>
+
+      At the end of any
+
+      "Setup Phase"
+      you choose, you''ll get 7 <sprite=22>  and can buy as many <sprite=0> as you
+      like from the Shop before the "Shop Phase" begins.'
+    textSize: 105
+  - name: Infinite Tsuki No Me
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 93e57b381324a254ab3355c43d20ff1d, type: 3}
+    description: '<u>Reaction:</u>
 
       <size=20%>
 
-      <size=100%>Replace the
-      current  <sprite=16>  with any from its deck.
+      <size=100%>Play this
+      at the end of any "Setup Phase" to be able to buy as many  <sprite=0>  as you
+      like from the Shop before the "Shop Phase" begins.'
+    textSize: 110
+  - name: Infinite Tsuki No Me
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
+    cost: 3
+    image: {fileID: 21300000, guid: 93e57b381324a254ab3355c43d20ff1d, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>Play this
+      at the end of any "Setup Phase" to be able to buy as many  <sprite=0>  as you
+      like from the Shop before the "Shop Phase" begins.'
+    textSize: 110
+  - name: 'Manipulator '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: d35f3e5b35b1274458aeaf56d38aa299, type: 3}
+    description: 'During the
+
+      "Setup"-Phase, you decide which 2  <sprite=16> 
+      to be played for the upcomming Round'
+    textSize: 115
+  - name: 'Manipulator '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: d35f3e5b35b1274458aeaf56d38aa299, type: 3}
+    description: 'During the
+
+      "Setup"-Phase, you decide which  <sprite=16> 
+      to be played for the upcomming Round'
+    textSize: 115
+  - name: 'Manipulator '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: d35f3e5b35b1274458aeaf56d38aa299, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>During your
+      Turn, Replace the current  <sprite=16>  with any  <sprite=16>  from the deck
 
       <size=20%>
 
       <size=70%>
-      (this  <sprite=0>  can also be saved and played during the "Setup Phase")'
-    textSize: 125.9
+      (this  <sprite=0>  can also be played during the "Setup Phase")'
+    textSize: 115
+  - name: 'Manipulator '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
+    cost: 1
+    image: {fileID: 21300000, guid: d35f3e5b35b1274458aeaf56d38aa299, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>During your
+      Turn, Replace the current  <sprite=16>  with any 2  <sprite=16>  from the deck
+
+      <size=20%>
+
+      <size=70%>
+      (this  <sprite=0>  can also be played during the "Setup Phase")'
+    textSize: 115
   - name: Moon Rabbit Transformation
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 5dc14586774d54340a519cd2cc134d1b, type: 3}
     description: 'After all Players have selected their "Specialty", you can swap
-      this with 2 random ones from each of the other Players not chosen for this
-      Game.
+      this with 3 random ones not chosen for this Game amoung the other player''s
+      "Specialties".
 
-      <size=30%>
+      <size=25%>
 
-      <size=100%>Choose 1 to use.'
-    textSize: 102.2
+      <size=100%>Choose 1 to use as your
+      "Specialty"'
+    textSize: 100
+  - name: Moon Rabbit Transformation
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 5dc14586774d54340a519cd2cc134d1b, type: 3}
+    description: 'After all Players have selected their "Specialty", you can swap
+      this with 4 random ones not chosen for this Game amoung the other player''s
+      "Specialties".
+
+      <size=25%>
+
+      <size=100%>Choose 1 to use as your
+      "Specialty"'
+    textSize: 100
+  - name: Moon Rabbit Transformation
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 5dc14586774d54340a519cd2cc134d1b, type: 3}
+    description: 'After all Players have selected their "Specialty", draw 4 random
+      ones not chosen for this Game amoung the other player''s "Specialties". Choose
+      1 to use as your "Specialty", in addition to this
+
+      <size=25%>
+
+      <size=100%><u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>On
+      your Turn, you can play this to swap active "Specialty", amoung your 4 selected'
+    textSize: 80
+  - name: Moon Rabbit Transformation
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
+    cost: 2
+    image: {fileID: 21300000, guid: 5dc14586774d54340a519cd2cc134d1b, type: 3}
+    description: 'After all Players have selected their "Specialty", draw 4 random
+      ones not chosen for this Game amoung the other player''s "Specialties". Choose
+      1 to use as your "Specialty", in addition to this
+
+      <size=25%>
+
+      <size=100%><u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>On
+      your Turn, you can play this to swap active "Specialty", amoung your 4 selected'
+    textSize: 80
   - name: 'Six Path '
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 608b8de5244ae264682bba2e3e480a5f, type: 3}
+    description: 'After any Scoring you''ve participated in, your opponent must give
+      you
+
+      1 <sprite=8>  that was played and not got  <sprite=59>  back up
+      to its Hand'
+    textSize: 110
+  - name: 'Six Path '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 608b8de5244ae264682bba2e3e480a5f, type: 3}
+    description: 'After any Scoring you''ve participated in, your opponent must give
+      you
+
+      1 <sprite=8>  that was played and got  <sprite=59>  back up to its
+      Hand'
+    textSize: 110
+  - name: 'Six Path '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
     cost: 2
     image: {fileID: 21300000, guid: 608b8de5244ae264682bba2e3e480a5f, type: 3}
     description: '<u>Reaction:</u>
@@ -103,16 +487,117 @@ MonoBehaviour:
 
       <size=100%>After any
       Scoring you''ve participated in, take 1 <sprite=8>  that was played up to your
-      hand.
+      hand
 
-      <size=30%>
+      <size=25%>
+
+      <size=75%>(This happens after all  <sprite=59>
+      )'
+    textSize: 110
+  - name: 'Six Path '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 608b8de5244ae264682bba2e3e480a5f, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>After any
+      Scoring you''ve participated in, take 1 <sprite=8>  that was played up to your
+      hand
+
+      <size=25%>
 
       <size=75%>(This happens before any  <sprite=59>
       )'
-    textSize: 115.4
+    textSize: 110
   - name: 'Sword of Nunoboko '
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 0d3617a00baf6fa45bf1f5e6ed54b88d, type: 3}
+    description: 'At the start of any
+
+      "Action"-Phase, you may change two Land
+      Fileds to become Water Fields or two Water Fields to become Land Fields
+
+      <size=20%>
+
+      <size=75%>(
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  affected must Retreat to
+
+      the
+      closest legal Field)
+
+      <size=20%>
+
+      <size=75%>(Resources on the Fields
+      will
+
+      stay active as normal)'
+    textSize: 91
+  - name: 'Sword of Nunoboko '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 0d3617a00baf6fa45bf1f5e6ed54b88d, type: 3}
+    description: "At the start of any\n\"Action\"-Phase, you may change Fileds to
+      become the opposite type <size=75%>(Land and Water) <size=100%>of what they
+      are \n<size=20%>\n<size=75%>( <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
+      affected must Retreat to\nthe closest legal Field)\n<size=20%>\n<size=75%>(Resources
+      on the Fields will\nstay active as normal)"
+    textSize: 100
+  - name: 'Sword of Nunoboko '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 0d3617a00baf6fa45bf1f5e6ed54b88d, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Change a Land
+      Filed to become a Water Field or a Water Field to become a Land Field
+
+      <size=20%>
+
+      <size=75%>(
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  affected must Retreat to
+
+      the
+      closest legal Field)
+
+      <size=20%>
+
+      <size=75%>(Resources on the Fields
+      will
+
+      stay active as normal)'
+    textSize: 100
+  - name: 'Sword of Nunoboko '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
     cost: 2
     image: {fileID: 21300000, guid: 0d3617a00baf6fa45bf1f5e6ed54b88d, type: 3}
     description: '<u>Action:</u>
@@ -120,24 +605,93 @@ MonoBehaviour:
       <size=20%>
 
       <size=100%>Change a Land
-      Filed to a Water Field or the opposite.
+      Filed to become a Water Field or a Water Field to become a Land Field
 
-      <size=30%>
+      <size=20%>
 
-      <size=70%>(Resources
-      on the Fields will stay active)
+      <size=75%>(
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  affected must Retreat to
 
-      <size=30%>
+      the
+      closest legal Field)
 
-      <size=70%>( <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  affected must retreat to any legal Field
-      this Player controls)
+      <size=20%>
 
-'
-    textSize: 108
+      <size=75%>(Resources on the Fields
+      will
+
+      stay active as normal)'
+    textSize: 100
   - name: 'Tensengan '
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: cf21bcb76f825b34da1127a82bd07816, type: 3}
+    description: 'At the start of each "Setup"-Phase, place a  <sprite=56>  Marker
+      in any Field you don''t control. Any other Player who enters this Field lose
+      1 <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this group, of that
+      player''s choice
+
+      <size=30%>
+
+      <size=75%>(The  <sprite=56>  can
+      be placed in the same
+
+      Field as the previous Round)'
+    textSize: 95
+  - name: 'Tensengan '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: cf21bcb76f825b34da1127a82bd07816, type: 3}
+    description: 'At the start of each "Setup"-Phase, place a  <sprite=56>  Marker
+      in any Field you don''t control. Any other Player who enters this Field lose
+      1 <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this group, of that
+      player''s choice
+
+      <size=30%>
+
+      <size=75%>(The  <sprite=56>  must
+      be placed in another Field than the previous Round)'
+    textSize: 95
+  - name: 'Tensengan '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: cf21bcb76f825b34da1127a82bd07816, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Place a  <sprite=56> 
+      Marker in any Field you don''t control. Any other Player who enters this Field
+      lose 1 <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this group,
+      of that player''s choice
+
+      <size=30%>
+
+      <size=75%>(Remove all  <sprite=56> 
+      during the "Setup Phase")'
+    textSize: 96
+  - name: 'Tensengan '
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
     cost: 2
     image: {fileID: 21300000, guid: cf21bcb76f825b34da1127a82bd07816, type: 3}
     description: '<u>Action:</u>
@@ -147,17 +701,62 @@ MonoBehaviour:
       <size=100%>Place a  <sprite=56> 
       Marker in any Field you don''t control. Any other Player who enters this Field
       lose 1 <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this group,
-      of that player''s choice. You may place the same Tier of  <sprite=48>  <sprite=49> 
-      <sprite=50>  <sprite=51>  onto any Field you control.
+      of that player''s choice
 
       <size=30%>
 
-      <size=75%>(Remove
-      all  <sprite=56>  during the "Setup Phase")'
-    textSize: 87.7
+      <size=75%>(Remove all  <sprite=56> 
+      during the "Setup Phase")'
+    textSize: 96
   - name: Reborn
     cardType: 3
     clan: 4
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 9f3b878ebe1c1c74e9ef749fd711dbde, type: 3}
+    description: In each "Setup"-Phase, you can take any 1 <sprite=3>  from your
+      Discard Pile back up to your Hand.
+    textSize: 120
+  - name: Reborn
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 9f3b878ebe1c1c74e9ef749fd711dbde, type: 3}
+    description: 'In each "Setup"-Phase, you can take
+
+      2 random  <sprite=3> 
+      from your Discard Pile back up to your Hand.'
+    textSize: 120
+  - name: Reborn
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 9f3b878ebe1c1c74e9ef749fd711dbde, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Take any 1 <sprite=3> 
+      from your Discard Pile back up to your Hand.'
+    textSize: 125.3
+  - name: Reborn
+    cardType: 3
+    clan: 4
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
     cost: 3
     image: {fileID: 21300000, guid: 9f3b878ebe1c1c74e9ef749fd711dbde, type: 3}
     description: '<u>Action:</u>

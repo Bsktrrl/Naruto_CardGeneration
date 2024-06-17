@@ -1,0 +1,718 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8866748b1dd701340bbbd2ca2f0d64a1, type: 3}
+  m_Name: BattleCard - (Aw) Akatsuki (Awakening)
+  m_EditorClassIdentifier: 
+  cardList:
+  - name: Deidara
+    loreInfo: Awakening
+    index: 147
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 8db2548c29981d046a57b0be709c6501, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 34
+    TaijutsuValue: 3
+    NinjutsuValue: 8
+    GenjutsuValue: 2
+    heal: 0
+    headAmount: 2
+    focusArea: 19
+    tier: 3
+    fire: 0
+    wind: 0
+    lightning: 1
+    earth: 1
+    water: 0
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=72>Remove all  <sprite=48> 
+      <sprite=49>  <sprite=50>  <sprite=51>  in this Battlefield from the Board.
+
+      <size=20%>
+
+      <size=72>The
+      winner of the War may place its
+
+      " <sprite=63>  <sprite=64>  <sprite=65> 
+      <sprite=66>  <sprite=67>  <sprite=68>  <sprite=78> "-Marker on the Battlefield,
+      taking control over it once more.'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Hidan
+    loreInfo: Awakening
+    index: 148
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b73e5c11e569f3c4a98415dae3fc8642, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 12
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 2
+    focusArea: 2
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=75>Draw 1 <sprite=1> 
+      from either your Trash Pile or Discard Pile back up to your Hand, of your choice.'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 2
+    - resources: 11
+      amount: 2
+  - name: Itachi Uchiha
+    loreInfo: Awakening
+    index: 149
+    set: 1
+    characterSprite: {fileID: 21300000, guid: ece1efa6fb9ee16468280a0988984b3c, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 10
+    GenjutsuValue: 10
+    heal: 0
+    headAmount: 0
+    focusArea: 19
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=73>Your opponent must
+      Prone all its  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  used in
+      this War.
+
+      <size=15%>
+
+      <size=73>They stay Prone for the rest of
+      this Round, no matter what other cards say.'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 9
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 17
+      amount: 1
+    - resources: 12
+      amount: 3
+  - name: Jugo
+    loreInfo: Awakening
+    index: 150
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 6f0b2ac7c3fcb934b80f695916c1d03d, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 32
+    TaijutsuValue: 8
+    NinjutsuValue: 5
+    GenjutsuValue: 1
+    heal: 0
+    headAmount: 2
+    focusArea: 3
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>During Scoring, choose
+      1 played  <sprite=76>  that will not be Trashed and can be used once more.\n<size=20%>\n<size=75>Then
+      remove this  <sprite=76>  and its  <sprite=1>  \"Jugo\" from\nthe Game.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 2
+  - name: Kakuzu
+    loreInfo: Awakening
+    index: 151
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 38f4657ecf086e249bce95901a3a4166, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 39
+    TaijutsuValue: 6
+    NinjutsuValue: 9
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 3
+    focusArea: 16
+    tier: 5
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=75>Get 2 <sprite=22> 
+      for each of your Trashed  <sprite=1>  and  <sprite=76> .'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 17
+      amount: 2
+  - name: Karin Uzumaki
+    loreInfo: Awakening
+    index: 152
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 654e483cb6f8679419d6c0a6c7bfff61, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 32
+    TaijutsuValue: 3
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 1
+    headAmount: 2
+    focusArea: 14
+    tier: 2
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>For the rest of this
+      Round, you cannot\nreceive any  <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20> 
+      <sprite=21> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Kisame Hoshigaki
+    loreInfo: Awakening
+    index: 153
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 012cabff6f4599547885cac865c75ec3, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 20
+    TaijutsuValue: 7
+    NinjutsuValue: 9
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 5
+    focusArea: 4
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=75>After the War,
+      if you were to Trash any  <sprite=8> , Shuffle them back into your Draw Pile
+      instead.'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 11
+      amount: 2
+    - resources: 17
+      amount: 2
+  - name: Konan
+    loreInfo: Awakening
+    index: 154
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 193ce69b38274c248ace900eeac19fac, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 25
+    TaijutsuValue: 4
+    NinjutsuValue: 8
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 2
+    focusArea: 3
+    tier: 5
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>You may swap this 
+      <sprite=76>  with any Trashed  <sprite=76> .\n<size=20%>\n<size=75>After the
+      War, Trash both this  <sprite=76>  and the  <sprite=76>  you swap into.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 17
+      amount: 2
+  - name: Madara Uchiha
+    loreInfo: Awakening
+    index: 155
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cbf2d8af9e7337047bc13c48afb6f157, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 9
+    NinjutsuValue: 10
+    GenjutsuValue: 10
+    heal: 0
+    headAmount: 7
+    focusArea: 40
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>During Scoring, Draw
+      1 <sprite=11>  for each  <sprite=76>  and  <sprite=1>  you\u2019ve played."
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 17
+      amount: 2
+    - resources: 17
+      amount: 2
+  - name: Masked Man
+    loreInfo: Awakening
+    index: 156
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 816f8e94bea8b504782883e6f12ef0eb, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 6
+    GenjutsuValue: 8
+    heal: 0
+    headAmount: 5
+    focusArea: 21
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=74>Move up 1 spot
+      in all tracks on the Dominance Board.
+
+      <size=15%>
+
+      <size=74>If
+      you are at the top in any track, choose another track to move up in instead.'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 14
+      amount: 1
+    - resources: 17
+      amount: 3
+  - name: Nagato Uzumaki
+    loreInfo: Awakening - Let the World know Pain
+    index: 157
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 27ce3e8b5fdf4fe49bd0408aa0a6a6f3, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 25
+    TaijutsuValue: 1
+    NinjutsuValue: 10
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 2
+    focusArea: 3
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Take back all  <sprite=76> 
+      so they can be used once again.\n<size=20%>\n<size=75>Then remove both  <sprite=76> 
+      \u201CNagato\u201D from the Game.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Nagato Uzumaki
+    loreInfo: Awakening - Redemption Path
+    index: 158
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 27ce3e8b5fdf4fe49bd0408aa0a6a6f3, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 25
+    TaijutsuValue: 1
+    NinjutsuValue: 10
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 2
+    focusArea: 4
+    tier: 5
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>After the war, shuffle
+      back in all Trashed\n <sprite=1>  <sprite=9>  <sprite=10>  <sprite=11>  to
+      their respective Draw Piles.\n<size=20%>\n<size=75>Draw 1  <sprite=8>  from
+      each Draw Pile.\n<size=20%>\n<size=75>Then remove both  <sprite=76>  \u201CNagato\u201D
+      from the Game.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+  - name: Obito Uchiha
+    loreInfo: Awakening - Rage
+    index: 159
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a81442fa0144b2149ab009aef72f2cae, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 2
+    focusArea: 25
+    tier: 5
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\n<size=72>Start the Scoring, but
+      end the War with no winner. \n<size=10%>\n<size=72>Receive a  <sprite=23> 
+      from your opponent as if you won the War.\n<size=10%>\n<size=72>Then reset
+      the Board to its previous state, before this War took place."
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+  - name: Obito Uchiha
+    loreInfo: "Awakening - Jinch\u016Briki - Six Path"
+    index: 160
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 43155175027e12d48b32e59d299348d6, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 10
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 2
+    focusArea: 17
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=73>After the War, take
+      your opponent\u2019s lowest  <sprite=23>  .\n<size=10%>\n<size=73>If you were
+      to receive another\n <sprite=23>  from winning the War,\nget this as well.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 13
+      amount: 1
+  - name: Obito Uchiha
+    loreInfo: Awakening - 4th Ninja War
+    index: 161
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d15dbe98ea089e8418e866684c3e52dc, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 8
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 5
+    focusArea: 29
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: 
+    effectIcon: 010000000100000001000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 10
+      amount: 1
+  - name: Orochimaru
+    loreInfo: Awakening
+    index: 162
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 7a1d7cf7f5b1a4540b82d24c8cf4315b, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 32
+    TaijutsuValue: 2
+    NinjutsuValue: 5
+    GenjutsuValue: 10
+    heal: 0
+    headAmount: 2
+    focusArea: 2
+    tier: 5
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>After the War,\nDraw
+      2 random Trashed\n <sprite=1>  from your Trash Pile\nand place it on top of\nyour
+      Draw Pile. \r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 12
+      amount: 1
+    - resources: 10
+      amount: 3
+  - name: Sasori
+    loreInfo: Awakening
+    index: 163
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3eb058640fbfeb349adfeddcc70f7582, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 28
+    TaijutsuValue: 4
+    NinjutsuValue: 8
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 2
+    focusArea: 6
+    tier: 3
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Give your opponent 
+      <sprite=17>  equal to the middle amount of\n<sprite=128> <sprite=129> <sprite=130> 
+      on its played  <sprite=8>\nin this Battle.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 3
+  - name: Suigetsu Hozuki
+    loreInfo: Awakening
+    index: 164
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 907955de9ea07da4488aa0799564c23d, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 20
+    TaijutsuValue: 7
+    NinjutsuValue: 5
+    GenjutsuValue: 1
+    heal: 0
+    headAmount: 2
+    focusArea: 47
+    tier: 2
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=75>If your opponent
+      is higher than you in the  <sprite=80>  Dominance Track, swap spots on the
+      track.
+
+      <size=20%>
+
+      <size=75>Then get 1BP.'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 2
+    - resources: 17
+      amount: 2
+  - name: Tobi
+    loreInfo: Awakening
+    index: 165
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 51b6f0bdad1089f4dbec558565214d73, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 3
+    focusArea: 4
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=75>You may Swap any 
+      <sprite=8>  from your Hand with  any  <sprite=8>  from your opponent''s Hand,
+      of your choosing.
+
+      <size=5%>
+
+      <size=75>You may Swap as many  <sprite=8> 
+      as you like, but you cannot Swap any  <sprite=8>  you already gave away.
+
+'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 3
+  - name: Zetsu
+    loreInfo: Awakening
+    index: 166
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1cc8337dacc3be543a9c76a621d2f670, type: 3}
+    cardType: 1
+    clan: 1
+    landOrigins: 21
+    TaijutsuValue: 1
+    NinjutsuValue: 6
+    GenjutsuValue: 8
+    heal: 0
+    headAmount: 2
+    focusArea: 19
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=73>After the War, you
+      may place any  <sprite=24>  <sprite=25>  <sprite=26>  <sprite=27>  that survived
+      this War onto 1 Field that isn\u2019t controlled by a player.\n<size=8%>\n<size=73>Get
+      the Resources on the Field as if you moved into it as normal.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 15
+      amount: 1
+    - resources: 16
+      amount: 1

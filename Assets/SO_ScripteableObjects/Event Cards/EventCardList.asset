@@ -1,0 +1,421 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86046387d5d46f545846da2670d0ded9, type: 3}
+  m_Name: EventCardList
+  m_EditorClassIdentifier: 
+  eventCardList:
+  - name: Infiltration
+    image: {fileID: 21300000, guid: 800e1464b5ea621458358714dcb3dc33, type: 3}
+    description: In each War, the Resources of 1  <sprite=8>  played by each player
+      will not be counted. Each player decides which  <sprite=8>  to cancel the Resources
+      from. The canceled  <sprite=8>  must contain Resources.
+  - name: Moving towards peaceful times
+    image: {fileID: 21300000, guid: 88e7119c77de0e24b9980ff531607603, type: 3}
+    description: A War only needs 2 BP to be won.
+  - name: Double Trouble
+    image: {fileID: 21300000, guid: f268f4175d37c68409796e244802a39d, type: 3}
+    description: Receive double the amount when receiving any  <sprite=17>  <sprite=18> 
+      <sprite=19>  <sprite=20>  <sprite=77>  as a Resource.
+  - name: Devotion
+    image: {fileID: 21300000, guid: 2182f771eb0279b4db890d6674038061, type: 3}
+    description: "<sprite=59> will not be performed. Relevant effects on  <sprite=8> 
+      will still take effect as if  <sprite=59>  where to happen, but  <sprite=8> 
+      will not go back to the owner\u2019s Hand after they\u2019re played."
+  - name: Extra Space
+    image: {fileID: 21300000, guid: ee28379dcabca984b966876da547ab2f, type: 3}
+    description: "<sprite=84> Hand Limit will not take effect until the next \u201CSetup
+      Phase\u201D."
+  - name: Helping Hand
+    image: {fileID: 21300000, guid: 49a3156d70905084792f8b5baa13b5e0, type: 3}
+    description: Discard this  <sprite=16>  and draw 2 new  <sprite=16> . Both stay
+      active for this Round.
+  - name: Buckle Up
+    image: {fileID: 21300000, guid: fc9161f7293cde74283c8a6d10c93b68, type: 3}
+    description: All  <sprite=23>  have +3 Strength.
+  - name: Trapped
+    image: {fileID: 21300000, guid: 0513ae8048ead0945ad9f68a44b92131, type: 3}
+    description: All  <sprite=23>  have -2 Strength (minimum of 1 Strength).
+  - name: Left for Life
+    image: {fileID: 21300000, guid: 6459b3ba4d302814cabd188b7f65a6db, type: 3}
+    description: 'The Defender of a War receives
+
+      1 <sprite=17> to its Supply.'
+  - name: Paralyzed
+    image: {fileID: 21300000, guid: ac7ee359eec8bf046adc18ce720eaa5b, type: 3}
+    description: 'The Defender of a War receives
+
+      1 <sprite=18> to its Supply.'
+  - name: Already under my genjutsu
+    image: {fileID: 21300000, guid: 43830e80fc702b849a8d06f5128a0b9c, type: 3}
+    description: 'The Defender of a War receives
+
+      1 <sprite=19> to its Supply.'
+  - name: In it with a Plan
+    image: {fileID: 21300000, guid: e664948df12071c409835ec78f9fa27a, type: 3}
+    description: 'The Attacker of a War receives
+
+      1 <sprite=77> to its Supply.'
+  - name: The Harvest
+    image: {fileID: 21300000, guid: 7176d77ae1a709746b57ddcde1cc0195, type: 3}
+    description: During any Scoring, both participants in the War may double the
+      Resources of 1 of their played  <sprite=8> .
+  - name: Food Pills
+    image: {fileID: 21300000, guid: ef39a906e2787564fa335b9251c42498, type: 3}
+    description: "The  <sprite=84>  Hand Limit is 2 more than what\u2019s on the 
+      <sprite=84>  Domination Track."
+  - name: Water Prison
+    image: {fileID: 21300000, guid: 654b2047f0b92924fbc9ddc0dc0a0fda, type: 3}
+    description: "<sprite=0>  \u201CFire\u201D cannot be played."
+  - name: Too Slow
+    image: {fileID: 21300000, guid: 069d495204c089f4eb12cbd135e182ef, type: 3}
+    description: "<sprite=0>  \u201CFire Block\u201D cannot be played."
+  - name: Even Match
+    image: {fileID: 21300000, guid: 1b73090735bef354fbfa5b3bf7379774, type: 3}
+    description: '<sprite=0>  <sprite=17> ,  <sprite=0>  <sprite=18> ,  <sprite=0> 
+      <sprite=19> ,  <sprite=0>  <sprite=20>
+
+      and  <sprite=0>  <sprite=21> 
+      cannot be played.'
+  - name: Assemble
+    image: {fileID: 21300000, guid: 2059937ac28d54845a0070f1ead04056, type: 3}
+    description: <sprite=0>  <sprite=52> ,  cannot be played
+  - name: Filler
+    image: {fileID: 21300000, guid: 210be0a045d64274d94739226356d7c9, type: 3}
+    description: <sprite=48>  cannot be placed onto the Board.
+  - name: Sadness
+    image: {fileID: 21300000, guid: 1d400bdf315e743479757268b0b12154, type: 3}
+    description: <sprite=49>  cannot be placed onto the Board.
+  - name: Sorrow
+    image: {fileID: 21300000, guid: a33e7fe6f42044747a073188c8499e86, type: 3}
+    description: <sprite=50>  cannot be placed onto the Board.
+  - name: New Era
+    image: {fileID: 21300000, guid: 9cf00d56e3ba502418433ecbf8d6257e, type: 3}
+    description: <sprite=51>  cannot be placed onto the Board.
+  - name: Bridges
+    image: {fileID: 21300000, guid: a7aa047a9d356ff44a4ef77a2baaf6db, type: 3}
+    description: Rivers can be walked through.
+  - name: Hiking
+    image: {fileID: 21300000, guid: 3444194ad9e229a40a21c9f7759882eb, type: 3}
+    description: Mountains can be walked through.
+  - name: Shakey Ground
+    image: {fileID: 21300000, guid: dcc0d2d7501b33849aefbcf22b682372, type: 3}
+    description: "When entering a War, cancel the Strength of each participant\u2019s 
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  . The player highest in
+      the  <sprite=80>  Dominance Track gets the\n1 BP."
+  - name: New Hope
+    image: {fileID: 21300000, guid: ef3277e3a1868b04fa554c1ac7dc6c3f, type: 3}
+    description: "In the \u201CAction Phase\u201D, each player may play up to 2 <sprite=0>
+      on its Turn."
+  - name: Collapse
+    image: {fileID: 21300000, guid: 84058d8a59f9da349927e4976cb8c035, type: 3}
+    description: All Fields loses its  <sprite=52> .
+  - name: Busted
+    image: {fileID: 21300000, guid: 020ee0c2c5b27564aa6b7f38e36342da, type: 3}
+    description: All Fields loses its  <sprite=58>  .
+  - name: Weights
+    image: {fileID: 21300000, guid: 6def75a8a89e4b84aa398833a055845f, type: 3}
+    description: Each time a player move up a space in the  <sprite=79>  Dominance
+      Track, move up 2 spaces.
+  - name: Tie-Advantage
+    image: {fileID: 21300000, guid: 1d706f6bdc649014996265f23c73ff38, type: 3}
+    description: Each time a player move up a space in the  <sprite=80>  Dominance
+      Track, move up 2 spaces.
+  - name: Shinobi Jutsu
+    image: {fileID: 21300000, guid: 138f47c61ca0380459a2314fb7da34f3, type: 3}
+    description: Each time a player move up a space in the  <sprite=81>  Dominance
+      Track, move up 2 spaces.
+  - name: Recrution
+    image: {fileID: 21300000, guid: 1c310d8cfc419f5429e21592b1ed82fa, type: 3}
+    description: Each time a player move up a space in the  <sprite=82>  Dominance
+      Track, move up 2 spaces.
+  - name: Money for Days
+    image: {fileID: 21300000, guid: 127c63d0b0bb9ae46a1e23be9d12006f, type: 3}
+    description: Each time a player move up a space in the  <sprite=83>  Dominance
+      Track, move up 2 spaces.
+  - name: Room for more Bro's
+    image: {fileID: 21300000, guid: 19b003ff09f72d44e8e08227267bc403, type: 3}
+    description: Each time a player move up a space in the  <sprite=84>  Dominance
+      Track, move up 2 spaces.
+  - name: Lost the Bet
+    image: {fileID: 21300000, guid: 536289c705985be4681b89ac4472fe9b, type: 3}
+    description: Everything that costs  <sprite=22> , costs twice as much.
+  - name: Old Friends
+    image: {fileID: 21300000, guid: 5684b46f932fc354090a3e1d685bfb19, type: 3}
+    description: When entering a War, both participants receives 1 <sprite=17> to
+      their Supply.
+  - name: Rapid Movement
+    image: {fileID: 21300000, guid: a919e21432bd63448ae188bc44b93a6e, type: 3}
+    description: During movement,  <sprite=49>  <sprite=50>  <sprite=51>  can use
+      each other the same way as they use  <sprite=48> .
+  - name: Unexpected Courage
+    image: {fileID: 21300000, guid: 07c8d843a177df94fa02e6f98fd78865, type: 3}
+    description: The  <sprite=80>  Dominance Track swap from <b>></b> to <b><</b>.
+      During ties, the player lowest on this Track wins, instead of the player highest
+      on it.
+  - name: Ultimate Defense
+    image: {fileID: 21300000, guid: c9874e9826c90d94e8bac3d58b5445ad, type: 3}
+    description: Ignore all  <sprite=69>  played in Wars.
+  - name: What about the second one
+    image: {fileID: 21300000, guid: 7c615828a13c7f44d8f50bf949d085e5, type: 3}
+    description: Ignore all  <sprite=70>  played in Wars.
+  - name: Swap ownership
+    image: {fileID: 21300000, guid: 349643ccb55096f4385955ff2044be34, type: 3}
+    description: If you win a War against a  <sprite=23> , you may swap it with a
+      random  <sprite=23>  from the Main Supply.
+  - name: Power Control
+    image: {fileID: 21300000, guid: f2cb1b2bff800f24fab3dcbdda7057cc, type: 3}
+    description: Each time you receive either of  <sprite=9>  <sprite=10>  <sprite=11> 
+      to your Hand, get 1 <sprite=22> . Swapping out  <sprite=9>  <sprite=10>  <sprite=11>
+      counts as receiving a new one.
+  - name: Power lies with Friends
+    image: {fileID: 21300000, guid: c60ee3a041b336a4aa1a344ceaa615c9, type: 3}
+    description: Each time you receive either of  <sprite=9>  <sprite=10>  <sprite=11> 
+      to your Hand, get 1 <sprite=77> . Swapping out  <sprite=9>  <sprite=10>  <sprite=11>
+      counts as receiving a new one.
+  - name: First come,       first served
+    image: {fileID: 21300000, guid: 54e576b7966cf384686ea99e736be8a9, type: 3}
+    description: All  <sprite=0>  has a discount of -1  <sprite=22>  (minimum of
+      1). Keep the cost of the <b>Hidden</b>  <sprite=0>  deck as it is.
+  - name: Eating Competition
+    image: {fileID: 21300000, guid: a7d46f2394a35f448b1ea5dd89e2deb4, type: 3}
+    description: The <b>Hidden</b>  <sprite=0>  deck has a discount of -1  <sprite=22> 
+      .
+  - name: Friendship
+    image: {fileID: 21300000, guid: 1a8a54f041a3cac4497656b163b7bafa, type: 3}
+    description: "Once for each player, if you win against a  <sprite=23> , you\u2019ll
+      receive 1 additional  <sprite=23>  of the same Strength from the Main Supply."
+  - name: Never time to Stop
+    image: {fileID: 21300000, guid: 03014dabe11ab50498700f1767ae6d7c, type: 3}
+    description: Discard this  <sprite=16>  and draw a new  <sprite=16> . This new 
+      <sprite=16>  will also take effect during the next Round, together with the
+      new  <sprite=16>  for that Round.
+  - name: Ramen Time
+    image: {fileID: 21300000, guid: 992d8813f76cd554eae9cf31d9a93842, type: 3}
+    description: When Discarding any  <sprite=8>  from exceeding the  <sprite=84> 
+      Hand Limit, receive its Resources as if you Scored it.
+  - name: Pirates
+    image: {fileID: 21300000, guid: 0d719cc9dd969744695e771c3bd15a94, type: 3}
+    description: During movement,  <sprite=48>  can use other  <sprite=48>  the same
+      way as  <sprite=49>  <sprite=50>  <sprite=51>  are using  <sprite=48>  on Water
+      Fields.
+  - name: Thank you for the Support
+    image: {fileID: 21300000, guid: 031e1003894d3514bacd88d7cbe2217b, type: 3}
+    description: When a War between players occur, all players not participating
+      in it must draw 1  <sprite=9>  up to their Hands.
+  - name: Allies
+    image: {fileID: 21300000, guid: 1e28b200460766d4699f3142e8a03de4, type: 3}
+    description: When entering a War, each participant must draw 1 <sprite=9> up
+      to their Hands.
+  - name: Plot Twist
+    image: {fileID: 21300000, guid: 1eae4a942b53610479636965abeaa303, type: 3}
+    description: 'As an Effect,
+
+      <sprite=69>  become  <sprite=70>
+
+      <sprite=70> 
+      become  <sprite=69>
+
+'
+  - name: No Next Time
+    image: {fileID: 21300000, guid: e361751f8966205478c24adaef17680a, type: 3}
+    description: "As a Resource,\r\n<sprite=52>  become  <sprite=53>\r\n<sprite=53> 
+      become  <sprite=52>\r"
+  - name: Swap the Power
+    image: {fileID: 21300000, guid: 060238ec0f63b524784be2335dbff6e5, type: 3}
+    description: "As a Resource,\r\n<sprite=22>  become  <sprite=77>\r\n<sprite=77> 
+      become  <sprite=22>\r"
+  - name: Win or Lose
+    image: {fileID: 21300000, guid: 20656cfdd738c764bac319cfcc5ca792, type: 3}
+    description: "During any Scoring, the winner takes the Resources from all  <sprite=8> 
+      that won it\u2019s Battles, and the loser takes the Resources from all  <sprite=8> 
+      that lost it\u2019s Battles."
+  - name: Maybe some Extra Change
+    image: {fileID: 21300000, guid: a0cb33df82d698b4e9d79ce57de93789, type: 3}
+    description: The looser of a War will get 2  <sprite=22>  in addition to the
+      normal  <sprite=9> .
+  - name: More Doors
+    image: {fileID: 21300000, guid: 5c84cbb606489854bae49534f5c883f4, type: 3}
+    description: "Multiple  <sprite=0>  \u201CDefense\u201D can be played in the
+      same War."
+  - name: Out-Strategized
+    image: {fileID: 21300000, guid: 45296fdd5f7e40748ae272546e177834, type: 3}
+    description: "If you win a War, receive a  <sprite=23>  from your opponent, no
+      matter if you\u2019re the Attacker or the Defender."
+  - name: Just in Case
+    image: {fileID: 21300000, guid: 5a91bfdde0c3aa24eb32bceb34afc239, type: 3}
+    description: If you get 0  <sprite=7>  on Hand, draw 5  <sprite=7>  up to your
+      Hand, no matter your  <sprite=84>  Hand Limit. Then Discard down to your  <sprite=84> 
+      Hand Limit.
+  - name: Here, Take This
+    image: {fileID: 21300000, guid: 7a97f080baa1fc341be1a87b5cb0def1, type: 3}
+    description: <sprite=0> of the cost 2  <sprite=22>  cannot be bought from the
+      Shop. The <b>Hidden</b>  <sprite=0>  deck will still be open for purchase.
+  - name: It seems Hopeless
+    image: {fileID: 21300000, guid: 414b5e361ad0cfc4fa36ccc9c0931397, type: 3}
+    description: <sprite=0> of the cost 3+  <sprite=22>  cannot be bought from the
+      Shop. The <b>Hidden</b>  <sprite=0>  deck will still be open for purchase.
+  - name: Not a Gamble
+    image: {fileID: 21300000, guid: e32b87b5b1595444abe330ea5e559a5f, type: 3}
+    description: All <sprite=85> happens twice. The player in Turn decides which
+      throw to count.
+  - name: Medical Training
+    image: {fileID: 21300000, guid: 8f092de4ee3803b44921c08e8c97f380, type: 3}
+    description: When you use  <sprite=59>  after Scoring from a War, get 1  <sprite=22> 
+      for each  <sprite=8>  you get back up to your Hand.
+  - name: Taking Control
+    image: {fileID: 21300000, guid: ecb15321e692116439b912035059c0c4, type: 3}
+    description: "Each time either a  <sprite=0>  \u201CRare Ally\u201D,  <sprite=0> 
+      \u201CEpic Ally\u201D or  <sprite=0>  \u201CLegendary Ally\u201D are played,
+      the player in Turn must draw 1 for each player, look at them and distribute
+      1 to each player. "
+  - name: I guess it works on Beasts as well
+    image: {fileID: 21300000, guid: 6258aa4f8ac05934d950d78292046a05, type: 3}
+    description: If you lose a  <sprite=23>  , get 1 of the same Strength from the
+      Main Supply to your Supply. If this is the last Round, draw another  <sprite=16> 
+      instead.
+  - name: Only Down from Here
+    image: {fileID: 21300000, guid: d9b8f6172750c94429784a72cd0f9d66, type: 3}
+    description: 'No player can move directly Up in any
+
+      <sprite=79>  <sprite=80> 
+      <sprite=81>  <sprite=82>  <sprite=83>  <sprite=84>  Dominance Track, only Down.
+      (Players can only move Up if they swap place with another player moving Down).
+
+'
+  - name: Only Up from Here
+    image: {fileID: 21300000, guid: d0b1e329912d321409a62bfc7db3d9c1, type: 3}
+    description: No player can move directly Down in any  <sprite=79>  <sprite=80> 
+      <sprite=81>  <sprite=82>  <sprite=83>  <sprite=84>  Dominance Track, only Up.
+      (Players can only move Down if they swap place with another player moving Up).
+  - name: Summoning
+    image: {fileID: 21300000, guid: d5222493adfa08a41aec90ef6920a19a, type: 3}
+    description: Summon  <sprite=23>  onto the Board. Place a copy on the same Field
+      as there are  <sprite=23> , from the Main Supply. At the end of the Round,
+      Discard 1  <sprite=23>  from Fields containing 2  <sprite=23> .
+  - name: Re-summoning
+    image: {fileID: 21300000, guid: d415ac6da403bc544aebcfd025a671fe, type: 3}
+    description: Summon  <sprite=23>  onto the Board. Draw random  <sprite=23>  from
+      the Main Supply and place them in all Fields where other  <sprite=23>  have
+      been captured.
+  - name: Stronger Opponent
+    image: {fileID: 21300000, guid: ee6b61860eb642a46a8a141adfe7efb4, type: 3}
+    description: During Wars, count all  <sprite=69>  twice. You need 2  <sprite=70> 
+      to nullify 1  <sprite=69> .
+  - name: Let's move Together
+    image: {fileID: 21300000, guid: 9e7a885df14566f4981eeadc10a25710, type: 3}
+    description: When receiving 1  <sprite=23>  from another player, swap it with
+      a random one from the Main Supply.
+  - name: Shuffle them
+    image: {fileID: 21300000, guid: 9ab155951fee41847be053201dd2cb35, type: 3}
+    description: When capturing 1  <sprite=23>  from the Board, swap it with a random
+      one from the Main Supply.
+  - name: Good Luck to you All
+    image: {fileID: 21300000, guid: c03e8d52db4142a439fab711064f089c, type: 3}
+    description: Discard this  <sprite=16> . Then the players must draw 1  <sprite=16> 
+      which only affect themselves. Draw a new one if the  <sprite=16>  cannot be
+      performed by only 1 player.
+  - name: I'm Always there for You
+    image: {fileID: 21300000, guid: acf34f38b913eb1498e75a658e28f5c8, type: 3}
+    description: During Battles, the  <sprite=8>  with the Weakest Strength for each
+      Combat Style get the point, instead of the normal Strongest.
+  - name: Outtracked
+    image: {fileID: 21300000, guid: 0912e1ad678dfbf48afd02bfc94de2b2, type: 3}
+    description: Choose another player. If this player loses a  <sprite=23> , you
+      lose one as well. Place yours in the Main Supply. If this is the last Round,
+      draw another  <sprite=16>  instead.
+  - name: Forever Together
+    image: {fileID: 21300000, guid: 8d7ac864789e1eb4fa239478b9da241d, type: 3}
+    description: "Choose another player. If you lose a  <sprite=23> , this player
+      loses one as well. Place the other player\u2019s  <sprite=23>  the Main Supply.
+      If this is the last Round, draw another  <sprite=16>  instead."
+  - name: Damaged
+    image: {fileID: 21300000, guid: c0bbf25becacbfc40aa941e461b34725, type: 3}
+    description: "Discard this  <sprite=16>  and draw a new one for this Round. Don\u2019t
+      draw any  <sprite=16>  during the next Round."
+  - name: The Betrayal
+    image: {fileID: 21300000, guid: b945f4e47e5a51a408201b615196416c, type: 3}
+    description: Choose another player in secret. The first time you get attacked
+      by this player, win the War before entering a Battle.
+  - name: Ultimate love
+    image: {fileID: 21300000, guid: 189015831d7b1384ab4c1671d6e68058, type: 3}
+    description: Choose another player that you cannot attack. If this is the last
+      Round, draw another  <sprite=16>  instead.
+  - name: Sage Mode
+    image: {fileID: 21300000, guid: 797d5dd5d2036ba448dee0b3593b9738, type: 3}
+    description: If you were to receive a  <sprite=17>  <sprite=18>  <sprite=19> 
+      <sprite=20>  <sprite=21>  , you may instead remove one of the same type from
+      your Supply.
+  - name: Teleport
+    image: {fileID: 21300000, guid: 8f3a0d4fd7783c44abd167ff01af1ad5, type: 3}
+    description: 'If you were to receive any
+
+      <sprite=17>  <sprite=18>  <sprite=19> 
+      <sprite=20>  <sprite=21> ,
+
+      receive  <sprite=77>  instead.'
+  - name: Trapped
+    image: {fileID: 21300000, guid: 2768a817b3a5a624d80bcbefc57c740b, type: 3}
+    description: <sprite=23>  containing a  <sprite=21>  cannot be given away after
+      Wars.
+  - name: Exhausted
+    image: {fileID: 21300000, guid: 998d50e07ac307e4ca8123b3e24a216b, type: 3}
+    description: 'When taking control over a Field containing  <sprite=58>  , you
+      may get  <sprite=22>  equal to the number on your  <sprite=81>  Domination
+      Track, instead of any
+
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>
+      .'
+  - name: Lost on Path of Life
+    image: {fileID: 21300000, guid: c087e20a0517dab469d718b5028c2647, type: 3}
+    description: "<sprite=0>  \u201CTravel\u201D  costs 2  <sprite=22>  ."
+  - name: All against One
+    image: {fileID: 21300000, guid: 2fd64f655769e2c4dbe64fb0abaf0909, type: 3}
+    description: "All  <sprite=0>  \u201CWar\u201D  costs +1  <sprite=22>  more than
+      normal."
+  - name: Strength of a Sage
+    image: {fileID: 21300000, guid: 150de285e0628e74bba07d2f3cb8ef69, type: 3}
+    description: Double the amount of  <sprite=86> on  <sprite=8>  played against
+      a  <sprite=23> .
+  - name: Sacrifice Everything
+    image: {fileID: 21300000, guid: 863f59273aa88cf4283ba02e5003eff4, type: 3}
+    description: All  <sprite=8>  contain exactly 2  <sprite=86>  .
+  - name: Maybe Next Time
+    image: {fileID: 21300000, guid: 32e521f86b3f7dc47800f5fc9bf849f7, type: 3}
+    description: Fields containing  <sprite=58>  will not give any  <sprite=48> 
+      <sprite=49>  <sprite=50>  <sprite=51> .
+  - name: Manipulated
+    image: {fileID: 21300000, guid: ba4ee9c1a2b23a34797ac29d6a224e06, type: 3}
+    description: You can only play 1  <sprite=8>  in a War against a  <sprite=23>
+      . If this is the last Round, draw another  <sprite=16>  instead.
+  - name: In the Backhand
+    image: {fileID: 21300000, guid: 6bbe0ac3923d8c94bbd682651efd4535, type: 3}
+    description: "When using any  <sprite=0>  \u201CUpgrade\u201D, you may upgrade
+      2 steps."
+  - name: Agreement
+    image: {fileID: 21300000, guid: 85ff6eb90159c9f49a678befcd904bba, type: 3}
+    description: You may take control over Fields containing a  <sprite=23>  without
+      engaging in a War against it.
+  - name: Carry the weight of the Future
+    image: {fileID: 21300000, guid: 0613ff049224cea4582c3b247e894879, type: 3}
+    description: "After the \u201CShop Phase\u201D, if any player has  <sprite=22> 
+      left in its Supply, receive this amount from the Main Supply at the start of
+      the next \u201CSetup Phase\u201D. If this is the last Round, draw another 
+      <sprite=16>  instead."
+  - name: Bound for Life
+    image: {fileID: 21300000, guid: cd42b0cc618a6914eb0b0c49a5329368, type: 3}
+    description: Draw 1 additional  <sprite=16>  for this Round. Each player may
+      choose to place 1 captured  <sprite=23>  back onto the Board, in the same Field
+      it was captured, to be able so select 1  <sprite=23>  in its Supply that never
+      can be lost.
+  - name: Actually, A Lot Happened
+    image: {fileID: 21300000, guid: c52730cb79a461b4eaa997861993ef9a, type: 3}
+    description: Nothing Happens.

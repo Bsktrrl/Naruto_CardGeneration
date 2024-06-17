@@ -26,22 +26,22 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 0
     headAmount: 2
+    focusArea: 52
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>After all  <sprite=59> 
-      have been performed, look at your opponent\u2019s Hand and Discard 1  <sprite=8> 
-      from it.\r"
+    effectText: "<size=85><b><u>After The War:</b></u>\r\n<size=75>Look at your opponent\u2019s
+      Hand and Discard 1 <sprite=7>\nfrom it.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 0
-    - resources: 10
-      amount: 1
     - resources: 13
+      amount: 1
+    - resources: 11
       amount: 1
     - resources: 6
       amount: 2
@@ -55,9 +55,10 @@ MonoBehaviour:
     landOrigins: 17
     TaijutsuValue: 3
     NinjutsuValue: 5
-    GenjutsuValue: 6
+    GenjutsuValue: 5
     heal: 0
     headAmount: 0
+    focusArea: 31
     tier: 3
     fire: 1
     wind: 0
@@ -65,18 +66,17 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have more 
-      <sprite=5>  in your Hand than your opponent have  <sprite=7>  in theirs, get
-      1 BP.\r"
+      <sprite=7>  in your Hand than your opponent,\nget 1 BP.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 0
+    - resources: 0
+      amount: 1
     - resources: 18
       amount: 1
-    - resources: 12
-      amount: 1
     - resources: 10
-      amount: 2
+      amount: 1
   - name: Itachi Uchiha
     loreInfo: Child - Sasuke's Older Brother
     index: 43
@@ -85,11 +85,12 @@ MonoBehaviour:
     cardType: 1
     clan: 6
     landOrigins: 17
-    TaijutsuValue: 2
+    TaijutsuValue: 3
     NinjutsuValue: 4
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 25
     tier: 2
     fire: 1
     wind: 1
@@ -97,9 +98,9 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you\u2019ve played
-      a  <sprite=8>  in this War containing a Combat Style with a Strength of 2 or
-      lower (not this Battle), perform any 1 effect that triggers during Scoring,
-      twice.\r"
+      a  <sprite=8>  containing any  <sprite=113> <sprite=114> <sprite=115>\nof 2
+      or lower, immediately perform 1 Effect that triggers during Scoring, if possible
+      at this point in the War."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -123,6 +124,7 @@ MonoBehaviour:
     GenjutsuValue: 10
     heal: 2
     headAmount: 0
+    focusArea: 33
     tier: 5
     fire: 1
     wind: 1
@@ -130,15 +132,15 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
-      is higher than you in the\n<sprite=83> \u201CDominance Track\u201D, add 2 
-      <sprite=69>  to this  <sprite=5> .\r"
+      is higher than you in the\n<sprite=83>  \u201CDominance Track\u201D, gain 3 
+      <sprite=69>  on this  <sprite=5> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
-      amount: 1
     - resources: 8
+      amount: 1
+    - resources: 13
       amount: 1
     - resources: 12
       amount: 3
@@ -155,24 +157,25 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 0
+    focusArea: 24
     tier: 3
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If there is at least
-      1  <sprite=8>  containing  <sprite=59>  in this War, remove the  <sprite=60> 
-      from this  <sprite=5> .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If at least 1  <sprite=8> 
+      containing  <sprite=59>  is played,\nremove the  <sprite=60>  from this  <sprite=5>
+      .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 17
       amount: 1
     - resources: 6
       amount: 1
-    - resources: 15
-      amount: 2
     - resources: 1
+      amount: 2
+    - resources: 15
       amount: 2
   - name: Izuna Uchiha
     loreInfo: Teenager - Madara's Younger Brother
@@ -187,21 +190,22 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 1
     headAmount: 2
+    focusArea: 4
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Discard 1 <sprite=5>
-      at random from your Hand. Then look at your opponent\u2019s Hand and choose
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Discard 1 <sprite=5> 
+      at random. \n<size=20%>\n<size=75>Look at your opponent\u2019s Hand and choose
       1  <sprite=8>  to Discard as well.\r"
-    effectIcon: 000000000000000000000000
+    effectIcon: 000000000000000002000000
     resources:
     - resources: 0
       amount: 0
     - resources: 6
-      amount: 2
+      amount: 1
     - resources: 16
       amount: 1
     - resources: 18
@@ -219,22 +223,25 @@ MonoBehaviour:
     GenjutsuValue: 9
     heal: 1
     headAmount: 1
+    focusArea: 32
     tier: 4
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, all  <sprite=9>  <sprite=10>  <sprite=11>  you play will get +3 Strength
-      in each Combat Style.\r"
+    effectText: '<size=85><b><u>For the rest of the War:</b></u>
+
+      <size=75>All 
+      <sprite=9>  <sprite=10>  <sprite=11>  you play have +3 <sprite=113> <sprite=114>
+      <sprite=115> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 2
-    - resources: 8
+    - resources: 7
       amount: 1
     - resources: 11
       amount: 2
@@ -246,20 +253,21 @@ MonoBehaviour:
     cardType: 1
     clan: 6
     landOrigins: 16
-    TaijutsuValue: 2
-    NinjutsuValue: 3
-    GenjutsuValue: 4
+    TaijutsuValue: 1
+    NinjutsuValue: 2
+    GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 0
     tier: 2
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Gain +1 Strength
-      in each Combat Style for every  <sprite=7>  given as a Resource on all played 
-      <sprite=8>  up to this point int this War (including this Battle).\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Gain +2 <sprite=113>
+      <sprite=114> <sprite=115>  for every  <sprite=7>  displayed as a Resource on
+      all played  <sprite=8>  (this Battle included).\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -282,7 +290,8 @@ MonoBehaviour:
     NinjutsuValue: 10
     GenjutsuValue: 10
     heal: 2
-    headAmount: 4
+    headAmount: 6
+    focusArea: 32
     tier: 5
     fire: 1
     wind: 1
@@ -296,7 +305,7 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 2
-    - resources: 0
+    - resources: 14
       amount: 1
     - resources: 17
       amount: 2
@@ -313,6 +322,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
+    focusArea: 0
     tier: 2
     fire: 1
     wind: 0
@@ -329,7 +339,7 @@ MonoBehaviour:
     - resources: 0
       amount: 1
     - resources: 18
-      amount: 3
+      amount: 2
   - name: Naka Uchiha
     loreInfo: Adult - Creator of Izanagi
     index: 51
@@ -343,21 +353,22 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 0
     headAmount: 2
+    focusArea: 2
     tier: 3
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Draw 1 <sprite=5>
-      of your choice from your Discard Pile back up to your Hand.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Take 1 <sprite=5>  of
+      your choice from your Discard Pile back up to your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 15
+    - resources: 18
       amount: 1
     - resources: 2
       amount: 2
@@ -369,20 +380,21 @@ MonoBehaviour:
     cardType: 1
     clan: 6
     landOrigins: 16
-    TaijutsuValue: 4
+    TaijutsuValue: 5
     NinjutsuValue: 5
     GenjutsuValue: 7
     heal: 1
     headAmount: 0
+    focusArea: 11
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 1 space
-      in the  <sprite=84>  Dominance Track. You may give your opponent 1  <sprite=22> 
-      to swap this  <sprite=5>  with another  <sprite=8>  from your Hand.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get 1 <sprite=77>
+      .\n<size=20%>\n<size=75>You may give your opponent 1 <sprite=22>  to swap\nthis 
+      <sprite=5>  with another  <sprite=8>  from your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -391,8 +403,8 @@ MonoBehaviour:
       amount: 1
     - resources: 3
       amount: 1
-    - resources: 11
-      amount: 2
+    - resources: 18
+      amount: 1
   - name: Obito Uchiha
     loreInfo: Child - Team Minato
     index: 53
@@ -401,19 +413,20 @@ MonoBehaviour:
     cardType: 1
     clan: 6
     landOrigins: 17
-    TaijutsuValue: 2
+    TaijutsuValue: 1
     NinjutsuValue: 3
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 34
     tier: 1
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Get the same
-      Resources as 1 of your opponent\u2019s played  <sprite=7>  in this Battle.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If your opponent played
+      a  <sprite=7>  in this Battle, \nScore the same Resources as on it."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -437,6 +450,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 0
     headAmount: 0
+    focusArea: 2
     tier: 3
     fire: 1
     wind: 1
@@ -444,51 +458,17 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If any  <sprite=70> 
-      has occurred on a  <sprite=5>  in this War, draw 2  <sprite=5>  up to your
-      Hand.\r"
+      has occurred on a  <sprite=5> , \ndraw 2 <sprite=5>  up to your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 15
+    - resources: 6
       amount: 1
     - resources: 18
-      amount: 2
-  - name: Sasuke Uchiha
-    loreInfo: Teenager - Team Taka
-    index: 55
-    set: 1
-    characterSprite: {fileID: 21300000, guid: a00de6357ca237a428e66566a39c5f76, type: 3}
-    cardType: 1
-    clan: 6
-    landOrigins: 17
-    TaijutsuValue: 5
-    NinjutsuValue: 5
-    GenjutsuValue: 6
-    heal: 0
-    headAmount: 1
-    tier: 3
-    fire: 1
-    wind: 0
-    lightning: 1
-    earth: 0
-    water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 1 <sprite=5>
-      from your Draw Pile. You may swap it with this  <sprite=5>  for this Battle
-      and get this  <sprite=5>  back up to your Hand. If not, Discard the drawn 
-      <sprite=5> .\r"
-    effectIcon: 010000000000000000000000
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 1
-    - resources: 18
-      amount: 1
-    - resources: 12
-      amount: 2
+      amount: 3
   - name: Sasuke Uchiha
     loreInfo: Adult - Shadow Hokage of Konoha
     index: 56
@@ -502,6 +482,7 @@ MonoBehaviour:
     GenjutsuValue: 10
     heal: 2
     headAmount: 4
+    focusArea: 17
     tier: 5
     fire: 1
     wind: 1
@@ -509,16 +490,16 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Don\u2019t
-      give away any  <sprite=23>  .\r"
+      give away any  <sprite=23> .\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 0
     - resources: 0
       amount: 1
-    - resources: 17
-      amount: 1
     - resources: 8
+      amount: 1
+    - resources: 17
       amount: 1
   - name: Sasuke Uchiha
     loreInfo: Child - Fugaku Uchiha's Youngest Son
@@ -533,14 +514,15 @@ MonoBehaviour:
     GenjutsuValue: 1
     heal: 2
     headAmount: 0
+    focusArea: 32
     tier: 1
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>For the rest of the
-      War, nullify your opponent\u2019s Combat Styles with a Strength of 4 and below.\r"
+    effectText: "<size=85><b><u>For the rest of the War:</b></u>\r\n<size=75>Cancel
+      your opponent\u2019s  <sprite=113> <sprite=114> <sprite=115>  of 4 and below.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -551,6 +533,44 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
+  - name: Sasuke Uchiha
+    loreInfo: Teenager - Team Taka
+    index: 55
+    set: 1
+    characterSprite: {fileID: 21300000, guid: a00de6357ca237a428e66566a39c5f76, type: 3}
+    cardType: 1
+    clan: 6
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 5
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 1
+    focusArea: 31
+    tier: 3
+    fire: 1
+    wind: 0
+    lightning: 1
+    earth: 0
+    water: 0
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=72>Draw 1 <sprite=5>
+      .
+
+      <size=20%>
+
+      <size=72>You may swap it with this  <sprite=5> .'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+    - resources: 12
+      amount: 2
   - name: Sasuke Uchiha
     loreInfo: Teenager - Naruto The Last
     index: 58
@@ -564,6 +584,7 @@ MonoBehaviour:
     GenjutsuValue: 8
     heal: 2
     headAmount: 3
+    focusArea: 2
     tier: 4
     fire: 1
     wind: 1
@@ -575,7 +596,7 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
+    - resources: 11
       amount: 1
     - resources: 17
       amount: 1
@@ -594,6 +615,7 @@ MonoBehaviour:
     GenjutsuValue: 10
     heal: 0
     headAmount: 1
+    focusArea: 2
     tier: 4
     fire: 1
     wind: 1
@@ -601,8 +623,8 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>You may Trash this 
-      <sprite=5> to get 2 BP. If so, your opponent must then Draw 1 random  <sprite=8> 
-      from your Hand to be played as your  <sprite=8>  for in this Battle.\r"
+      <sprite=5> to\nget 2 BP.\n<size=20%>\n<size=75>If so, play 1 <sprite=5>  from
+      your Draw Pile in its stead.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -625,22 +647,23 @@ MonoBehaviour:
     NinjutsuValue: 2
     GenjutsuValue: 5
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 2
     tier: 3
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 2  <sprite=5> 
-      up to your Hand.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw 2 <sprite=5>
+      .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
-      amount: 1
     - resources: 17
       amount: 1
+    - resources: 11
+      amount: 2
     - resources: 6
       amount: 2

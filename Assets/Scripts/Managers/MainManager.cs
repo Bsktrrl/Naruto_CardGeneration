@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainManager : MonoBehaviour
+public class MainManager : Singleton<MainManager>
 {
     CardManager cardManager;
     [SerializeField] BattleCardObject battleCardObject;
@@ -12,10 +12,10 @@ public class MainManager : MonoBehaviour
     [SerializeField] EventCardObject eventCardObject;
 
     [Header("UI Parents")]
-    [SerializeField] GameObject battleUI_Parent;
-    [SerializeField] GameObject actionUI_Parent;
-    [SerializeField] GameObject clanSpecialtyUI_Parent;
-    [SerializeField] GameObject eventUI_Parent;
+    public GameObject battleUI_Parent;
+    public GameObject actionUI_Parent;
+    public GameObject clanSpecialtyUI_Parent;
+    public GameObject eventUI_Parent;
 
     [Header("Card Lists")]
     List<SO_NarutoCard> battleCards = new List<SO_NarutoCard>();
@@ -344,12 +344,39 @@ public class MainManager : MonoBehaviour
     }
     void PrintActionCard(int i, int j)
     {
-        ScreenCapture.CaptureScreenshot(actionCards[i].actionCardList[j].cardType + "_" + actionCards[i].actionCardList[j].name + ".png", 1);
+        if (actionCards[i].actionCardList[j].isInHiddenDeck)
+        {
+            ScreenCapture.CaptureScreenshot(actionCards[i].actionCardList[j].cardType + "_" + actionCards[i].actionCardList[j].name + " (Hidden) " + ".png", 1);
+        }
+        else
+        {
+            ScreenCapture.CaptureScreenshot(actionCards[i].actionCardList[j].cardType + "_" + actionCards[i].actionCardList[j].name + ".png", 1);
+        }
         //print("Screen captured - Action Card: " + i + " " + j);
     }
     void PrintClanSpecialtyCard(int i, int j)
     {
-        ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + ".png", 1);
+        if (clanSpecialtyCards[i].clanSpecialtyCardList[j].version_Passive_A)
+        {
+            ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + " (Passive A) " + ".png", 1);
+        }
+        else if (clanSpecialtyCards[i].clanSpecialtyCardList[j].version_Passive_B)
+        {
+            ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + " (Passive B) " + ".png", 1);
+        }
+        else if (clanSpecialtyCards[i].clanSpecialtyCardList[j].version_Specialty_A)
+        {
+            ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + " (Specialty A) " + ".png", 1);
+        }
+        else if (clanSpecialtyCards[i].clanSpecialtyCardList[j].version_Specialty_B)
+        {
+            ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + " (Specialty B) " + ".png", 1);
+        }
+        else
+        {
+            ScreenCapture.CaptureScreenshot(clanSpecialtyCards[i].clanSpecialtyCardList[j].cardType + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].clan + "_" + clanSpecialtyCards[i].clanSpecialtyCardList[j].name + ".png", 1);
+        }
+
         //print("Screen captured - Can Specialty Card: " + i + " " + j);
     }
     void PrintEventCard(int i, int j)

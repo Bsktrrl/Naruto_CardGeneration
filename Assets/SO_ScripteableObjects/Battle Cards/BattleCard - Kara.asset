@@ -26,14 +26,15 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 16
     tier: 1
     fire: 0
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If this is the first 
-      <sprite=8>  you play in the War, \nget 3  <sprite=22>  .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If this is the first
+      Battle in the War,  get 3 <sprite=22> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -52,11 +53,12 @@ MonoBehaviour:
     cardType: 1
     clan: 8
     landOrigins: 25
-    TaijutsuValue: 4
-    NinjutsuValue: 4
+    TaijutsuValue: 5
+    NinjutsuValue: 5
     GenjutsuValue: 5
     heal: 1
     headAmount: 1
+    focusArea: 32
     tier: 4
     fire: 0
     wind: 1
@@ -66,19 +68,24 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Immediately:</b></u>
 
       <size=75>You may pay
-      your opponent 1  <sprite=22>  to reduce -1 Strength in any Combat Style from
-      its  <sprite=8>  in this Battle. You may pay several  <sprite=22>  to reduce
+      your opponent 1 <sprite=22>  to reduce the  <sprite=119> <sprite=120> <sprite=121> 
+      on its  <sprite=8>  in this Battle with -1.
+
+      <size=8%>
+
+      <size=75>You
+      may pay several  <sprite=22>  to reduce the  <sprite=119> <sprite=120> <sprite=121> 
       further.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 1
       amount: 1
+    - resources: 15
+      amount: 1
     - resources: 13
       amount: 1
-    - resources: 15
-      amount: 2
     - resources: 18
-      amount: 3
+      amount: 2
   - name: Ao
     loreInfo: Adult - Kara Outer
     index: 103
@@ -92,6 +99,7 @@ MonoBehaviour:
     GenjutsuValue: 8
     heal: 2
     headAmount: 0
+    focusArea: 16
     tier: 3
     fire: 0
     wind: 0
@@ -99,7 +107,7 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Get  <sprite=22> 
-      equal to the amount of your  <sprite=72>  <sprite=73>  <sprite=74>  or  <sprite=71> 
+      equal to the points of\n <sprite=72>  <sprite=73>  <sprite=74>  <sprite=71> 
       that survived this War.\r"
     effectIcon: 010000000000000000000000
     resources:
@@ -109,7 +117,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-    - resources: 15
+    - resources: 17
       amount: 1
   - name: Boro
     loreInfo: "Adult - Kara Inner - \u014Ctsutsuki Cult Leader"
@@ -124,6 +132,7 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 0
     headAmount: 3
+    focusArea: 16
     tier: 4
     fire: 1
     wind: 0
@@ -140,7 +149,7 @@ MonoBehaviour:
     - resources: 16
       amount: 1
     - resources: 17
-      amount: 2
+      amount: 1
     - resources: 12
       amount: 3
   - name: Bug
@@ -152,29 +161,30 @@ MonoBehaviour:
     clan: 8
     landOrigins: 34
     TaijutsuValue: 2
-    NinjutsuValue: 7
-    GenjutsuValue: 6
+    NinjutsuValue: 4
+    GenjutsuValue: 5
     heal: 0
     headAmount: 0
+    focusArea: 16
     tier: 3
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, if you receive any  <sprite=22>  , get 1 additional  <sprite=22> 
-      . If you receive multiple  <sprite=22>  at once, only get 1 additional  <sprite=22> 
+    effectText: "<size=82><b><u>For the rest of the War:</b></u>\r\n<size=73>If you
+      receive any  <sprite=22> ,\nget 1 additional  <sprite=22> .\n<size=20%>\n<size=73>If
+      you receive multiple  <sprite=22>  at once, only get 1 additional  <sprite=22>
       .\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
     - resources: 6
       amount: 1
     - resources: 10
+      amount: 1
+    - resources: 18
       amount: 1
   - name: Code
     loreInfo: Adult - Kara Inner
@@ -188,26 +198,26 @@ MonoBehaviour:
     NinjutsuValue: 5
     GenjutsuValue: 8
     heal: 0
-    headAmount: 3
+    headAmount: 1
+    focusArea: 27
     tier: 5
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Pay 2  <sprite=22> 
-      to gain either 1  <sprite=69>  or 1  <sprite=70>  onto this  <sprite=75> .
-      You may pay several  <sprite=22>  to receive more  \n<sprite=69>  /  <sprite=70> 
-      .\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=73>Pay 1 <sprite=22> 
+      to gain either 1  <sprite=69>  or 1  <sprite=70>  onto this  <sprite=75> .\n<size=20%>\n<size=73>You
+      may pay several  <sprite=22>  to receive more  <sprite=69> / <sprite=70> .\r"
     effectIcon: 000000000000000000000000
     resources:
+    - resources: 0
+      amount: 2
     - resources: 1
       amount: 1
     - resources: 11
       amount: 1
     - resources: 8
-      amount: 2
-    - resources: 18
       amount: 2
   - name: Daemon
     loreInfo: Child - Kara Outer - Eida's Younger Brother
@@ -222,13 +232,14 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 0
     headAmount: 3
+    focusArea: 16
     tier: 2
     fire: 0
     wind: 0
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Steal 3  <sprite=22> 
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Take 3 <sprite=22> 
       from your opponent.\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -252,7 +263,8 @@ MonoBehaviour:
     NinjutsuValue: 7
     GenjutsuValue: 3
     heal: 0
-    headAmount: 2
+    headAmount: 1
+    focusArea: 31
     tier: 4
     fire: 1
     wind: 0
@@ -260,14 +272,14 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
-      have more  <sprite=22>  in its Supply than you, get 1 BP.\r"
+      have more  <sprite=22>  than you, get 1 BP.\r"
     effectIcon: 010000000000000000000000
     resources:
-    - resources: 17
-      amount: 1
     - resources: 11
       amount: 1
     - resources: 13
+      amount: 1
+    - resources: 17
       amount: 1
     - resources: 2
       amount: 2
@@ -284,19 +296,22 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 0
     headAmount: 2
+    focusArea: 40
     tier: 4
     fire: 1
     wind: 0
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>You may pay your opponent
-      2  <sprite=22>  to be able to Draw 1 <sprite=11> up to your Hand.\r"
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>You may pay your
+      opponent 2 <sprite=22>  and Draw 1 <sprite=11> .'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 17
+    - resources: 0
       amount: 1
     - resources: 6
       amount: 1
@@ -315,15 +330,17 @@ MonoBehaviour:
     GenjutsuValue: 9
     heal: 1
     headAmount: 0
+    focusArea: 16
     tier: 3
     fire: 0
     wind: 0
     lightning: 1
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, if you get any  <sprite=22> , receive double the amount (not including
-      Resources).\r"
+    effectText: '<size=82><b><u>For the rest of the War:</b></u>
+
+      <size=75>If
+      you get any  <sprite=22> , receive double the amount.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -332,8 +349,8 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 2
+    - resources: 17
+      amount: 1
   - name: "Garashi T\u014Dno"
     loreInfo: Adult - Kara Outer
     index: 111
@@ -347,14 +364,15 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 0
     headAmount: 0
+    focusArea: 16
     tier: 2
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you don\u2019t have
-      any  <sprite=22>  ,\nget 4  <sprite=22>  .\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you don\u2019t
+      have any  <sprite=22> , get 4 <sprite=22> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -378,6 +396,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 0
     tier: 3
     fire: 0
     wind: 1
@@ -391,9 +410,9 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 11
-      amount: 1
     - resources: 18
+      amount: 1
+    - resources: 11
       amount: 2
   - name: Inori
     loreInfo: "Adult - \u014Ctsutsuki Cultist - Kara Outer"
@@ -408,14 +427,15 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 1
     tier: 1
     fire: 0
     wind: 1
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get a discount of -3 
-      <sprite=22>  on the next  <sprite=0>  you buy during the Shop Phase.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get a discount of -3
+      <sprite=22>  on the next  <sprite=0>  you buy from the Shop.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -439,15 +459,18 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
+    focusArea: 0
     tier: 3
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, if you give away\nany  <sprite=22> , get 3  <sprite=22>  after that
-      Battle.\r"
+    effectText: '<size=85><b><u>After the War:</b></u>
+
+      <size=75>If you gave
+      away any  <sprite=22>  to another player during the War, get 3 <sprite=22>
+      .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -470,27 +493,38 @@ MonoBehaviour:
     NinjutsuValue: 9
     GenjutsuValue: 6
     heal: 2
-    headAmount: 6
+    headAmount: 5
+    focusArea: 17
     tier: 5
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Your opponent may
-      choose to take all your  <sprite=22>  . In return, you win the War and get
-      1  <sprite=23>  from your opponent, even if you where the defender. Your opponent
-      cannot take your  <sprite=22>  if he doesn\u2019t control a  <sprite=23>  .
-      \r"
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=73>Your opponent
+      may choose to Take 10 <sprite=22>  from you, in return for 1 of its captured 
+      <sprite=23> .
+
+      <size=8%>
+
+      <size=73>Your opponent may do this several
+      times.
+
+      <size=8%>
+
+      <size=73>In return, you win the War, but doesn''t
+      take any  <sprite=23>  from your opponent.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 3
-      amount: 1
-    - resources: 13
-      amount: 2
     - resources: 16
+      amount: 1
+    - resources: 2
+      amount: 2
+    - resources: 13
       amount: 2
   - name: Kashin Koji
     loreInfo: Adult - Kara Inner
@@ -505,6 +539,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 1
+    focusArea: 0
     tier: 5
     fire: 1
     wind: 1
@@ -518,10 +553,10 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
+    - resources: 16
+      amount: 3
     - resources: 15
-      amount: 2
-    - resources: 15
-      amount: 2
+      amount: 3
   - name: Kawaki
     loreInfo: Child - Vessel
     index: 117
@@ -535,24 +570,25 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 0
     headAmount: 0
+    focusArea: 32
     tier: 3
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 Strength
-      to each of your Combat Styles for each  <sprite=22>  displayed as Resources
-      on all previous played  <sprite=8>  in this War.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 <sprite=119>
+      <sprite=120> <sprite=121>  for each  <sprite=22>  displayed as Resources on
+      all previous played  <sprite=8>  in this War.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 8
+    - resources: 0
       amount: 1
-    - resources: 18
+    - resources: 8
       amount: 1
   - name: "\u014Cga"
     loreInfo: Ancient - Kara Inner
@@ -567,6 +603,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 0
     headAmount: 1
+    focusArea: 16
     tier: 4
     fire: 0
     wind: 0
@@ -574,12 +611,12 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>If you give
-      away any  <sprite=23>  , get as many  <sprite=22>  as its Strength.\r"
+      away any  <sprite=23> ,\nget as many  <sprite=22>  as its Strength.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 17
+    - resources: 0
       amount: 1
     - resources: 6
       amount: 2
@@ -598,18 +635,21 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 0
     headAmount: 1
+    focusArea: 50
     tier: 4
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>If Winning the War:</b></u>\r\n<size=75>If the Battlefield
-      contain  <sprite=22>  , get the same amount of  <sprite=22> . If you win control
-      over the Field from this War, get its  <sprite=22>  as normal as well.\r"
+    effectText: '<size=85><b><u>If Winning the War:</b></u>
+
+      <size=75>If this
+      Battlefield contain  <sprite=22> , get the amount of  <sprite=22>  as your 
+      <sprite=83>  Dominance Track.'
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 8
+    - resources: 7
       amount: 1
     - resources: 6
       amount: 1
@@ -630,6 +670,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 0
+    focusArea: 31
     tier: 2
     fire: 0
     wind: 0
@@ -637,14 +678,14 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>You may give your
-      opponent 3  <sprite=22>  to win this Battle, receiving 1 BP.\r"
+      opponent 2 <sprite=22>  to win this Battle, receiving 1 BP.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 16
       amount: 1
     - resources: 6
       amount: 2

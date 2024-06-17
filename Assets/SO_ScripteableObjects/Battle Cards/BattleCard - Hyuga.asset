@@ -26,6 +26,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
+    focusArea: 43
     tier: 3
     fire: 0
     wind: 1
@@ -33,7 +34,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Draw either
-      2 <sprite=10> or 1 <sprite=11> instead of the normal\n1 <sprite=9> .\r"
+      2 <sprite=10>  or 1 <sprite=11>  instead of the normal\n1 <sprite=9> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -43,7 +44,7 @@ MonoBehaviour:
     - resources: 0
       amount: 0
     - resources: 18
-      amount: 3
+      amount: 2
   - name: Hanada Hyuga
     loreInfo: Teenager - Tokuma's Daughter - Team Yusuke
     index: 2
@@ -52,28 +53,29 @@ MonoBehaviour:
     cardType: 1
     clan: 3
     landOrigins: 17
-    TaijutsuValue: 3
-    NinjutsuValue: 3
-    GenjutsuValue: 3
+    TaijutsuValue: 2
+    NinjutsuValue: 2
+    GenjutsuValue: 2
     heal: 0
     headAmount: 0
+    focusArea: 32
     tier: 3
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=80><b><u>Immediately:</b></u>\r\n<size=70>Get +1 Strength
-      in each Combat Style for every Resource given on your opponent\u2019s  <sprite=8> 
-      in this Battle.\r\n"
+    effectText: "<size=80><b><u>Immediately:</b></u>\r\n<size=70>Get +2 <sprite=104>
+      <sprite=105> <sprite=106>  for every Resource given on your opponent\u2019s 
+      <sprite=8>  in this Battle.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 18
       amount: 1
+    - resources: 12
+      amount: 1
     - resources: 15
       amount: 1
-    - resources: 12
-      amount: 2
     - resources: 2
       amount: 2
   - name: Hatoe Hyuga
@@ -86,34 +88,30 @@ MonoBehaviour:
     landOrigins: 1
     TaijutsuValue: 8
     NinjutsuValue: 4
-    GenjutsuValue: 6
+    GenjutsuValue: 5
     heal: 0
     headAmount: 5
+    focusArea: 34
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: '<size=85><b><u>Before Scoring:</b></u>
-
-      <size=75>Choose 1 
-      <sprite=8>  played by your opponent. When Scoring this  <sprite=8>  , Instead
-      of gaining the Resources from it , your opponent must remove Resources from
-      its Supply equal to the Resources presented, if possible.
-
-
-'
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\n<size=74>Choose 1  <sprite=8> 
+      played by your opponent. \n<size=10%>\n<size=74>When this  <sprite=8>  is Scored,
+      instead of gaining the Resources from it, your opponent must remove Resources
+      from its Supply equal to the Resources presented, if possible.\n\n"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 15
+    - resources: 18
       amount: 1
     - resources: 13
       amount: 1
+    - resources: 15
+      amount: 1
     - resources: 16
       amount: 1
-    - resources: 18
-      amount: 2
   - name: Hiashi Hyuga
     loreInfo: Adult - Head of the Hyuga Clan
     index: 4
@@ -127,6 +125,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 4
+    focusArea: 2
     tier: 5
     fire: 1
     wind: 0
@@ -135,18 +134,18 @@ MonoBehaviour:
     water: 0
     effectText: '<size=85><b><u>Least BP:</b></u>
 
-      <size=75>Get this <sprite=2>
+      <size=75>Get this  <sprite=2> 
       back up to your Hand after the War.
 
 '
     effectIcon: 010000000000000000000000
     resources:
-    - resources: 11
-      amount: 1
     - resources: 6
       amount: 1
     - resources: 18
       amount: 1
+    - resources: 11
+      amount: 2
     - resources: 16
       amount: 2
   - name: Himawari Uzumaki
@@ -161,7 +160,8 @@ MonoBehaviour:
     NinjutsuValue: 2
     GenjutsuValue: 3
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 0
     tier: 2
     fire: 1
     wind: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
     - resources: 0
       amount: 0
     - resources: 17
-      amount: 1
+      amount: 0
     - resources: 18
       amount: 3
   - name: Hinata Hyuga
@@ -192,15 +192,22 @@ MonoBehaviour:
     GenjutsuValue: 1
     heal: 0
     headAmount: 0
+    focusArea: 34
     tier: 1
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>If  <sprite=70> 
-      hasn\u2019t appeared in this War up to this point (not including this Battle),
-      double the Resources of 1  <sprite=8>  already played.\r\n"
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>If no  <sprite=70> 
+      has appeared in previous Battles, double the Resources of 1  <sprite=8>  played
+      before
+
+      this  <sprite=2> .
+
+'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -209,8 +216,8 @@ MonoBehaviour:
       amount: 0
     - resources: 0
       amount: 0
-    - resources: 18
-      amount: 3
+    - resources: 0
+      amount: 0
   - name: Hinata Hyuga
     loreInfo: Teenager - Team 8
     index: 7
@@ -219,11 +226,12 @@ MonoBehaviour:
     cardType: 1
     clan: 3
     landOrigins: 17
-    TaijutsuValue: 7
+    TaijutsuValue: 6
     NinjutsuValue: 5
     GenjutsuValue: 3
     heal: 2
     headAmount: 0
+    focusArea: 32
     tier: 3
     fire: 1
     wind: 0
@@ -235,9 +243,9 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
-      amount: 0
-    - resources: 12
+    - resources: 6
+      amount: 1
+    - resources: 18
       amount: 1
     - resources: 11
       amount: 2
@@ -251,9 +259,10 @@ MonoBehaviour:
     landOrigins: 17
     TaijutsuValue: 9
     NinjutsuValue: 7
-    GenjutsuValue: 5
+    GenjutsuValue: 4
     heal: 1
     headAmount: 3
+    focusArea: 36
     tier: 5
     fire: 1
     wind: 0
@@ -261,7 +270,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>If you\u2019re
-      being Supported in this War, gain 2  <sprite=70>  and 2  <sprite=69>  on this
+      being Supported in this War, gain 3  <sprite=70>  and 3  <sprite=69>  on this 
       <sprite=2> .\r"
     effectIcon: 020000000000000000000000
     resources:
@@ -281,29 +290,30 @@ MonoBehaviour:
     cardType: 1
     clan: 3
     landOrigins: 17
-    TaijutsuValue: 6
-    NinjutsuValue: 5
+    TaijutsuValue: 7
+    NinjutsuValue: 6
     GenjutsuValue: 3
     heal: 0
     headAmount: 2
+    focusArea: 31
     tier: 4
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 Strength
-      in each Combat Style for every Resource given on 1 of your previously played 
-      <sprite=8>  in this War.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 <sprite=104>
+      <sprite=105> <sprite=106>  for every Resource given on 1 of your previously
+      played  <sprite=8>  in this War.\r"
     effectIcon: 020000000000000000000000
     resources:
-    - resources: 15
-      amount: 1
-    - resources: 11
+    - resources: 6
       amount: 1
     - resources: 12
       amount: 1
-    - resources: 6
+    - resources: 11
+      amount: 1
+    - resources: 15
       amount: 1
   - name: Hizashi Hyuga
     loreInfo: Adult - Successor of the Hyuga Clan
@@ -318,6 +328,7 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 2
     headAmount: 0
+    focusArea: 34
     tier: 4
     fire: 1
     wind: 0
@@ -325,7 +336,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Remove all Resources
-      from 1 of your opponent\u2019s  <sprite=8> , and place them on this <sprite=2>
+      from 1 of your opponent\u2019s  <sprite=8> , and place them on this  <sprite=2>
       ."
     effectIcon: 000000000000000000000000
     resources:
@@ -349,7 +360,8 @@ MonoBehaviour:
     NinjutsuValue: 8
     GenjutsuValue: 4
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 31
     tier: 3
     fire: 0
     wind: 1
@@ -358,16 +370,16 @@ MonoBehaviour:
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>In the previous
       Battle, if your opponent\u2019s  <sprite=8>  contained more Resources than
-      yours, get 1 BP.\r"
+      your  <sprite=8> ,\nget 1 BP.\r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 0
-      amount: 1
-    - resources: 17
-      amount: 1
-    - resources: 15
+    - resources: 7
       amount: 1
     - resources: 18
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 17
       amount: 1
   - name: Iroha Hyuga
     loreInfo: Adult - 4th Ninja War - Barrier Division
@@ -381,7 +393,8 @@ MonoBehaviour:
     NinjutsuValue: 5
     GenjutsuValue: 8
     heal: 0
-    headAmount: 0
+    headAmount: 1
+    focusArea: 0
     tier: 3
     fire: 0
     wind: 0
@@ -393,9 +406,9 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 1
-    - resources: 17
+    - resources: 0
       amount: 1
-    - resources: 15
+    - resources: 7
       amount: 1
     - resources: 18
       amount: 2
@@ -412,6 +425,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 1
     headAmount: 2
+    focusArea: 15
     tier: 4
     fire: 0
     wind: 0
@@ -419,16 +433,16 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Remove all  <sprite=17> 
-      <sprite=18>  <sprite=19>  <sprite=20>  from your Supply.\r"
-    effectIcon: 000000000000000000000000
+      <sprite=18>  <sprite=19>  <sprite=20>\nfrom your Supply.\r"
+    effectIcon: 000000000000000002000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 17
+    - resources: 0
       amount: 1
-    - resources: 15
+    - resources: 0
       amount: 1
   - name: Mrs. Hyuga
     loreInfo: Adult - Hinata and Hanabi's Mother
@@ -443,15 +457,17 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 0
     headAmount: 0
-    tier: 1
+    focusArea: 34
+    tier: 2
     fire: 0
     wind: 0
     lightning: 1
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Discard this <sprite=2>
-      and play a new  <sprite=8>  in this Battle. Double the Resources on your new
-      <sprite=2> during Scoring.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=74>If you have any 
+      <sprite=2>  left in your Hand, \nDiscard this  <sprite=2>  and play a new 
+      <sprite=2>  for this Battle.\n<size=30%>\n<size=74>Double the Resources on
+      your new  <sprite=2>  during Scoring.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -475,6 +491,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 1
     headAmount: 0
+    focusArea: 38
     tier: 2
     fire: 0
     wind: 0
@@ -482,8 +499,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>If you used  <sprite=59> 
-      during the Scoring, draw 1 <sprite=9> for each  <sprite=8>  you got back up
-      to your Hand.\r"
+      during Scoring, draw 1 <sprite=9>  for each  <sprite=8>  you got back on Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -492,7 +508,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 6
+    - resources: 0
       amount: 1
   - name: Neji Hyuga
     loreInfo: Child - Team Guy
@@ -507,6 +523,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 0
     headAmount: 0
+    focusArea: 34
     tier: 3
     fire: 1
     wind: 0
@@ -538,24 +555,25 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
+    focusArea: 31
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>The Effect on your
-      opponent\u2019s next  <sprite=8>  will be canceled. \r"
+    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>Cancel the Effect
+      on your opponent\u2019s  <sprite=8> ."
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 17
-      amount: 1
     - resources: 16
+      amount: 1
+    - resources: 17
       amount: 1
     - resources: 13
       amount: 1
     - resources: 11
-      amount: 2
+      amount: 3
   - name: Neji Hyuga
     loreInfo: Teenager - 4th Ninja War - 2nd Division
     index: 18
@@ -569,6 +587,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 0
     headAmount: 3
+    focusArea: 33
     tier: 5
     fire: 1
     wind: 0
@@ -576,8 +595,8 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Give your opponent
-      1 BP. If your opponent doesn\u2019t win the War from this Battle, the War ends
-      and you win. Trash this  <sprite=2>  after Scoring.\r"
+      1 BP.\n<size=20%>\n<size=75>If your opponent doesn't have 3BP, the War ends
+      and you win.\n<size=20%>\n<size=75>If so, Trash this  <sprite=2>  after Scoring.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -601,25 +620,26 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 0
     headAmount: 1
+    focusArea: 39
     tier: 4
     fire: 0
     wind: 0
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Draw 1 <sprite=10>
-      up to your Hand.\r"
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Draw 1 <sprite=10> 
+      to your Hand.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 6
       amount: 1
-    - resources: 0
+    - resources: 18
       amount: 1
     - resources: 15
-      amount: 2
-  - name: Tokuma Hyuga
+      amount: 1
+  - name: Tori Hyuga
     loreInfo: Adult - Konoha Chuunin
     index: 20
     set: 1
@@ -627,20 +647,21 @@ MonoBehaviour:
     cardType: 1
     clan: 3
     landOrigins: 17
-    TaijutsuValue: 3
+    TaijutsuValue: 2
     NinjutsuValue: 4
     GenjutsuValue: 2
     heal: 1
     headAmount: 0
-    tier: 2
+    focusArea: 38
+    tier: 1
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If the next  <sprite=8> 
-      your opponent plays in this War is either of  <sprite=9>  <sprite=10>  <sprite=11>
-      , immediately draw\n2 <sprite=9> up to your Hand.\r"
+    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>If your opponent
+      plays either of  <sprite=9>  <sprite=10>  <sprite=11> , immediately draw 2
+      <sprite=9> .\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0

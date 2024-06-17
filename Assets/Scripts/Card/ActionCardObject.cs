@@ -11,6 +11,7 @@ public class ActionCardObject : MonoBehaviour
     public TextMeshProUGUI type;
 
     public List<GameObject> coin;
+    public List<GameObject> hiddenDeckIcon;
     public Image icon;
 
     public GameObject fireBlock;

@@ -26,6 +26,7 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 2
     headAmount: 2
+    focusArea: 39
     tier: 4
     fire: 0
     wind: 1
@@ -33,18 +34,18 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Draw  <sprite=10> 
-      until you find one containing  <sprite=86> . Take this  <sprite=10>  up to
-      your Hand and Discard the rest.\r"
+      until you find one containing  <sprite=86> .\n<size=20%>\n<size=75>Discard
+      the rest.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 0
+    - resources: 1
+      amount: 1
     - resources: 5
       amount: 1
     - resources: 6
       amount: 1
-    - resources: 17
-      amount: 2
   - name: Akita Inuzuka
     loreInfo: Adult - 4th Ninja War - 5th Division
     index: 268
@@ -58,15 +59,20 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 0
+    focusArea: 7
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give your opponent 
-      <sprite=18>  equal to the lowest Strength of its Combat Styles from the previous
-      Battle in this War.\r"
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=75>Give your opponent 
+      <sprite=18>  equal to the middel  <sprite=122> <sprite=123> <sprite=124>  dispayed
+      on its  <sprite=8>  from
+
+      the previous Battle.'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -75,8 +81,8 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 2
+    - resources: 16
+      amount: 1
   - name: ANBU
     loreInfo: Adult - ANBU 1
     index: 269
@@ -90,15 +96,16 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 16
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>In Hand \u2013 Before Scoring:</b></u>\r\n<size=75>Get
-      1  <sprite=22>  for each of your Combat Styles of 5 and higher in Strength,
-      on your played  <sprite=8> .\r"
+    effectText: "<size=85><b><u>In Hand \u2013 During any Battle:</b></u>\r\n<size=75>Get
+      2 <sprite=22>  for each  <sprite=122> <sprite=123> <sprite=124>  in this Battle
+      with a Value of 5 and above."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -122,6 +129,7 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 31
     tier: 4
     fire: 0
     wind: 1
@@ -129,7 +137,7 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>In Hand \u2013 Least BP:</b></u>\r\n<size=75>Get
-      1 BP.\r"
+      2 BP.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -153,16 +161,17 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 21
     tier: 4
     fire: 0
     wind: 1
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>In Hand - Scoring:</b></u>\r\n<size=75>Get 1 Point
-      for each  <sprite=8>  with a Strength of 7 or more in any Combat Style, in
-      the War you participate in. Move Up 1 space for each Point gathered, in any
-      of the Domination Tracks.\r"
+    effectText: "<size=85><b><u>In Hand - Your Scoring:</b></u>\r\n<size=75>Get 1
+      Point for each  <sprite=122> <sprite=123> <sprite=124>  in this War with a
+      Value of 7 and above.\n<size=20%>\n<size=75>Move up 1 spot for each Point gathered,
+      in any of the Domination Tracks.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -186,6 +195,7 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 2
     tier: 4
     fire: 0
     wind: 0
@@ -193,8 +203,8 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>In Hand \u2013 Action On your Turn:</b></u>\r\n<size=75>Look
-      at the Hand of all other players. Swap places of 1  <sprite=8>  from each Hand
-      with each other.\r"
+      at the Hand of all players.\n<size=20%>\n<size=75>Swap 1 <sprite=8>  from each
+      Hand with each other, so that all players have at least 1 new  <sprite=8> ."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -218,14 +228,22 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 21
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>In Hand:</b></u>\r\n<size=75>Move Up 1 space in all
-      Domination Track.\r"
+    effectText: '<size=85><b><u>In Hand - At any Time:</b></u>
+
+      <size=75>Move
+      up 1 spot in all tracks on the Dominance Board.
+
+      <size=15%>
+
+      <size=74>If
+      you are at the top in any track, choose another track to move up in instead.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -249,15 +267,18 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 17
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>In Hand \u2013 When Playing  <sprite=0> \u201CTravel\u201D:</b></u>\r\n<size=75>You
-      may initiate a War against any  <sprite=23>  without having the required Strength
-      in your group of \n <sprite=49>  <sprite=50>  <sprite=51> .\r"
+    effectText: "<size=85><b><u>In Hand \u2013 When Playing <sprite=0> \u201CTravel\u201D:</b></u>\r\n<size=75>You
+      may initiate a War against any  <sprite=23> .\n<size=20%>\n<size=75>You don't
+      need to play  <sprite=0>  \"War\".\n<size=20%>\n<size=75>You don't need to
+      have the required Strength in your group of  <sprite=49>  <sprite=50>  <sprite=51>
+      .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -281,6 +302,7 @@ MonoBehaviour:
     GenjutsuValue: 8
     heal: 2
     headAmount: 0
+    focusArea: 0
     tier: 4
     fire: 1
     wind: 0
@@ -290,45 +312,45 @@ MonoBehaviour:
     effectText: 
     effectIcon: 020000000000000000000000
     resources:
-    - resources: 18
+    - resources: 12
+      amount: 2
+    - resources: 15
       amount: 2
     - resources: 16
       amount: 2
-    - resources: 17
+    - resources: 18
       amount: 2
-    - resources: 12
-      amount: 3
-  - name: Choji Akimichi
-    loreInfo: Teenager - Naruto The Last
-    index: 276
+  - name: Chiyomatsu
+    loreInfo: Adult - Samurai
+    index: 338
     set: 1
-    characterSprite: {fileID: 21300000, guid: 3823573878993a149b619642af15c1f2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 206e512a7b5821045bbb1cc4d85322f1, type: 3}
     cardType: 1
     clan: 11
     landOrigins: 17
-    TaijutsuValue: 8
-    NinjutsuValue: 5
+    TaijutsuValue: 9
+    NinjutsuValue: 2
     GenjutsuValue: 4
     heal: 2
     headAmount: 3
+    focusArea: 0
     tier: 4
-    fire: 1
+    fire: 0
     wind: 0
     lightning: 0
-    earth: 1
+    earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Remove the Effect
-      on the rest of your opponent\u2019s  <sprite=8>  in this War after this Battle.\r"
-    effectIcon: 000000000000000000000000
+    effectText: 
+    effectIcon: 010000000100000001000000
     resources:
     - resources: 0
       amount: 2
     - resources: 0
       amount: 2
-    - resources: 0
+    - resources: 5
       amount: 2
-    - resources: 0
-      amount: 2
+    - resources: 16
+      amount: 3
   - name: Choji Akimichi
     loreInfo: Teenager - 4th Ninja War - 4th Division
     index: 277
@@ -342,14 +364,15 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 2
+    focusArea: 33
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Remove the Effect
-      on your opponent\u2019s  <sprite=8>  in this and the next Battle.\r"
+    effectText: "<size=85><b><u>This and Next Battle:</b></u>\r\n<size=75>Cancel
+      the Effect on your opponents'  <sprite=8> . \r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -358,7 +381,39 @@ MonoBehaviour:
       amount: 2
     - resources: 0
       amount: 2
-    - resources: 2
+    - resources: 0
+      amount: 2
+  - name: Choji Akimichi
+    loreInfo: Teenager - Naruto The Last
+    index: 276
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 3823573878993a149b619642af15c1f2, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 3
+    focusArea: 33
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: "<size=85><b><u>Future Battles:</b></u>\r\n<size=75>Cancel the Effect
+      on your opponents'  <sprite=8> . \r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 2
+    - resources: 0
       amount: 2
   - name: Choji Akimichi
     loreInfo: Teenager - Team 10
@@ -373,24 +428,26 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 1
+    focusArea: 16
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If your opponent has
-      a combined strength of all its Combat Styles played in this War, of 7 or higher
-      than yours, receive 5  <sprite=22> .\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
+      has a combined  <sprite=122> <sprite=123> <sprite=124>  on its  <sprite=8> 
+      of 5 or higher than this  <sprite=122> <sprite=123> <sprite=124> , receive
+      5 <sprite=22> .\r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 13
+    - resources: 0
       amount: 1
-    - resources: 16
-      amount: 1
-    - resources: 1
+    - resources: 0
       amount: 2
     - resources: 2
+      amount: 2
+    - resources: 13
       amount: 2
   - name: "Ch\u014Dj\u016Br\u014D"
     loreInfo: Adult - Mizukage's Retainer -                           7 Ninja Swordmen
@@ -404,7 +461,8 @@ MonoBehaviour:
     NinjutsuValue: 6
     GenjutsuValue: 3
     heal: 2
-    headAmount: 3
+    headAmount: 4
+    focusArea: 47
     tier: 4
     fire: 0
     wind: 0
@@ -423,7 +481,7 @@ MonoBehaviour:
     - resources: 16
       amount: 2
     - resources: 18
-      amount: 4
+      amount: 3
   - name: Dodai
     loreInfo: Teenager - 3rd Raikage's Attendant
     index: 280
@@ -437,21 +495,23 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 2
     headAmount: 2
+    focusArea: 30
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Play another Battle
-      and move this  <sprite=10>  into that Battle. You must play another  <sprite=8> 
-      in this Battle and your opponent a new  <sprite=8>  in the next. Then resolve
-      BP for both Battles at the same time.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=73>Make room for another
+      Battle and move this  <sprite=10>  into the new Battle.\n<size=10%>\n<size=73>You
+      must play another  <sprite=8>  in this Battle and your opponent another  <sprite=8> 
+      in the new one.\n<size=10%>\n<size=73>Resolve the BP for both Battles at the
+      same time.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 11
       amount: 1
     - resources: 13
       amount: 1
@@ -470,14 +530,16 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 4
+    focusArea: 1
     tier: 4
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>For the rest of the
-      Round, you\u2019re immune to other player\u2019s  <sprite=0>  \u201CSpecialty\u201D.\r"
+    effectText: "<size=85><b><u>For the rest of the Round:</b></u>\n<size=75>You
+      cannot be affected by other players'\n <sprite=0> \"Specialty\".\n<size=20%>\n<size=75>You
+      can still be affected by players Passive Specialty."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -501,24 +563,24 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 0
+    focusArea: 34
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Remove 1 Resource
-      of your choice from\nthis  <sprite=10>  for each  <sprite=8>  \u201CGirl\u201D
-      in this War.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Remove 2 Resources from
+      this  <sprite=10>  for\neach  <sprite=8>  \u201CGirl\u201D in this War.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 5
-      amount: 2
-    - resources: 15
-      amount: 3
-    - resources: 17
       amount: 3
     - resources: 2
+      amount: 3
+    - resources: 15
+      amount: 3
+    - resources: 18
       amount: 3
   - name: Ensui Nara
     loreInfo: Adult - 4th Ninja War - 3rd Division
@@ -533,15 +595,15 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 2
     headAmount: 0
+    focusArea: 35
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Remove both the
-      Effect and the Resources from your opponent\u2019s  <sprite=8>  played during
-      the last Battle.\r"
+    effectText: "<size=85><b><u>Last Battle in the War:</b></u>\r\n<size=75>Remove
+      both the Effect and the Resources from your opponent\u2019s  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -565,24 +627,25 @@ MonoBehaviour:
     GenjutsuValue: 8
     heal: 1
     headAmount: 0
+    focusArea: 4
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Look at your opponent\u2019s
-      Hand.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Look at your opponent\u2019s 
+      <sprite=8> .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 2
     - resources: 0
       amount: 3
+    - resources: 11
+      amount: 1
     - resources: 13
       amount: 1
-    - resources: 17
-      amount: 2
   - name: Fukai
     loreInfo: "Adult - Jinch\u016Briki - Blue B"
     index: 285
@@ -596,6 +659,7 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 1
     headAmount: 2
+    focusArea: 39
     tier: 4
     fire: 0
     wind: 0
@@ -603,7 +667,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If this  <sprite=10> 
-      is the last  <sprite=9>  <sprite=10>  <sprite=11>  you own, draw 2  <sprite=10>
+      is the last  <sprite=9>  <sprite=10>  <sprite=11>  you own, draw 2 <sprite=10>
       .\r"
     effectIcon: 020000000000000000000000
     resources:
@@ -628,15 +692,15 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 2
+    focusArea: 52
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=75>Draw 2  <sprite=7>  from
-      your Draw Pile. Place 2 other  <sprite=7>  from your Hand back into your Draw
-      Pile, anywhere you want.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=75>Draw 2  <sprite=7> .\n<size=10%>\n<size=75>Place
+      2  <sprite=7>  from your Hand into your Draw Pile, anywhere you want.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 2
@@ -646,7 +710,7 @@ MonoBehaviour:
     - resources: 16
       amount: 2
     - resources: 18
-      amount: 3
+      amount: 2
   - name: Hana Unuzuka
     loreInfo: Adult - Konoha Medical Corps
     index: 287
@@ -660,6 +724,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 1
+    focusArea: 53
     tier: 4
     fire: 0
     wind: 0
@@ -669,7 +734,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>After the War:</b></u>
 
       <size=75>Give your
-      opponent all of your  <sprite=18>  <sprite=19>  from your Supply.
+      opponent all of your  <sprite=19>  <sprite=18> .
 
 '
     effectIcon: 010000000000000000000000
@@ -695,6 +760,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 2
+    focusArea: 20
     tier: 4
     fire: 0
     wind: 1
@@ -714,38 +780,6 @@ MonoBehaviour:
     - resources: 5
       amount: 3
   - name: Ino Yamanaka
-    loreInfo: Teenager - Naruto The Last
-    index: 289
-    set: 1
-    characterSprite: {fileID: 21300000, guid: f532356b5f8133943a5159dee067d5bc, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 5
-    NinjutsuValue: 7
-    GenjutsuValue: 8
-    heal: 1
-    headAmount: 3
-    tier: 4
-    fire: 1
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If this is not the
-      last Battle, look at your opponent\u2019s Hand and decide which  <sprite=8> 
-      to play during the next Battle.\r"
-    effectIcon: 000000000000000000000000
-    resources:
-    - resources: 0
-      amount: 2
-    - resources: 0
-      amount: 1
-    - resources: 16
-      amount: 1
-    - resources: 10
-      amount: 4
-  - name: Ino Yamanaka
     loreInfo: Teenager - 4th Ninja War - 5th Division
     index: 290
     set: 1
@@ -758,22 +792,55 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 1
     headAmount: 2
+    focusArea: 4
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Take your opponent\u2019s 
-      <sprite=8>  played in this Battle up to your Hand. Your opponent must play
-      a new  <sprite=8>  in this Battle.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Take your opponent\u2019s
+      played  <sprite=8>  up to your Hand.\n<size=20%>\n<size=75>Your opponent must
+      play a new  <sprite=8>  in this Battle.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 2
-    - resources: 16
+    - resources: 0
       amount: 1
     - resources: 2
+      amount: 2
+    - resources: 10
+      amount: 3
+  - name: Ino Yamanaka
+    loreInfo: Teenager - Naruto The Last
+    index: 289
+    set: 1
+    characterSprite: {fileID: 21300000, guid: f532356b5f8133943a5159dee067d5bc, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 7
+    GenjutsuValue: 8
+    heal: 1
+    headAmount: 3
+    focusArea: 4
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Before Next Battle:</b></u>\r\n<size=75>Look at your
+      opponent\u2019s  <sprite=8>  and decide \nwhich  <sprite=8>  to play.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 18
       amount: 2
     - resources: 10
       amount: 3
@@ -790,25 +857,26 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 1
     headAmount: 1
+    focusArea: 34
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>During this Scoring,
-      receive all Resources from your opponent\u2019s  <sprite=8> . Your opponent
-      receives all your Resources.\r"
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Receive all Resources
+      from your opponent\u2019s  <sprite=8> .\n<size=20%>\n<size=75>Your opponent
+      receives all Resources from your\n <sprite=8> ."
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 2
+    - resources: 0
       amount: 2
-    - resources: 10
+    - resources: 0
       amount: 2
     - resources: 17
       amount: 2
-    - resources: 18
-      amount: 3
+    - resources: 17
+      amount: 2
   - name: Iruka Umino
     loreInfo: Adult - Academy Instructor
     index: 292
@@ -822,25 +890,25 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 2
+    focusArea: 32
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give all future 
-      <sprite=8>  \u201CTeenager\u201D you play in this War +3 Strength in all Combat
-      Styles.\r"
+    effectText: "<size=85><b><u>Future Battles:</b></u>\r\n<size=75>All your  <sprite=8> 
+      \u201CTeenager\u201D get +3 <sprite=122> <sprite=123> <sprite=124> ."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 2
-    - resources: 2
+    - resources: 4
       amount: 1
     - resources: 5
       amount: 1
     - resources: 18
-      amount: 3
+      amount: 2
   - name: Iwashi Tatami
     loreInfo: Adult - Chunin Exams Invigilator
     index: 293
@@ -854,14 +922,15 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 2
     headAmount: 1
+    focusArea: 34
     tier: 4
     fire: 0
     wind: 1
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Remove all Resources
-      from your opponent\u2019s  <sprite=8>  in all even-numbered Battles.\r"
+    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Cancel the Resources
+      on your opponent\u2019s  <sprite=8>  played in odd-numbered Battles."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -885,14 +954,15 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
+    focusArea: 32
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>All of your opponent\u2019s 
-      <sprite=8>  played after this Battle, lose\n-2 in each Combat Style.\r"
+    effectText: "<size=85><b><u>Future Battles:</b></u>\n<size=75>Your opponent's 
+      <sprite=8> \nloose -2 <sprite=122> <sprite=123> <sprite=124> ."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -916,15 +986,15 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 2
+    focusArea: 0
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>All of your opponent\u2019s 
-      <sprite=8>  played in this and all future Battles in this War, lose -2 in each
-      Combat Style.\r"
+    effectText: "<size=81><b><u>This and Future Battles:</b></u>\n<size=75>Your opponent's 
+      <sprite=8> \nloose -2 <sprite=122> <sprite=123> <sprite=124> ."
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -948,6 +1018,7 @@ MonoBehaviour:
     GenjutsuValue: 1
     heal: 1
     headAmount: 0
+    focusArea: 29
     tier: 4
     fire: 1
     wind: 0
@@ -955,10 +1026,9 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Continue the War
-      at least 1 more Battle. Then guess the gender of your opponent\u2019s next 
-      <sprite=8> . \r\nIf you\u2019re guessing correctly, the War ends with you as
-      the winner. If you\u2019re guessing wrong, the War ends with your opponent
-      as the winner.\r"
+      for 1 more Battle and guess the gender of your opponent\u2019s next  <sprite=8>
+      . \r\n<size=20%>\n<size=75>If you\u2019re correct, Win the War.\nIf you\u2019re
+      wrong, Lose the War.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -982,6 +1052,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
+    focusArea: 52
     tier: 4
     fire: 0
     wind: 1
@@ -1013,6 +1084,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 2
+    focusArea: 0
     tier: 4
     fire: 1
     wind: 0
@@ -1031,6 +1103,39 @@ MonoBehaviour:
     - resources: 11
       amount: 3
   - name: Kakashi Hatake
+    loreInfo: Child - Team Yamato
+    index: 300
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 518f1570f8588b3439ac916ad27acfdf, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 2
+    headAmount: 1
+    focusArea: 34
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=82><b><u>For the rest of the War:</b></u>\r\n<size=75>If your
+      opponent receives any Resources from its Effect on played  <sprite=8> , you
+      receive them instead.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 15
+      amount: 2
+  - name: Kakashi Hatake
     loreInfo: Teenager - ANBU
     index: 299
     set: 1
@@ -1043,13 +1148,14 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
+    focusArea: 17
     tier: 4
     fire: 1
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>In Hand \u2013 Wehn Receiving a  <sprite=23> :</b></u>\r\n<size=75>You
+    effectText: "<size=85><b><u>In Hand \u2013 When Receiving a  <sprite=23> :</b></u>\r\n<size=75>You
       can never lose this  <sprite=23> , no matter what other rules apply.\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -1060,38 +1166,6 @@ MonoBehaviour:
     - resources: 0
       amount: 3
     - resources: 0
-      amount: 3
-  - name: Kakashi Hatake
-    loreInfo: Child - Team Yamato
-    index: 300
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 518f1570f8588b3439ac916ad27acfdf, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 5
-    NinjutsuValue: 6
-    GenjutsuValue: 3
-    heal: 2
-    headAmount: 1
-    tier: 4
-    fire: 1
-    wind: 1
-    lightning: 1
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>From this point
-      on in the War, if your opponent receives any Resources from Effects on its 
-      <sprite=8> , you receive them instead.\r"
-    effectIcon: 010000000000000000000000
-    resources:
-    - resources: 0
-      amount: 2
-    - resources: 11
-      amount: 1
-    - resources: 17
-      amount: 1
-    - resources: 15
       amount: 3
   - name: Kankuro
     loreInfo: Teenager - Sand Siblings - 4th Ninja War - Leader of Surprise Attack
@@ -1107,15 +1181,16 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 2
+    focusArea: 27
     tier: 4
     fire: 0
     wind: 1
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>From this point
-      on in the War, take control over all \n <sprite=69>  <sprite=70>  that appear
-      on your opponent\u2019s  <sprite=8> .\r"
+    effectText: "<size=85><b><u>Future Battles:</b></u>\r\n<size=75>Take control
+      over any\n <sprite=69>  and  <sprite=70>  that appear on your opponent\u2019s 
+      <sprite=8> .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -1138,16 +1213,19 @@ MonoBehaviour:
     NinjutsuValue: 7
     GenjutsuValue: 3
     heal: 1
-    headAmount: 4
+    headAmount: 3
+    focusArea: 10
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Give your opponent
-      1  <sprite=21> .\r"
-    effectIcon: 020000000000000000000000
+    effectText: '<size=85><b><u>Least BP:</b></u>
+
+      <size=75>Give your opponent
+      1 <sprite=21> .'
+    effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 2
@@ -1170,6 +1248,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 1
+    focusArea: 21
     tier: 4
     fire: 0
     wind: 0
@@ -1177,7 +1256,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move your opponent
-      down\n1 space in all Dominance Tracks.\r"
+      down\n1 spot in all Dominance Tracks.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -1186,7 +1265,7 @@ MonoBehaviour:
       amount: 1
     - resources: 11
       amount: 1
-    - resources: 17
+    - resources: 16
       amount: 2
   - name: Kiba Inuzuka
     loreInfo: Teenager - Team 10
@@ -1201,6 +1280,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 1
+    focusArea: 31
     tier: 4
     fire: 0
     wind: 0
@@ -1231,6 +1311,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 3
+    focusArea: 31
     tier: 4
     fire: 0
     wind: 0
@@ -1261,6 +1342,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 2
+    focusArea: 31
     tier: 4
     fire: 0
     wind: 0
@@ -1272,10 +1354,10 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 2
-    - resources: 1
+    - resources: 0
       amount: 1
     - resources: 11
-      amount: 1
+      amount: 2
     - resources: 13
       amount: 2
   - name: Koharu Utatane
@@ -1291,15 +1373,15 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 1
     headAmount: 3
+    focusArea: 29
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If the Effect on
-      your opponent\u2019s next  <sprite=8>  in \nthis War affect you in any negative
-      way,\nWin the War.\r"
+    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>If the Effect on
+      your opponent\u2019s  <sprite=8>  affect you in any negative way, Win the War.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1323,6 +1405,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 7
+    focusArea: 0
     tier: 4
     fire: 0
     wind: 1
@@ -1336,8 +1419,8 @@ MonoBehaviour:
       amount: 2
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
+    - resources: 5
+      amount: 2
     - resources: 5
       amount: 2
   - name: Konohamaru Sarutobi
@@ -1353,6 +1436,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 1
+    focusArea: 16
     tier: 4
     fire: 1
     wind: 1
@@ -1360,15 +1444,15 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get as many  <sprite=22> 
-      as points of your  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  \non
-      the Battlefield.\r"
+      as points of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  you have
+      on this Battlefield.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 2
     - resources: 0
       amount: 1
-    - resources: 8
+    - resources: 7
       amount: 1
     - resources: 2
       amount: 2
@@ -1385,6 +1469,7 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 2
     headAmount: 1
+    focusArea: 52
     tier: 4
     fire: 0
     wind: 0
@@ -1395,14 +1480,14 @@ MonoBehaviour:
       <sprite=7>  from your opponent\u2019s Draw Pile into your Draw Pile.\r"
     effectIcon: 010000000000000000000000
     resources:
-    - resources: 0
-      amount: 2
     - resources: 5
       amount: 1
     - resources: 13
       amount: 1
-    - resources: 17
-      amount: 1
+    - resources: 16
+      amount: 2
+    - resources: 18
+      amount: 2
   - name: Kotetsu Hagane
     loreInfo: Adult - Konoha Barrier Team
     index: 311
@@ -1416,14 +1501,17 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 2
+    focusArea: 37
     tier: 4
     fire: 0
     wind: 0
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>The rest of the 
-      <sprite=8>  you play in this War cannot get anything removed from them.\r"
+    effectText: '<size=85><b><u>For the rest of the War:</b></u>
+
+      <size=75>Nothing
+      on your  <sprite=8>  can be canceled.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -1447,15 +1535,16 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 1
     headAmount: 0
+    focusArea: 21
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Get 1  <sprite=52> 
-      for each  <sprite=52>  and  <sprite=53>  you had in this War as a Resource
-      on your played  <sprite=8> .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get 1 additional  <sprite=52> 
+      for each  <sprite=52>  and  <sprite=53>  as Resources on your played  <sprite=8>
+      .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1479,21 +1568,22 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 1
     headAmount: 0
+    focusArea: 0
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Get 1  <sprite=53> 
-      for each  <sprite=53>  you got in this War as a Resource.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get 1 additional  <sprite=52> 
+      for each  <sprite=53>  as Resources on your played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 2
-    - resources: 9
-      amount: 1
     - resources: 1
+      amount: 1
+    - resources: 7
       amount: 1
     - resources: 17
       amount: 1
@@ -1510,14 +1600,15 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 2
     headAmount: 3
+    focusArea: 10
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Give your opponent a 
-      <sprite=21>  that cannot be removed for the rest of the Game.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Give your opponent 1
+      <sprite=21> .\n<size=20%>\n<size=75>This  <sprite=21>  cannot be removed.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -1526,8 +1617,8 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
+    - resources: 17
+      amount: 3
   - name: Maruten Akimichi
     loreInfo: Adult - Konoha Tokubetsu Jounin
     index: 315
@@ -1541,22 +1632,23 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 2
+    focusArea: 1
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1  <sprite=0> 
-      \u201CFire\u201D from the Shop up to your Hand, if available.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Take 1 <sprite=0>  \u201CFire\u201D
+      from the Shop, if available.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 2
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
+    - resources: 6
+      amount: 2
     - resources: 16
       amount: 3
   - name: Motoi
@@ -1572,6 +1664,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 1
+    focusArea: 29
     tier: 4
     fire: 0
     wind: 0
@@ -1579,17 +1672,17 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If the Battlefield
-      unfolds on \u201CTurtle Island\u201D,\nwin the war after one of the players
-      have\nreached 3 BP.\r"
+      unfolds on the \u201CTurtle Island\u201D,\nWin the War after getting 3 BP.\n<size=20%>\n<size=75>Your
+      opponent may get more than 3 BP without winning."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 2
     - resources: 0
       amount: 1
-    - resources: 5
+    - resources: 1
       amount: 1
-    - resources: 12
+    - resources: 5
       amount: 1
   - name: Mozuku
     loreInfo: Adult - Chunin Exams Invigilator
@@ -1604,15 +1697,15 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 1
+    focusArea: 31
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, if your opponent\u2019s  <sprite=8>  has\nfewer  <sprite=86>  than
-      yours, \nget 1 BP.\r"
+    effectText: "<size=85><b><u>Future Battles:</b></u>\r\n<size=75>If your opponent\u2019s 
+      <sprite=8>  has fewer  <sprite=86>  than yours, \nget 1 BP.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -1636,6 +1729,7 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 1
     headAmount: 0
+    focusArea: 15
     tier: 4
     fire: 1
     wind: 0
@@ -1668,14 +1762,15 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
+    focusArea: 39
     tier: 4
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>If you use  <sprite=59> 
-      , don\u2019t Discard this  <sprite=10>  after the War.\r"
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>If you perform
+      this  <sprite=59>  ,\nkeep this  <sprite=10>  after the War.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -1685,7 +1780,7 @@ MonoBehaviour:
     - resources: 5
       amount: 1
     - resources: 18
-      amount: 3
+      amount: 2
   - name: Okisuke
     loreInfo: Adult - Samurai - Mifune's Right Hand
     index: 320
@@ -1698,7 +1793,8 @@ MonoBehaviour:
     NinjutsuValue: 4
     GenjutsuValue: 3
     heal: 2
-    headAmount: 2
+    headAmount: 0
+    focusArea: 27
     tier: 4
     fire: 0
     wind: 0
@@ -1714,8 +1810,8 @@ MonoBehaviour:
       amount: 2
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
+    - resources: 16
+      amount: 2
     - resources: 11
       amount: 3
   - name: Omio
@@ -1727,27 +1823,28 @@ MonoBehaviour:
     clan: 11
     landOrigins: 3
     TaijutsuValue: 6
-    NinjutsuValue: 4
-    GenjutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 1
     heal: 2
     headAmount: 1
+    focusArea: 40
     tier: 4
     fire: 0
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you\u2019re in
-      a War against a \n <sprite=23> , draw 2  <sprite=11> .\r"
+    effectText: "<size=85><b><u>War against a <sprite=23> :</b></u>\r\n<size=74>Draw
+      2 <sprite=11> .\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
       amount: 2
-    - resources: 1
+    - resources: 0
       amount: 1
-    - resources: 2
+    - resources: 0
       amount: 1
-    - resources: 6
+    - resources: 0
       amount: 1
   - name: Pakura
     loreInfo: Adult - Hero of the Hidden Sand Village
@@ -1762,24 +1859,25 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 2
+    focusArea: 1
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After The War:</b></u>\r\n<size=75>Draw 2  <sprite=0> 
-      \u201CFire\u201D from the Shop up to your Hand, if available.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 2 <sprite=0>  \u201CFire\u201D
+      from the Shop, if available.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 2
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 17
-      amount: 1
+    - resources: 16
+      amount: 2
+    - resources: 18
+      amount: 2
   - name: Raido Namiashi
     loreInfo: Adult - 4th Hokage's Bodyguard
     index: 323
@@ -1789,10 +1887,11 @@ MonoBehaviour:
     clan: 11
     landOrigins: 17
     TaijutsuValue: 5
-    NinjutsuValue: 5
-    GenjutsuValue: 2
+    NinjutsuValue: 6
+    GenjutsuValue: 4
     heal: 2
     headAmount: 2
+    focusArea: 19
     tier: 4
     fire: 1
     wind: 1
@@ -1811,7 +1910,7 @@ MonoBehaviour:
     - resources: 5
       amount: 2
     - resources: 15
-      amount: 3
+      amount: 2
   - name: Rock Lee
     loreInfo: Teenager - 4th Ninja War - 3rd Division
     index: 324
@@ -1825,6 +1924,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 2
+    focusArea: 40
     tier: 4
     fire: 0
     wind: 0
@@ -1833,14 +1933,14 @@ MonoBehaviour:
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
       is higher than you in the \n <sprite=80>  Domination Track,\ndraw 1 <sprite=11> 
-      \u201CMight Guy\u201D.\r"
+      \u201CMight Guy\u201D, if available."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
       amount: 2
-    - resources: 3
+    - resources: 0
       amount: 1
-    - resources: 5
+    - resources: 3
       amount: 1
     - resources: 13
       amount: 1
@@ -1857,15 +1957,16 @@ MonoBehaviour:
     GenjutsuValue: 9
     heal: 2
     headAmount: 0
+    focusArea: 37
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>From this point
-      on in the War (this Battle included), you cannot be affected negatively by
-      your opponent in any way, other than losing the War. \r"
+    effectText: "<size=85><b><u>The rest of the War:</b></u>\r\n<size=75>You cannot
+      be affected negatively by your opponent in any way (this Battle included).\n<size=10%>\n<size=75>You
+      can lose the War. \r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -1889,6 +1990,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 3
+    focusArea: 45
     tier: 4
     fire: 0
     wind: 0
@@ -1898,12 +2000,14 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Scoring:</b></u>
 
       <size=75>Move your opponent
-      Down
+      down
 
-      1 space in any of the Dominance Tracks. Then move yourself Up 1
-      space
+      1 spot in any Dominance Track.
 
-      in 3 others.'
+      <size=20%>
+
+      <size=75>Then
+      move yourself up 1 spot in 3 others.'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -1927,14 +2031,15 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
+    focusArea: 45
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Swap positions with
-      your opponent in 1 Domination Track of your choice.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Swap spots with
+      your opponent in 2 Domination Tracks of your choice.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -1946,73 +2051,10 @@ MonoBehaviour:
     - resources: 13
       amount: 1
   - name: Sai
-    loreInfo: Teenager - Team 7
-    index: 328
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 1420f402553a72544b0d52e23b184222, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 2
-    NinjutsuValue: 6
-    GenjutsuValue: 4
-    heal: 2
-    headAmount: 1
-    tier: 4
-    fire: 1
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll the  <sprite=85>
-      . \nGet as many  <sprite=9>  as the result, up to your Hand.\r"
-    effectIcon: 000000000000000000000000
-    resources:
-    - resources: 0
-      amount: 2
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-  - name: Sai
-    loreInfo: Teenager - Naruto The Last
-    index: 329
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 8802a349919b6fa4abdf9d55fb6e5b6c, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 2
-    NinjutsuValue: 8
-    GenjutsuValue: 6
-    heal: 2
-    headAmount: 3
-    tier: 4
-    fire: 1
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll the  <sprite=85>
-      . \nGet as many  <sprite=17>  as the result, which must be evenly distributed
-      to the other players. \r"
-    effectIcon: 000000000000000000000000
-    resources:
-    - resources: 0
-      amount: 2
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-  - name: Sai
     loreInfo: Teenager - 4th Ninja War
     index: 330
     set: 1
-    characterSprite: {fileID: 21300000, guid: 8802a349919b6fa4abdf9d55fb6e5b6c, type: 3}
+    characterSprite: {fileID: 21300000, guid: 6fc0104745cfb284898b6087484fd8c3, type: 3}
     cardType: 1
     clan: 11
     landOrigins: 17
@@ -2021,15 +2063,16 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 2
+    focusArea: 7
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll the  <sprite=85>
-      . \nGet as many  <sprite=18>  as the result, which must be evenly distributed
-      to the other players. \r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll a d10  <sprite=85>
+      . \n<size=20%>\n<size=75>Get  <sprite=18>  equal to the result, which must
+      be evenly distributed to the other players. \r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2053,15 +2096,49 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
+    focusArea: 51
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75> Roll the  <sprite=85>
-      . \nFor the rest of this Round, your  <sprite=84>  Hand Limit is equal to the
-      result."
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll a d12  <sprite=85>
+      . \n<size=20%>\n<size=75>For the rest of this Round, your  <sprite=84>  Hand
+      Limit is equal to the result."
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 12
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 13
+      amount: 2
+  - name: Sai
+    loreInfo: Teenager - Naruto The Last
+    index: 329
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 8802a349919b6fa4abdf9d55fb6e5b6c, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 2
+    NinjutsuValue: 8
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 3
+    focusArea: 6
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll a d10  <sprite=85>
+      . \n<size=20%>\n<size=75>Get  <sprite=17>  equal to the result, which must
+      be evenly distributed to the other players. \r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2072,29 +2149,28 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-  - name: Sakura Haruno
+  - name: Sai
     loreInfo: Teenager - Team 7
-    index: 332
+    index: 328
     set: 1
-    characterSprite: {fileID: 21300000, guid: d2f1eab5f74864e4e953ce83bb8b03ea, type: 3}
+    characterSprite: {fileID: 21300000, guid: 1420f402553a72544b0d52e23b184222, type: 3}
     cardType: 1
     clan: 11
     landOrigins: 17
-    TaijutsuValue: 6
+    TaijutsuValue: 2
     NinjutsuValue: 6
     GenjutsuValue: 4
-    heal: 1
+    heal: 2
     headAmount: 1
+    focusArea: 38
     tier: 4
-    fire: 0
+    fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Remove 1 of your
-      opponent\u2019s  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  of your
-      choice from the Battlefield for each  <sprite=59>  \nthat appeared on  <sprite=8> 
-      in this War.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll a d8  <sprite=85>
+      . \n<size=20%>\n<size=75>Get  <sprite=9>  equal to the result.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2103,70 +2179,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 16
-      amount: 1
-  - name: Sakura Haruno
-    loreInfo: Teenager - Team 7 - Chiyo Puppet
-    index: 333
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 86d1672d353b7d74a8c4df395a4b912f, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 6
-    NinjutsuValue: 5
-    GenjutsuValue: 4
-    heal: 1
-    headAmount: 1
-    tier: 4
-    fire: 0
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Always get this 
-      <sprite=10>  back up to your Hand after\na War.\r"
-    effectIcon: 000000000000000000000000
-    resources:
     - resources: 0
-      amount: 2
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 17
-      amount: 1
-  - name: Sakura Haruno
-    loreInfo: Teenager - Naruto The Last
-    index: 334
-    set: 1
-    characterSprite: {fileID: 21300000, guid: dae3c3f7b4507784e9eeb8accee69333, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 8
-    NinjutsuValue: 7
-    GenjutsuValue: 5
-    heal: 1
-    headAmount: 3
-    tier: 4
-    fire: 0
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>You\u2019re the
-      only player allowed to perform\n <sprite=59>  for the rest of this Round. Effects
-      on \n <sprite=8>  regarding  <sprite=59>  will still happen.\r"
-    effectIcon: 000000000000000000000000
-    resources:
-    - resources: 0
-      amount: 2
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 17
       amount: 1
   - name: Sakura Haruno
     loreInfo: Teenager - 4th Ninja War - A Hundred Seal
@@ -2177,18 +2190,21 @@ MonoBehaviour:
     clan: 11
     landOrigins: 17
     TaijutsuValue: 8
-    NinjutsuValue: 7
+    NinjutsuValue: 6
     GenjutsuValue: 5
     heal: 1
     headAmount: 2
+    focusArea: 40
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw 1  <sprite=11> 
-      of your choice from its Discard Pile.\r"
+    effectText: '<size=85><b><u>After the War:</b></u>
+
+      <size=75>Draw 1 <sprite=11> 
+      from its Discard Pile, of your choice.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2212,6 +2228,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 2
+    focusArea: 23
     tier: 4
     fire: 0
     wind: 0
@@ -2219,7 +2236,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Get back on Hand
-      all other  <sprite=8>  you\u2019ve played \nin this War.\r"
+      all of your other played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2230,6 +2247,104 @@ MonoBehaviour:
       amount: 1
     - resources: 16
       amount: 1
+  - name: Sakura Haruno
+    loreInfo: Teenager - Naruto The Last
+    index: 334
+    set: 1
+    characterSprite: {fileID: 21300000, guid: dae3c3f7b4507784e9eeb8accee69333, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 8
+    NinjutsuValue: 7
+    GenjutsuValue: 5
+    heal: 1
+    headAmount: 3
+    focusArea: 23
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>For the rest of this Round:</b></u>\r\n<size=75>You\u2019re
+      the only player allowed to perform  <sprite=59> .\n<size=20%>\n<size=75>Effects
+      on  <sprite=8>  will still trigger as if  <sprite=59>  were to be performed."
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+  - name: Sakura Haruno
+    loreInfo: Teenager - Team 7 - Chiyo Puppet
+    index: 333
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 86d1672d353b7d74a8c4df395a4b912f, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 5
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 1
+    focusArea: 23
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Always get this 
+      <sprite=10>  back to your Hand after Scoring.\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+  - name: Sakura Haruno
+    loreInfo: Teenager - Team 7
+    index: 332
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d2f1eab5f74864e4e953ce83bb8b03ea, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 1
+    focusArea: 19
+    tier: 4
+    fire: 0
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Remove 1 of your opponent\u2019s 
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this Battlefield for
+      all  <sprite=59>  that has appeared\non  <sprite=8> .\r"
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 2
+      amount: 2
   - name: Samui
     loreInfo: Adult - Team Samui
     index: 337
@@ -2240,9 +2355,10 @@ MonoBehaviour:
     landOrigins: 3
     TaijutsuValue: 7
     NinjutsuValue: 6
-    GenjutsuValue: 3
+    GenjutsuValue: 4
     heal: 1
-    headAmount: 2
+    headAmount: 4
+    focusArea: 0
     tier: 4
     fire: 0
     wind: 0
@@ -2260,36 +2376,6 @@ MonoBehaviour:
       amount: 1
     - resources: 4
       amount: 1
-  - name: Chiyomatsu
-    loreInfo: Adult - Samurai
-    index: 338
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 206e512a7b5821045bbb1cc4d85322f1, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 9
-    NinjutsuValue: 2
-    GenjutsuValue: 4
-    heal: 2
-    headAmount: 3
-    tier: 4
-    fire: 0
-    wind: 0
-    lightning: 0
-    earth: 0
-    water: 0
-    effectText: 
-    effectIcon: 010000000100000001000000
-    resources:
-    - resources: 0
-      amount: 2
-    - resources: 0
-      amount: 2
-    - resources: 16
-      amount: 2
-    - resources: 17
-      amount: 2
   - name: Santa Yamanaka
     loreInfo: Adult - 4th Ninja War - 3rd Division
     index: 339
@@ -2299,19 +2385,19 @@ MonoBehaviour:
     clan: 11
     landOrigins: 17
     TaijutsuValue: 2
-    NinjutsuValue: 6
+    NinjutsuValue: 5
     GenjutsuValue: 8
     heal: 1
     headAmount: 2
+    focusArea: 4
     tier: 4
     fire: 0
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the next Battle
-      in this War, look at your opponent\u2019s Hand and select 1  <sprite=8>  to
-      play as yours.\r"
+    effectText: "<size=85><b><u>Before Next Battle:</b></u>\r\n<size=75>Look at your
+      opponent\u2019s  <sprite=8>  and choose 1 <sprite=8>  to play as yours.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2320,42 +2406,8 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 10
-      amount: 2
-  - name: Shikamaru Nara
-    loreInfo: Teenager - Naruto The Last
-    index: 340
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 2d8e3518f5b47c84d8141564a4cdafcd, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 4
-    NinjutsuValue: 8
-    GenjutsuValue: 7
-    heal: 2
-    headAmount: 3
-    tier: 4
-    fire: 1
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 0
-    effectText: '<size=85><b><u>Immediately:</b></u>
-
-      <size=75>Win the next
-      Battle if your opponent plays a  <sprite=8>  containing any Combat Style with
-      a Strengths of 7, 8 or 9.'
-    effectIcon: 000000000000000000000000
-    resources:
     - resources: 0
       amount: 2
-    - resources: 5
-      amount: 1
-    - resources: 11
-      amount: 1
-    - resources: 13
-      amount: 1
   - name: Shikamaru Nara
     loreInfo: Teenager - 4th Ninja War - 4th Division
     index: 341
@@ -2369,19 +2421,57 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 2
+    focusArea: 29
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Discard 1
-      of any  <sprite=9>  <sprite=10>  <sprite=11>  from your Hand and win the War.\r"
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Win the War
+      by Discarding 1 of any  <sprite=9>  <sprite=10>  <sprite=11>  from your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 5
       amount: 1
     - resources: 6
+      amount: 1
+    - resources: 11
+      amount: 1
+    - resources: 13
+      amount: 1
+  - name: Shikamaru Nara
+    loreInfo: Teenager - Naruto The Last
+    index: 340
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 2d8e3518f5b47c84d8141564a4cdafcd, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 4
+    NinjutsuValue: 8
+    GenjutsuValue: 7
+    heal: 2
+    headAmount: 3
+    focusArea: 31
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: '<size=85><b><u>Next Battle:</b></u>
+
+      <size=75>Win the Battle
+      if your opponent plays a  <sprite=8>  containing  <sprite=122> <sprite=123>
+      <sprite=124>  with
+
+      the Values 7, 8 or 9.'
+    effectIcon: 000000000000000002000000
+    resources:
+    - resources: 0
+      amount: 2
+    - resources: 5
       amount: 1
     - resources: 11
       amount: 1
@@ -2400,24 +2490,25 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
+    focusArea: 31
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Win the next Battle
-      if your opponent plays a\n <sprite=8>  containing any  <sprite=17>  <sprite=18> 
-      <sprite=19>  <sprite=20>  <sprite=21>  as a\nResource on it.\r"
+    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>Win the Battle if
+      your opponent plays a  <sprite=8>  containing any  <sprite=17>  <sprite=18> 
+      <sprite=19>  <sprite=20>  <sprite=21>  as a Resource.\r"
     effectIcon: 000000000000000000000000
     resources:
-    - resources: 5
-      amount: 1
     - resources: 11
       amount: 1
     - resources: 13
       amount: 1
     - resources: 6
+      amount: 1
+    - resources: 5
       amount: 2
   - name: Shimon Hijiri
     loreInfo: Adult - Chunin Exams Invigilator
@@ -2427,35 +2518,70 @@ MonoBehaviour:
     cardType: 1
     clan: 11
     landOrigins: 17
-    TaijutsuValue: 3
-    NinjutsuValue: 5
-    GenjutsuValue: 4
+    TaijutsuValue: 2
+    NinjutsuValue: 3
+    GenjutsuValue: 5
     heal: 2
     headAmount: 1
+    focusArea: 32
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: '<size=85><b><u>Immediately:</b></u>
+    effectText: '<size=85><b><u>Next Battle:</b></u>
 
-      <size=75>Reduce the Strength
-      of all Combat Styles on the next  <sprite=8>  played by your opponent in this
-      War, with the Strength of the Combat Styles on
+      <size=75>Reduce the 
+      <sprite=122> <sprite=123> <sprite=124>  on your opponent''s  <sprite=8>
 
-      this  <sprite=10> (minimum
-      of 0).'
+      with
+      the  <sprite=122> <sprite=123> <sprite=124>  from this  <sprite=10> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
+    - resources: 9
+      amount: 1
     - resources: 16
       amount: 1
-    - resources: 9
-      amount: 2
+  - name: Shino Aburame
+    loreInfo: Teenager - 4th Ninja War - 5th Division
+    index: 346
+    set: 1
+    characterSprite: {fileID: 21300000, guid: e70f067ef011db84f91ded7445c82e94, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 6
+    heal: 2
+    headAmount: 2
+    focusArea: 14
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 0
+    effectText: '<size=85><b><u>After Scoring:</b></u>
+
+      <size=75>Give your
+      opponent all  <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  <sprite=21> 
+      you received during the Scoring.'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 11
+      amount: 1
   - name: Shino Aburame
     loreInfo: Teenager - Naruto The Last
     index: 344
@@ -2469,14 +2595,17 @@ MonoBehaviour:
     GenjutsuValue: 7
     heal: 2
     headAmount: 3
+    focusArea: 15
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Double your opponent\u2019s 
-      <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  from\nits Supply.\r"
+    effectText: '<size=85><b><u>Before Scoring:</b></u>
+
+      <size=75>Double the 
+      <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  in your opponent''s Supply.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2500,57 +2629,26 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 2
+    focusArea: 15
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Take 1 of either  <sprite=17> 
-      <sprite=18>  <sprite=19>  <sprite=20>  from any other player\u2019s Supply
-      (yours included) and give them to your opponent.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Take 4 of either  <sprite=17> 
+      <sprite=18>  <sprite=19>  <sprite=20>  from other players and give them to
+      your opponent.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 15
       amount: 1
     - resources: 11
-      amount: 2
-  - name: Shino Aburame
-    loreInfo: Teenager - 4th Ninja War - 5th Division
-    index: 346
-    set: 1
-    characterSprite: {fileID: 21300000, guid: e70f067ef011db84f91ded7445c82e94, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 3
-    NinjutsuValue: 7
-    GenjutsuValue: 6
-    heal: 2
-    headAmount: 2
-    tier: 4
-    fire: 1
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>During this Scoring,
-      your opponent will be affected by all the  <sprite=17>  <sprite=18>  <sprite=19> 
-      <sprite=20>  <sprite=21>   you\u2019re supposed to be affected from."
-    effectIcon: 000000000000000000000000
-    resources:
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 11
-      amount: 1
+      amount: 3
   - name: Shino Aburame
     loreInfo: Teenager - Team 8
     index: 347
@@ -2564,15 +2662,18 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
+    focusArea: 0
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>You\u2019re immune
-      to receiving any \n <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  <sprite=21> 
-      during this Scoring.\r"
+    effectText: '<size=85><b><u>During Scoring:</b></u>
+
+      <size=75>Ignore all 
+      <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  <sprite=21>  you were to
+      receive.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2596,56 +2697,24 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 1
+    focusArea: 1
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1  <sprite=0> 
-      \u201CFire Block\u201D from the Shop up to your Hand, if available.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1 <sprite=0>  \u201CFire
+      Block\u201D from the Hidden Deck, if available.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 6
       amount: 1
     - resources: 16
-      amount: 2
-  - name: Shizune
-    loreInfo: Adult - 4th Ninja War -                         Captain of the Medical
-      Division
-    index: 349
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 487d8d1093294df41a18e1aac67d8ddf, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 3
-    NinjutsuValue: 7
-    GenjutsuValue: 6
-    heal: 1
-    headAmount: 2
-    tier: 4
-    fire: 0
-    wind: 1
-    lightning: 0
-    earth: 0
-    water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      the War, when playing any  <sprite=9>  <sprite=10>  <sprite=11> , immediately
-      draw 1  <sprite=10> up\nto your Hand.\r"
-    effectIcon: 010000000000000000000000
-    resources:
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
       amount: 2
   - name: Shizune
     loreInfo: Adult - 4th Hokage's Assistant
@@ -2660,6 +2729,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 1
     headAmount: 0
+    focusArea: 0
     tier: 4
     fire: 0
     wind: 1
@@ -2676,6 +2746,41 @@ MonoBehaviour:
     - resources: 0
       amount: 1
     - resources: 9
+      amount: 1
+  - name: Shizune
+    loreInfo: Adult - 4th Ninja War -                         Captain of the Medical
+      Division
+    index: 349
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 487d8d1093294df41a18e1aac67d8ddf, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 3
+    NinjutsuValue: 7
+    GenjutsuValue: 6
+    heal: 1
+    headAmount: 2
+    focusArea: 39
+    tier: 0
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>Future Battles:</b></u>
+
+      <size=75>When playing
+      any  <sprite=9>  <sprite=10>  <sprite=11> , draw 1 <sprite=10> .'
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
       amount: 2
   - name: Tatsuma Aburame
     loreInfo: Adult - ANBU Root
@@ -2690,14 +2795,16 @@ MonoBehaviour:
     GenjutsuValue: 9
     heal: 2
     headAmount: 2
+    focusArea: 11
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Receive as many  <sprite=77> 
-      as you have  <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  in your Supply.\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Receive  <sprite=77> 
+      equal to the amount of  <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>\nin
+      your Supply.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -2706,39 +2813,40 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 2
+    - resources: 5
+      amount: 1
   - name: Temari
-    loreInfo: Teenager - Sand Siblings
-    index: 352
+    loreInfo: Teenager - 4th Ninja War - 4th Division
+    index: 354
     set: 1
-    characterSprite: {fileID: 21300000, guid: 955e800f852a0cc42b3a82877e5bf116, type: 3}
+    characterSprite: {fileID: 21300000, guid: ecb181873209706458a7841650783633, type: 3}
     cardType: 1
     clan: 11
     landOrigins: 28
-    TaijutsuValue: 5
-    NinjutsuValue: 6
+    TaijutsuValue: 6
+    NinjutsuValue: 7
     GenjutsuValue: 3
     heal: 2
-    headAmount: 1
+    headAmount: 2
+    focusArea: 29
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Blow your opponent\u2019s 
-      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  in the Battlefield 1 Field
-      away of your choice. If your opponent got the first BP, remove it.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>The War ends with
+      this Battle.\n<size=20%>\n<size=75>If both perticipants have the same amount
+      of BP, you win the War.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 3
+    - resources: 0
       amount: 2
-    - resources: 17
+    - resources: 3
       amount: 2
   - name: Temari
     loreInfo: Teenager - Sand Siblings - Naruto The Last
@@ -2753,55 +2861,59 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 3
+    focusArea: 4
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Shuffle in both
-      yours and your opponents  <sprite=8>  \non Hand and give back the same amount
-      to both players, at random.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Shuffle both yours 
+      <sprite=8>  and your opponents  <sprite=8> together.\n<size=20%>\n<size=75>Give
+      back the same amount of  <sprite=8>  to both players, at random.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 3
-      amount: 2
-    - resources: 17
-      amount: 2
+    - resources: 9
+      amount: 1
+    - resources: 2
+      amount: 1
   - name: Temari
-    loreInfo: Teenager - 4th Ninja War - 4th Division
-    index: 354
+    loreInfo: Teenager - Sand Siblings
+    index: 352
     set: 1
-    characterSprite: {fileID: 21300000, guid: ecb181873209706458a7841650783633, type: 3}
+    characterSprite: {fileID: 21300000, guid: 955e800f852a0cc42b3a82877e5bf116, type: 3}
     cardType: 1
     clan: 11
     landOrigins: 28
-    TaijutsuValue: 6
-    NinjutsuValue: 7
+    TaijutsuValue: 5
+    NinjutsuValue: 6
     GenjutsuValue: 3
     heal: 2
-    headAmount: 2
+    headAmount: 1
+    focusArea: 19
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>The War ends with
-      this Battle. If both players have the same amount of BP, you win the War.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Blow your opponent\u2019s 
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this Battlefield into
+      an adjacent Field of your choice.\n<size=20%>\n<size=75>If your opponent got
+      the first BP, remove it.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
+    - resources: 8
+      amount: 1
     - resources: 3
-      amount: 2
-    - resources: 17
       amount: 2
   - name: Tenga
     loreInfo: Adult - 4th Ninja War - Intelligence Division
@@ -2816,14 +2928,17 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 2
     headAmount: 2
+    focusArea: 9
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Give your
-      opponent  <sprite=20>  equal to the amount of BP you got in this War.\r"
+    effectText: '<size=85><b><u>If Losing the War:</b></u>
+
+      <size=75>Give your
+      opponent  <sprite=20>  equal to the amount of BP you got.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -2833,68 +2948,6 @@ MonoBehaviour:
     - resources: 5
       amount: 1
     - resources: 16
-      amount: 1
-  - name: Tenten
-    loreInfo: Teenager - Team Guy
-    index: 356
-    set: 1
-    characterSprite: {fileID: 21300000, guid: cff5a616d49baf4458c18c7c331fd0ce, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 6
-    NinjutsuValue: 4
-    GenjutsuValue: 3
-    heal: 1
-    headAmount: 1
-    tier: 4
-    fire: 1
-    wind: 1
-    lightning: 0
-    earth: 0
-    water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Increase your  <sprite=84> 
-      Hand Limit with +2 for the rest of this Round.\r"
-    effectIcon: 010000000000000000000000
-    resources:
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 5
-      amount: 1
-    - resources: 11
-      amount: 1
-  - name: Tenten
-    loreInfo: Teenager - Naruto The Last
-    index: 357
-    set: 1
-    characterSprite: {fileID: 21300000, guid: b9f891ebf93c12d4786b44f2fa3f0967, type: 3}
-    cardType: 1
-    clan: 11
-    landOrigins: 17
-    TaijutsuValue: 7
-    NinjutsuValue: 6
-    GenjutsuValue: 4
-    heal: 1
-    headAmount: 1
-    tier: 4
-    fire: 1
-    wind: 1
-    lightning: 0
-    earth: 0
-    water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Double the amount of 
-      <sprite=77>  \nin your Supply.\r"
-    effectIcon: 010000000000000000000000
-    resources:
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 5
       amount: 1
   - name: Tenten
     loreInfo: Teenager - 4th Ninja War - 1st Division
@@ -2909,14 +2962,15 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 1
     headAmount: 2
+    focusArea: 34
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Triple the amount
-      of  <sprite=53>  as Resources on your  <sprite=8> during the Scoring. \r"
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Triple the amount
+      of  <sprite=52>  as Resources on your  <sprite=8> . \r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -2926,6 +2980,70 @@ MonoBehaviour:
     - resources: 0
       amount: 1
     - resources: 0
+      amount: 1
+  - name: Tenten
+    loreInfo: Teenager - Naruto The Last
+    index: 357
+    set: 1
+    characterSprite: {fileID: 21300000, guid: b9f891ebf93c12d4786b44f2fa3f0967, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 6
+    GenjutsuValue: 4
+    heal: 1
+    headAmount: 1
+    focusArea: 11
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Double the amount of 
+      <sprite=77>  in your Supply.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+  - name: Tenten
+    loreInfo: Teenager - Team Guy
+    index: 356
+    set: 1
+    characterSprite: {fileID: 21300000, guid: cff5a616d49baf4458c18c7c331fd0ce, type: 3}
+    cardType: 1
+    clan: 11
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 1
+    headAmount: 1
+    focusArea: 51
+    tier: 4
+    fire: 1
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 0
+    effectText: "<size=85><b><u>For the rest of this Round:</b></u>\r\n<size=75>Increase
+      your  <sprite=84>  Hand Limit with +2.\r"
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 5
+      amount: 1
+    - resources: 11
       amount: 1
   - name: Tonbo Tobitake
     loreInfo: Adult - Chunin Exams Invigilator
@@ -2940,15 +3058,16 @@ MonoBehaviour:
     GenjutsuValue: 8
     heal: 2
     headAmount: 1
+    focusArea: 9
     tier: 4
     fire: 0
     wind: 0
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Give your opponent
-      1  <sprite=20>  when you receive\nany  <sprite=17>  <sprite=18>  <sprite=19> 
-      <sprite=20>  <sprite=21>  throughout the Scoring.\r"
+    effectText: "<size=85><b><u>During Scoring:</b></u>\n<size=75>Give your opponent
+      1 <sprite=20>  for each\n <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20> 
+      <sprite=21>  you receive."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2972,14 +3091,15 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
+    focusArea: 54
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Remove all the 
-      <sprite=18>  <sprite=20>  from your Supply.\r"
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Remove all  <sprite=20> 
+      <sprite=18>  from your Supply.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -3003,14 +3123,23 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 1
+    focusArea: 19
     tier: 4
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>If Winning the War:</b></u>\r\n<size=75>Upgrade 3
-      of your  <sprite=49>  <sprite=50>  in the Battlefield, with 1 Tier.\r"
+    effectText: '<size=85><b><u>If Winning the War:</b></u>
+
+      <size=75>Upgrade
+      3 of your  <sprite=49>  <sprite=50>  from this Battlefield to one of a higher
+      Tier.
+
+      <size=10%>
+
+      <size=75>You may exceed the Unit Point limit
+      in this Field.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -3034,14 +3163,15 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 2
     headAmount: 2
+    focusArea: 34
     tier: 4
     fire: 1
     wind: 0
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you\u2019re in
-      a War against a  <sprite=23> , double all\nyour Resources during Scoring.\r"
+    effectText: "<size=85><b><u>War against a <sprite=23> :</b></u>\r\n<size=75>Score
+      your Resources.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -3050,8 +3180,8 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-    - resources: 15
-      amount: 2
+    - resources: 0
+      amount: 1
   - name: Urakaku
     loreInfo: Adult - Samurai - Mifune's Right Hand
     index: 363
@@ -3065,6 +3195,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 3
+    focusArea: 0
     tier: 4
     fire: 0
     wind: 0
@@ -3076,12 +3207,12 @@ MonoBehaviour:
     resources:
     - resources: 0
       amount: 1
-    - resources: 11
+    - resources: 0
       amount: 1
     - resources: 13
       amount: 2
     - resources: 15
-      amount: 3
+      amount: 2
   - name: Yashamaru
     loreInfo: Adult - 4th Kazekage's Right Hand
     index: 364
@@ -3095,26 +3226,36 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 1
     headAmount: 1
+    focusArea: 32
     tier: 4
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately</b></u>\r\n<size=75>Most BP after this
-      Battle: Increase the Strength of all Combat Styles of your opponent\u2019s
-      next  <sprite=8>  with +2. Least BP after this Battle: Decrease the Strength
-      of all Combat Styles of your opponent\u2019s next  <sprite=8>  with -2.\r"
+    effectText: '<size=85><b><u>Most BP after this Battle:</b></u>
+
+      <size=75>Your
+      opponents next  <sprite=8>  have +2 <sprite=122> <sprite=123> <sprite=124>
+      .
+
+      <size=60%>
+
+      <size=85><b><u>Least BP after this Battle:</b></u>
+
+      <size=75>Your
+      opponents next  <sprite=8>  have -2 <sprite=122> <sprite=123> <sprite=124>
+      .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
-      amount: 2
-    - resources: 17
-      amount: 3
+    - resources: 9
+      amount: 1
+    - resources: 4
+      amount: 1
   - name: Yugao Uzuki
     loreInfo: Adult - ANBU
     index: 365
@@ -3128,14 +3269,16 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 2
+    focusArea: 34
     tier: 4
     fire: 0
     wind: 0
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw 1  <sprite=11> 
-      and receive the Resources on it. Then Discard the  <sprite=11> .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1 <sprite=11> 
+      and receive the Resources on it.\n<size=20%>\n<size=75>Then Discard the  <sprite=11>
+      .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -3159,21 +3302,23 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 1
     headAmount: 2
+    focusArea: 34
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw 1  <sprite=11> 
-      and receive the Resources on it. Then Discard the  <sprite=11> .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 2 <sprite=10> 
+      and receive the Resources on them.\n<size=20%>\n<size=75>Then Discard the 
+      <sprite=10> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 18
-      amount: 2
     - resources: 15
-      amount: 3
+      amount: 1
+    - resources: 18
+      amount: 1

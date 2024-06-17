@@ -54,6 +54,87 @@ public class BattleCardObject : MonoBehaviour
     public Image head_Frame;
     public TextMeshProUGUI head_Amount;
 
+    [Header("Tailed Beast War")]
+    public GameObject focusArea_Parent;
+    public Image focusArea_Frame;
+    public Image focusArea_Image;
+
+    public Sprite focus_None;
+
+    public Sprite focus_ActionCards;
+    public Sprite focus_AwakeningCards;
+    public Sprite focus_BattleCards;
+    public Sprite focus_BattleCards_All;
+    public Sprite focus_EventCards;
+    public Sprite focus_Ally_Rare;
+    public Sprite focus_Ally_Epic;
+    public Sprite focus_Ally_Legendary;
+    public Sprite focus_Ally_RareEpic;
+    public Sprite focus_Ally_RareLegendary;
+    public Sprite focus_Ally_EpicLegendary;
+    public Sprite focus_Ally_All;
+
+    public Sprite focus_Effect_Poison;
+    public Sprite focus_Effect_Paralyse;
+    public Sprite focus_Effect_Illusion;
+    public Sprite focus_Effect_Freeze;
+    public Sprite focus_Effect_Chain;
+    public Sprite focus_Effect_Substitution;
+    public Sprite focus_Effect_All;
+    public Sprite focus_Effect_All_MinusChain;
+    public Sprite Effect_All_MinusSubstitution;
+    public Sprite Effect_All_MinusChain_and_Substitution;
+    public Sprite focus_Effect_Paralyse_and_Illusion;
+    public Sprite focus_Effect_Freeze_and_Paralyze;
+
+    public Sprite focus_Coin;
+
+    public Sprite focus_TailedBeast;
+    public Sprite focus_TailedBeastBuff;
+
+    public Sprite focus_Dominance_UP;
+    public Sprite focus_Dominance_DOWN;
+    public Sprite focus_Dominance_UpDown;
+    public Sprite focus_Dominance_Weights;
+    public Sprite focus_Dominance_TieBreaker;
+    public Sprite focus_Dominance_UnitStrength;
+    public Sprite focus_Dominance_Recruitment;
+    public Sprite focus_Dominance_Payment;
+    public Sprite focus_Dominance_HandLimit;
+
+    public Sprite focus_Heal;
+    public Sprite focus_HealBlock;
+
+    public Sprite focus_Skull;
+    public Sprite focus_Sand;
+    public Sprite focus_Skull_Sand;
+
+    public Sprite focus_Reroll;
+
+    public Sprite focus_War;
+    public Sprite focus_Battle;
+    public Sprite focus_BattlePoint;
+    public Sprite focus_CombatStrength;
+    public Sprite focus_Effect;
+    public Sprite focus_Resources;
+    public Sprite focus_Effect_And_Resources;
+    public Sprite focus_Support;
+
+    //Detailed
+    public Sprite focus_ClanCards_All;
+    public Sprite focus_ClanCards_Akatsuki;
+    public Sprite focus_ClanCards_Hyuga;
+    public Sprite focus_ClanCards_Otsutsuki;
+    public Sprite focus_ClanCards_Senju;
+    public Sprite focus_ClanCards_Uchiha;
+    public Sprite focus_ClanCards_Uzumaki;
+    public Sprite focus_ClanCards_Kara;
+
+    public Sprite focus_Units;
+    public Sprite focus_Boats;
+
+    public Sprite focus_Immune;
+
     [Header("Heal")]
     public GameObject healParent;
     public GameObject healBlockParent;

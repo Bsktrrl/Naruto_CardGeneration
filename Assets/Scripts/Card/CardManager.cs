@@ -1,20 +1,14 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
+[ExecuteInEditMode]
 public class CardManager : MonoBehaviour
 {
     #region Variables
     MainManager mainManager;
-
-    [Header("Card Display")]
-    [SerializeField] Clan clanFocus_BattleCard;
-    [SerializeField] int battleCard_Number;
-    [SerializeField] Clan clanFocus_ClanSpecialty;
-    [SerializeField] int clanSpecialtyCard_Number;
-    [SerializeField] int actionCard_Number;
-    [SerializeField] int eventCard_Number;
-
+    
     [Header("Color Manager")]
     [SerializeField] ColorManager colorManager;
 
@@ -67,12 +61,6 @@ public class CardManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI eventCardHeader;
     [SerializeField] TextMeshProUGUI eventCardText;
     public Image eventImage;
-
-
-    [Header("Set Images")]
-    public Sprite baseSet_Icon;
-    public string endYear = "2023";
-    public string companyName = "AM Games";
 
     #region Sprites
     [Header("Tier Images")]
@@ -229,85 +217,85 @@ public class CardManager : MonoBehaviour
     void CardsDisplay()
     {
         //Battle Cards
-        switch (clanFocus_BattleCard)
+        switch (CardDisplayManager.Instance.clanFocus_BattleCard)
         {
             case Clan.None:
                 break;
 
             case Clan.Akatsuki_Awakening:
                 if (battle_Akatsuki_Awakening.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Akatsuki_Awakening.cardList.Count)
-                    DisplayBattleCard(battle_Akatsuki_Awakening.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Akatsuki_Awakening.cardList.Count)
+                    DisplayBattleCard(battle_Akatsuki_Awakening.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Akatsuki_Awakening.cardList[battle_Akatsuki_Awakening.cardList.Count - 1]);
                 break;
             case Clan.Akatsuki:
                 if (battle_Akatsuki.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Akatsuki.cardList.Count)
-                    DisplayBattleCard(battle_Akatsuki.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Akatsuki.cardList.Count)
+                    DisplayBattleCard(battle_Akatsuki.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Akatsuki.cardList[battle_Akatsuki.cardList.Count - 1]);
                 break;
             case Clan.Hyuga:
                 if (battle_Hyuga.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Hyuga.cardList.Count)
-                    DisplayBattleCard(battle_Hyuga.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Hyuga.cardList.Count)
+                    DisplayBattleCard(battle_Hyuga.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Hyuga.cardList[battle_Hyuga.cardList.Count - 1]);
                 break;
             case Clan.Otsutsuki:
                 if (battle_Otsutsuki.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Otsutsuki.cardList.Count)
-                    DisplayBattleCard(battle_Otsutsuki.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Otsutsuki.cardList.Count)
+                    DisplayBattleCard(battle_Otsutsuki.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Otsutsuki.cardList[battle_Otsutsuki.cardList.Count - 1]);
                 break;
             case Clan.Senju:
                 if (battle_Senju.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Senju.cardList.Count)
-                    DisplayBattleCard(battle_Senju.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Senju.cardList.Count)
+                    DisplayBattleCard(battle_Senju.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Senju.cardList[battle_Senju.cardList.Count - 1]);
                 break;
             case Clan.Uchiha:
                 if (battle_Uchiha.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Uchiha.cardList.Count)
-                    DisplayBattleCard(battle_Uchiha.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Uchiha.cardList.Count)
+                    DisplayBattleCard(battle_Uchiha.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Uchiha.cardList[battle_Uchiha.cardList.Count - 1]);
                 break;
             case Clan.Uzumaki:
                 if (battle_Uzumaki.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Uzumaki.cardList.Count)
-                    DisplayBattleCard(battle_Uzumaki.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Uzumaki.cardList.Count)
+                    DisplayBattleCard(battle_Uzumaki.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Uzumaki.cardList[battle_Uzumaki.cardList.Count - 1]);
                 break;
             case Clan.Kara:
                 if (battle_Kara.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Kara.cardList.Count)
-                    DisplayBattleCard(battle_Kara.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Kara.cardList.Count)
+                    DisplayBattleCard(battle_Kara.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Kara.cardList[battle_Kara.cardList.Count - 1]);
                 break;
             case Clan.Ally_Rare:
                 if (battle_Ally_Rare.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Ally_Rare.cardList.Count)
-                    DisplayBattleCard(battle_Ally_Rare.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Ally_Rare.cardList.Count)
+                    DisplayBattleCard(battle_Ally_Rare.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Ally_Rare.cardList[battle_Ally_Rare.cardList.Count - 1]);
                 break;
             case Clan.Ally_Epic:
                 if (battle_Ally_Epic.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Ally_Epic.cardList.Count)
-                    DisplayBattleCard(battle_Ally_Epic.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Ally_Epic.cardList.Count)
+                    DisplayBattleCard(battle_Ally_Epic.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Ally_Epic.cardList[battle_Ally_Epic.cardList.Count - 1]);
                 break;
             case Clan.Ally_Legendary:
                 if (battle_Ally_Legendary.cardList.Count <= 0) { }
-                else if (battleCard_Number >= 0 && battleCard_Number < battle_Ally_Legendary.cardList.Count)
-                    DisplayBattleCard(battle_Ally_Legendary.cardList[battleCard_Number]);
+                else if (CardDisplayManager.Instance.battleCard_Number >= 0 && CardDisplayManager.Instance.battleCard_Number < battle_Ally_Legendary.cardList.Count)
+                    DisplayBattleCard(battle_Ally_Legendary.cardList[CardDisplayManager.Instance.battleCard_Number]);
                 else
                     DisplayBattleCard(battle_Ally_Legendary.cardList[battle_Ally_Legendary.cardList.Count - 1]);
                 break;
@@ -318,63 +306,63 @@ public class CardManager : MonoBehaviour
 
         //Action Cards
         if (actionCards.actionCardList.Count <= 0) { }
-        else if (actionCard_Number >= 0 && actionCard_Number < actionCards.actionCardList.Count)
-            DisplayActionCard(actionCards.actionCardList[actionCard_Number]);
+        else if (CardDisplayManager.Instance.actionCard_Number >= 0 && CardDisplayManager.Instance.actionCard_Number < actionCards.actionCardList.Count)
+            DisplayActionCard(actionCards.actionCardList[CardDisplayManager.Instance.actionCard_Number]);
         else
             DisplayActionCard(actionCards.actionCardList[actionCards.actionCardList.Count - 1]);
 
-        //Clan Spacialty Cards
-        switch (clanFocus_ClanSpecialty)
+        //Clan Specialty Cards
+        switch (CardDisplayManager.Instance.clanFocus_ClanSpecialty)
         {
             case Clan.None:
                 break;
 
             case Clan.Akatsuki:
                 if (clanSpecialty_Akatsuki.clanSpecialtyCardList.Count <= 0) { }
-                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Akatsuki.clanSpecialtyCardList.Count)
-                    DisplayClanSpecialty(clanSpecialty_Akatsuki.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else if (CardDisplayManager.Instance.clanSpecialtyCard_Number >= 0 && CardDisplayManager.Instance.clanSpecialtyCard_Number < clanSpecialty_Akatsuki.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Akatsuki.clanSpecialtyCardList[CardDisplayManager.Instance.clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Akatsuki.clanSpecialtyCardList[clanSpecialty_Akatsuki.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Hyuga:
                 if (clanSpecialty_Hyuga.clanSpecialtyCardList.Count <= 0) { }
-                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Hyuga.clanSpecialtyCardList.Count)
-                    DisplayClanSpecialty(clanSpecialty_Hyuga.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else if (CardDisplayManager.Instance.clanSpecialtyCard_Number >= 0 && CardDisplayManager.Instance.clanSpecialtyCard_Number < clanSpecialty_Hyuga.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Hyuga.clanSpecialtyCardList[CardDisplayManager.Instance.clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Hyuga.clanSpecialtyCardList[clanSpecialty_Hyuga.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Otsutsuki:
                 if (clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count <= 0) { }
-                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count)
-                    DisplayClanSpecialty(clanSpecialty_Otsutsuki.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else if (CardDisplayManager.Instance.clanSpecialtyCard_Number >= 0 && CardDisplayManager.Instance.clanSpecialtyCard_Number < clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Otsutsuki.clanSpecialtyCardList[CardDisplayManager.Instance.clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Otsutsuki.clanSpecialtyCardList[clanSpecialty_Otsutsuki.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Senju:
                 if (clanSpecialty_Senju.clanSpecialtyCardList.Count <= 0) { }
-                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Senju.clanSpecialtyCardList.Count)
-                    DisplayClanSpecialty(clanSpecialty_Senju.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else if (CardDisplayManager.Instance.clanSpecialtyCard_Number >= 0 && CardDisplayManager.Instance.clanSpecialtyCard_Number < clanSpecialty_Senju.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Senju.clanSpecialtyCardList[CardDisplayManager.Instance.clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Senju.clanSpecialtyCardList[clanSpecialty_Senju.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Uchiha:
                 if (clanSpecialty_Uchiha.clanSpecialtyCardList.Count <= 0) { }
-                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Uchiha.clanSpecialtyCardList.Count)
-                    DisplayClanSpecialty(clanSpecialty_Uchiha.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else if (CardDisplayManager.Instance.clanSpecialtyCard_Number >= 0 && CardDisplayManager.Instance.clanSpecialtyCard_Number < clanSpecialty_Uchiha.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Uchiha.clanSpecialtyCardList[CardDisplayManager.Instance.clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Uchiha.clanSpecialtyCardList[clanSpecialty_Uchiha.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Uzumaki:
                 if (clanSpecialty_Uzumaki.clanSpecialtyCardList.Count <= 0) { }
-                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Uzumaki.clanSpecialtyCardList.Count)
-                    DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else if (CardDisplayManager.Instance.clanSpecialtyCard_Number >= 0 && CardDisplayManager.Instance.clanSpecialtyCard_Number < clanSpecialty_Uzumaki.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[CardDisplayManager.Instance.clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Uzumaki.clanSpecialtyCardList[clanSpecialty_Uzumaki.clanSpecialtyCardList.Count - 1]);
                 break;
             case Clan.Kara:
                 if (clanSpecialty_Kara.clanSpecialtyCardList.Count <= 0) { }
-                else if (clanSpecialtyCard_Number >= 0 && clanSpecialtyCard_Number < clanSpecialty_Kara.clanSpecialtyCardList.Count)
-                    DisplayClanSpecialty(clanSpecialty_Kara.clanSpecialtyCardList[clanSpecialtyCard_Number]);
+                else if (CardDisplayManager.Instance.clanSpecialtyCard_Number >= 0 && CardDisplayManager.Instance.clanSpecialtyCard_Number < clanSpecialty_Kara.clanSpecialtyCardList.Count)
+                    DisplayClanSpecialty(clanSpecialty_Kara.clanSpecialtyCardList[CardDisplayManager.Instance.clanSpecialtyCard_Number]);
                 else
                     DisplayClanSpecialty(clanSpecialty_Kara.clanSpecialtyCardList[clanSpecialty_Kara.clanSpecialtyCardList.Count - 1]);
                 break;
@@ -385,12 +373,85 @@ public class CardManager : MonoBehaviour
 
         //Events
         if (eventCards.eventCardList.Count <= 0) { }
-        else if (eventCard_Number >= 0 && eventCard_Number < eventCards.eventCardList.Count)
-            DisplayEventCard(eventCards.eventCardList[eventCard_Number]);
+        else if (CardDisplayManager.Instance.eventCard_Number >= 0 && CardDisplayManager.Instance.eventCard_Number < eventCards.eventCardList.Count)
+            DisplayEventCard(eventCards.eventCardList[CardDisplayManager.Instance.eventCard_Number]);
         else
             DisplayEventCard(eventCards.eventCardList[eventCards.eventCardList.Count - 1]);
     }
 
+    void ChangeDisplay_Buttons()
+    {
+        Event e = Event.current;
+
+        if (e != null && e.isKey)
+        {
+            if (e.type == EventType.KeyDown)
+            {
+                // Check for specific key press
+                if (e.keyCode == KeyCode.X)
+                {
+                    print("RightArrow isPressed");
+
+                    if (MainManager.Instance.actionUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.actionCard_Number++;
+                    }
+                    else if (MainManager.Instance.battleUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.battleCard_Number++;
+                    }
+                    else if (MainManager.Instance.clanSpecialtyUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.clanSpecialtyCard_Number++;
+                    }
+                    else if (MainManager.Instance.eventUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.eventCard_Number++;
+                    }
+                }
+                else if (e.keyCode == KeyCode.Z)
+                {
+                    print("LeftArrow isPressed");
+
+                    if (MainManager.Instance.actionUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.actionCard_Number--;
+                    }
+                    else if (MainManager.Instance.battleUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.battleCard_Number--;
+                    }
+                    else if (MainManager.Instance.clanSpecialtyUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.clanSpecialtyCard_Number--;
+                    }
+                    else if (MainManager.Instance.eventUI_Parent.activeInHierarchy)
+                    {
+                        CardDisplayManager.Instance.eventCard_Number--;
+                    }
+                }
+
+                if (CardDisplayManager.Instance.actionCard_Number <= 0)
+                {
+                    CardDisplayManager.Instance.actionCard_Number = 0;
+                }
+                if (CardDisplayManager.Instance.battleCard_Number <= 0)
+                {
+                    CardDisplayManager.Instance.battleCard_Number = 0;
+                }
+                if (CardDisplayManager.Instance.clanSpecialtyCard_Number <= 0)
+                {
+                    CardDisplayManager.Instance.clanSpecialtyCard_Number = 0;
+                }
+                if (CardDisplayManager.Instance.eventCard_Number <= 0)
+                {
+                    CardDisplayManager.Instance.eventCard_Number = 0;
+                }
+
+                print("End");
+            }
+        }
+    }
 
     //--------------------
 
@@ -427,6 +488,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAkatsuki_Awakening_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAkatsuki_Awakening_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_Awakening_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_Awakening_TextColor();
@@ -459,6 +521,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAkatsuki_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetAkatsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAkatsuki_TextColor();
@@ -491,6 +554,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetHyuga_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetHyuga_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetHyuga_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetHyuga_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetHyuga_TextColor();
@@ -523,6 +587,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetOtsutsuki_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetOtsutsuki_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetOtsutsuki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetOtsutsuki_TextColor();
@@ -555,6 +620,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetSenju_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetSenju_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetSenju_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetSenju_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetSenju_TextColor();
@@ -587,6 +653,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetUchiha_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetUchiha_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetUchiha_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUchiha_TextColor();
@@ -619,6 +686,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetUzumaki_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetUzumaki_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetUzumaki_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetUzumaki_TextColor();
@@ -651,6 +719,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetKara_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetKara_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetKara_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetKara_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetKara_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetKara_TextColor();
@@ -683,6 +752,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
@@ -715,6 +785,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
@@ -747,6 +818,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
@@ -779,6 +851,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.Ninjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
                 battleCardObject.Genjutsu_Border_Image.color = colorManager.GetAlly_BorderColor();
 
+                battleCardObject.focusArea_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.box_Frame.color = colorManager.GetAlly_BoxFrameColor();
                 battleCardObject.effectText_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
                 battleCardObject.effectTextIcon_Parent.GetComponentInChildren<TextMeshProUGUI>().color = colorManager.GetAlly_TextColor();
@@ -1005,20 +1078,700 @@ public class CardManager : MonoBehaviour
         #region
         if (battleCard.headAmount > 0)
         {
-            battleCardObject.headParent.SetActive(true);
+            if (battleCard.focusArea != FocusArea.None)
+            {
+                if (CardDisplayManager.Instance.focusIcon)
+                {
+                    battleCardObject.headParent.transform.localPosition = new Vector2(-574, -31);
+                }
+                else
+                {
+                    battleCardObject.headParent.transform.localPosition = new Vector2(-574, -167);
+                }
+            }
+            else
+            {
+                battleCardObject.headParent.transform.localPosition = new Vector2(-574, -167);
+            }
 
-            battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
-            battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
+            battleCardObject.headParent.SetActive(true);
         }
         else
         {
             battleCardObject.headParent.SetActive(false);
-
-            battleCardObject.box_Frame.sprite = box_Frame_Sprite;
-            battleCardObject.box_Background.sprite = box_Background_Sprite;
         }
 
         battleCardObject.head_Amount.text = battleCard.headAmount.ToString();
+        #endregion
+
+        //Focus Area
+        #region
+        battleCardObject.focusArea_Image.color = Color.white;
+
+        if (battleCard.focusArea != FocusArea.None)
+        {
+            if (CardDisplayManager.Instance.focusIcon)
+            {
+                battleCardObject.focusArea_Parent.SetActive(true);
+
+                switch (battleCard.focusArea)
+                {
+                    //None
+                    case FocusArea.None:
+                        break;
+
+                    //Cards
+                    case FocusArea.ActionCards:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ActionCards;
+                        break;
+                    case FocusArea.ClanCards:
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Akatsuki;
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Akatsuki;
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Hyuga;
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Otsutsuki;
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Senju;
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Uchiha;
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Uzumaki;
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Kara;
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+                    case FocusArea.AwakeningCards:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_AwakeningCards;
+                        break;
+                    case FocusArea.BattleCards:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattleCards;
+                        break;
+                    case FocusArea.BattleCards_All:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattleCards_All;
+                        break;
+                    case FocusArea.EventCards:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_EventCards;
+                        break;
+
+                    case FocusArea.Ally_Rare:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Rare;
+                        break;
+                    case FocusArea.Ally_Epic:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Epic;
+                        break;
+                    case FocusArea.Ally_Legendary:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Legendary;
+                        break;
+                    case FocusArea.Ally_RareEpic:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_RareEpic;
+                        break;
+                    case FocusArea.Ally_RareLegendary:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_RareLegendary;
+                        break;
+                    case FocusArea.Ally_EpicLegendary:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_EpicLegendary;
+                        break;
+                    case FocusArea.Ally_All:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_All;
+                        break;
+
+                    //Effect Tokens
+                    case FocusArea.Effect_Poison:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Poison;
+                        break;
+                    case FocusArea.Effect_Paralyse:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Paralyse;
+                        break;
+                    case FocusArea.Effect_Illusion:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Illusion;
+                        break;
+                    case FocusArea.Effect_Freeze:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Freeze;
+                        break;
+                    case FocusArea.Effect_Chain:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Chain;
+                        break;
+                    case FocusArea.Effect_Substitution:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Substitution;
+                        break;
+                    case FocusArea.Effect_All:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_All;
+                        break;
+                    case FocusArea.Effect_All_MinusChain:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_All_MinusChain;
+                        break;
+                    case FocusArea.Effect_All_MinusSubstitution:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.Effect_All_MinusSubstitution;
+                        break;
+                    case FocusArea.Effect_All_MinusChain_and_Substitution:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.Effect_All_MinusChain_and_Substitution;
+                        break;
+                    case FocusArea.Effect_Paralyse_And_Illusion:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Paralyse_and_Illusion;
+                        break;
+                    case FocusArea.Effect_Freeze_and_Paralyze:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Freeze_and_Paralyze;
+                        break;
+
+                    //Coin
+                    case FocusArea.Coin:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Coin;
+                        break;
+
+                    //Tailed Beast
+                    case FocusArea.TailedBeast:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_TailedBeast;
+                        break;
+                    case FocusArea.TailedBeastBuff:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_TailedBeastBuff;
+                        break;
+
+                    //Units
+                    case FocusArea.Units:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Units;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BoxFrameColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+                    case FocusArea.Boats:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Boats;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BoxFrameColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+
+                    //Dominance Track
+                    case FocusArea.Dominance_UP:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UP;
+                        break;
+                    case FocusArea.Dominance_DOWN:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_DOWN;
+                        break;
+                    case FocusArea.Dominance_UpDown:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UpDown;
+                        break;
+
+                    case FocusArea.Dominance_Weights:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Weights;
+                        break;
+                    case FocusArea.Dominance_TieBreaker:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_TieBreaker;
+                        break;
+                    case FocusArea.Dominance_UnitStrength:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UnitStrength;
+                        break;
+                    case FocusArea.Dominance_Recruitment:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Recruitment;
+                        break;
+                    case FocusArea.Dominance_Payment:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Payment;
+                        break;
+                    case FocusArea.Dominance_HandLimit:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_HandLimit;
+                        break;
+
+                    //Heal
+                    case FocusArea.Heal:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Heal;
+                        break;
+                    case FocusArea.HealBlock:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_HealBlock;
+                        break;
+
+                    //Effect Icons
+                    case FocusArea.Skull:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Skull;
+                        break;
+                    case FocusArea.Sand:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Sand;
+                        break;
+                    case FocusArea.Skull_Sand:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Skull_Sand;
+                        break;
+
+                    //Reroll
+                    case FocusArea.Reroll:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Reroll;
+                        break;
+
+                    //War
+                    case FocusArea.War:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_War;
+                        break;
+                    case FocusArea.Battle:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Battle;
+                        break;
+                    case FocusArea.BattlePoint:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattlePoint;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_TextColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_TextColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_TextColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_TextColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_TextColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_TextColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+                    case FocusArea.CombatStrength:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_CombatStrength;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+                    case FocusArea.Effect:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+                    case FocusArea.Resources:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Resources;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+                    case FocusArea.Effect_And_Resources:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_And_Resources;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+                    case FocusArea.Support:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Support;
+                        break;
+
+                    case FocusArea.Immune:
+                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Immune;
+
+                        switch (battleCard.clan)
+                        {
+                            case Clan.None:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+
+                            case Clan.Akatsuki_Awakening:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Akatsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                                break;
+                            case Clan.Hyuga:
+                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                                break;
+                            case Clan.Otsutsuki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                                break;
+                            case Clan.Senju:
+                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                                break;
+                            case Clan.Uchiha:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                                break;
+                            case Clan.Uzumaki:
+                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                                break;
+                            case Clan.Kara:
+                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                                break;
+                            case Clan.Ally:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Rare:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Epic:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+                            case Clan.Ally_Legendary:
+                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                                break;
+
+                            default:
+                                break;
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+
+                //Change to Clipped Frames
+                battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
+                battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
+            }
+            else
+            {
+                if (battleCard.headAmount > 0)
+                {
+                    //Change to Whole Frames
+                    battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
+                    battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
+                }
+                else
+                {
+
+                    //Change to Whole Frames
+                    battleCardObject.box_Frame.sprite = box_Frame_Sprite;
+                    battleCardObject.box_Background.sprite = box_Background_Sprite;
+                }
+
+                battleCardObject.focusArea_Parent.SetActive(false);
+            }
+        }
+        else
+        {
+            if (battleCard.headAmount > 0)
+            {
+                //Change to Whole Frames
+                battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
+                battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
+            }
+            else
+            {
+
+                //Change to Whole Frames
+                battleCardObject.box_Frame.sprite = box_Frame_Sprite;
+                battleCardObject.box_Background.sprite = box_Background_Sprite;
+            }
+
+            battleCardObject.focusArea_Parent.SetActive(false);
+        }
         #endregion
 
         //Effect
@@ -1669,7 +2422,7 @@ public class CardManager : MonoBehaviour
                 battleCardObject.setImage.sprite = null;
                 break;
             case setNames.Base:
-                battleCardObject.setImage.sprite = baseSet_Icon;
+                battleCardObject.setImage.sprite = CardDisplayManager.Instance.baseSet_Icon;
                 break;
 
             default:
@@ -1677,13 +2430,13 @@ public class CardManager : MonoBehaviour
         }
 
         if (battleCard.index < 10)
-            battleCardObject.infoText.text = "no. 000" + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+            battleCardObject.infoText.text = "no. 000" + battleCard.index + " - " + CardDisplayManager.Instance.companyName + " © " + "2016 - " + CardDisplayManager.Instance.endYear;
         else if (battleCard.index < 100)
-            battleCardObject.infoText.text = "no. 00" + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+            battleCardObject.infoText.text = "no. 00" + battleCard.index + " - " + CardDisplayManager.Instance.companyName + " © " + "2016 - " + CardDisplayManager.Instance.endYear;
         else if (battleCard.index < 1000)
-            battleCardObject.infoText.text = "no. 0" + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+            battleCardObject.infoText.text = "no. 0" + battleCard.index + " - " + CardDisplayManager.Instance.companyName + " © " + "2016 - " + CardDisplayManager.Instance.endYear;
         else
-            battleCardObject.infoText.text = "no. " + battleCard.index + " - " + companyName + " © " + "2016 - " + endYear;
+            battleCardObject.infoText.text = "no. " + battleCard.index + " - " + CardDisplayManager.Instance.companyName + " © " + "2016 - " + CardDisplayManager.Instance.endYear;
         #endregion
     }
 
@@ -1874,50 +2627,98 @@ public class CardManager : MonoBehaviour
 
         //Coin
         #region
-        //Set al Coin Images = false
+        //Set all Coin Images = false
         for (int j = 0; j < actionCardObject.coin.Count; j++)
         {
             actionCardObject.coin[j].SetActive(false);
         }
+        for (int j = 0; j < actionCardObject.hiddenDeckIcon.Count; j++)
+        {
+            actionCardObject.hiddenDeckIcon[j].SetActive(false);
+        }
 
         //Make relevant coin Images visible
-        switch (actioncard.cost)
+        if (!actioncard.isInHiddenDeck)
         {
-            case 1:
-                actionCardObject.coin[0].SetActive(true);
-                break;
-            case 2:
-                actionCardObject.coin[0].SetActive(true);
-                actionCardObject.coin[1].SetActive(true);
-                break;
-            case 3:
-                actionCardObject.coin[0].SetActive(true);
-                actionCardObject.coin[1].SetActive(true);
-                actionCardObject.coin[2].SetActive(true);
-                break;
-            case 4:
-                actionCardObject.coin[0].SetActive(true);
-                actionCardObject.coin[1].SetActive(true);
-                actionCardObject.coin[2].SetActive(true);
-                actionCardObject.coin[3].SetActive(true);
-                break;
-            case 5:
-                actionCardObject.coin[0].SetActive(true);
-                actionCardObject.coin[1].SetActive(true);
-                actionCardObject.coin[2].SetActive(true);
-                actionCardObject.coin[3].SetActive(true);
-                actionCardObject.coin[4].SetActive(true);
-                break;
-            case 6:
-                actionCardObject.coin[0].SetActive(true);
-                actionCardObject.coin[1].SetActive(true);
-                actionCardObject.coin[2].SetActive(true);
-                actionCardObject.coin[3].SetActive(true);
-                actionCardObject.coin[4].SetActive(true);
-                actionCardObject.coin[5].SetActive(true);
-                break;
-            default:
-                break;
+            switch (actioncard.cost)
+            {
+                case 1:
+                    actionCardObject.coin[0].SetActive(true);
+                    break;
+                case 2:
+                    actionCardObject.coin[0].SetActive(true);
+                    actionCardObject.coin[1].SetActive(true);
+                    break;
+                case 3:
+                    actionCardObject.coin[0].SetActive(true);
+                    actionCardObject.coin[1].SetActive(true);
+                    actionCardObject.coin[2].SetActive(true);
+                    break;
+                case 4:
+                    actionCardObject.coin[0].SetActive(true);
+                    actionCardObject.coin[1].SetActive(true);
+                    actionCardObject.coin[2].SetActive(true);
+                    actionCardObject.coin[3].SetActive(true);
+                    break;
+                case 5:
+                    actionCardObject.coin[0].SetActive(true);
+                    actionCardObject.coin[1].SetActive(true);
+                    actionCardObject.coin[2].SetActive(true);
+                    actionCardObject.coin[3].SetActive(true);
+                    actionCardObject.coin[4].SetActive(true);
+                    break;
+                case 6:
+                    actionCardObject.coin[0].SetActive(true);
+                    actionCardObject.coin[1].SetActive(true);
+                    actionCardObject.coin[2].SetActive(true);
+                    actionCardObject.coin[3].SetActive(true);
+                    actionCardObject.coin[4].SetActive(true);
+                    actionCardObject.coin[5].SetActive(true);
+                    break;
+                default:
+                    break;
+            }
+        }
+        else
+        {
+            switch (actioncard.cost)
+            {
+                case 1:
+                    actionCardObject.hiddenDeckIcon[0].SetActive(true);
+                    break;
+                case 2:
+                    actionCardObject.hiddenDeckIcon[0].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[1].SetActive(true);
+                    break;
+                case 3:
+                    actionCardObject.hiddenDeckIcon[0].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[1].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[2].SetActive(true);
+                    break;
+                case 4:
+                    actionCardObject.hiddenDeckIcon[0].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[1].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[2].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[3].SetActive(true);
+                    break;
+                case 5:
+                    actionCardObject.hiddenDeckIcon[0].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[1].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[2].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[3].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[4].SetActive(true);
+                    break;
+                case 6:
+                    actionCardObject.hiddenDeckIcon[0].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[1].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[2].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[3].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[4].SetActive(true);
+                    actionCardObject.hiddenDeckIcon[5].SetActive(true);
+                    break;
+                default:
+                    break;
+            }
         }
         #endregion
 
