@@ -202,10 +202,8 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Scoring:</b></u>
 
       <size=75>If no  <sprite=70> 
-      has appeared in previous Battles, double the Resources of 1  <sprite=8>  played
-      before
-
-      this  <sprite=2> .
+      has appeared in previous Battles, get the Resources of 1  <sprite=8>  played
+      before this  <sprite=2> .
 
 '
     effectIcon: 000000000000000000000000
@@ -219,36 +217,38 @@ MonoBehaviour:
     - resources: 0
       amount: 0
   - name: Hinata Hyuga
-    loreInfo: Teenager - Team 8
-    index: 7
+    loreInfo: Teenager - 4th Ninja War - 2nd Division
+    index: 9
     set: 1
-    characterSprite: {fileID: 21300000, guid: 4be6a1ef790612d4bb57ce9f58d65ac8, type: 3}
+    characterSprite: {fileID: 21300000, guid: cf74fe2822a187d4babbc3ae369ab6b2, type: 3}
     cardType: 1
     clan: 3
     landOrigins: 17
-    TaijutsuValue: 6
-    NinjutsuValue: 5
+    TaijutsuValue: 7
+    NinjutsuValue: 6
     GenjutsuValue: 3
-    heal: 2
-    headAmount: 0
+    heal: 0
+    headAmount: 2
     focusArea: 32
-    tier: 3
+    tier: 4
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 <sprite=104>
+      <sprite=105> <sprite=106>  for every Resource given on 1 of your previously
+      played  <sprite=8>  in this War.\r"
     effectIcon: 020000000000000000000000
     resources:
-    - resources: 0
-      amount: 0
     - resources: 6
       amount: 1
-    - resources: 18
+    - resources: 12
       amount: 1
     - resources: 11
-      amount: 2
+      amount: 1
+    - resources: 15
+      amount: 1
   - name: Hinata Hyuga
     loreInfo: Teenager - Naruto The Last
     index: 8
@@ -262,7 +262,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 3
-    focusArea: 36
+    focusArea: 27
     tier: 5
     fire: 1
     wind: 0
@@ -283,38 +283,36 @@ MonoBehaviour:
     - resources: 6
       amount: 1
   - name: Hinata Hyuga
-    loreInfo: Teenager - 4th Ninja War - 2nd Division
-    index: 9
+    loreInfo: Teenager - Team 8
+    index: 7
     set: 1
-    characterSprite: {fileID: 21300000, guid: cf74fe2822a187d4babbc3ae369ab6b2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 4be6a1ef790612d4bb57ce9f58d65ac8, type: 3}
     cardType: 1
     clan: 3
     landOrigins: 17
-    TaijutsuValue: 7
-    NinjutsuValue: 6
+    TaijutsuValue: 6
+    NinjutsuValue: 5
     GenjutsuValue: 3
-    heal: 0
-    headAmount: 2
+    heal: 2
+    headAmount: 0
     focusArea: 31
-    tier: 4
+    tier: 3
     fire: 1
     wind: 0
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Get +1 <sprite=104>
-      <sprite=105> <sprite=106>  for every Resource given on 1 of your previously
-      played  <sprite=8>  in this War.\r"
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 BP.\r"
     effectIcon: 020000000000000000000000
     resources:
+    - resources: 0
+      amount: 0
     - resources: 6
       amount: 1
-    - resources: 12
+    - resources: 18
       amount: 1
     - resources: 11
-      amount: 1
-    - resources: 15
-      amount: 1
+      amount: 2
   - name: Hizashi Hyuga
     loreInfo: Adult - Successor of the Hyuga Clan
     index: 10
@@ -531,7 +529,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Remove all Resources
-      from your opponent\u2019s  <sprite=8>  played in this Battle.\r"
+      from your opponent\u2019s played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -542,38 +540,6 @@ MonoBehaviour:
       amount: 2
     - resources: 18
       amount: 2
-  - name: Neji Hyuga
-    loreInfo: Teenager - Team Guy
-    index: 17
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 69f902c6bce1a5449b911b7e947bda65, type: 3}
-    cardType: 1
-    clan: 3
-    landOrigins: 17
-    TaijutsuValue: 9
-    NinjutsuValue: 5
-    GenjutsuValue: 3
-    heal: 0
-    headAmount: 0
-    focusArea: 31
-    tier: 4
-    fire: 1
-    wind: 0
-    lightning: 0
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>Cancel the Effect
-      on your opponent\u2019s  <sprite=8> ."
-    effectIcon: 000000000000000000000000
-    resources:
-    - resources: 16
-      amount: 1
-    - resources: 17
-      amount: 1
-    - resources: 13
-      amount: 1
-    - resources: 11
-      amount: 3
   - name: Neji Hyuga
     loreInfo: Teenager - 4th Ninja War - 2nd Division
     index: 18
@@ -587,7 +553,7 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 0
     headAmount: 3
-    focusArea: 33
+    focusArea: 29
     tier: 5
     fire: 1
     wind: 0
@@ -607,6 +573,38 @@ MonoBehaviour:
       amount: 1
     - resources: 2
       amount: 2
+  - name: Neji Hyuga
+    loreInfo: Teenager - Team Guy
+    index: 17
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 69f902c6bce1a5449b911b7e947bda65, type: 3}
+    cardType: 1
+    clan: 3
+    landOrigins: 17
+    TaijutsuValue: 9
+    NinjutsuValue: 5
+    GenjutsuValue: 3
+    heal: 0
+    headAmount: 0
+    focusArea: 33
+    tier: 4
+    fire: 1
+    wind: 0
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>Cancel the Effect
+      on your opponent\u2019s  <sprite=8> ."
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 16
+      amount: 1
+    - resources: 17
+      amount: 1
+    - resources: 13
+      amount: 1
+    - resources: 11
+      amount: 3
   - name: Tokuma Hyuga
     loreInfo: Adult - Reconnaissance Party
     index: 19

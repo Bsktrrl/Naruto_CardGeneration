@@ -99,7 +99,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Any Future Battle:</b></u>
 
       <size=75>Give your
-      next played  <sprite=8>  (in another War)
+      first played  <sprite=8>  (in another War)
 
       +2 <sprite=107> <sprite=108>
       <sprite=109>  for each of your Trashed  <sprite=3> , at
@@ -612,9 +612,9 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\n<size=74>Shuffle back in 1
-      random Trashed  <sprite=3>  to your Draw Pile.\n<size=20%>\n<size=74>Then Trash
-      1 random\n <sprite=3>  from your Discard Pile."
+    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=74>Shuffle back in 1 random
+      Trashed  <sprite=3>  to your Draw Pile.\n<size=20%>\n<size=74>Then Trash 1
+      random\n <sprite=3>  from your Discard Pile."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0

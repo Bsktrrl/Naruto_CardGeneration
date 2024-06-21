@@ -159,4 +159,6 @@ public enum FocusArea
 
     [Description("Effect Token")][InspectorName("Effect Token/Paralyse and Illusion")] Effect_Paralyse_And_Illusion,
     [Description("Effect Token")][InspectorName("Effect Token/Freeze and Paralyse")] Effect_Freeze_and_Paralyze,
+
+    [Description("Effect Token")][InspectorName("Merged/Coin and Illusion")] Merged_Coin_And_Illusion,
 }

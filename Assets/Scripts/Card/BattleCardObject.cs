@@ -87,6 +87,8 @@ public class BattleCardObject : MonoBehaviour
     public Sprite focus_Effect_Paralyse_and_Illusion;
     public Sprite focus_Effect_Freeze_and_Paralyze;
 
+    public Sprite focus_Merged_Coin_and_Illusion;
+
     public Sprite focus_Coin;
 
     public Sprite focus_TailedBeast;

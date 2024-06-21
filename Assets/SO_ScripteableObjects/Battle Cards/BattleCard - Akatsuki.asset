@@ -234,7 +234,7 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: '<size=85><b><u>For the rest of the War:</b></u>
+    effectText: '<size=82><b><u>For the rest of the War:</b></u>
 
       <size=75>If
       you were to Trash any  <sprite=8> , Discard them instead.
@@ -298,7 +298,7 @@ MonoBehaviour:
     GenjutsuValue: 10
     heal: 2
     headAmount: 3
-    focusArea: 3
+    focusArea: 40
     tier: 5
     fire: 1
     wind: 1
@@ -503,9 +503,9 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent\u2019s 
-      <sprite=8>  has the highest  <sprite=101> <sprite=102> <sprite=103>  in this
-      Battle, give him  <sprite=17>  equal to the difference with this  <sprite=1> 
-      highest  <sprite=101> <sprite=102> <sprite=103> .\r"
+      <sprite=8>  has the highest  <sprite=101> <sprite=102> <sprite=103> , give
+      him  <sprite=17>  equal to the difference with this  <sprite=1>  highest  <sprite=101>
+      <sprite=102> <sprite=103> .\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Immediately:</b></u>
 
       <size=75>Become an exact
-      copy of any of your opponents played  <sprite=8>  (this Battle included).'
+      copy of any of your opponents played  <sprite=8> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -676,8 +676,8 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>In Hand:</b></u>\r\n<size=75>Discard this  <sprite=1> 
-      and Draw 1 random  <sprite=1>  \u201CPain\u201D."
+    effectText: "<size=85><b><u>In Hand - Action on your Turn:</b></u>\r\n<size=75>Discard
+      this  <sprite=1>  and Draw 1 random  <sprite=1>  \u201CPain\u201D."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -869,7 +869,7 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 2
     headAmount: 6
-    focusArea: 4
+    focusArea: 52
     tier: 5
     fire: 1
     wind: 1

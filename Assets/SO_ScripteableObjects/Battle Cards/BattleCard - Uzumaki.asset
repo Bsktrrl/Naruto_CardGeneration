@@ -33,7 +33,7 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If you have at least
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have at least
       3 of any  <sprite=9>  <sprite=10>  <sprite=11> ,\ndraw half the amount of 
       <sprite=9>  (rounded up) to your Hand.\r"
     effectIcon: 000000000000000000000000
@@ -59,7 +59,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
-    focusArea: 23
+    focusArea: 4
     tier: 3
     fire: 1
     wind: 1
@@ -69,8 +69,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>After The War:</b></u>
 
       <size=74>If you performed 
-      <sprite=59>  after Scoring, Take 1  <sprite=8>  played by your opponent up
-      to your Hand.'
+      <sprite=59>  after Scoring, get any 1  <sprite=8>  played by your opponent.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -221,6 +220,37 @@ MonoBehaviour:
     - resources: 18
       amount: 3
   - name: Kushina Uzumaki
+    loreInfo: "Adult - Jinch\u016Briki - 4th Hokage's Wife"
+    index: 68
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 1b216ee8ce2c4ce4db13ced185571b12, type: 3}
+    cardType: 1
+    clan: 7
+    landOrigins: 17
+    TaijutsuValue: 5
+    NinjutsuValue: 4
+    GenjutsuValue: 3
+    heal: 1
+    headAmount: 2
+    focusArea: 0
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: 
+    effectIcon: 010000000200000002000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 14
+      amount: 1
+    - resources: 17
+      amount: 2
+  - name: Kushina Uzumaki
     loreInfo: "Child - Jinch\u016Briki"
     index: 67
     set: 1
@@ -233,7 +263,7 @@ MonoBehaviour:
     GenjutsuValue: 1
     heal: 0
     headAmount: 0
-    focusArea: 0
+    focusArea: 32
     tier: 2
     fire: 0
     wind: 1
@@ -251,37 +281,6 @@ MonoBehaviour:
     - resources: 0
       amount: 1
     - resources: 18
-      amount: 2
-  - name: Kushina Uzumaki
-    loreInfo: "Adult - Jinch\u016Briki - 4th Hokage's Wife"
-    index: 68
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 1b216ee8ce2c4ce4db13ced185571b12, type: 3}
-    cardType: 1
-    clan: 7
-    landOrigins: 17
-    TaijutsuValue: 5
-    NinjutsuValue: 4
-    GenjutsuValue: 3
-    heal: 1
-    headAmount: 2
-    focusArea: 32
-    tier: 4
-    fire: 0
-    wind: 1
-    lightning: 0
-    earth: 0
-    water: 1
-    effectText: 
-    effectIcon: 010000000200000002000000
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 0
-      amount: 1
-    - resources: 14
-      amount: 1
-    - resources: 17
       amount: 2
   - name: Michiko Uzumaki
     loreInfo: Adult - Kushina's Younger Sister
@@ -362,7 +361,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 1
     headAmount: 2
-    focusArea: 2
+    focusArea: 4
     tier: 5
     fire: 1
     wind: 1
@@ -448,39 +447,6 @@ MonoBehaviour:
     - resources: 18
       amount: 2
   - name: Nagato Uzumaki
-    loreInfo: Teenager - Jiraya's Student
-    index: 74
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 546ca160be8d92a46bad265ba74b874b, type: 3}
-    cardType: 1
-    clan: 7
-    landOrigins: 25
-    TaijutsuValue: 4
-    NinjutsuValue: 8
-    GenjutsuValue: 5
-    heal: 0
-    headAmount: 0
-    focusArea: 52
-    tier: 3
-    fire: 1
-    wind: 1
-    lightning: 1
-    earth: 1
-    water: 1
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>If your opponent
-      has played any  <sprite=8>  \u201CEdo Tensei\u201D, get them back up to your
-      Hand."
-    effectIcon: 010000000000000000000000
-    resources:
-    - resources: 0
-      amount: 1
-    - resources: 0
-      amount: 1
-    - resources: 18
-      amount: 1
-    - resources: 2
-      amount: 2
-  - name: Nagato Uzumaki
     loreInfo: Teenager - Edo Tensei
     index: 75
     set: 1
@@ -493,7 +459,7 @@ MonoBehaviour:
     GenjutsuValue: 8
     heal: 1
     headAmount: 0
-    focusArea: 2
+    focusArea: 52
     tier: 5
     fire: 1
     wind: 1
@@ -516,6 +482,39 @@ MonoBehaviour:
       amount: 1
     - resources: 13
       amount: 1
+  - name: Nagato Uzumaki
+    loreInfo: Teenager - Jiraya's Student
+    index: 74
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 546ca160be8d92a46bad265ba74b874b, type: 3}
+    cardType: 1
+    clan: 7
+    landOrigins: 25
+    TaijutsuValue: 4
+    NinjutsuValue: 8
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 0
+    focusArea: 4
+    tier: 3
+    fire: 1
+    wind: 1
+    lightning: 1
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>If your opponent
+      has played any  <sprite=8>  \u201CEdo Tensei\u201D, get them back up to your
+      Hand."
+    effectIcon: 010000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 0
+      amount: 1
+    - resources: 18
+      amount: 1
+    - resources: 2
+      amount: 2
   - name: Naruto Uzumaki
     loreInfo: "Adult - 7th Hokage - Jinch\u016Briki"
     index: 77

@@ -438,38 +438,35 @@ MonoBehaviour:
     - resources: 0
       amount: 1
   - name: Obito Uchiha
-    loreInfo: Awakening - Rage
-    index: 159
+    loreInfo: Awakening - 4th Ninja War
+    index: 161
     set: 1
-    characterSprite: {fileID: 21300000, guid: a81442fa0144b2149ab009aef72f2cae, type: 3}
+    characterSprite: {fileID: 21300000, guid: d15dbe98ea089e8418e866684c3e52dc, type: 3}
     cardType: 1
     clan: 1
     landOrigins: 17
     TaijutsuValue: 3
-    NinjutsuValue: 7
+    NinjutsuValue: 8
     GenjutsuValue: 5
     heal: 0
-    headAmount: 2
-    focusArea: 25
-    tier: 5
+    headAmount: 5
+    focusArea: 0
+    tier: 3
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Least BP:</b></u>\n<size=72>Start the Scoring, but
-      end the War with no winner. \n<size=10%>\n<size=72>Receive a  <sprite=23> 
-      from your opponent as if you won the War.\n<size=10%>\n<size=72>Then reset
-      the Board to its previous state, before this War took place."
-    effectIcon: 000000000000000000000000
+    effectText: 
+    effectIcon: 010000000100000001000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 0
+    - resources: 11
       amount: 1
-    - resources: 13
+    - resources: 10
       amount: 1
   - name: Obito Uchiha
     loreInfo: "Awakening - Jinch\u016Briki - Six Path"
@@ -505,35 +502,38 @@ MonoBehaviour:
     - resources: 13
       amount: 1
   - name: Obito Uchiha
-    loreInfo: Awakening - 4th Ninja War
-    index: 161
+    loreInfo: Awakening - Rage
+    index: 159
     set: 1
-    characterSprite: {fileID: 21300000, guid: d15dbe98ea089e8418e866684c3e52dc, type: 3}
+    characterSprite: {fileID: 21300000, guid: a81442fa0144b2149ab009aef72f2cae, type: 3}
     cardType: 1
     clan: 1
     landOrigins: 17
     TaijutsuValue: 3
-    NinjutsuValue: 8
+    NinjutsuValue: 7
     GenjutsuValue: 5
     heal: 0
-    headAmount: 5
+    headAmount: 2
     focusArea: 29
-    tier: 3
+    tier: 5
     fire: 1
     wind: 0
     lightning: 0
     earth: 1
     water: 1
-    effectText: 
-    effectIcon: 010000000100000001000000
+    effectText: "<size=85><b><u>Least BP:</b></u>\n<size=72>Start the Scoring, but
+      end the War with no winner. \n<size=10%>\n<size=72>Receive a  <sprite=23> 
+      from your opponent as if you won the War.\n<size=10%>\n<size=72>Then reset
+      the Board to its previous state, before this War took place."
+    effectIcon: 000000000000000000000000
     resources:
     - resources: 0
       amount: 1
     - resources: 0
       amount: 1
-    - resources: 11
+    - resources: 0
       amount: 1
-    - resources: 10
+    - resources: 13
       amount: 1
   - name: Orochimaru
     loreInfo: Awakening

@@ -47,10 +47,10 @@ MonoBehaviour:
     - resources: 6
       amount: 2
   - name: Hashirama Senju
-    loreInfo: Adult - 1st Hokage - Sage Mode
-    index: 22
+    loreInfo: Adult - 1st Hokage - Edo Tensei
+    index: 25
     set: 1
-    characterSprite: {fileID: 21300000, guid: 68e7560fe2bf2c345b6db9271f92f0c9, type: 3}
+    characterSprite: {fileID: 21300000, guid: 5611236951abe7c4d98a0b4799a9283d, type: 3}
     cardType: 1
     clan: 5
     landOrigins: 17
@@ -60,23 +60,22 @@ MonoBehaviour:
     heal: 0
     headAmount: 3
     focusArea: 0
-    tier: 4
+    tier: 5
     fire: 0
     wind: 1
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have at least
-      6 <sprite=0>  left,\nget 1 BP.\r"
-    effectIcon: 020000000000000000000000
+    effectText: 
+    effectIcon: 010000000200000002000000
     resources:
     - resources: 0
       amount: 0
-    - resources: 0
+    - resources: 9
       amount: 1
     - resources: 2
       amount: 1
-    - resources: 13
+    - resources: 16
       amount: 1
   - name: Hashirama Senju
     loreInfo: Adult - 1st Hokage - Konoha Founder
@@ -112,6 +111,38 @@ MonoBehaviour:
     - resources: 15
       amount: 1
   - name: Hashirama Senju
+    loreInfo: Adult - 1st Hokage - Sage Mode
+    index: 22
+    set: 1
+    characterSprite: {fileID: 21300000, guid: 68e7560fe2bf2c345b6db9271f92f0c9, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 7
+    NinjutsuValue: 10
+    GenjutsuValue: 5
+    heal: 0
+    headAmount: 3
+    focusArea: 31
+    tier: 4
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 1
+    water: 1
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If you have at least
+      6 <sprite=0>  left,\nget 1 BP.\r"
+    effectIcon: 020000000000000000000000
+    resources:
+    - resources: 0
+      amount: 0
+    - resources: 0
+      amount: 1
+    - resources: 2
+      amount: 1
+    - resources: 13
+      amount: 1
+  - name: Hashirama Senju
     loreInfo: Child
     index: 24
     set: 1
@@ -124,7 +155,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 0
     headAmount: 0
-    focusArea: 31
+    focusArea: 1
     tier: 2
     fire: 0
     wind: 1
@@ -143,37 +174,6 @@ MonoBehaviour:
       amount: 1
     - resources: 18
       amount: 3
-  - name: Hashirama Senju
-    loreInfo: Adult - 1st Hokage - Edo Tensei
-    index: 25
-    set: 1
-    characterSprite: {fileID: 21300000, guid: 5611236951abe7c4d98a0b4799a9283d, type: 3}
-    cardType: 1
-    clan: 5
-    landOrigins: 17
-    TaijutsuValue: 7
-    NinjutsuValue: 10
-    GenjutsuValue: 5
-    heal: 0
-    headAmount: 3
-    focusArea: 1
-    tier: 5
-    fire: 0
-    wind: 1
-    lightning: 0
-    earth: 1
-    water: 1
-    effectText: 
-    effectIcon: 010000000200000002000000
-    resources:
-    - resources: 0
-      amount: 0
-    - resources: 9
-      amount: 1
-    - resources: 2
-      amount: 1
-    - resources: 16
-      amount: 1
   - name: Itama Senju
     loreInfo: Child - Hashirama's Little Brother
     index: 26
@@ -232,7 +232,7 @@ MonoBehaviour:
 
       <size=75>If the Battlefield
       contain a  <sprite=58>  , get +1 <sprite=110> <sprite=111> <sprite=112> for
-      every  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  in the Battlefield.'
+      each of your  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  in the Battlefield.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
     water: 0
     effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>If you\u2019ve
       played other  <sprite=8>  containing  <sprite=59>  , only Discard this  <sprite=4> 
-      and get the others back up to your Hand.\r"
+      and get the others back to your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Scoring:</b></u>
 
       <size=75>If at least one
-      player don''t have any  <sprite=0>  left,
+      player doesn''t have any  <sprite=0>  left,
 
       take 1 <sprite=0>  of your
       choice from the Shop.'
@@ -386,6 +386,45 @@ MonoBehaviour:
     - resources: 17
       amount: 1
   - name: Tobirama Senju
+    loreInfo: Adult - 2nd Hokage - Edo Tensei
+    index: 34
+    set: 1
+    characterSprite: {fileID: 21300000, guid: d7cddd931a81f9249a495fbf5bd255db, type: 3}
+    cardType: 1
+    clan: 5
+    landOrigins: 17
+    TaijutsuValue: 6
+    NinjutsuValue: 9
+    GenjutsuValue: 6
+    heal: 0
+    headAmount: 2
+    focusArea: 1
+    tier: 5
+    fire: 0
+    wind: 1
+    lightning: 0
+    earth: 0
+    water: 1
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>Discard 1 <sprite=0>
+      .
+
+      <size=20%>
+
+      <size=75>In the next "Setup-Phase", take 2 <sprite=0> 
+      of this type from the Shop, if possible.'
+    effectIcon: 000000000000000000000000
+    resources:
+    - resources: 0
+      amount: 1
+    - resources: 16
+      amount: 1
+    - resources: 10
+      amount: 2
+    - resources: 1
+      amount: 2
+  - name: Tobirama Senju
     loreInfo: Adult - 2nd Hokage - Police Founder
     index: 32
     set: 1
@@ -398,7 +437,7 @@ MonoBehaviour:
     GenjutsuValue: 6
     heal: 0
     headAmount: 2
-    focusArea: 1
+    focusArea: 19
     tier: 4
     fire: 0
     wind: 1
@@ -437,7 +476,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 0
     headAmount: 0
-    focusArea: 19
+    focusArea: 31
     tier: 2
     fire: 0
     wind: 1
@@ -455,45 +494,6 @@ MonoBehaviour:
     - resources: 0
       amount: 1
     - resources: 18
-      amount: 2
-  - name: Tobirama Senju
-    loreInfo: Adult - 2nd Hokage - Edo Tensei
-    index: 34
-    set: 1
-    characterSprite: {fileID: 21300000, guid: d7cddd931a81f9249a495fbf5bd255db, type: 3}
-    cardType: 1
-    clan: 5
-    landOrigins: 17
-    TaijutsuValue: 6
-    NinjutsuValue: 9
-    GenjutsuValue: 6
-    heal: 0
-    headAmount: 2
-    focusArea: 31
-    tier: 5
-    fire: 0
-    wind: 1
-    lightning: 0
-    earth: 0
-    water: 1
-    effectText: '<size=85><b><u>Scoring:</b></u>
-
-      <size=75>Discard 1 <sprite=0>
-      .
-
-      <size=20%>
-
-      <size=75>In the next "Setup-Phase", take 2 <sprite=0> 
-      of this type from the Shop, if possible.'
-    effectIcon: 000000000000000000000000
-    resources:
-    - resources: 0
-      amount: 1
-    - resources: 16
-      amount: 1
-    - resources: 10
-      amount: 2
-    - resources: 1
       amount: 2
   - name: Toka Senju
     loreInfo: Adult - Associate of Hashirama Senju
@@ -626,15 +626,13 @@ MonoBehaviour:
     water: 1
     effectText: '<size=85><b><u>Scoring:</b></u>
 
-      <size=75>Show 1 of your opponent''s
-
-      <sprite=0> 
-      at random.
+      <size=75>Show 1 of your opponent''s 
+      <sprite=0>  at random.
 
       <size=20%>
 
-      <size=75>Perform this  <sprite=0>  on your
-      next Turn, if possible.'
+      <size=75>Perform this  <sprite=0> 
+      on your next Turn, if possible.'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0

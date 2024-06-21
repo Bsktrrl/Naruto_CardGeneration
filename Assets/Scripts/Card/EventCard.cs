@@ -7,5 +7,6 @@ public class EventCard
 {
     public string name;
     public Sprite image;
+    public bool isLastRound;
     [TextArea(8, 5)] public string description;
 }

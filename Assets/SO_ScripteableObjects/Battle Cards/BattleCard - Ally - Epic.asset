@@ -171,7 +171,7 @@ MonoBehaviour:
     effectText: "<size=85><b><u>In Hand - Your Scoring:</b></u>\r\n<size=75>Get 1
       Point for each  <sprite=122> <sprite=123> <sprite=124>  in this War with a
       Value of 7 and above.\n<size=20%>\n<size=75>Move up 1 spot for each Point gathered,
-      in any of the Domination Tracks.\r"
+      in any Domination Tracks.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
-    focusArea: 2
+    focusArea: 4
     tier: 4
     fire: 0
     wind: 0
@@ -767,7 +767,7 @@ MonoBehaviour:
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Place 2  <sprite=48> 
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Place 2 <sprite=48> 
       onto any Water Field you control.\r"
     effectIcon: 020000000000000000000000
     resources:
@@ -1508,7 +1508,7 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 0
-    effectText: '<size=85><b><u>For the rest of the War:</b></u>
+    effectText: '<size=82><b><u>For the rest of the War:</b></u>
 
       <size=75>Nothing
       on your  <sprite=8>  can be canceled.'
@@ -1542,9 +1542,9 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get 1 additional  <sprite=52> 
-      for each  <sprite=52>  and  <sprite=53>  as Resources on your played  <sprite=8>
-      .\r"
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Get 1 additional 
+      <sprite=52>  for each  <sprite=52>  and  <sprite=53>  as Resources on your
+      played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1568,15 +1568,16 @@ MonoBehaviour:
     GenjutsuValue: 5
     heal: 1
     headAmount: 0
-    focusArea: 0
+    focusArea: 21
     tier: 4
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get 1 additional  <sprite=52> 
-      for each  <sprite=53>  as Resources on your played  <sprite=8> .\r"
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Get 1 additional 
+      <sprite=52>  for each  <sprite=53>  as Resources on your played  <sprite=8>
+      .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1802,8 +1803,8 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Swap all your
-      opponent\u2019s  <sprite=69>  into  <sprite=70>  and all your  <sprite=70> 
-      \ninto  <sprite=69> .\r"
+      opponent\u2019s\n <sprite=69>  into  <sprite=70>\n<size=20%>\n<size=75>and
+      all your\n <sprite=70>  into  <sprite=69> .\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -1834,7 +1835,7 @@ MonoBehaviour:
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>War against a <sprite=23> :</b></u>\r\n<size=74>Draw
+    effectText: "<size=85><b><u>War against a  <sprite=23> :</b></u>\r\n<size=74>Draw
       2 <sprite=11> .\r"
     effectIcon: 020000000000000000000000
     resources:
@@ -2031,7 +2032,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
-    focusArea: 45
+    focusArea: 21
     tier: 4
     fire: 0
     wind: 0
@@ -2292,7 +2293,7 @@ MonoBehaviour:
     NinjutsuValue: 5
     GenjutsuValue: 4
     heal: 1
-    headAmount: 1
+    headAmount: 0
     focusArea: 23
     tier: 4
     fire: 0
@@ -2334,7 +2335,7 @@ MonoBehaviour:
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Remove 1 of your opponent\u2019s 
       <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this Battlefield for
-      all  <sprite=59>  that has appeared\non  <sprite=8> .\r"
+      all  <sprite=59>  that has appeared\non  <sprite=8>  in this War."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2662,7 +2663,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 1
-    focusArea: 0
+    focusArea: 14
     tier: 4
     fire: 1
     wind: 0
@@ -3170,7 +3171,7 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>War against a <sprite=23> :</b></u>\r\n<size=75>Score
+    effectText: "<size=85><b><u>War against a  <sprite=23> :</b></u>\r\n<size=75>Score
       your Resources.\r"
     effectIcon: 000000000000000000000000
     resources:

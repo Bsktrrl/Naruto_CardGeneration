@@ -1385,6 +1385,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Focus_Icons_61
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6b82ac8005af944b4dad198e60bf2b
+      internalID: -230893362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Focus_Icons_62
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bcc634c954bf548ac1dcb13eca198d
+      internalID: -221640643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1401,12 +1443,15 @@ TextureImporter:
       Focus_Icons_44: -1621597488
       Focus_Icons_60: 1140786259
       Focus_Icons_32: -247745078
+      Focus_Icons_65: 934435452
+      Focus_Icons_68: -942306113
       Focus_Icons_11: -1076334753
       Focus_Icons_22: 1521548982
       Focus_Icons_9: 494323429
       Focus_Icons_50: -1438893531
       Focus_Icons_46: 1921067416
       Focus_Icons_42: -96823947
+      Focus_Icons_67: -1904332537
       Focus_Icons_18: 555401273
       Focus_Icons_3: -1972664080
       Focus_Icons_37: 1731634534
@@ -1418,8 +1463,10 @@ TextureImporter:
       Focus_Icons_41: -1187556295
       Focus_Icons_39: 676914574
       Focus_Icons_15: -5027404
+      Focus_Icons_61: -230893362
       Focus_Icons_48: 1056703731
       Focus_Icons_4: -633269093
+      Focus_Icons_69: -544117992
       Focus_Icons_55: 583908204
       Focus_Icons_12: -497884789
       Focus_Icons_21: 698850088
@@ -1430,8 +1477,10 @@ TextureImporter:
       Focus_Icons_49: -174458757
       Focus_Icons_26: -2066441008
       Focus_Icons_52: -1890629803
+      Focus_Icons_64: 52676796
       Focus_Icons_14: -369006080
       Focus_Icons_30: -1252359420
+      Focus_Icons_66: 1683648289
       Focus_Icons_19: -1214860141
       Focus_Icons_56: 2016386132
       Focus_Icons_6: 76033995
@@ -1449,6 +1498,7 @@ TextureImporter:
       Focus_Icons_23: -2083429595
       Focus_Icons_38: 181808651
       Focus_Icons_40: 1607726641
+      Focus_Icons_62: -221640643
       Focus_Icons_0: -1798607753
       Focus_Icons_27: 183823918
       Focus_Icons_29: 706261898
@@ -1457,6 +1507,7 @@ TextureImporter:
       Focus_Icons_51: 79798748
       Focus_Icons_34: -1607966866
       Focus_Icons_10: -526868102
+      Focus_Icons_63: 1607116985
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -33,8 +33,8 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If this is the first
-      Battle in the War,  get 3 <sprite=22> .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If this  <sprite=75> 
+      is played in the first Battle of the War,  get 3 <sprite=22> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -303,10 +303,10 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 0
-    effectText: '<size=85><b><u>Scoring:</b></u>
+    effectText: '<size=85><b><u>Immediately:</b></u>
 
-      <size=75>You may pay your
-      opponent 2 <sprite=22>  and Draw 1 <sprite=11> .'
+      <size=75>You may pay
+      your opponent 2 <sprite=22>  and Draw 1 <sprite=11> .'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 1
     headAmount: 0
-    focusArea: 0
+    focusArea: 16
     tier: 3
     fire: 1
     wind: 1

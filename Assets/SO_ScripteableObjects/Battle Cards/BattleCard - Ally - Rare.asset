@@ -471,7 +471,7 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 0
-    effectText: '<size=85><b><u>War against a <sprite=87> :</b></u>
+    effectText: '<size=85><b><u>War against a  <sprite=87> :</b></u>
 
       <size=74>Win
       the War.'
@@ -505,7 +505,7 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>War against a <sprite=87> :</b></u>\r\n<size=74>Win
+    effectText: "<size=85><b><u>War against a  <sprite=87> :</b></u>\r\n<size=74>Win
       the War.\n<size=10%>\n<size=73>Then get 1 additional  <sprite=87>  from the
       Main Supply.\r"
     effectIcon: 010000000000000000000000
@@ -740,8 +740,8 @@ MonoBehaviour:
     water: 1
     effectText: "<size=85><b><u>In Hand \u2013 Start of your Battle:</b></u>\r\n<size=75>Discard
       this  <sprite=9>  and look at your opponent\u2019s chosen  <sprite=8> .\n<size=10%>\n<size=75>You
-      may Swap it with a  <sprite=8>  from your Hand, making your opponent play one
-      of your  <sprite=8> ."
+      may Swap it with a  <sprite=8>  from your Hand, making your opponent play it
+      as its  <sprite=8> ."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -969,7 +969,7 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Change all your 
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Change all your 
       <sprite=70>  into  <sprite=69> .\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -1001,7 +1001,7 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Cancel all  <sprite=69> 
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Cancel all  <sprite=69> 
       and  <sprite=70>  played by your opponent.\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 0
-    focusArea: 25
+    focusArea: 27
     tier: 3
     fire: 0
     wind: 1
@@ -1228,9 +1228,9 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>For the rest of
-      this War, when any  <sprite=69>  and  <sprite=70>  appear, you may change them
-      to be of the opposite type.\r"
+    effectText: "<size=82><b><u>For the rest of the War:</b></u>\r\n<size=75>When
+      any  <sprite=69>  and  <sprite=70>  appear, you may change them to be of the
+      opposite types.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -1326,7 +1326,7 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 0
-    focusArea: 40
+    focusArea: 19
     tier: 3
     fire: 0
     wind: 1
@@ -1367,7 +1367,7 @@ MonoBehaviour:
     GenjutsuValue: 0
     heal: 0
     headAmount: 0
-    focusArea: 19
+    focusArea: 40
     tier: 3
     fire: 0
     wind: 1
@@ -1634,7 +1634,7 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: '<size=85><b><u>Before Scoring:</b></u>
+    effectText: '<size=85><b><u>During Scoring:</b></u>
 
       <size=75>Double the 
       <sprite=52>  you get as Resources.'
@@ -1746,7 +1746,7 @@ MonoBehaviour:
       amount: 2
     - resources: 18
       amount: 3
-  - name: MIsumi Tsurugi
+  - name: Misumi Tsurugi
     loreInfo: Teenager - Chunin Exams - Team Kabuto
     index: 219
     set: 1
@@ -1768,8 +1768,8 @@ MonoBehaviour:
     water: 1
     effectText: '<size=85><b><u>Scoring:</b></u>
 
-      <size=75>Steal 1 random 
-      <sprite=9>  <sprite=10>  <sprite=11>  from from your opponent.'
+      <size=75>Take 1 random  <sprite=9> 
+      <sprite=10>  <sprite=11>  from from your opponent.'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 13
@@ -1833,7 +1833,7 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: '<size=85><b><u>Before Scoring:</b></u>
+    effectText: '<size=85><b><u>During Scoring:</b></u>
 
       <size=75>If your opponent
       get any  <sprite=22>  as Resources,
@@ -1903,7 +1903,7 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 1
-    effectText: '<size=85><b><u>After The War:</b></u>
+    effectText: '<size=85><b><u>After Scoring:</b></u>
 
       <size=75>Get back up
       to your Hand all your played  <sprite=8>  not from  <sprite=97> .'
@@ -2037,8 +2037,8 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Future Battles:</b></u>\r\n<size=75>Draw 1 <sprite=10> 
-      for each  <sprite=8>  you Discard.\r"
+    effectText: "<size=82><b><u>For the rest of the War:</b></u>\r\n<size=75>Draw
+      1 <sprite=10>  for each  <sprite=8>  you Discard.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -2325,11 +2325,9 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: '<size=85><b><u>Scoring:</b></u>
-
-      <size=75>You may Remove the 
-      <sprite=59>  from 1 of your played  <sprite=8>  to be able to Score the Resources
-      on this  <sprite=9> .'
+    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=75>To be able to Score the
+      Resources on this  <sprite=9> , you must Remove the  <sprite=59>  from 1 of
+      your played\n <sprite=8> ."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 2
@@ -2392,7 +2390,7 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Get 1 BP.\r"
+    effectText: "<size=85><b><u>Most BP:</b></u>\r\n<size=75>Get 1 BP.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2521,7 +2519,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 0
-    focusArea: 0
+    focusArea: 9
     tier: 3
     fire: 1
     wind: 0
@@ -2554,7 +2552,7 @@ MonoBehaviour:
     GenjutsuValue: 2
     heal: 2
     headAmount: 0
-    focusArea: 0
+    focusArea: 9
     tier: 3
     fire: 1
     wind: 0
@@ -2898,8 +2896,8 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If anything were
-      to be done at random, you choose the outcome for both you and your opponent.\r"
+    effectText: "<size=85><b><u>For the rest of the War:</b></u>\r\n<size=75>If anything
+      were to be done at random, you choose the outcome for both you and your opponent.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2930,8 +2928,8 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>Double the Resources
-      received from 1 of\nyour  <sprite=8> .\r"
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get the same Resources
+      as in one of your other played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -3027,7 +3025,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>In Hand \u2013 Start of War against a  <sprite=23>
-      :</b></u>\r\n<size=75>Reduce the Strength of the  <sprite=23>  with -4.\r"
+      :</b></u>\r\n<size=75>Reduce the Strength of the  <sprite=23>  with -6.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0

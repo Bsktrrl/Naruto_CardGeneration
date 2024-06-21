@@ -1078,16 +1078,9 @@ public class CardManager : MonoBehaviour
         #region
         if (battleCard.headAmount > 0)
         {
-            if (battleCard.focusArea != FocusArea.None)
+            if (CardDisplayManager.Instance.focusIcon)
             {
-                if (CardDisplayManager.Instance.focusIcon)
-                {
-                    battleCardObject.headParent.transform.localPosition = new Vector2(-574, -31);
-                }
-                else
-                {
-                    battleCardObject.headParent.transform.localPosition = new Vector2(-574, -167);
-                }
+                battleCardObject.headParent.transform.localPosition = new Vector2(-574, -31);
             }
             else
             {
@@ -1108,651 +1101,636 @@ public class CardManager : MonoBehaviour
         #region
         battleCardObject.focusArea_Image.color = Color.white;
 
-        if (battleCard.focusArea != FocusArea.None)
+        if (CardDisplayManager.Instance.focusIcon)
         {
-            if (CardDisplayManager.Instance.focusIcon)
+            battleCardObject.focusArea_Parent.SetActive(true);
+
+            switch (battleCard.focusArea)
             {
-                battleCardObject.focusArea_Parent.SetActive(true);
+                //None
+                case FocusArea.None:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_None;
+                    break;
 
-                switch (battleCard.focusArea)
-                {
-                    //None
-                    case FocusArea.None:
-                        break;
+                //Cards
+                case FocusArea.ActionCards:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ActionCards;
+                    break;
+                case FocusArea.ClanCards:
 
-                    //Cards
-                    case FocusArea.ActionCards:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ActionCards;
-                        break;
-                    case FocusArea.ClanCards:
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                            break;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Akatsuki;
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Akatsuki;
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Hyuga;
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Otsutsuki;
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Senju;
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Uchiha;
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Uzumaki;
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Kara;
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Akatsuki;
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Akatsuki;
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Hyuga;
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Otsutsuki;
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Senju;
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Uchiha;
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Uzumaki;
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_Kara;
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.sprite = battleCardObject.focus_ClanCards_All;
-                                break;
+                        default:
+                            break;
+                    }
+                    break;
+                case FocusArea.AwakeningCards:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_AwakeningCards;
+                    break;
+                case FocusArea.BattleCards:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattleCards;
+                    break;
+                case FocusArea.BattleCards_All:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattleCards_All;
+                    break;
+                case FocusArea.EventCards:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_EventCards;
+                    break;
 
-                            default:
-                                break;
-                        }
-                        break;
-                    case FocusArea.AwakeningCards:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_AwakeningCards;
-                        break;
-                    case FocusArea.BattleCards:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattleCards;
-                        break;
-                    case FocusArea.BattleCards_All:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattleCards_All;
-                        break;
-                    case FocusArea.EventCards:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_EventCards;
-                        break;
+                case FocusArea.Ally_Rare:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Rare;
+                    break;
+                case FocusArea.Ally_Epic:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Epic;
+                    break;
+                case FocusArea.Ally_Legendary:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Legendary;
+                    break;
+                case FocusArea.Ally_RareEpic:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_RareEpic;
+                    break;
+                case FocusArea.Ally_RareLegendary:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_RareLegendary;
+                    break;
+                case FocusArea.Ally_EpicLegendary:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_EpicLegendary;
+                    break;
+                case FocusArea.Ally_All:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_All;
+                    break;
 
-                    case FocusArea.Ally_Rare:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Rare;
-                        break;
-                    case FocusArea.Ally_Epic:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Epic;
-                        break;
-                    case FocusArea.Ally_Legendary:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_Legendary;
-                        break;
-                    case FocusArea.Ally_RareEpic:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_RareEpic;
-                        break;
-                    case FocusArea.Ally_RareLegendary:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_RareLegendary;
-                        break;
-                    case FocusArea.Ally_EpicLegendary:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_EpicLegendary;
-                        break;
-                    case FocusArea.Ally_All:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Ally_All;
-                        break;
+                //Effect Tokens
+                case FocusArea.Effect_Poison:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Poison;
+                    break;
+                case FocusArea.Effect_Paralyse:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Paralyse;
+                    break;
+                case FocusArea.Effect_Illusion:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Illusion;
+                    break;
+                case FocusArea.Effect_Freeze:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Freeze;
+                    break;
+                case FocusArea.Effect_Chain:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Chain;
+                    break;
+                case FocusArea.Effect_Substitution:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Substitution;
+                    break;
+                case FocusArea.Effect_All:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_All;
+                    break;
+                case FocusArea.Effect_All_MinusChain:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_All_MinusChain;
+                    break;
+                case FocusArea.Effect_All_MinusSubstitution:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.Effect_All_MinusSubstitution;
+                    break;
+                case FocusArea.Effect_All_MinusChain_and_Substitution:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.Effect_All_MinusChain_and_Substitution;
+                    break;
+                case FocusArea.Effect_Paralyse_And_Illusion:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Paralyse_and_Illusion;
+                    break;
+                case FocusArea.Effect_Freeze_and_Paralyze:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Freeze_and_Paralyze;
+                    break;
 
-                    //Effect Tokens
-                    case FocusArea.Effect_Poison:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Poison;
-                        break;
-                    case FocusArea.Effect_Paralyse:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Paralyse;
-                        break;
-                    case FocusArea.Effect_Illusion:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Illusion;
-                        break;
-                    case FocusArea.Effect_Freeze:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Freeze;
-                        break;
-                    case FocusArea.Effect_Chain:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Chain;
-                        break;
-                    case FocusArea.Effect_Substitution:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Substitution;
-                        break;
-                    case FocusArea.Effect_All:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_All;
-                        break;
-                    case FocusArea.Effect_All_MinusChain:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_All_MinusChain;
-                        break;
-                    case FocusArea.Effect_All_MinusSubstitution:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.Effect_All_MinusSubstitution;
-                        break;
-                    case FocusArea.Effect_All_MinusChain_and_Substitution:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.Effect_All_MinusChain_and_Substitution;
-                        break;
-                    case FocusArea.Effect_Paralyse_And_Illusion:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Paralyse_and_Illusion;
-                        break;
-                    case FocusArea.Effect_Freeze_and_Paralyze:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_Freeze_and_Paralyze;
-                        break;
+                //Merged
+                case FocusArea.Merged_Coin_And_Illusion:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Merged_Coin_and_Illusion;
+                    break;
 
-                    //Coin
-                    case FocusArea.Coin:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Coin;
-                        break;
+                //Coin
+                case FocusArea.Coin:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Coin;
+                    break;
 
-                    //Tailed Beast
-                    case FocusArea.TailedBeast:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_TailedBeast;
-                        break;
-                    case FocusArea.TailedBeastBuff:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_TailedBeastBuff;
-                        break;
+                //Tailed Beast
+                case FocusArea.TailedBeast:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_TailedBeast;
+                    break;
+                case FocusArea.TailedBeastBuff:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_TailedBeastBuff;
+                    break;
 
-                    //Units
-                    case FocusArea.Units:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Units;
+                //Units
+                case FocusArea.Units:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Units;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BoxFrameColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BoxFrameColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
-                    case FocusArea.Boats:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Boats;
+                        default:
+                            break;
+                    }
+                    break;
+                case FocusArea.Boats:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Boats;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BoxFrameColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BoxFrameColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
+                        default:
+                            break;
+                    }
+                    break;
 
-                    //Dominance Track
-                    case FocusArea.Dominance_UP:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UP;
-                        break;
-                    case FocusArea.Dominance_DOWN:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_DOWN;
-                        break;
-                    case FocusArea.Dominance_UpDown:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UpDown;
-                        break;
+                //Dominance Track
+                case FocusArea.Dominance_UP:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UP;
+                    break;
+                case FocusArea.Dominance_DOWN:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_DOWN;
+                    break;
+                case FocusArea.Dominance_UpDown:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UpDown;
+                    break;
 
-                    case FocusArea.Dominance_Weights:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Weights;
-                        break;
-                    case FocusArea.Dominance_TieBreaker:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_TieBreaker;
-                        break;
-                    case FocusArea.Dominance_UnitStrength:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UnitStrength;
-                        break;
-                    case FocusArea.Dominance_Recruitment:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Recruitment;
-                        break;
-                    case FocusArea.Dominance_Payment:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Payment;
-                        break;
-                    case FocusArea.Dominance_HandLimit:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_HandLimit;
-                        break;
+                case FocusArea.Dominance_Weights:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Weights;
+                    break;
+                case FocusArea.Dominance_TieBreaker:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_TieBreaker;
+                    break;
+                case FocusArea.Dominance_UnitStrength:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_UnitStrength;
+                    break;
+                case FocusArea.Dominance_Recruitment:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Recruitment;
+                    break;
+                case FocusArea.Dominance_Payment:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_Payment;
+                    break;
+                case FocusArea.Dominance_HandLimit:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Dominance_HandLimit;
+                    break;
 
-                    //Heal
-                    case FocusArea.Heal:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Heal;
-                        break;
-                    case FocusArea.HealBlock:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_HealBlock;
-                        break;
+                //Heal
+                case FocusArea.Heal:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Heal;
+                    break;
+                case FocusArea.HealBlock:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_HealBlock;
+                    break;
 
-                    //Effect Icons
-                    case FocusArea.Skull:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Skull;
-                        break;
-                    case FocusArea.Sand:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Sand;
-                        break;
-                    case FocusArea.Skull_Sand:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Skull_Sand;
-                        break;
+                //Effect Icons
+                case FocusArea.Skull:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Skull;
+                    break;
+                case FocusArea.Sand:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Sand;
+                    break;
+                case FocusArea.Skull_Sand:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Skull_Sand;
+                    break;
 
-                    //Reroll
-                    case FocusArea.Reroll:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Reroll;
-                        break;
+                //Reroll
+                case FocusArea.Reroll:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Reroll;
+                    break;
 
-                    //War
-                    case FocusArea.War:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_War;
-                        break;
-                    case FocusArea.Battle:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Battle;
-                        break;
-                    case FocusArea.BattlePoint:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattlePoint;
+                //War
+                case FocusArea.War:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_War;
+                    break;
+                case FocusArea.Battle:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Battle;
+                    break;
+                case FocusArea.BattlePoint:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_BattlePoint;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_TextColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_TextColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_TextColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_TextColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_TextColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_TextColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_TextColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_TextColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_TextColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_TextColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_TextColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_TextColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_TextColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_TextColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
-                    case FocusArea.CombatStrength:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_CombatStrength;
+                        default:
+                            break;
+                    }
+                    break;
+                case FocusArea.CombatStrength:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_CombatStrength;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
-                    case FocusArea.Effect:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect;
+                        default:
+                            break;
+                    }
+                    break;
+                case FocusArea.Effect:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
-                    case FocusArea.Resources:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Resources;
+                        default:
+                            break;
+                    }
+                    break;
+                case FocusArea.Resources:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Resources;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
-                    case FocusArea.Effect_And_Resources:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_And_Resources;
+                        default:
+                            break;
+                    }
+                    break;
+                case FocusArea.Effect_And_Resources:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Effect_And_Resources;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
-                    case FocusArea.Support:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Support;
-                        break;
+                        default:
+                            break;
+                    }
+                    break;
+                case FocusArea.Support:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Support;
+                    break;
 
-                    case FocusArea.Immune:
-                        battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Immune;
+                case FocusArea.Immune:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Immune;
 
-                        switch (battleCard.clan)
-                        {
-                            case Clan.None:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
 
-                            case Clan.Akatsuki_Awakening:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Akatsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
-                                break;
-                            case Clan.Hyuga:
-                                battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
-                                break;
-                            case Clan.Otsutsuki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
-                                break;
-                            case Clan.Senju:
-                                battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
-                                break;
-                            case Clan.Uchiha:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
-                                break;
-                            case Clan.Uzumaki:
-                                battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
-                                break;
-                            case Clan.Kara:
-                                battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
-                                break;
-                            case Clan.Ally:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Rare:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Epic:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
-                            case Clan.Ally_Legendary:
-                                battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
-                                break;
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
 
-                            default:
-                                break;
-                        }
-                        break;
+                        default:
+                            break;
+                    }
+                    break;
 
-                    default:
-                        break;
-                }
-
-                //Change to Clipped Frames
-                battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
-                battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
+                default:
+                    break;
             }
-            else
-            {
-                if (battleCard.headAmount > 0)
-                {
-                    //Change to Whole Frames
-                    battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
-                    battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
-                }
-                else
-                {
 
-                    //Change to Whole Frames
-                    battleCardObject.box_Frame.sprite = box_Frame_Sprite;
-                    battleCardObject.box_Background.sprite = box_Background_Sprite;
-                }
-
-                battleCardObject.focusArea_Parent.SetActive(false);
-            }
+            //Change to Clipped Frames
+            battleCardObject.box_Frame.sprite = boxHead_Frame_Sprite;
+            battleCardObject.box_Background.sprite = boxHead_Background_Sprite;
         }
         else
         {
@@ -2592,6 +2570,15 @@ public class CardManager : MonoBehaviour
         eventCardObject.header.text = eventCard.name;
         eventCardObject.description.text = eventCard.description;
         eventCardObject.image.sprite = eventCard.image;
+
+        if (eventCard.isLastRound)
+        {
+            eventCardObject.isLastRoundImage.SetActive(true);
+        }
+        else
+        {
+            eventCardObject.isLastRoundImage.SetActive(false);
+        }
     }
 
     public void DisplayActionCard(ActionCard actioncard)
