@@ -3035,7 +3035,7 @@ MonoBehaviour:
     NinjutsuValue: 1
     GenjutsuValue: 1
     heal: 1
-    headAmount: 0
+    headAmount: 1
     focusArea: 32
     tier: 5
     fire: 1

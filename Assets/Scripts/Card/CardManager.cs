@@ -2571,13 +2571,22 @@ public class CardManager : MonoBehaviour
         eventCardObject.description.text = eventCard.description;
         eventCardObject.image.sprite = eventCard.image;
 
-        if (eventCard.isLastRound)
+        //First Round Image
+        eventCardObject.isBothImage.SetActive(false);
+        eventCardObject.isFirstRoundImage.SetActive(false);
+        eventCardObject.isLastRoundImage.SetActive(false);
+
+        if (eventCard.isFirstRound && eventCard.isLastRound)
+        {
+            eventCardObject.isBothImage.SetActive(true);
+        }
+        else if (eventCard.isFirstRound)
+        {
+            eventCardObject.isFirstRoundImage.SetActive(true);
+        }
+        else if (eventCard.isLastRound)
         {
             eventCardObject.isLastRoundImage.SetActive(true);
-        }
-        else
-        {
-            eventCardObject.isLastRoundImage.SetActive(false);
         }
     }
 

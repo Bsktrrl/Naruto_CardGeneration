@@ -9,5 +9,7 @@ public class EventCardObject : MonoBehaviour
     public TextMeshProUGUI header;
     public TextMeshProUGUI description;
     public Image image;
+    public GameObject isFirstRoundImage;
     public GameObject isLastRoundImage;
+    public GameObject isBothImage;
 }
