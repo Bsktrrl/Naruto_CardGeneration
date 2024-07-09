@@ -270,7 +270,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Before Scoring:</b></u>\r\n<size=75>If you\u2019re
-      being Supported in this War, gain 3  <sprite=70>  and 3  <sprite=69>  on this 
+      being Supported in this War, gain 3  <sprite=69>  and 3  <sprite=70>  on this 
       <sprite=2> .\r"
     effectIcon: 020000000000000000000000
     resources:
@@ -496,8 +496,9 @@ MonoBehaviour:
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>If you used  <sprite=59> 
-      during Scoring, draw 1 <sprite=9>  for each  <sprite=8>  you got back on Hand.\r"
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>If you performed 
+      <sprite=59>  during Scoring, draw 1 <sprite=9>  for each  <sprite=8>  you got
+      back on Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -562,7 +563,7 @@ MonoBehaviour:
     water: 1
     effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>Give your opponent
       1 BP.\n<size=20%>\n<size=75>If your opponent doesn't have 3BP, the War ends
-      and you win.\n<size=20%>\n<size=75>If so, Trash this  <sprite=2>  after Scoring.\r"
+      and you Win.\n<size=20%>\n<size=75>If so, Trash this  <sprite=2>  after Scoring.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -658,8 +659,8 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Next Battle:</b></u>\r\n<size=75>If your opponent
-      plays either of  <sprite=9>  <sprite=10>  <sprite=11> , immediately draw 2
-      <sprite=9> .\r"
+      plays any\n<sprite=9>  <sprite=10>  <sprite=11> , immediately draw\n2 <sprite=9>
+      .\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0

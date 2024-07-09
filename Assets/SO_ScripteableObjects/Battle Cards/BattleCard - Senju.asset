@@ -34,8 +34,8 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=74>Take 1 random  <sprite=0> 
-      from each player and look at them (choose your  <sprite=0> ).\n<size=10%>\n<size=74>Give
-      back 1 <sprite=0>  to each player as you like.\r"
+      from each player and look at them (also choose 1 from your Hand).\n<size=10%>\n<size=74>Give
+      back 1 <sprite=0>  to each player of your choice.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Immediately:</b></u>
 
       <size=75>If the Battlefield
-      contain a  <sprite=58>  , get +1 <sprite=110> <sprite=111> <sprite=112> for
+      contains a  <sprite=58>  , get +1 <sprite=110> <sprite=111> <sprite=112> for
       each of your  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  in the Battlefield.'
     effectIcon: 000000000000000000000000
     resources:
@@ -296,9 +296,9 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Shuffle back in
-      all  <sprite=4>  \u201CTsunade Senju\u201D from your Discard Pile into the
-      top half of your\nDraw Pile.\r"
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Shuffle back all 
+      <sprite=4>  \u201CTsunade Senju\u201D from your Discard Pile into the top half
+      of your Draw Pile.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -369,12 +369,13 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Immediately:</b></u>
 
       <size=75>Draw 1 <sprite=11>
-      for each player. Look at them and give 1 <sprite=11> to each player.
+      for each player. Look at them and give 1 <sprite=11>  to each player, including
+      yourself.
 
       <size=20%>
 
-      <size=75>Get
-      yours on Hand and place the others on the bottom of each Draw Pile.'
+      <size=75>Get yours on Hand and place the
+      others on the bottom of each Draw Pile.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -444,15 +445,9 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 1
-    effectText: '<size=85><b><u>Scoring:</b></u>
-
-      <size=75>You may split or
-      merge your  <sprite=37>  <sprite=38>  <sprite=39>  on the Board.
-
-      <size=20%>
-
-      <size=75>Keep
-      the same points in each Field as before splitting.'
+    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=74>You may split or merge
+      your\n <sprite=37>  <sprite=38>  <sprite=39>  in each Land Field on the Board.\n<size=10%>\n<size=74>Keep
+      the same points in each Field as before splitting."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -624,15 +619,9 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: '<size=85><b><u>Scoring:</b></u>
-
-      <size=75>Show 1 of your opponent''s 
-      <sprite=0>  at random.
-
-      <size=20%>
-
-      <size=75>Perform this  <sprite=0> 
-      on your next Turn, if possible.'
+    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=75>Reveal 1 of your opponent's\n
+      <sprite=0>  at random.\n<size=20%>\n<size=75>Perform this  <sprite=0>  on your
+      next Turn, if possible."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0

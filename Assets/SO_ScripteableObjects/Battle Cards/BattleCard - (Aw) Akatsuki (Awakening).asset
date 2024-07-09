@@ -79,7 +79,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Least BP:</b></u>
 
       <size=75>Draw 1 <sprite=1> 
-      from either your Trash Pile or Discard Pile back up to your Hand, of your choice.'
+      of your choice from either your Trash Pile or Discard Pile back onto your Hand.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -150,9 +150,10 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>During Scoring, choose
-      1 played  <sprite=76>  that will not be Trashed and can be used once more.\n<size=20%>\n<size=75>Then
-      remove this  <sprite=76>  and its  <sprite=1>  \"Jugo\" from\nthe Game.\r"
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=74>During Scoring, choose
+      1 <sprite=76>  played in this War that will not be Trashed and can be used
+      once more.\n<size=10%>\n<size=74>Then Remove this  <sprite=76>  and its  <sprite=1> 
+      \"Jugo\" from\nthe Game.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -422,11 +423,11 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=75>After the war, shuffle
+    effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=73>After the war, shuffle
       back in all Trashed\n <sprite=1>  <sprite=9>  <sprite=10>  <sprite=11>  to
-      their respective Draw Piles.\n<size=20%>\n<size=75>Draw 1  <sprite=8>  from
-      each Draw Pile.\n<size=20%>\n<size=75>Then remove both  <sprite=76>  \u201CNagato\u201D
-      from the Game.\r"
+      their respective Draw Piles.\n<size=8%>\n<size=73>Choose 1 <sprite=8>  from
+      each of those Draw Piles and put them onto your Hand.\n<size=8%>\n<size=73>Then
+      remove both  <sprite=76>  \u201CNagato\u201D from the Game.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -469,7 +470,7 @@ MonoBehaviour:
     - resources: 10
       amount: 1
   - name: Obito Uchiha
-    loreInfo: "Awakening - Jinch\u016Briki - Six Path"
+    loreInfo: "Awakening - Jinch\u016Briki - Six Paths"
     index: 160
     set: 1
     characterSprite: {fileID: 21300000, guid: 43155175027e12d48b32e59d299348d6, type: 3}

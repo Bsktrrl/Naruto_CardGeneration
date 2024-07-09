@@ -34,7 +34,7 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If this  <sprite=75> 
-      is played in the first Battle of the War,  get 3 <sprite=22> .\r"
+      is played in the first Battle,  get 3 <sprite=22> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -67,13 +67,15 @@ MonoBehaviour:
     water: 1
     effectText: '<size=85><b><u>Immediately:</b></u>
 
-      <size=75>You may pay
-      your opponent 1 <sprite=22>  to reduce the  <sprite=119> <sprite=120> <sprite=121> 
-      on its  <sprite=8>  in this Battle with -1.
+      <size=74>You may pay
+      your opponent
+
+      1 <sprite=22>  to reduce the  <sprite=119> <sprite=120>
+      <sprite=121>  with -1 on its  <sprite=8>  in this Battle.
 
       <size=8%>
 
-      <size=75>You
+      <size=74>You
       may pay several  <sprite=22>  to reduce the  <sprite=119> <sprite=120> <sprite=121> 
       further.'
     effectIcon: 020000000000000000000000
@@ -140,8 +142,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>If your opponent must
-      pay to remove  <sprite=19>  at the end of this Round, you get the  <sprite=22> 
-      that is paid.\r"
+      pay to remove  <sprite=19> , you get all the  <sprite=22>  that is paid.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -272,7 +273,7 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If your opponent
-      have more  <sprite=22>  than you, get 1 BP.\r"
+      has more  <sprite=22>  than you, get 1 BP.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 11
@@ -514,8 +515,8 @@ MonoBehaviour:
 
       <size=8%>
 
-      <size=73>In return, you win the War, but doesn''t
-      take any  <sprite=23>  from your opponent.'
+      <size=73>In return, you Win the War, but don''t
+      get any  <sprite=23>  from your opponent for Winning.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -645,8 +646,10 @@ MonoBehaviour:
     effectText: '<size=85><b><u>If Winning the War:</b></u>
 
       <size=75>If this
-      Battlefield contain  <sprite=22> , get the amount of  <sprite=22>  as your 
-      <sprite=83>  Dominance Track.'
+      Battlefield contains  <sprite=22> , get the amount
+
+      of  <sprite=22> 
+      as your  <sprite=83>  Dominance Track.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 7

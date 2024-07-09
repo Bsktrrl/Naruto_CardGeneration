@@ -68,8 +68,12 @@ MonoBehaviour:
     water: 0
     effectText: '<size=85><b><u>After The War:</b></u>
 
-      <size=74>If you performed 
-      <sprite=59>  after Scoring, get any 1  <sprite=8>  played by your opponent.'
+      <size=75>If you performed 
+      <sprite=59> ,
+
+      get any 1  <sprite=8>  played by
+
+      your opponent.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -103,7 +107,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>If Winning the War:</b></u>
 
       <size=75>Both
-      participants get thier played  <sprite=8>  back up to their Hands.
+      participants get their played  <sprite=8>  back onto their Hands.
 
       <size=20%>
 
@@ -271,7 +275,7 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Gain +2 <sprite=116>
-      <sprite=117> <sprite=118>  for each  <sprite=23>  your opponent have captured.\r"
+      <sprite=117> <sprite=118>  for each  <sprite=23>  your opponent has captured.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -305,7 +309,7 @@ MonoBehaviour:
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=72>Get 1 point for each 
       <sprite=8>  containing  <sprite=59>  in this War.\n<size=20%>\n<size=72>Use
       the points to place  <sprite=44>  <sprite=45>  <sprite=46>  <sprite=47>  onto
-      the map, paying their cost.\r"
+      the Board, paying their cost.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 1
@@ -368,9 +372,9 @@ MonoBehaviour:
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Get back up all 
-      <sprite=8>  you\u2019ve played containing\n <sprite=59> or  <sprite=60> .\n<size=20%>\n<size=75>Then
-      Discard this  <sprite=6> .\r"
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Get back on Hand
+      all  <sprite=8>  you've played containing  <sprite=59> and/or  <sprite=60>
+      .\n<size=20%>\n<size=75>Then Discard this  <sprite=6> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -433,8 +437,8 @@ MonoBehaviour:
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Get back up all 
-      <sprite=8>  you\u2019ve played containing  <sprite=59> .\n<size=20%>\n<size=75>Then
+    effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>Get back on Hand
+      all  <sprite=8>  you\u2019ve played containing  <sprite=59> .\n<size=20%>\n<size=75>Then
       Discard this  <sprite=6> .\r"
     effectIcon: 020000000000000000000000
     resources:
@@ -503,8 +507,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>After Scoring:</b></u>\r\n<size=75>If your opponent
-      has played any  <sprite=8>  \u201CEdo Tensei\u201D, get them back up to your
-      Hand."
+      has played any  <sprite=8>  \u201CEdo Tensei\u201D, Take them onto your Hand."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -576,7 +579,7 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>If you where
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>If you were
       to give away a  <sprite=23>  , Trash it instead of giving it away.\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -672,9 +675,9 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Cancel all  <sprite=116>
-      <sprite=117> <sprite=118>  for both  <sprite=8>  played in <b>this</b> and
-      the <b>previous</b> Battle. \n<size=20%>\n<size=75>As a result, the BP gained
-      from these Battles will no longer count.\r"
+      <sprite=117> <sprite=118>  for both  <sprite=8>  played in this and the previous
+      Battle. \n<size=20%>\n<size=75>As a result, the BP gained from these Battles
+      will no longer count.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0

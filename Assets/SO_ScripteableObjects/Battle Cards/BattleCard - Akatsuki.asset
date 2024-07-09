@@ -66,7 +66,7 @@ MonoBehaviour:
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Trash 1  <sprite=8> 
       from your Hand.\n<size=20%>\n<size=75>Then Draw 1 random  <sprite=1>  from
-      either your Trash Pile or Discard Pile back up to your Hand.\r"
+      either your Trash Pile or Discard Pile back onto your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
     GenjutsuValue: 1
     heal: 0
     headAmount: 0
-    focusArea: 2
+    focusArea: 4
     tier: 1
     fire: 0
     wind: 1
@@ -133,7 +133,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>After Scoring:</b></u>
 
       <size=75>Return all
-      your played  <sprite=8>  back up to your Hand.
+      your played  <sprite=8>  back onto your Hand.
 
       <size=20%>
 
@@ -274,7 +274,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Your opponent must
-      Discard down its  <sprite=8>  on Hand to the amount you\u2019re holding.\r"
+      Discard its  <sprite=8>  on Hand down to the same amount you\u2019re holding.\r"
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Draw 1 <sprite=11> 
-      for each  <sprite=76>  you\u2019ve played."
+      for each  <sprite=76>  you\u2019ve played in this War."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -372,8 +372,8 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Least BP:</b></u>
 
       <size=75>You may Trash this 
-      <sprite=1>  and play any others''  <sprite=76>  without Trashing it after the
-      War.'
+      <sprite=1>  and play any others'' available  <sprite=76>  without Trashing
+      it after the War.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -438,8 +438,8 @@ MonoBehaviour:
     water: 1
     effectText: "<size=85><b><u>Least BP:</b></u>\r\n<size=72>Start the Scoring,
       but end the War with no winner. \n<size=8%>\n<size=72>Then reset the Board
-      to its previous state before this War took place.\n<size=8%>\n<size=72>If your
-      opponent was the attacker, only give back the  <sprite=0>  \u201CTravel\u201D.\r"
+      to its previous state before this War took place.\n<size=8%>\n<size=72>All 
+      <sprite=0>  played in this War are used,\nexcept  <sprite=0> \"Travel\"."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -656,7 +656,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 1
-  - name: Six Path of Pain
+  - name: Six Paths of Pain
     loreInfo: '-'
     index: 140
     set: 1
@@ -689,7 +689,7 @@ MonoBehaviour:
     - resources: 0
       amount: 1
   - name: Pain - Chikushodo
-    loreInfo: Six Path of Pain
+    loreInfo: Six Paths of Pain
     index: 141
     set: 1
     characterSprite: {fileID: 21300000, guid: b7b590d53665b0144a086e4839b2d85d, type: 3}
@@ -720,7 +720,7 @@ MonoBehaviour:
     - resources: 7
       amount: 3
   - name: Pain - Gakido
-    loreInfo: Six Path of Pain
+    loreInfo: Six Paths of Pain
     index: 142
     set: 1
     characterSprite: {fileID: 21300000, guid: 0f093417868520d4e846b41f58579c2f, type: 3}
@@ -742,7 +742,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>For the rest of the War:</b></u>
 
       <size=75>Cancel
-      all Effects on your opponents  <sprite=8>  that has yet to be performed.'
+      all Effects on your opponents  <sprite=8> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
     - resources: 15
       amount: 2
   - name: Pain - Naraka
-    loreInfo: Six Path of Pain
+    loreInfo: Six Paths of Pain
     index: 143
     set: 1
     characterSprite: {fileID: 21300000, guid: f79bcf9d56b6e2b49b0f05b3cddad0e4, type: 3}
@@ -773,7 +773,7 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw back up to
+    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Draw back onto
       your Hand all Trashed  <sprite=1>  from your Trash Pile.\r"
     effectIcon: 000000000000000000000000
     resources:
@@ -786,7 +786,7 @@ MonoBehaviour:
     - resources: 12
       amount: 2
   - name: Pain - Ningendo
-    loreInfo: Six Path of Pain
+    loreInfo: Six Paths of Pain
     index: 144
     set: 1
     characterSprite: {fileID: 21300000, guid: d85f66c81a28a9644a905ff729f664d3, type: 3}
@@ -820,7 +820,7 @@ MonoBehaviour:
     - resources: 16
       amount: 2
   - name: Pain - Shurado
-    loreInfo: Six Path of Pain
+    loreInfo: Six Paths of Pain
     index: 145
     set: 1
     characterSprite: {fileID: 21300000, guid: 18342d0e331362249ba77aea5f02040b, type: 3}
@@ -857,7 +857,7 @@ MonoBehaviour:
     - resources: 12
       amount: 2
   - name: Pain - Tendo
-    loreInfo: Six Path of Pain
+    loreInfo: Six Paths of Pain
     index: 146
     set: 1
     characterSprite: {fileID: 21300000, guid: 7034cc2e59649e04fa70d2d3044fa185, type: 3}
