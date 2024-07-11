@@ -9,7 +9,7 @@ So, I built my own card generator, suitable for the card types in my game.
 This new way of developing cards have marked a shift in my productivity, so I will continue making new card generators for future game projects.
 <br>
 <br>
-The game feature 4 different types of cards, and therefore needs 4 different settings to keep track of the changes.
+The game feature 4 different types of cards, and therefore needs 4 different setups to keep track of the changes.
 I use ScriptableObjects as information input, making the parameters make changes to the card.
 <br>
 <br>
