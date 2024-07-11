@@ -1,4 +1,4 @@
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Create.gif" width="60%"/><br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Create.gif" width="50%"/><br>
 
 ## Project Description
 Since 2017 I have been working on a tabletop game set to the Naruto universe. 
@@ -19,10 +19,10 @@ As of now, the program only works in the "Unity Engine Editor". I may build a ge
 <br>
 <br>
 Battle cards<br>
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/BattleCards.jpg" width="60%"/><br><br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/BattleCards.jpg" width="50%"/><br><br>
 Action Cards<br>
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Action Cards.jpg" width="60%"/><br><br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Action Cards.jpg" width="50%"/><br><br>
 Clan Specialties<br>
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/ClanSpecialty.jpg" width="60%"/><br><br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/ClanSpecialty.jpg" width="50%"/><br><br>
 Event Cards<br>
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/EventCards.jpg" width="60%"/><br><br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/EventCards.jpg" width="50%"/><br><br>
