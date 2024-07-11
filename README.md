@@ -13,11 +13,11 @@ The game feature 4 different types of cards, and therefore needs 4 different set
 I use ScriptableObjects as information input, making the parameters make changes to the card.
 <br>
 <br>
-Battle cards
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/BattleCards.jpg" width="60%"/><br>
-Action Cards
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Action Cards.jpg" width="60%"/><br>
-Clan Specialties
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/ClanSpecialty.jpg" width="60%"/><br>
-Event Cards
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/EventCards.jpg" width="60%"/><br>
+Battle cards<br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/BattleCards.jpg" width="60%"/><br><br>
+Action Cards<br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Action Cards.jpg" width="60%"/><br><br>
+Clan Specialties<br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/ClanSpecialty.jpg" width="60%"/><br><br>
+Event Cards<br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/EventCards.jpg" width="60%"/><br><br>
