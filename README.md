@@ -28,6 +28,6 @@ Event Cards<br>
 <br>
 <br>
 ## Check out the game
-<a href="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/5thGreatNinjaWar.html"/></a>
+[Click here to check it out](https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/5thGreatNinjaWar.html) to check it out
 <br>
 <br>
