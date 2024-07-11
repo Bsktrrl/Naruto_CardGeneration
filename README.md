@@ -1,4 +1,4 @@
-<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Create.gif" width="80%"/><br>
+<img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/Create.gif" width="60%"/><br>
 
 ## Project Description
 Since 2017 I have been working on a tabletop game set to the Naruto universe. 
