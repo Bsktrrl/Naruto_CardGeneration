@@ -16,7 +16,7 @@ I use ScriptableObjects as information input, making the parameters make changes
 As of now, the program only works in the "Unity Engine Editor". I may build a generic program in the future.
 <br>
 <br>
-## The Different Setups
+## Card Types
 Battle cards<br>
 <img src="https://github.com/Bsktrrl/Bsktrrl.github.io/blob/main/images/NarutoCardGenerator/BattleCards.jpg" width="50%"/><br><br>
 Action Cards<br>
