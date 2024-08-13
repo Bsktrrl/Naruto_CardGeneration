@@ -3068,7 +3068,7 @@ MonoBehaviour:
     water: 0
     effectText: "<size=85><b><u>During Scoring:</b></u>\n<size=75>Give your opponent
       1 <sprite=20>  for each\n <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20> 
-      <sprite=21>  you receive."
+      <sprite=21>  you receive in this Battle."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0

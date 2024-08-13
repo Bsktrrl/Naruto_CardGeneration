@@ -676,8 +676,8 @@ MonoBehaviour:
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Cancel all  <sprite=116>
       <sprite=117> <sprite=118>  for both  <sprite=8>  played in this and the previous
-      Battle. \n<size=20%>\n<size=75>As a result, the BP gained from these Battles
-      will no longer count.\r"
+      Battle. \r\n<size=20%>\r\n<size=75>As a result, the BP gained from these Battles
+      will no longer count."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0

@@ -13,6 +13,104 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Senju
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
+  - name: Agreement
+    cardType: 3
+    clan: 5
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
+    description: "<size=100%><sprite=66>  can be placed on Water Fields you control
+      and be used as a  <sprite=36>  for your\n<sprite=36>  <sprite=37>  <sprite=38> 
+      <sprite=39>  when Traveling. \n<size=40%>\n<size=100%>On Water Fields, you
+      can keep and use your  <sprite=66> , even if other players control the Field"
+    textSize: 100
+  - name: Agreement
+    cardType: 3
+    clan: 5
+    version_Passive_A: 0
+    version_Passive_B: 1
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
+    description: "<size=100%><sprite=66>  can be placed on Water Fields you control
+      and be used as a  <sprite=36>  for your\n<sprite=37>  <sprite=38>  <sprite=39> 
+      when Traveling. \n<size=40%>\n<size=100%>On Water Fields, you can keep and
+      use your  <sprite=66> , even if other players control the Field"
+    textSize: 100
+  - name: Agreement
+    cardType: 3
+    clan: 5
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 2
+    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Get 1 <sprite=66> 
+      marker from the Main Supply and place it in a Water Field not controlled by
+      any player
+
+      <size=15%>
+
+      <size=75%>(The  <sprite=66>  can be used
+      as a  <sprite=36>  for your
+
+      <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39> 
+      when Traveling)
+
+      <size=5%>
+
+      <size=75%>(You can keep and use your 
+      <sprite=66> , even if other players control the Field)
+
+      <size=5%>
+
+      <size=75%>(The 
+      <sprite=66>  cannot be removed)'
+    textSize: 92
+  - name: Agreement
+    cardType: 3
+    clan: 5
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 1
+    cost: 2
+    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
+    description: '<u>Action:</u>
+
+      <size=20%>
+
+      <size=100%>Get 1 <sprite=66> 
+      marker from the Main Supply and place it in a Water Field not controlled by
+      any player
+
+      <size=15%>
+
+      <size=75%>(The  <sprite=66>  can be used
+      as a  <sprite=36>  for your
+
+      <sprite=37>  <sprite=38>  <sprite=39>  when
+      Traveling)
+
+      <size=5%>
+
+      <size=75%>(You can keep and use your  <sprite=66>
+      , even if other players control the Field)
+
+      <size=5%>
+
+      <size=75%>(The 
+      <sprite=66>  cannot be removed)'
+    textSize: 92
   - name: Bond
     cardType: 3
     clan: 5
@@ -230,80 +328,6 @@ MonoBehaviour:
       <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39> \nis being attacked,\nyou
       get the 1BP from the Unit Strength"
     textSize: 105
-  - name: Support
-    cardType: 3
-    clan: 5
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
-    description: 'When entering a War, always perform
-
-      1  <sprite=0>  "Support"
-      without playing any  <sprite=0>
-
-      <size=30%>
-
-      <size=75%>(You cannot
-      use the  <sprite=0>  "Support" on other player''s  <sprite=48>  <sprite=49> 
-      <sprite=50>  <sprite=51> )'
-    textSize: 110
-  - name: Support
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
-    description: 'When entering a War, always perform
-
-      1  <sprite=0>  "Support"
-      without playing any  <sprite=0>
-
-      <size=30%>
-
-      <size=75%>(You may
-      use the  <sprite=0>  "Support" on other player''s  <sprite=48>  <sprite=49> 
-      <sprite=50>  <sprite=51> )'
-    textSize: 110
-  - name: Support
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>At the start
-      of any War you participate in, if you have the highest Unit Strength, play
-      this to recieve 2BP instead of the normal 1BP'
-    textSize: 100
-  - name: Support
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>At the start
-      of any War you participate in, if you have the highest Unit Strength, play
-      this to recieve 2BP instead of the normal 1BP'
-    textSize: 100
   - name: 'Rashomon '
     cardType: 3
     clan: 5

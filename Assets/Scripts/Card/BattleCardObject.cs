@@ -137,6 +137,8 @@ public class BattleCardObject : MonoBehaviour
 
     public Sprite focus_Immune;
 
+    public Sprite focus_FieldMarker;
+
     [Header("Heal")]
     public GameObject healParent;
     public GameObject healBlockParent;

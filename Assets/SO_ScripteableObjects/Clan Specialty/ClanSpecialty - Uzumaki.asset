@@ -471,13 +471,8 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
-    description: 'Get 5 <sprite=68>  markers at the start of the Game.
-
-      <size=40%>
-
-      <size=100%><sprite=68> 
-      can be placed on Water Fields you contorl and be used as  <sprite=44>  when
-      Traveling'
+    description: Start the game with 3 <sprite=68>  markers, instead of the normal
+      1
     textSize: 120
   - name: Shaddow Clone
     cardType: 3
@@ -488,13 +483,8 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
-    description: 'Get 4 <sprite=68>  markers at the start of the Game.
-
-      <size=40%>
-
-      <size=100%><sprite=68> 
-      can be placed on Water Fields you contorl and be used as  <sprite=44>  when
-      Traveling'
+    description: Get 2 <sprite=68>  markers at the start of each "Setup Phase", instead
+      of the normal 1
     textSize: 120
   - name: Shaddow Clone
     cardType: 3
@@ -510,14 +500,8 @@ MonoBehaviour:
       <size=20%>
 
       <size=100%>Get 1 <sprite=68> 
-      marker from the Main Supply and place it in a Water Field not controlled by
-      any player
-
-      <size=20%>
-
-      <size=75%>(The  <sprite=68>  can be used
-      as  <sprite=44>  when Traveling)'
-    textSize: 113.4
+      marker from the Main Supply'
+    textSize: 120
   - name: Shaddow Clone
     cardType: 3
     clan: 7
@@ -532,14 +516,8 @@ MonoBehaviour:
       <size=20%>
 
       <size=100%>Get 1 <sprite=68> 
-      marker from the Main Supply and place it in a Water Field not controlled by
-      any player
-
-      <size=20%>
-
-      <size=75%>(The  <sprite=68>  can be used
-      as  <sprite=44>  when Traveling)'
-    textSize: 113.4
+      marker from the Main Supply'
+    textSize: 120
   - name: 'Talk No Jutsu '
     cardType: 3
     clan: 7
@@ -660,13 +638,13 @@ MonoBehaviour:
 
       <size=100%>Play at any
       time to double the Strength of your  <sprite=44>  <sprite=45>  <sprite=46> 
-      <sprite=47>  in one Field you control
+      <sprite=47>  in one Field you control, for this Turn
 
       <size=20%>
 
       <size=75%>(You
       may exceed the point limit of 10p.)'
-    textSize: 120
+    textSize: 108.4
   - name: 'Self Sealing '
     cardType: 3
     clan: 7
@@ -682,13 +660,13 @@ MonoBehaviour:
 
       <size=100%>Play at any
       time to double the Strength of your  <sprite=44>  <sprite=45>  <sprite=46> 
-      <sprite=47>  in one Field you control
+      <sprite=47>  in one Field you control, for this Turn
 
       <size=20%>
 
       <size=75%>(You
       may exceed the point limit of 10p.)'
-    textSize: 120
+    textSize: 108.4
   - name: 'Death Reaper  Seal '
     cardType: 3
     clan: 7

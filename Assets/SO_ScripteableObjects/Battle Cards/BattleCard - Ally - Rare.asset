@@ -26,22 +26,24 @@ MonoBehaviour:
     GenjutsuValue: 3
     heal: 2
     headAmount: 1
-    focusArea: 21
+    focusArea: 56
     tier: 3
     fire: 1
     wind: 1
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Move your opponent up\n1
-      step in any Dominance Track.\r"
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>Get 1 Field Marker
+      from the Main Supply.'
     effectIcon: 010000000000000000000000
     resources:
+    - resources: 0
+      amount: 1
     - resources: 3
       amount: 1
     - resources: 6
-      amount: 1
-    - resources: 11
       amount: 1
     - resources: 18
       amount: 3
@@ -139,7 +141,7 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Cancel the Effect
-      on your opponent\u2019s played  <sprite=8> ,  even if the Effect happen immediately."
+      on your opponent\u2019s played  <sprite=8> ,  even if the Effect happens immediately."
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -206,7 +208,9 @@ MonoBehaviour:
 
       <size=75>If your opponent''s 
       <sprite=8>  in this Battle has a combined  <sprite=122> <sprite=123> <sprite=124> 
-      of 10 or higher than this  <sprite=9> , Draw 2  <sprite=9> .'
+      of at least 10 higher than
+
+      this  <sprite=9> , Draw 2  <sprite=9> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -368,13 +372,13 @@ MonoBehaviour:
     water: 0
     effectText: '<size=85><b><u>Immediately:</b></u>
 
-      <size=75>Shuffle all
-      your  <sprite=7>  on top of your Draw Pile.
+      <size=75>Shuffle back
+      all your  <sprite=7>  from your Hand on top of your Draw Pile.
 
       <size=20%>
 
       <size=75>Then
-      Draw 1 <sprite=7> .'
+      Draw 1  <sprite=7> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -738,10 +742,11 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>In Hand \u2013 Start of your Battle:</b></u>\r\n<size=75>Discard
-      this  <sprite=9>  and look at your opponent\u2019s chosen  <sprite=8> .\n<size=10%>\n<size=75>You
-      may Swap it with a  <sprite=8>  from your Hand, making your opponent play it
-      as its  <sprite=8> ."
+    effectText: "<size=85><b><u>In Hand \u2013 Start of your Battle:</b></u>\r\n<size=74>Before
+      revealing, Trash this  <sprite=9>  and look at your opponent\u2019s chosen 
+      <sprite=8> .\n<size=5%>\n<size=74>You may Swap it with a  <sprite=8>  from
+      your Hand, making your opponent play your  <sprite=8>  as theirs and the one
+      you Swap as yours, for this Battle."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -871,7 +876,7 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Gain +1 <sprite=122>
-      <sprite=123> <sprite=124>  for each  <sprite=8>  \u201CGirl\u201D played.\r"
+      <sprite=123> <sprite=124>  for each female  <sprite=8>  played.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 7
@@ -1254,7 +1259,7 @@ MonoBehaviour:
     GenjutsuValue: 4
     heal: 2
     headAmount: 3
-    focusArea: 34
+    focusArea: 56
     tier: 3
     fire: 0
     wind: 0
@@ -1278,7 +1283,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-    - resources: 0
+    - resources: 18
       amount: 2
   - name: Kiyo Nara
     loreInfo: Teenager
@@ -1540,7 +1545,7 @@ MonoBehaviour:
     earth: 0
     water: 1
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Give your opponent
-      1 <sprite=19>  for each Battle played.\r"
+      1 <sprite=19>  for each  <sprite=8>  they've played.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1838,7 +1843,7 @@ MonoBehaviour:
       <size=75>If your opponent
       get any  <sprite=22>  as Resources,
 
-      you get them as well.'
+      you gets them as well.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1872,7 +1877,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Scoring:</b></u>
 
       <size=75>If your opponent
-      get any  <sprite=22>  as Resources from this Battle, you get them as well.'
+      get any  <sprite=22>  as Resources from this Battle, you gets them as well.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1937,8 +1942,9 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>In Hand \u2013 If Winning the War:</b></u>\r\n<size=75>Instead
-      of your opponent, Draw the  <sprite=9>  for losing the War."
+    effectText: "<size=85><b><u>In Hand \u2013 If Winning the War:</b></u>\r\n<size=75>Trash
+      this  <sprite=9> .\n<size=20%>\n<size=100%>Instead of your opponent, Draw the 
+      <sprite=9>  for losing the War."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2018,7 +2024,7 @@ MonoBehaviour:
     - resources: 0
       amount: 3
   - name: Obito Uchiha
-    loreInfo: Child - Hashirama Cells Infued
+    loreInfo: Child - Hashirama Infused Cells
     index: 227
     set: 1
     characterSprite: {fileID: 21300000, guid: 5816acd84b5a77b4fa667e5b77059f7e, type: 3}
@@ -2037,8 +2043,10 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=82><b><u>For the rest of the War:</b></u>\r\n<size=75>Draw
-      1 <sprite=10>  for each  <sprite=8>  you Discard.\r"
+    effectText: '<size=82><b><u>For the rest of the War:</b></u>
+
+      <size=75>Draw
+      1 <sprite=10>  for each  <sprite=8>  you Discard before the end of the War.'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -2134,7 +2142,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 1 spot in
-      3 different Domination Tracks.\r"
+      3 different Dominance Tracks.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -2166,7 +2174,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 2 spots
-      in any Domination Track.\r"
+      in any Dominance Track.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -2198,7 +2206,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Move up 2 spots
-      in one Domination Track.\r"
+      in one Dominance Track.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2326,8 +2334,8 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\n<size=75>To be able to Score the
-      Resources on this  <sprite=9> , you must Remove the  <sprite=59>  from 1 of
-      your played\n <sprite=8> ."
+      Resources on this  <sprite=9> , you must Remove a  <sprite=59>  from 1 of your
+      played\n <sprite=8> ."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 2
@@ -2453,8 +2461,8 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Steal 1 of
-      your opponent\u2019s  <sprite=8>  that got back up to their Hand.\r"
+    effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Take 1 of
+      your opponent\u2019s  <sprite=8>  that got back up to their Hand, at Random."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2665,7 +2673,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Immediately:</b></u>
 
       <size=75>Give your opponent
-      1 <sprite=18>  for each BP it has.'
+      1 <sprite=18>  for each BP they have.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2767,8 +2775,8 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Future Battles:</b></u>\r\n<size=75>Double the  <sprite=86> 
-      on your  <sprite=8> .\r"
+    effectText: "<size=85><b><u>In a War against a  <sprite=23> :</b></u>\r\n<size=75>Double
+      the  <sprite=86>  on the rest of your  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -3025,7 +3033,8 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>In Hand \u2013 Start of War against a  <sprite=23>
-      :</b></u>\r\n<size=75>Reduce the Strength of the  <sprite=23>  with -6.\r"
+      :</b></u>\r\n<size=75>Trash this  <sprite=9> .\n<size=20%>\n<size=75>Reduce
+      the Strength of the  <sprite=23>  with -6.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -3056,7 +3065,7 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Receive either 2 <sprite=9> 
+    effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Recieve either 2 <sprite=9> 
       or 1 <sprite=10>  for each  <sprite=9> <sprite=10> <sprite=11> \u201CTeenager\u201D
       played.\r"
     effectIcon: 020000000000000000000000
@@ -3089,8 +3098,8 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Last Battle in the War:</b></u>\r\n<size=75>Cancel
-      the Effect on your opponent\u2019s  <sprite=8> ."
+    effectText: "<size=85><b><u>At the Last Battle:</b></u>\r\n<size=75>Cancel the
+      Effect on your opponent\u2019s  <sprite=8> ."
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -3123,12 +3132,18 @@ MonoBehaviour:
     water: 1
     effectText: '<size=85><b><u>Immediately:</b></u>
 
-      <size=75>Lose the War.
+      <size=74>Lose the War.
 
-      <size=20%>
+      <size=10%>
 
-      <size=75>Give
+      <size=74>Give
       your opponent 1 <sprite=23> , even if you were the attacker.
+
+      <size=10%>
+
+      <size=74>If
+      you don''t have any  <sprite=23>  to give away, you don''t recieve the Resources
+      on this  <sprite=9> .
 
 '
     effectIcon: 000000000000000000000000
@@ -3193,8 +3208,9 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>In Hand \u2013 During your Battle:</b></u>\r\n<size=75>Double
-      the  <sprite=122> <sprite=123> <sprite=124>  on your played  <sprite=8> .\r"
+    effectText: "<size=85><b><u>In Hand \u2013 During your Battle:</b></u>\r\n<size=75>Trash
+      this  <sprite=9> .\n<size=20%>\n<size=75>Double the  <sprite=122> <sprite=123>
+      <sprite=124>  on your played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0

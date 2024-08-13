@@ -1673,6 +1673,57 @@ public class CardManager : MonoBehaviour
                     battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Support;
                     break;
 
+                case FocusArea.FieldMarker:
+                    battleCardObject.focusArea_Image.sprite = battleCardObject.focus_FieldMarker;
+
+                    switch (battleCard.clan)
+                    {
+                        case Clan.None:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+
+                        case Clan.Akatsuki_Awakening:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Akatsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAkatsuki_BoxFrameColor();
+                            break;
+                        case Clan.Hyuga:
+                            battleCardObject.focusArea_Image.color = colorManager.GetHyuga_BoxFrameColor();
+                            break;
+                        case Clan.Otsutsuki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetOtsutsuki_BorderColor();
+                            break;
+                        case Clan.Senju:
+                            battleCardObject.focusArea_Image.color = colorManager.GetSenju_BoxFrameColor();
+                            break;
+                        case Clan.Uchiha:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUchiha_BoxFrameColor();
+                            break;
+                        case Clan.Uzumaki:
+                            battleCardObject.focusArea_Image.color = colorManager.GetUzumaki_BoxFrameColor();
+                            break;
+                        case Clan.Kara:
+                            battleCardObject.focusArea_Image.color = colorManager.GetKara_BoxFrameColor();
+                            break;
+                        case Clan.Ally:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Rare:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Epic:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+                        case Clan.Ally_Legendary:
+                            battleCardObject.focusArea_Image.color = colorManager.GetAlly_BoxFrameColor();
+                            break;
+
+                        default:
+                            break;
+                    }
+                    break;
+
                 case FocusArea.Immune:
                     battleCardObject.focusArea_Image.sprite = battleCardObject.focus_Immune;
 

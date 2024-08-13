@@ -161,4 +161,7 @@ public enum FocusArea
     [Description("Effect Token")][InspectorName("Effect Token/Freeze and Paralyse")] Effect_Freeze_and_Paralyze,
 
     [Description("Effect Token")][InspectorName("Merged/Coin and Illusion")] Merged_Coin_And_Illusion,
+
+    //Field Maker
+    [Description("Field Marker")][InspectorName("Field Marker")] FieldMarker,
 }
