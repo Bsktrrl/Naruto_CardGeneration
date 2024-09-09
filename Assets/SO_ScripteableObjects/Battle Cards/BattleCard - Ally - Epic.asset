@@ -454,7 +454,7 @@ MonoBehaviour:
       amount: 2
     - resources: 13
       amount: 2
-  - name: "Ch\u014Dj\u016Br\u014D"
+  - name: Chojuro
     loreInfo: Adult - Mizukage's Retainer -                           7 Ninja Swordmen
     index: 279
     set: 1
@@ -666,7 +666,7 @@ MonoBehaviour:
     - resources: 13
       amount: 1
   - name: Fukai
-    loreInfo: "Adult - Jinch\u016Briki - Blue B"
+    loreInfo: Adult - Jinchuriki - Blue B
     index: 285
     set: 1
     characterSprite: {fileID: 21300000, guid: 1383a6bc02fdfb64bacc673c5b7b02b4, type: 3}
@@ -1550,7 +1550,7 @@ MonoBehaviour:
     - resources: 16
       amount: 2
   - name: Mabui
-    loreInfo: Adult - 4th Ninja War - Headquarters Secretary
+    loreInfo: Adult - 4th Ninja War - Headquarters Assistant Secretary
     index: 312
     set: 1
     characterSprite: {fileID: 21300000, guid: 90f2abc52b278aa40bfd692d15310e06, type: 3}
@@ -2813,7 +2813,7 @@ MonoBehaviour:
     - resources: 0
       amount: 2
   - name: Tatsuma Aburame
-    loreInfo: Adult - ANBU Root
+    loreInfo: Adult - ANBU - Root
     index: 351
     set: 1
     characterSprite: {fileID: 21300000, guid: adeb71e70fe1f6541b09e4d2bc2ff20f, type: 3}

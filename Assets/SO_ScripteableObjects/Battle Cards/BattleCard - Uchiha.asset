@@ -145,7 +145,7 @@ MonoBehaviour:
     - resources: 18
       amount: 2
   - name: Izumi Uchiha
-    loreInfo: Teenager - Itachi's Love Interest
+    loreInfo: Teenager - Itachi's Girlfriend
     index: 45
     set: 1
     characterSprite: {fileID: 21300000, guid: 9edce8c5baa4ec34a84ec3f83dcb85cd, type: 3}

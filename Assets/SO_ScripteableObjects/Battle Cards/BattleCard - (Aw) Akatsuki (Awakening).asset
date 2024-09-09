@@ -467,7 +467,7 @@ MonoBehaviour:
     - resources: 10
       amount: 1
   - name: Obito Uchiha
-    loreInfo: "Awakening - Jinch\u016Briki - Six Paths"
+    loreInfo: Awakening - Jinchuriki - Six Paths
     index: 160
     set: 1
     characterSprite: {fileID: 21300000, guid: 43155175027e12d48b32e59d299348d6, type: 3}

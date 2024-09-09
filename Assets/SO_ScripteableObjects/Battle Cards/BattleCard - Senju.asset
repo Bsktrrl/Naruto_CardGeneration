@@ -244,7 +244,7 @@ MonoBehaviour:
     - resources: 15
       amount: 1
   - name: Mito Uzumaki
-    loreInfo: "Adult - Jinch\u016Briki - Hashirama's Wife"
+    loreInfo: Adult - Jinchuriki - Hashirama's Wife
     index: 29
     set: 1
     characterSprite: {fileID: 21300000, guid: 921ba5e9daad37748926b966126a21cf, type: 3}
@@ -619,9 +619,17 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=75>Reveal 1 of your opponent's\n
-      <sprite=0>  at random.\n<size=20%>\n<size=75>Perform this  <sprite=0>  on your
-      next Turn, if possible."
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>Reveal 1 of your
+      opponent''s
+
+      <sprite=0>  at random.
+
+      <size=20%>
+
+      <size=75>Perform
+      this  <sprite=0>  on your next Turn, if possible.'
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0

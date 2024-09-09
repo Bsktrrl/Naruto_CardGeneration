@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardList:
   - name: Akari
-    loreInfo: "Adult - \u014Ctsutsuki Cultist - Kara Outer"
+    loreInfo: Adult - Otsutsuki Cultist - Kara Outer
     index: 101
     set: 1
     characterSprite: {fileID: 21300000, guid: 24675dd21ebb8a347802c2a127757b9a, type: 3}
@@ -122,7 +122,7 @@ MonoBehaviour:
     - resources: 17
       amount: 1
   - name: Boro
-    loreInfo: "Adult - Kara Inner - \u014Ctsutsuki Cult Leader"
+    loreInfo: Adult - Kara Inner - Otsutsuki Cult Leader
     index: 104
     set: 1
     characterSprite: {fileID: 21300000, guid: 57438657ab10ce7428f90c7eb031c9d0, type: 3}
@@ -154,7 +154,7 @@ MonoBehaviour:
     - resources: 12
       amount: 3
   - name: Bug
-    loreInfo: "Old - Kara Outer - \u014Ctsutsuki Cultist"
+    loreInfo: Old - Kara Outer - Otsutsuki Cultist
     index: 105
     set: 1
     characterSprite: {fileID: 21300000, guid: 826098d5e43a0df49b38df634cf59339, type: 3}
@@ -384,7 +384,7 @@ MonoBehaviour:
       amount: 1
     - resources: 10
       amount: 1
-  - name: "Gar\u014D"
+  - name: Garo
     loreInfo: Adult - Kara Outer
     index: 112
     set: 1
@@ -416,7 +416,7 @@ MonoBehaviour:
     - resources: 11
       amount: 2
   - name: Inori
-    loreInfo: "Adult - \u014Ctsutsuki Cultist - Kara Outer"
+    loreInfo: Adult - Otsutsuki Cultist - Kara Outer
     index: 113
     set: 1
     characterSprite: {fileID: 21300000, guid: e90dc9cf243b96c468397ec7ac42c798, type: 3}
@@ -591,7 +591,7 @@ MonoBehaviour:
       amount: 1
     - resources: 8
       amount: 1
-  - name: "\u014Cga"
+  - name: Oga
     loreInfo: Ancient - Kara Inner
     index: 118
     set: 1

@@ -624,7 +624,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-  - name: "Ch\u014Dj\u016Br\u014D"
+  - name: Chojuro
     loreInfo: Adult - 6th Mizukage - 7 Ninja Swordsmen
     index: 386
     set: 1
@@ -961,7 +961,7 @@ MonoBehaviour:
     - resources: 0
       amount: 2
   - name: Fuu
-    loreInfo: "Teenager - Jinch\u016Briki"
+    loreInfo: Teenager - Jinchuriki
     index: 396
     set: 1
     characterSprite: {fileID: 21300000, guid: 51946e8485958b9428829f3873d61183, type: 3}
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     - resources: 13
       amount: 1
   - name: Han
-    loreInfo: "Adult - Jinch\u016Briki"
+    loreInfo: Adult - Jinchuriki
     index: 400
     set: 1
     characterSprite: {fileID: 21300000, guid: 88ed2d772fa4fc14abfeadb5ae277e2d, type: 3}
@@ -1698,7 +1698,7 @@ MonoBehaviour:
     - resources: 13
       amount: 2
   - name: Killer B
-    loreInfo: "Adult - Jinch\u016Briki"
+    loreInfo: Adult - Jinchuriki
     index: 417
     set: 1
     characterSprite: {fileID: 21300000, guid: 7f924ec49dc9e4640b7fb0333f25783f, type: 3}
@@ -1928,7 +1928,7 @@ MonoBehaviour:
     - resources: 16
       amount: 1
   - name: Kushina Uzumaki
-    loreInfo: "Adult - Jinch\u016Briki - Naruto's Mother"
+    loreInfo: Adult - Jinchuriki - Naruto's Mother
     index: 424
     set: 1
     characterSprite: {fileID: 21300000, guid: b0dfe83538609d1418a6753879c73f4c, type: 3}
@@ -2563,7 +2563,7 @@ MonoBehaviour:
     - resources: 5
       amount: 2
   - name: Rin Nohora
-    loreInfo: "Child - Jinch\u016Briki"
+    loreInfo: Child - Jinchuriki
     index: 443
     set: 1
     characterSprite: {fileID: 21300000, guid: da7cdff64e91c9f429b711669c2680bb, type: 3}
@@ -2630,7 +2630,7 @@ MonoBehaviour:
     - resources: 5
       amount: 2
   - name: Rouchi
-    loreInfo: "Adult - Jinch\u016Briki"
+    loreInfo: Adult - Jinchuriki
     index: 445
     set: 1
     characterSprite: {fileID: 21300000, guid: e0d4d164cc9905a40905c93a05973b2c, type: 3}
@@ -3141,7 +3141,7 @@ MonoBehaviour:
     - resources: 18
       amount: 3
   - name: Utakata
-    loreInfo: "Adult - Jinch\u016Briki"
+    loreInfo: Adult - Jinchuriki
     index: 460
     set: 1
     characterSprite: {fileID: 21300000, guid: f0381ec9ac9208546ac32e93a88c941d, type: 3}
@@ -3160,8 +3160,10 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>Future Battles:</b></u>\r\n<size=75>Draw 1 <sprite=0> 
-      from the \u201CHidden\" Deck for each new Battle."
+    effectText: '<size=85><b><u>Future Battles:</b></u>
+
+      <size=75>Draw 1 <sprite=0> 
+      from the Hidden Deck for each new Battle.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -3173,7 +3175,7 @@ MonoBehaviour:
     - resources: 18
       amount: 2
   - name: Yagura
-    loreInfo: "Adult - Jinch\u016Briki - 4th Mizukage"
+    loreInfo: Adult - Jinchuriki - 4th Mizukage
     index: 461
     set: 1
     characterSprite: {fileID: 21300000, guid: 29353cf8e82dccd4a9882609b38ad30f, type: 3}
@@ -3309,7 +3311,7 @@ MonoBehaviour:
     - resources: 18
       amount: 3
   - name: Yugito Nii
-    loreInfo: "Adult - Jinch\u016Briki"
+    loreInfo: Adult - Jinchuriki
     index: 465
     set: 1
     characterSprite: {fileID: 21300000, guid: 954f8b4404e47a946a268174cd555a84, type: 3}

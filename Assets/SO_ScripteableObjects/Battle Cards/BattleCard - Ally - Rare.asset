@@ -1654,7 +1654,7 @@ MonoBehaviour:
     - resources: 18
       amount: 2
   - name: Meizu
-    loreInfo: "Child - G\u014Dzu's Younger Twin Brother"
+    loreInfo: Child - Gozu's Younger Twin Brother
     index: 217
     set: 1
     characterSprite: {fileID: 21300000, guid: 1719e5f816e3eca45bf4d4bd151c1af5, type: 3}
@@ -2756,7 +2756,7 @@ MonoBehaviour:
     - resources: 0
       amount: 1
   - name: Sora
-    loreInfo: "Adult - Jinch\u016Briki - Ninja Monk"
+    loreInfo: Adult - Jinchuriki - Ninja Monk
     index: 249
     set: 1
     characterSprite: {fileID: 21300000, guid: b7747e92620ea36458433110b361301c, type: 3}

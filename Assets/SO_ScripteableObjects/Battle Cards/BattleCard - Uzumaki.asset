@@ -123,7 +123,7 @@ MonoBehaviour:
       amount: 1
     - resources: 17
       amount: 1
-  - name: "F\u016Bka Uzumaki"
+  - name: Fuka Uzumaki
     loreInfo: Adult - Furido's 4-Man Team
     index: 64
     set: 1
@@ -224,7 +224,7 @@ MonoBehaviour:
     - resources: 18
       amount: 3
   - name: Kushina Uzumaki
-    loreInfo: "Adult - Jinch\u016Briki - 4th Hokage's Wife"
+    loreInfo: Adult - Jinchuriki - 4th Hokage's Wife
     index: 68
     set: 1
     characterSprite: {fileID: 21300000, guid: 1b216ee8ce2c4ce4db13ced185571b12, type: 3}
@@ -255,7 +255,7 @@ MonoBehaviour:
     - resources: 17
       amount: 2
   - name: Kushina Uzumaki
-    loreInfo: "Child - Jinch\u016Briki"
+    loreInfo: Child - Jinchuriki
     index: 67
     set: 1
     characterSprite: {fileID: 21300000, guid: 37a8718beb7980540b8c8f1e6a45ae3a, type: 3}
@@ -519,7 +519,7 @@ MonoBehaviour:
     - resources: 2
       amount: 2
   - name: Naruto Uzumaki
-    loreInfo: "Adult - 7th Hokage - Jinch\u016Briki"
+    loreInfo: Adult - 7th Hokage - Jinchuriki
     index: 77
     set: 1
     characterSprite: {fileID: 21300000, guid: 1e5dff83d9bff0041b575de3d4fc42db, type: 3}
@@ -560,7 +560,7 @@ MonoBehaviour:
     - resources: 6
       amount: 2
   - name: Naruto Uzumaki
-    loreInfo: "Adult - Jinch\u016Briki - Kurama Mode"
+    loreInfo: Adult - Jinchuriki - Kurama Mode
     index: 78
     set: 1
     characterSprite: {fileID: 21300000, guid: 55991a9d95da0294084e9b4e1a3200b4, type: 3}
@@ -592,7 +592,7 @@ MonoBehaviour:
     - resources: 18
       amount: 1
   - name: Naruto Uzumaki
-    loreInfo: "Adult - Jinch\u016Briki - Naruto The Last"
+    loreInfo: Adult - Jinchuriki - Naruto The Last
     index: 80
     set: 1
     characterSprite: {fileID: 21300000, guid: 1cf5b06940a3d0e49a666fe9a1febc4b, type: 3}
@@ -624,7 +624,7 @@ MonoBehaviour:
     - resources: 15
       amount: 1
   - name: Naruto Uzumaki
-    loreInfo: "Adult - Jinch\u016Briki - Sage Mode"
+    loreInfo: Adult - Jinchuriki - Sage Mode
     index: 79
     set: 1
     characterSprite: {fileID: 21300000, guid: 1248908f48a99114b930672c2fb7905f, type: 3}
@@ -655,7 +655,7 @@ MonoBehaviour:
     - resources: 15
       amount: 1
   - name: Naruto Uzumaki
-    loreInfo: "Child - Jinch\u016Briki"
+    loreInfo: Child - Jinchuriki
     index: 76
     set: 1
     characterSprite: {fileID: 21300000, guid: 78f245fcfde322246a52c93eff47c35b, type: 3}

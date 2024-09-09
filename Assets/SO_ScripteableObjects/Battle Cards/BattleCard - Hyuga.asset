@@ -46,7 +46,7 @@ MonoBehaviour:
     - resources: 18
       amount: 2
   - name: Hanada Hyuga
-    loreInfo: Teenager - Tokuma's Daughter - Team Yusuke
+    loreInfo: Teenager - Tokuma's Daughter -               Team Yusuke
     index: 2
     set: 1
     characterSprite: {fileID: 21300000, guid: 544c3853101a38441ac1c139134daed4, type: 3}
