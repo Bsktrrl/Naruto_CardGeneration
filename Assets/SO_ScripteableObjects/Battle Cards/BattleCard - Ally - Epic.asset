@@ -69,7 +69,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Immediately:</b></u>
 
       <size=75>Give your opponent 
-      <sprite=18>  equal to the middel  <sprite=122> <sprite=123> <sprite=124>  dispayed
+      <sprite=18>  equal to the middle  <sprite=122> <sprite=123> <sprite=124>  dispayed
       on its  <sprite=8>  from
 
       the previous Battle.'
@@ -103,9 +103,9 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>In Hand \u2013 During any Battle:</b></u>\r\n<size=75>Get
-      2 <sprite=22>  for each  <sprite=122> <sprite=123> <sprite=124>  in this Battle
-      with a Value of 5 and above."
+    effectText: "<size=85><b><u>In Hand \u2013 During any Battle:</b></u>\r\n<size=75>Trash
+      this  <sprite=10> .\n<size=20%>\n<size=75>Get 2 <sprite=22>  for each  <sprite=122>
+      <sprite=123> <sprite=124>  in this Battle with a Strength of 5 and above."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -136,8 +136,8 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>In Hand \u2013 Least BP:</b></u>\r\n<size=75>Get
-      2 BP.\r"
+    effectText: "<size=85><b><u>In Hand \u2013 Least BP:</b></u>\r\n<size=75>Trash
+      this  <sprite=10> .\n<size=20%>\n<size=75>Get 2 BP.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -168,10 +168,10 @@ MonoBehaviour:
     lightning: 1
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>In Hand - Your Scoring:</b></u>\r\n<size=75>Get 1
-      Point for each  <sprite=122> <sprite=123> <sprite=124>  in this War with a
-      Value of 7 and above.\n<size=20%>\n<size=75>Move up 1 spot for each Point gathered,
-      in any Domination Tracks.\r"
+    effectText: "<size=85><b><u>In Hand - Your Scoring:</b></u>\r\n<size=75>Trash
+      this  <sprite=10> .\n<size=10%>\n<size=75>Get 1 Point for each  <sprite=122>
+      <sprite=123> <sprite=124>  in this War with a Strength of 7 and above.\n<size=10%>\n<size=75>Move
+      up 1 spot for each Point gathered, in any Domination Tracks.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -202,9 +202,10 @@ MonoBehaviour:
     lightning: 1
     earth: 0
     water: 1
-    effectText: "<size=85><b><u>In Hand \u2013 Action On your Turn:</b></u>\r\n<size=75>Look
-      at the Hand of all players.\n<size=20%>\n<size=75>Swap 1 <sprite=8>  from each
-      Hand with each other, so that all players have at least 1 new  <sprite=8> ."
+    effectText: "<size=85><b><u>In Hand \u2013 Action on your Turn:</b></u>\r\n<size=75>Trash
+      this  <sprite=10> .\n<size=20%>\n<size=75>Look at the Hand of all players.\n<size=20%>\n<size=75>Swap
+      1 <sprite=8>  from each Hand with each other, so that all players have at least
+      1 new  <sprite=8> ."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -237,13 +238,18 @@ MonoBehaviour:
     water: 0
     effectText: '<size=85><b><u>In Hand - At any Time:</b></u>
 
-      <size=75>Move
-      up 1 spot in all tracks on the Dominance Board.
+      <size=75>Trash
+      this  <sprite=10> .
 
-      <size=15%>
+      <size=10%>
 
-      <size=74>If
-      you are at the top in any track, choose another track to move up in instead.'
+      <size=75>Move up 1 spot in all
+      tracks on the Dominance Board.
+
+      <size=10%>
+
+      <size=74>If you are
+      at the top in any track, choose another track to move up in instead.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -274,11 +280,10 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>In Hand \u2013 When Playing <sprite=0> \u201CTravel\u201D:</b></u>\r\n<size=75>You
-      may initiate a War against any  <sprite=23> .\n<size=20%>\n<size=75>You don't
-      need to play  <sprite=0>  \"War\".\n<size=20%>\n<size=75>You don't need to
-      have the required Strength in your group of  <sprite=49>  <sprite=50>  <sprite=51>
-      .\r"
+    effectText: "<size=85><b><u>In Hand \u2013 When Playing <sprite=0> \u201CTravel\u201D:</b></u>\r\n<size=75>Trash
+      this  <sprite=10> .\n<size=10%>\n<size=75>You may start a War against a  <sprite=23> 
+      without playing a  <sprite=0> \"War\".\n<size=10%>\n<size=75>You don't need
+      to have the required Unit Strength."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -371,7 +376,7 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>This and Next Battle:</b></u>\r\n<size=75>Cancel
+    effectText: "<size=85><b><u>This and the Next Battle:</b></u>\r\n<size=75>Cancel
       the Effect on your opponents'  <sprite=8> . \r"
     effectIcon: 000000000000000000000000
     resources:
@@ -502,11 +507,25 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=73>Make room for another
-      Battle and move this  <sprite=10>  into the new Battle.\n<size=10%>\n<size=73>You
-      must play another  <sprite=8>  in this Battle and your opponent another  <sprite=8> 
-      in the new one.\n<size=10%>\n<size=73>Resolve the BP for both Battles at the
-      same time.\r"
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=73>Start another
+      Battle.
+
+      <size=5%>
+
+      <size=73>Move this  <sprite=10>  over to the
+      new Battle.
+
+      <size=5%>
+
+      <size=73>Play another  <sprite=8>  in this
+      Battle. Your opponent must play another in the new Battle.
+
+      <size=5%>
+
+      <size=73>Resolve
+      the BP for both Battles at the same time.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -571,7 +590,7 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Remove 2 Resources from
-      this  <sprite=10>  for\neach  <sprite=8>  \u201CGirl\u201D in this War.\r"
+      this  <sprite=10>  for\neach female  <sprite=8>  in this War.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 5
@@ -634,8 +653,8 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Look at your opponent\u2019s 
-      <sprite=8> .\r"
+    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Look at your opponent\u2019s
+      Hand.\r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -699,8 +718,15 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 0
-    effectText: "<size=85><b><u>Scoring:</b></u>\n<size=75>Draw 2  <sprite=7> .\n<size=10%>\n<size=75>Place
-      2  <sprite=7>  from your Hand into your Draw Pile, anywhere you want.\r"
+    effectText: '<size=85><b><u>Scoring:</b></u>
+
+      <size=75>Draw 2  <sprite=7>
+      .
+
+      <size=5%>
+
+      <size=75>Place 2  <sprite=7>  from your Hand into
+      your Draw Pile, anywhere you want <size=65>(ignore your Hand Limit when drawing).'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 2
@@ -1155,8 +1181,9 @@ MonoBehaviour:
     lightning: 1
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>In Hand \u2013 When Receiving a  <sprite=23> :</b></u>\r\n<size=75>You
-      can never lose this  <sprite=23> , no matter what other rules apply.\r"
+    effectText: "<size=85><b><u>In Hand \u2013 When Receiving a  <sprite=23> :</b></u>\r\n<size=75>Trash
+      this  <sprite=10> .\n<size=10%>\n<size=75>You can never lose this  <sprite=23>
+      , no matter what other rules apply.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1444,8 +1471,8 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Get as many  <sprite=22> 
-      as points of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  you have
-      on this Battlefield.\r"
+      as you have points of\n <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
+      in this Battlefield.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1542,9 +1569,9 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Get 1 additional 
-      <sprite=52>  for each  <sprite=52>  and  <sprite=53>  as Resources on your
-      played  <sprite=8> .\r"
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=74>Move up 2 spot
+      in any Dominance Track for each  <sprite=52>  and  <sprite=53>  as Resources
+      on your played  <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1575,9 +1602,9 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Get 1 additional 
-      <sprite=52>  for each  <sprite=53>  as Resources on your played  <sprite=8>
-      .\r"
+    effectText: "<size=85><b><u>During Scoring:</b></u>\r\n<size=75>Move up 2 spot
+      in any Dominance Track for each  <sprite=53>  as Resources on your played 
+      <sprite=8> .\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1673,8 +1700,8 @@ MonoBehaviour:
     earth: 0
     water: 0
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>If the Battlefield
-      unfolds on the \u201CTurtle Island\u201D,\nWin the War after getting 3 BP.\n<size=20%>\n<size=75>Your
-      opponent may get more than 3 BP without winning."
+      unfolds on the \u201CTurtle Island\u201D, you Win the War.\n<size=20%>\n<size=75>Play
+      Battles untill you have 3BP, no matter how many BP your opponent gets."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -1965,9 +1992,9 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>The rest of the War:</b></u>\r\n<size=75>You cannot
-      be affected negatively by your opponent in any way (this Battle included).\n<size=10%>\n<size=75>You
-      can lose the War. \r"
+    effectText: "<size=76><b><u>This and rest of the War:</b></u>\r\n<size=74>You
+      cannot be affected negatively by your opponent in any way.\n<size=10%>\n<size=76>You
+      may lose the War. \r"
     effectIcon: 010000000000000000000000
     resources:
     - resources: 0
@@ -2003,7 +2030,7 @@ MonoBehaviour:
       <size=75>Move your opponent
       down
 
-      1 spot in any Dominance Track.
+      1 spot in any Dominance Tracks.
 
       <size=20%>
 
@@ -2072,8 +2099,8 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll a d10  <sprite=85>
-      . \n<size=20%>\n<size=75>Get  <sprite=18>  equal to the result, which must
-      be evenly distributed to the other players. \r"
+      . \n<size=20%>\n<size=75>Get  <sprite=18>  equal to the result. Then evenly
+      distribute them to the other players. \r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2138,8 +2165,8 @@ MonoBehaviour:
     earth: 1
     water: 1
     effectText: "<size=85><b><u>Scoring:</b></u>\r\n<size=75>Roll a d10  <sprite=85>
-      . \n<size=20%>\n<size=75>Get  <sprite=17>  equal to the result, which must
-      be evenly distributed to the other players. \r"
+      . \n<size=20%>\n<size=75>Get  <sprite=17>  equal to the result. Then evenly
+      distribute them to the other players. \r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2205,7 +2232,7 @@ MonoBehaviour:
     effectText: '<size=85><b><u>After the War:</b></u>
 
       <size=75>Draw 1 <sprite=11> 
-      from its Discard Pile, of your choice.'
+      of your choice from the Discard Pile.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2301,8 +2328,10 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>After the War:</b></u>\r\n<size=75>Always get this 
-      <sprite=10>  back to your Hand after Scoring.\r"
+    effectText: '<size=85><b><u>After the War:</b></u>
+
+      <size=75>Get this 
+      <sprite=10>  back to your Hand.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2430,7 +2459,7 @@ MonoBehaviour:
     earth: 1
     water: 0
     effectText: "<size=85><b><u>If Losing the War:</b></u>\r\n<size=75>Win the War
-      by Discarding 1 of any  <sprite=9>  <sprite=10>  <sprite=11>  from your Hand.\r"
+      by Discarding any 1 <sprite=9>  <sprite=10>  <sprite=11>  from your Hand.\r"
     effectIcon: 000000000000000000000000
     resources:
     - resources: 5
@@ -2869,9 +2898,16 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Shuffle both yours 
-      <sprite=8>  and your opponents  <sprite=8> together.\n<size=20%>\n<size=75>Give
-      back the same amount of  <sprite=8>  to both players, at random.\r"
+    effectText: '<size=85><b><u>Immediately:</b></u>
+
+      <size=75>Shuffle both
+      your  <sprite=8>  and your opponents  <sprite=8> together.
+
+      <size=20%>
+
+      <size=75>Give
+      back  <sprite=8>  to players at random so that each player has the same amount
+      as before.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -2905,7 +2941,7 @@ MonoBehaviour:
     effectText: "<size=85><b><u>Immediately:</b></u>\r\n<size=75>Blow your opponent\u2019s 
       <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from this Battlefield into
       an adjacent Field of your choice.\n<size=20%>\n<size=75>If your opponent got
-      the first BP, remove it.\r"
+      the first BP, they lose this BP."
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0
@@ -3034,7 +3070,7 @@ MonoBehaviour:
     lightning: 0
     earth: 0
     water: 0
-    effectText: "<size=85><b><u>For the rest of this Round:</b></u>\r\n<size=75>Increase
+    effectText: "<size=73><b><u>For the rest of the Round:</b></u>\r\n<size=73>Increase
       your  <sprite=84>  Hand Limit with +2.\r"
     effectIcon: 010000000000000000000000
     resources:
@@ -3139,8 +3175,7 @@ MonoBehaviour:
 
       <size=10%>
 
-      <size=75>You may exceed the Unit Point limit
-      in this Field.'
+      <size=75>You may exceed the Field Limit.'
     effectIcon: 020000000000000000000000
     resources:
     - resources: 0
@@ -3237,16 +3272,15 @@ MonoBehaviour:
     effectText: '<size=85><b><u>Most BP after this Battle:</b></u>
 
       <size=75>Your
-      opponents next  <sprite=8>  have +2 <sprite=122> <sprite=123> <sprite=124>
-      .
+      opponents next  <sprite=8>  has +2 <sprite=122> <sprite=123> <sprite=124> .
 
       <size=60%>
 
-      <size=85><b><u>Least BP after this Battle:</b></u>
+      <size=85><b><u>Least
+      BP after this Battle:</b></u>
 
-      <size=75>Your
-      opponents next  <sprite=8>  have -2 <sprite=122> <sprite=123> <sprite=124>
-      .'
+      <size=75>Your opponents next  <sprite=8> 
+      has -2 <sprite=122> <sprite=123> <sprite=124> .'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0

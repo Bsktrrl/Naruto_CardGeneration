@@ -38,21 +38,15 @@ MonoBehaviour:
 
       <size=90%>Cancel all 
       <sprite=69>'
-  - name: Recovery
-    image: {fileID: 21300000, guid: c0bbf25becacbfc40aa941e461b34725, type: 3}
-    isFirstRound: 0
-    isLastRound: 1
-    description: "<u>Discard this  <sprite=16></u>\n<size=25%>\n<size=100%>Draw a
-      new  <sprite=16>  for this Round, but don\u2019t draw any  <sprite=16>  during
-      the next Round"
   - name: Pact
     image: {fileID: 21300000, guid: 85ff6eb90159c9f49a678befcd904bba, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: '<size=90%>Fields containing  <sprite=23>  can be controlled without
-      attacking
+    description: '<size=90%>Fields containing  <sprite=23>  can be moved into without
+      triggering a War
 
-      <size=70%>( <sprite=23>  still need to be attacked to be captured)'
+      <size=70%>( <sprite=23>  still need to be attacked
+      to be captured)'
   - name: The Betrayal
     image: {fileID: 21300000, guid: b945f4e47e5a51a408201b615196416c, type: 3}
     isFirstRound: 1
@@ -61,9 +55,10 @@ MonoBehaviour:
 
       <size=25%>
 
-      <size=100%>The
-      first time you get attacked by this player, Win the War before entering Battle'
-  - name: Cought off Guard
+      <size=90%>The
+      first time you get attacked by this player, Win the War without entering a
+      Battle'
+  - name: Caught off Guard
     image: {fileID: 21300000, guid: 0912e1ad678dfbf48afd02bfc94de2b2, type: 3}
     isFirstRound: 1
     isLastRound: 1
@@ -91,25 +86,26 @@ MonoBehaviour:
     isFirstRound: 1
     isLastRound: 0
     description: <size=90%>When receiving any  <sprite=17>  <sprite=18>  <sprite=19> 
-      <sprite=20>  <sprite=21> , remove one of the same type from your Supply instead
+      <sprite=20>  <sprite=21> , instead of receiving it, remove one of the same
+      type from your Supply
   - name: Trapped
     image: {fileID: 21300000, guid: 2768a817b3a5a624d80bcbefc57c740b, type: 3}
-    isFirstRound: 0
+    isFirstRound: 1
     isLastRound: 0
-    description: '<sprite=23>  bound by a  <sprite=21>  cannot be
+    description: '<sprite=23>  containing a  <sprite=21>  cannot be
 
-      given away
-      after Wars'
+      given
+      away after Wars'
   - name: Teleport
     image: {fileID: 21300000, guid: 8f3a0d4fd7783c44abd167ff01af1ad5, type: 3}
-    isFirstRound: 0
+    isFirstRound: 1
     isLastRound: 0
     description: 'When receiving any
 
       <sprite=17>  <sprite=18>  <sprite=19> 
       <sprite=20>  <sprite=21> ,
 
-      receive  <sprite=77>  instead'
+      receive a  <sprite=77>  instead'
   - name: Forever Together
     image: {fileID: 21300000, guid: 8d7ac864789e1eb4fa239478b9da241d, type: 3}
     isFirstRound: 1
@@ -121,19 +117,25 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 998d50e07ac307e4ca8123b3e24a216b, type: 3}
     isFirstRound: 1
     isLastRound: 0
-    description: When taking control over a Field containing  <sprite=58>  , get 
-      <sprite=22>  equal to the number on your  <sprite=81>  Domination Track instead
-      of the normal  <sprite=83>  Domination Track
-  - name: Lost on Path of Life
+    description: <size=78%>When taking control over a Field containing  <sprite=58> 
+      , get  <sprite=22>  equal to your spot number on the  <sprite=81>  Domination
+      Track instead of the normal  <sprite=83>  Domination Track
+  - name: Distractions
     image: {fileID: 21300000, guid: c087e20a0517dab469d718b5028c2647, type: 3}
     isFirstRound: 1
     isLastRound: 0
-    description: "<sprite=0> \u201CTravel\u201D costs 2  <sprite=22>"
+    description: "<sprite=0> \u201CTravel\u201D costs 2 <sprite=22>"
   - name: The Giants Await
     image: {fileID: 21300000, guid: 2fd64f655769e2c4dbe64fb0abaf0909, type: 3}
     isFirstRound: 1
     isLastRound: 0
     description: "All  <sprite=0> \u201CWar\u201D costs +1 <sprite=22>  more than
+      normal"
+  - name: A Threat is Brewing
+    image: {fileID: 21300000, guid: da2f871a3f2942d4997b3cb7da70e935, type: 3}
+    isFirstRound: 1
+    isLastRound: 0
+    description: "All  <sprite=0> \u201CWar\u201D costs -1 <sprite=22>  less than
       normal"
   - name: Power of a Sage
     image: {fileID: 21300000, guid: 150de285e0628e74bba07d2f3cb8ef69, type: 3}
@@ -147,7 +149,7 @@ MonoBehaviour:
     isFirstRound: 1
     isLastRound: 0
     description: All  <sprite=8>  contain exactly 2 <sprite=86>
-  - name: Maybe Next Time
+  - name: Next Time
     image: {fileID: 21300000, guid: 32e521f86b3f7dc47800f5fc9bf849f7, type: 3}
     isFirstRound: 1
     isLastRound: 0
@@ -159,7 +161,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: ba4ee9c1a2b23a34797ac29d6a224e06, type: 3}
     isFirstRound: 1
     isLastRound: 0
-    description: Only 1 <sprite=8>  can be played in Wars against a  <sprite=23>
+    description: Only 3 <sprite=8>  can be played in Wars against a  <sprite=23>
   - name: In the Backhand
     image: {fileID: 21300000, guid: 6bbe0ac3923d8c94bbd682651efd4535, type: 3}
     isFirstRound: 1
@@ -198,12 +200,12 @@ MonoBehaviour:
       <size=20%>
 
       <size=85%>The Resources
-      from 1 <sprite=8>  played by each player will not be counted. Each player decides
-      which  <sprite=8>  to ignore
+      from 1 <sprite=8>  played by each player will not be resolved. Each player
+      decides which  <sprite=8>  to ignore
 
-      <size=75%>(The ignored  <sprite=8>  must
-      contain Resources)'
-  - name: Moving towards peaceful times
+      <size=75%>(The ignored  <sprite=8> 
+      must contain Resources)'
+  - name: Moving Towards Peaceful Times
     image: {fileID: 21300000, guid: 88e7119c77de0e24b9980ff531607603, type: 3}
     isFirstRound: 0
     isLastRound: 0
@@ -227,7 +229,7 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=75%>(Effects
+      <size=70%>(Effects
       will still trigger as if  <sprite=59>  where to happen)'
   - name: Space
     image: {fileID: 21300000, guid: ee28379dcabca984b966876da547ab2f, type: 3}
@@ -243,22 +245,17 @@ MonoBehaviour:
       <size=20%>
 
       <size=90%>Both
-      remain active for this Round'
+      becomes active for this Round'
   - name: Buckle Up
     image: {fileID: 21300000, guid: fc9161f7293cde74283c8a6d10c93b68, type: 3}
     isFirstRound: 1
     isLastRound: 0
     description: All  <sprite=23>  have +3 Strength
-  - name: Trapped
+  - name: Sealed
     image: {fileID: 21300000, guid: 0513ae8048ead0945ad9f68a44b92131, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: 'All  <sprite=23>  have -3 Strength
-
-      <size=20%>
-
-      <size=75%>(minimum
-      of 1 Strength)'
+    description: All  <sprite=23>  have -3 Strength
   - name: Left to Tell the Tale
     image: {fileID: 21300000, guid: 6459b3ba4d302814cabd188b7f65a6db, type: 3}
     isFirstRound: 1
@@ -313,17 +310,16 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: ef39a906e2787564fa335b9251c42498, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: "<size=90%>The  <sprite=84> Hand Limit is +2 more than what\u2019s
-      displayed on the\n<sprite=84> Domination Track"
+    description: <size=90%>The  <sprite=84> Hand Limit is +2 more than normal
   - name: Water Prison
     image: {fileID: 21300000, guid: 654b2047f0b92924fbc9ddc0dc0a0fda, type: 3}
-    isFirstRound: 0
+    isFirstRound: 1
     isLastRound: 1
     description: "<sprite=0> \u201CFire\u201D cannot be played"
-  - name: What it's like to be slow
+  - name: What it's like to be slower
     image: {fileID: 21300000, guid: 069d495204c089f4eb12cbd135e182ef, type: 3}
     isFirstRound: 1
-    isLastRound: 0
+    isLastRound: 1
     description: "<sprite=0> \u201CFire Block\u201D cannot be played"
   - name: Even Match
     image: {fileID: 21300000, guid: 1b73090735bef354fbfa5b3bf7379774, type: 3}
@@ -351,23 +347,23 @@ MonoBehaviour:
     isFirstRound: 1
     isLastRound: 0
     description: When Discarding  <sprite=49>  <sprite=50>  <sprite=51> , Discard
-      those of lowest tiers first
+      twice as many
   - name: Sorrow
     image: {fileID: 21300000, guid: a33e7fe6f42044747a073188c8499e86, type: 3}
     isFirstRound: 1
     isLastRound: 0
     description: When Discarding  <sprite=49>  <sprite=50>  <sprite=51> , Discard
-      those of highest tiers first
+      the highest tiers first
   - name: Bridges
     image: {fileID: 21300000, guid: a7aa047a9d356ff44a4ef77a2baaf6db, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: <sprite=49>  <sprite=50>  <sprite=51>  can walk through Rivers
+    description: <sprite=49>  <sprite=50>  <sprite=51>  can move through Rivers
   - name: Hiking
     image: {fileID: 21300000, guid: 3444194ad9e229a40a21c9f7759882eb, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: <sprite=49>  <sprite=50>  <sprite=51>  can walk through Mountains
+    description: <sprite=49>  <sprite=50>  <sprite=51>  can move through Mountains
   - name: Shaking Ground
     image: {fileID: 21300000, guid: dcc0d2d7501b33849aefbcf22b682372, type: 3}
     isFirstRound: 1
@@ -376,15 +372,19 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=90%>The
+      <size=85%>The
       player highest in the  <sprite=80>  Dominance Track gets the 1 BP instead of
       the player with the highest  <sprite=49>  <sprite=50>  <sprite=51>  Strength'
   - name: An attempt at consolation
     image: {fileID: 21300000, guid: ef3277e3a1868b04fa554c1ac7dc6c3f, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: "<u>In the \u201CAction Phase</u>\u201D\n<size=20%>\n<size=90%>Players
-      may play up to 2 <sprite=0>  on their Turn"
+    description: '<u>In the Action Phase</u>
+
+      <size=20%>
+
+      <size=90%>Players
+      may play up to 2 <sprite=0>  on their Turn'
   - name: Collapse
     image: {fileID: 21300000, guid: 84058d8a59f9da349927e4976cb8c035, type: 3}
     isFirstRound: 1
@@ -443,7 +443,7 @@ MonoBehaviour:
       Track,
 
       move twice as many spots'
-  - name: The day when I got Tricked
+  - name: The day when I became a Fool
     image: {fileID: 21300000, guid: 536289c705985be4681b89ac4472fe9b, type: 3}
     isFirstRound: 1
     isLastRound: 0
@@ -466,9 +466,11 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=90%><sprite=49> 
-      <sprite=50>  <sprite=51>  can jump each other the same way as they use  <sprite=48> 
-      to get past Water Fields'
+      <size=85%><sprite=49> 
+      <sprite=50>  <sprite=51>  can use each other the same
+
+      way as they use 
+      <sprite=48>  to get over Water Fields'
   - name: Unexpected Courage
     image: {fileID: 21300000, guid: 07c8d843a177df94fa02e6f98fd78865, type: 3}
     isFirstRound: 0
@@ -477,7 +479,7 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=85%>The player
+      <size=80%>The player
       lowest on the  <sprite=80>  Dominance Track Wins, instead of the player highest
       on it'
   - name: Free from Captivity
@@ -520,15 +522,20 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 54e576b7966cf384686ea99e736be8a9, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: 'All  <sprite=0>  in the Shop has a discount of -1 <sprite=22> <size=75%>(minimum
-      of 1)
+    description: '<size=100%><u>In the Shop Phase</u>
 
-      (Keep the  <sprite=0>  Hidden Deck as it is)'
+      <size=20%>
+
+      <size=90%>All 
+      <sprite=0>  has a discount of -1 <sprite=22>
+
+      <size=65%>(Keep the  <sprite=0> 
+      Hidden Deck as it is)'
   - name: Eating Competition
     image: {fileID: 21300000, guid: a7d46f2394a35f448b1ea5dd89e2deb4, type: 3}
     isFirstRound: 0
     isLastRound: 1
-    description: The  <sprite=0>  "Hidden Deck" cannot be bought from
+    description: The  <sprite=0>  Hidden Deck cannot be bought from
   - name: Friendship
     image: {fileID: 21300000, guid: 1a8a54f041a3cac4497656b163b7bafa, type: 3}
     isFirstRound: 0
@@ -538,21 +545,21 @@ MonoBehaviour:
       <size=20%>
 
       <size=85%>When
-      Winning against a  <sprite=23> , receive
+      Winning a War against a  <sprite=23> , receive
 
       1 additional  <sprite=23> 
       of the same type from the Main Supply'
-  - name: Just one extra session
+  - name: Just one extra 100 Laps
     image: {fileID: 21300000, guid: 03014dabe11ab50498700f1767ae6d7c, type: 3}
     isFirstRound: 0
-    isLastRound: 0
-    description: '<u>Draw a new  <sprite=16></u>
+    isLastRound: 1
+    description: '<u>Draw another  <sprite=16></u>
 
       <size=20%>
 
-      <size=85%>This
-      new  <sprite=16>  will also take effect during the next Round, together with
-      a new  <sprite=16>  for that Round'
+      <size=80%>This
+      new  <sprite=16>  will take effect during this and the next Round, together
+      with a new  <sprite=16>  for the next Round'
   - name: Ramen Time
     image: {fileID: 21300000, guid: 992d8813f76cd554eae9cf31d9a93842, type: 3}
     isFirstRound: 1
@@ -563,13 +570,9 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 0d719cc9dd969744695e771c3bd15a94, type: 3}
     isFirstRound: 1
     isLastRound: 0
-    description: '<u>During  <sprite=0> "Travel"</u>
-
-      <size=20%>
-
-      <size=85%><sprite=48> 
-      can jump  <sprite=48>  the same way as  <sprite=49>  <sprite=50>  <sprite=51> 
-      are jumping  <sprite=48>  on Water Fields'
+    description: "<u>During  <sprite=0> \"Travel\"</u>\n<size=20%>\n<size=85%><sprite=48> 
+      can use other  <sprite=48>  the same way as\n <sprite=49>  <sprite=50>  <sprite=51> 
+      use  <sprite=48>  to get over Water Fields"
   - name: Thank you for the Support
     image: {fileID: 21300000, guid: 031e1003894d3514bacd88d7cbe2217b, type: 3}
     isFirstRound: 0
@@ -604,17 +607,17 @@ MonoBehaviour:
 '
   - name: No Next Time
     image: {fileID: 21300000, guid: e361751f8966205478c24adaef17680a, type: 3}
-    isFirstRound: 1
-    isLastRound: 0
+    isFirstRound: 0
+    isLastRound: 1
     description: "As Resources on  <sprite=8> :\n<size=1%>\n<size=100%><sprite=52> 
       become  <sprite=53>\r\n<sprite=53>  become  <sprite=52>\r"
   - name: Change in Momentum
     image: {fileID: 21300000, guid: 060238ec0f63b524784be2335dbff6e5, type: 3}
-    isFirstRound: 1
-    isLastRound: 0
+    isFirstRound: 0
+    isLastRound: 1
     description: "As Resources on  <sprite=8> :\n<size=1%>\n<size=100%><sprite=22> 
       become  <sprite=77>\r\n<sprite=77>  become  <sprite=22>\r"
-  - name: Win or Lose
+  - name: You cannot be Seroius
     image: {fileID: 21300000, guid: 20656cfdd738c764bac319cfcc5ca792, type: 3}
     isFirstRound: 1
     isLastRound: 0
@@ -635,15 +638,12 @@ MonoBehaviour:
       <size=20%>
 
       <size=90%>Get
-      2 <sprite=22>
-
-      in addition to the normal  <sprite=9> '
+      2 <sprite=22>  in addition to the normal  <sprite=9> '
   - name: More Doors
     image: {fileID: 21300000, guid: 5c84cbb606489854bae49534f5c883f4, type: 3}
     isFirstRound: 1
     isLastRound: 0
-    description: "<sprite=0> \u201CDefense\u201D adds +2 more Defence then what's
-      displayed"
+    description: "<sprite=0> \u201CDefense\u201D adds +2 more Defence than normal"
   - name: Final Gambit
     image: {fileID: 21300000, guid: 45296fdd5f7e40748ae272546e177834, type: 3}
     isFirstRound: 1
@@ -653,17 +653,18 @@ MonoBehaviour:
       <size=20%>
 
       <size=89%>Receive
-      a  <sprite=23>  from the opponent, no matter if Attacked or the Defended'
+      a  <sprite=23>  from its opponent, no matter if it Attacked or Defended'
   - name: Preperations
     image: {fileID: 21300000, guid: 5a91bfdde0c3aa24eb32bceb34afc239, type: 3}
     isFirstRound: 1
     isLastRound: 0
-    description: '<u>When holding 0 <sprite=7>  on Hand</u>
+    description: '<u>When holding 0  <sprite=7>  on Hand</u>
 
       <size=20%>
 
-      <size=85%>Draw
-      5 <sprite=7>  before Discarding down to the  <sprite=84>  Hand Limit'
+      <size=75%>Draw
+      6  <sprite=7>  instead of what''s normal, and Discard down to the  <sprite=84> 
+      Hand Limit if needed'
   - name: Here, Take This
     image: {fileID: 21300000, guid: 7a97f080baa1fc341be1a87b5cb0def1, type: 3}
     isFirstRound: 0
@@ -672,18 +673,11 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=90%><sprite=0>
-      of cost 2 <sprite=22>  cannot be bought'
-  - name: It seems Hopeless
-    image: {fileID: 21300000, guid: 414b5e361ad0cfc4fa36ccc9c0931397, type: 3}
-    isFirstRound: 0
-    isLastRound: 1
-    description: '<u>Shop Phase</u>
+      <size=83%><sprite=0>
+      of cost 2 <sprite=22>  and 3 <sprite=22>  cannot be bought
 
-      <size=20%>
-
-      <size=90%><sprite=0>
-      of cost 3 <sprite=22>  cannot be bought'
+      <size=70%>(Doesn''t
+      include  <sprite=0> "Specialty")'
   - name: Not a Gamble
     image: {fileID: 21300000, guid: e32b87b5b1595444abe330ea5e559a5f, type: 3}
     isFirstRound: 0
@@ -696,16 +690,16 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 8f092de4ee3803b44921c08e8c97f380, type: 3}
     isFirstRound: 0
     isLastRound: 0
-    description: "When a  <sprite=59>  is performed,\n the player get 1 <sprite=22> 
-      for each  <sprite=8>  that get back up on Hand"
-  - name: Taking Control
+    description: "<size=90%>When a  <sprite=59>  is performed,\n the player get 1
+      <sprite=22>  for each  <sprite=8>  \nthey get back on Hand"
+  - name: In Control
     image: {fileID: 21300000, guid: ecb15321e692116439b912035059c0c4, type: 3}
     isFirstRound: 1
     isLastRound: 0
     description: "<size=80%><u>When a  <sprite=0> \u201CRare Ally\u201D,  <sprite=0>
       \u201CEpic Ally\u201D or\n<sprite=0> \u201CLegendary Ally\u201D is played</u>\n<size=20%>\n<size=70%>The
-      Active player draws 1 <sprite=0>  from the  <sprite=0> \"Hidden Deck\" for
-      each player, look at them and give one to each player"
+      Active player draws 1 <sprite=0>  from the  <sprite=0> Hidden Deck for each
+      player, look at them and give one to each player"
   - name: I guess it works on Beasts too
     image: {fileID: 21300000, guid: 6258aa4f8ac05934d950d78292046a05, type: 3}
     isFirstRound: 1
@@ -714,7 +708,7 @@ MonoBehaviour:
 
       get back 1 <sprite=23> 
       of the same type from the Main Supply'
-  - name: Only Downwards from Here
+  - name: Overwhelming
     image: {fileID: 21300000, guid: d9b8f6172750c94429784a72cd0f9d66, type: 3}
     isFirstRound: 0
     isLastRound: 0
@@ -723,7 +717,7 @@ MonoBehaviour:
 
       <size=65%>(Players can only move up if they swap spot with
       another player moving down)'
-  - name: Only Upwards from Here
+  - name: Underwhelming
     image: {fileID: 21300000, guid: d0b1e329912d321409a62bfc7db3d9c1, type: 3}
     isFirstRound: 0
     isLastRound: 0
@@ -758,10 +752,10 @@ MonoBehaviour:
       have been captured is occupied once more'
   - name: A Stronger Opponent
     image: {fileID: 21300000, guid: ee6b61860eb642a46a8a141adfe7efb4, type: 3}
-    isFirstRound: 0
+    isFirstRound: 1
     isLastRound: 0
-    description: "During Wars, count all  <sprite=69>  twice \n<size=25%>\n<size=75%>(You
-      need 2  <sprite=70>  to nullify 1  <sprite=69>)"
+    description: "<u>During Wars</u>\n<size=20%>\n<size=85%>Count all  <sprite=69> 
+      twice \n<size=10%>\n<size=65%>(You need 2  <sprite=70>  to nullify 1  <sprite=69>)"
   - name: Bound to happen
     image: {fileID: 21300000, guid: 9e7a885df14566f4981eeadc10a25710, type: 3}
     isFirstRound: 1
@@ -776,7 +770,7 @@ MonoBehaviour:
       with a random one from the Main Supply
   - name: We can do this
     image: {fileID: 21300000, guid: c03e8d52db4142a439fab711064f089c, type: 3}
-    isFirstRound: 0
+    isFirstRound: 1
     isLastRound: 1
     description: '<size=85%>All players must draw 1 <sprite=16>  which only affect
       themselves
@@ -792,5 +786,89 @@ MonoBehaviour:
       <size=20%>
 
       <size=85%>The
-      weakest  <sprite=125> <sprite=126> <sprite=127>  determins which player are
-      receiveing the BP'
+      weakest  <sprite=125> <sprite=126> <sprite=127>  determins the BP received'
+  - name: Silent Killing
+    image: {fileID: 21300000, guid: ddfac473d4dd1df4a8937123b15e71a5, type: 3}
+    isFirstRound: 1
+    isLastRound: 0
+    description: "<size=110%><u>Start of a War</u>\n<size=20%>\n<size=85%>All Wars
+      consist of at least 4 Battles.\n Both players play  <sprite=8>  for all 4 Battles
+      with the front-side down. Then they flip and resolves 1 Battle at a time"
+  - name: Chakra Nature
+    image: {fileID: 21300000, guid: 8320b5cf938b41441a351d382f152e00, type: 3}
+    isFirstRound: 0
+    isLastRound: 0
+    description: "<size=100%><u>During Battles</u>\n<size=25%>\n<size=80%>Give each 
+      <sprite=8>  +1 <sprite=101> <sprite=102> <sprite=103>  for each\n  <sprite=131>
+      <sprite=132> <sprite=133> <sprite=134> <sprite=135>  that they don't share"
+  - name: What I once was
+    image: {fileID: 21300000, guid: 0c85dcc1266d03644b2eff61078ff7f4, type: 3}
+    isFirstRound: 0
+    isLastRound: 0
+    description: '<size=110%><u>War against a  <sprite=23></u>
+
+      <size=20%>
+
+      <size=71%>You
+      don''t need to exceed the Strength of
+
+      the  <sprite=23>  with your  <sprite=48> 
+      <sprite=49>  <sprite=50>  <sprite=51>  to be able to attack it'
+  - name: We Come as we Go
+    image: {fileID: 21300000, guid: 5c4877a4cf530fd438c652eb14665626, type: 3}
+    isFirstRound: 1
+    isLastRound: 0
+    description: '<size=90%><u>When playing a  <sprite=8>  "In Hand"</u>
+
+      <size=20%>
+
+      <size=70%>Once
+      for each  <sprite=8> , don''t Trash it when played. Instead, take it back to
+      your Hand'
+  - name: Heal
+    image: {fileID: 21300000, guid: a94a866d1d608664aae23b5e4975a1a1, type: 3}
+    isFirstRound: 0
+    isLastRound: 0
+    description: '<size=110%><u>After a War</u>
+
+      <size=20%>
+
+      <size=85%>All 
+      <sprite=8>  not containing  <sprite=60>  goes back to the players'' Hands'
+  - name: An Impactful Place to Act
+    image: {fileID: 21300000, guid: c8b633508d154854da9847de1533bcba, type: 3}
+    isFirstRound: 0
+    isLastRound: 1
+    description: '<size=100%><u>For the rest of the Game</u>
+
+      <size=20%>
+
+      <size=85%>When
+      drawing a  <sprite=16> , draw 2 <sprite=16>  instead
+
+      <size=70%>(Including
+      this Round)'
+  - name: Which Ninjas are Better
+    image: {fileID: 21300000, guid: a4541ad5bdc989c4fb75e8f2274cfdaa, type: 3}
+    isFirstRound: 0
+    isLastRound: 0
+    description: '<size=110%><u>Wars against players</u>
+
+      <size=25%>
+
+      <size=85%>Don''t
+      count BP for the largest Unit Strength. Instead, start the first Battle with
+      both players having 0 BP'
+  - name: Ice Trap
+    image: {fileID: 21300000, guid: 85c11a3b5857c354086254933815cd21, type: 3}
+    isFirstRound: 0
+    isLastRound: 1
+    description: '<size=100%><u>When receiving a  <sprite=20></u>
+
+      <size=25%>
+
+      <size=80%>Discard
+      your selected  <sprite=0>  instead of
+
+      placing it aside for the next
+      Round'

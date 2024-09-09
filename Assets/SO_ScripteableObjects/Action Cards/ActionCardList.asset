@@ -74,8 +74,8 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 9f4e2859f1810e644acfbc8d881d3883, type: 3}
     description: If you control a Field adjacent to where a War takes place, you
       may add the Strength of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
-      in this Field to one of the participants'
-    textSize: 80.54
+      in that Field to one of the participants'
+    textSize: 78.9
     cost: 1
     fireBlock: 0
     strength: 
@@ -84,13 +84,11 @@ MonoBehaviour:
     type: 3
     isInHiddenDeck: 0
     image: {fileID: 21300000, guid: b135f5716dea4e04fb2549ae56b0b375, type: 3}
-    description: 'Either on your Turn or when losing a War, you may flip all
+    description: 'Either on your Turn or when losing a War, you may Unprone
 
       <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  in any Field
-
-      upright'
-    textSize: 91.5
+      <sprite=49>  <sprite=50>  <sprite=51>  in any Field'
+    textSize: 95
     cost: 2
     fireBlock: 0
     strength: 
@@ -109,7 +107,7 @@ MonoBehaviour:
     type: 2
     isInHiddenDeck: 0
     image: {fileID: 21300000, guid: da47c4a695197494bb1186ff93ce7dbb, type: 3}
-    description: 'Play this at the start of your Turn to move Up 1 step in any track
+    description: 'Play this at the start of your Turn to move Up 1 spot in any track
       on the
 
       "Dominance Board"'
@@ -180,8 +178,7 @@ MonoBehaviour:
     type: 1
     isInHiddenDeck: 0
     image: {fileID: 21300000, guid: dd14a4e8a4373ca49991f4de022bf15d, type: 3}
-    description: Play 2  <sprite=0>  right after this. They cannot be canceled by
-      <sprite=0>  "Fire"
+    description: Play 2  <sprite=0>  right after this. They cannot be blocked
     textSize: 105
     cost: 3
     fireBlock: 0
@@ -197,7 +194,7 @@ MonoBehaviour:
     cost: 0
     fireBlock: 1
     strength: 
-  - name: ------------------- Hidden From Shop
+  - name: ------------------- Hidden  - From Shop
     cardType: 2
     type: 1
     isInHiddenDeck: 0
@@ -268,8 +265,8 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 9f4e2859f1810e644acfbc8d881d3883, type: 3}
     description: If you control a Field adjacent to where a War takes place, you
       may add the Strength of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
-      in this Field to one of the participants'
-    textSize: 80.54
+      in that Field to one of the participants'
+    textSize: 78.9
     cost: 1
     fireBlock: 0
     strength: 
@@ -278,13 +275,11 @@ MonoBehaviour:
     type: 3
     isInHiddenDeck: 1
     image: {fileID: 21300000, guid: b135f5716dea4e04fb2549ae56b0b375, type: 3}
-    description: 'Either on your Turn or when losing a War, you may flip all
+    description: 'Either on your Turn or when losing a War, you may Unprone
 
       <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  in any Field
-
-      upright'
-    textSize: 91.5
+      <sprite=49>  <sprite=50>  <sprite=51>  in any Field'
+    textSize: 95
     cost: 2
     fireBlock: 0
     strength: 
@@ -303,7 +298,7 @@ MonoBehaviour:
     type: 2
     isInHiddenDeck: 1
     image: {fileID: 21300000, guid: da47c4a695197494bb1186ff93ce7dbb, type: 3}
-    description: 'Play this at the start of your Turn to move Up 1 step in any track
+    description: 'Play this at the start of your Turn to move Up 1 spot in any track
       on the
 
       "Dominance Board"'
@@ -374,8 +369,7 @@ MonoBehaviour:
     type: 1
     isInHiddenDeck: 1
     image: {fileID: 21300000, guid: dd14a4e8a4373ca49991f4de022bf15d, type: 3}
-    description: Play 2  <sprite=0>  right after this. They cannot be canceled by
-      <sprite=0>  "Fire"
+    description: Play 2  <sprite=0>  right after this. They cannot be blocked
     textSize: 105
     cost: 3
     fireBlock: 0
@@ -391,7 +385,7 @@ MonoBehaviour:
     cost: 0
     fireBlock: 1
     strength: 
-  - name: ------------------- Hidden Other
+  - name: ------------------- Hidden - Other
     cardType: 2
     type: 1
     isInHiddenDeck: 0
@@ -403,18 +397,19 @@ MonoBehaviour:
     strength: 
   - name: Nothing
     cardType: 2
-    type: 2
+    type: 0
     isInHiddenDeck: 1
     image: {fileID: 21300000, guid: 4de1ede1fd2b16e448cf69a2ff85e6cd, type: 3}
-    description: You may ignore as many of this as the number of  <sprite=22>  you
-      got at the start of the "Shop"-Phase, and draw another  <sprite=0>
-    textSize: 90
+    description: You can ignore as many  <sprite=0> "Nothing" as the number of  <sprite=22> 
+      you got at the start of the Shop Phase. If you ignore it, draw another  <sprite=0> 
+      from the Hidden Deck
+    textSize: 74.4
     cost: 1
     fireBlock: 0
     strength: 
   - name: Payday
     cardType: 2
-    type: 2
+    type: 0
     isInHiddenDeck: 1
     image: {fileID: 21300000, guid: 775a48b9cb38025429c2ebea1e0e80c7, type: 3}
     description: 'When you draw this,
@@ -443,7 +438,7 @@ MonoBehaviour:
     type: 1
     isInHiddenDeck: 1
     image: {fileID: 21300000, guid: 444885235998ddc44b92a1ddadbc394e, type: 3}
-    description: Draw 1  <sprite=7>  from your Draw Pile
+    description: Draw 1 <sprite=7>  from your Draw Pile
     textSize: 120
     cost: 2
     fireBlock: 0
@@ -583,7 +578,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: bf2027767be9e9348a55b416f93f22f3, type: 3}
     description: 'Look at another player''s Hand.
 
-      Remove 1  <sprite=0>  from
+      Freeze 1  <sprite=0>  from
       it'
     textSize: 120
     cost: 2
@@ -596,10 +591,8 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 41c45c945e1967449bb5799f8abb019e, type: 3}
     description: 'Move any player Down
 
-      2 steps in any track on the
-
-      "Dominance
-      Board"'
+      2 spots in any track on the Dominance
+      Board'
     textSize: 111.5
     cost: 2
     fireBlock: 0
@@ -667,7 +660,7 @@ MonoBehaviour:
     cost: 0
     fireBlock: 0
     strength: 
-  - name: Kara - Illusion
+  - name: Kara - Genjutsu
     cardType: 2
     type: 1
     isInHiddenDeck: 0
@@ -677,37 +670,37 @@ MonoBehaviour:
     cost: 0
     fireBlock: 0
     strength: 
-  - name: Kara - Paralyze
+  - name: Kara - Immobilize
     cardType: 2
     type: 1
     isInHiddenDeck: 0
     image: {fileID: 21300000, guid: c248d3476ef16174f88b1ce3f5ac74bd, type: 3}
-    description: Remove 1 random  <sprite=8>  from any players' Hand
+    description: Discard 1 random  <sprite=8>  from any players' Hand
     textSize: 120
     cost: 0
     fireBlock: 0
     strength: 
-  - name: Kara - Freeze
+  - name: Kara - Blizzard
     cardType: 2
     type: 1
     isInHiddenDeck: 0
     image: {fileID: 21300000, guid: bf2027767be9e9348a55b416f93f22f3, type: 3}
-    description: Remove 1  random  <sprite=0>  from from any players' Hand
+    description: Remove 1 random  <sprite=0>  from any players' Hand
     textSize: 120
     cost: 0
     fireBlock: 0
     strength: 
-  - name: Kara - Poison
+  - name: Kara - Poisoning
     cardType: 2
     type: 1
     isInHiddenDeck: 0
     image: {fileID: 21300000, guid: 41c45c945e1967449bb5799f8abb019e, type: 3}
     description: 'Move any player Down
 
-      1 step in any track on the
+      1 spot in any track on the
 
-      "Dominance
-      Board", twice'
+      Dominance
+      Board, twice'
     textSize: 111.5
     cost: 0
     fireBlock: 0

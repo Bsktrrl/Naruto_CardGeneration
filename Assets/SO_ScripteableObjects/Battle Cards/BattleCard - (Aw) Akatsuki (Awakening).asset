@@ -41,11 +41,8 @@ MonoBehaviour:
       <size=20%>
 
       <size=72>The
-      winner of the War may place its
-
-      " <sprite=63>  <sprite=64>  <sprite=65> 
-      <sprite=66>  <sprite=67>  <sprite=68>  <sprite=78> "-Marker on the Battlefield,
-      taking control over it once more.'
+      winner of the War may place their Field Marker on the Battlefield, taking control
+      over it once more.'
     effectIcon: 000000000000000000000000
     resources:
     - resources: 0

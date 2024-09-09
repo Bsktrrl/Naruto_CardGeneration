@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BattleCard - Otsutsuki
   m_EditorClassIdentifier: 
   cardList:
-  - name: "Ashura \u014Ctsutsuki"
+  - name: Ashura Otsutsuki
     loreInfo: Teenager - Progenitor of the Senju Clan
     index: 81
     set: 1
@@ -120,7 +120,7 @@ MonoBehaviour:
       amount: 2
     - resources: 18
       amount: 1
-  - name: "Hagoromo \u014Ctsutsuki"
+  - name: Hagoromo Otsutsuki
     loreInfo: Ancient - Sage of Six Path
     index: 84
     set: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
       amount: 1
     - resources: 0
       amount: 2
-  - name: "Hagoromo \u014Ctsutsuki"
+  - name: Hagoromo Otsutsuki
     loreInfo: Teenager - Sage of Six Path
     index: 85
     set: 1
@@ -187,7 +187,7 @@ MonoBehaviour:
       amount: 1
     - resources: 18
       amount: 1
-  - name: "Hamura \u014Ctsutsuki"
+  - name: Hamura Otsutsuki
     loreInfo: Ancient - Shinobi of the Moon
     index: 86
     set: 1
@@ -228,7 +228,7 @@ MonoBehaviour:
       amount: 1
     - resources: 16
       amount: 2
-  - name: "Hamura \u014Ctsutsuki"
+  - name: Hamura Otsutsuki
     loreInfo: Teenager - Hagoromo's Younger Brother
     index: 87
     set: 1
@@ -260,7 +260,7 @@ MonoBehaviour:
       amount: 1
     - resources: 18
       amount: 1
-  - name: "Indra \u014Ctsutsuki"
+  - name: Indra Otsutsuki
     loreInfo: Teenager - Progenitor of the Uchiha Clan
     index: 88
     set: 1
@@ -291,7 +291,7 @@ MonoBehaviour:
       amount: 1
     - resources: 7
       amount: 1
-  - name: "Isshiki \u014Ctsutsuki"
+  - name: Isshiki Otsutsuki
     loreInfo: Adult - Kagyua's Partner
     index: 89
     set: 1
@@ -323,7 +323,7 @@ MonoBehaviour:
       amount: 2
     - resources: 12
       amount: 3
-  - name: "Kaguya \u014Ctsutsuki"
+  - name: Kaguya Otsutsuki
     loreInfo: Adult - Hagoromo's Mother
     index: 90
     set: 1
@@ -354,7 +354,7 @@ MonoBehaviour:
       amount: 1
     - resources: 14
       amount: 1
-  - name: "Kaguya \u014Ctsutsuki"
+  - name: Kaguya Otsutsuki
     loreInfo: Ancient - Reborn - Rabbit Godess
     index: 91
     set: 1
@@ -419,7 +419,7 @@ MonoBehaviour:
       amount: 1
     - resources: 18
       amount: 2
-  - name: "Kimimaro \u014Ctsutsuki"
+  - name: Kimimaro Otsutsuki
     loreInfo: Adult - Survivor of the Kaguya clan
     index: 93
     set: 1
@@ -451,7 +451,7 @@ MonoBehaviour:
       amount: 1
     - resources: 13
       amount: 2
-  - name: "Kinshiki \u014Ctsutsuki"
+  - name: Kinshiki Otsutsuki
     loreInfo: Adult - Momoshiki's Subordinate
     index: 94
     set: 1
@@ -484,7 +484,7 @@ MonoBehaviour:
       amount: 1
     - resources: 18
       amount: 1
-  - name: "Momoshiki \u014Ctsutsuki"
+  - name: Momoshiki Otsutsuki
     loreInfo: Ancient - Reborn
     index: 95
     set: 1
@@ -516,7 +516,7 @@ MonoBehaviour:
       amount: 1
     - resources: 12
       amount: 2
-  - name: "Momoshiki \u014Ctsutsuki"
+  - name: Momoshiki Otsutsuki
     loreInfo: Adult
     index: 96
     set: 1
@@ -632,7 +632,7 @@ MonoBehaviour:
       amount: 2
     - resources: 18
       amount: 1
-  - name: "Toneri \u014Ctsutsuki"
+  - name: Toneri Otsutsuki
     loreInfo: Child - Clone of Shin Uchiha
     index: 99
     set: 1
@@ -666,7 +666,7 @@ MonoBehaviour:
       amount: 2
     - resources: 0
       amount: 3
-  - name: "Urashiki \u014Ctsutsuki"
+  - name: Urashiki Otsutsuki
     loreInfo: Adult - Momoshiki's Subordinate
     index: 100
     set: 1

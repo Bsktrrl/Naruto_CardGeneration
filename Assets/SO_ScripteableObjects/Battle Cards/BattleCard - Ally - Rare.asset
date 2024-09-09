@@ -1379,8 +1379,8 @@ MonoBehaviour:
     lightning: 0
     earth: 1
     water: 1
-    effectText: "<size=85><b><u>In Hand \u2013 Losing a War:</b></u>\r\n<size=75>Discard
-      this  <sprite=9>  and Draw 3 <sprite=11> .\n<size=20%>\n<size=75>Choose 1 <sprite=11> 
+    effectText: "<size=85><b><u>In Hand \u2013 If Losing the War:</b></u>\r\n<size=75>Trash
+      this  <sprite=9> .\n<size=10>\n<size=75>Draw 3 <sprite=11>  and Choose 1 <sprite=11> 
       to keep.\r"
     effectIcon: 000000000000000000000000
     resources:
