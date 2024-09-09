@@ -316,7 +316,7 @@ MonoBehaviour:
       amount: 1
     - resources: 11
       amount: 3
-  - name: "Ebiz\u014D"
+  - name: Ebizo
     loreInfo: Old - Honoured Siblings
     index: 176
     set: 1
@@ -389,7 +389,7 @@ MonoBehaviour:
       amount: 3
     - resources: 18
       amount: 3
-  - name: "G\u014Dzu"
+  - name: Gozu
     loreInfo: Child - Meizu's Older Twin Brother
     index: 178
     set: 1
@@ -423,7 +423,7 @@ MonoBehaviour:
     - resources: 18
       amount: 2
   - name: Gaara
-    loreInfo: "Child - Jinch\u016Briki - Chunin Exams -                   Sand Siblings"
+    loreInfo: Child - Jinchuriki - Chunin Exams -                   Sand Siblings
     index: 181
     set: 1
     characterSprite: {fileID: 21300000, guid: 43d93b18dab379247aecc3d32fdde379, type: 3}
@@ -456,7 +456,7 @@ MonoBehaviour:
     - resources: 13
       amount: 2
   - name: Gaara
-    loreInfo: "Child - Jinch\u016Briki - Sand Siblings"
+    loreInfo: Child - Jinchuriki - Sand Siblings
     index: 180
     set: 1
     characterSprite: {fileID: 21300000, guid: c3f26b6fff2d40a48902df82b9284255, type: 3}
