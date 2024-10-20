@@ -13,131 +13,11 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Kara
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: Scrolls
-    cardType: 3
-    clan: 8
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: b335356c7d76722479b691ad1788ba92, type: 3}
-    description: '<u>At the start of the
-
-      "Shop Phase":</u>
-
-      <size=20%>
-
-      <size=100%>Before
-      the players start buying, take 3  <sprite=0>  among the Kara-types
-
-      <sprite=17> 
-      <sprite=18>  <sprite=19>  <sprite=20>
-
-      up to your Hand'
-    textSize: 112.9
-  - name: Scrolls
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: b335356c7d76722479b691ad1788ba92, type: 3}
-    description: '<u>At the start of the
-
-      "Shop Phase":</u>
-
-      <size=20%>
-
-      <size=100%>Before
-      the players start buying, take 4  <sprite=0>  among the Kara-types
-
-      <sprite=17> 
-      <sprite=18>  <sprite=19>  <sprite=20>
-
-      up to your Hand'
-    textSize: 112.9
-  - name: Scrolls
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: b335356c7d76722479b691ad1788ba92, type: 3}
-    description: '<u>Action</u>
-
-      <size=20%>
-
-      <size=100%>Buy Kara-types
-      <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  from the Shop:
-
-      <size=20%>
-
-      <size=100%><sprite=17>
-      : 0 <sprite=22>
-
-      <sprite=18> : 1 <sprite=22>
-
-      <sprite=19> : 0 <sprite=22>
-
-      <sprite=20>
-      : 1 <sprite=22>'
-    textSize: 115
-  - name: Scrolls
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: b335356c7d76722479b691ad1788ba92, type: 3}
-    description: '<u>Action</u>
-
-      <size=20%>
-
-      <size=100%>Buy Kara-types
-      <sprite=17>  <sprite=18>  <sprite=19>  <sprite=20>  from the Shop:
-
-      <size=20%>
-
-      <size=100%><sprite=17>
-      : 0 <sprite=22>
-
-      <sprite=18> : 1 <sprite=22>
-
-      <sprite=19> : 0 <sprite=22>
-
-      <sprite=20>
-      : 2 <sprite=22>'
-    textSize: 115
   - name: Bargaining
     cardType: 3
     clan: 8
     version_Passive_A: 1
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 8473e398a40f78942ad69e9e10a17650, type: 3}
-    description: '<u>At the start of each
-
-      "Shop Phase":</u>
-
-      <size=50%>
-
-      <size=100%>Get
-      1/3/4/6 <sprite=22>'
-    textSize: 140
-  - name: Bargaining
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
@@ -166,95 +46,37 @@ MonoBehaviour:
 
       <size=100%>Get 2 <sprite=22>'
     textSize: 140
-  - name: Bargaining
+  - name: Decoy
+    cardType: 3
+    clan: 8
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 10283ef273a78984c99cfc030971959b, type: 3}
+    description: '<u>At the start of each "Action Phase":</u>
+
+      <size=30%>
+
+      <size=100%>Get
+      1 <sprite=77>'
+    textSize: 130
+  - name: Decoy
     cardType: 3
     clan: 8
     version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
+    version_Specialty_A: 1
+    version_Specialty_B: 0
     cost: 1
-    image: {fileID: 21300000, guid: 8473e398a40f78942ad69e9e10a17650, type: 3}
-    description: '<u>Action</u>
+    image: {fileID: 21300000, guid: 10283ef273a78984c99cfc030971959b, type: 3}
+    description: '<u>Action:</u>
 
-      <size=50%>
+      <size=30%>
 
-      <size=100%>Get 3 <sprite=22>'
+      <size=100%>Get 1 <sprite=77>'
     textSize: 140
-  - name: Spy Drone
-    cardType: 3
-    clan: 8
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 5116003a64a463e4aa02cb91798b9393, type: 3}
-    description: "When buying from the \u201CHidden\u201D  <sprite=0>  Deck in the
-      Shop, look at the top 2 <sprite=0>  and choose one to receive\n<size=30%>\n<size=75%>(Place
-      the other  <sprite=0>  at the bottom of the Deck)"
-    textSize: 115
-  - name: Spy Drone
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 5116003a64a463e4aa02cb91798b9393, type: 3}
-    description: "When another player is buying from the \u201CHidden\u201D  <sprite=0> 
-      Deck in the Shop, look at the top 2 <sprite=0>  and choose the one to be kept\n<size=30%>\n<size=75%>(Place
-      the other  <sprite=0>  at the bottom of the Deck)"
-    textSize: 111.8
-  - name: Spy Drone
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: 5116003a64a463e4aa02cb91798b9393, type: 3}
-    description: '<u>At the start of the
-
-      "Shop Phase"</u>
-
-      <size=50%>
-
-      <size=100%>Pay
-      this cost to be able to look at the top 3 <sprite=0>  from the "Hidden"  <sprite=0> 
-      deck and choose one to receive
-
-      <size=30%>
-
-      <size=75%>(Place the
-      other  <sprite=0>  at the bottom of the Deck)'
-    textSize: 100
-  - name: Spy Drone
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 3
-    image: {fileID: 21300000, guid: 5116003a64a463e4aa02cb91798b9393, type: 3}
-    description: '<u>At the start of the
-
-      "Shop Phase"</u>
-
-      <size=50%>
-
-      <size=100%>Pay
-      this cost to be able to look at the top 4 <sprite=0>  from the "Hidden"  <sprite=0> 
-      deck and choose one to receive
-
-      <size=30%>
-
-      <size=75%>(Place the
-      other  <sprite=0>  at the bottom of the Deck)'
-    textSize: 100
   - name: Exploitation
     cardType: 3
     clan: 8
@@ -264,25 +86,8 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 10eaae71bb26b174d9d7d244ec678cdc, type: 3}
-    description: When a  <sprite=0>  from the "Hidden" Deck is played, get 1 <sprite=22> 
-      from the Main Supply
-    textSize: 120
-  - name: Exploitation
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 10eaae71bb26b174d9d7d244ec678cdc, type: 3}
-    description: 'After two  <sprite=0>  from the "Hidden" Deck is played, get 1
-      <sprite=22>  from the Main Supply
-
-      <size=20%>
-
-      <size=75%>(Keep
-      count and repeat this Effect)'
+    description: After every 2 <sprite=0>  from the  <sprite=0> "Hidden Deck" is
+      played, get 1 <sprite=22>  from the Main Supply
     textSize: 120
   - name: Exploitation
     cardType: 3
@@ -293,31 +98,58 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: 10eaae71bb26b174d9d7d244ec678cdc, type: 3}
-    description: '<u>Reaction</u>
+    description: '<size=110%><u>Reaction</u>
 
-      <size=50%>
+      <size=40%>
 
-      <size=100%>When a  <sprite=0> 
-      from the "Hidden" Deck is played, get  <sprite=22>  based on the  <sprite=100> 
-      displayed, from the Main Supply'
+      <size=100%>When
+      a  <sprite=0>  from the
+
+      <sprite=0> "Hidden Deck" is played, get  <sprite=22> 
+      based on the  <sprite=100>  displayed, from the Main Supply'
     textSize: 120
-  - name: Exploitation
+  - name: "K\u0101ma"
+    cardType: 3
+    clan: 8
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
+    description: '<size=100%><sprite=70>  <sprite=69>  <sprite=69>
+
+      <size=20%>(You
+      always have
+
+      +1 <sprite=70>  and +2 <sprite=69>  during Wars)'
+    textSize: 400
+  - name: "K\u0101ma"
     cardType: 3
     clan: 8
     version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 10eaae71bb26b174d9d7d244ec678cdc, type: 3}
-    description: '<u>Reaction</u>
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
+    description: '<size=45%><u>Reaction:</u>
 
-      <size=50%>
+      <size=25%>
 
-      <size=100%>When you play
-      a  <sprite=0>  from the "Hidden" Deck, get double the  <sprite=22>  based on
-      the  <sprite=100>  displayed, from the Main Supply'
-    textSize: 118
+      <size=150%><sprite=70> 
+      <sprite=70>
+
+      <sprite=69>  <sprite=69>  <sprite=69>
+
+      <size=0%>
+
+      <size=35%>(Once
+      per Battle,
+
+      add 2 <sprite=70>  and 3 <sprite=69>  to any  <sprite=8> 
+      in it)'
+    textSize: 190
   - name: Kara's Dimension
     cardType: 3
     clan: 8
@@ -334,18 +166,6 @@ MonoBehaviour:
     cardType: 3
     clan: 8
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 269869070432c5046aed5660d600e76a, type: 3}
-    description: "If you play 15 or more  <sprite=0>  in the same \u201CAction Phase\u201D,
-      get 1 random  <sprite=23>  from the Main Supply"
-    textSize: 120
-  - name: Kara's Dimension
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
@@ -355,111 +175,6 @@ MonoBehaviour:
       , play this to receive \na  <sprite=57>  Marker.\n<size=50%>\n<size=100%>After
       gathering 9 <sprite=57> ,\nget 1 random  <sprite=23>  from the Main Supply"
     textSize: 105
-  - name: Kara's Dimension
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 269869070432c5046aed5660d600e76a, type: 3}
-    description: "<u>Reaction</u>\n<size=20%>\n<size=100%>When you play a  <sprite=0>
-      , play this to receive \na  <sprite=57>  Marker.\n<size=50%>\n<size=100%>After
-      gathering 8 <sprite=57> ,\nget 1 random  <sprite=23>  from the Main Supply"
-    textSize: 105
-  - name: Test Objects
-    cardType: 3
-    clan: 8
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 53f5e96adceefaa42abb2a39908f9f2a, type: 3}
-    description: 'After any Scoring, either:
-
-      change the  <sprite=60>  on
-
-      1
-      played  <sprite=8>  into a  <sprite=59>
-
-      or
-
-      change the  <sprite=59> 
-      on
-
-      1 played  <sprite=8>  into a  <sprite=60>'
-    textSize: 115
-  - name: Test Objects
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 53f5e96adceefaa42abb2a39908f9f2a, type: 3}
-    description: 'After any Scoring you take part in, either:
-
-      change the 
-      <sprite=60>  on
-
-      1 played  <sprite=8>  into a  <sprite=59>
-
-      or
-
-      change
-      the  <sprite=59>  on
-
-      1 played  <sprite=8>  into a  <sprite=60>'
-    textSize: 115
-  - name: Test Objects
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 53f5e96adceefaa42abb2a39908f9f2a, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>After any
-      Scoring, remove the  <sprite=60>  on
-
-      1 played  <sprite=8>
-
-      <size=20%>
-
-      <size=75%>(The
-      opponent receives 2 <sprite=22> )'
-    textSize: 130
-  - name: Test Objects
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 53f5e96adceefaa42abb2a39908f9f2a, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>After any
-      Scoring, remove the  <sprite=60>  on
-
-      1 played  <sprite=8>
-
-      <size=20%>
-
-      <size=75%>(The
-      opponent receives 3 <sprite=22> )'
-    textSize: 130
   - name: New Experiment
     cardType: 3
     clan: 8
@@ -479,35 +194,8 @@ MonoBehaviour:
 
       <size=30%>
 
-      <size=100%>If you win the bet,
-      receive double the amount of  <sprite=22>  as you sat aside.
-
-      <size=30%>
-
-      <size=100%>If
-      you lose the bet, you lose all  <sprite=22>  you sat aside.'
-    textSize: 85
-  - name: New Experiment
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: eee37b1aa42576049afacbd4a9fb63bf, type: 3}
-    description: '<u>Twice each "Action Phase":</u>
-
-      <size=30%>
-
-      <size=100%>At
-      the start of any War, you may bet on the winner by setting aside any amount
-      of  <sprite=22> .
-
-      <size=30%>
-
-      <size=100%>If you win the bet,
-      receive double the amount of  <sprite=22>  as you sat aside.
+      <size=100%>If you win the bet, receive
+      double the amount of  <sprite=22>  as you sat aside.
 
       <size=30%>
 
@@ -533,91 +221,14 @@ MonoBehaviour:
 
       <size=30%>
 
-      <size=100%>If you win the bet, receive double
-      the amount of  <sprite=22>  as you sat aside.
+      <size=100%>If you win the bet, receive double the
+      amount of  <sprite=22>  as you sat aside.
 
       <size=30%>
 
       <size=100%>If
       you lose the bet, you lose all  <sprite=22>  you sat aside.'
     textSize: 85
-  - name: New Experiment
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: eee37b1aa42576049afacbd4a9fb63bf, type: 3}
-    description: "<u>Reaction:</u>\r\n<size=30%>\r\n<size=100%>At the start of any
-      War, you may bet on the winner by setting aside any amount of  <sprite=22>\n<size=75%>\r(Include
-      the cost on this).\n<size=30%>\r\n<size=100%>If you win the bet, receive double
-      the amount of  <sprite=22>  as you sat aside.\r\n<size=30%>\r\n<size=100%>If
-      you lose the bet, you lose all  <sprite=22>  you sat aside."
-    textSize: 85
-  - name: Decoy
-    cardType: 3
-    clan: 8
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 10283ef273a78984c99cfc030971959b, type: 3}
-    description: '<u>At the start of any "Action Phase":</u>
-
-      <size=20%>
-
-      <size=100%>Get
-      1 <sprite=77>'
-    textSize: 130
-  - name: Decoy
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 10283ef273a78984c99cfc030971959b, type: 3}
-    description: '<u>At the start of any "Action Phase":</u>
-
-      <size=20%>
-
-      <size=100%>Get
-      2 <sprite=77>'
-    textSize: 130
-  - name: Decoy
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 10283ef273a78984c99cfc030971959b, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Get 1 <sprite=77>'
-    textSize: 140
-  - name: Decoy
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 10283ef273a78984c99cfc030971959b, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Get 2 <sprite=77>'
-    textSize: 140
   - name: Plotting
     cardType: 3
     clan: 8
@@ -628,19 +239,7 @@ MonoBehaviour:
     cost: 0
     image: {fileID: 21300000, guid: 05982e3ffde540c40a854b0af568ff92, type: 3}
     description: "When receiving  <sprite=22>\nbased on the\n<sprite=83>  \u201CDomination
-      Track\u201D,\nreceive 1 more  <sprite=22>  than what you should have"
-    textSize: 115
-  - name: Plotting
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 05982e3ffde540c40a854b0af568ff92, type: 3}
-    description: "When receiving  <sprite=22>\nbased on the\n<sprite=83>  \u201CDomination
-      Track\u201D,\nreceive  <sprite=22>  from the position above you\n<size=20%>\n<size=75%>(If
+      Track\u201D,\nreceive  <sprite=22>  from the position above you\n<size=20%>\n<size=75%>(if
       you're not already at the top)"
     textSize: 110
   - name: Plotting
@@ -652,24 +251,14 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: 05982e3ffde540c40a854b0af568ff92, type: 3}
-    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>When receiving  <sprite=22>\nbased
-      on the\n<sprite=83>  \u201CDomination Track\u201D,\nreceive  <sprite=22>  for
-      1 more  <sprite=83>  than what you should have"
-    textSize: 115
-  - name: Plotting
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 05982e3ffde540c40a854b0af568ff92, type: 3}
-    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>When receiving  <sprite=22>\nbased
-      on the\n<sprite=83>  \u201CDomination Track\u201D,\nreceive  <sprite=22>  for
-      2 more  <sprite=83>  than what you should have"
-    textSize: 115
-  - name: "K\u0101ma"
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>When taking
+      control over a Field containing a  <sprite=22> -icon, get 3 additional  <sprite=22>'
+    textSize: 120
+  - name: Scrolls
     cardType: 3
     clan: 8
     version_Passive_A: 1
@@ -677,64 +266,117 @@ MonoBehaviour:
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
-    image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
-    description: '<size=120%><sprite=69>
+    image: {fileID: 21300000, guid: b335356c7d76722479b691ad1788ba92, type: 3}
+    description: '<u>At the start of the
 
-      <size=25%>(You always have
+      "Shop Phase":</u>
 
-      +1
-      <sprite=69>  during Wars)'
-    textSize: 400
-  - name: "K\u0101ma"
-    cardType: 3
-    clan: 8
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
-    description: '<size=120%><sprite=69>  <sprite=69><size=10%>
+      <size=50%>
 
-      <size=25%>(You
-      always have
+      <size=100%>Choose
+      and get
 
-      +2 <sprite=69>  during Wars)'
-    textSize: 400
-  - name: "K\u0101ma"
+      3 different  <sprite=0>  "Kara"
+
+      -  <sprite=17>  <sprite=18> 
+      <sprite=19>  <sprite=20>  -'
+    textSize: 120
+  - name: Scrolls
     cardType: 3
     clan: 8
     version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
-    description: '<size=25%><u>Reaction:</u>
+    cost: 2
+    image: {fileID: 21300000, guid: b335356c7d76722479b691ad1788ba92, type: 3}
+    description: '<u>Action</u>
 
       <size=20%>
 
-      <size=120%><sprite=69> 
-      <sprite=69><size=10%>
+      <size=100%>Enter the "Kara
+      Shop".
 
-      <size=25%>(Add 2 <sprite=69>  to any <sprite=8> 
-      during any War)'
-    textSize: 385
-  - name: "K\u0101ma"
+      You may buy as many  <sprite=0> "Kara" as you like.
+
+      The
+      first 2 <sprite=0>  is free:
+
+      <size=20%>
+
+      <size=100%><sprite=17>
+      : 1 <sprite=22>
+
+      <sprite=18> : 2 <sprite=22>
+
+      <sprite=19> : 1 <sprite=22>
+
+      <sprite=20>
+      : 2 <sprite=22>'
+    textSize: 90
+  - name: Spy Drone
+    cardType: 3
+    clan: 8
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 5116003a64a463e4aa02cb91798b9393, type: 3}
+    description: "When another player is buying from the  <sprite=0>  \u201CHidden
+      Deck\", look at the top 2 <sprite=0>  and choose the one to be kept\n<size=30%>\n<size=75%>(Place
+      the other  <sprite=0>  at the bottom of the deck)"
+    textSize: 112
+  - name: Spy Drone
     cardType: 3
     clan: 8
     version_Passive_A: 0
     version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 5116003a64a463e4aa02cb91798b9393, type: 3}
+    description: '<size=110%><u>Reaction</u>
+
+      <size=50%>
+
+      <size=100%>When
+      buying a
+
+      <sprite=0> "Hidden" from the Shop, look at the top 3 <sprite=0> 
+      and choose 1 to keep
+
+      <size=30%>
+
+      <size=75%>(Place the other  <sprite=0> 
+      at the bottom of the deck)'
+    textSize: 110
+  - name: Test Objects
+    cardType: 3
+    clan: 8
+    version_Passive_A: 1
+    version_Passive_B: 0
     version_Specialty_A: 0
-    version_Specialty_B: 1
+    version_Specialty_B: 0
     cost: 0
-    image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
-    description: '<size=25%><u>Reaction:</u>
+    image: {fileID: 21300000, guid: 53f5e96adceefaa42abb2a39908f9f2a, type: 3}
+    description: 'After any Scoring you take part in,
 
-      <size=20%>
+      remove the  <sprite=60> 
+      on
 
-      <size=120%><sprite=69><size=10%>
-
-      <size=25%>(Add
-      1 <sprite=69>  to any <sprite=8>  during any War)'
-    textSize: 385
+      1 played  <sprite=8>'
+    textSize: 120
+  - name: Test Objects
+    cardType: 3
+    clan: 8
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 53f5e96adceefaa42abb2a39908f9f2a, type: 3}
+    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>After any Scoring, either
+      change the  <sprite=60>  on 1 played  <sprite=8>  into a  <sprite=59>  \nor\nchange
+      the  <sprite=59>  on\n1 played  <sprite=8>  into a  <sprite=60>"
+    textSize: 115

@@ -35,45 +35,9 @@ MonoBehaviour:
     cardType: 3
     clan: 7
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 36cea2bf1ae63ec49b5869604953f8f5, type: 3}
-    description: '<u>At the end of each "Action Phase":</u>
-
-      <size=50%>
-
-      <size=100%>Give
-      another player
-
-      1 <sprite=21> '
-    textSize: 120
-  - name: 'Adamantine Attacking Chains '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 4
-    image: {fileID: 21300000, guid: 36cea2bf1ae63ec49b5869604953f8f5, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Give another
-      player
-
-      1 <sprite=21> '
-    textSize: 120
-  - name: 'Adamantine Attacking Chains '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 3
     image: {fileID: 21300000, guid: 36cea2bf1ae63ec49b5869604953f8f5, type: 3}
     description: '<u>Action:</u>
@@ -88,40 +52,15 @@ MonoBehaviour:
   - name: Adamantine Sealing Chains
     cardType: 3
     clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: b9059172ad0644f448c32ea84da35b97, type: 3}
-    description: '<sprite=95>
-
-      <size=50%>Always have an additional  <sprite=95>
-
-      <size=10%>
-
-      <size=30%>(At
-      the end of the Game, you lose if in a Tie with another player, both in  <sprite=23> 
-      and its tiebreak)'
-    textSize: 240
-  - name: Adamantine Sealing Chains
-    cardType: 3
-    clan: 7
     version_Passive_A: 1
     version_Passive_B: 0
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
-    image: {fileID: 21300000, guid: b9059172ad0644f448c32ea84da35b97, type: 3}
+    image: {fileID: 21300000, guid: 0e405616ce26edc43958b443c58d9f0a, type: 3}
     description: '<sprite=87>
 
-      <size=50%>Always have an additional  <sprite=87>
-
-      <size=10%>
-
-      <size=30%>(At
-      the end of the Game, you lose if in a Tie with another player, both in  <sprite=23> 
-      and its tiebreak)'
+      <size=50%>Always have an additional  <sprite=87>'
     textSize: 240
   - name: Adamantine Sealing Chains
     cardType: 3
@@ -131,39 +70,18 @@ MonoBehaviour:
     version_Specialty_A: 1
     version_Specialty_B: 0
     cost: 2
-    image: {fileID: 21300000, guid: b9059172ad0644f448c32ea84da35b97, type: 3}
+    image: {fileID: 21300000, guid: 0e405616ce26edc43958b443c58d9f0a, type: 3}
     description: '<u>Action:</u>
 
       <size=30%>
 
-      <size=100%>Draw  <sprite=23> 
-      equal to the amount of players from the Main Supply.
+      <size=100%>Give 1 <sprite=23> 
+      from the Main Supply to each player, except one
 
-      <size=30%>
+      <size=20%>
 
-      <size=100%>Give
-      1  <sprite=23>  to each player, except one'
-    textSize: 120
-  - name: Adamantine Sealing Chains
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: b9059172ad0644f448c32ea84da35b97, type: 3}
-    description: '<u>Action:</u>
-
-      <size=30%>
-
-      <size=100%>Draw  <sprite=23> 
-      equal to the amount of players from the Main Supply.
-
-      <size=30%>
-
-      <size=100%>Give
-      1  <sprite=23>  to each player, except one'
+      <size=75%>(You
+      must give yourself a  <sprite=23>  )'
     textSize: 120
   - name: Befriend
     cardType: 3
@@ -181,63 +99,73 @@ MonoBehaviour:
     cardType: 3
     clan: 7
     version_Passive_A: 0
-    version_Passive_B: 1
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: e4a0c7b04bd3aa348b6b100dc3f916f7, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=30%>
+
+      <size=100%>When you receive
+      any  <sprite=23>  , you may Swap it with any  <sprite=23>  from the Main Supply'
+    textSize: 110
+  - name: 'Death Reaper  Seal '
+    cardType: 3
+    clan: 7
+    version_Passive_A: 1
+    version_Passive_B: 0
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
-    image: {fileID: 21300000, guid: e4a0c7b04bd3aa348b6b100dc3f916f7, type: 3}
-    description: 'When fighting against any  <sprite=23>  , Score your Effect and
-      Bonus.
+    image: {fileID: 21300000, guid: e15119b67eb361b4f8ce2da9bfd609c8, type: 3}
+    description: '<u>At the start of the
 
-      <size=40%>
+      "Action Phase":</u>
 
-      <size=100%>You get all played  <sprite=8> 
-      back up to your Hand.'
-    textSize: 115
-  - name: Befriend
+      <size=50%>
+
+      <size=100%>Remove
+      1 <sprite=44>  <sprite=45>  <sprite=46>  <sprite=47>  from the board.
+
+      <size=20%>
+
+      <size=100%>All
+      other players must then remove 3 Points of  <sprite=48>  <sprite=49>  <sprite=50> 
+      <sprite=51>
+
+      <size=20%>
+
+      <size=75%>(All players must have at least
+
+      1
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  left on the board)'
+    textSize: 95
+  - name: 'Death Reaper  Seal '
     cardType: 3
     clan: 7
     version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: e4a0c7b04bd3aa348b6b100dc3f916f7, type: 3}
-    description: 'When fighting against any  <sprite=23>  , Score your Effect and
-      Bonus.
-
-      <size=50%>
-
-      <size=100%><u>Reaction:</u>
-
-      <size=30%>
-
-      <size=100%>When
-      you receive any  <sprite=23>  , you may Swap it with any  <sprite=23>  from
-      the Supply'
-    textSize: 100
-  - name: Befriend
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 1
-    image: {fileID: 21300000, guid: e4a0c7b04bd3aa348b6b100dc3f916f7, type: 3}
-    description: 'When fighting against any  <sprite=23>  , Score your Effect and
-      Bonus.
+    image: {fileID: 21300000, guid: e15119b67eb361b4f8ce2da9bfd609c8, type: 3}
+    description: '<u>Action:</u>
 
-      <size=50%>
+      <size=20%>
 
-      <size=100%><u>Reaction:</u>
+      <size=100%>All other players
+      must remove 1 <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from a Field
+      they control
 
-      <size=30%>
+      <size=20%>
 
-      <size=100%>When
-      you receive any  <sprite=23>  , you may Swap it with any  <sprite=23>  from
-      the Supply'
-    textSize: 100
+      <size=75%>(All players must have at least
+
+      1
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  left on the board)'
+    textSize: 120
   - name: Heal Bite
     cardType: 3
     clan: 7
@@ -250,24 +178,6 @@ MonoBehaviour:
     description: 'You''re immune to
 
       <sprite=17>  <sprite=19>'
-    textSize: 140
-  - name: Heal Bite
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 463f56e8ad253bb49b7f326acb7bf77a, type: 3}
-    description: '<u>Choose one:</u>
-
-      <size=20%>
-
-      <size=100%>You''re
-      immune to either
-
-      <sprite=17>  <sprite=19> '
     textSize: 140
   - name: Heal Bite
     cardType: 3
@@ -290,33 +200,7 @@ MonoBehaviour:
       from your opponent,
 
       your
-      opponent get affected instead'
-    textSize: 105
-  - name: Heal Bite
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 0
-    image: {fileID: 21300000, guid: 463f56e8ad253bb49b7f326acb7bf77a, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>During a War,
-      when you receive any
-
-      <sprite=17>  <sprite=19>
-
-      <size=75%>(choose
-      one before the War)
-
-      <size=100%>from your opponent,
-
-      your opponent
-      get affected instead'
+      opponent gets affected instead'
     textSize: 105
   - name: 'Kurama Mode '
     cardType: 3
@@ -329,22 +213,10 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: d8bbf09bd406cc64f9918db58a4c81d1, type: 3}
     description: 'During any Battle,
 
-      the  <sprite=8>  you play have +1 Strength
-      in all Combat Styles'
-    textSize: 120
-  - name: 'Kurama Mode '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: d8bbf09bd406cc64f9918db58a4c81d1, type: 3}
-    description: 'During any Battle,
+      the  <sprite=8>  you play have
 
-      the  <sprite=8>  you play have +2 Strength
-      in all Combat Styles'
+      +1
+      <sprite=101> <sprite=102> <sprite=103>'
     textSize: 120
   - name: 'Kurama Mode '
     cardType: 3
@@ -362,27 +234,10 @@ MonoBehaviour:
       <size=100%>During any
       Battle,
 
-      choose 1  <sprite=8>  to increase the Strength of all Combat
-      Styles with +3'
-    textSize: 120
-  - name: 'Kurama Mode '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: d8bbf09bd406cc64f9918db58a4c81d1, type: 3}
-    description: '<u>Reaction:</u>
+      choose 1 <sprite=8>  to give
 
-      <size=20%>
-
-      <size=100%>During any
-      Battle,
-
-      choose 1  <sprite=8>  to increase the Strength of all Combat
-      Styles with +2'
+      +3 <sprite=101> <sprite=102>
+      <sprite=103>'
     textSize: 120
   - name: Names
     cardType: 3
@@ -397,204 +252,30 @@ MonoBehaviour:
 
       <size=40%>
 
-      <size=100%>Don''t
-      receive your  <sprite=22>  at the start of this phase.
+      <size=100%>You
+      may buy a  <sprite=23>  for 6 <sprite=22>
 
-      <size=40%>
+      <size=20%>
 
-      <size=100%>After
-      renouncing 7 <sprite=22> , get 1 random  <sprite=23>  from the Main Supply'
-    textSize: 115
-  - name: Names
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 1fe0ac6a99df2074598cdb145780b273, type: 3}
-    description: '<u>In the "Shop Phase":</u>
-
-      <size=40%>
-
-      <size=100%>Don''t
-      receive your  <sprite=22>  at the start of this phase.
-
-      <size=40%>
-
-      <size=100%>After
-      renouncing 6 <sprite=22> , get 1 random  <sprite=23>  from the Main Supply'
+      <size=75%>(You
+      cannot buy a  <sprite=23>  "10 Tailed")'
     textSize: 115
   - name: Names
     cardType: 3
     clan: 7
     version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
+    version_Specialty_A: 1
+    version_Specialty_B: 0
     cost: 3
     image: {fileID: 21300000, guid: 1fe0ac6a99df2074598cdb145780b273, type: 3}
     description: '<u>Action:</u>
 
       <size=20%>
 
-      <size=100%>Play 3 of this
-      at once to recieve
-
-      1 random  <sprite=23>  from the Main Supply'
+      <size=100%>Buy a random 
+      <sprite=23>  from another player for 4 <sprite=22>'
     textSize: 120
-  - name: Names
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: 1fe0ac6a99df2074598cdb145780b273, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Play 4 of this
-      at once to recieve
-
-      1 random  <sprite=23>  from the Main Supply'
-    textSize: 120
-  - name: Shaddow Clone
-    cardType: 3
-    clan: 7
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
-    description: Start the game with 3 <sprite=68>  markers, instead of the normal
-      1
-    textSize: 120
-  - name: Shaddow Clone
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
-    description: Get 2 <sprite=68>  markers at the start of each "Setup Phase", instead
-      of the normal 1
-    textSize: 120
-  - name: Shaddow Clone
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Get 1 <sprite=68> 
-      marker from the Main Supply'
-    textSize: 120
-  - name: Shaddow Clone
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Get 1 <sprite=68> 
-      marker from the Main Supply'
-    textSize: 120
-  - name: 'Talk No Jutsu '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
-    description: 'When playing
-
-      <sprite=0>  "Dominance", perform its effect
-      twice.
-
-      <size=40%>
-
-      <size=100%>Then move another player Down 1
-      step in any track.'
-    textSize: 115
-  - name: 'Talk No Jutsu '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
-    description: 'When playing
-
-      <sprite=0>  "Dominance",
-
-      perform its
-      effect twice'
-    textSize: 120
-  - name: 'Talk No Jutsu '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Move Up 1 step
-      in any track on the "Dominance Board", twice.
-
-      <size=20%>
-
-      <size=100%>Then
-      move another player Down 1 step in any track.'
-    textSize: 110
-  - name: 'Talk No Jutsu '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Move Up 1 step
-      in any track on the "Dominance Board", three times.
-
-      <size=20%>
-
-      <size=100%>Then
-      move another player Down 1 step in any track.'
-    textSize: 110
   - name: 'Self Sealing '
     cardType: 3
     clan: 7
@@ -613,20 +294,6 @@ MonoBehaviour:
     cardType: 3
     clan: 7
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 39a972b4226151248889e448110cf0c7, type: 3}
-    description: 'You can have 14p. of
-
-      <sprite=44>  <sprite=45>  <sprite=46> 
-      <sprite=47>  in one Field, instead of the normal 10p. '
-    textSize: 120
-  - name: 'Self Sealing '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
@@ -634,40 +301,18 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 39a972b4226151248889e448110cf0c7, type: 3}
     description: '<u>Reaction:</u>
 
-      <size=20%>
+      <size=40%>
 
       <size=100%>Play at any
       time to double the Strength of your  <sprite=44>  <sprite=45>  <sprite=46> 
-      <sprite=47>  in one Field you control, for this Turn
+      <sprite=47>  in one Field you control, for this Turn only
 
-      <size=20%>
+      <size=40%>
 
-      <size=75%>(You
+      <size=80%>(You
       may exceed the point limit of 10p.)'
-    textSize: 108.4
-  - name: 'Self Sealing '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 3
-    image: {fileID: 21300000, guid: 39a972b4226151248889e448110cf0c7, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>Play at any
-      time to double the Strength of your  <sprite=44>  <sprite=45>  <sprite=46> 
-      <sprite=47>  in one Field you control, for this Turn
-
-      <size=20%>
-
-      <size=75%>(You
-      may exceed the point limit of 10p.)'
-    textSize: 108.4
-  - name: 'Death Reaper  Seal '
+    textSize: 95
+  - name: Shaddow Clone
     cardType: 3
     clan: 7
     version_Passive_A: 1
@@ -675,55 +320,17 @@ MonoBehaviour:
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
-    image: {fileID: 21300000, guid: e15119b67eb361b4f8ce2da9bfd609c8, type: 3}
-    description: '<u>At the start of the
+    image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
+    description: 'Start the game with
 
-      "Action Phase":</u>
+      3 <sprite=68>  Field Markers,
 
-      <size=20%>
+      instead
+      of the
 
-      <size=100%>You
-      may remove as many
-
-      <sprite=44>  <sprite=45>  <sprite=46>  <sprite=47> 
-      from the board as you want.
-
-      <size=20%>
-
-      <size=100%>All other players
-      must then remove as many  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>
-
-      as
-      you <size=75%>(of the same Types)'
-    textSize: 100
-  - name: 'Death Reaper  Seal '
-    cardType: 3
-    clan: 7
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: e15119b67eb361b4f8ce2da9bfd609c8, type: 3}
-    description: '<u>As an Action on your Turn:</u>
-
-      <size=20%>
-
-      <size=100%>You
-      may remove as many
-
-      <sprite=44>  <sprite=45>  <sprite=46>  <sprite=47> 
-      from the board as you want.
-
-      <size=20%>
-
-      <size=100%>All other players
-      must then remove as many  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>
-
-      as
-      you <size=75%>(of the same Types)'
-    textSize: 100
-  - name: 'Death Reaper  Seal '
+      normal 1 <sprite=68>'
+    textSize: 125
+  - name: Shaddow Clone
     cardType: 3
     clan: 7
     version_Passive_A: 0
@@ -731,33 +338,50 @@ MonoBehaviour:
     version_Specialty_A: 1
     version_Specialty_B: 0
     cost: 1
-    image: {fileID: 21300000, guid: e15119b67eb361b4f8ce2da9bfd609c8, type: 3}
+    image: {fileID: 21300000, guid: 147a7297fa4f68e469e9698b5d5c7fbc, type: 3}
     description: '<u>Action:</u>
 
       <size=20%>
 
-      <size=100%>All other players
-      must remove 1  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from a Field
-      they control'
+      <size=100%>Get 1 <sprite=68> 
+      Field Marker from the Main Supply'
     textSize: 120
-  - name: 'Death Reaper  Seal '
+  - name: 'Talk No Jutsu '
+    cardType: 3
+    clan: 7
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
+    description: 'When playing
+
+      <sprite=0> "Dominance",
+
+      perform its
+      effect
+
+      twice'
+    textSize: 125
+  - name: 'Talk No Jutsu '
     cardType: 3
     clan: 7
     version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
+    version_Specialty_A: 1
+    version_Specialty_B: 0
     cost: 2
-    image: {fileID: 21300000, guid: e15119b67eb361b4f8ce2da9bfd609c8, type: 3}
-    description: '<u>Action:</u>
+    image: {fileID: 21300000, guid: 9d6cf08c440a46f44953bfed855c5a61, type: 3}
+    description: '<u>Reaction:</u>
 
-      <size=20%>
+      <size=40%>
 
-      <size=100%>All other players
-      must remove 1  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from a Field
-      they control
+      <size=100%>At the start
+      of your Turn, move Up 1 step in any Dominance Track, twice.
 
-      <size=20%>
+      <size=40%>
 
-      <size=75%>(You decide what Type to remove)'
-    textSize: 120
+      <size=100%>Then
+      move another player Down 1 step in any track'
+    textSize: 105

@@ -22,24 +22,11 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
-    description: "<size=100%><sprite=66>  can be placed on Water Fields you control
-      and be used as a  <sprite=36>  for your\n<sprite=36>  <sprite=37>  <sprite=38> 
-      <sprite=39>  when Traveling. \n<size=40%>\n<size=100%>On Water Fields, you
-      can keep and use your  <sprite=66> , even if other players control the Field"
-    textSize: 100
-  - name: Agreement
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
-    description: "<size=100%><sprite=66>  can be placed on Water Fields you control
-      and be used as a  <sprite=36>  for your\n<sprite=37>  <sprite=38>  <sprite=39> 
-      when Traveling. \n<size=40%>\n<size=100%>On Water Fields, you can keep and
-      use your  <sprite=66> , even if other players control the Field"
+    description: "<size=100%><sprite=66>  can be placed on Water Fields you take
+      control over and be used as a  <sprite=36>  for your  <sprite=36>  <sprite=37> 
+      <sprite=38>  <sprite=39>  when Traveling. \n<size=40%>\n<size=100%>You can
+      keep and use your  <sprite=66>  even if other players take control over the
+      Fields"
     textSize: 100
   - name: Agreement
     cardType: 3
@@ -56,44 +43,9 @@ MonoBehaviour:
 
       <size=100%>Get 1 <sprite=66> 
       marker from the Main Supply and place it in a Water Field not controlled by
-      any player
-
-      <size=15%>
-
-      <size=75%>(The  <sprite=66>  can be used
-      as a  <sprite=36>  for your
-
-      <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39> 
-      when Traveling)
-
-      <size=5%>
-
-      <size=75%>(You can keep and use your 
-      <sprite=66> , even if other players control the Field)
-
-      <size=5%>
-
-      <size=75%>(The 
-      <sprite=66>  cannot be removed)'
-    textSize: 92
-  - name: Agreement
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 454526aaf2ae730419c4aa8f2323c9c3, type: 3}
-    description: '<u>Action:</u>
+      any players
 
       <size=20%>
-
-      <size=100%>Get 1 <sprite=66> 
-      marker from the Main Supply and place it in a Water Field not controlled by
-      any player
-
-      <size=15%>
 
       <size=75%>(The  <sprite=66>  can be used
       as a  <sprite=36>  for your
@@ -101,16 +53,16 @@ MonoBehaviour:
       <sprite=37>  <sprite=38>  <sprite=39>  when
       Traveling)
 
-      <size=5%>
+      <size=20%>
 
-      <size=75%>(You can keep and use your  <sprite=66>
-      , even if other players control the Field)
+      <size=75%>(You can keep and use your  <sprite=66> 
+      even if other players take control over the Fields)
 
-      <size=5%>
+      <size=20%>
 
       <size=75%>(The 
       <sprite=66>  cannot be removed)'
-    textSize: 92
+    textSize: 86
   - name: Bond
     cardType: 3
     clan: 5
@@ -120,38 +72,8 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 0cbee0fd8c5da864f836d89cae5b88e3, type: 3}
-    description: Each time you lose a War, get 1 <sprite=11> instead of the normal 
-      <sprite=9>  .
-    textSize: 120
-  - name: Bond
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 0cbee0fd8c5da864f836d89cae5b88e3, type: 3}
-    description: Each time you lose a War, get 2 <sprite=10> instead of the normal 
-      <sprite=9>  .
-    textSize: 120
-  - name: Bond
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 0cbee0fd8c5da864f836d89cae5b88e3, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>After any
-      Scoring you''re not a part of,
-
-      get 1 <sprite=11>'
+    description: Each time you lose a War, get 2 <sprite=10>  instead of the normal
+      1 <sprite=9>  .
     textSize: 120
   - name: Bond
     cardType: 3
@@ -167,9 +89,9 @@ MonoBehaviour:
       <size=20%>
 
       <size=100%>After any
-      Scoring you''re a part of,
+      Scoring you''re <u>not</u> a part of,
 
-      get 1 <sprite=11>'
+      get 2 <sprite=10>'
     textSize: 120
   - name: 'Command Transfer '
     cardType: 3
@@ -180,31 +102,8 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 3ac1bc36fc0f80c45812abdd85a76e7b, type: 3}
-    description: 'When playing  <sprite=0>  "Travel", you may swap  <sprite=36> 
-      <sprite=37>  <sprite=38>  <sprite=39>  in your target Field with
-
-      <sprite=36> 
-      <sprite=37>  <sprite=38>  <sprite=39>  in an adjacent legal Field, before moving
-      your target Group.
-
-      <size=30%>
-
-      <size=75%>(You cannot swap through
-      "Mountains" and "Rivers")'
-    textSize: 105
-  - name: 'Command Transfer '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 3ac1bc36fc0f80c45812abdd85a76e7b, type: 3}
     description: 'Instead of moving, you may use your  <sprite=0>  "Travel" to swap
-      2 groups of
-
-      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  with
+      2 adjacent groups of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  with
       each other
 
       <size=30%>
@@ -228,42 +127,13 @@ MonoBehaviour:
       <size=100%>Swap 2 groups
       of
 
-      <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  in adjacent legal
-      Fields with each other
+      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  in adjacent Fields
+      with each other
 
       <size=30%>
 
-      <size=75%>(You may swap through
-      "Mountains" and "Rivers")'
-    textSize: 115
-  - name: 'Command Transfer '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 3ac1bc36fc0f80c45812abdd85a76e7b, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Swap 2 groups
-      of
-
-      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  in adjacent legal
-      Fields with each other
-
-      <size=30%>
-
-      <size=75%>(You may swap other''s
-      <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> )
-
-      <size=30%>
-
-      <size=75%>(You
-      may swap through "Mountains" and "Rivers")'
+      <size=75%>(You may swap through "Mountains"
+      and "Rivers")'
     textSize: 110
   - name: Hashirama's Cells
     cardType: 3
@@ -281,23 +151,10 @@ MonoBehaviour:
     cardType: 3
     clan: 5
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: fee12e79503357a458e7255c21b18044, type: 3}
-    description: "If any Field containing a \"Prone\"  <sprite=36>  <sprite=37> 
-      <sprite=38>  <sprite=39> \nis being attacked,\nyou get the 1BP from the Unit
-      Strength"
-    textSize: 120
-  - name: Hashirama's Cells
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 2
+    cost: 1
     image: {fileID: 21300000, guid: fee12e79503357a458e7255c21b18044, type: 3}
     description: '<u>Action:</u>
 
@@ -306,28 +163,13 @@ MonoBehaviour:
       <size=100%>"Prone" any 
       <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39> .
 
-      If you control
-      any Field containing a
+      <size=20%>
 
-      "Prone"  <sprite=36>  <sprite=37>  <sprite=38> 
-      <sprite=39> ,
-
-      this Field cannot be attacked by other Players'
-    textSize: 105
-  - name: Hashirama's Cells
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: fee12e79503357a458e7255c21b18044, type: 3}
-    description: "<u>Action:</u>\n<size=20%>\n<size=100%>\"Prone\" any  <sprite=36> 
-      <sprite=37>  <sprite=38>  <sprite=39> .\nIf any Field containing a \"Prone\" 
-      <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39> \nis being attacked,\nyou
-      get the 1BP from the Unit Strength"
-    textSize: 105
+      <size=100%>If
+      any Field containing a "Prone"  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39> 
+      is being attacked, you are the one to receive 1BP from the Unit Strength in
+      this War, regardless of your opponent''s Unit Strength'
+    textSize: 90
   - name: 'Rashomon '
     cardType: 3
     clan: 5
@@ -337,23 +179,9 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 6591a64238726884d93dbf72dd331ec5, type: 3}
-    description: "When entering the first Battle of any War, you may draw 5 <sprite=10> 
-      and choose 1 to play in this Battle. \n<size=50%>\n<size=100%>Your selected 
-      <sprite=10>  must be revealed before your opponent choose which\n<sprite=8> 
-      to play)"
-    textSize: 96
-  - name: 'Rashomon '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 6591a64238726884d93dbf72dd331ec5, type: 3}
-    description: "When entering the first Battle of any War, you may draw 5 <sprite=9> 
-      and choose 1 to play in this Battle. \n<size=50%>\n<size=100%>Your selected 
-      <sprite=9>  must be revealed before your opponent choose which\n<sprite=8> 
+    description: "When entering the first Battle of any War, you may draw 3 <sprite=10> 
+      and choose 1 to play as yours in this Battle. \n<size=50%>\n<size=100%>Your
+      selected  <sprite=10>  must be revealed before your opponent chooses which\n<sprite=8> 
       to play)"
     textSize: 96
   - name: 'Rashomon '
@@ -365,45 +193,19 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: 6591a64238726884d93dbf72dd331ec5, type: 3}
-    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>At the start of any Battle,
-      play this to draw 5 <sprite=10>  and choose 1 to play in this Battle. \n<size=50%>\n<size=100%>Your
-      selected  <sprite=10>  must be revealed before your opponent choose which 
-      <sprite=8>  to play)"
-    textSize: 90
-  - name: 'Rashomon '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 6591a64238726884d93dbf72dd331ec5, type: 3}
-    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>At the start of any Battle,
-      play this to draw 5 <sprite=9>  and choose 1 to play in this Battle. \n<size=50%>\n<size=100%>Your
-      selected  <sprite=9>  must be revealed before your opponent choose which  <sprite=8> 
-      to play)"
-    textSize: 90
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>At the start
+      of any Battle, play this to draw 2 <sprite=10>  and choose 1 to play as yours
+      in this Battle'
+    textSize: 110
   - name: 'Teleport '
     cardType: 3
     clan: 5
     version_Passive_A: 1
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 08169e2e21f4e894081b517809aca1b8, type: 3}
-    description: 'When playing a
-
-      <sprite=0>  "Travel", instead of moving your 
-      <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  as normal, you may move
-      them to any Field you control'
-    textSize: 110
-  - name: 'Teleport '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 1
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
@@ -412,7 +214,7 @@ MonoBehaviour:
 
       <sprite=0>  "Travel", in addition to moving
       your  <sprite=36>  <sprite=37>  <sprite=38>  <sprite=39>  as normal, you may
-      also move some of them to any Field you control'
+      also move any of them to any other Field you control'
     textSize: 110
   - name: 'Teleport '
     cardType: 3
@@ -420,25 +222,8 @@ MonoBehaviour:
     version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
-    version_Specialty_B: 1
+    version_Specialty_B: 0
     cost: 1
-    image: {fileID: 21300000, guid: 08169e2e21f4e894081b517809aca1b8, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Move any  <sprite=36> 
-      <sprite=37>  <sprite=38>  <sprite=39>  from 1 Field you control to another
-      Field you control.'
-    textSize: 120
-  - name: 'Teleport '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
     image: {fileID: 21300000, guid: 08169e2e21f4e894081b517809aca1b8, type: 3}
     description: '<u>Action:</u>
 
@@ -465,22 +250,6 @@ MonoBehaviour:
     cardType: 3
     clan: 5
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: bf7460a85f38fdb45a1ee7a354ce2f18, type: 3}
-    description: 'You cannot receive any
-
-      <size=150%><sprite=21>
-
-      <size=100%>during
-      Wars'
-    textSize: 120
-  - name: True 1000 Hands
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
@@ -498,30 +267,7 @@ MonoBehaviour:
       <size=100%>from your
       opponent,
 
-      your opponent get affected instead'
-    textSize: 110
-  - name: True 1000 Hands
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: bf7460a85f38fdb45a1ee7a354ce2f18, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>During Wars,
-      when you receive any
-
-      <size=150%><sprite=21>
-
-      <size=100%>from your
-      opponent,
-
-      your opponent get affected instead'
+      your opponent receives it instead'
     textSize: 110
   - name: Wood Clone
     cardType: 3
@@ -532,7 +278,7 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 19d1fa412ad782f4086fb85175c834de, type: 3}
-    description: 'At the start of the "Shop Phase", always buy 2  <sprite=0>  before
+    description: 'At the start of the "Shop Phase", always buy 2 <sprite=0>  before
       any other Player
 
       <size=30%>
@@ -544,95 +290,58 @@ MonoBehaviour:
     cardType: 3
     clan: 5
     version_Passive_A: 0
-    version_Passive_B: 1
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 19d1fa412ad782f4086fb85175c834de, type: 3}
+    description: '<u>Reaction:</u>
+
+      <size=20%>
+
+      <size=100%>At the start
+      of the "Shop Phase", buy 1 <sprite=0>  before any other Player
+
+      <size=30%>
+
+      <size=75%>(You
+      may play multiple of this to buy more  <sprite=0>  before any other player)
+
+      <size=30%>
+
+      <size=75%>(You
+      may buy up to 2 <sprite=0>  of the same type)'
+    textSize: 103
+  - name: Wood Golem
+    cardType: 3
+    clan: 5
+    version_Passive_A: 1
+    version_Passive_B: 0
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
-    image: {fileID: 21300000, guid: 19d1fa412ad782f4086fb85175c834de, type: 3}
-    description: 'At the start of the "Shop Phase", always buy 3  <sprite=0>  before
-      any other Player
+    image: {fileID: 21300000, guid: 2f6c59eddfc9b9242b338cdf24dd0956, type: 3}
+    description: 'At the start of any "Action Phase",
 
-      <size=30%>
-
-      <size=75%>(You cannot buy  <sprite=0> 
-      of the same type)'
-    textSize: 115
-  - name: Wood Clone
+      Discard 1 <sprite=0> 
+      at random from each of the other players hands'
+    textSize: 120
+  - name: Wood Golem
     cardType: 3
     clan: 5
     version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 19d1fa412ad782f4086fb85175c834de, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>At the start
-      of the "Shop Phase", buy 1  <sprite=0>  before any other Player
-
-      <size=30%>
-
-      <size=75%>(You
-      may play multiple of this to buy more  <sprite=0>  before any other player)
-
-      <size=30%>
-
-      <size=75%>(You
-      may buy  <sprite=0>  of the same type)'
-    textSize: 103
-  - name: Wood Clone
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 2
-    image: {fileID: 21300000, guid: 19d1fa412ad782f4086fb85175c834de, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>At the start
-      of the "Shop Phase", buy 1  <sprite=0>  before any other Player
-
-      <size=30%>
-
-      <size=75%>(You
-      may play multiple of this to buy more  <sprite=0>  before any other player)
-
-      <size=30%>
-
-      <size=75%>(You
-      may buy  <sprite=0>  of the same type)'
-    textSize: 103
-  - name: 'Wood Style '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 1435e1aac50838a44b0be80b6e1c5339, type: 3}
+    image: {fileID: 21300000, guid: 2f6c59eddfc9b9242b338cdf24dd0956, type: 3}
     description: '<u>Action:</u>
 
       <size=20%>
 
-      <size=100%>Make 1 Passage
-      through a "Mountain" or "River" by placing either a
-
-      <sprite=61>  or 
-      <sprite=62>  on any border
-
-      <size=30%>
-
-      <size=75%>(Only you''re
-      able to use the passages)'
-    textSize: 110
+      <size=100%>Look at another
+      player''s  <sprite=0>  and Discard 1 <sprite=0>  from it'
+    textSize: 120
   - name: 'Wood Style '
     cardType: 3
     clan: 5
@@ -659,23 +368,10 @@ MonoBehaviour:
     cardType: 3
     clan: 5
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 1435e1aac50838a44b0be80b6e1c5339, type: 3}
-    description: "At the start of any \"Action Phase\", \nmake 2 Passages through
-      either \"Mountains\" or \"Rivers\" by placing either a\n<sprite=61>  or  <sprite=62> 
-      on any border\n<size=30%>\n<size=75%>(Only you're able to use the passages)"
-    textSize: 105
-  - name: 'Wood Style '
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
     image: {fileID: 21300000, guid: 1435e1aac50838a44b0be80b6e1c5339, type: 3}
     description: '<u>Action:</u>
 
@@ -691,62 +387,4 @@ MonoBehaviour:
 
       <size=75%>(Only you''re
       able to use the passages)'
-    textSize: 113.2
-  - name: Wood Golem
-    cardType: 3
-    clan: 5
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 2f6c59eddfc9b9242b338cdf24dd0956, type: 3}
-    description: 'At the start of any "Action Phase",
-
-      Discard 1  <sprite=0> 
-      at random from each of the other players hands'
-    textSize: 120
-  - name: Wood Golem
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 2f6c59eddfc9b9242b338cdf24dd0956, type: 3}
-    description: At the start of any "Action Phase", look at another player's  <sprite=0> 
-      and Discard 1 <sprite=0>  from it
-    textSize: 120
-  - name: Wood Golem
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 2f6c59eddfc9b9242b338cdf24dd0956, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Look at another
-      player''s  <sprite=0>  and Discard 1 <sprite=0>  from it'
-    textSize: 120
-  - name: Wood Golem
-    cardType: 3
-    clan: 5
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 2f6c59eddfc9b9242b338cdf24dd0956, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Discard 1  <sprite=0> 
-      at random from each of the other players hands'
-    textSize: 120
+    textSize: 110

@@ -13,33 +13,7 @@ MonoBehaviour:
   m_Name: ClanSpecialty - Hyuga
   m_EditorClassIdentifier: 
   clanSpecialtyCardList:
-  - name: Sacrifice
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: 6371c71be296d8d4ea0d296b8ed5154c, type: 3}
-    description: "<u>Action:</u>\n<size=20%>\n<size=100%>Move Down 1 step in any
-      track on the \"Dominance Board\". \n<size=30%>\n<size=100%>Then Draw 1 <sprite=11>
-      ."
-    textSize: 120
-  - name: Sacrifice
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 6371c71be296d8d4ea0d296b8ed5154c, type: 3}
-    description: "<u>Action:</u>\n<size=20%>\n<size=100%>Move Down 2 steps in any
-      track on the \"Dominance Board\". \n<size=30%>\n<size=100%>Then Draw 1 <sprite=11>
-      ."
-    textSize: 120
-  - name: Sacrifice
+  - name: 8 Trigram            64 Palms
     cardType: 3
     clan: 3
     version_Passive_A: 1
@@ -47,32 +21,29 @@ MonoBehaviour:
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
-    image: {fileID: 21300000, guid: 6371c71be296d8d4ea0d296b8ed5154c, type: 3}
-    description: 'When losing at least one  <sprite=28>  <sprite=29>  <sprite=30> 
-      <sprite=31>  during a War, you may move Down 1 step in any track on the
-
-      "Dominance
-      Board"
-
-      and Draw 1 <sprite=11> .'
-    textSize: 114
-  - name: Sacrifice
+    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
+    description: Your  <sprite=8>  cannot be affected negatively by your opponent's 
+      <sprite=8>  in Battles
+    textSize: 120
+  - name: 8 Trigram            64 Palms
     cardType: 3
     clan: 3
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 6371c71be296d8d4ea0d296b8ed5154c, type: 3}
-    description: 'When losing at least one  <sprite=28>  <sprite=29>  <sprite=30> 
-      <sprite=31>  during a War, you may move Down 2 steps in any track on the
+    cost: 1
+    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
+    description: '<u>Reaction:</u>
 
-      "Dominance
-      Board"
+      <size=20%>
 
-      and Draw 1 <sprite=11> .'
-    textSize: 114
+      <size=100%>In any Batte,
+
+      if
+      your played  <sprite=8>  gets affected by your opponets''  <sprite=8>  , you
+      may give the effect back to your opponent''s  <sprite=8>  instead'
+    textSize: 105
   - name: Byakugan
     cardType: 3
     clan: 3
@@ -88,52 +59,19 @@ MonoBehaviour:
     cardType: 3
     clan: 3
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 7b7cd88503b92ea44ab244d7c6b2b139, type: 3}
-    description: Before entering any War, look at your opponent's  <sprite=8>  and
-      choose 1  <sprite=8>  that cannot be played
-    textSize: 120
-  - name: Byakugan
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 3
+    cost: 1
     image: {fileID: 21300000, guid: 7b7cd88503b92ea44ab244d7c6b2b139, type: 3}
-    description: '<u>Action:</u>
+    description: '<u>Reaction:</u>
 
       <size=20%>
 
-      <size=100%>Look at any
-      Player''s Hand and Steal 1 <sprite=8>  from it.
-
-      This player will receive
-      2 <sprite=22>'
-    textSize: 115
-  - name: Byakugan
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 4
-    image: {fileID: 21300000, guid: 7b7cd88503b92ea44ab244d7c6b2b139, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Look at any
-      Player''s Hand and Steal 1 <sprite=8>  from it.
-
-      This player will receive
-      2 <sprite=22>'
-    textSize: 115
+      <size=100%>Once per War,
+      before playing your first  <sprite=8> , look at your opponent''s  <sprite=8> 
+      and choose one that cannot be played during this War'
+    textSize: 110
   - name: Convocation
     cardType: 3
     clan: 3
@@ -141,90 +79,14 @@ MonoBehaviour:
     version_Passive_B: 0
     version_Specialty_A: 0
     version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: acc5e26698a14ab44a527a534225fb95, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>During any
-      Scoring, get a copy of all available Resources displayed on 1 <sprite=8>  in
-      it.'
-    textSize: 120
-  - name: Convocation
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 3
-    image: {fileID: 21300000, guid: acc5e26698a14ab44a527a534225fb95, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>During any
-      Scoring, get a copy of all available Resources displayed on 1 <sprite=8>  in
-      it.'
-    textSize: 120
-  - name: Convocation
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: acc5e26698a14ab44a527a534225fb95, type: 3}
-    description: During any Scoring, get a copy of 1 available Resource displayed
-      on 1 <sprite=8>  in it.
-    textSize: 120
-  - name: Convocation
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 0
     image: {fileID: 21300000, guid: acc5e26698a14ab44a527a534225fb95, type: 3}
     description: 'During any Scoring you participate in, get a copy of 1 available
       Resource displayed
 
-      on 1 <sprite=8>  in it.'
+      on 1 <sprite=8>  in it'
     textSize: 120
-  - name: Marked
-    cardType: 3
-    clan: 3
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: ce150af3cb817c14e9f0c0168340a3f4, type: 3}
-    description: 'At the start of any War you participate in, If you have a <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  Strength of 5 or lower than your opponent,
-
-      get
-      1 BP.'
-    textSize: 115
-  - name: Marked
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: ce150af3cb817c14e9f0c0168340a3f4, type: 3}
-    description: 'At the start of any War you participate in, If you have a <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  Strength of 7 or lower than your opponent,
-
-      get
-      1 BP.'
-    textSize: 115
-  - name: Marked
+  - name: Convocation
     cardType: 3
     clan: 3
     version_Passive_A: 0
@@ -232,40 +94,88 @@ MonoBehaviour:
     version_Specialty_A: 1
     version_Specialty_B: 0
     cost: 2
-    image: {fileID: 21300000, guid: ce150af3cb817c14e9f0c0168340a3f4, type: 3}
+    image: {fileID: 21300000, guid: acc5e26698a14ab44a527a534225fb95, type: 3}
     description: '<u>Reaction:</u>
 
       <size=20%>
 
-      <size=100%>At the start
-      of any War you participate in, If you have the least BP after counting for
+      <size=100%>During any
+      Scoring, get a copy of all available Resources displayed on
 
-      <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  Strength,
+      1 <sprite=8> 
+      in it
 
-      get 1 BP.'
-    textSize: 115
+      <size=75%>(If any Resource affects a player negatively, choose
+      any player)'
+    textSize: 110
+  - name: Marked
+    cardType: 3
+    clan: 3
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: ce150af3cb817c14e9f0c0168340a3f4, type: 3}
+    description: '<size=100%>You and your opponent always start the War with 1BP
+
+      <size=20%>
+
+      <size=75%>(Do
+      not count for  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  Strength)'
+    textSize: 120
   - name: Marked
     cardType: 3
     clan: 3
     version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 3
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
     image: {fileID: 21300000, guid: ce150af3cb817c14e9f0c0168340a3f4, type: 3}
     description: '<u>Reaction:</u>
 
+      <size=30%>
+
+      <size=100%>If your opponent
+      has the  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  Strength,
+
+      receive
+      the 1BP instead of your opponent'
+    textSize: 120
+  - name: Sacrifice
+    cardType: 3
+    clan: 3
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: 6371c71be296d8d4ea0d296b8ed5154c, type: 3}
+    description: 'When losing at least one  <sprite=28>  <sprite=29>  <sprite=30> 
+      <sprite=31>  during a War,
+
+      Draw 1 <sprite=11> '
+    textSize: 120
+  - name: Sacrifice
+    cardType: 3
+    clan: 3
+    version_Passive_A: 0
+    version_Passive_B: 0
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
+    image: {fileID: 21300000, guid: 6371c71be296d8d4ea0d296b8ed5154c, type: 3}
+    description: '<u>Action:</u>
+
       <size=20%>
 
-      <size=100%>At the start
-      of any War you participate in, If you have the least BP after counting for
+      <size=100%>Remove 1 <sprite=28> 
+      <sprite=29>  <sprite=30>  <sprite=31>  and move down 1 step in any "Dominance
+      Track",
 
-      <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  Strength,
-
-      get 1 BP.'
-    textSize: 115
+      and draw 1 <sprite=11> '
+    textSize: 120
   - name: Secret Ointment
     cardType: 3
     clan: 3
@@ -280,26 +190,9 @@ MonoBehaviour:
 
       <size=40%>
 
-      <size=100%>Your opponent cannot use  <sprite=58> 
-      the same Turn it attacks you'
-    textSize: 107
-  - name: Secret Ointment
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 046339054b37e624db1b0f849a59a6e7, type: 3}
-    description: 'Your  <sprite=28>  <sprite=29>  <sprite=30>  <sprite=31>  cannot
-      be Proned.
-
-      <size=40%>
-
-      <size=100%>Your opponent cannot use  <sprite=58> 
-      the same Round it has been in a War against you'
-    textSize: 107
+      <size=100%>Your opponent cannot use  <sprite=0>
+      "Healing Salve" for the rest of the Round after being in a War against you'
+    textSize: 110
   - name: Secret Ointment
     cardType: 3
     clan: 3
@@ -313,40 +206,17 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=100%>At the start
+      <size=100%>At the end
       of your Turn, Raise all your Proned
 
       <sprite=28>  <sprite=29>  <sprite=30> 
       <sprite=31> .
 
-      <size=40%>
-
-      <size=100%>None of the other players
-      can use  <sprite=58>  for the next 3 turns'
-    textSize: 107
-  - name: Secret Ointment
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 046339054b37e624db1b0f849a59a6e7, type: 3}
-    description: '<u>Action:</u>
-
       <size=20%>
 
-      <size=100%>Raise all your
-      Proned
-
-      <sprite=28>  <sprite=29>  <sprite=30>  <sprite=31> .
-
-      <size=40%>
-
-      <size=100%>None
-      of the other players can use  <sprite=58>  for the rest of this Round'
-    textSize: 107
+      <size=100%>And/or none of the other
+      players can use  <sprite=58>  until your next Turn'
+    textSize: 97.9
   - name: Sensory Field
     cardType: 3
     clan: 3
@@ -359,19 +229,6 @@ MonoBehaviour:
     description: 'When another Player enters a Field you control,
 
       draw 1 <sprite=9>'
-    textSize: 120
-  - name: Sensory Field
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 01af6a65372fea74aa7ab26e0a34e2d5, type: 3}
-    description: 'When another Player enters a Field you control,
-
-      draw 1 <sprite=10>'
     textSize: 120
   - name: Sensory Field
     cardType: 3
@@ -392,25 +249,6 @@ MonoBehaviour:
       and choose 1 to
       keep'
     textSize: 120
-  - name: Sensory Field
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 01af6a65372fea74aa7ab26e0a34e2d5, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>When another
-      Player enters a Field you control, draw 3 <sprite=9>
-
-      and choose 1 to
-      keep'
-    textSize: 120
   - name: The Hyuga Affair
     cardType: 3
     clan: 3
@@ -420,24 +258,14 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: bb99da41f29f59243a7819b7d7c74c31, type: 3}
-    description: 'During any Scoring you participate in,
+    description: 'During any Scoring
 
-      cancel all Resources
-      on the first  <sprite=8>  played by your opponent'
-    textSize: 120
-  - name: The Hyuga Affair
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: bb99da41f29f59243a7819b7d7c74c31, type: 3}
-    description: 'During any Scoring you participate in,
+      you participate in,
 
-      cancel 1 Resource
-      on any played  <sprite=8>'
+      Cancel 1 Resource
+      on
+
+      1 played  <sprite=8>'
     textSize: 120
   - name: The Hyuga Affair
     cardType: 3
@@ -455,27 +283,7 @@ MonoBehaviour:
       <size=100%>Before any
       Scoring you participate in,
 
-      cancel all Resources on 1 <sprite=8>  in
-      it'
-    textSize: 120
-  - name: The Hyuga Affair
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: bb99da41f29f59243a7819b7d7c74c31, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>Before any
-      Scoring you participate in,
-
-      cancel all Resources on 1 <sprite=8>  in
-      it'
+      Cancel all Resources on 1 played  <sprite=8>'
     textSize: 120
   - name: 'Training '
     cardType: 3
@@ -486,32 +294,13 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: dc9dca7bcf457454b9e893ca40df604a, type: 3}
-    description: 'At the start of each "Action"-Phase,
+    description: 'All your  <sprite=29>  <sprite=30>  <sprite=31>  have +1 Strength
+      on the Board
 
-      Upgrade 2 of any  <sprite=29> 
-      <sprite=30>
+      <size=20%>
 
-      you control
-
-      with 1 Tier'
-    textSize: 120
-  - name: 'Training '
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: dc9dca7bcf457454b9e893ca40df604a, type: 3}
-    description: 'At the start of each "Action"-Phase,
-
-      Upgrade 3 of any  <sprite=29> 
-      <sprite=30>
-
-      you control
-
-      with 1 Tier'
+      <size=75%>(You still must adhere to the
+      Field limit of 10p.)'
     textSize: 120
   - name: 'Training '
     cardType: 3
@@ -520,44 +309,17 @@ MonoBehaviour:
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: dc9dca7bcf457454b9e893ca40df604a, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>On your Turn,
-      Upgrade
-
-      2 of any  <sprite=29>  <sprite=30>
-
-      you control
-
-      with
-      1 Tier'
-    textSize: 120
-  - name: 'Training '
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 1
     image: {fileID: 21300000, guid: dc9dca7bcf457454b9e893ca40df604a, type: 3}
     description: '<u>Reaction:</u>
 
       <size=20%>
 
-      <size=100%>On your Turn,
-      Upgrade
+      <size=100%>At any time,
 
-      1 <sprite=29>  or 1 <sprite=30>
-
-      you control
-
-      with
-      1 Tier'
+      add
+      3p. of  <sprite=28>  <sprite=29>  <sprite=30>  <sprite=31>  onto any Fields
+      you control'
     textSize: 120
   - name: Twin Lion Fist
     cardType: 3
@@ -569,24 +331,6 @@ MonoBehaviour:
     cost: 0
     image: {fileID: 21300000, guid: b1663e0142204eb4eb1efa635fdbece4, type: 3}
     description: 'You''re immune to
-
-      <sprite=18>  <sprite=20> '
-    textSize: 140
-  - name: Twin Lion Fist
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: b1663e0142204eb4eb1efa635fdbece4, type: 3}
-    description: '<u>Choose one:</u>
-
-      <size=20%>
-
-      <size=100%>You''re
-      immune to either
 
       <sprite=18>  <sprite=20> '
     textSize: 140
@@ -613,87 +357,3 @@ MonoBehaviour:
       your
       opponent get affected instead'
     textSize: 115
-  - name: Twin Lion Fist
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: b1663e0142204eb4eb1efa635fdbece4, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>During a War,
-      when you receive any
-
-      <sprite=18>  <sprite=20>
-
-      <size=75%>(choose
-      one before the War)
-
-      <size=100%>from your opponent,
-
-      your opponent
-      get affected instead'
-    textSize: 105
-  - name: 8 Trigram            64 Palms
-    cardType: 3
-    clan: 3
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
-    description: Your  <sprite=8>  cannot be affected negatively by your opponent's 
-      <sprite=8>  in Battles
-    textSize: 120
-  - name: 8 Trigram            64 Palms
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
-    description: 'Your  <sprite=8>  cannot be affected negatively by your opponent''s 
-      <sprite=8>  in Battles.
-
-
-      The first time you are tried affected, you
-      may give the effect back to your opponent''s  <sprite=8>  instead'
-    textSize: 100
-  - name: 8 Trigram            64 Palms
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
-    description: 'In any Batte,
-
-      if your played  <sprite=8>  get affected by
-      your opponets''  <sprite=8>  , you may give the effect back to your opponent''s 
-      <sprite=8>  instead'
-    textSize: 110
-  - name: 8 Trigram            64 Palms
-    cardType: 3
-    clan: 3
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 31b3a334d8f772b488f9d28dc2d31aff, type: 3}
-    description: 'In any Batte,
-
-      if your played  <sprite=8>  get affected by
-      your opponets''  <sprite=8>  , you may give the effect back to your opponent''s 
-      <sprite=8>  twice instead'
-    textSize: 110

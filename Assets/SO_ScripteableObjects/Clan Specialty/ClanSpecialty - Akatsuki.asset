@@ -16,75 +16,37 @@ MonoBehaviour:
   - name: Akatsuki's Hideout
     cardType: 3
     clan: 2
+    version_Passive_A: 1
+    version_Passive_B: 0
+    version_Specialty_A: 0
+    version_Specialty_B: 0
+    cost: 0
+    image: {fileID: 21300000, guid: b79de9ec873db804fa978d28f49f51a3, type: 3}
+    description: 'The
+
+      "Kamui Dimention"
+
+      now has a
+
+      <size=120%><sprite=58>
+
+      <size=100%>in
+      its Field
+
+      <size=50%>'
+    textSize: 120
+  - name: Akatsuki's Hideout
+    cardType: 3
+    clan: 2
     version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: b79de9ec873db804fa978d28f49f51a3, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Travel to another
-      Hideout Field without using the "Kamui Dimention"
-
-      <size=50%>
-
-      <size=100%>You
-      may separate your
-
-      <sprite=49>  <sprite=50>  <sprite=51>  when traveling'
-    textSize: 105
-  - name: Akatsuki's Hideout
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: b79de9ec873db804fa978d28f49f51a3, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Travel to another
-      Hideout Field without using the "Kamui Dimention"
-
-      <size=50%>
-
-      <size=100%>You
-      may separate your
-
-      <sprite=49>  <sprite=50>  <sprite=51>  when traveling'
-    textSize: 105
-  - name: Akatsuki's Hideout
-    cardType: 3
-    clan: 2
-    version_Passive_A: 1
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: b79de9ec873db804fa978d28f49f51a3, type: 3}
-    description: "You may travel between Hideout Fields without using the \n\"Kamui
-      Dimention\"\n<size=50%>\n<size=100%>As normal, you cannot separate your\n<sprite=49> 
-      <sprite=50>  <sprite=51>  when traveling"
-    textSize: 105
-  - name: Akatsuki's Hideout
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: b79de9ec873db804fa978d28f49f51a3, type: 3}
-    description: "You may travel between Hideout Fields without using the \n\"Kamui
-      Dimention\"\n<size=50%>\n<size=100%>You may separate your\n<sprite=49>  <sprite=50> 
-      <sprite=51>  when traveling"
-    textSize: 105
+    description: "<u>Action:</u>\n<size=20%>\n<size=100%>Travel to another Hideout
+      Field \nwithout using the\n\"Kamui Dimention\""
+    textSize: 120
   - name: Commission
     cardType: 3
     clan: 2
@@ -96,7 +58,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 346716de686dbe24bab6cb5565f7f862, type: 3}
     description: '<u>You win the Game when:</u>
 
-      You''ve captured 9  <sprite=23>
+      You''ve captured 7 <sprite=23>
 
       <size=30%>
 
@@ -106,31 +68,13 @@ MonoBehaviour:
       <size=30%>
 
       <size=75%>The
-      Game ends right after your last capture.'
-    textSize: 117
-  - name: Commission
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 346716de686dbe24bab6cb5565f7f862, type: 3}
-    description: '<u>You win the Game when:</u>
-
-      You''ve captured 8  <sprite=23>
+      Game ends right after your last capture.
 
       <size=30%>
 
-      <size=75%>You
-      only need to capture  <sprite=23> , not keep them.
-
-      <size=30%>
-
-      <size=75%>The
-      Game ends right after your last capture.'
-    textSize: 117
+      <size=75%>Give
+      yourself a  <sprite=57>  Token to keep count of every capture.'
+    textSize: 110
   - name: Commission
     cardType: 3
     clan: 2
@@ -142,7 +86,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 346716de686dbe24bab6cb5565f7f862, type: 3}
     description: '<u>You win the Game when:</u>
 
-      You''ve captured 10  <sprite=23>
+      You''ve captured 8 <sprite=23>
 
       <size=30%>
 
@@ -152,31 +96,13 @@ MonoBehaviour:
       <size=30%>
 
       <size=75%>The
-      Game ends right after your last capture.'
-    textSize: 117
-  - name: Commission
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 0
-    image: {fileID: 21300000, guid: 346716de686dbe24bab6cb5565f7f862, type: 3}
-    description: '<u>You win the Game when:</u>
-
-      You''ve captured 6  <sprite=23>
+      Game ends right after your last capture.
 
       <size=30%>
 
-      <size=75%>You
-      only need to capture  <sprite=23> , not keep them.
-
-      <size=30%>
-
-      <size=75%>The
-      Game ends right after your last capture.'
-    textSize: 117
+      <size=75%>Give
+      yourself a  <sprite=57>  Token to keep count of every capture.'
+    textSize: 110
   - name: "Gent\u014Dshin"
     cardType: 3
     clan: 2
@@ -186,55 +112,33 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 74afff2109c0227439029c2bcbb107af, type: 3}
-    description: Once during a War, at the start of any Battle you participate in,
-      you may Swap the effect on your played  <sprite=8>  with your opponent's
+    description: '<u>Once each War:</u>
+
+      <size=20%>
+
+      <size=100%>At the
+      start of any Battle before revealing the chosen  <sprite=8> ,
+
+      decide
+      if the Effects on them should be swapped'
     textSize: 115
   - name: "Gent\u014Dshin"
     cardType: 3
     clan: 2
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 74afff2109c0227439029c2bcbb107af, type: 3}
-    description: At the start of the first Battle in a War you participate in, you
-      may Swap the effect on your played  <sprite=8>  with your opponent's
-    textSize: 110
-  - name: "Gent\u014Dshin"
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 74afff2109c0227439029c2bcbb107af, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>At the start
-      of any Battle you participate in, you may Steal the effect from your opponent''s 
-      <sprite=8>  and add it onto your  <sprite=8>'
-    textSize: 114
-  - name: "Gent\u014Dshin"
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 2
     image: {fileID: 21300000, guid: 74afff2109c0227439029c2bcbb107af, type: 3}
     description: '<u>Reaction:</u>
 
       <size=20%>
 
-      <size=100%>At the start
-      of any Battle you participate in, you may Steal the effect from your opponent''s 
-      <sprite=8>  and add it onto your  <sprite=8>'
-    textSize: 114
+      <size=100%>After revealing
+      the  <sprite=8>  in any Battle you participate in, you may Steal the Effect
+      on your opponent''  <sprite=8>  and add it to yours'
+    textSize: 110
   - name: Gunbai
     cardType: 3
     clan: 2
@@ -244,76 +148,34 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: cd4166a8eb7f79e47a96b76dde830e17, type: 3}
-    description: 'Your opponent always have its weakest Combat Strength value set
-      to 0
+    description: 'Your opponent always has its weakest value of <sprite=101> <sprite=102>
+      <sprite=103>  set to 0
 
       <size=20%>
 
-      <size=75%>(During a tie,
-
-      you choose which
-
-      to
-      nullify)
-
-'
-    textSize: 118.8
-  - name: Gunbai
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: cd4166a8eb7f79e47a96b76dde830e17, type: 3}
-    description: 'Your opponent always have its middle Combat Strength value set
-      to 0
-
-      <size=20%>
-
-      <size=75%>(During a tie,
-
-      your opponent
+      <size=75%>(During a tie, you
       choose
 
       which to nullify)
 
 '
-    textSize: 118.8
-  - name: Gunbai
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: cd4166a8eb7f79e47a96b76dde830e17, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>At the start
-      of any Battle you participate in, reduce 1 of your opponent''s Combat Strengths
-      to 0'
     textSize: 120
   - name: Gunbai
     cardType: 3
     clan: 2
     version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
+    version_Specialty_A: 1
+    version_Specialty_B: 0
+    cost: 1
     image: {fileID: 21300000, guid: cd4166a8eb7f79e47a96b76dde830e17, type: 3}
     description: '<u>Reaction:</u>
 
       <size=20%>
 
       <size=100%>At the start
-      of any Battle you participate in, reduce 1 of your opponent''s Combat Strengths
-      to 0'
+      of any Battle you participate in, reduce 1 of your opponent''s  <sprite=101>
+      <sprite=102> <sprite=103>  to 0'
     textSize: 120
   - name: Orochimaru's Lab
     cardType: 3
@@ -334,20 +196,6 @@ MonoBehaviour:
     cardType: 3
     clan: 2
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: d80cfa2367e8a384b83c241a0ce64cb8, type: 3}
-    description: "When you win a War, Steal 1 of your opponent's surviving\n <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  <size=75%>(of the lowest Tier). \n<size=100%>When
-      you've got at least 1 from each Player, draw as many  <sprite=11>  as there
-      are players.\n<size=40%>\n<size=75%>(Then return them to its players' Supply)"
-    textSize: 100
-  - name: Orochimaru's Lab
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
@@ -357,25 +205,9 @@ MonoBehaviour:
       1 of your opponent's surviving\n<sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
       <size=75%>(of any Tier). \n<size=100%>When you've got at least 1 from each
       Player, draw as many  <sprite=11>  as points of  <sprite=48>  <sprite=49> 
-      <sprite=50>  <sprite=51>  taken.\n<size=30%>\n<size=75%>(Then return the <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  to the Players' Supply)"
-    textSize: 91.5
-  - name: Orochimaru's Lab
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: d80cfa2367e8a384b83c241a0ce64cb8, type: 3}
-    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>When you win a War, Steal
-      1 of your opponent's surviving\n<sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
-      <size=75%>(of any Tier). \n<size=100%>When you've got at least 1 from each
-      Player, draw as many  <sprite=11>  as points of  <sprite=48>  <sprite=49> 
-      <sprite=50>  <sprite=51>  taken.\n<size=30%>\n<size=75%>(Then return the <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  to the Players' Supply)"
-    textSize: 91.5
+      <sprite=50>  <sprite=51>  taken.\n<size=40%>\n<size=75%>(Then return them to
+      the player's Supply)"
+    textSize: 91
   - name: "Perfect Susano\u2019o"
     cardType: 3
     clan: 2
@@ -385,28 +217,12 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: c129192e006e66c42968e23060b6bd44, type: 3}
-    description: '<size=120%><sprite=70>  <sprite=70>
+    description: '<size=100%><sprite=70>  <sprite=70>  <sprite=69>
 
-      <size=25%>(You always
-      have
-
-      +2 <sprite=70>  during Wars)'
-    textSize: 400
-  - name: "Perfect Susano\u2019o"
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: c129192e006e66c42968e23060b6bd44, type: 3}
-    description: '<size=120%><sprite=70> <sprite=70> <sprite=70><size=10%>
-
-      <size=25%>(You
+      <size=20%>(You
       always have
 
-      +3 <sprite=70>  during Wars)'
+      +2 <sprite=70>  and +1 <sprite=69>  during Wars)'
     textSize: 400
   - name: "Perfect Susano\u2019o"
     cardType: 3
@@ -417,35 +233,23 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: c129192e006e66c42968e23060b6bd44, type: 3}
-    description: '<size=25%><u>Reaction:</u>
+    description: '<size=45%><u>Reaction:</u>
 
-      <size=20%>
+      <size=25%>
 
-      <size=120%><sprite=70> 
-      <sprite=70><size=10%>
+      <size=150%><sprite=70> 
+      <sprite=70>  <sprite=70>
 
-      <size=25%>(Add 2 <sprite=70>  to any <sprite=8> 
-      during any War)'
-    textSize: 385
-  - name: "Perfect Susano\u2019o"
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: c129192e006e66c42968e23060b6bd44, type: 3}
-    description: '<size=25%><u>Reaction:</u>
+      <sprite=69>  <sprite=69>
 
-      <size=20%>
+      <size=0%>
 
-      <size=120%><sprite=70>
-      <sprite=70> <sprite=70><size=10%>
+      <size=35%>(Once
+      per Battle,
 
-      <size=25%>(Add 3 <sprite=70>  to any
-      <sprite=8>  during any War)'
-    textSize: 385
+      add 3 <sprite=70>  and 2 <sprite=69>  to any  <sprite=8> 
+      in it)'
+    textSize: 190
   - name: Poison of the Red Sand
     cardType: 3
     clan: 2
@@ -456,61 +260,21 @@ MonoBehaviour:
     cost: 0
     image: {fileID: 21300000, guid: 2eb66d17f2dbaa7469b46c4a37aaa5fd, type: 3}
     description: '<u>If you win a War:</u>
-
-      Give your opponent 1 <sprite=17>
-
-
-      <u>If
-      you lose a War:</u>
-
-      Give your opponent 2 <sprite=17>'
-    textSize: 120
-  - name: Poison of the Red Sand
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 2eb66d17f2dbaa7469b46c4a37aaa5fd, type: 3}
-    description: '<u>If you win a War:</u>
-
-      Give your opponent 2 <sprite=17>
-
-
-      <u>If
-      you lose a War:</u>
-
-      Give your opponent 1 <sprite=17>'
-    textSize: 120
-  - name: Poison of the Red Sand
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 1
-    version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 2eb66d17f2dbaa7469b46c4a37aaa5fd, type: 3}
-    description: '<u>Reaction:</u>
 
       <size=40%>
 
-      <size=100%>If you win
-      a War, give your opponent 2 <sprite=17>
+      <size=100%>Give
+      your opponent
 
-
-      If you lose a War, give your
-      opponent 3 <sprite=17>'
+      2 <sprite=17>'
     textSize: 120
   - name: Poison of the Red Sand
     cardType: 3
     clan: 2
     version_Passive_A: 0
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
+    version_Specialty_A: 1
+    version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: 2eb66d17f2dbaa7469b46c4a37aaa5fd, type: 3}
     description: '<u>Reaction:</u>
@@ -534,22 +298,9 @@ MonoBehaviour:
     cost: 0
     image: {fileID: 21300000, guid: 9b4b098ffc7a07e46b5d6977b1cb5731, type: 3}
     description: "At the start of each \"Action\"-Phase, place the  <sprite=55> 
-      Marker in any Field. \n<size=25%>\n<size=100%>A Field containing this Marker
+      Marker in any Field. \n<size=40%>\n<size=100%>A Field containing this Marker
       cannot be attacked."
-    textSize: 112.8
-  - name: Rinnegan
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 9b4b098ffc7a07e46b5d6977b1cb5731, type: 3}
-    description: "At the start of each \"Action\"-Phase, place the  <sprite=55> 
-      Marker in another Field. \n<size=25%>\n<size=100%>A Field containing this Marker
-      cannot be attacked."
-    textSize: 112.8
+    textSize: 110
   - name: Rinnegan
     cardType: 3
     clan: 2
@@ -568,42 +319,18 @@ MonoBehaviour:
 
       <sprite=55>  Marker in any Field.
 
-      A Field containing this Marker
-      cannot be attacked.
-
-      <size=30%>
-
-      <size=75%>(Remove all  <sprite=55> 
-      Markers
-
-      during the "Setup Phase")'
-    textSize: 105
-  - name: Rinnegan
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 4
-    image: {fileID: 21300000, guid: 9b4b098ffc7a07e46b5d6977b1cb5731, type: 3}
-    description: '<u>Action:</u>
-
       <size=20%>
 
-      <size=100%>Place or Replace
-      a
-
-      <sprite=55>  Marker in any Field.
-
-      A Field containing this Marker
-      cannot be attacked.
+      <size=100%>A
+      Field containing this Marker cannot be attacked.
 
       <size=30%>
 
-      <size=75%>(Don''t remove  <sprite=55> 
-      Markers during the "Setup Phase")'
-    textSize: 105
+      <size=75%>(Remove
+      all  <sprite=55>  Markers during
+
+      the "Setup Phase")'
+    textSize: 100
   - name: Statue of the Outer Path
     cardType: 3
     clan: 2
@@ -613,51 +340,29 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: bb3881745d5851540a76b322de407304, type: 3}
-    description: 'When entering a War, add the number of captured  <sprite=23>  to
-      your Strength
+    description: '<size=73%>After resolving for  <sprite=17>  in the "Setup Phase",
+      move up X spots in any Dominance Track based on the  <sprite=23>  you have
+      captured.
+
+      <size=20%>
+
+      <size=75%><u>For each:</u>
 
       <size=30%>
 
-      <size=75%><sprite=87>  <sprite=88> 
-      <sprite=89>  <sprite=90>  <sprite=91>  <sprite=92>  = +1 Strength
+      <size=75%><sprite=87> 
+      <sprite=88>  <sprite=89>  <sprite=90>  <sprite=91>  <sprite=92>  = 1 Spot
 
       <size=20%>
 
       <size=75%><sprite=93> 
-      <sprite=94>  <sprite=95>  = +2 Strength
+      <sprite=94>  <sprite=95>  = 2 Spots
 
       <size=20%>
 
       <size=75%><sprite=96> 
-      = +3 Strength'
-    textSize: 116.3
-  - name: Statue of the Outer Path
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: bb3881745d5851540a76b322de407304, type: 3}
-    description: 'When entering a War, add the number of captured  <sprite=23>  to
-      your Strength
-
-      <size=30%>
-
-      <size=75%><sprite=87>  <sprite=88> 
-      <sprite=89>  <sprite=90>  <sprite=91>  = +1 Strength
-
-      <size=20%>
-
-      <size=75%><sprite=92> 
-      <sprite=93>  <sprite=94>  <sprite=95>  = +2 Strength
-
-      <size=20%>
-
-      <size=75%><sprite=96> 
-      = +3 Strength'
-    textSize: 116.3
+      = 3 Spots'
+    textSize: 110
   - name: Statue of the Outer Path
     cardType: 3
     clan: 2
@@ -665,61 +370,38 @@ MonoBehaviour:
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 1
+    cost: 2
     image: {fileID: 21300000, guid: bb3881745d5851540a76b322de407304, type: 3}
     description: '<u>Reaction:</u>
 
       <size=10%>
 
-      <size=100%>When entering
-      a War, add the number of captured  <sprite=23>  to your Strength
-
-      <size=30%>
-
-      <size=75%><sprite=87> 
-      <sprite=88>  <sprite=89>  <sprite=90>  <sprite=91>  <sprite=92>  = +2 Strength
-
-      <size=20%>
-
-      <size=75%><sprite=93> 
-      <sprite=94>  <sprite=95>  = +3 Strength
-
-      <size=20%>
-
-      <size=75%><sprite=96> 
-      = +4 Strength'
-    textSize: 109
-  - name: Statue of the Outer Path
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: bb3881745d5851540a76b322de407304, type: 3}
-    description: '<u>Reaction:</u>
+      <size=75%>Play this at
+      the start of your Turn to move Up X spots in any track on the "Dominance Board"
+      based on the  <sprite=23>  you have captured.
 
       <size=10%>
 
-      <size=100%>When entering
-      a War, add the number of captured  <sprite=23>  to your Strength
+      <size=75%><u>For
+      each:</u>
+
+      <size=10%>
 
       <size=30%>
 
       <size=75%><sprite=87> 
-      <sprite=88>  <sprite=89>  <sprite=90>  <sprite=91>  = +2 Strength
+      <sprite=88>  <sprite=89>  <sprite=90>  <sprite=91>  = 1 Spot
 
       <size=20%>
 
       <size=75%><sprite=92> 
-      <sprite=93>  <sprite=94>  <sprite=95>  = +3 Strength
+      <sprite=93>  <sprite=94>  <sprite=95>  = 2 Spots
 
       <size=20%>
 
       <size=75%><sprite=96> 
-      = +4 Strength'
-    textSize: 109
+      = 3 Spots'
+    textSize: 105
   - name: Team
     cardType: 3
     clan: 2
@@ -740,50 +422,21 @@ MonoBehaviour:
     cardType: 3
     clan: 2
     version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 291c9b733daa1f54fb7b97a7f09dc0e8, type: 3}
-    description: "Each time you receive a\n<sprite=9>  or  <sprite=10> ,\ndraw 2
-      <sprite=10> or 2 <sprite=11> <size=75%>(of higher tiers) \n<size=100%>and choose
-      1 to keep instead"
-    textSize: 105.8
-  - name: Team
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 1
-    image: {fileID: 21300000, guid: 291c9b733daa1f54fb7b97a7f09dc0e8, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>Each time
-      you receive a  <sprite=9>  or  <sprite=10> ,
-
-      draw 2  <sprite=11>  and
-      choose 1 to keep instead'
-    textSize: 120
-  - name: Team
-    cardType: 3
-    clan: 2
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 2
     image: {fileID: 21300000, guid: 291c9b733daa1f54fb7b97a7f09dc0e8, type: 3}
     description: '<u>Reaction:</u>
 
-      <size=20%>
+      <size=30%>
 
       <size=100%>Each time
-      you receive a  <sprite=9>  or  <sprite=10> ,
+      you receive a  <sprite=9> , draw 1 <sprite=11>  instead
 
-      draw 2  <sprite=11>  and
-      choose 1 to keep instead'
-    textSize: 120
+      <size=50%>
+
+      <size=100%>Each
+      time you receive a  <sprite=10> , draw 2 <sprite=11>  and choose 1 to keep
+      instead'
+    textSize: 105

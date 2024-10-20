@@ -22,33 +22,7 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 18ffe484317442248a501a0ebffbd545, type: 3}
-    description: 'When you play a
-
-      <sprite=0>  "Fire",
-
-      other players
-      need to play 2  <sprite=0>  "Fire" to block it'
-    textSize: 120
-  - name: 'Amaterasu '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 18ffe484317442248a501a0ebffbd545, type: 3}
-    description: 'When you play a
-
-      <sprite=0>  "Fire",
-
-      other players
-      need to play 2  <sprite=0>  "Fire" to block it
-
-      <size=30%>
-
-      <size=75%>(You
-      can only play 1 of this each Turn)'
+    description: For you,  <sprite=0>  "Fire" costs -1 <sprite=22>  in the Shop
     textSize: 120
   - name: 'Amaterasu '
     cardType: 3
@@ -66,49 +40,11 @@ MonoBehaviour:
       <size=100%>This is a 
       <sprite=0>  "Fire" that cannot be blocked'
     textSize: 120
-  - name: 'Amaterasu '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 18ffe484317442248a501a0ebffbd545, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>This is a 
-      <sprite=0>  "Fire" that cannot be blocked'
-    textSize: 120
   - name: Copycat
     cardType: 3
     clan: 6
     version_Passive_A: 1
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 52656917b4641d04cb89aad6da1625e8, type: 3}
-    description: '<u>Once per "Action Phase":</u>
-
-      <size=30%>
-
-      <size=100%>After
-      any  <sprite=0>  "Specialty" has been played, you may play the same  <sprite=0> 
-      "Specialty" without any cost
-
-      <size=30%>
-
-      <size=75%>(Can be executed
-      several Turns later)'
-    textSize: 100
-  - name: Copycat
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
@@ -135,30 +71,10 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: 52656917b4641d04cb89aad6da1625e8, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>Right after
-      another Player plays a  <sprite=0>  "Specialty", play this to be able to perform
-      the same  <sprite=0>  "Specialty" once until the end of your next Turn'
-    textSize: 100
-  - name: Copycat
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 52656917b4641d04cb89aad6da1625e8, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>Right after
-      another Player plays a  <sprite=0>  "Specialty", play this to be able to perform
-      the same  <sprite=0>  "Specialty" once during the Round'
+    description: "<u>Reaction:</u>\n<size=20%>\n<size=100%>Right after another Player
+      plays a  <sprite=0>  \"Specialty\", play this to be able to perform the same 
+      <sprite=0>  \"Specialty\" \n<size=30%>\n<size=75%>(Must be executed before
+      the end of your next Turn)"
     textSize: 100
   - name: Defeat
     cardType: 3
@@ -169,47 +85,27 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: f4cf2101e6d2f7e4585b50423afaee16, type: 3}
-    description: 'When losing a War against another player,
+    description: '<size=94%>When losing a War against another player, roll a d6 <sprite=85> 
+      to determine which defeat-reward to receive, in addition to the normal 1 <sprite=9>
 
       <size=30%>
 
-      <size=100%><i>get
-      2 <sprite=22></i>
+      <size=100%><u>Rewards:</u>
 
-      or
+      <size=40%>
 
-      <i>double the amount of  <sprite=83> </i>,
+      <size=100%>2
+      <sprite=22>  /  1 <sprite=9>  /  1 <sprite=0>  /  2 <sprite=5>  /  2 <sprite=52>
 
-      <size=30%>
+      <size=20%>
 
-      <size=100%>instead
-      of the normal 1 <sprite=9>'
-    textSize: 113
-  - name: Defeat
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: f4cf2101e6d2f7e4585b50423afaee16, type: 3}
-    description: 'When losing a War against another player,
+      <size=100%>or
 
-      <size=30%>
+      <size=20%>
 
-      <size=100%><i>get
-      3 <sprite=22></i>
-
-      or
-
-      <i>double the amount of  <sprite=83> </i>,
-
-      <size=30%>
-
-      <size=100%>instead
-      of the normal 1 <sprite=9>'
-    textSize: 113
+      <size=100%>2p.
+      of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  '
+    textSize: 85.5
   - name: Defeat
     cardType: 3
     clan: 6
@@ -217,59 +113,34 @@ MonoBehaviour:
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 2
-    image: {fileID: 21300000, guid: f4cf2101e6d2f7e4585b50423afaee16, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>Once when
-      losing a War against another player,
-
-      <size=30%>
-
-      <size=100%><i>get
-      5 <sprite=22></i>
-
-      or
-
-      <i>triple the amount of  <sprite=83> </i>,
-
-      <size=30%>
-
-      <size=100%>instead
-      of the normal 1 <sprite=9>'
-    textSize: 108
-  - name: Defeat
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
     cost: 1
     image: {fileID: 21300000, guid: f4cf2101e6d2f7e4585b50423afaee16, type: 3}
     description: '<u>Reaction:</u>
 
       <size=20%>
 
-      <size=100%>Once when
-      losing a War against another player,
+      <size=100%><size=94%>When
+      losing a War against another player, choose one defeat-reward to receive, in
+      addition to the normal 1 <sprite=9>
 
       <size=30%>
 
-      <size=100%><i>get
-      4 <sprite=22></i>
+      <size=100%><u>Rewards:</u>
 
-      or
+      <size=40%>
 
-      <i>triple the amount of  <sprite=83> </i>,
+      <size=100%>3
+      <sprite=22>  /  1 <sprite=9>  /  1 <sprite=0>  /  2 <sprite=5>  /  1 <sprite=52>
 
-      <size=30%>
+      <size=20%>
 
-      <size=100%>instead
-      of the normal 1 <sprite=9>'
-    textSize: 108
+      <size=100%>or
+
+      <size=20%>
+
+      <size=100%>2p.
+      of  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  '
+    textSize: 84
   - name: Doppelganger
     cardType: 3
     clan: 6
@@ -288,29 +159,6 @@ MonoBehaviour:
 
       <size=100%>Keep
       1 and Discard the other.'
-    textSize: 120
-  - name: Doppelganger
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 14fc24da00088344c9b43fe901e0ed13, type: 3}
-    description: '<u>Once per Round:</u>
-
-      <size=30%>
-
-      <size=100%>When
-      drawing either of  <sprite=9>  <sprite=10>  <sprite=11> ,
-
-      draw 2 of
-      the same Tier.
-
-      <size=50%>
-
-      <size=100%>Keep 1 and Discard the other.'
     textSize: 115
   - name: Doppelganger
     cardType: 3
@@ -328,69 +176,14 @@ MonoBehaviour:
       <size=100%>When drawing
       either of  <sprite=9>  <sprite=10>  <sprite=11> ,
 
-      draw 3 of the same
-      Tier.
-
-      <size=40%>
-
-      <size=100%>Keep 1 and Discard the others.'
-    textSize: 120
-  - name: Doppelganger
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 14fc24da00088344c9b43fe901e0ed13, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>When drawing
-      either of  <sprite=9>  <sprite=10>  <sprite=11> ,
-
-      draw 4 of the same
-      Tier.
-
-      <size=40%>
-
-      <size=100%>Keep 1 and Discard the others.'
-    textSize: 120
+      get 2 of the same
+      Tier'
+    textSize: 115
   - name: 'Genjutsu '
     cardType: 3
     clan: 6
     version_Passive_A: 1
     version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 49f1760463ee6ca40857ccc9852d75fd, type: 3}
-    description: '<u>Once per "Action Phase":</u>
-
-      <size=20%>
-
-      <size=100%>When
-      getting affected by another Player, you may ignore the effect
-
-      <size=20%>
-
-      <size=65%>(May
-      apply to other Player''s  <sprite=0>
-
-      and during Ties)
-
-      <size=20%>
-
-      <size=65%>(Does
-      not apply to losing Wars)'
-    textSize: 110
-  - name: 'Genjutsu '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
     version_Specialty_A: 0
     version_Specialty_B: 0
     cost: 0
@@ -405,7 +198,9 @@ MonoBehaviour:
       <size=20%>
 
       <size=65%>(Does
-      not apply to other Player''s  <sprite=0>  )
+      apply to other Player''s  <sprite=0> ,
+
+      except  <sprite=0> "War")
 
       <size=20%>
 
@@ -431,33 +226,7 @@ MonoBehaviour:
       <size=20%>
 
       <size=65%>(Does
-      not apply to other Player''s  <sprite=0>  )
-
-      <size=20%>
-
-      <size=65%>(Does
-      not apply to losing Wars or Ties)'
-    textSize: 110
-  - name: 'Genjutsu '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 49f1760463ee6ca40857ccc9852d75fd, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>When getting
-      affected by another Player, you may play this to ignore the effect
-
-      <size=20%>
-
-      <size=65%>(Does
-      not apply to other Player''s  <sprite=0>  )
+      not apply to other Player''s  <sprite=0> )
 
       <size=20%>
 
@@ -473,35 +242,14 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 2a9ea7839e43b344fad0651dd2c1be1e, type: 3}
-    description: '<u>Once per War:</u>
+    description: '<u>Once per War you take part in:</u>
 
       <size=20%>
 
-      <size=100%>Your opponent
-      must play its  <sprite=8>  before you decide which  <sprite=8>  to play'
+      <size=100%>Your
+      opponent must play its  <sprite=8>  before you decide which  <sprite=8>  to
+      play'
     textSize: 110
-  - name: Izanagi
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 2a9ea7839e43b344fad0651dd2c1be1e, type: 3}
-    description: '<u>Once per War:</u>
-
-      <size=20%>
-
-      <size=100%>Choose
-      a player that must play its  <sprite=8>  first.
-
-      <size=40%>
-
-      <size=100%>The
-      other player can decide which  <sprite=8>  to play after the first  <sprite=8> 
-      is revealed'
-    textSize: 100
   - name: Izanagi
     cardType: 3
     clan: 6
@@ -515,24 +263,8 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=100%>Your opponent
-      must play its  <sprite=8>  before you decide which  <sprite=8>  to play'
-    textSize: 110
-  - name: Izanagi
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: 2a9ea7839e43b344fad0651dd2c1be1e, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>Choose a player
-      that must play its  <sprite=8>  first.
+      <size=100%>Before any
+      Battle, choose a player that must play its  <sprite=8>  first.
 
       <size=40%>
 
@@ -554,46 +286,22 @@ MonoBehaviour:
       <size=20%>
 
       <size=100%>Put
-      any random  <sprite=0>  from another player''s hand under "Izanami".
+      any of another player''s  <sprite=0>  under "Izanami".
 
       <size=20%>
 
       <size=100%>"Izanami"
-      forces the target player to buy the  <sprite=0>  type as its first card in
-      each "Shop Phase".
+      forces the player to pay double the cost for the targeted
+
+      <sprite=0> 
+      type from the "Shop".
 
       <size=20%>
 
-      <size=100%>The target Player may
-      remove the "Izanami" by paying you the cost of the  <sprite=0>  on its Turn. '
-    textSize: 82
-  - name: 'Izanami '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: a41f59d6e9de6744c8cf618a25b68cfb, type: 3}
-    description: '<u>At the start of any "Action Phase":</u>
-
-      <size=20%>
-
-      <size=100%>Put
-      any  <sprite=0>  from another player''s hand under "Izanami".
-
-      <size=20%>
-
-      <size=100%>"Izanami"
-      forces the target player to buy the  <sprite=0>  type as its first card in
-      each "Shop Phase".
-
-      <size=20%>
-
-      <size=100%>The target Player may
-      remove the "Izanami" by paying you the cost of the  <sprite=0>  on its Turn. '
-    textSize: 82
+      <size=100%>The player may remove
+      the "Izanami" by paying you the normal cost of the targeted  <sprite=0>  on
+      its Turn. '
+    textSize: 80
   - name: 'Izanami '
     cardType: 3
     clan: 6
@@ -603,51 +311,25 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 1
     image: {fileID: 21300000, guid: a41f59d6e9de6744c8cf618a25b68cfb, type: 3}
-    description: '<u>Action:</u>
+    description: '<size=120%><u>Action:</u>
 
       <size=20%>
 
-      <size=100%>Put any random 
-      <sprite=0>  from another player''s hand under "Izanami".
+      <size=100%>At
+      random, put any of another player''s  <sprite=0>  under "Izanami".
 
       <size=20%>
 
       <size=100%>"Izanami"
-      forces the target player to buy the  <sprite=0>  type as its first card in
+      forces the player to buy the targeted  <sprite=0>  type as its first card in
       each "Shop Phase".
 
       <size=20%>
 
       <size=100%>The target Player may
-      remove the "Izanami" by paying you the cost of the  <sprite=0>  on its Turn.'
-    textSize: 83
-  - name: 'Izanami '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: a41f59d6e9de6744c8cf618a25b68cfb, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Put any  <sprite=0> 
-      from another player''s hand under "Izanami".
-
-      <size=20%>
-
-      <size=100%>"Izanami"
-      forces the target player to buy the  <sprite=0>  type as its first card in
-      each "Shop Phase".
-
-      <size=20%>
-
-      <size=100%>The target Player may
-      remove the "Izanami" by paying you the cost of the  <sprite=0>  on its Turn. '
-    textSize: 83
+      remove the "Izanami" by paying you double the cost of the targeted  <sprite=0> 
+      on its Turn.'
+    textSize: 80
   - name: Rinnesharingan
     cardType: 3
     clan: 6
@@ -670,40 +352,7 @@ MonoBehaviour:
       <size=30%>
 
       <size=70%>(You cannot swap
-      accross the Ocean)'
-    textSize: 90
-  - name: Rinnesharingan
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: e487e80bc15941b4db0f3f5880f6f5cb, type: 3}
-    description: '<u>Once per "Action Phase":</u>
-
-      <size=20%>
-
-      <size=100%>Swap
-      all  <sprite=40>  <sprite=41>  <sprite=42>  <sprite=43>  in a Field you control
-      with all  <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  in any Field
-      up to 2 Fields away
-
-      <size=30%>
-
-      <size=70%>(Your Field must contain 
-      <sprite=40>  <sprite=41>  <sprite=42>  <sprite=43> )
-
-      <size=30%>
-
-      <size=70%>(You
-      cannot swap through "Mountains" and "Rivers")
-
-      <size=30%>
-
-      <size=70%>(You
-      cannot swap accross the Ocean)'
+      across the Ocean)'
     textSize: 90
   - name: Rinnesharingan
     cardType: 3
@@ -726,51 +375,13 @@ MonoBehaviour:
       <size=30%>
 
       <size=70%>(You
-      cannot swap through "Mountains" and "Rivers")
+      can swap through "Mountains" and "Rivers")
 
       <size=30%>
 
       <size=70%>(You
-      may swap accross the Ocean,
-
-      using your  <sprite=40>  counting as one
-      combined Field)'
-    textSize: 85
-  - name: Rinnesharingan
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: e487e80bc15941b4db0f3f5880f6f5cb, type: 3}
-    description: '<u>Action:</u>
-
-      <size=20%>
-
-      <size=100%>Swap all  <sprite=40> 
-      <sprite=41>  <sprite=42>  <sprite=43>  in a Field you control with all  <sprite=48> 
-      <sprite=49>  <sprite=50>  <sprite=51>  in any Field up to 2 Fields away
-
-      <size=30%>
-
-      <size=70%>(Your
-      Field must contain  <sprite=40>  <sprite=41>  <sprite=42>  <sprite=43> )
-
-      <size=30%>
-
-      <size=70%>(You
-      cannot swap through "Mountains" and "Rivers")
-
-      <size=30%>
-
-      <size=70%>(You
-      may swap accross the Ocean,
-
-      using your  <sprite=40>  counting as one
-      combined Field)'
-    textSize: 85
+      can swap across the Ocean)'
+    textSize: 90
   - name: Sharingan
     cardType: 3
     clan: 6
@@ -780,46 +391,18 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 15fd7412858411341897db37ed176701, type: 3}
-    description: '<u>Positive:</u>
+    description: '<size=100%>Before entering a War against another player, you may
+      Discard any amount
 
-      Each time you win a War against another
-      player,
+      of  <sprite=22> .
 
-      get 4 <sprite=22>
+      <size=20%>
 
-      <size=40%>
+      <size=100%>If
+      you win the War, receive double the amount of  <sprite=22>
 
-      <size=100%><u>Negative:</u>
-
-      Each
-      time you lose a War against another player,
-
-      lose 2 <sprite=22>'
-    textSize: 100
-  - name: Sharingan
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: 15fd7412858411341897db37ed176701, type: 3}
-    description: '<u>Positive:</u>
-
-      Each time you win a War against another
-      player,
-
-      get 3 <sprite=22>
-
-      <size=40%>
-
-      <size=100%><u>Negative:</u>
-
-      Each
-      time you lose a War against another player,
-
-      lose 2 <sprite=22>'
+      from what
+      you Discarded'
     textSize: 100
   - name: Sharingan
     cardType: 3
@@ -834,47 +417,19 @@ MonoBehaviour:
 
       <size=20%>
 
-      <size=100%>Before entering
-      a War against another player, choose an amount of  <sprite=22>  to set aside
-      <size=75%>(at least 1 <sprite=22>  if possible).
+      <size=100%>Play this
+      before you enter a War against another player.
 
-      <size=50%>
-
-      <size=100%>If
-      you win the War, receive double the amount of  <sprite=22>  you sat aside.
-
-      <size=50%>
+      <size=60%>
 
       <size=100%>If
-      you lose the War, you lose all  <sprite=22>  you sat aside.'
-    textSize: 79
-  - name: Sharingan
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 2
-    image: {fileID: 21300000, guid: 15fd7412858411341897db37ed176701, type: 3}
-    description: '<u>Reaction:</u>
+      you win the War, get 5 <sprite=22>
 
-      <size=20%>
+      <size=40%>
 
-      <size=100%>Before entering
-      a War against another player, choose an amount of  <sprite=22>  to set aside
-      <size=75%>(at least 1 <sprite=22>  if possible).
-
-      <size=50%>
-
-      <size=100%>If
-      you win the War, receive double the amount of  <sprite=22>  you sat aside.
-
-      <size=50%>
-
-      <size=100%>If
-      you lose the War, you lose all  <sprite=22>  you sat aside.'
-    textSize: 79
+      <size=100%>If you
+      lose the War, lose 1 <sprite=22>'
+    textSize: 100
   - name: 'Susano''o '
     cardType: 3
     clan: 6
@@ -884,18 +439,9 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: bf2d0336cc4c6c14aa86b432447d3ad6, type: 3}
-    description: You always have a Unit Strength of +2
-    textSize: 120
-  - name: 'Susano''o '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 1
-    version_Specialty_A: 0
-    version_Specialty_B: 0
-    cost: 0
-    image: {fileID: 21300000, guid: bf2d0336cc4c6c14aa86b432447d3ad6, type: 3}
-    description: You always have a Unit Strength of +3
+    description: 'You always have a
+
+      Unit Strength of +3'
     textSize: 120
   - name: 'Susano''o '
     cardType: 3
@@ -911,31 +457,10 @@ MonoBehaviour:
       <size=20%>
 
       <size=100%>At the start
-      of a War, play this to increase your Unit Strength with +3.
+      of any War, play this to increase your Unit Strength with +4
 
       <size=30%>
 
-      <size=75%>(You
-      may play mutiple of this to increase your Unit Strength even further)'
-    textSize: 107.5
-  - name: 'Susano''o '
-    cardType: 3
-    clan: 6
-    version_Passive_A: 0
-    version_Passive_B: 0
-    version_Specialty_A: 0
-    version_Specialty_B: 1
-    cost: 1
-    image: {fileID: 21300000, guid: bf2d0336cc4c6c14aa86b432447d3ad6, type: 3}
-    description: '<u>Reaction:</u>
-
-      <size=20%>
-
-      <size=100%>At the start
-      of a War, play this to increase your Unit Strength with +2.
-
-      <size=30%>
-
-      <size=75%>(You
-      may play mutiple of this to increase your Unit Strength even further)'
+      <size=75%>(Play
+      mutiple of this to increase your Unit Strength further)'
     textSize: 107.5
