@@ -131,7 +131,7 @@ MonoBehaviour:
     version_Passive_B: 0
     version_Specialty_A: 1
     version_Specialty_B: 0
-    cost: 0
+    cost: 1
     image: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
     description: '<size=45%><u>Reaction:</u>
 
@@ -238,7 +238,7 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 05982e3ffde540c40a854b0af568ff92, type: 3}
-    description: "When receiving  <sprite=22>\nbased on the\n<sprite=83>  \u201CDomination
+    description: "When receiving  <sprite=22>\nbased on the\n<sprite=83>  \u201CDominance
       Track\u201D,\nreceive  <sprite=22>  from the position above you\n<size=20%>\n<size=75%>(if
       you're not already at the top)"
     textSize: 110

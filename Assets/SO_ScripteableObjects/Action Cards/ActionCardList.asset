@@ -79,7 +79,7 @@ MonoBehaviour:
     cost: 1
     fireBlock: 0
     strength: 
-  - name: Healing Ointment
+  - name: Healing Salve
     cardType: 2
     type: 3
     isInHiddenDeck: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
     cost: 1
     fireBlock: 0
     strength: 
-  - name: Healing Ointment
+  - name: Healing Salve
     cardType: 2
     type: 3
     isInHiddenDeck: 1

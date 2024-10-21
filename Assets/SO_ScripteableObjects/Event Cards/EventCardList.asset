@@ -877,3 +877,86 @@ MonoBehaviour:
 
       placing it aside for the next
       Round'
+  - name: We're all in this together
+    image: {fileID: 21300000, guid: f7889acdea744f84f99f57f90311a488, type: 3}
+    isFirstRound: 0
+    isLastRound: 0
+    description: '<size=100%><u>When receiving a  <sprite=9></u>
+
+      <size=25%>
+
+      <size=80%>Receive
+      a  <sprite=10>  instead'
+  - name: Total Control
+    image: {fileID: 21300000, guid: c1260e3cce1efe04894637b4d70a76ae, type: 3}
+    isFirstRound: 0
+    isLastRound: 1
+    description: '<size=100%><u>During the next "Setup Phase"</u>
+
+      <size=25%>
+
+      <size=80%>Field
+      Markers counts double'
+  - name: The Trump Card
+    image: {fileID: 21300000, guid: 981b7a3a00225b84c8747227339e23ea, type: 3}
+    isFirstRound: 0
+    isLastRound: 0
+    description: '<size=100%><u>In a War against a  <sprite=23></u>
+
+      <size=25%>
+
+      <size=80%>Score
+      your Resources'
+  - name: My Loneliness Is Killing Me
+    image: {fileID: 21300000, guid: 4e296a66a0a50b844af96db42d4bf8b5, type: 3}
+    isFirstRound: 0
+    isLastRound: 1
+    description: Players cannot make sound
+  - name: A Sudden Appearance
+    image: {fileID: 21300000, guid: b7497f1e45956e640910957fc514b6c3, type: 3}
+    isFirstRound: 1
+    isLastRound: 0
+    description: '<size=100%><u>In a War against another player</u>
+
+      <size=20
+
+      %>
+
+      <size=80%>Players
+      not participating in the War may offer to play their  <sprite=8> , if the selected
+      participant aggrees
+
+      <size=20%>
+
+      <size=65%>(The  <sprite=8>  is
+      considered played by the selected participant)'
+  - name: Time to Take Charge
+    image: {fileID: 21300000, guid: 4183019d91acdfc4fbecbb43f2f2d4ef, type: 3}
+    isFirstRound: 1
+    isLastRound: 0
+    description: '<size=83%><u>When receiving a  <sprite=23>  from another player</u>
+
+      <size=20%>
+
+      <size=75%>The
+      receiving player may choose
+
+      which  <sprite=23>  to receive'
+  - name: Here to Finish       a Job
+    image: {fileID: 21300000, guid: bd4425074e8b6a549b9f0ee47dcb504b, type: 3}
+    isFirstRound: 1
+    isLastRound: 1
+    description: "Effects on  <sprite=8>  with the text \n\"Get 1BP\", gives 2BP
+      instead"
+  - name: Enhanced Combat
+    image: {fileID: 21300000, guid: 8c5fb70dfefefd941a67c6db60f78761, type: 3}
+    isFirstRound: 1
+    isLastRound: 0
+    description: '<size=80%>Receive 2BP for Winning a Battle.
+
+      <size=30%>
+
+      <size=80%>A
+      War ends when the first player
+
+      reaches 4BP, instead of the normal 3BP'

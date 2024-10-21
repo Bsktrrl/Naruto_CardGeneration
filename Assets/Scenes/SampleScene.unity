@@ -790,10 +790,10 @@ MonoBehaviour:
   baseSet_Icon: {fileID: 21300000, guid: e6591658b7aad9840be044ab95a75bdd, type: 3}
   endYear: 2024
   companyName: AM Games
-  clanFocus_ClanSpecialty: 4
-  clanSpecialtyCard_Number: 0
-  actionCard_Number: 60
-  eventCard_Number: 1
+  clanFocus_ClanSpecialty: 8
+  clanSpecialtyCard_Number: 7
+  actionCard_Number: 5
+  eventCard_Number: 101
 --- !u!1 &404677398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,14 +1350,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<u>Draw 1 additional  <sprite=16>  for this Round</u>
+  m_text: '<size=100%><u>When receiving a  <sprite=9></u>
 
-    <size=20%>
+    <size=25%>
 
-    <size=90%>Each
-    player may place 1 captured  <sprite=23>  back onto the Board in its original
-    Field, to get 1 <sprite=23>  of the same type from the Supply that never can
-    be taken'
+    <size=80%>Receive
+    a  <sprite=10>  instead'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -1384,7 +1382,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 113.15
+  m_fontSize: 150
   m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1464,7 +1462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd42b0cc618a6914eb0b0c49a5329368, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7889acdea744f84f99f57f90311a488, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1568,7 +1566,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bound for Life
+  m_text: We're all in this together
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -1595,7 +1593,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 140.15
+  m_fontSize: 110
   m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3617,7 +3615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1667427437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9505,12 +9503,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Move any player Down
+  m_text: 'Either on your Turn or when losing a War, you may Unprone
 
-    1 spot in any track on the
-
-    Dominance Board,
-    twice'
+    <sprite=48> 
+    <sprite=49>  <sprite=50>  <sprite=51>  in any Field'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -9537,8 +9533,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 111.5
-  m_fontSizeBase: 111.5
+  m_fontSize: 95
+  m_fontSizeBase: 95
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 30
@@ -9645,7 +9641,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Action
+  m_text: Action / Reaction
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -9780,7 +9776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 41c45c945e1967449bb5799f8abb019e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b135f5716dea4e04fb2549ae56b0b375, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9856,7 +9852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kara - Poisoning
+  m_text: Healing Salve
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -10478,7 +10474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &3372878870070196378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10652,7 +10648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 36.25}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3372878870416679378
@@ -10726,7 +10722,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1113}
+  m_AnchoredPosition: {x: 0, y: -1076.75}
   m_SizeDelta: {x: 1550, y: 760}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &3372878870445647736
@@ -10784,7 +10780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &3372878870792146270
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11023,7 +11019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4094810174205789057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11514,7 +11510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3d084aacc7d72e047a0f63a102f099ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cac2c9eb3d3084b4b8aa5206789dc8b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11724,7 +11720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 1}
+  m_Color: {r: 0, g: 0.67058825, b: 0.8352941, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11876,7 +11872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.25, g: 0.73, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11934,7 +11930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.25, g: 0.73, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12035,10 +12031,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'During any War you participate in,
+  m_text: '<size=45%><u>Reaction:</u>
 
-    Cancel the Effect on the first 
-    <sprite=8>  played by your opponent'
+    <size=25%>
+
+    <size=150%><sprite=70> 
+    <sprite=70>
+
+    <sprite=69>  <sprite=69>  <sprite=69>
+
+    <size=0%>
+
+    <size=35%>(Once
+    per Battle,
+
+    add 2 <sprite=70>  and 3 <sprite=69>  to any  <sprite=8>  in
+    it)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -12047,8 +12055,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282861383
-  m_fontColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+    rgba: 4285225216
+  m_fontColor: {r: 0, g: 0.35, b: 0.42, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -12065,8 +12073,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 190
+  m_fontSizeBase: 190
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 30
@@ -12155,7 +12163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chibaku Tensei '
+  m_text: "K\u0101ma"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
   m_sharedMaterial: {fileID: 8721591883100076090, guid: 8d87b1379914886489b0047f64834cf3, type: 2}
@@ -12164,8 +12172,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282861383
-  m_fontColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+    rgba: 4285225216
+  m_fontColor: {r: 0, g: 0.35, b: 0.42, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -12182,7 +12190,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 140.5
+  m_fontSize: 213.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12308,7 +12316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7fa21e7306a8072429159e67ccd0e6dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ea56c481cc73954fb0a432d376e335c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -297,7 +297,7 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: 9b4b098ffc7a07e46b5d6977b1cb5731, type: 3}
-    description: "At the start of each \"Action\"-Phase, place the  <sprite=55> 
+    description: "At the start of each \"Action Phase\", place the  <sprite=55> 
       Marker in any Field. \n<size=40%>\n<size=100%>A Field containing this Marker
       cannot be attacked."
     textSize: 110

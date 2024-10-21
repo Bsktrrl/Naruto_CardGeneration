@@ -149,13 +149,15 @@ MonoBehaviour:
       end of any
 
       "Setup Phase" you choose, you''ll get 4 <sprite=22>  and
-      can buy as many  <sprite=0>  as you like from the Shop before the "Shop Phase"
-      begins
+      can buy as many  <sprite=0>  as you like from the Shop before the
+
+      "Shop
+      Phase" begins
 
       <size=10%>
 
-      <size=75%>(You can only buy 1 <sprite=0>  of
-      each type)'
+      <size=75%>(You can only buy 1 <sprite=0> 
+      of each type)'
     textSize: 100
   - name: Infinite Tsuki No Me
     cardType: 3
@@ -397,14 +399,18 @@ MonoBehaviour:
     version_Specialty_B: 0
     cost: 0
     image: {fileID: 21300000, guid: cf21bcb76f825b34da1127a82bd07816, type: 3}
-    description: 'At the start of each "Setup Phase", add a  <sprite=56>  Marker
-      onto any Field.
+    description: 'At the start of each
+
+      "Setup Phase", add a
+
+      <sprite=56> 
+      Marker onto any Field.
 
       <size=30%>
 
-      <size=100%>Any other player who enters
-      this Field loses 1 <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51>  from
-      the group that enters, for each  <sprite=56>  Marker in this Field'
+      <size=100%>Any other player
+      who enters this Field loses 1 <sprite=48>  <sprite=49>  <sprite=50>  <sprite=51> 
+      from the group that enters, for each  <sprite=56>  Marker in this Field'
     textSize: 97
   - name: 'Tensengan '
     cardType: 3
